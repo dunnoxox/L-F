@@ -1,0 +1,35 @@
+{
+  "name": "lost-and-fraud",
+  "productName": "LOST & FRAUD",
+  "version": "0.1.0",
+  "description": "LOST & FRAUD: nocna zmiana w biurze rzeczy znalezionych",
+  "main": "main.js",
+  "author": "Tommy",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "prepare-game": "node build/prepare-game.js",
+    "start": "npm run prepare-game && electron .",
+    "dist:win": "npm run prepare-game && electron-builder --win dir",
+    "dist:linux": "npm run prepare-game && electron-builder --linux dir",
+    "dist:mac": "npm run prepare-game && electron-builder --mac dir",
+    "test:bridge": "node build/test-achievements.js"
+  },
+  "dependencies": {
+    "steamworks.js": "^0.4.0"
+  },
+  "devDependencies": {
+    "electron": "^45.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.lostandfraud.game",
+    "productName": "LOST & FRAUD",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "preload.js", "achievements.js", "game/**/*", "package.json"],
+    "asarUnpack": ["node_modules/steamworks.js/dist/**"],
+    "win": { "target": "dir" },
+    "linux": { "target": "dir", "category": "Game" },
+    "mac": { "target": "dir", "category": "public.app-category.games" }
+  }
+}
