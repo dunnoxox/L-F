@@ -2067,7 +2067,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "glos": "Spokojnie, z nauczycielską ironią. Zdania rzuca jak pionki: po jednym ruchu.",
   "typ": "uczciwa, zagrywa",
   "rzecz": "Drewniane szachy bez króla",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d17_koperta_klasy",
+      "co_widac": "W kieszonce pudełka koperta z napisem „wycieczka 3b” i sto dwadzieścia dolarów w banknotach, zwrot od rodziców.",
+      "co_z_tego_wynika": "To pieniądze dzieci, nie Sylvii. Jeśli zginą, zapłaci z własnej pensji."
+    }
+  ],
   "wejscie": "Sylvia Okafor, nauczycielka. Zgubiłam szachy, drewniane, składane. Nie ma w nich białego króla. Szukam całości, ale też tego jednego pionka, którego brakuje, bo dzieci się o niego kłócą.",
   "tury": [
     {
@@ -2117,6 +2123,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "wymaga": null,
           "odpowiedz": "Czasem. Przeciwnik zawsze wie, czego nie masz. Ale zwykle nie wie, co z tym zrobisz.",
           "mina": "neutralna"
+        },
+        {
+          "tekst": "W pudełku jest koperta „wycieczka 3b”. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d17_koperta_klasy",
+          "odpowiedz": "Pieniądze rodziców, sto dwadzieścia dolarów. Zapomniałam, że je tam włożyłam. Jak zginą, zapłacę z pensji, a ja nie mam z czego.",
+          "mina": "emocja"
         }
       ]
     },
@@ -2179,6 +2192,20 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "za_dni": 2,
         "forma": "gosc",
         "tekst": "Sylvia Okafor: „Dzieci grały na kartkach. Skrzywione, ale wygrały. Na przyszłość zastanowię się, czy biuro też tak gra.”"
+      }
+    },
+    {
+      "akcja": "wez_120_wycieczka",
+      "etykieta": "Zatrzymaj 120 $ z koperty „wycieczka 3b”",
+      "kasa": 120,
+      "wymaga": "d17_koperta_klasy",
+      "reakcja": "Szachy są? Dobrze. A koperta? Przecież… zaraz. Nie. Nic. Zapomniałam, co chciałam powiedzieć.",
+      "zysk": "120 $ w kieszeni i dług u Marlowa o dwie raty mniejszy.",
+      "strata": "Dzieci tracą wycieczkę albo Sylvia dopłaca z pensji. Wpis liczy się do zakończenia Nowy Sam.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Sylvia Okafor: „Wycieczka odwołana. Sprawdzałam trzy razy, bo wolę wierzyć, że sama się pomyliłam. Dzieci pytają, czemu nic nie wyszło.”"
       }
     }
   ]
@@ -2365,7 +2392,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "glos": "Hałaśliwy, zabawny, ciągle „wiesz, jak to jest”. Opowiada historie, których nikt nie sprawdza.",
   "typ": "uczciwy, kłamie dla spokoju",
   "rzecz": "Teleskopowa wędka w pokrowcu",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d18_dlug_karciany",
+      "co_widac": "W kieszeni pokrowca złożony kwit długu karcianego: dwieście dolarów, podpis H.L., odbiorca K.M., termin: sobota.",
+      "co_z_tego_wynika": "Hugo jest winien Marlowowi. Wędka jest alibi i zastawem."
+    }
+  ],
   "wejscie": "Cześć, Hugo Lang, hydraulik. Zgubiłem wędkę, teleskopową, w czarnym pokrowcu. Żona myśli, że łowię ryby, ale ja gram w karty. Wędka ma być przy mnie, jak wrócę, bo ryby są alibi.",
   "tury": [
     {
@@ -2415,6 +2448,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "wymaga": null,
           "odpowiedz": "Bo ona mnie kocha za rybę. Co bym zrobił, gdyby się dowiedziała, że kocha mnie za nic?",
           "mina": "emocja"
+        },
+        {
+          "tekst": "W pokrowcu jest kwit na dwieście dolarów do K.M. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d18_dlug_karciany",
+          "odpowiedz": "To nie kwit, to żart, który kosztuje dwieście dolarów. Marlow nie żartuje, ale ja tak. Do soboty.",
+          "mina": "klamie"
         }
       ]
     },
@@ -2477,6 +2517,20 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "za_dni": 2,
         "forma": "gosc",
         "tekst": "Hugo Lang: „Żona zapytała, gdzie wędka. Powiedziałem: w biurze rzeczy znalezionych. Zrobiła minę, której nigdy nie widziałem.”"
+      }
+    },
+    {
+      "akcja": "wez_100_hugo",
+      "etykieta": "Weź 100 $ od Hugona za zaświadczenie i milczenie",
+      "kasa": 100,
+      "wymaga": "d18_dlug_karciany",
+      "reakcja": "Sto, na ladzie. Zaświadczenie, że wędka tu była, i ani słowa o kwicie. Umowa? Umowa.",
+      "zysk": "100 $ na czynsz, a Hugo ma papier dla żony.",
+      "strata": "Wystawiasz fałszywe zaświadczenie za pieniądze. Urząd +2 przy kontroli, a Marlow wie, że Hugo ma Twoją zgodę.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Hugo Lang: „Żona czytała zaświadczenie. Zapytała, ile wziąłem za wędkę. Powiedziałem, że sto. Nie wiem, skąd wiedziała. — H.”"
       }
     }
   ]
@@ -2656,7 +2710,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "glos": "Szybko, na jednym oddechu, z kurierską ironią. Zawsze sprawdza telefon.",
   "typ": "uczciwy, widział za dużo",
   "rzecz": "Czerwony powerbank z naklejką trasy",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d19_zlecenie_slip",
+      "co_widac": "Pod naklejką z trasą wklejone stare zlecenie: „Port, Cooper 9, 80 $ za kurs. Cisza w cenie.” Pieczątka bez nazwiska.",
+      "co_z_tego_wynika": "Kofi dostawał pensję za milczenie i jest jedynym, kto wie, co woził."
+    }
+  ],
   "wejscie": "Cześć, Kofi Mensah, kurier rowerowy. Zgubiłem powerbank, czerwony, w szóstce. Bez niego telefon pada po trzech zleceniach, a ja żyję ze zleceń. Naklejka z trasą jest ważna, bo to moje stare kursy.",
   "tury": [
     {
@@ -2705,6 +2765,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Bo raz przesyłka była za lekka i za sztywna, jakby tylko papier. Pomyślałem, że ktoś gdzieś dostaje z niej nowe życie.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Pod naklejką jest zlecenie „cisza w cenie”. Co to znaczy?",
+          "ton": "niewygodne",
+          "wymaga": "d19_zlecenie_slip",
+          "odpowiedz": "Że płacili za to, żebym nie pytał. Ostatni kurs: osiemdziesiąt dolarów. Mam je jeszcze, nie ruszałem.",
           "mina": "emocja"
         }
       ]
@@ -2769,6 +2836,20 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "za_dni": 3,
         "forma": "list",
         "tekst": "Kofi Mensah: „Zapomniałem. Powiedziałem szefowi, że byłem chory. Gdybyście mieli kiedyś ochotę ruszyć trasę, wiecie, gdzie szukać. — K.”"
+      }
+    },
+    {
+      "akcja": "wez_80_kofi",
+      "etykieta": "Weź 80 $ od Kofiego, żeby nie zapisywać jego nazwiska",
+      "kasa": 80,
+      "wymaga": "d19_zlecenie_slip",
+      "reakcja": "Osiemdziesiąt, to ostatni kurs. Bierz. Nie zapisuj mnie, nie pytaj o trasę. Jak ktoś zapyta, nigdy mnie tu nie było.",
+      "zysk": "80 $ w kieszeni i Kofi jest bezpieczny.",
+      "strata": "Bierzesz pieniądze za to samo milczenie, które kupowano od Kofiego. Nora traci świadka, Urząd +1 przy kontroli.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Kofi Mensah: „Zapłaciłem. Nie wiem, kto przyjął pieniądze. Czuję się tak, jak wtedy na trasie. — K.”"
       }
     }
   ]
@@ -4973,6 +5054,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "„Rata sobotnia. Jutro. Przyjdź sam. K.M.” Pod spodem dopisek ołówkiem: „Nie musisz nic mówić. Ale ktoś musi usłyszeć.”"
       }
     ]
+  },
+  "epilogi_elias": {
+    "odebrany": "Elias: „Jak się nazywasz?” Gracz podaje imię z d20. „Dziękuję, [imię]. Jutro.”",
+    "wyrwana_strona": "Elias pyta pusty fotel: „Czy Sam już był?”",
+    "rotacja": "Elias pyta następcę o oprawkę.",
+    "rotacja_list_bez_warunkow": "Elias pyta następcę o oprawkę. Dopisek: „Listu nikt nie znalazł przez miesiąc.”",
+    "nowy_sam": "Victor zapisuje niedobór na zmianie gracza. Elias pyta o brakującą stronę.",
+    "referent": "Elias milczy i składa numerek. Awans, premia, karta Kopie z listą odnalezionych klientów.",
+    "zostajesz": "Czynsz zapłacony, nikt nie świętuje. Elias: „Dziękuję. Jutro.”"
   }
 }
 ```
