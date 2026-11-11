@@ -59,7 +59,7 @@ if os.path.exists(PK):
         if g['id'] in pk and not any(d['akcja']==pk[g['id']]['akcja'] for d in g['decyzje']): g['decyzje'].append(pk[g['id']])
 G.sort(key=lambda g:g['dzien'])
 LANG={
- 'title':'OKIENKO','sub':'Nocna zmiana w biurze rzeczy znalezionych. Tydzień pierwszy.','start':'Zacznij zmianę','settings':'Ustawienia','close':'Zamknij',
+ 'title':'LOST & FRAUD','sub':'Nocna zmiana w biurze rzeczy znalezionych. Tydzień pierwszy.','start':'Zacznij zmianę','settings':'Ustawienia','close':'Zamknij',
  'day':'Dzień','delivery':'Tramwaj zostawił skrzynki. Czasu starcza, żeby zajrzeć tylko do jednej rzeczy.','look':'Zajrzyj','skip':'Nie zaglądam, otwieram okienko',
  'line':'Linia','inspect_hint':'Przeszukaj rzecz. Kliknij to, co nie pasuje.','found':'Wiesz coś, czego nie powinieneś.','open':'Otwórz okienko','nothing':'Zwykła rzecz. Czasem parasol jest po prostu parasolem.',
  'knock':'Ktoś puka w szybę.','let_in':'Odsuń zasłonkę','know':'wiesz ze środka','turn':'Odwróć się do magazynu','search':'Znajdź: ','search_p':'Wybierz skrzynię wg linii, potem przekopuj. Kliknij rzecz, którą bierzesz.',
