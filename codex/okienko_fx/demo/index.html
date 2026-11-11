@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="pl"><meta charset="utf-8"><title>OKIENKO · LF_FX</title>
+<link rel="stylesheet" href="../fx/lf_fx.css">
+<div id="stage" style="position:relative;width:768px;height:512px;background:url('../sprites/bg/T1.jpg') center/cover"></div>
+<button id="shake">Wstrząs</button>
+<script src="../fx/lf_fx.js"></script>
+<script>LF_FX.init(); document.querySelector('button').onclick = () => LF_FX.shake('thunder');</script>
