@@ -1,0 +1,124 @@
+## Kolejność gości w dniu dla warunków wejscie_jesli / pytań zależnych od flag decyzji tego samego dnia
+ok d5_gus (poz 2) zależy od d5_victor:wykaz_paczke (poz 1)
+ok d23_rosa (poz 1) zależy od d23_iris_nora_victor:wydaj_nora (poz 0)
+ok d23_rosa (poz 1) zależy od d23_iris_nora_victor:wydaj_victor (poz 0)
+ok d23_rosa (poz 1) zależy od d23_iris_nora_victor:iris_prywatnie (poz 0)
+ok d23_rosa (poz 1) zależy od d23_iris_nora_victor:wez_500_iris (poz 0)
+
+## Decyzje, które NIE ruszają żadnego licznika (heurystyka po nazwie akcji): 75 z 159
+1:d1_rosa/wez_20(+20$)
+2:d2_jonah/wez_pierscionek(+150$)
+3:d3_maz_i_siostra/wez_100_evan(+100$)
+4:d4_iris/rejestr
+5:d5_noah/zadzwon
+5:d5_victor/wykaz_paczke
+5:d5_victor/potwierdz_wpis
+5:d5_victor/spis_bez_paczki
+5:d5_gus/zadzwon
+5:d5_gus/wez_250_gus(+250$)
+6:d6_ada/wpisz_w_biurze
+6:d6_ada/list_przewozowy
+6:d6_leo/wpisz_puszke
+7:d7_evan/powiedz_linie
+8:d8_lena_i_nora/kopia_osobno
+8:d8_bree/wez_80_bree(+80$)
+9:d9_iris/jeden_egzemplarz
+9:d9_stahl/zadzwon
+10:d10_dario/powiedz_dario
+11:d11_maya/przez_okienko
+11:d11_maya/powiadom_rodzine
+11:d11_maya/szept_lenie
+11:d11_grace/kartka_odpis
+11:d11_grace/zadzwon
+13:d13_elias/odpis_za_zgoda
+13:d13_odile/zapisz_mandat
+14:d14_noah/bez
+14:d14_noah/list_od_mai
+14:d14_billie/zadzwon_szkola
+15:d15_sam/oddaj_samowi
+15:d15_pruitt/przyjmij_wpis
+15:d15_pruitt/odeslij
+16:d16_maya_lena/maya_sama
+16:d16_maya_lena/lena_zalatwia
+16:d16_maya_lena/bez_decyzji
+16:d16_dorian/przechowaj_z_kwitem
+16:d16_dorian/przechowaj_bez_kwitu
+17:d17_evan/zostaw_zamkniety
+17:d17_evan/zdradz_szczegol
+17:d17_sylvia/wez_120_wycieczka(+120$)
+18:d18_iris_nora/oferta_iris(+300$)
+18:d18_hugo/zaswiadczenie
+18:d18_hugo/wez_100_hugo(+100$)
+19:d19_ada_leo/przyjmij_sprostowanie
+19:d19_ada_leo/sprostowanie_bez_ady
+19:d19_kofi/zapisz_zeznanie
+19:d19_kofi/ostrzez
+19:d19_kofi/wez_80_kofi(+80$)
+20:d20_elias_sam/poza_audytem
+20:d20_elias_sam/czesc_zeznan
+21:d21_maya_lena_priya/wiadomosc_zatwierdzona
+21:d21_maya_lena_priya/bez_posrednictwa
+21:d21_maya_lena_priya/wez_50_priya(+50$)
+22:d22_noah/przekaz_w_granicach
+22:d22_noah/zostaw_otwarte
+22:d22_noah/przekaz_calosc
+22:d22_stahl/stahl_odeslij
+22:d22_stahl/stahl_wydaj
+22:d22_stahl/wez_200_stahl(+200$)
+22:d22_jonah/wez_90_marlow(+90$)
+23:d23_iris_nora_victor/iris_prywatnie
+23:d23_iris_nora_victor/wez_500_iris(+500$)
+23:d23_rosa/wez_20_rosa(+20$)
+24:d24_vera/otworz_szafke
+24:d24_leo/wpisz_wykaz
+24:d24_leo/przechowaj_bez_kwitu
+24:d24_leo/odeslij_wykaz
+24:d24_thomas/przyjmij_swiadectwo
+24:d24_thomas/wpisz_wstecz
+25:d25_sam_elias/zwroc_etui
+25:d25_sam_elias/zniszcz_kopie
+25:d25_ksiega/wpisz_siebie
+25:d25_ksiega/wyrwij
+25:d25_ksiega/list
+25:d25_ksiega/zamknij
+
+Wpływ na liczniki wg dnia: {"1":{"lud+":2,"urz+":1,"bez":1,"urz+lud-":1,"ZERO":1,"bez+uP-lud":1},"2":{"lud+":2,"urz+lud-":2,"ZERO":1},"3":{"lud+":3,"urz+":1,"ZERO":1,"urz+lud-":1},"4":{"ZERO":1,"bez":1,"urz+lud-":1},"5":{"lud+":2,"ZERO":6,"urz+lud-":1,"bez+uP-lud":1},"6":{"ZERO":3,"bez":1,"lud+":1,"urz+":1,"bez+uP-lud":1},"7":{"lud+":2,"urz+lud-":2,"ZERO":1,"urz+":1},"8":{"lud+":2,"ZERO":2,"urz+lud-":2},"9":{"urz+":3,"ZERO":2,"lud+":1,"urz+lud-":1},"10":{"urz+":3,"lud+":1,"urz+lud-":1,"ZERO":1},"11":{"ZERO":5,"lud+":1},"12":{"urz+":3,"lud+":4},"13":{"ZERO":2,"lud+":3,"urz+":1},"14":{"urz+":1,"ZERO":3,"lud+":2},"15":{"urz+":2,"ZERO":3,"bez":1},"16":{"ZERO":5,"urz+lud-":1},"17":{"ZERO":3,"urz+lud-":2,"lud+":2},"18":{"urz+":2,"ZERO":3,"lud+":1,"urz+lud-":1},"19":{"ZERO":5,"urz+":1,"lud+":1},"20":{"urz+":1,"ZERO":2},"21":{"ZERO":3},"22":{"ZERO":7,"lud+":1,"urz+lud-":1},"23":{"lud+":3,"ZERO":3,"urz+lud-":1},"24":{"urz+":1,"bez":2,"ZERO":6},"25":{"urz+":1,"ZERO":6}}
+
+## Decyzje z kasą: 19 plus: 18 suma + 2469 minus: 1 suma -400
+  d1 d1_rosa wez_20 20
+  d1 d1_rosa przywlaszcz 129
+  d2 d2_jonah wez_pierscionek 150
+  d3 d3_maz_i_siostra wez_100_evan 100
+  d4 d4_iris koperta 120
+  d5 d5_gus wez_250_gus 250
+  d5 d5_gus przywlaszcz 70
+  d6 d6_leo przywlaszcz 90
+  d8 d8_bree wez_80_bree 80
+  d12 d12_iris_nora wyloz_400 -400
+  d17 d17_sylvia wez_120_wycieczka 120
+  d18 d18_iris_nora oferta_iris 300
+  d18 d18_hugo wez_100_hugo 100
+  d19 d19_kofi wez_80_kofi 80
+  d21 d21_maya_lena_priya wez_50_priya 50
+  d22 d22_stahl wez_200_stahl 200
+  d22 d22_jonah wez_90_marlow 90
+  d23 d23_iris_nora_victor wez_500_iris 500
+  d23 d23_rosa wez_20_rosa 20
+Gości na dzień: {"1":2,"2":2,"3":2,"4":1,"5":3,"6":2,"7":2,"8":2,"9":2,"10":2,"11":2,"12":2,"13":2,"14":2,"15":2,"16":2,"17":2,"18":2,"19":2,"20":1,"21":1,"22":3,"23":2,"24":3,"25":2}
+
+## Echa po dniu 25 (nigdy nie pokazane): 12
+24:d24_vera/otworz_szafke za_dni=2 -> dzień 26
+24:d24_leo/wpisz_wykaz za_dni=2 -> dzień 26
+24:d24_leo/przechowaj_bez_kwitu za_dni=2 -> dzień 26
+24:d24_thomas/oddaj_bez_wpisu za_dni=2 -> dzień 26
+24:d24_thomas/wpisz_wstecz za_dni=2 -> dzień 26
+25:d25_sam_elias/dolacz_kopie za_dni=1 -> dzień 26
+25:d25_sam_elias/zwroc_etui za_dni=1 -> dzień 26
+25:d25_sam_elias/zniszcz_kopie za_dni=1 -> dzień 26
+25:d25_ksiega/wpisz_siebie za_dni=1 -> dzień 26
+25:d25_ksiega/wyrwij za_dni=1 -> dzień 26
+25:d25_ksiega/list za_dni=1 -> dzień 26
+25:d25_ksiega/zamknij za_dni=1 -> dzień 26
+
+WIECZOR dni: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 | brak kart dla dni: 
+EXTRA dni: 2,6,15,24,25

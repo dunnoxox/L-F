@@ -1,0 +1,50 @@
+MARTWY_SEKRET (wnetrze[1+], silnik czyta tylko [0]): d5_gus d5_gotowka_400
+MARTWY_SEKRET (wnetrze[1+], silnik czyta tylko [0]): d16_maya_lena d16_najem_lena
+MARTWY_SEKRET (wnetrze[1+], silnik czyta tylko [0]): d21_maya_lena_priya d21_metka
+MARTWY_SEKRET (wnetrze[1+], silnik czyta tylko [0]): d24_vera d24_umowa
+MARTWY_SEKRET extra 15 d15_zatwierdzenie_victora
+MARTWY_SEKRET extra 15 d15_szosta_linia
+MARTWY_SEKRET extra 24 d24_list_luki
+MARTWY_WARUNEK (nikt nie ustawia): d5_gotowka_400 <- d5_gus pytanie T3: Za zdjęciem leży dwieście pięćdziesiąt. Mówiłeś o 
+MARTWY_WARUNEK (nikt nie ustawia): d15_zatwierdzenie_victora <- d15_sam pytanie T2: W szufladzie jest zatwierdzenie z podpisem Victora
+MARTWY_WARUNEK (nikt nie ustawia): d15_szosta_linia <- d15_sam pytanie T3: Na kalce jest szósta linia, zaklejona. Co tam jest
+MARTWY_WARUNEK (nikt nie ustawia): d16_najem_lena <- d16_maya_lena pytanie T2: Jest tu potwierdzenie najmu mieszkania na nazwisko
+MARTWY_WARUNEK (nikt nie ustawia): d21_metka <- d21_maya_lena_priya pytanie T2: Która walizka ma metkę z nazwiskiem?
+MARTWY_WARUNEK (nikt nie ustawia): maya_testy_2 <- d21_maya_lena_priya pytanie T3: Maya, powiedz jeszcze coś, zanim odejdziesz.
+MARTWY_WARUNEK (nikt nie ustawia): kopie_2 <- d23_iris_nora_victor pytanie T2: Iris, na stronie rejestru są nazwiska klientów. Sk
+MARTWY_WARUNEK (nikt nie ustawia): d24_umowa <- d24_vera pytanie T1: Na umowie jest pętla w literze K. Czyj to podpis?
+MARTWY_WARUNEK (nikt nie ustawia): d24_umowa <- d24_vera pytanie T3: Czy ktoś kazał Ci to powiedzieć?
+WARUNEK_ZA_WCZESNIE (producent w dniu 5 >= konsument 5): d5_victor:wykaz_paczke <- d5_gus wejscie_jesli
+WARUNEK_ZA_WCZESNIE (producent w dniu 6 >= konsument 6): d6_puszka_odcinek <- d6_ada pytanie T2: Na odcinku w puszce jest numer z bloczka Iris. Zna
+WARUNEK_ZA_WCZESNIE (producent w dniu 7 >= konsument 7): d7_kit_ulotki <- d7_evan pytanie T2: Ulotki z jej twarzą zamówiłeś o 22:15. Godzinę prz
+WARUNEK_ZA_WCZESNIE (producent w dniu 23 >= konsument 23): d23_iris_nora_victor:wydaj_nora <- d23_rosa wejscie_jesli
+WARUNEK_ZA_WCZESNIE (producent w dniu 23 >= konsument 23): d23_iris_nora_victor:wydaj_victor <- d23_rosa wejscie_jesli
+WARUNEK_ZA_WCZESNIE (producent w dniu 23 >= konsument 23): d23_iris_nora_victor:iris_prywatnie <- d23_rosa wejscie_jesli
+WARUNEK_ZA_WCZESNIE (producent w dniu 23 >= konsument 23): d23_iris_nora_victor:wez_500_iris <- d23_rosa wejscie_jesli
+Konsumenci: 110 martwych: 9 za wcześnie: 7
+ZAKONCZENIE_MARTWE_ODNIESIENIE: did(23,'victor') - brak takiej akcji w dniu 23; akcje tego dnia: d23_iris_nora_victor[wydaj_nora,wydaj_victor,iris_prywatnie,wez_500_iris] ; d23_rosa[wydaj,odmow,wez_20_rosa]
+ZAKONCZENIE_MARTWE_ODNIESIENIE: did(13,'odpis_za_zgode') - brak takiej akcji w dniu 13; akcje tego dnia: d13_elias[odpis_za_zgoda,wydaj_od_reki,zatrzymaj_koperte] ; d13_odile[wydaj,zapisz_mandat,wydaj_i_zniszcz_mandat]
+ZAKONCZENIE_MARTWE_ODNIESIENIE: did(23,'victor') - brak takiej akcji w dniu 23; akcje tego dnia: d23_iris_nora_victor[wydaj_nora,wydaj_victor,iris_prywatnie,wez_500_iris] ; d23_rosa[wydaj,odmow,wez_20_rosa]
+ZAKONCZENIE_MARTWE_ODNIESIENIE: did(4,'wydaj_cicho') - brak takiej akcji w dniu 4; akcje tego dnia: d4_iris[rejestr,koperta,odmow_zglos]
+BRAK_KLUCZA_LANG: money
+BRAK_KLUCZA_LANG: notes
+BRAK_KLUCZA_LANG: noteTxt
+BRAK_KLUCZA_LANG: tut
+BRAK_KLUCZA_LANG: up
+BRAK_KLUCZA_LANG: stocked
+BRAK_KLUCZA_LANG: gi
+BRAK_KLUCZA_LANG: inspected
+BRAK_KLUCZA_LANG: secrets
+BRAK_KLUCZA_LANG: flags
+BRAK_KLUCZA_LANG: miss
+BRAK_KLUCZA_LANG: c
+BRAK_KLUCZA_LANG: thefts
+BRAK_KLUCZA_LANG: log
+BRAK_KLUCZA_LANG: pending
+BRAK_KLUCZA_LANG: name
+BRAK_KLUCZA_LANG: shown
+PLACEHOLDER w tekście: {kopie}
+PLACEHOLDER w tekście: {min(4, kopie)}
+PLACEHOLDER w tekście: {kopie}
+PLACEHOLDER w tekście: {min(4, kopie)}
+Decyzji łącznie: 159

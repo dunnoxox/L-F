@@ -1,0 +1,120 @@
+#1 d1 d1_thomas T1 [uprzejme/mowi]
+  P: Jak wygląda ta rękawiczka?
+  O: Brązowa skóra, mały rozmiar. Przy kciuku zszyłem ją białą nitką, bo ciemnej nie miałem. Krzywo, ale trzyma.
+#2 d3 d3_maz_i_siostra T2 [niewygodne/klamie/maz]
+  P: Czy Maya miała powód, żeby odejść?
+  O: Żadnego. Mieliśmy spokojne małżeństwo. Oboje dużo pracowaliśmy, to wszystko.
+#3 d3 d3_dana T2 [rzeczowe/mowi]
+  P: Czym potwierdzisz, że to twój?
+  O: Na spodzie jest naklejka „Mama”, bo mama mi go dała. I wgniecenie przy prawym dzwonku, jak spadł z lodówki.
+#4 d4 d4_iris T3 [niewygodne/neutralna]
+  P: A jeśli paczka wyjdzie z wpisem w księdze?
+  O: To wyjdzie. Poprzednik nie wpisywał i wszystkim było wygodnie. Poczekam. Tylko lokatorzy czekać nie lubią.
+#5 d4 d4_iris T1 [rzeczowe/neutralna]
+  P: Gdzie dokładnie została?
+  O: W szóstce, ostatnim kursem, na półce nad siedzeniem. Zawsze tak kładę i zawsze pamiętam. Wczoraj nie.
+#6 d5 d5_victor T3 [rzeczowe/neutralna]
+  P: Odbiór wymaga podpisu. Podpiszesz?
+  O: Victor Crane. Dwa egzemplarze pokwitowania, jeden zostaje w księdze. Zawsze.
+#7 d5 d5_victor T1 [rzeczowe/neutralna]
+  P: Gdzie ją zostawiłeś?
+  O: W szóstce, o 4:10, na siedzeniu obok. Wysiadłem przy zajezdni bez niej. To mi się nie zdarza.
+#8 d5 d5_noah T1 [uprzejme/mowi]
+  P: Jak wygląda ten notes?
+  O: Czarny, na spirali, wgnieciony z lewej strony. Zawsze kładę go równo z krawędzią blatu.
+#9 d6 d6_ada T3 [rzeczowe/mowi]
+  P: Co ma być na kwicie?
+  O: Że Ada Vale, dziesięć lat, znalazła królika. Dużymi literami, bo pani w szkole czyta tylko duże.
+#10 d6 d6_ada T2 [rzeczowe/mowi]
+  P: Gdzie mieszkasz?
+  O: Na Cooper Street dziewięć, na drugim piętrze. Nad nami mieszka nowy, w jego pokoju jest zimno. Pani Iris prosiła, żeby nie mówić adresu. No, powiedziałam.
+#11 d7 d7_evan T2 [rzeczowe/mowi]
+  P: Po co ci ta linia?
+  O: Bo wtedy będę wiedział, gdzie ona wsiada. Stanę na pętli i poczekam. Chcę tylko porozmawiać.
+#12 d7 d7_evan T3 [niewygodne/klamie]
+  P: Czego Maya się boi?
+  O: Niczego. Ma wszystko, co trzeba. Dom, męża, spokój. Nie rozumiem pytania.
+#13 d7 d7_kit T3 [uprzejme/mowi]
+  P: Co się stanie, jak szef się dowie o słuchawkach?
+  O: Zdejmie mi dziesięć dolarów z wypłaty i da pogadankę. Pogadankę przeżyję, dziesięć dolarów mniej już trudniej.
+#14 d8 d8_bree T1 [uprzejme/mowi]
+  P: Jak wygląda ten aparat?
+  O: Srebrny, analogowy, z wgnieceniem w lewym rogu. Mój brat upuścił go na schodach. Teraz ma charakter.
+#15 d8 d8_bree T1 [uprzejme/mowi]
+  P: Jak wygląda ten aparat?
+  O: Srebrny, analogowy, z wgnieceniem w lewym rogu. Mój brat upuścił go na schodach. Teraz ma charakter.
+#16 d9 d9_stahl T1 [uprzejme/klamie]
+  P: Jak wygląda ten kapelusz?
+  O: Szary, filcowy, granatowa wstążka, rozmiar pięćdziesiąt osiem. Zgodnie z regulaminem podaję wszystko od razu.
+#17 d9 d9_iris T2 [uprzejme/neutralna/iris]
+  P: Czyje są te żetony?
+  O: Moich lokatorów. Nazwisk nie podam, to ich sprawa. Są ludzie, którzy chcą mieć święty spokój.
+#18 d10 d10_vera T3 [rzeczowe/mowi]
+  P: Co się stanie z rzeczami, jeśli Sam nie przyjdzie?
+  O: Pójdą do zbiorczego archiwum Urzędu i nikt ich potem nie znajdzie. Dlatego proszę, żeby ktoś przy tym był, jak Sam przyjdzie.
+#19 d10 d10_dario T1 [uprzejme/mowi]
+  P: Jak wygląda ten zeszyt?
+  O: Gruby, tłusta okładka, bo noszę go z kanapką. Gumka ledwo trzyma. Pachnie cebulą, uprzedzam.
+#20 d10 d10_vera T2 [rzeczowe/klamie]
+  P: Co jest w pudełku?
+  O: Pasek od zegarka i kartka z inwentarza. Nic wartościowego.
+#21 d11 d11_maya T1 [uprzejme/mowi]
+  P: Jak wygląda ten pokrowiec?
+  O: Czarny, twardy. Gumkę z boku zszyłam sama, a łatkę w środku niebieską nitką, bo czarna się skończyła. Sprawdź, to chwila.
+#22 d11 d11_maya T3 [uprzejme/mowi]
+  P: Czego od nas potrzebujesz?
+  O: Trzech rzeczy. Nikt nie wie, gdzie jestem. Jedno zdanie może iść do policjanta: „Żyje. Nie wróci. Nie szukać.” Reszta tylko za moim „tak”.
+#23 d11 d11_grace T2 [niewygodne/emocja wymaga:d11_kartka_iris]
+  P: Na kartce jest: „Iris, 400 $, żółta kopia u elektryczki”. Co to?
+  O: To moje czterysta dolarów i dowód, że je wpłaciłam. Kopię schowała elektryczka z naszej kamienicy, bo Iris nie lubi, jak lokatorzy mają papiery.
+#24 d11 d11_grace T2 [niewygodne/emocja wymaga:d11_kartka_iris]
+  P: Na kartce jest: „Iris, 400 $, żółta kopia u elektryczki”. Co to?
+  O: To moje czterysta dolarów i dowód, że je wpłaciłam. Kopię schowała elektryczka z naszej kamienicy, bo Iris nie lubi, jak lokatorzy mają papiery.
+#25 d12 d12_linh T2 [niewygodne/emocja wymaga:d12_pozytywka_0623]
+  P: Pod dnem jest bilet i kartonik z numerem 0623. Co to?
+  O: Proszę, nie pytaj. To jest to, co zostało z trzech lat. Jak ktoś się dowie, Milo i ja nie dojedziemy.
+#26 d12 d12_linh T3 [uprzejme/mowi]
+  P: Czego potrzebujesz najbardziej?
+  O: Żeby Milo zasnął w pociągu. I żeby nikt nie zapisał mojego nazwiska obok jego imienia.
+#27 d13 d13_elias T2 [uprzejme/mowi]
+  P: Z czego żyjesz?
+  O: Z emerytury, czterysta dziesięć dolarów miesięcznie. Nie narzekam, tylko liczę.
+#28 d13 d13_elias T1 [rzeczowe/mowi]
+  P: Gdzie i kiedy zniknęła?
+  O: W czwórce, tuż przed Bożym Narodzeniem, jak wracaliśmy od jej siostry. Potem żona zachorowała i okularów już nie założyła.
+#29 d13 d13_odile T2 [niewygodne/mowi]
+  P: Czy rodzina wie, że ją zgubiłaś?
+  O: Nikt. Córce powiedziałam, że mam przeziębienie i jem zupę. Zęby to rzecz prywatna, dziecko.
+#30 d13 d13_odile T1 [uprzejme/mowi]
+  P: Jak wygląda to pudełko?
+  O: Okrągłe, niebieskie, po duńskich herbatnikach. Wieczko zagięte, bo siadam na nim na przystanku. W środku serwetka w kwiatki.
+#31 d15 d15_sam T3 [niewygodne/neutralna/sam]
+  P: Czemu nie chcesz, żeby Victor ją widział?
+  O: Bo nie ufam drugiej kopii. Każda kartka, która idzie dalej, trafia do kogoś, kto ją czyta.
+#32 d15 d15_pruitt T1 [rzeczowe/mowi]
+  P: Czemu dopiero teraz je oddajesz?
+  O: Bo wcześniej były krótsze. Dziś jest ich jedenaście, a jedenastka to ładna liczba. Poza tym nikt nie pytał, a ja nie narzucam się.
+#33 d16 d16_dorian T1 [niewygodne/klamie]
+  P: Co jest nagrane na tej kasecie?
+  O: Piosenka. Jedna. Ile razy, tyle razy. Nie powiem którą, to osobiste.
+#34 d16 d16_maya_lena T3 [uprzejme/mowi/maya]
+  P: Co chcesz, żeby Lena zrobiła?
+  O: Jedną rzecz. Odwieźć walizkę do tramwaju w poniedziałek o 6:10. Tylko to, nic więcej.
+#35 d18 d18_hugo T2 [uprzejme/mowi]
+  P: Czy złowiłeś coś w życiu?
+  O: Raz leszcza. Wypuściłem, bo był podejrzanie podobny do teścia.
+#36 d19 d19_kofi T1 [uprzejme/mowi]
+  P: Jak wygląda ten powerbank?
+  O: Czerwony, prostokątny, z pęknięciem na rogu. Naklejka z trasą: Port, Rynek, Cooper Street. Dostałem od kolegi z hurtowni.
+#37 d20 d20_elias_sam T2 [rzeczowe/mowi/elias]
+  P: Elias, czemu nie odpuszczasz?
+  O: Bo dług bez nazwy jest gorszy od długu z nazwiskiem. Oddam, a pan Holt może to wyrzucić. Ale najpierw musi wziąć.
+#38 d23 d23_rosa T2 [rzeczowe/mowi]
+  P: Co zrobisz z pieniędzmi, jeśli je odzyskasz?
+  O: Zapłacę czynsz. A jak zostanie reszta, to kupię Adzie lalkę. Pytała o tę z różowym warkoczem. Nie powiem jej, że to z zaległych.
+#39 d24 d24_leo T2 [uprzejme/mowi]
+  P: Od jak dawna wozisz paczki w płótnie?
+  O: Od jedenastu lat, może dłużej. Zacząłem, bo Vera prosiła. Mówiła: kurs, godzina, nic więcej. Nie pytałem. Nie wolno mi było.
+#40 d25 d25_ksiega T1 [rzeczowe/mowi/elias]
+  P: Kto zapisuje imiona w tej księdze?
+  O: Dyżurny. Tylko on ma prawo. Ja pytam, żeby ktoś zapisał, że ktoś tu był. Bez imienia człowiek jest numerkiem, nawet jeśli stoi przy szybie.
