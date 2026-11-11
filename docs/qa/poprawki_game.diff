@@ -1,0 +1,110 @@
+--- e1/okienko_e1/game.js	2026-11-11 21:14:53.000000000 +0000
++++ fix/game.js	2026-11-11 22:23:10.122524015 +0000
+@@ -7,21 +7,21 @@
+ const GM={};G.forEach(g=>GM[g.id]=g);
+ const FILL=['legitymacja','paszport','notes','organizer','bilet','okulary_slonce','zapalniczka','grzebien','czapka_zimowa','beret','pasek','krawat','kalosz','pantofel','czapka_daszek','apaszka','torba_zakupy','saszetka','torba_narzedzia','torba_listonosza','kuferek','worek','plecak_dzieciecy','walizka_mala','radio','latarka','lornetka','dyktafon','powerbank','zegarek_reka','kasetowiec','lalka','klocki','hulajnoga','pilka','latawiec','medalik','pozytywka','album','harmonijka','futeral_gitara','skakanka','lyzwy','wedka','farby','szachy','kubek','puszka','pudelko_blaszane','skrzynka_narzedz','piornik','portfel_maly','etui_aparat','paczka_plotno','parasol','krolik','teczka','futeral','okulary','kapelusz','torebka','but','ksiazka','sluchawki','laska','aparat','zegarek','pudelko','portfel','walizka','szalik','klucze','rekawiczka_welna','termos','paczka','plecak','telefon'];
+ const LINES=['4','6','11'];
+-const q=new URLSearchParams(location.search);const SEED=+(q.get('seed')||1);
++const q=new URLSearchParams(location.search);const SEED=+(q.get('seed')||((Date.now()&0xffff)+1));
+ let ST=fresh();
+ function fresh(){return{day:1,gi:0,turn:0,secrets:{},inspected:false,pending:[],shown:[],log:[],money:0,up:{},storm:{},v:2}}
+ const effLine=g=>{const s=ST.storm[ST.day];return s?LINES[(LINES.indexOf(g.line)+s)%3]:g.line};
+ const SAVE='okienko_e1_save';
+-function save(){try{localStorage.setItem(SAVE,JSON.stringify(ST))}catch(e){}}
+-function load(){try{const s=JSON.parse(localStorage.getItem(SAVE));if(s&&s.v===2)return s}catch(e){}return null}
++function save(adv){try{localStorage.setItem(SAVE,JSON.stringify(adv?Object.assign({},ST,{day:ST.day+1,gi:0,inspected:false}):ST))}catch(e){}}
++function load(){try{const s=JSON.parse(localStorage.getItem(SAVE));if(s&&s.v===2){(s.pending||[]).forEach(p=>{p.k=p.k||(p.due+'_'+p.item)});s.shown=(s.shown||[]).filter(x=>typeof x==='string');return s}}catch(e){}return null}
+ /* PRNG: seed gry (determinizm), osobny od kosmetyki lampy */
+ function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+ const hash=s=>{let h=SEED*2654435761>>>0;for(const c of s)h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0};
+ const lampR=rng(Date.now()&0xffff);
+-function fit(){const s=Math.min(innerWidth/1536,innerHeight/1024);stage.style.transform=`scale(${s}) translate(-50%,-50%)`;stage.dataset.s=s}
++function fit(){const de=document.documentElement,W=de.clientWidth||innerWidth,H=de.clientHeight||innerHeight,s=Math.min(W/1536,H/1024);stage.style.transform=`scale(${s}) translate(-50%,-50%)`;stage.dataset.s=s;const r=document.getElementById('rot');if(r)r.style.display=H>W*1.05?'flex':'none'}
+ addEventListener('resize',fit);fit();
+ const h=(tag,cls,html)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e};
+-const btn=(txt,cls,fn)=>{const b=h('button','btn'+(cls?' '+cls:''),txt);if(fn)b.onclick=()=>{A.tick();fn()};return b};
++const btn=(txt,cls,fn)=>{const b=h('button','btn'+(cls?' '+cls:''),txt);if(fn)b.onclick=()=>{if(b._busy)return;b._busy=1;setTimeout(()=>b._busy=0,700);A.tick();fn()};return b};
+ function scene(img,build){fade.classList.add('on');setTimeout(()=>{bg.style.backgroundImage=img?`url(assets/bg/${img}.jpg)`:'none';layer.innerHTML='';build();gear();const f=layer.querySelector('button.btn,button.q');if(f)f.focus({preventScroll:true});fade.classList.remove('on')},450)}
+ /* ustawienia */
+ let reduce=localStorage.getItem('okienko_reduce')==='1';
+@@ -29,14 +29,14 @@
+ function settings(){if(document.getElementById('set'))return;const o=h('div');o.id='set';const p=h('div','panel');p.append(h('div','lab',T.settings));
+  [['master','vol_master'],['music','vol_music'],['amb','vol_amb'],['sfx','vol_sfx'],['voice','vol_voice']].forEach(([k,l])=>{const r=h('label','row',T[l]);const i=document.createElement('input');i.type='range';i.min=0;i.max=1;i.step=.05;i.value=A.vol[k];i.oninput=()=>A.setVol(k,+i.value);r.append(i);p.append(r)});
+  const r=h('label','row',T.reduce);const c=document.createElement('input');c.type='checkbox';c.checked=reduce;c.onchange=()=>{reduce=c.checked;localStorage.setItem('okienko_reduce',reduce?'1':'0')};r.append(c);p.append(r);
+- p.append(btn(T.close,'',()=>o.remove()));o.append(p);stage.append(o)}
++ const prev=document.activeElement;const cl=()=>{o.remove();if(prev&&prev.focus&&document.contains(prev))prev.focus()};p.append(btn(T.close,'',cl));o.append(p);o.onkeydown=e=>{if(e.key==='Tab'){const f=[...o.querySelectorAll('input,button')];const i=f.indexOf(document.activeElement);e.preventDefault();f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus()}};stage.append(o);o.querySelector('input').focus()}
+ addEventListener('keydown',e=>{if(e.key==='Escape'){const s=document.getElementById('set');s?s.remove():settings()}});
+ /* lampa: jedno zdarzenie = obraz + dźwięk */
+ function lampLoop(){setTimeout(()=>{if(A.on()&&!ST.up.lampa)A.lampBlink(()=>{dim.className=reduce?'soft':'blink';setTimeout(()=>dim.className='',reduce?500:260)});lampLoop()},28000+lampR()*45000)}
+ /* elementy */
+ function itemEl(g,w){if(g.sprite){const im=new Image();im.src=`assets/items/${g.sprite}.png`;im.draggable=false;im.style.width=w+'px';im.alt=g.itemName;return im}
+  const d=h('div','ph-item',g.itemName);d.style.width=w+'px';d.style.height=(w*.7)+'px';return d}
+-function setFace(g,m){const e=document.getElementById('guest');if(!e)return;e.dataset.mina=m;if(g.face){e.style.backgroundImage=`url(assets/ppl/${g.face}_${m}.jpg)`;e.textContent=''}else{e.style.backgroundImage='none';e.className=e.className.replace(/ph\b/,'')+' ph';e.innerHTML=`<div class="phname">${g.postac}</div><div class="phmina">${m}</div>`}}
++function setFace(g,m){const e=document.getElementById('guest');if(!e)return;e.dataset.mina=m;if(g.face){e.style.backgroundImage=`url(assets/ppl/${g.face}_${m}.jpg)`;e.textContent=''}else{e.style.backgroundImage='none';e.className=e.className.replace(/ph\b/,'')+' ph';e.innerHTML=`<div class="phname">${g.postac}</div>`}}
+ function addWindow(g){const e=h('div');e.id='guest';const gl=h('div');gl.id='glass';layer.append(e,gl);return e}
+ function winState(s){A.setWindow(s)}
+ /* przebieg */
+@@ -73,19 +73,19 @@
+  const toast=h('div','toast','');layer.append(toast);const msg=m=>{toast.textContent=m;toast.classList.add('on');setTimeout(()=>toast.classList.remove('on'),1000)};
+  const tabs=h('div','tabs');const field=h('div','field');layer.append(tabs,field);
+  const show=ln=>{line=ln;field.innerHTML='';[...tabs.children].forEach(b=>b.classList.toggle('on',b.dataset.l===ln));const r=rng(hash(g.id+'p'+ln));
+-  const set=FILL.slice().sort(()=>r()-.5).slice(0,ST.up.regal?7:12).map(n=>({sprite:n,itemName:n}));if(ln===effLine(g))set.unshift(Object.assign({target:1},g));
++  const set=FILL.filter(n=>n!==g.sprite).sort(()=>r()-.5).slice(0,ST.up.regal?7:12).map(n=>({sprite:n,itemName:n}));if(ln===effLine(g))set.unshift(Object.assign({target:1},g));
+   set.forEach((it,i)=>{const el=itemEl(it,it.target?140:115+r()*60);el.className=(el.className||'')+' pit'+(it.target?' target':'');if(it.target)el.dataset.target=1;
+    el.style.left=(it.target?200+r()*500:60+r()*760)+'px';el.style.top=(it.target?250+r()*180:80+r()*430)+'px';el.style.transform=`rotate(${(r()*70-35)|0}deg)`;el.style.zIndex=i+1;
+    let sx,sy,ox,oy,mv;el.onpointerdown=e=>{el.setPointerCapture(e.pointerId);sx=e.clientX;sy=e.clientY;ox=parseFloat(el.style.left);oy=parseFloat(el.style.top);mv=0;el.style.zIndex=100+(pile.z=(pile.z||0)+1);A.sweep()};
+    el.onpointermove=e=>{if(sx==null)return;const s=+stage.dataset.s,dx=(e.clientX-sx)/s,dy=(e.clientY-sy)/s;mv=Math.max(mv,Math.hypot(dx,dy));el.style.left=ox+dx+'px';el.style.top=oy+dy+'px'};
+-   el.onpointerup=()=>{const m=mv;sx=null;if(m<8){if(it.target){A.tick();decide(g)}else msg(T.wrong)}};field.append(el)})};
++   el.onpointerup=()=>{const m=mv;sx=null;if(m<8){if(it.target){A.tick();decide(g)}else msg(T.wrong)}};el.tabIndex=0;el.setAttribute('role','button');el.setAttribute('aria-label',it.itemName||'rzecz');el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();if(it.target){A.tick();decide(g)}else msg(T.wrong)}};field.append(el)})};
+  LINES.forEach(ln=>{const b=h('button','tab',T.line+' '+ln);b.dataset.l=ln;b.onclick=()=>{A.tick();A.sfx('slide_light');show(ln)};tabs.append(b)});show(LINES[0]);if(g.line!==LINES[0]){}
+  })}
+ function decide(g){A.music('tension');scene('T1',()=>{winState('open');const e=addWindow(g);setFace(g,'neutralna');e.classList.add('in');talkUI();document.getElementById('turns').remove();const s=document.getElementById('say');s.innerHTML='';s.style.width='600px';s.append(h('span','lab',''),document.createTextNode(T.decide));
+  const it=itemEl(g,190);it.id='onDesk';it.style.left='700px';it.style.top='690px';layer.append(it);const acts=g.decyzje.map(d=>d.akcja);let done=false;
+  const zones=h('div','zones');layer.append(zones);
+  const finish=a=>{if(done)return;done=true;A.sting('decyzja');A.music('day');A.stamp();A.sfx({wydaj:'handover',odmow:'refuse',zatrzymaj:'drawer_small',zadzwon:'phone_old_ring'}[a]);const d=g.decyzje.find(x=>x.akcja===a);if(a==='wydaj')it.remove();else it.classList.add('away');
+-  ST.log.push({id:g.id,a,day:ST.day});ST.pending.push({due:ST.day+(d.echo.za_dni||1),item:g.itemName,a,echo:d.echo.tekst,forma:d.echo.forma});ST.money+=40;
++  ST.log.push({id:g.id,a,day:ST.day});ST.pending.push({k:ST.day+'_'+g.id,due:ST.day+(d.echo.za_dni||1),item:g.itemName,a,echo:d.echo.tekst,forma:d.echo.forma});ST.money+=40;
+   zones.remove();say(g,d.reakcja,'neutralna');const sum=h('div','sum');sum.append(h('div',null,'+ '+d.zysk),h('div','minus','− '+d.strata));layer.append(sum);const qs=document.getElementById('qs');qs.innerHTML='';
+   qs.append(btn(T.next,'',()=>{document.getElementById('guest').classList.remove('in');A.stamp;ST.gi++;setTimeout(()=>ST.gi<DAYS[ST.day].length?windowScene():evening(),500)}));qs.firstChild.focus()};
+  const LB={wydaj:T.wydaj,odmow:T.odmow,zatrzymaj:T.zatrzymaj,zadzwon:T.zadzwon};
+@@ -97,17 +97,17 @@
+   const hit=[...zones.children].find(z=>{const b=z.getBoundingClientRect();return cx>b.left&&cx<b.right&&cy>b.top&&cy<b.bottom});
+   const gr=document.getElementById('glass').getBoundingClientRect();
+   if(hit)finish(hit.dataset.a);else if(acts.includes('wydaj')&&cx>gr.left&&cx<gr.right&&cy>gr.top&&cy<gr.bottom)finish('wydaj');else{it.style.left='700px';it.style.top='690px'}}})}
+-function evening(){A.sfx('newspaper');const due=ST.pending.filter(p=>p.due<=ST.day&&!ST.shown.includes(p));scene('T5',()=>{winState('closed');const t=h('div','top');t.append(h('div','lab',T.evening+' '+T.day+' '+ST.day));layer.append(t);const w=h('div','letters');
+- due.forEach(p=>{ST.shown.push(p);const l=h('div','letter');l.append(h('span','lab',p.item+' · '+p.a),document.createTextNode(p.echo));w.append(l)});if(!due.length)w.append(h('div','letter',T.nomail));layer.append(w);
+- const f=h('div','foot');f.append(h('div',null,T.dollar+ST.money));f.append(btn(ST.day%5===0?T.week_h:T.next_day,'',()=>{A.sfx('door_lock_day_end');ST.day%5===0?saturday():(ST.day++,day())}));layer.append(f)})}
++function evening(){A.sfx('newspaper');const due=ST.pending.filter(p=>p.due<=ST.day&&!ST.shown.includes(p.k));scene('T5',()=>{winState('closed');const t=h('div','top');t.append(h('div','lab',T.evening+' '+T.day+' '+ST.day));layer.append(t);const w=h('div','letters');
++ due.forEach(p=>{ST.shown.push(p.k);const l=h('div','letter');l.append(h('span','lab',p.item+' · '+({wydaj:'wydane',odmow:'odmówione',zatrzymaj:'zatrzymane',zadzwon:'zgłoszone'}[p.a]||p.a)),document.createTextNode(p.echo));w.append(l)});if(!due.length)w.append(h('div','letter',T.nomail));layer.append(w);
++ const f=h('div','foot');f.append(h('div',null,T.balance+' '+T.dollar+ST.money));f.append(btn(ST.day%5===0?T.week_h:T.next_day,'',()=>{A.sfx('door_lock_day_end');ST.day%5===0?saturday():(ST.day++,day())}));layer.append(f)})}
+ function saturday(){A.music('sobota');A.sting('dzien_koniec');const rent=150;ST.money-=rent;scene('T5',()=>{winState('closed');const c=h('div','center');c.append(h('h1',null,T.week_h),h('div','sub',`${T.rent}: ${T.dollar}${rent}. ${T.balance}: ${T.dollar}${ST.money}.`));
+  if(ST.day===5)c.append(h('div','sub',T.drawer));
+  const w=h('div','ups');w.append(h('div','lab',T.up_h));
+- Object.keys(UP).forEach(k=>{const own=ST.up[k];const b=btn(T['up_'+k]+(own?' ('+T.owned+')':' · '+T.dollar+UP[k]),'ghost',()=>{if(own||ST.money<UP[k])return;ST.money-=UP[k];ST.up[k]=1;if(k==='drzwi')A.setDoor(true);b.textContent=T['up_'+k]+' ('+T.owned+')';[...w.querySelectorAll('button')].forEach(x=>x.disabled=true);save()});b.disabled=!!own||ST.money<UP[k];w.append(b)});
++ Object.keys(UP).forEach(k=>{const own=ST.up[k];const b=btn(T['up_'+k]+(own?' ('+T.owned+')':' · '+T.dollar+UP[k]),'ghost',()=>{if(own||ST.money<UP[k])return;ST.money-=UP[k];ST.up[k]=1;if(k==='drzwi')A.setDoor(true);save(1);b.textContent=T['up_'+k]+' ('+T.owned+')';[...w.querySelectorAll('button')].forEach(x=>x.disabled=true)});b.disabled=!!own||ST.money<UP[k];w.append(b)});
+  w.append(btn(T.up_none,'ghost',()=>{}));c.append(w);
+  c.append(btn(ST.day>=LASTDAY?T.end:T.week2,'',()=>{ST.day++;ST.day>LASTDAY?week():day()}));layer.append(c)})}
+-function week(){A.sting('koniec');scene('T5',()=>{const c=h('div','center');c.append(h('h1',null,T.week_h),h('div','sub',T.end),h('div','sub',`${T.balance}: ${T.dollar}${ST.money}`));const left=ST.pending.filter(p=>!ST.shown.includes(p));
+- if(left.length){const w=h('div','letters');w.style.cssText='position:relative;padding:20px;inset:auto';left.slice(0,3).forEach(p=>{const l=h('div','letter');l.append(h('span','lab',p.item+' · '+p.a),document.createTextNode(p.echo));w.append(l)});c.append(w)}
++function week(){A.sting('koniec');scene('T5',()=>{const c=h('div','center');c.append(h('h1',null,T.week_h),h('div','sub',T.end),h('div','sub',`${T.balance}: ${T.dollar}${ST.money}`));const left=ST.pending.filter(p=>!ST.shown.includes(p.k));
++ if(left.length){const w=h('div','letters');w.style.cssText='position:relative;padding:20px;inset:auto';left.slice(0,3).forEach(p=>{const l=h('div','letter');l.append(h('span','lab',p.item+' · '+({wydaj:'wydane',odmow:'odmówione',zatrzymaj:'zatrzymane',zadzwon:'zgłoszone'}[p.a]||p.a)),document.createTextNode(p.echo));w.append(l)});c.append(w)}
+  c.append(btn(T.again,'',()=>{localStorage.removeItem(SAVE);title()}));layer.append(c)})}
+ window.__S=ST;window.__G=()=>ST;title();
+ })();
+--- e1/okienko_e1/game.css	2026-11-11 21:04:35.000000000 +0000
++++ fix/game.css	2026-11-11 21:46:07.927080261 +0000
+@@ -73,3 +73,6 @@
+ #onDesk{position:absolute}.crate{top:190px;min-height:520px;max-height:640px;overflow:hidden}.zguba{display:flex;flex-direction:column;align-items:center;gap:8px}.crate .btn{font-size:17px;padding:10px 16px}
+ .pic.inside{width:auto;height:100%;aspect-ratio:3/2;background-size:cover}.inspect .pic.inside{height:1024px}
+ .ups{display:flex;flex-direction:column;gap:14px;align-items:center;max-width:900px}.ups .lab{color:var(--sod)}.ups .btn:disabled{opacity:.4;cursor:default}
++
++.pit:focus-visible{outline:4px solid var(--sod);outline-offset:4px}
++#rot{display:none;position:fixed;inset:0;z-index:99;background:#000;color:#efe3c8;align-items:center;justify-content:center;text-align:center;font:600 22px/1.4 Georgia,serif;padding:30px}
+--- e1/okienko_e1/index.html	2026-11-11 20:37:50.000000000 +0000
++++ fix/index.html	2026-11-11 21:46:07.927234983 +0000
+@@ -2,4 +2,4 @@
+ <html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Okienko: tydzień 1</title><link rel="stylesheet" href="game.css"></head>
+ <body><div id="stage"><div id="bg"></div><div id="layer"></div><div id="dim"></div><div id="fade"></div></div>
+-<script src="data.js"></script><script src="audio.js"></script><script src="game.js"></script></body></html>
++<div id="rot">Obróć telefon poziomo.<br>Okienko gra się na szerokim ekranie.</div><script src="data.js"></script><script src="audio.js"></script><script src="game.js"></script></body></html>
