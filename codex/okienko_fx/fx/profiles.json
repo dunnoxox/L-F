@@ -1,0 +1,352 @@
+{
+  "wdowiec": {
+    "habit": "Wygładza mankiet rękawiczki",
+    "weight": "limp",
+    "breathMs": 4900,
+    "sway": 2.6,
+    "duration": 720,
+    "tic": [
+      -3,
+      2,
+      -1
+    ],
+    "broken": null,
+    "intervalMs": [
+      3400,
+      6800
+    ]
+  },
+  "chlopak": {
+    "habit": "Przerzuca ciężar z nogi na nogę",
+    "weight": "light",
+    "breathMs": 4100,
+    "sway": 3,
+    "duration": 430,
+    "tic": [
+      4,
+      -3,
+      1
+    ],
+    "broken": [
+      -2,
+      1,
+      0
+    ],
+    "intervalMs": [
+      3500,
+      6970
+    ]
+  },
+  "maya": {
+    "habit": "Zastyga, czekając na powtórzenie warunku",
+    "weight": "light",
+    "breathMs": 4850,
+    "sway": 1.2,
+    "duration": 760,
+    "tic": [
+      0,
+      -3,
+      0
+    ],
+    "broken": null,
+    "intervalMs": [
+      3600,
+      7140
+    ]
+  },
+  "evan": {
+    "habit": "Wygładza mankiet, pod presją powtarza gest",
+    "weight": "heavy",
+    "breathMs": 4400,
+    "sway": 1.8,
+    "duration": 590,
+    "tic": [
+      -2,
+      3,
+      1
+    ],
+    "broken": [
+      -4,
+      3,
+      -2
+    ],
+    "intervalMs": [
+      3700,
+      7310
+    ]
+  },
+  "lena": {
+    "habit": "Rusza ku szybie i urywa gest w pół słowa",
+    "weight": "light",
+    "breathMs": 4150,
+    "sway": 2.8,
+    "duration": 380,
+    "tic": [
+      2,
+      4,
+      0
+    ],
+    "broken": [
+      0,
+      3,
+      -1
+    ],
+    "intervalMs": [
+      3800,
+      7480
+    ]
+  },
+  "noah": {
+    "habit": "Odkłada notes dokładnie na to samo miejsce",
+    "weight": "heavy",
+    "breathMs": 4800,
+    "sway": 1.4,
+    "duration": 650,
+    "tic": [
+      2,
+      5,
+      2
+    ],
+    "broken": [
+      -3,
+      2,
+      0
+    ],
+    "intervalMs": [
+      3900,
+      7650
+    ]
+  },
+  "iris": {
+    "habit": "Przyciska palce rękawiczek",
+    "weight": "heavy",
+    "breathMs": 4950,
+    "sway": 0.8,
+    "duration": 700,
+    "tic": [
+      -1,
+      1,
+      0
+    ],
+    "broken": null,
+    "intervalMs": [
+      4000,
+      7820
+    ]
+  },
+  "ada": {
+    "habit": "Kołysze się na piętach",
+    "weight": "light",
+    "breathMs": 4050,
+    "sway": 3,
+    "duration": 460,
+    "tic": [
+      -4,
+      5,
+      -3
+    ],
+    "broken": null,
+    "intervalMs": [
+      4100,
+      7990
+    ]
+  },
+  "leo": {
+    "habit": "Sprawdza metalowe zapięcie torby",
+    "weight": "heavy",
+    "breathMs": 4700,
+    "sway": 2,
+    "duration": 600,
+    "tic": [
+      3,
+      1,
+      -2
+    ],
+    "broken": [
+      0,
+      -3,
+      2
+    ],
+    "intervalMs": [
+      4200,
+      8160
+    ]
+  },
+  "victor": {
+    "habit": "Usztywnia się przed pytaniem o podpis",
+    "weight": "heavy",
+    "breathMs": 4600,
+    "sway": 0.9,
+    "duration": 530,
+    "tic": [
+      1,
+      1,
+      0
+    ],
+    "broken": [
+      -2,
+      3,
+      0
+    ],
+    "intervalMs": [
+      4300,
+      8330
+    ]
+  },
+  "elias": {
+    "habit": "Składa numerek, po pytaniu czeka bez ruchu",
+    "weight": "limp",
+    "breathMs": 4990,
+    "sway": 1.5,
+    "duration": 880,
+    "tic": [
+      2,
+      1,
+      0
+    ],
+    "broken": null,
+    "intervalMs": [
+      4400,
+      8500
+    ]
+  },
+  "sam": {
+    "habit": "Zerka na ślad po zegarku",
+    "weight": "heavy",
+    "breathMs": 4600,
+    "sway": 2,
+    "duration": 630,
+    "tic": [
+      -3,
+      0,
+      1
+    ],
+    "broken": null,
+    "intervalMs": [
+      4500,
+      8670
+    ]
+  },
+  "nora": {
+    "habit": "Odhacza kolejne pozycje gestem",
+    "weight": "light",
+    "breathMs": 4270,
+    "sway": 1.7,
+    "duration": 500,
+    "tic": [
+      1,
+      4,
+      2
+    ],
+    "broken": [
+      0,
+      2,
+      -3
+    ],
+    "intervalMs": [
+      4600,
+      8840
+    ]
+  },
+  "vera": {
+    "habit": "Osadza ciężar, zanim sięgnie do kluczy",
+    "weight": "heavy",
+    "breathMs": 4980,
+    "sway": 2.5,
+    "duration": 800,
+    "tic": [
+      4,
+      2,
+      -1
+    ],
+    "broken": [
+      1,
+      0,
+      0
+    ],
+    "intervalMs": [
+      4700,
+      9010
+    ]
+  },
+  "maz": {
+    "habit": "Wygładza mankiet, pod presją powtarza gest",
+    "weight": "heavy",
+    "breathMs": 4400,
+    "sway": 1.8,
+    "duration": 590,
+    "tic": [
+      -2,
+      3,
+      1
+    ],
+    "broken": [
+      -4,
+      3,
+      -2
+    ],
+    "intervalMs": [
+      3700,
+      7310
+    ]
+  },
+  "siostra": {
+    "habit": "Rusza ku szybie i urywa gest w pół słowa",
+    "weight": "light",
+    "breathMs": 4150,
+    "sway": 2.8,
+    "duration": 380,
+    "tic": [
+      2,
+      4,
+      0
+    ],
+    "broken": [
+      0,
+      3,
+      -1
+    ],
+    "intervalMs": [
+      3800,
+      7480
+    ]
+  },
+  "dama": {
+    "habit": "Przyciska palce rękawiczek",
+    "weight": "heavy",
+    "breathMs": 4950,
+    "sway": 0.8,
+    "duration": 700,
+    "tic": [
+      -1,
+      1,
+      0
+    ],
+    "broken": null,
+    "intervalMs": [
+      4000,
+      7820
+    ]
+  },
+  "inspektor": {
+    "habit": "Usztywnia się przed pytaniem o podpis",
+    "weight": "heavy",
+    "breathMs": 4600,
+    "sway": 0.9,
+    "duration": 530,
+    "tic": [
+      1,
+      1,
+      0
+    ],
+    "broken": [
+      -2,
+      3,
+      0
+    ],
+    "intervalMs": [
+      4300,
+      8330
+    ]
+  }
+}
