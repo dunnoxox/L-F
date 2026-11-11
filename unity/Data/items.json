@@ -1,0 +1,484 @@
+{
+  "items": [
+    {
+      "id": "legitymacja",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "paszport",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "notes",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "organizer",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "bilet",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "okulary_slonce",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "zapalniczka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "grzebien",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "czapka_zimowa",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "beret",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "pasek",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "krawat",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "kalosz",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "pantofel",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "czapka_daszek",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "apaszka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "torba_zakupy",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "saszetka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "torba_narzedzia",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "torba_listonosza",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "kuferek",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "worek",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "plecak_dzieciecy",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "walizka_mala",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "radio",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "latarka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "lornetka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "dyktafon",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "powerbank",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "zegarek_reka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "kasetowiec",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "lalka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "klocki",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "hulajnoga",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "pilka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "latawiec",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "medalik",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "pozytywka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "album",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "harmonijka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "futeral_gitara",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "skakanka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "lyzwy",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "wedka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "farby",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "szachy",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "kubek",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "puszka",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "pudelko_blaszane",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "skrzynka_narzedz",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "piornik",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "portfel_maly",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "etui_aparat",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "paczka_plotno",
+      "width": 0,
+      "height": 0,
+      "isFiller": true
+    },
+    {
+      "id": "parasol",
+      "width": 254,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "krolik",
+      "width": 220,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "teczka",
+      "width": 218,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "futeral",
+      "width": 300,
+      "height": 298,
+      "isFiller": true
+    },
+    {
+      "id": "okulary",
+      "width": 300,
+      "height": 267,
+      "isFiller": true
+    },
+    {
+      "id": "kapelusz",
+      "width": 300,
+      "height": 238,
+      "isFiller": true
+    },
+    {
+      "id": "torebka",
+      "width": 263,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "but",
+      "width": 300,
+      "height": 272,
+      "isFiller": true
+    },
+    {
+      "id": "ksiazka",
+      "width": 251,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "sluchawki",
+      "width": 254,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "laska",
+      "width": 237,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "aparat",
+      "width": 300,
+      "height": 206,
+      "isFiller": true
+    },
+    {
+      "id": "zegarek",
+      "width": 215,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "pudelko",
+      "width": 300,
+      "height": 227,
+      "isFiller": true
+    },
+    {
+      "id": "portfel",
+      "width": 300,
+      "height": 284,
+      "isFiller": true
+    },
+    {
+      "id": "walizka",
+      "width": 300,
+      "height": 270,
+      "isFiller": true
+    },
+    {
+      "id": "szalik",
+      "width": 243,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "klucze",
+      "width": 210,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "rekawiczka_welna",
+      "width": 196,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "termos",
+      "width": 146,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "paczka",
+      "width": 287,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "plecak",
+      "width": 266,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "telefon",
+      "width": 174,
+      "height": 300,
+      "isFiller": true
+    },
+    {
+      "id": "rekawiczka_skora",
+      "width": 207,
+      "height": 300,
+      "isFiller": false
+    },
+    {
+      "id": "koperta",
+      "width": 0,
+      "height": 0,
+      "isFiller": false
+    },
+    {
+      "id": "budzik",
+      "width": 0,
+      "height": 0,
+      "isFiller": false
+    }
+  ]
+}

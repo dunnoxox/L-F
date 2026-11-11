@@ -1,0 +1,1740 @@
+{
+  "guests": [
+    {
+      "id": "d1_wdowiec",
+      "day": 1,
+      "name": "Wdowiec po rękawiczkę żony",
+      "voice": "Zaczyna od konkretu, po czym ścisza głos i dopowiada drobiazg, jakby dopiero teraz uznał go za ważny.",
+      "itemDescription": "Lewa skórzana rękawiczka z wywiniętym mankietem",
+      "itemName": "rękawiczka",
+      "itemSprite": "rekawiczka_skora",
+      "face": "wdowiec",
+      "line": 4,
+      "opening": "Po lewą, skórzaną. Żona nosiła ją nawet w domu, kiedy stygła herbata.",
+      "inside": {
+        "image": "W1",
+        "x": 0.2,
+        "y": 0.72
+      },
+      "secrets": [
+        {
+          "id": "d1_prawa_na_wydaniu",
+          "whatYouSee": "W podszewce tkwi złożony kwit z tego biura. Poprzedni pracownik wydał wdowcowi prawą rękawiczkę z tej samej pary. Numer kwitu wypada między dwoma wpisami rozdzielonymi wyrwaną stroną.",
+          "whatItMeans": "Mężczyzna już odbierał tu rzecz żony. Kwit poświadcza wydanie, którego brakuje w księdze."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Może pan opisać rękawiczkę?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Ciemna skóra, jasna nitka przy kciuku. Za mocno ją ściągnąłem.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Która linia?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Czwórka, od końcowej. Siadała przodem, nawet na dwa przystanki.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Żona nie może odebrać sama?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Od lutego odbieram za nią. Przychodzą jeszcze rachunki.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Jak mam wpisać właścicielkę?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Ellen Ward. Z dwoma l, jeśli pan wpisuje.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Ma pan coś na potwierdzenie?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Mam prawą w kieszeni. Proszę położyć obie kciukami do siebie.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Był pan już u tego okienka?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Pierwszy raz. Chyba bym pamiętał tę szybę.",
+              "mood": "klamie"
+            },
+            {
+              "text": "Kto panu wydał prawą rękawiczkę?",
+              "tone": "niewygodne",
+              "requires": "d1_prawa_na_wydaniu",
+              "answer": "Ten przed panem, w ostatnią noc. Ma pan mój kwit, więc proszę go przypiąć do księgi i wpisać, że potwierdzam odbiór.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Zapakować ją panu?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Wystarczy podać. Prawą też noszę luzem.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Podpisze pan odbiór swoim nazwiskiem?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Thomas Ward. Podpisy mamy podobne, ale jej W było szersze.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Kto jeszcze może się po nią zgłosić?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Jej córka, gdyby wiedziała. Prawą oddałem jej na pogrzebie, a wczoraj wziąłem z powrotem.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Jedną włożę w drugą. Tak się nie rozchodzą.",
+          "gain": "Zamykasz zgłoszenie z podpisem człowieka, który rozpoznał naprawę.",
+          "loss": "Córka Ellen traci szansę odebrania lewej rękawiczki z biura.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Córka przyszła po swoją prawą i pokazałem jej obie. Prawą zabrała, a lewą zgodziła się zostawić u mnie do niedzieli."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Rozumiem. Proszę w takim razie nie rozprostowywać palców.",
+          "gain": "Zachowujesz rzecz do czasu, aż rodzina uzgodni odbiór.",
+          "loss": "Wdowiec odchodzi bez rękawiczki mimo trafnego opisu, a zgłoszenie zostaje otwarte.",
+          "echoAfterDays": 2,
+          "echoForm": "gosc",
+          "echoText": "Jestem córką Ellen i mam prawą. Lewą proszę jeszcze potrzymać, ojciec i ja przyjdziemy razem."
+        }
+      ]
+    },
+    {
+      "id": "d1_praczka",
+      "day": 1,
+      "name": "Pracownica pralni po kopertę z wypłatą",
+      "voice": "Podaje szczegóły jak pozycje na rachunku. Kiedy się denerwuje, wraca do ostatniej liczby.",
+      "itemDescription": "Papierowa koperta z wypłatą",
+      "itemName": "koperta",
+      "itemSprite": "koperta",
+      "face": "",
+      "line": 11,
+      "opening": "Brązowa koperta, jedna zszywka, osiemdziesiąt sześć dolarów. Została pod siedzeniem.",
+      "inside": {
+        "image": "W20",
+        "x": 0.51,
+        "y": 0.58
+      },
+      "secrets": [
+        {
+          "id": "d1_wyplata_iris",
+          "whatYouSee": "W kopercie jest 86 dolarów i odcinek wypłaty na Iris Bell. Na odwrocie Iris napisała, żeby całość oddać Rosie za dwie nocne zmiany.",
+          "whatItMeans": "Koperta należy do Iris, lecz Rosa ma dostać pieniądze. Koperta sama jest dowodem rozliczenia między nimi."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Pamięta pani jeszcze jakiś szczegół?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Zszywka w połowie weszła. Zahaczyła mi o rękaw.",
+              "mood": "mowi"
+            },
+            {
+              "text": "O której pani wysiadła?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Dziesiąta dwanaście. O dziesiątej piętnaście już się wracałam.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Skąd pani zna kwotę?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Dwie noce po czterdzieści trzy. Umiem to bez odcinka.",
+              "mood": "mowi"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Poda pani swoje nazwisko?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Rosa Vale. Vale, przez V.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Gdzie wystawiono odcinek?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "W pralni pod estakadą. Na górze będzie tłusta pieczątka.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Koperta jest na pani nazwisko?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Na kopercie nic nie ma. Jedna zszywka, mówiłam.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czemu na odcinku jest Iris Bell?",
+              "tone": "niewygodne",
+              "requires": "d1_wyplata_iris",
+              "answer": "Bo grafik był na nią. Proszę mi dać drugą rubrykę, podpiszę, że biorę pieniądze, a odcinek może tu zostać.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Ma pani jak wrócić?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Mam bilet na jeden przejazd. Od jutra znów chodzę pieszo.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Podpisze pani kwotę przy odbiorze?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Po przeliczeniu. Osiemdziesiąt sześć to osiemdziesiąt sześć.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Iris przyjdzie, jeśli zatrzymam kopertę?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Po kopertę? Przyjdzie, jak ją odliczą od następnej wypłaty.",
+              "mood": "mowi"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Osiemdziesiąt sześć. Proszę obrócić kwit, podpiszę tutaj.",
+          "gain": "Rosa dostaje zapłatę za dwie zmiany, a Ty masz pokwitowanie gotówki.",
+          "loss": "W rejestrze wypłata trafia do innej osoby niż ta, którą wskazuje odcinek.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Pokazałam Iris kwit i wykreśliła mi obie noce z zeszytu. Za trzecią kierownik wpisał już mnie."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Dobrze, wyślę Iris. Tylko ona liczy przystanki jako godziny.",
+          "gain": "Zachowujesz gotówkę dla osoby wskazanej na odcinku wypłaty.",
+          "loss": "Rosa czeka dłużej na zarobione pieniądze i ponosi koszt odbioru.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Iris oddała mi osiemdziesiąt dwa. Cztery policzyła za tramwaj w obie strony."
+        }
+      ]
+    },
+    {
+      "id": "d2_chlopak",
+      "day": 2,
+      "name": "Chłopak po plecak z pierścionkiem",
+      "voice": "Wyrzuca pierwszą odpowiedź za szybko i zaraz ją poprawia. Gdy pada imię June, zostawia zdanie w spokoju.",
+      "itemDescription": "Plecak z pękniętą klamrą i pudełkiem w kieszeni przy plecach",
+      "itemName": "plecak",
+      "itemSprite": "plecak",
+      "face": "chlopak",
+      "line": 11,
+      "opening": "Plecak, jedna klamra pęknięta, tę drugą sam urwałem. Mogę go dostać przed dziewiątą?",
+      "inside": {
+        "image": "",
+        "x": 0,
+        "y": 0
+      },
+      "secrets": [
+        {
+          "id": "d2_zwrot_pierscionka",
+          "whatYouSee": "W pudełku jest pierścionek i paragon na 240 dolarów. Sklep przyjmuje zwrot do zamknięcia dzisiaj. Na kartce June dopisała, że pierścionek ma wrócić do sklepu.",
+          "whatItMeans": "Chłopak potrzebuje plecaka przed zamknięciem sklepu. June podjęła decyzję w sprawie pierścionka."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Na którym siedzeniu pan go zostawił?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Pod składanym, przy drzwiach. Wcisnąłem go nogą, żeby June miała gdzie stanąć.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co jest w dużej komorze?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Bluza i śrubokręt, taki krótki. Nie, śrubokręt jest w bluzie.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czemu aż tak się panu spieszy?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Mam jeszcze jedno miejsce po drodze. Za szybą widać zegar, prawda?",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Może pan opisać boczną kieszeń?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Siatka, dziura na dwa palce. Na jeden, jak pan nie rozciągnie.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co jest w kieszeni przy plecach?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Pudełko, puste. Mogło się otworzyć.",
+              "mood": "klamie"
+            },
+            {
+              "text": "June też może opisać zawartość?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "June już się dziś dosyć naopisywała. Proszę jej zostawić wieczór.",
+              "mood": "emocja"
+            },
+            {
+              "text": "Zdąży pan jeszcze zwrócić pierścionek?",
+              "tone": "niewygodne",
+              "requires": "d2_zwrot_pierscionka",
+              "answer": "Jak pojadę dwójką, zdążę. Proszę otworzyć pudełko przy mnie i wpisać pierścionek na kwit, bo jak znowu gdzieś go zostawię, mam chociaż papier.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Którym wyjściem będzie panu bliżej?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Bocznym, jeśli jeszcze otwarte. Przez główne musiałbym obiec przystanek.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Ma pan dokument do odbioru?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "W etui telefonu. Nazwisko to Moss, zdjęcie jest sprzed strzyżenia.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Gdy plecak zostanie, kogo powiadomić?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Mnie, tylko mnie. June ma już swoje klucze.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Biorę go pod pachę. Na ramieniu już mi raz nie przeszkadzało, że go nie ma.",
+          "gain": "Chłopak ma szansę odzyskać 240 dolarów przed zamknięciem sklepu.",
+          "loss": "Oddajesz kosztowną zawartość jednej osobie, choć zakup dotyczył też June.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Przyjęli zwrot, kiedy gasili witrynę. June przelałem jej połowę i odpisała jednym słowem."
+        },
+        {
+          "action": "odmow",
+          "reaction": "To da mi pan kartkę z godziną? Pokażę w sklepie, że tu byłem.",
+          "gain": "Kosztowna zawartość zostaje zabezpieczona do dodatkowej weryfikacji.",
+          "loss": "Chłopak traci termin zwrotu i składa skargę na wydanie po terminie.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Plecak odebrałem rano z June, ale sklep już nie przyjął zwrotu. Lombard dał nam po sześćdziesiąt dolarów."
+        }
+      ]
+    },
+    {
+      "id": "d2_kucharz",
+      "day": 2,
+      "name": "Pomocnik kuchenny po termos",
+      "voice": "Mówi urywkami, jak przy wydawaniu dań. Cudze słowa powtarza dokładniej niż własne.",
+      "itemDescription": "Stalowy termos z odkręcanym kubkiem",
+      "itemName": "termos",
+      "itemSprite": "termos",
+      "face": "",
+      "line": 4,
+      "opening": "Stalowy, kubek na gwint. Jak się znalazł, wezmę i lecę.",
+      "inside": {
+        "image": "W13",
+        "x": 0.3,
+        "y": 0.2
+      },
+      "secrets": [
+        {
+          "id": "d2_kartka_bena",
+          "whatYouSee": "W pustym termosie jest kartka od Bena do Cala. Ben prosi Cala, by przyszedł na pierwszy serwis, usiadł przy barze i pozwolił sobie podać obiad.",
+          "whatItMeans": "Termos należy do Bena. Cal przyszedł po niego, bo łatwiej mu oddać zgubę, niż przyjąć zaproszenie."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Pamięta pan, gdzie go zostawił?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Ben siedział przy oknie. Tam proszę liczyć od drzwi.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Jaki ma znak?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Dwie rysy na kubku. O rant zlewu.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "To pan go zgubił?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Ja go myłem. Jakby to się liczyło.",
+              "mood": "mowi"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Jak mam zapisać pana imię?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Cal. Ben mówił pełnym tylko przy gościach.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Jest coś w środku?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Po ostatniej zmianie wypłukany. Suszyłem go do góry dnem.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Ben pana tu przysłał?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Napisał, że otwiera o siódmej. Tyle napisał na szybie.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Usiądzie pan u Bena przy barze?",
+              "tone": "niewygodne",
+              "requires": "d2_kartka_bena",
+              "answer": "Tak tam jest napisane? Proszę skreślić mój numer z kwitu i wpisać kuchnię, po siódmej będę u niego.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Dać panu torbę?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "W rękę. Niech widzi od progu.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Gdzie szukać właściciela po siódmej?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Lokal przy pętli, szyba jeszcze w papierze. Dzwonek przy dostawach działa.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czemu właściciel sam nie przyszedł?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Pierwszy serwis. Jak mu się coś przypala, zostaje przy garnku.",
+              "mood": "mowi"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Prosto do niego. Kubkiem do góry.",
+          "gain": "Cal może oddać termos osobiście podczas otwarcia lokalu.",
+          "loss": "Opierasz wydanie na znajomości rzeczy przez człowieka bez upoważnienia.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Ben nalał zupy do miski i powiedział, żebym zostawił zmywanie. Termos zabrałem z powrotem, bo dolał mi na jutro."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Zostawię mu numer kwitu. Pod talerzem będzie widać.",
+          "gain": "Termos zostaje w biurze do osobistego odbioru przez Bena.",
+          "loss": "Ben musi zamknąć lokal wcześniej, żeby zdążyć po rzecz.",
+          "echoAfterDays": 1,
+          "echoForm": "gosc",
+          "echoText": "Po termos, Ben. Cal wsunął mi pański kwit pod pusty talerz i wyszedł, zanim zdążyłem mu dołożyć."
+        }
+      ]
+    },
+    {
+      "id": "d3_maz_i_siostra",
+      "day": 3,
+      "name": "Mąż i siostra zaginionej, oboje po ten sam telefon",
+      "voice": "Mąż zaczyna od «proszę» i mówi pełnymi zdaniami, jak do protokołu. Siostra odpowiada po pauzie, krótkimi konkretami, i rzadko dopowiada czasownik.",
+      "itemDescription": "Telefon w etui z odklejonym rogiem, znaleziony na innej linii niż wczorajszy szalik",
+      "itemName": "telefon",
+      "itemSprite": "telefon",
+      "face": "maz",
+      "line": 11,
+      "opening": "Mąż: Proszę mi wydać telefon żony, numer konta mam przy sobie. Siostra: Etui ma odklejony róg, niech pan najpierw pokaże.",
+      "inside": {
+        "image": "",
+        "x": 0,
+        "y": 0
+      },
+      "secrets": [
+        {
+          "id": "d3_nie_wracaj",
+          "whatYouSee": "Pod etui jest złożone zdjęcie dwóch dziewczynek z podpisem «Maya i Lena». Na ekranie blokady wisi ostatnia wiadomość od Leny z godziny 23:48: «nie wracaj do domu».",
+          "whatItMeans": "Lena ostrzegła Maję. Wiadomość dotarła po godzinie, o której według męża telefon był już w domu."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Możecie mówić po kolei?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Mąż: Proszę bardzo, Lena była tu pierwsza. Siostra: Przy drzwiach, od otwarcia.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Na kogo jest konto?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Mąż: Proszę wpisać moje nazwisko, z mojego konta schodzi rachunek. Siostra: Maya płaciła za aparat.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Kto ostatni widział telefon?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Mąż: O jedenastej leżał u nas w kuchni i do rana go nie ruszałem. Siostra: A znaleźli go w nocnym tramwaju.",
+              "mood": "klamie"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Może pani podać jakiś znak?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Siostra: Dwa ślady po kleju pod rogiem. Mąż: Proszę uważać, etui może zejść razem ze szkłem.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Jest zgoda właścicielki na odbiór?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Mąż: Proszę wpisać, że jesteśmy małżeństwem. Siostra: Podpisu nie mamy oboje.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czemu nie chcecie odebrać go razem?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Mąż: Proszę zapytać Lenę, od wczoraj nie odbiera. Siostra: Wyłączyłam dźwięk po szóstym.",
+              "mood": "emocja"
+            },
+            {
+              "text": "Pani Leno, czemu miała nie wracać?",
+              "tone": "niewygodne",
+              "requires": "d3_nie_wracaj",
+              "answer": "Siostra: Czekał na klatce, widziałam go o północy. Mąż: Proszę poprawić godzinę w protokole, telefon wyjąłem jej wtedy z ręki.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Gdzie zostawić Mai kwit odbioru?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Mąż: Proszę zostawić u mnie, mam skrzynkę przy wejściu. Siostra: Tutaj, pod jej nazwiskiem.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Kto podpisze odbiór swoim nazwiskiem?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Siostra: Ja, z godziną. Mąż: Proszę również odnotować, że się sprzeciwiam.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Jeśli go odłożę, kto tu wróci?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Mąż: Proszę mnie oczekiwać jutro przy otwarciu. Siostra: Ja mogę przy zamknięciu, sama.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Siostra: Podpiszę i wyjdę bocznymi. Mąż: Proszę mi podać numer wydania.",
+          "gain": "Lena może przekazać telefon Mai bez kierowania jej do domu.",
+          "loss": "Wydajesz telefon bez zgody właścicielki, przy świadku, który składa sprzeciw.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Maya odebrała ode mnie telefon i oddała mi kartę. Jego numer miałam wykreślić z książki przy łóżku."
+        },
+        {
+          "action": "zatrzymaj",
+          "reaction": "Mąż: Proszę wpisać, że wrócę po niego rano. Siostra: Dla Mai, proszę tak wpisać.",
+          "gain": "Zabezpieczasz telefon dla właścicielki i zachowujesz wiadomość.",
+          "loss": "Maya musi się ujawnić przy okienku, żeby odzyskać aparat, a mąż zna miejsce odbioru.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Widziałam go przez szybę, więc poszłam dalej. Telefon proszę trzymać, kartę może pan wyrzucić. — Maya"
+        },
+        {
+          "action": "zadzwon",
+          "reaction": "Mąż: Proszę im powiedzieć, że mam numer konta. Siostra: Niech przyjadą tutaj, bez adresu Mai.",
+          "gain": "Dyżurny może przyjąć obie relacje i udokumentować zabezpieczenie telefonu.",
+          "loss": "Telefon i prywatna wiadomość trafiają do akt, do których Maya nie ma swobodnego dostępu.",
+          "echoAfterDays": 2,
+          "echoForm": "gazeta",
+          "echoText": "Całe miasto szuka Mai po zabezpieczeniu jej telefonu w biurze rzeczy znalezionych. Policja prosi pasażerów nocnych linii o kontakt."
+        }
+      ]
+    },
+    {
+      "id": "d3_mechaniczka",
+      "day": 3,
+      "name": "Mechaniczka po budzik",
+      "voice": "Porównuje godziny i odstępy jak przy sprawdzaniu części. Na osobiste pytanie odpowiada najpierw szczegółem o przedmiocie.",
+      "itemDescription": "Nakrecany budzik w porysowanej obudowie",
+      "itemName": "budzik",
+      "itemSprite": "budzik",
+      "face": "",
+      "line": 6,
+      "opening": "Budzik na klucz. Pięć czterdzieści pokazuje mała wskazówka, nawet jak reszta stoi.",
+      "inside": {
+        "image": "",
+        "x": 0,
+        "y": 0
+      },
+      "secrets": [
+        {
+          "id": "d3_budzik_dla_lou",
+          "whatYouSee": "Pod tylną klapką tkwi kartka z napisem «Lou, klucz przekręcaj tylko do oporu. Dzwonek od jutra ustawiasz sam. — Mama». Wskazówka alarmu stoi na 5:40.",
+          "whatItMeans": "Budzik ma dostać Lou przed pierwszą zmianą. Matka obiecała zostawić pobudkę jemu."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Pamięta pani kolor obudowy?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Kremowa z przodu. Z tyłu widać poprzednią farbę przy śrubie.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Gdzie był zapakowany?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "W papierze po filtrze oleju. Dwa obroty taśmy.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Po co pani zepsuty budzik?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Chodzi, tylko klucza nie zostawia się w środku. Inaczej brzęczy co sekundę.",
+              "mood": "mowi"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Może pani opisać to uszkodzenie?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Wgniecenie na jeden palec. Spadł, kiedy Lou był niższy od stołu.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Kto oddał go do naprawy?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Ja go otworzyłam na przerwie. Wystarczyło dosunąć sprężynę.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Ktoś inny będzie go szukał?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Lou rano zajrzy na półkę. Tę nad kuchenką.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Lou sam ma ustawić dzwonek?",
+              "tone": "niewygodne",
+              "requires": "d3_budzik_dla_lou",
+              "answer": "Tak stoi na kartce. Proszę przestawić na dwunastą, a klucz dać osobno, ustawi sobie od początku.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Owinąć go jeszcze raz?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Jedna warstwa wystarczy. Papier ma się dać rozerwać przy śniadaniu.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Pani podpisze odbiór?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Mae Holt. Lou ma to samo nazwisko, pisze je o połowę większe.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "A jeśli Lou rano zaśpi?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Następny tramwaj ma za siedem minut. Sprawdzałam do wtorku.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Położę go na stole. Klucz obok, po prawej.",
+          "gain": "Mae może dać synowi budzik przed pierwszą zmianą.",
+          "loss": "Jeśli Lou zgłosi się po prezent sam, zastanie już zamknięte wydanie.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Ustawiłem na piątą trzydzieści pięć i zdążyłem na pierwszy tramwaj. Mama mówi, że budzik spóźnia się o cztery minuty, więc jej nie poprawiam."
+        },
+        {
+          "action": "zatrzymaj",
+          "reaction": "Na Lou Holt, proszę. Dziś mu zostawię na półce tylko kwit.",
+          "gain": "Lou może odebrać budzik osobiście i sam pokwitować wydanie.",
+          "loss": "Budzik nie zdąży pomóc mu przy pierwszej pobudce.",
+          "echoAfterDays": 1,
+          "echoForm": "gosc",
+          "echoText": "Po budzik, Lou Holt. Na pierwszą zmianę zaspałem o siedem minut, jutro ustawiam go na piątą."
+        }
+      ]
+    },
+    {
+      "id": "d4_dama",
+      "day": 4,
+      "name": "Dama z kopertą",
+      "voice": "Prosi półgłosem, w trybie przypuszczającym. Po pytaniu o wpis lub nazwisko przechodzi na krótkie polecenia.",
+      "itemDescription": "Płaska paczka owinięta szarym papierem, z dostawy z linii szóstej",
+      "itemName": "paczka",
+      "itemSprite": "paczka",
+      "face": "dama",
+      "line": 6,
+      "opening": "Czy ta płaska paczka z szóstki mogłaby u pana przeczekać do jutra? Kopertę zostawię przy szybie, łatwiej ją tak podsunąć.",
+      "inside": {
+        "image": "W2",
+        "x": 0.66,
+        "y": 0.35
+      },
+      "secrets": [
+        {
+          "id": "d4_kartka_bez_wpisu",
+          "whatYouSee": "Pod płótnem leży zamknięta na kłódkę kasetka, a przy niej blankiet z numerem odbioru. Przez szparę kasetki widać brzeg paszportu z wyciętą stroną danych. Na blankiecie napisano «dla pana z nocnej zmiany, bez wpisu», a w rogu widnieje pieczątka kontroli.",
+          "whatItMeans": "Ktoś przekazuje tędy dokumenty ludziom, którzy chcą zniknąć. Kartka wiąże paczkę z nocną zmianą i daje podstawę do odmowy wydania bez śladu."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Dla kogo mam ją odłożyć?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Pan pozna odbiorcę po numerze. Sam go powie, żeby nie musiał pan zgadywać.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Do której ma tu zostać?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Do jutra po ostatnim kursie. Kwadrans powinien wystarczyć.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Czemu pani nie weźmie jej teraz?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Musiałabym ją jutro znów przywieźć. Już raz zawróciła z pętli.",
+              "mood": "mowi"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Może pani zostawić nazwisko?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Proszę zostawić kreskę. Zmieści się pan w rubryce.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Ile jest w kopercie?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Dwadzieścia dolarów. Dwie dziesiątki, żeby nie szeleściło drobnymi.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Za którą usługę pani płaci?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Za półkę do jutra. Resztę proszę zostawić, jak jest.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Kto dopisał «bez wpisu» na kartce?",
+              "tone": "niewygodne",
+              "requires": "d4_kartka_bez_wpisu",
+              "answer": "Ma pan kartkę, więc proszę wpisać paczkę pod jej numerem. Kopertę zabiorę, a jemu każę przyjść z dokumentem.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Gdzie zostawić potwierdzenie odbioru?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Pod paczką, jeśli już musi być. Papier zawsze się gubi pierwszy.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co po ostatnim kursie jutro?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Jeśli nikt nie przyjdzie, będzie pan mógł zamknąć o czasie. Paczka może poczekać do następnego dnia.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "A jeśli przyjdzie ktoś z kontroli?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Proszę zapisać godzinę. Lubię wiedzieć, ile się minęliśmy.",
+              "mood": "mowi"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "zatrzymaj",
+          "reaction": "Dobrze, niech leży płasko. Jutro wystarczy zapytać o numer.",
+          "gain": "Paczka zostaje pod Twoją kontrolą. Jeśli koperta wciąż leży na ladzie, dostajesz 20 dolarów.",
+          "loss": "Rezerwujesz zgubę dla wskazanego odbiorcy. Przyjęta koperta obciąża Cię przy kontroli, a wpisana kartka zostawia odbiorcy ślad w księdze.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Proszę położyć paczkę z powrotem między zgubami. Człowiek, który miał znać numer, przyszedł dziś do pana w sprawie księgi."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Proszę mi podsunąć kopertę, jeśli jeszcze leży. Paczki niech pan szuka na zwykłej półce.",
+          "gain": "Zachowujesz standardową kolejność wydań i nie przyjmujesz pieniędzy.",
+          "loss": "Tracisz okazję, żeby poznać osobę przychodzącą po paczkę z ustalonym numerem.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Odbiór odwołany. Następną paczkę zostawię w tramwaju, który kończy trasę gdzie indziej."
+        },
+        {
+          "action": "zadzwon",
+          "reaction": "Proszę podać numer paczki, jeśli go pan ma. Ja już nie zajmuję kolejki.",
+          "gain": "Dyżurny przewozów rejestruje próbę prywatnego przechowania i potwierdza godzinę dostawy.",
+          "loss": "Dama wie o zgłoszeniu i może zmienić trasę, zanim ustalisz odbiorcę.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "W protokole dostawy skreślono paczkę z szóstki. Dyżurny prosi o zachowanie własnego egzemplarza do poniedziałku."
+        }
+      ]
+    },
+    {
+      "id": "d5_inspektor",
+      "day": 5,
+      "name": "Inspektor do spraw wydań",
+      "voice": "Każdą rozmowę prowadzi jak odczyt rubryk. Gdy ktoś podważa wpis, powtarza jego słowa wolniej i podaje dokładną godzinę.",
+      "itemDescription": "Zamykana teczka kontroli, zostawiona rano do porównania z księgą wydań",
+      "itemName": "teczka",
+      "itemSprite": "teczka",
+      "face": "inspektor",
+      "line": 6,
+      "opening": "Poproszę księgę, od pierwszego wydania. Gazetę z Mają na pierwszej stronie proszę odsunąć, będę potrzebował suchego blatu.",
+      "inside": {
+        "image": "W17",
+        "x": 0.66,
+        "y": 0.32
+      },
+      "secrets": [
+        {
+          "id": "d5_wykaz_dopisany",
+          "whatYouSee": "Pod wkładką teczki leży wykaz wydań z poprzedniej zmiany. Wpis o prawej rękawiczce Thomasa Warda i pozycja «paczka bez wpisu» są dopisane innym tuszem, a obok stoją inicjały inspektora.",
+          "whatItMeans": "Inspektor miał ten wykaz, zanim zapytał o księgę. Ktoś dopisał paczkę po fakcie, a on to zaparafował."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Od którego dnia zacząć?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Od pierwszego. Rękawiczki mają osobne numery, proszę mi ich nie łączyć.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Sprawdza pan też odmowy?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Odmowy, zatrzymania i telefony po dyżurnego. Pusta rubryka też zajmuje miejsce.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Pan już widział tę księgę?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Dzisiaj pierwszy raz. Proszę trzymać palec przy wyrwanej stronie.",
+              "mood": "klamie"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Mam panu podać potwierdzenia?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Proszę zostawić przy odpowiednich datach. Szybciej zobaczę, czyje nazwisko się powtarza.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Wpisuje pan także zatrzymane paczki?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Tylko te, które mają numer. Proszę mi wskazać ostatnią pozycję z szóstki.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Kto odpowiada za brak strony?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Na razie osoba, która zamyka księgę. Dzisiaj o szóstej rano będzie to pan.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Pańskie inicjały pod paczką na wykazie?",
+              "tone": "niewygodne",
+              "requires": "d5_wykaz_dopisany",
+              "answer": "Moje. Dopisałem ją o drugiej czternaście, bo tak mi podano. Dołączę wykaz i podpiszę, że brak strony powstał przed pańską zmianą.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Zostawi mi pan kopię protokołu?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Pod warunkiem że wpisze pan godzinę na obu egzemplarzach. Piąta czterdzieści osiem.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Telefon Mai też idzie do wykazu?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Telefon i nazwiska zgłaszających. Gazetę może pan wyrzucić, adresy zbieramy sami.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co, jeśli księga zostanie tutaj?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "O szóstej wpiszę brak dostępu do akt. O szóstej jeden nie będę już miał czego dopisać.",
+              "mood": "mowi"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Przyjmuję księgę z załącznikami wymienionymi na kwicie. Proszę wpisać godzinę przed podpisem.",
+          "gain": "Masz dowód przekazania księgi i utrzymujesz ciągłość rozliczenia zmiany. Jeśli inspektor potwierdził wykaz, masz jego podpis pod datą braku strony.",
+          "loss": "Inspektor zabiera oryginalne wpisy z nazwiskami osób, które pytały o telefon Mai.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Kontrola zakończyła przyjęcie akt, a rozliczenie zmiany zatwierdzono. Oryginał księgi pozostaje w depozycie do końca poszukiwań Mai."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Piąta pięćdziesiąt. Zostawię panu dwie minuty na wpisanie własnego powodu.",
+          "gain": "Zachowujesz oryginał księgi, nazwiska petentów i dostęp do śladu po wyrwanej stronie.",
+          "loss": "Inspektor zgłasza odmowę, która wstrzymuje rozliczenie Twojej zmiany.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Wypłatę za nocną zmianę odłożono do wyjaśnienia. Wniosek o wgląd w księgę można złożyć ponownie po weekendzie."
+        },
+        {
+          "action": "zadzwon",
+          "reaction": "Proszę włączyć głośnik. Moje nazwisko ma pan na pierwszej stronie protokołu.",
+          "gain": "Kierownik przewozów słyszy na żywo, jakie dokumenty mają opuścić biuro, i może potwierdzić ich stan.",
+          "loss": "Kontrola obejmuje także Twoje wcześniejsze wydania i wydłuża rozliczenie.",
+          "echoAfterDays": 3,
+          "echoForm": "list",
+          "echoText": "W obecności kierownika spisano stan księgi przed przekazaniem. Od poniedziałku wszystkie nocne wydania wymagają drugiego podpisu."
+        }
+      ]
+    },
+    {
+      "id": "d6_ada",
+      "day": 6,
+      "name": "Dziewczynka w żółtej pelerynie",
+      "voice": "Opisuje rzeczy przez ślady i drobiazgi, które dorośli pomijają. Na pytanie o siebie odpowiada pytaniem.",
+      "itemDescription": "Puszka po herbacie z ruchomym dnem",
+      "itemName": "puszka",
+      "itemSprite": "puszka",
+      "face": "",
+      "line": 6,
+      "opening": "Znalazłam ją przy pętli, pod ławką. Jest lekka, ale coś w niej się przesuwa, kiedy się pochyli. Dał ją pan wczoraj na półkę?",
+      "inside": {
+        "image": "W4",
+        "x": 0.23,
+        "y": 0.44
+      },
+      "secrets": [
+        {
+          "id": "d6_odcinek_z_kasetki",
+          "whatYouSee": "Pod ruchomym dnem puszki leży odcinek odbioru. Numer zgadza się z blankietem z kasetki, którą w czwartek zostawiła u Ciebie dama w jasnych rękawiczkach.",
+          "whatItMeans": "Puszka należy do tego samego obiegu co kasetka. Dziewczynka nie znalazła jej przypadkiem."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Jak ją znalazłaś?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Pod ławką, tą z ułamanym oparciem. Była mokra tylko od spodu.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czemu przyszłaś sama?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Dorośli zawsze mówią, że oddadzą, i potem ją zostawiają. Ja sprawdzam.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Co jest w środku?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Nie otwierałam. Dno przesuwa się samo, to nie moja wina.",
+              "mood": "klamie"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Jak się nazywasz?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Ada. Bez nazwiska, bo mi się zmienia, jak mama się przeprowadza.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co chcesz z nią zrobić?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Oddać tej pani, co ją zgubiła. Wiem, jak wygląda. Ma rękawiczki jak z kościoła.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Skąd znasz tę panią?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Z przystanku. Ona wszystkich zna po imieniu, tylko mnie nie.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Skąd wiesz, że dno się przesuwa?",
+              "tone": "niewygodne",
+              "requires": "d6_odcinek_z_kasetki",
+              "answer": "Bo... widziałam ją wcześniej. U niej w torbie. Ale pan niech nie mówi dorosłym, że widziałam.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Zostawić ci kwit odbioru?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Jak pan napisze, że to ja ją przyniosłam. Ja zbieram takie kwity.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Gdzie mieszkasz?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Przy linii szóstej, ale adresu nie daję. Tak mi powiedziała mama.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Czy ktoś kazał ci ją przynieść?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Nikt. Naprawdę. Ja bym też nie uwierzyła.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Zaniosę ją tak, żeby nikt nie widział. Pan jest w porządku.",
+          "gain": "Ada dostaje swój pierwszy kwit i oddaje puszkę właścicielce.",
+          "loss": "Puszka wychodzi z biura bez Twojej kontroli. Odcinek idzie z nią.",
+          "echoAfterDays": 2,
+          "echoForm": "gosc",
+          "echoText": "Pani w rękawiczkach powiedziała mi, że nie mam pojęcia, co robię. Potem dała mi cukierka. Nie wzięłam."
+        },
+        {
+          "action": "zatrzymaj",
+          "reaction": "Dobrze, niech będzie na półce. Ale proszę jej nie otwierać bez mnie.",
+          "gain": "Puszka zostaje u Ciebie razem z odcinkiem, który może się przydać w kontroli.",
+          "loss": "Ada przestaje Ci ufać i przynosi kolejne zguby pod drzwi.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Zostawiłam wczoraj coś przy drzwiach, nie otwierałam. Proszę nie szukać mnie. Ada."
+        },
+        {
+          "action": "odmow",
+          "reaction": "To ja wrócę z mamą. Tylko ona mnie nie przekrzyczy.",
+          "gain": "Nie angażujesz dziecka w obieg, który wygląda na cudzy.",
+          "loss": "Puszka wraca do skrzyni, a Ada pewnie zaniesie ją do kogoś innego.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Puszki nie ma na półce. Ada wie, gdzie ona jest. Proszę nie pytać jej więcej."
+        }
+      ]
+    },
+    {
+      "id": "d7_evan",
+      "day": 7,
+      "name": "Mąż zaginionej, sam",
+      "voice": "Zaczyna od grzecznego „czy mógłby pan”. Pod presją wraca do tego samego pytania, aż rozmówca je powtórzy.",
+      "itemDescription": "Skórzane etui na klucze z zatrzaskiem",
+      "itemName": "etui na klucze",
+      "itemSprite": "klucze",
+      "face": "maz",
+      "line": 11,
+      "opening": "Czy mógłby pan sprawdzić, czy nie przyjechało etui na klucze? Brązowe, ze znakiem w kieszonce. Szukam go od tygodnia.",
+      "inside": {
+        "image": "W5",
+        "x": 0.43,
+        "y": 0.31
+      },
+      "secrets": [
+        {
+          "id": "d7_dwa_klucze",
+          "whatYouSee": "W etui są dwa klucze: nowoczesny od mieszkania i stary kluczyk od skrytki. W kieszonce leży kartonik z nadrukowanym znakiem nieskończoności.",
+          "whatItMeans": "Etui ma właścicielkę, która zostawiła je celowo. Skrytka jest gdzieś poza domem i nie należy do męża."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Jak wygląda to etui?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Brązowe. Zatrzask wymieniałem dwa razy. Czy mógłby pan sprawdzić jeszcze raz?",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co jest w środku?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Klucz do domu. I zapasowy. Czy mógłby pan to sprawdzić?",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Czyje to etui?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Moje. To znaczy... dostałem je od żony. Czy mógłby pan nie notować tego?",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Który klucz jest zapasowy?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Ten nowszy, srebrny. Czy mógłby pan go pokazać pod światło?",
+              "mood": "mowi"
+            },
+            {
+              "text": "Ile kluczy tam jest?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Dwa. Powiedziałem dwa. Czy mógłby pan sprawdzić, czy dwa?",
+              "mood": "klamie"
+            },
+            {
+              "text": "Skąd to etui u pana?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Zostawiłem je w tramwaju, jak wracałem z komisariatu. Czy mógłby pan sprawdzić godzinę?",
+              "mood": "mowi"
+            },
+            {
+              "text": "Do czego jest ten drugi, stary klucz?",
+              "tone": "niewygodne",
+              "requires": "d7_dwa_klucze",
+              "answer": "Jaki drugi? ...Czy mógłby pan powtórzyć to pytanie?",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Mogę pana prosić o podpis?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Czy mógłby pan wpisać moje nazwisko? Zrobię to sam, jeśli pan woli.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czy żona ma drugi komplet?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Miała. Czy mógłby pan nie pytać o żonę przy kolejce?",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Co zrobi pan z etui?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Położę je na stole. Może przyjdzie po nie sama. Czy mógłby pan jej tego nie mówić?",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Dziękuję. Czy mógłby pan nie mówić nikomu, że byłem?",
+          "gain": "Evan odbiera etui i zostawia podpis. Masz jego pismo do porównań.",
+          "loss": "Klucz od skrytki odchodzi razem z nim.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Położyłem etui na stole. Do rana nikt po nie nie przyszedł. Czy mógłby pan sprawdzić, czy ona byłaby tu przed świtem?"
+        },
+        {
+          "action": "zatrzymaj",
+          "reaction": "Czy mógłby pan jej przekazać zapieczętowany list? Tylko ten jeden.",
+          "gain": "Etui zostaje na półce, a list pozwala Ci zachować kontrolę nad tym, co dojdzie do Mai.",
+          "loss": "Evan wraca z pretensjami, jeśli list nie dojdzie.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Czy list został przekazany? Proszę odpowiedzieć na adres z koperty."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Rozumiem. Czy mógłby pan chociaż powiedzieć, dokąd odesłano etui?",
+          "gain": "Nie wydajesz klucza od skrytki osobie, która nie zna jego znaczenia.",
+          "loss": "Evan szuka odpowiedzi gdzie indziej, a kolejka widziała, jak odchodzi.",
+          "echoAfterDays": 1,
+          "echoForm": "gosc",
+          "echoText": "Pan mi nie powiedział, ale pan wie. Czy mógłby pan sprawdzić, co dziś wydał pan siostrze?"
+        }
+      ]
+    },
+    {
+      "id": "d8_lena",
+      "day": 8,
+      "name": "Siostra zaginionej, sama",
+      "voice": "Odpowiada szybko i często dopiero w połowie zdania zauważa, że powiedziała za dużo.",
+      "itemDescription": "Torba narzędziowa z rozpruta podszewką",
+      "itemName": "torba narzędziowa",
+      "itemSprite": "torba_narzedzia",
+      "face": "siostra",
+      "line": 4,
+      "opening": "To torba mojej siostry. Poznaję zamek, ja go przyszywałam. Proszę mi ją wydać, zanim ktoś inny powie, że jest jego.",
+      "inside": {
+        "image": "W6",
+        "x": 0.37,
+        "y": 0.6
+      },
+      "secrets": [
+        {
+          "id": "d8_zolta_kopia",
+          "whatYouSee": "W rozprutej podszewce tkwi żółta kopia pokwitowania z podpisem w jasnym atramencie. Pod podpisem stoi wyraźne «I.» i kwota pieniędzy wypłaconych lokatorom.",
+          "whatItMeans": "Maya nosiła przy sobie dowód, że ktoś odbierał pieniądze lokatorów. Podpis wygląda jak podpis damy w jasnych rękawiczkach."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Jak ją poznajesz?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Zamek ciągnie na lewo. Maya zawsze zapina go w połowie, bo się boi, że ugryzie.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co jest w środku?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Kombinerki, śrubokręt, miara. Narzędzia taty. Ona je przejęła i nie oddała.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Czemu Maya jej nie odbierze?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Bo nie wie, że tu jest. A ja wiem. Dlatego jestem pierwsza.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Kto jeszcze wie o torbie?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Evan nie. Przysięgam, że nie. Proszę mu nie mówić.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Gdzie ostatnio ją widziałaś?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Dwa tygodnie temu na parapecie. Potem Maya powiedziała, że ją odda do naprawy.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czemu tak ci zależy?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Bo to jedyna rzecz, której Evan jeszcze nie dotykał. Przepraszam, tak nie miało wyjść.",
+              "mood": "klamie"
+            },
+            {
+              "text": "Co to za papier w podszewce?",
+              "tone": "niewygodne",
+              "requires": "d8_zolta_kopia",
+              "answer": "...Pan go zobaczył. To nie jest moje. To jest od Mai i nie wolno mi o nim mówić.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Mam ci ją zapakować?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Nie, wezmę ją pod pachę. Ciężka jest tylko z jednej strony.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Podpiszesz odbiór?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Lena. Z jednym n. Mama mi dopisała drugie, ale w dowodzie go nie ma.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Jeśli Maya zapyta o torbę?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Powiem, że nie byłam. Przepraszam, od razu mi się to nie podoba.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Dobrze. Obiecuję, że nikt jej dziś nie otworzy. Poza mną.",
+          "gain": "Lena zabiera torbę i podpisuje odbiór. Masz dowód kontaktu z rodziną.",
+          "loss": "Żółta kopia pokwitowania wychodzi razem z torbą.",
+          "echoAfterDays": 2,
+          "echoForm": "gosc",
+          "echoText": "Wyjęłam ten papier i schowałam gdzie indziej. Proszę nie pytać, gdzie."
+        },
+        {
+          "action": "zatrzymaj",
+          "reaction": "To zatrzymaj tylko kopię. Torbę wezmę teraz, a papier oddasz Mai.",
+          "gain": "Rozdzielasz torbę i kopię pokwitowania. Kopia zostaje do porównania z oryginałem.",
+          "loss": "Lena czuje się okradziona i nie ufa Ci przez dwa dni.",
+          "echoAfterDays": 3,
+          "echoForm": "list",
+          "echoText": "Pan zatrzymał to, co nie jest pańskie. Maya o tym usłyszy ode mnie."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Rozumiem, że przepisy. Ale proszę o jedno: żeby torba nie trafiła do Evana.",
+          "gain": "Torba zostaje pod Twoją kontrolą, razem z papierem.",
+          "loss": "Lena zawraca i szuka Mai na własną rękę.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Nie wydał mi pan torby. Dobrze. Poszukam jej gdzie indziej."
+        }
+      ]
+    },
+    {
+      "id": "d9_iris",
+      "day": 9,
+      "name": "Dama z kopertą",
+      "voice": "Mówi cicho i każdą prośbę przedstawia jako drobną przysługę. Po pytaniu o numer przechodzi na krótkie polecenia.",
+      "itemDescription": "Piórnik z podwójną przegródką",
+      "itemName": "piórnik",
+      "itemSprite": "piornik",
+      "face": "dama",
+      "line": 6,
+      "opening": "Mój piórnik. Bardzo prosiłabym, jeśli to nie kłopot. Jest w nim parę drobiazgów, które mają wartość tylko dla mnie.",
+      "inside": {
+        "image": "W7",
+        "x": 0.2,
+        "y": 0.58
+      },
+      "secrets": [
+        {
+          "id": "d9_zetony",
+          "whatYouSee": "W podwójnej przegródce piórnika leżą mosiężne żetony z wybitymi numerami. Trzy z nich mają numer paczki z linii szóstej, a czwarty jest bez numeru i ma wżerę po kwasie.",
+          "whatItMeans": "To ewidencja przekazywanych paczek. Czwarty żeton należy do kogoś, kto nie powinien go mieć w tym obiegu."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Jak wygląda?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Granatowy, z podwójną przegródką. Zamek wymieniałam raz.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co w nim jest?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Ołówki. Kilka rzeczy do rachunków. Nic, co zajęłoby panu więcej niż chwilę.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Czemu to takie ważne?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Bo ktoś go dla mnie zostawił. I ja nie lubię, jak ktoś zostawia mi rzeczy bez pytania.",
+              "mood": "mowi"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Gdzie go pani zgubiła?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Na przystanku przy szóstce. Pamiętam, że padało inaczej niż dziś.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Co jest w drugiej przegródce?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Pamiątki. Drobne, metalowe. Proszę nie liczyć ich przy ludziach.",
+              "mood": "klamie"
+            },
+            {
+              "text": "Kto pani go dał?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Nikt. Kupiłam go sama w sklepie, którego już nie ma.",
+              "mood": "klamie"
+            },
+            {
+              "text": "Skąd pani ma ten czwarty żeton?",
+              "tone": "niewygodne",
+              "requires": "d9_zetony",
+              "answer": "Ten bez numeru. Pan go zobaczył. Proszę mi go oddać i zapomnieć, że istniał.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Wydać go pani teraz?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Jeśli pan zechce. Zostawię kopertę przy szybie, tak jak zawsze.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Podpisze pani odbiór?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Podpiszę kreską. Mam skaleczoną dłoń. Proszę to zapisać.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Kto ma pozostałe żetony?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Ci, którzy wiedzą, po co je mają. Proszę nie szukać ich nazwisk.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Dziękuję. Proszę nie zapisywać godziny. Jutro już jej nie będzie.",
+          "gain": "Iris odbiera piórnik, zostawia kopertę z 30 dolarami i podpis kreską.",
+          "loss": "Odchodzą z nim trzy numery paczek, które mogły Cię zabezpieczyć w kontroli.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Koperta była za mała. Proszę to uznać za przeprosiny."
+        },
+        {
+          "action": "zatrzymaj",
+          "reaction": "Rozumiem. Odłoży go pan na półkę, na której go nie zobaczą.",
+          "gain": "Piórnik zostaje u Ciebie, a żetony mogą posłużyć jako dowód dla Victora.",
+          "loss": "Iris wie, że masz żetony, i zaczyna zbierać rzeczy po tobie.",
+          "echoAfterDays": 2,
+          "echoForm": "gosc",
+          "echoText": "Pamiętam, że ma pan jedną rzecz, która nie jest pańska. Proszę jej nie pokazywać nikomu."
+        },
+        {
+          "action": "zadzwon",
+          "reaction": "Nie ma potrzeby dzwonić. Wszystko można załatwić bez dyżurnego.",
+          "gain": "Dyżurny rejestruje próbę prywatnego odbioru i potwierdza numery paczek.",
+          "loss": "Iris traci cierpliwość i przerywa współpracę.",
+          "echoAfterDays": 3,
+          "echoForm": "list",
+          "echoText": "Piórnik zostaje u was. Ja zostaję bez pytań. Proszę nie pisać do mnie więcej."
+        }
+      ]
+    },
+    {
+      "id": "d10_vera",
+      "day": 10,
+      "name": "Pracownica zaplecza tramwajowego",
+      "voice": "Podaje najpierw miejsce, potem przedmiot i na końcu nazwisko, jeśli trzeba. Nie dopowiada.",
+      "itemDescription": "Metalowe pudełko z paskiem od zegarka",
+      "itemName": "pudełko",
+      "itemSprite": "pudelko_blaszane",
+      "face": "",
+      "line": 11,
+      "opening": "Zaplecze, szafka czterdzieści dwa. Pudełko metalowe, brązowe. Nazwisko na karcie wymazane. Zabrałam je z likwidowanej szafki.",
+      "inside": {
+        "image": "W8",
+        "x": 0.45,
+        "y": 0.65
+      },
+      "secrets": [
+        {
+          "id": "d10_karta_szuflady",
+          "whatYouSee": "W pudełku leży pasek od zegarka bez tarczy i karta inwentarza szuflady z naniesionym numerem. Numer szuflady zgadza się z tą, w której leżał klucz bez zamka.",
+          "whatItMeans": "Pudełko należało do poprzednika. Klucz z Twojej szuflady pasuje do jego dawnej szafki."
+        }
+      ],
+      "turns": [
+        {
+          "questions": [
+            {
+              "text": "Czemu je pani przynosi?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Likwidacja. Wszystko, co zostaje w szafce po terminie, trafia tutaj.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Czyje to?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Poprzedniego pracownika. Powiedzieli mi, że wyjechał.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Co jest w środku?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Pasek, karta. Nie otwierałam przy nikim.",
+              "mood": "klamie"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Od kiedy leżało w szafce?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Od czterech lat. Co kwartał sprawdzam zamek. Nikt nie przyszedł.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Kto miał klucz?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Ja i on. I kierownik zmian, ale kierownik nie przychodzi.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Czemu nie wyrzuciła pani pudełka?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Bo szafka była zajęta. Biuro płaci za zajęte szafki. Ja nie płacę.",
+              "mood": "klamie"
+            },
+            {
+              "text": "Co znaczy numer na karcie?",
+              "tone": "niewygodne",
+              "requires": "d10_karta_szuflady",
+              "answer": "Szuflada. U pana. Ja już nie pytam, czy pan o niej wie.",
+              "mood": "emocja"
+            }
+          ]
+        },
+        {
+          "questions": [
+            {
+              "text": "Mam pokwitować odbiór?",
+              "tone": "uprzejme",
+              "requires": "",
+              "answer": "Proszę. Podpiszę pod pańskim nazwiskiem, jeśli jest.",
+              "mood": "mowi"
+            },
+            {
+              "text": "Gdzie pudełko ma trafić?",
+              "tone": "rzeczowe",
+              "requires": "",
+              "answer": "Do archiwum zbiorczego albo do pana. Jedno z dwóch.",
+              "mood": "neutralna"
+            },
+            {
+              "text": "Co jeśli pan Sam się zgłosi?",
+              "tone": "niewygodne",
+              "requires": "",
+              "answer": "Proszę mu powiedzieć, że szafka jest pusta. Jemu to wystarczy.",
+              "mood": "emocja"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "action": "wydaj",
+          "reaction": "Zabieram do archiwum. Jedno pudełko mniej na moim sumieniu.",
+          "gain": "Pudełko trafia do archiwum, a Ty masz pokwitowanie i czystą ewidencję.",
+          "loss": "Karta szuflady znika z Twojego zasięgu.",
+          "echoAfterDays": 2,
+          "echoForm": "list",
+          "echoText": "Archiwum przyjęło pudełko bez karty. Karta wciąż leży gdzie indziej."
+        },
+        {
+          "action": "zatrzymaj",
+          "reaction": "Dobrze. Jako rzecz osobistą pana Sama. Niech tu poczeka.",
+          "gain": "Pudełko zostaje pod Twoim kluczem jako rzecz osobista Sama.",
+          "loss": "Vera wie, że wiesz, i trzyma się z dala od Twojej szuflady.",
+          "echoAfterDays": 3,
+          "echoForm": "gosc",
+          "echoText": "Zostawiłam panu teraz drugi klucz do szafki. Proszę go nie szukać u mnie."
+        },
+        {
+          "action": "odmow",
+          "reaction": "Nie ma pani prawa? Tylko pytam. Proszę mi zostawić pudełko na kwit.",
+          "gain": "Pudełko wraca do Very, a Ty zachowujesz neutralność.",
+          "loss": "Karta szuflady odchodzi w nieznane miejsce.",
+          "echoAfterDays": 1,
+          "echoForm": "list",
+          "echoText": "Pudełko oddałam drugiej zmianie. Nie pytają o numery."
+        }
+      ]
+    }
+  ]
+}

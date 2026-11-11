@@ -1,0 +1,15 @@
+Jesteś dyrektorem artystycznym gry. Wygeneruj w tej jednej rozmowie 4 obrazy, jeden po drugim, bez pytania o zgodę. Pod każdym napisz tylko etykietę: "K1 gotowe 1/4" itd. Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i po mojej odpowiedzi kontynuuj.
+
+REFERENCJE: L4-twarze.png to WZORZEC stylu. Tak ma wyglądać wszystko: pełne kremowe plamy światła wycięte z czerni, cień jako czysta czerń, krótkie cięcia dłuta na krawędzi światła i cienia, drobne kropki i zadrapania faktury. L2-scena-sodowa.png to wzorzec kadru i układu sceny.
+
+BŁĄD DO NAPRAWIENIA: w poprzedniej scenie i na arkuszu rzeczy przedmioty były narysowane cienkim białym konturem jak ikony. Tego nie chcemy. Przedmioty i wnętrze mają być rzeźbione tak samo jak twarz: bryła zbudowana z plam światła i czerni, BEZ linii obrysu dookoła. Krawędź w cieniu znika w czerni tła.
+
+STYL (obowiązuje wszędzie): odbitka z linorytu, czarna płyta, kremowa biel papieru, jedna druga farba: brudny pomarańcz lampy sodowej. Pomarańcz to ŚWIATŁO, nie wypełnienie: kładzie się plamą na blacie, na rzeczach i na szybie tam, gdzie świeci lampa, z postrzępionym brzegiem cięcia. Co najmniej 55 procent kadru to czysta czerń. Rzeczy są stare i zniszczone: przetarcia, pęknięcia, zagięcia, brud. Nic nie jest ładne, symetryczne ani ikoniczne. Zero gradientów, zero szarości, zero cienkich równych konturów, zero fotorealizmu. Bez tekstu, liter, cyfr, logo i znaków wodnych. Format poziomy 3:2 (1536x1024).
+
+K1 SCENA: ten sam kadr co w L2 (lada, otwarta walizka z koronkową suknią, zdjęciem i biletem, lampa, dzwonek, okienko ze szczeliną, ta sama kobieta z dłonią na szybie, poczekalnia z krzesłami, tramwaj w deszczu za drzwiami, regały po bokach). Lampa rzuca pomarańczową plamę światła na blat, dzwonek i dolną część szyby. Walizka, lampa i regały rzeźbione plamą jak twarz kobiety.
+
+K2 ARKUSZ RZECZY: 8 zgubionych przedmiotów na czarnym tle, 4 kolumny x 2 rzędy, każdy lekko z ukosa (trzy czwarte), oświetlony z prawej strony, duży, wyraźnie oddalony od sąsiadów: 1 wytarty skórzany portfel wypchany papierami; 2 telefon z pękniętym ekranem; 3 stara obita walizka z paskiem; 4 pluszowy królik z urwanym uchem i brakującym okiem; 5 pęk kluczy z breloczkiem; 6 połamany parasol; 7 tekturowa teczka z gumką, wypchana; 8 zmięty wełniany szalik. Pomarańcz tylko jako odblask światła z prawej.
+
+K3 DRUGA POSTAĆ: mężczyzna około pięćdziesiątki, mąż tamtej kobiety, w ciemnym płaszczu i kapeluszu, nieogolony, uprzejmy na pokaz. Cztery popiersia w jednym rzędzie, dokładnie w manierze L4: 1 spokojny, uprzejmy uśmiech; 2 zniecierpliwiony, zaciśnięta szczęka; 3 kłamie, patrzy prosto w oczy zbyt długo; 4 wściekły, ale cichy.
+
+K4 RZECZ Z WNĘTRZEM: zbliżenie z góry na blat w świetle lampy. Otwarty portfel, z którego wysypano zawartość: zdjęcie dziecka, dwa dowody tożsamości z różnymi twarzami, kilka monet, zmięty paragon, klucz. Dłoń pracownika w rękawie trzyma jedno zdjęcie. To ekran gry, w którym gracz przegląda zgubę, więc każdy element ma być osobny i czytelny.

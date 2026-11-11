@@ -1,0 +1,220 @@
+{
+  "entries": [
+    {
+      "key": "title",
+      "value": "OKIENKO"
+    },
+    {
+      "key": "sub",
+      "value": "Nocna zmiana w biurze rzeczy znalezionych. Tydzień pierwszy."
+    },
+    {
+      "key": "start",
+      "value": "Zacznij zmianę"
+    },
+    {
+      "key": "settings",
+      "value": "Ustawienia"
+    },
+    {
+      "key": "close",
+      "value": "Zamknij"
+    },
+    {
+      "key": "day",
+      "value": "Dzień"
+    },
+    {
+      "key": "delivery",
+      "value": "Tramwaj zostawił skrzynki. Czasu starcza, żeby zajrzeć tylko do jednej rzeczy."
+    },
+    {
+      "key": "look",
+      "value": "Zajrzyj"
+    },
+    {
+      "key": "skip",
+      "value": "Nie zaglądam, otwieram okienko"
+    },
+    {
+      "key": "line",
+      "value": "Linia"
+    },
+    {
+      "key": "inspect_hint",
+      "value": "Przeszukaj rzecz. Kliknij to, co nie pasuje."
+    },
+    {
+      "key": "found",
+      "value": "Wiesz coś, czego nie powinieneś."
+    },
+    {
+      "key": "open",
+      "value": "Otwórz okienko"
+    },
+    {
+      "key": "nothing",
+      "value": "Zwykła rzecz. Czasem parasol jest po prostu parasolem."
+    },
+    {
+      "key": "knock",
+      "value": "Ktoś puka w szybę."
+    },
+    {
+      "key": "let_in",
+      "value": "Odsuń zasłonkę"
+    },
+    {
+      "key": "know",
+      "value": "wiesz ze środka"
+    },
+    {
+      "key": "turn",
+      "value": "Odwróć się do magazynu"
+    },
+    {
+      "key": "search",
+      "value": "Znajdź: "
+    },
+    {
+      "key": "search_p",
+      "value": "Wybierz skrzynię wg linii, potem przekopuj. Kliknij rzecz, którą bierzesz."
+    },
+    {
+      "key": "wrong",
+      "value": "To nie to."
+    },
+    {
+      "key": "wrong_line",
+      "value": "Tu tej rzeczy nie ma. Spróbuj inną linię."
+    },
+    {
+      "key": "decide",
+      "value": "Rzecz leży na ladzie. Przeciągnij ją albo wybierz."
+    },
+    {
+      "key": "wydaj",
+      "value": "Wydaj: przez okienko"
+    },
+    {
+      "key": "odmow",
+      "value": "Odmów: do skrzyni"
+    },
+    {
+      "key": "zatrzymaj",
+      "value": "Zatrzymaj: na półkę"
+    },
+    {
+      "key": "zadzwon",
+      "value": "Zadzwoń po dyżurnego"
+    },
+    {
+      "key": "next",
+      "value": "Dalej"
+    },
+    {
+      "key": "evening",
+      "value": "Świt. Poczta na ladzie."
+    },
+    {
+      "key": "nomail",
+      "value": "Dziś nikt nie napisał."
+    },
+    {
+      "key": "week_h",
+      "value": "Sobota. Rozliczenie."
+    },
+    {
+      "key": "pay",
+      "value": "Wypłata"
+    },
+    {
+      "key": "rent",
+      "value": "Czynsz"
+    },
+    {
+      "key": "balance",
+      "value": "Zostaje"
+    },
+    {
+      "key": "drawer",
+      "value": "W szufladzie leży klucz bez zamka. Poprzednik nie zabrał wszystkiego."
+    },
+    {
+      "key": "again",
+      "value": "Zacznij od nowa"
+    },
+    {
+      "key": "next_day",
+      "value": "Następny dzień"
+    },
+    {
+      "key": "dollar",
+      "value": "$"
+    },
+    {
+      "key": "vol_master",
+      "value": "Głośność ogólna"
+    },
+    {
+      "key": "vol_music",
+      "value": "Muzyka"
+    },
+    {
+      "key": "vol_amb",
+      "value": "Ambient"
+    },
+    {
+      "key": "vol_sfx",
+      "value": "Efekty"
+    },
+    {
+      "key": "vol_voice",
+      "value": "Głosy"
+    },
+    {
+      "key": "reduce",
+      "value": "Ogranicz błyski i wstrząsy"
+    },
+    {
+      "key": "end",
+      "value": "Koniec dema: dwa tygodnie. Dalej dni 11–25."
+    },
+    {
+      "key": "storm",
+      "value": "Burza. Grom zrzucił skrzynie z półki: rzeczy leżą w innych skrzyniach niż zapisano."
+    },
+    {
+      "key": "up_h",
+      "value": "Ulepszenie biura (jedno na sobotę)"
+    },
+    {
+      "key": "up_none",
+      "value": "Nic nie kupuję"
+    },
+    {
+      "key": "up_lampa",
+      "value": "Wymień lampę (mruganie ustaje, w biurze robi się nudno)"
+    },
+    {
+      "key": "up_drzwi",
+      "value": "Uszczelnij drzwi (deszcz za szybą ciszej)"
+    },
+    {
+      "key": "up_regal",
+      "value": "Dołóż regał (mniej rzeczy w skrzyniach)"
+    },
+    {
+      "key": "owned",
+      "value": "kupione"
+    },
+    {
+      "key": "week2",
+      "value": "Następny tydzień"
+    },
+    {
+      "key": "rent2",
+      "value": "Czynsz za tydzień"
+    }
+  ]
+}

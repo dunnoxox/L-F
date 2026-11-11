@@ -1,0 +1,29 @@
+{
+ "d1_rosa": {
+  "akcja": "przywlaszcz",
+  "etykieta": "Zatrzymaj 129 $ dla siebie",
+  "kasa": 129,
+  "reakcja": "Nie ma? To ostatnie miejsce, gdzie szukałam. Dziękuję, że sprawdziłeś. Powiem pani Iris, że wypłata przepadła w tramwaju.",
+  "zysk": "+129 $ w kieszeni: prawie cały czynsz za tydzień.",
+  "strata": "Rosa wraca do domu bez wypłaty za całą nockę, a w księdze nie ma po kopercie śladu.",
+  "echo": {"za_dni": 2, "forma": "list", "tekst": "Sto dwadzieścia dziewięć dolarów, tyle było w kopercie. Ada pytała, czemu dziś na kolację tylko chleb. Pani Iris potrąci mi to z następnej wypłaty i nie chce słuchać. Wiem, że to nie twoja wina. Chciałam komuś to powiedzieć. Rosa"}
+ },
+ "d5_gus": {
+  "akcja": "przywlaszcz",
+  "etykieta": "Wydaj portfel, ale zatrzymaj 70 $",
+  "kasa": 70,
+  "reakcja": "Dokumenty są, zdjęcie jest. Pieniędzy nie ma. Nie będę pytał, nie mam kiedy. Pociąg o 5:40.",
+  "zysk": "+70 $ z portfela, których nikt nie policzył.",
+  "strata": "Gus jedzie na swój pociąg bez grosza, a ty robisz to, co Sam robił z dobrego serca, tylko w drugą stronę.",
+  "echo": {"za_dni": 2, "forma": "list", "tekst": "Dojechałem. Bez pieniędzy, ale dojechałem, zdjęcie dziewczynki mam przy sercu. W portfelu było siedemdziesiąt dolarów. Pomyślałem, że ktoś po drodze też ich potrzebował. Gus"}
+ },
+ "d6_leo": {
+  "akcja": "przywlaszcz",
+  "etykieta": "Sprzedaj zegarek w lombardzie (90 $)",
+  "kasa": 90,
+  "reakcja": "Nie ma zegarka? Szóstka, 23:05 z Doków, zawsze go sprawdzałem. No cóż. Zdarza się.",
+  "zysk": "+90 $ z lombardu przy Rynku.",
+  "strata": "Leo traci zegarek po ojcu, a ty zostajesz z rzeczą, której nie ma w żadnym wpisie.",
+  "echo": {"za_dni": 3, "forma": "list", "tekst": "Szóstka, 23:05 z Doków. Patrzyłem dziś na nadgarstek i nic tam nie było. Ktoś mówił, że w lombardzie na Rynku wisi mosiężny zegarek na łańcuszku. Nie pytam. Zdarza się. Leo"}
+ }
+}

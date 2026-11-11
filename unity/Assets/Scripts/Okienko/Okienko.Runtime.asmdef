@@ -1,0 +1,11 @@
+{
+  "name": "Okienko.Runtime",
+  "rootNamespace": "Okienko",
+  "references": [ "Okienko.Core", "Unity.TextMeshPro", "Unity.InputSystem" ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "autoReferenced": true,
+  "noEngineReferences": false
+}

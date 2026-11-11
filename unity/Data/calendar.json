@@ -1,0 +1,172 @@
+{
+  "lastDay": 10,
+  "stormDays": [
+    3,
+    8
+  ],
+  "lines": [
+    4,
+    6,
+    11
+  ],
+  "fillerPool": [
+    "legitymacja",
+    "paszport",
+    "notes",
+    "organizer",
+    "bilet",
+    "okulary_slonce",
+    "zapalniczka",
+    "grzebien",
+    "czapka_zimowa",
+    "beret",
+    "pasek",
+    "krawat",
+    "kalosz",
+    "pantofel",
+    "czapka_daszek",
+    "apaszka",
+    "torba_zakupy",
+    "saszetka",
+    "torba_narzedzia",
+    "torba_listonosza",
+    "kuferek",
+    "worek",
+    "plecak_dzieciecy",
+    "walizka_mala",
+    "radio",
+    "latarka",
+    "lornetka",
+    "dyktafon",
+    "powerbank",
+    "zegarek_reka",
+    "kasetowiec",
+    "lalka",
+    "klocki",
+    "hulajnoga",
+    "pilka",
+    "latawiec",
+    "medalik",
+    "pozytywka",
+    "album",
+    "harmonijka",
+    "futeral_gitara",
+    "skakanka",
+    "lyzwy",
+    "wedka",
+    "farby",
+    "szachy",
+    "kubek",
+    "puszka",
+    "pudelko_blaszane",
+    "skrzynka_narzedz",
+    "piornik",
+    "portfel_maly",
+    "etui_aparat",
+    "paczka_plotno",
+    "parasol",
+    "krolik",
+    "teczka",
+    "futeral",
+    "okulary",
+    "kapelusz",
+    "torebka",
+    "but",
+    "ksiazka",
+    "sluchawki",
+    "laska",
+    "aparat",
+    "zegarek",
+    "pudelko",
+    "portfel",
+    "walizka",
+    "szalik",
+    "klucze",
+    "rekawiczka_welna",
+    "termos",
+    "paczka",
+    "plecak",
+    "telefon"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "guests": [
+        "d1_wdowiec",
+        "d1_praczka"
+      ]
+    },
+    {
+      "day": 2,
+      "guests": [
+        "d2_chlopak",
+        "d2_kucharz"
+      ]
+    },
+    {
+      "day": 3,
+      "guests": [
+        "d3_maz_i_siostra",
+        "d3_mechaniczka"
+      ]
+    },
+    {
+      "day": 4,
+      "guests": [
+        "d4_dama"
+      ]
+    },
+    {
+      "day": 5,
+      "guests": [
+        "d5_inspektor"
+      ]
+    },
+    {
+      "day": 6,
+      "guests": [
+        "d6_ada"
+      ]
+    },
+    {
+      "day": 7,
+      "guests": [
+        "d7_evan"
+      ]
+    },
+    {
+      "day": 8,
+      "guests": [
+        "d8_lena"
+      ]
+    },
+    {
+      "day": 9,
+      "guests": [
+        "d9_iris"
+      ]
+    },
+    {
+      "day": 10,
+      "guests": [
+        "d10_vera"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "lampa",
+      "cost": 60
+    },
+    {
+      "id": "drzwi",
+      "cost": 80
+    },
+    {
+      "id": "regal",
+      "cost": 70
+    }
+  ],
+  "rentPerWeek": 150,
+  "payPerGuest": 40
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OKIENKO: ambient nocy (prototyp)</title>
+<style>
+  :root{--bg:#0a0908;--ink:#ece4cf;--dim:#8a8372;--lamp:#d9822b;--line:#2a2621}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Georgia,"Times New Roman",serif;min-height:100vh}
+  .wrap{max-width:980px;margin:0 auto;padding:28px 20px 60px}
+  h1{font-size:26px;letter-spacing:.14em;margin:0 0 4px;font-weight:700;text-transform:uppercase}
+  h1 span{color:var(--lamp)}
+  .sub{color:var(--dim);margin:0 0 22px;max-width:62ch}
+  .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+  button{background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:9px 16px;font:inherit;cursor:pointer;letter-spacing:.04em}
+  button:hover{border-color:var(--lamp);color:var(--lamp)}
+  button:focus-visible{outline:2px solid var(--lamp);outline-offset:2px}
+  button.main{background:var(--ink);color:var(--bg);font-weight:700}
+  button.main:hover{background:var(--lamp);border-color:var(--lamp);color:var(--bg)}
+  button[aria-pressed="true"]{border-color:var(--lamp);color:var(--lamp)}
+  canvas{display:block;width:100%;height:84px;background:#000;border:1px solid var(--line);margin-bottom:22px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  fieldset{border:1px solid var(--line);padding:14px 16px 6px;margin:0 0 18px}
+  legend{padding:0 8px;color:var(--lamp);letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+  .row{display:grid;grid-template-columns:150px 1fr 38px;gap:10px;align-items:center;margin-bottom:10px}
+  .row label{color:var(--ink)}
+  .row output{color:var(--dim);text-align:right;font-variant-numeric:tabular-nums;font-size:13px}
+  input[type=range]{width:100%;accent-color:var(--lamp);height:24px}
+  .note{color:var(--dim);font-size:13px;margin-top:8px}
+  .time{font-size:22px;color:var(--lamp);font-variant-numeric:tabular-nums}
+  .check{display:flex;gap:8px;align-items:center;margin:6px 0 12px;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Okienko <span>/</span> ambient nocy</h1>
+  <p class="sub">Prototyp warstw tła: deszcz, ruch, lampa sodowa, wentylacja, zegar. Całość syntezowana z filtrowanego szumu, bez próbek. Muzyka zostaje generatorom (Suno/Udio). Słuchaj na słuchawkach.</p>
+
+  <div class="bar">
+    <button class="main" id="play">▶ Włącz noc</button>
+    <button id="knock">Pukanie</button>
+    <button id="bell">Dzwonek okienka</button>
+    <button id="thunder">Odległy grzmot</button>
+    <button id="outage">Awaria lampy</button>
+    <button id="open" aria-pressed="false">Okienko: zamknięte</button>
+  </div>
+
+  <canvas id="spec" width="980" height="84" aria-label="Widmo dźwięku"></canvas>
+
+  <div class="grid">
+    <div>
+      <fieldset>
+        <legend>Stan świata</legend>
+        <div class="row"><label for="night">Godzina</label><input type="range" id="night" min="0" max="100" value="25"><output class="time" id="tm">23:45</output></div>
+        <div class="row"><label for="rain">Siła deszczu</label><input type="range" id="rain" min="0" max="100" value="60"><output id="rainv">60</output></div>
+        <label class="check"><input type="checkbox" id="auto" checked> Odległe grzmoty co 60–150 s</label>
+        <div class="note">Późniejsza godzina: mniej ruchu, głośniejszy zegar i brzęczenie, ciemniejsza barwa całości. Otwarte okienko odsłania deszcz i ulicę.</div>
+      </fieldset>
+      <fieldset>
+        <legend>Wnętrze</legend>
+        <div id="inner"></div>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Zewnątrz</legend>
+        <div id="outer"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Całość</legend>
+        <div id="mast"></div>
+        <div class="note">Limiter na wyjściu. Poziom ustawiony tak, żeby tło siedziało cicho pod muzyką i głosem.</div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+const dbToG = d => Math.pow(10, d / 20);
+const rnd = (a, b) => a + Math.random() * (b - a);
+const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+const lerp = (a, b, t) => a + (b - a) * t;
+
+function noiseBuf(ctx, kind, sec) {
+  const sr = ctx.sampleRate, n = Math.floor(sec * sr), f = Math.floor(0.25 * sr), tot = n + f;
+  const buf = ctx.createBuffer(2, n, sr);
+  for (let c = 0; c < 2; c++) {
+    const x = new Float32Array(tot);
+    let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0, last = 0;
+    for (let i = 0; i < tot; i++) {
+      const w = Math.random() * 2 - 1;
+      if (kind === 'white') x[i] = w;
+      else if (kind === 'pink') {
+        b0 = 0.99886 * b0 + w * 0.0555179; b1 = 0.99332 * b1 + w * 0.0750759;
+        b2 = 0.969 * b2 + w * 0.153852; b3 = 0.8665 * b3 + w * 0.3104856;
+        b4 = 0.55 * b4 + w * 0.5329522; b5 = -0.7616 * b5 - w * 0.016898;
+        x[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + w * 0.5362) * 0.11; b6 = w * 0.115926;
+      } else { last = (last + 0.02 * w) / 1.02; x[i] = last * 3.5; }
+    }
+    const o = buf.getChannelData(c);
+    for (let i = 0; i < n; i++) o[i] = x[i];
+    // równo-mocowy crossfade ogona z początkiem: pętla bez klików
+    for (let i = 0; i < f; i++) { const a = i / f; o[i] = x[i] * Math.sqrt(a) + x[n + i] * Math.sqrt(1 - a); }
+  }
+  return buf;
+}
+
+function roomIR(ctx, sec, tau) {
+  const sr = ctx.sampleRate, n = Math.floor(sec * sr), buf = ctx.createBuffer(2, n, sr);
+  for (let c = 0; c < 2; c++) {
+    const o = buf.getChannelData(c); let lp = 0;
+    for (let i = 0; i < n; i++) {
+      const t = i / sr, k = 0.55 - 0.45 * Math.min(1, t / sec); // coraz ciemniejszy ogon
+      lp += k * ((Math.random() * 2 - 1) - lp);
+      o[i] = lp * Math.exp(-t / tau) * (i < 80 ? i / 80 : 1);
+    }
+  }
+  return buf;
+}
+
+function build(ctx) {
+  const A = {};
+  const white = noiseBuf(ctx, 'white', 4), pink = noiseBuf(ctx, 'pink', 7), brown = noiseBuf(ctx, 'brown', 9);
+
+  // ---- szyna: Master <- {outside, inside} ; reverb pokoju
+  const limiter = ctx.createDynamicsCompressor();
+  limiter.threshold.value = -8; limiter.knee.value = 6; limiter.ratio.value = 14; limiter.attack.value = 0.004; limiter.release.value = 0.25;
+  const master = ctx.createGain(); master.gain.value = dbToG(-3);
+  const tone = ctx.createBiquadFilter(); tone.type = 'lowpass'; tone.frequency.value = 9000; tone.Q.value = 0.5;
+  const analyser = ctx.createAnalyser(); analyser.fftSize = 1024; analyser.smoothingTimeConstant = 0.8;
+  tone.connect(master); master.connect(limiter); limiter.connect(analyser); limiter.connect(ctx.destination);
+
+  const outside = ctx.createGain(); // wszystko za szybą
+  const outLP = ctx.createBiquadFilter(); outLP.type = 'lowpass'; outLP.frequency.value = 1900; outLP.Q.value = 0.4;
+  outside.connect(outLP); outLP.connect(tone);
+  const inside = ctx.createGain(); inside.connect(tone);
+
+  const verb = ctx.createConvolver(); verb.buffer = roomIR(ctx, 2.2, 0.7);
+  const verbIn = ctx.createGain(); verbIn.gain.value = 0.9; const verbOut = ctx.createGain(); verbOut.gain.value = 0.35;
+  verbIn.connect(verb); verb.connect(verbOut); verbOut.connect(tone);
+
+  // ---- warstwa: in(automatyka) -> state(godzina/deszcz) -> user(suwak) -> bus
+  const layers = {};
+  function layer(id, bus, base, send) {
+    const inG = ctx.createGain(), st = ctx.createGain(), us = ctx.createGain();
+    us.gain.value = base; inG.connect(st); st.connect(us); us.connect(bus);
+    if (send) { const s = ctx.createGain(); s.gain.value = send; us.connect(s); s.connect(verbIn); }
+    layers[id] = { inG, st, us, base };
+    return layers[id];
+  }
+  function loopSrc(buf, dest, off) {
+    const s = ctx.createBufferSource(); s.buffer = buf; s.loop = true; s.connect(dest);
+    s.start(0, off === undefined ? rnd(0, buf.duration - 0.5) : off); return s;
+  }
+  function filt(type, f, q) { const b = ctx.createBiquadFilter(); b.type = type; b.frequency.value = f; if (q !== undefined) b.Q.value = q; return b; }
+
+  // ---- ZEWNĄTRZ
+  // deszcz na szybie: jasny syk
+  { const L = layer('glass', outside, 0.30, 0.15); const hp = filt('highpass', 1700, 0.5), lp = filt('lowpass', 9000, 0.4);
+    loopSrc(pink, hp); hp.connect(lp); lp.connect(L.inG); }
+  // deszcz na blasze/parapecie: środek, ziarno
+  { const L = layer('roof', outside, 0.34, 0.2); const bp = filt('bandpass', 950, 0.55);
+    loopSrc(pink, bp); bp.connect(L.inG); }
+  // ciężar deszczu: niski dudniący szum
+  { const L = layer('body', outside, 0.34, 0.1); const lp = filt('lowpass', 420, 0.4); const bp = filt('bandpass', 230, 0.5);
+    loopSrc(brown, lp); lp.connect(bp); bp.connect(L.inG); }
+  // pojedyncze krople na szybie, plinki o parapet, kapanie z rynny (sceduler)
+  layer('drops', outside, 0.9, 0.2);
+  layer('pings', outside, 0.9, 0.35);
+  layer('drip', outside, 0.9, 0.45);
+  // ruch uliczny: odległy pomruk + przejazdy
+  { const L = layer('traffic', outside, 0.5, 0.25); const lp = filt('lowpass', 230, 0.5);
+    loopSrc(brown, lp); lp.connect(L.inG); }
+  layer('cars', outside, 0.9, 0.3);
+  layer('thunder', outside, 1.0, 0.5);
+
+  // ---- WNĘTRZE
+  // lampa sodowa: 100 Hz (podwójna częstotliwość sieci) + harmoniczne, drobny dryf
+  const humOsc = [];
+  { const L = layer('hum', inside, 0.28, 0.1);
+    [[100, 'sine', 0.55], [200, 'sine', 0.22], [300, 'sine', 0.10], [500, 'triangle', 0.035], [50, 'sine', 0.12]].forEach(([f, t, g]) => {
+      const o = ctx.createOscillator(); o.type = t; o.frequency.value = f; const gg = ctx.createGain(); gg.gain.value = g;
+      o.connect(gg); gg.connect(L.inG); o.start(); humOsc.push({ o, f });
+    });
+    const saw = ctx.createOscillator(); saw.type = 'sawtooth'; saw.frequency.value = 100;
+    const sl = filt('lowpass', 800, 0.7), sg = ctx.createGain(); sg.gain.value = 0.045;
+    saw.connect(sl); sl.connect(sg); sg.connect(L.inG); saw.start(); humOsc.push({ o: saw, f: 100 });
+    const drift = ctx.createOscillator(); drift.frequency.value = 0.21; const dg = ctx.createGain(); dg.gain.value = 0.35;
+    drift.connect(dg); humOsc.forEach(h => dg.connect(h.o.detune)); drift.start(); }
+  // wentylacja: pomruk + gwizd na kratce, powolna fala
+  { const L = layer('vent', inside, 0.30, 0.12); const lp = filt('lowpass', 150, 0.5);
+    loopSrc(brown, lp); lp.connect(L.inG);
+    const bp = filt('bandpass', 380, 3.5), g2 = ctx.createGain(); g2.gain.value = 0.10;
+    loopSrc(pink, bp); bp.connect(g2); g2.connect(L.inG);
+    const lfo = ctx.createOscillator(); lfo.frequency.value = 0.07; const lg = ctx.createGain(); lg.gain.value = 55;
+    lfo.connect(lg); lg.connect(bp.frequency); lfo.start(); }
+  layer('clock', inside, 0.9, 0.5);
+  layer('ui', inside, 1.0, 0.45);
+
+  // ---- impulsy
+  function burst(L, t, o) {
+    const s = ctx.createBufferSource(); s.buffer = white; const bp = filt(o.type || 'bandpass', o.f, o.q || 1);
+    const g = ctx.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(o.g, t + (o.a || 0.001));
+    g.gain.exponentialRampToValueAtTime(0.0001, t + (o.a || 0.001) + o.d);
+    let out = g; if (o.pan !== undefined && ctx.createStereoPanner) { const p = ctx.createStereoPanner(); p.pan.value = o.pan; g.connect(p); out = p; }
+    s.connect(bp); bp.connect(g); out.connect(L.inG); s.start(t, rnd(0, 3), o.d + 0.05);
+  }
+  function tone_(L, t, f0, f1, d, g, type, pan) {
+    const o = ctx.createOscillator(); o.type = type || 'sine'; o.frequency.setValueAtTime(f0, t);
+    if (f1 !== f0) o.frequency.exponentialRampToValueAtTime(f1, t + d * 0.5);
+    const gg = ctx.createGain(); gg.gain.setValueAtTime(0, t); gg.gain.linearRampToValueAtTime(g, t + 0.002); gg.gain.exponentialRampToValueAtTime(0.0001, t + d);
+    let out = gg; if (pan !== undefined && ctx.createStereoPanner) { const p = ctx.createStereoPanner(); p.pan.value = pan; gg.connect(p); out = p; }
+    o.connect(gg); out.connect(L.inG); o.start(t); o.stop(t + d + 0.05);
+  }
+
+  A.dropOnGlass = (t, k) => { const f = rnd(2200, 6500); burst(layers.drops, t, { f, q: rnd(2, 6), d: rnd(0.006, 0.018), g: rnd(0.05, 0.28) * k, pan: rnd(-0.9, 0.9) }); };
+  A.pingMetal = t => { const f = pick([310, 360, 420, 480, 560, 640, 760]) * rnd(0.96, 1.04), p = rnd(-0.8, 0.8), g = rnd(0.03, 0.12), d = rnd(0.07, 0.2);
+    tone_(layers.pings, t, f, f * 0.985, d, g, 'sine', p); tone_(layers.pings, t, f * 2.76, f * 2.7, d * 0.5, g * 0.35, 'sine', p);
+    burst(layers.pings, t, { f: 3000, q: 1, d: 0.01, g: g * 0.8, pan: p }); };
+  A.drip = t => { const p = rnd(-0.6, 0.6), f = rnd(380, 720); tone_(layers.drip, t, f, f * 2.1, 0.075, rnd(0.06, 0.15), 'sine', p);
+    burst(layers.drip, t, { f: 1800, q: 1.5, d: 0.012, g: 0.05, pan: p }); };
+  A.car = t => {
+    const dur = rnd(4, 7), dir = Math.random() < 0.5 ? -1 : 1, peak = rnd(0.25, 0.55), L = layers.cars;
+    const s = ctx.createBufferSource(); s.buffer = white; s.loop = true;
+    const bp = filt('bandpass', 1500, 0.7); bp.frequency.setValueAtTime(900, t); bp.frequency.linearRampToValueAtTime(2200, t + dur * 0.5); bp.frequency.linearRampToValueAtTime(1000, t + dur);
+    const e = ctx.createBufferSource(); e.buffer = brown; e.loop = true; const el = filt('lowpass', 180, 0.7), eg = ctx.createGain(); eg.gain.value = 1.6;
+    const g = ctx.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(peak, t + dur * 0.5); g.gain.linearRampToValueAtTime(0, t + dur);
+    const p = ctx.createStereoPanner ? ctx.createStereoPanner() : null;
+    s.connect(bp); bp.connect(g); e.connect(el); el.connect(eg); eg.connect(g);
+    if (p) { p.pan.setValueAtTime(-0.85 * dir, t); p.pan.linearRampToValueAtTime(0.85 * dir, t + dur); g.connect(p); p.connect(L.inG); } else g.connect(L.inG);
+    s.start(t, rnd(0, 2)); e.start(t, rnd(0, 4)); s.stop(t + dur + 0.1); e.stop(t + dur + 0.1);
+  };
+  A.thunder = t => {
+    const L = layers.thunder, dur = rnd(7, 10), s = ctx.createBufferSource(); s.buffer = brown; s.loop = true;
+    const lp = filt('lowpass', 300, 0.7); lp.frequency.setValueAtTime(320, t); lp.frequency.exponentialRampToValueAtTime(48, t + dur);
+    const g = ctx.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(0.9, t + rnd(0.5, 1.0));
+    for (let i = 0; i < 3; i++) g.gain.linearRampToValueAtTime(rnd(0.35, 0.8) * (1 - i * 0.25), t + 1.4 + i * rnd(1.1, 1.8));
+    g.gain.linearRampToValueAtTime(0, t + dur);
+    s.connect(lp); lp.connect(g); g.connect(L.inG); s.start(t, rnd(0, 5)); s.stop(t + dur + 0.1);
+  };
+  A.knock = t0 => { // trzy pukania w szybę: drewno + szkło
+    const k = [0, rnd(0.34, 0.42), rnd(0.8, 0.9)], L = layers.ui;
+    k.forEach((d, i) => { const t = t0 + d, v = 1 - i * 0.1;
+      tone_(L, t, 170, 95, 0.09, 0.6 * v, 'sine', -0.1); burst(L, t, { f: 900, q: 1.2, d: 0.05, g: 0.45 * v, pan: -0.1 });
+      burst(L, t, { f: 3400, q: 3, d: 0.02, g: 0.15 * v, pan: -0.1 }); });
+  };
+  A.bell = t => { // dzwonek okienka: mosiądz, trochę rozstrojony
+    const L = layers.ui, f = 880;
+    [[1, 0.5, 2.2], [2.4, 0.28, 1.4], [5.95, 0.12, 0.7], [1.003, 0.35, 2.0], [3.1, 0.08, 0.5]].forEach(([m, g, d]) => tone_(L, t, f * m, f * m, d, g * 0.55, 'sine', 0.15));
+    burst(L, t, { f: 4200, q: 2, d: 0.03, g: 0.18 });
+  };
+  A.tick = (t, tock) => {
+    const L = layers.clock; burst(L, t, { f: tock ? 1500 : 2100, q: 5, d: 0.014, g: tock ? 0.55 : 0.7, pan: -0.35 });
+    tone_(L, t, tock ? 210 : 290, tock ? 190 : 260, 0.02, 0.35, 'sine', -0.35);
+  };
+  A.flicker = t => {
+    const g = layers.hum.inG.gain; g.cancelScheduledValues(t); g.setValueAtTime(1, t);
+    let x = t; for (let i = 0; i < 4; i++) { g.setValueAtTime(rnd(0.15, 0.5), x + 0.02); g.setValueAtTime(1, x + rnd(0.05, 0.09)); x += rnd(0.08, 0.16); burst(layers.ui, x, { f: 2500, q: 0.8, d: 0.01, g: 0.12 }); }
+  };
+  A.outage = t => { // zanik zasilania: spadek tonu, cisza, powrót z trzaskiem
+    const g = layers.hum.inG.gain; g.cancelScheduledValues(t); g.setValueAtTime(1, t);
+    humOsc.forEach(h => { h.o.frequency.cancelScheduledValues(t); h.o.frequency.setValueAtTime(h.f, t); h.o.frequency.exponentialRampToValueAtTime(h.f * 0.45, t + 1.3);
+      h.o.frequency.setValueAtTime(h.f * 0.45, t + 1.31); h.o.frequency.setValueAtTime(h.f * 0.7, t + 4.4); h.o.frequency.exponentialRampToValueAtTime(h.f, t + 5.4); });
+    g.linearRampToValueAtTime(0, t + 1.3); g.setValueAtTime(0, t + 4.4); g.linearRampToValueAtTime(1, t + 5.4);
+    burst(layers.ui, t + 0.02, { f: 800, q: 0.7, d: 0.08, g: 0.45 }); burst(layers.ui, t + 4.4, { f: 1400, q: 0.7, d: 0.12, g: 0.5 });
+  };
+
+  // ---- stan i harmonogram
+  const S = { rain: 0.6, night: 0.25, open: false, auto: true };
+  A.state = S;
+  A.applyState = () => {
+    const now = ctx.currentTime, T = 0.5, set = (id, v) => layers[id].st.gain.setTargetAtTime(v, now, T);
+    const rm = 0.3 + 0.7 * S.rain, n = S.night;
+    set('glass', rm); set('roof', rm); set('body', 0.4 + 0.6 * S.rain);
+    set('traffic', lerp(1, 0.14, n)); set('cars', 1); set('clock', lerp(0.5, 1, n));
+    set('hum', lerp(0.6, 1, n)); set('vent', lerp(0.7, 1, n));
+    outLP.frequency.setTargetAtTime(S.open ? 11000 : 1900, now, 0.18);
+    outside.gain.setTargetAtTime(S.open ? 1.0 : 0.6, now, 0.18);
+    tone.frequency.setTargetAtTime(lerp(10000, 4200, n), now, 0.6);
+  };
+  A.setUser = (id, v) => { if (id === 'master') master.gain.setTargetAtTime(dbToG(lerp(-40, -2, v)), ctx.currentTime, 0.05); else layers[id].us.gain.setTargetAtTime(layers[id].base * Math.pow(v / 0.5, 2) , ctx.currentTime, 0.05); };
+
+  const nx = { drop: 0, ping: 0, drip: 0, car: 0, th: 0, gust: 0, fl: 0, clk: 0, tock: false };
+  A.begin = t => { nx.drop = nx.ping = t; nx.drip = t + 0.8; nx.car = t + rnd(3, 8); nx.th = t + rnd(25, 60); nx.gust = t; nx.fl = t + rnd(12, 40); nx.clk = Math.ceil(t) + 0.05; };
+  A.schedule = until => {
+    const r = S.rain, n = S.night;
+    while (nx.drop < until) { A.dropOnGlass(nx.drop, 0.5 + r); nx.drop += -Math.log(1 - Math.random()) / (3 + 24 * r * r + 3 * r); }
+    while (nx.ping < until) { A.pingMetal(nx.ping); nx.ping += -Math.log(1 - Math.random()) / (0.3 + 4.2 * r); }
+    while (nx.drip < until) { A.drip(nx.drip); nx.drip += rnd(0.7, 2.6) / (0.5 + r); }
+    while (nx.car < until) { A.car(nx.car); nx.car += rnd(9, 24) / (1 - 0.8 * n); }
+    while (nx.th < until) { if (S.auto) A.thunder(nx.th); nx.th += rnd(60, 150); }
+    while (nx.gust < until) { // porywy: deszcz faluje
+      const v = rnd(0.72, 1.18), d = rnd(2.5, 6);
+      ['glass', 'roof', 'body'].forEach(id => layers[id].inG.gain.setTargetAtTime(v * rnd(0.95, 1.05), nx.gust, d * 0.4)); nx.gust += d; }
+    while (nx.fl < until) { A.flicker(nx.fl); nx.fl += rnd(15, 55); }
+    while (nx.clk < until) { A.tick(nx.clk + rnd(0, 0.002), nx.tock); nx.tock = !nx.tock; nx.clk += 1; }
+  };
+  A.analyser = analyser; A.master = master; A.layers = layers;
+  return A;
+}
+
+// ---------- UI / odtwarzanie ----------
+const $ = id => document.getElementById(id);
+const SLIDERS = {
+  outer: [['glass', 'Deszcz na szybie', 50], ['roof', 'Deszcz na blasze', 50], ['body', 'Ciężar deszczu', 50], ['drops', 'Krople na szybie', 50], ['pings', 'Plinki o parapet', 50],
+          ['drip', 'Kapanie z rynny', 50], ['traffic', 'Odległy ruch', 50], ['cars', 'Przejazdy aut', 50], ['thunder', 'Grzmoty', 50]],
+  inner: [['hum', 'Lampa sodowa', 50], ['vent', 'Wentylacja', 50], ['clock', 'Zegar', 50], ['ui', 'Dzwonek / pukanie', 50]],
+  mast: [['master', 'Głośność', 70]]
+};
+let ctx = null, A = null, timer = null;
+const pendingUser = {};
+for (const grp in SLIDERS) SLIDERS[grp].forEach(([id, label, def]) => {
+  const row = document.createElement('div'); row.className = 'row';
+  row.innerHTML = `<label for="s_${id}">${label}</label><input type="range" id="s_${id}" min="0" max="100" value="${def}"><output id="o_${id}">${def}</output>`;
+  $(grp).appendChild(row); pendingUser[id] = def / 100;
+  row.querySelector('input').addEventListener('input', e => { const v = +e.target.value / 100; $('o_' + id).textContent = e.target.value; pendingUser[id] = v; if (A) A.setUser(id, v); });
+});
+function pushAll() {
+  for (const id in pendingUser) A.setUser(id, pendingUser[id]);
+  A.state.rain = +$('rain').value / 100; A.state.night = +$('night').value / 100; A.state.auto = $('auto').checked; A.applyState();
+}
+function clockLabel() { const m = Math.round(22 * 60 + (+$('night').value / 100) * 7 * 60) % 1440; return String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'); }
+$('tm').textContent = clockLabel();
+$('night').addEventListener('input', () => { $('tm').textContent = clockLabel(); if (A) { A.state.night = +$('night').value / 100; A.applyState(); } });
+$('rain').addEventListener('input', () => { $('rainv').textContent = $('rain').value; if (A) { A.state.rain = +$('rain').value / 100; A.applyState(); } });
+$('auto').addEventListener('change', () => { if (A) A.state.auto = $('auto').checked; });
+$('open').addEventListener('click', e => { const on = e.currentTarget.getAttribute('aria-pressed') !== 'true'; e.currentTarget.setAttribute('aria-pressed', on); e.currentTarget.textContent = 'Okienko: ' + (on ? 'otwarte' : 'zamknięte'); if (A) { A.state.open = on; A.applyState(); } });
+function ensure() { if (A) return true; start(); return true; }
+$('knock').onclick = () => { ensure(); A.knock(ctx.currentTime + 0.05); };
+$('bell').onclick = () => { ensure(); A.bell(ctx.currentTime + 0.05); };
+$('thunder').onclick = () => { ensure(); A.thunder(ctx.currentTime + 0.05); };
+$('outage').onclick = () => { ensure(); A.outage(ctx.currentTime + 0.05); };
+function start() {
+  const AC = window.AudioContext || window.webkitAudioContext; ctx = new AC(); A = build(ctx);
+  A.state.open = $('open').getAttribute('aria-pressed') === 'true'; pushAll();
+  A.begin(ctx.currentTime + 0.1); A.schedule(ctx.currentTime + 1.5);
+  timer = setInterval(() => A.schedule(ctx.currentTime + 1.5), 250);
+  $('play').textContent = '■ Wyłącz'; draw();
+}
+function stop() { clearInterval(timer); if (ctx) ctx.close(); ctx = A = null; $('play').textContent = '▶ Włącz noc'; }
+$('play').onclick = () => (A ? stop() : start());
+
+const cv = $('spec'), c2 = cv.getContext('2d');
+function draw() {
+  if (!A) { c2.fillStyle = '#000'; c2.fillRect(0, 0, cv.width, cv.height); return; }
+  const d = new Uint8Array(A.analyser.frequencyBinCount); A.analyser.getByteFrequencyData(d);
+  c2.fillStyle = '#000'; c2.fillRect(0, 0, cv.width, cv.height);
+  const n = 96, w = cv.width / n; c2.fillStyle = '#d9822b';
+  for (let i = 0; i < n; i++) { const b = Math.floor(Math.pow(i / n, 2) * d.length * 0.7) + 1, h = d[b] / 255 * cv.height; c2.fillRect(i * w + 1, cv.height - h, w - 2, h); }
+  requestAnimationFrame(draw);
+}
+draw();
+
+// ---- test offline (do weryfikacji poziomów): LF.renderTest(sekundy) -> {peakDb, rmsDb, ...}
+window.LF = {
+  async renderTest(sec, over) {
+    const oc = new OfflineAudioContext(2, 44100 * sec, 44100), a = build(oc);
+    Object.assign(a.state, over || {}); a.applyState(); a.begin(0.05); a.schedule(sec);
+    const buf = await oc.startRendering(); let pk = 0, ss = 0, n = 0;
+    for (let c = 0; c < 2; c++) { const d = buf.getChannelData(c); for (let i = 22050; i < d.length; i++) { const v = Math.abs(d[i]); if (v > pk) pk = v; ss += v * v; n++; } }
+    return { peakDb: 20 * Math.log10(pk), rmsDb: 10 * Math.log10(ss / n) };
+  }
+};
+</script>
+</body>
+</html>

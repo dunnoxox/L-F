@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.tmp
+__pycache__/
+*.pyc
+# Unity
+unity/**/Library/
+unity/**/Temp/
+unity/**/Logs/
+unity/**/obj/
+unity/**/UserSettings/
+*.csproj
+*.sln
+node_modules/

@@ -1,0 +1,8 @@
+{
+  "name": "Okienko.Editor",
+  "rootNamespace": "Okienko.EditorTools",
+  "references": [ "Okienko.Core", "Okienko.Runtime" ],
+  "includePlatforms": [ "Editor" ],
+  "excludePlatforms": [],
+  "autoReferenced": false
+}
