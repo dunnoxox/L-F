@@ -35,14 +35,9 @@ function resetScene() {
 fx.init({ stage });
 fx.onCue(name => { ui('cue').textContent = name; });
 ui('reduced').checked = media.matches;
-media.addEventListener('change', event => { ui('reduced').checked = event.matches; resetScene(); });
-ui('character').onchange = resetScene;
-ui('background').onchange = resetScene;
-ui('seed').onchange = () => { fx.seed(Number(ui('seed').value)); resetScene(); };
+
 ui('intensity').oninput = event => fx.setIntensity(Number(event.target.value));
 ui('flashes').onchange = event => fx.setFlashes(!event.target.checked);
-ui('enabled').onchange = event => { fx.setEnabled(event.target.checked); resetScene(); };
-ui('reduced').onchange = event => { fx.setReduced(event.target.checked); resetScene(); };
 
 const cases = {
   shake: [null, { preset: 'thunder' }],
@@ -62,8 +57,6 @@ for (const { name, description } of fx.list()) {
     fx.play(name, target, options);
   }, description);
 }
-
-resetScene();
 
 let sequence = 0;
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -86,16 +79,17 @@ function freshScene() {
   resetScene();
   setupAmbient();
 }
-for (const id of ['character', 'background', 'seed', 'enabled', 'reduced']) {
-  const previous = ui(id).onchange;
-  ui(id).onchange = event => { previous(event); freshScene(); };
-}
-media.addEventListener('change', freshScene);
+ui('character').onchange = freshScene;
+ui('background').onchange = freshScene;
+ui('seed').onchange = event => { fx.seed(Number(event.target.value)); freshScene(); };
+ui('enabled').onchange = event => { fx.setEnabled(event.target.checked); freshScene(); };
+ui('reduced').onchange = event => { fx.setReduced(event.target.checked); freshScene(); };
+media.addEventListener('change', event => { ui('reduced').checked = event.matches; freshScene(); });
 for (const level of [0, 1, 2, 3]) button('ambientControls', `Deszcz ${level}`, () => fx.rain.setLevel(level));
 for (const mode of ['steady','buzz','flicker','dying','out','on']) {
   button('ambientControls', `Lampa · ${mode}`, () => fx.ambient.set('lamp', { mode }));
 }
-button('ambientControls', 'Odtwórz scenę', freshScene);
+button('ambientControls', 'Odtwórz scenę', freshScene).id = 'reset-scene';
 button('ambientControls', 'Zatrzymaj efekty', () => { sequence++; fx.stop(); fx.guest.unmount(); });
 button('ambientControls', 'Przyspiesz zegar', () => fx.clock.advance(25));
 button('ambientControls', 'Głos postaci', () => fx.guest.speak({ chars: 80, cps: 55 }));

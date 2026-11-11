@@ -49,7 +49,7 @@
       if (hit.remaining <= 0) hit.cancel();
     }
     if (remaining || !delta) for (const task of [...tasks]) if (tasks.has(task)) task(remaining);
-    if (!tasks.size && !ambientJobs.size) previous = null;
+    if (!tasks.size && !ambientJobs.size && !hitStops.size) previous = null;
     schedule();
   }
   function visibility() {
@@ -109,11 +109,12 @@
     for (const handle of [...jobs]) {
       if ((!name || handle.name === name) && (target == null || el === handle.target)) handle.cancel();
     }
-    if (target == null && !name) { clearCurtain(); clearDayCurtain(); }
+    if (target == null && !name) { guestUnmount(); clearCurtain(); clearDayCurtain(); }
   }
   function shake(preset = 'knock') {
     const trauma = typeof preset === 'string' ? presets[preset] || 0 : clamp(Number(preset.trauma) || 0);
     if (!stage || !enabled) return idle();
+    const duration = typeof preset === 'string' ? 340 : clamp(fallback(preset.duration, 340), 80, 600);
     if (typeof preset === 'string') cue(preset === 'collapse' ? 'pile_collapse' : preset, { trauma });
     if (!trauma || reduced || !intensity) return idle();
     stop('shake', stage);
@@ -122,8 +123,8 @@
       const animation = ctx.animate(stage, noise.map(([x, y, r], i) => {
         const a = traumaAt(trauma, i / 20) * intensity;
         return { translate: `${x * a * 22}px ${y * a * 17}px`, rotate: `${r * a * 1.5}deg` };
-      }), 340);
-      ctx.time(340, (_, elapsed) => { animation.currentTime = elapsed; });
+      }), duration);
+      ctx.time(duration, (_, elapsed) => { animation.currentTime = elapsed; });
     });
   }
   add('shake', 'Wstrząs sceny', (target, options) => shake(options.preset || options));
@@ -184,7 +185,12 @@
       flashes = Boolean(value);
       if (!flashes) { stop('storm.flash'); stop('scene.cut'); }
     },
-    setIntensity(value) { intensity = clamp(Number(value) || 0); if (!intensity) stop('shake'); },
+    setIntensity(value) {
+      const previousIntensity = intensity;
+      intensity = clamp(Number(value) || 0);
+      if (!intensity) { stop('shake'); stop('guest.breathe'); }
+      else if (!previousIntensity && guestState.body) play('guest.breathe', guestState.body);
+    },
     setReduced(value) { motionPreference({ matches: value == null ? media.matches : Boolean(value) }); },
     list() { return [...effects.values()].map(({ name, description }) => ({ name, description })); },
     metrics(resetSample = false) {
@@ -196,356 +202,24 @@
   };
 
   const profiles = {
-    "wdowiec": {
-      "habit": "Wygładza mankiet rękawiczki",
-      "weight": "limp",
-      "breathMs": 4900,
-      "sway": 2.6,
-      "duration": 720,
-      "tic": [
-        -3,
-        2,
-        -1
-      ],
-      "broken": null,
-      "intervalMs": [
-        3400,
-        6800
-      ]
-    },
-    "chlopak": {
-      "habit": "Przerzuca ciężar z nogi na nogę",
-      "weight": "light",
-      "breathMs": 4100,
-      "sway": 3,
-      "duration": 430,
-      "tic": [
-        4,
-        -3,
-        1
-      ],
-      "broken": [
-        -2,
-        1,
-        0
-      ],
-      "intervalMs": [
-        3500,
-        6970
-      ]
-    },
-    "maya": {
-      "habit": "Zastyga, czekając na powtórzenie warunku",
-      "weight": "light",
-      "breathMs": 4850,
-      "sway": 1.2,
-      "duration": 760,
-      "tic": [
-        0,
-        -3,
-        0
-      ],
-      "broken": null,
-      "intervalMs": [
-        3600,
-        7140
-      ]
-    },
-    "evan": {
-      "habit": "Wygładza mankiet, pod presją powtarza gest",
-      "weight": "heavy",
-      "breathMs": 4400,
-      "sway": 1.8,
-      "duration": 590,
-      "tic": [
-        -2,
-        3,
-        1
-      ],
-      "broken": [
-        -4,
-        3,
-        -2
-      ],
-      "intervalMs": [
-        3700,
-        7310
-      ]
-    },
-    "lena": {
-      "habit": "Rusza ku szybie i urywa gest w pół słowa",
-      "weight": "light",
-      "breathMs": 4150,
-      "sway": 2.8,
-      "duration": 380,
-      "tic": [
-        2,
-        4,
-        0
-      ],
-      "broken": [
-        0,
-        3,
-        -1
-      ],
-      "intervalMs": [
-        3800,
-        7480
-      ]
-    },
-    "noah": {
-      "habit": "Odkłada notes dokładnie na to samo miejsce",
-      "weight": "heavy",
-      "breathMs": 4800,
-      "sway": 1.4,
-      "duration": 650,
-      "tic": [
-        2,
-        5,
-        2
-      ],
-      "broken": [
-        -3,
-        2,
-        0
-      ],
-      "intervalMs": [
-        3900,
-        7650
-      ]
-    },
-    "iris": {
-      "habit": "Przyciska palce rękawiczek",
-      "weight": "heavy",
-      "breathMs": 4950,
-      "sway": 0.8,
-      "duration": 700,
-      "tic": [
-        -1,
-        1,
-        0
-      ],
-      "broken": null,
-      "intervalMs": [
-        4000,
-        7820
-      ]
-    },
-    "ada": {
-      "habit": "Kołysze się na piętach",
-      "weight": "light",
-      "breathMs": 4050,
-      "sway": 3,
-      "duration": 460,
-      "tic": [
-        -4,
-        5,
-        -3
-      ],
-      "broken": null,
-      "intervalMs": [
-        4100,
-        7990
-      ]
-    },
-    "leo": {
-      "habit": "Sprawdza metalowe zapięcie torby",
-      "weight": "heavy",
-      "breathMs": 4700,
-      "sway": 2,
-      "duration": 600,
-      "tic": [
-        3,
-        1,
-        -2
-      ],
-      "broken": [
-        0,
-        -3,
-        2
-      ],
-      "intervalMs": [
-        4200,
-        8160
-      ]
-    },
-    "victor": {
-      "habit": "Usztywnia się przed pytaniem o podpis",
-      "weight": "heavy",
-      "breathMs": 4600,
-      "sway": 0.9,
-      "duration": 530,
-      "tic": [
-        1,
-        1,
-        0
-      ],
-      "broken": [
-        -2,
-        3,
-        0
-      ],
-      "intervalMs": [
-        4300,
-        8330
-      ]
-    },
-    "elias": {
-      "habit": "Składa numerek, po pytaniu czeka bez ruchu",
-      "weight": "limp",
-      "breathMs": 4990,
-      "sway": 1.5,
-      "duration": 880,
-      "tic": [
-        2,
-        1,
-        0
-      ],
-      "broken": null,
-      "intervalMs": [
-        4400,
-        8500
-      ]
-    },
-    "sam": {
-      "habit": "Zerka na ślad po zegarku",
-      "weight": "heavy",
-      "breathMs": 4600,
-      "sway": 2,
-      "duration": 630,
-      "tic": [
-        -3,
-        0,
-        1
-      ],
-      "broken": null,
-      "intervalMs": [
-        4500,
-        8670
-      ]
-    },
-    "nora": {
-      "habit": "Odhacza kolejne pozycje gestem",
-      "weight": "light",
-      "breathMs": 4270,
-      "sway": 1.7,
-      "duration": 500,
-      "tic": [
-        1,
-        4,
-        2
-      ],
-      "broken": [
-        0,
-        2,
-        -3
-      ],
-      "intervalMs": [
-        4600,
-        8840
-      ]
-    },
-    "vera": {
-      "habit": "Osadza ciężar, zanim sięgnie do kluczy",
-      "weight": "heavy",
-      "breathMs": 4980,
-      "sway": 2.5,
-      "duration": 800,
-      "tic": [
-        4,
-        2,
-        -1
-      ],
-      "broken": [
-        1,
-        0,
-        0
-      ],
-      "intervalMs": [
-        4700,
-        9010
-      ]
-    },
-    "maz": {
-      "habit": "Wygładza mankiet, pod presją powtarza gest",
-      "weight": "heavy",
-      "breathMs": 4400,
-      "sway": 1.8,
-      "duration": 590,
-      "tic": [
-        -2,
-        3,
-        1
-      ],
-      "broken": [
-        -4,
-        3,
-        -2
-      ],
-      "intervalMs": [
-        3700,
-        7310
-      ]
-    },
-    "siostra": {
-      "habit": "Rusza ku szybie i urywa gest w pół słowa",
-      "weight": "light",
-      "breathMs": 4150,
-      "sway": 2.8,
-      "duration": 380,
-      "tic": [
-        2,
-        4,
-        0
-      ],
-      "broken": [
-        0,
-        3,
-        -1
-      ],
-      "intervalMs": [
-        3800,
-        7480
-      ]
-    },
-    "dama": {
-      "habit": "Przyciska palce rękawiczek",
-      "weight": "heavy",
-      "breathMs": 4950,
-      "sway": 0.8,
-      "duration": 700,
-      "tic": [
-        -1,
-        1,
-        0
-      ],
-      "broken": null,
-      "intervalMs": [
-        4000,
-        7820
-      ]
-    },
-    "inspektor": {
-      "habit": "Usztywnia się przed pytaniem o podpis",
-      "weight": "heavy",
-      "breathMs": 4600,
-      "sway": 0.9,
-      "duration": 530,
-      "tic": [
-        1,
-        1,
-        0
-      ],
-      "broken": [
-        -2,
-        3,
-        0
-      ],
-      "intervalMs": [
-        4300,
-        8330
-      ]
-    }
+    wdowiec: {"habit": "Wygładza mankiet rękawiczki", "weight": "limp", "breathMs": 4900, "sway": 2.6, "duration": 720, "tic": [-3,2,-1], "broken": null, "intervalMs": [3400,6800]},
+    chlopak: {"habit": "Przerzuca ciężar z nogi na nogę", "weight": "light", "breathMs": 4100, "sway": 3, "duration": 430, "tic": [4,-3,1], "broken": [-2,1,0], "intervalMs": [3500,6970]},
+    maya: {"habit": "Zastyga, czekając na powtórzenie warunku", "weight": "light", "breathMs": 4850, "sway": 1.2, "duration": 760, "tic": [0,-3,0], "broken": null, "intervalMs": [3600,7140]},
+    evan: {"habit": "Wygładza mankiet, pod presją powtarza gest", "weight": "heavy", "breathMs": 4400, "sway": 1.8, "duration": 590, "tic": [-2,3,1], "broken": [-4,3,-2], "intervalMs": [3700,7310]},
+    lena: {"habit": "Rusza ku szybie i urywa gest w pół słowa", "weight": "light", "breathMs": 4150, "sway": 2.8, "duration": 380, "tic": [2,4,0], "broken": [0,3,-1], "intervalMs": [3800,7480]},
+    noah: {"habit": "Odkłada notes dokładnie na to samo miejsce", "weight": "heavy", "breathMs": 4800, "sway": 1.4, "duration": 650, "tic": [2,5,2], "broken": [-3,2,0], "intervalMs": [3900,7650]},
+    iris: {"habit": "Przyciska palce rękawiczek", "weight": "heavy", "breathMs": 4950, "sway": 0.8, "duration": 700, "tic": [-1,1,0], "broken": null, "intervalMs": [4000,7820]},
+    ada: {"habit": "Kołysze się na piętach", "weight": "light", "breathMs": 4050, "sway": 3, "duration": 460, "tic": [-4,5,-3], "broken": null, "intervalMs": [4100,7990]},
+    leo: {"habit": "Sprawdza metalowe zapięcie torby", "weight": "heavy", "breathMs": 4700, "sway": 2, "duration": 600, "tic": [3,1,-2], "broken": [0,-3,2], "intervalMs": [4200,8160]},
+    victor: {"habit": "Usztywnia się przed pytaniem o podpis", "weight": "heavy", "breathMs": 4600, "sway": 0.9, "duration": 530, "tic": [1,1,0], "broken": [-2,3,0], "intervalMs": [4300,8330]},
+    elias: {"habit": "Składa numerek, po pytaniu czeka bez ruchu", "weight": "limp", "breathMs": 4990, "sway": 1.5, "duration": 880, "tic": [2,1,0], "broken": null, "intervalMs": [4400,8500]},
+    sam: {"habit": "Zerka na ślad po zegarku", "weight": "heavy", "breathMs": 4600, "sway": 2, "duration": 630, "tic": [-3,0,1], "broken": null, "intervalMs": [4500,8670]},
+    nora: {"habit": "Odhacza kolejne pozycje gestem", "weight": "light", "breathMs": 4270, "sway": 1.7, "duration": 500, "tic": [1,4,2], "broken": [0,2,-3], "intervalMs": [4600,8840]},
+    vera: {"habit": "Osadza ciężar, zanim sięgnie do kluczy", "weight": "heavy", "breathMs": 4980, "sway": 2.5, "duration": 800, "tic": [4,2,-1], "broken": [1,0,0], "intervalMs": [4700,9010]},
+    maz: {"habit": "Wygładza mankiet, pod presją powtarza gest", "weight": "heavy", "breathMs": 4400, "sway": 1.8, "duration": 590, "tic": [-2,3,1], "broken": [-4,3,-2], "intervalMs": [3700,7310]},
+    siostra: {"habit": "Rusza ku szybie i urywa gest w pół słowa", "weight": "light", "breathMs": 4150, "sway": 2.8, "duration": 380, "tic": [2,4,0], "broken": [0,3,-1], "intervalMs": [3800,7480]},
+    dama: {"habit": "Przyciska palce rękawiczek", "weight": "heavy", "breathMs": 4950, "sway": 0.8, "duration": 700, "tic": [-1,1,0], "broken": null, "intervalMs": [4000,7820]},
+    inspektor: {"habit": "Usztywnia się przed pytaniem o podpis", "weight": "heavy", "breathMs": 4600, "sway": 0.9, "duration": 530, "tic": [1,1,0], "broken": [-2,3,0], "intervalMs": [4300,8330]}
   };
 
   const moods = ['neutralna', 'mowi', 'emocja', 'klamie'];
@@ -579,13 +253,14 @@
   function guestUnmount() {
     const { el, body, layers, faces, images, frame } = guestState;
     if (!el) return;
+    Object.keys(guestState).forEach(key => delete guestState[key]);
     stop(undefined, el);
     if (body !== el) stop(undefined, body);
+    if (frame) stop(undefined, frame);
     if (layers && layers.hands) stop('guest.tic', layers.hands);
     if (faces) faces.forEach(face => face.remove());
     if (frame) frame.remove();
     if (images) images.clear();
-    Object.keys(guestState).forEach(key => delete guestState[key]);
   }
   function guestMount(target, options = {}) {
     guestUnmount();
@@ -620,7 +295,7 @@
       repeat();
     });
   }
-  function setMood(mood) {
+  function setMood(mood, { animate = true } = {}) {
     const { el, faces, images } = guestState;
     if (!el || !enabled || !faces || !moods.includes(mood) || mood === guestState.mood) return idle();
     stop('guest.mood', el);
@@ -631,6 +306,7 @@
     current.style.backgroundImage = `url("${images.get(mood).src}")`;
     current.style.opacity = '1';
     previous.style.opacity = '0';
+    if (!animate) return idle();
     return job('guest.mood', el, ctx => {
       const incoming = ctx.animate(current, [{ opacity: 0 }, { opacity: 1 }], 110);
       const outgoing = ctx.animate(previous, [{ opacity: 1 }, { opacity: 0 }], 110);
@@ -638,7 +314,7 @@
     });
   }
   function speak({ chars = 0, cps = 60 } = {}) {
-    const { el, body, layers } = guestState;
+    const { el, body, layers, mood } = guestState;
     if (!el || !enabled) return idle();
     stop('guest.speak', el);
     setMood('mowi');
@@ -647,7 +323,7 @@
       const mouth = resolve(layers.mouth) || body;
       const animation = !reduced && ctx.animate(mouth, [move(), move(0, -1.8 * intensity), move()], 180,
         { iterations: Infinity, easing: 'steps(2, end)', composite: 'add' });
-      ctx.cleanup(() => { if (enabled && guestState.el === el) setMood('neutralna'); });
+      ctx.cleanup(() => { if (enabled && guestState.el === el && guestState.mood === 'mowi') setMood(mood === 'mowi' ? 'neutralna' : mood); });
       ctx.time(duration, (_, elapsed) => { if (animation) animation.currentTime = elapsed; });
     });
   }
@@ -658,6 +334,7 @@
   resetExtensions.push(guestUnmount);
 
   const guestTarget = el => el || guestState.body || guestState.el;
+  const breathingTarget = el => el === guestState.body && guestState.frame ? guestState.frame : el;
   const currentProfile = options => options.profile ? profileFor(options.profile) : guestState.profile || profiles.wdowiec;
   add('guest.enter', 'Podejście do szyby', (el, opts) => {
     el = guestTarget(el);
@@ -681,21 +358,21 @@
     ], duration, { fade: [1, 0], animation: { easing: 'ease-in' } });
   });
   add('guest.breathe', 'Oddech i kołysanie', (el, opts) => {
-    el = guestTarget(el);
-    if (!el || reduced) return idle();
+    el = breathingTarget(guestTarget(el));
+    if (!el || reduced || !intensity) return idle();
     const profile = currentProfile(opts), phase = range(0, profile.breathMs);
     stop('guest.breathe', el);
     return job('guest.breathe', el, ctx => {
       const animation = ctx.animate(el, [{}, {}], profile.breathMs, { iterations: Infinity, composite: 'add' });
-      let time = phase;
+      let lastIntensity;
       ctx.time(Infinity, (_, elapsed) => {
-        if (elapsed - time > 250 || time === phase) {
-          time = elapsed;
+        if (lastIntensity !== intensity) {
+          lastIntensity = intensity;
           const sway = profile.sway * intensity;
           animation.effect.setKeyframes([
-            { translate: `${-sway}px 0px`, scale: '1 1', transformOrigin: '50% 100%' },
-            { translate: `${sway}px 0px`, scale: `1 ${1 + .012 * intensity}`, transformOrigin: '50% 100%' },
-            { translate: `${-sway}px 0px`, scale: '1 1', transformOrigin: '50% 100%' }
+            { translate: `${-sway}px 0px`, scale: '1 1' },
+            { translate: `${sway}px 0px`, scale: `1 ${1 + .012 * intensity}` },
+            { translate: `${-sway}px 0px`, scale: '1 1' }
           ]);
         }
         animation.currentTime = elapsed + phase;
@@ -728,13 +405,13 @@
     stop('guest.liar_tell', el);
     const prior = guestState.mood;
     setMood('klamie');
-    stop('guest.breathe', el);
+    stop('guest.breathe', breathingTarget(el));
     return job('guest.liar_tell', el, ctx => {
       const animation = !reduced && ctx.animate(el, [move(), move(2 * intensity), move(2 * intensity), move()], 600,
         { easing: 'steps(3, end)', composite: 'add' });
       ctx.cleanup(() => {
         if (!enabled || guestState.body !== el) return;
-        if (guestState.mood === 'klamie') setMood(prior);
+        if (guestState.mood === 'klamie') setMood(prior, { animate: false });
         play('guest.breathe', el);
       });
       ctx.time(600, (_, elapsed) => { if (animation) animation.currentTime = elapsed; });
@@ -789,10 +466,13 @@
         { ...move(), opacity: 1 }, { ...move(x * .6, y * .6 - 26, -3), opacity: 1, offset: .62 },
         { ...move(x, y, 0, .86), opacity: give ? 0 : 1 }
       ];
+      if (give) ctx.time(duration - 100, () => {}, () => {
+        cue('thud', { handover: true });
+        ctx.cleanup(shake({ trauma: .21, duration: 100 }).cancel);
+      });
       ctx.motion(el, frames, duration, { easing: 'cubic-bezier(.55,.12,.3,1)' }, () => {
         ctx.end();
-        cue(give ? 'thud' : 'item_land', { handover: true });
-        if (give) shake({ trauma: .21 });
+        if (!give) cue('item_land', { handover: true });
       });
     });
   }
@@ -817,8 +497,21 @@
   add('decide.keep', 'Wsunięcie zguby do szuflady', el => {
     if (!el) return idle();
     cue('drawer_small');
-    return animateEffect('decide.keep', el, [{ ...move(), opacity: 1 }, { ...move(0, 24, 0, .89), opacity: .8 },
-      { ...move(0, 68, 0, .55), opacity: 0 }], 245, { fade: [1, 0] });
+    if (reduced) return animateEffect('decide.keep', el, [], 120, { fade: [1, 0] });
+    stop('decide.keep', el);
+    const p = bounds(el);
+    return job('decide.keep', el, ctx => {
+      const drawer = box(layer(ctx, 'lfx-clip'), p.x, p.y, p.w, p.h);
+      const copy = el.cloneNode(true);
+      copy.removeAttribute('id');
+      copy.removeAttribute('style');
+      copy.querySelectorAll('[id]').forEach(node => node.removeAttribute('id'));
+      copy.className = 'lfx-drawer-item';
+      drawer.append(copy);
+      ctx.motion(el, [{ opacity: 0 }, { opacity: 0 }], 245, {}, () => {});
+      ctx.motion(copy, [move(), move(0, p.h * .36, 0, .96), move(0, p.h + 2, 0, .9)], 245,
+        { easing: 'ease-in' });
+    });
   });
   add('decide.refuse', 'Zatrzaśnięcie okienka', (el, opts) => job('decide.refuse', el, ctx => {
     const glass = resolve(opts.glass || '#glass');
@@ -829,7 +522,7 @@
     const shakeHandle = shake({ trauma: .25 });
     ctx.cleanup(shakeHandle.cancel);
     ctx.motion(shutter, reduced ? [{ opacity: 0 }, { opacity: .55 }, { opacity: 0 }] :
-      [move(0, -p.h), { ...move(), offset: .5 }, { ...move(), opacity: 0 }], 195, { easing: 'ease-in' });
+      [move(0, -p.h * intensity), { ...move(), offset: .5 }, { ...move(), opacity: 0 }], 195, { easing: 'ease-in' });
   }));
   add('decide.call', 'Dzwonek telefonu', (el, opts) => job('decide.call', el, ctx => {
     const dim = layer(ctx, 'lfx-overlay lfx-dim');
@@ -988,7 +681,7 @@
           const stuck = p.bead && p.delay > 0;
           pen.moveTo(x, y);
           pen.lineTo(x + (stuck ? 0 : p.length * slant), y + (stuck ? 3 : p.length));
-          if (stuck) {
+          if (stuck && !reduced) {
             const next = drops[(i + 1) % count];
             if (next !== p && Math.abs(next.x - x) < 9 && Math.abs(next.y - y) < 15) {
               p.delay = 0;
@@ -1245,10 +938,11 @@
     return job('storm.flash', el, ctx => {
       const bright = flashes && !reduced;
       const flash = scenic(ctx, bright ? 'flash' : 'blackout');
-      const delay = clamp(fallback(opts.delay, range(300, 900)), 300, 900);
+      const delay = clamp(opts.delay == null ? range(300, 900) : opts.delay, 300, 900);
       const duration = bright ? 255 : 920;
-      const light = bright ? [0, .7, 0, .41, 0] : [0, .34, 0];
-      fades(ctx, flash, light, duration, () => flash.remove(), bright ? 'steps(1, end)' : 'linear');
+      const frames = (bright ? [0, .7, 0, .41, 0] : [0, .34, 0]).map(opacity => bright ?
+        { opacity, easing: 'steps(1, end)' } : { opacity });
+      ctx.motion(flash, frames, duration, {}, () => flash.remove());
         ctx.time(delay, () => {}, () => {
         cue('thunder', { delay });
         if (ctx.done) return;
@@ -1289,8 +983,8 @@
       fades(ctx, el, on ? (slow ? [.85, 0] : [.85, .63, .72, 0]) : [0, .85], slow ? 500 : 235);
     });
   }
-  add('power.out', 'Zanik zasilania', el => blackout(true, el));
-  add('power.on', 'Powrót zasilania', el => blackout(false, el));
+  add('power.out', 'Zanik zasilania', el => blackout(false, el));
+  add('power.on', 'Powrót zasilania', el => blackout(true, el));
   add('scene.cut', 'Jedna klatka czerni', el => {
     if (!flashes || reduced) return idle();
     return job('scene.cut', el, ctx => {
