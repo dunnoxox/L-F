@@ -1,0 +1,954 @@
+{
+ "items": [
+  {
+   "id": "suitcase",
+   "pl": "walizka",
+   "en": "hard-shell suitcase with a handle",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 1
+  },
+  {
+   "id": "duffel_bag",
+   "pl": "torba podróżna",
+   "en": "soft duffel travel bag",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 2
+  },
+  {
+   "id": "hiking_backpack",
+   "pl": "plecak turystyczny",
+   "en": "large hiking backpack with straps",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 3
+  },
+  {
+   "id": "weekender",
+   "pl": "torba weekendowa",
+   "en": "leather weekend bag with two handles",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 4
+  },
+  {
+   "id": "umbrella",
+   "pl": "parasol długi",
+   "en": "long closed umbrella with a curved handle",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 5
+  },
+  {
+   "id": "folding_umbrella",
+   "pl": "parasol składany",
+   "en": "short folding umbrella",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 6
+  },
+  {
+   "id": "neck_pillow",
+   "pl": "poduszka podróżna",
+   "en": "U-shaped travel neck pillow",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 7
+  },
+  {
+   "id": "travel_mug",
+   "pl": "kubek termiczny",
+   "en": "travel mug with lid",
+   "district": "Dworzec",
+   "sheet": 1,
+   "slot": 8
+  },
+  {
+   "id": "thermos",
+   "pl": "termos",
+   "en": "metal thermos flask with cup lid",
+   "district": "Dworzec",
+   "sheet": 2,
+   "slot": 1
+  },
+  {
+   "id": "camera",
+   "pl": "aparat fotograficzny",
+   "en": "retro compact film camera",
+   "district": "Rynek",
+   "sheet": 2,
+   "slot": 2
+  },
+  {
+   "id": "headphones",
+   "pl": "słuchawki",
+   "en": "over-ear headphones",
+   "district": "Uniwersytet",
+   "sheet": 2,
+   "slot": 3
+  },
+  {
+   "id": "document_wallet",
+   "pl": "etui na dokumenty",
+   "en": "flat document wallet",
+   "district": "Dworzec",
+   "sheet": 2,
+   "slot": 4
+  },
+  {
+   "id": "briefcase",
+   "pl": "aktówka",
+   "en": "classic briefcase",
+   "district": "Rynek",
+   "sheet": 2,
+   "slot": 5
+  },
+  {
+   "id": "shopping_trolley",
+   "pl": "wózek na zakupy",
+   "en": "two-wheeled shopping trolley",
+   "district": "Rynek",
+   "sheet": 2,
+   "slot": 6
+  },
+  {
+   "id": "shopping_bag",
+   "pl": "torba na zakupy",
+   "en": "paper shopping bag with handles",
+   "district": "Rynek",
+   "sheet": 2,
+   "slot": 7
+  },
+  {
+   "id": "picnic_basket",
+   "pl": "koszyk piknikowy",
+   "en": "wicker picnic basket with lid",
+   "district": "Park",
+   "sheet": 2,
+   "slot": 8
+  },
+  {
+   "id": "student_id",
+   "pl": "legitymacja szkolna",
+   "en": "small student ID booklet",
+   "district": "Uniwersytet",
+   "sheet": 3,
+   "slot": 1
+  },
+  {
+   "id": "id_booklet",
+   "pl": "dowód osobisty",
+   "en": "ID card booklet",
+   "district": "Rynek",
+   "sheet": 3,
+   "slot": 2
+  },
+  {
+   "id": "passport",
+   "pl": "paszport",
+   "en": "passport booklet",
+   "district": "Dworzec",
+   "sheet": 3,
+   "slot": 3
+  },
+  {
+   "id": "transit_pass",
+   "pl": "karta miejska",
+   "en": "tram season pass card",
+   "district": "Dworzec",
+   "sheet": 3,
+   "slot": 4
+  },
+  {
+   "id": "driving_license",
+   "pl": "prawo jazdy",
+   "en": "folded driving license",
+   "district": "Rynek",
+   "sheet": 3,
+   "slot": 5
+  },
+  {
+   "id": "notebook",
+   "pl": "notes",
+   "en": "spiral notebook",
+   "district": "Uniwersytet",
+   "sheet": 3,
+   "slot": 6
+  },
+  {
+   "id": "diary",
+   "pl": "terminarz",
+   "en": "small planner with elastic band",
+   "district": "Uniwersytet",
+   "sheet": 3,
+   "slot": 7
+  },
+  {
+   "id": "envelope",
+   "pl": "koperta z listem",
+   "en": "sealed envelope",
+   "district": "Rynek",
+   "sheet": 3,
+   "slot": 8
+  },
+  {
+   "id": "wallet",
+   "pl": "portfel",
+   "en": "bifold wallet",
+   "district": "Rynek",
+   "sheet": 4,
+   "slot": 1
+  },
+  {
+   "id": "coin_purse",
+   "pl": "portmonetka",
+   "en": "clasp coin purse",
+   "district": "Rynek",
+   "sheet": 4,
+   "slot": 2
+  },
+  {
+   "id": "handbag",
+   "pl": "torebka",
+   "en": "ladies handbag with strap",
+   "district": "Rynek",
+   "sheet": 4,
+   "slot": 3
+  },
+  {
+   "id": "keys",
+   "pl": "klucze",
+   "en": "bunch of keys on a ring",
+   "district": "Rynek",
+   "sheet": 4,
+   "slot": 4
+  },
+  {
+   "id": "phone",
+   "pl": "telefon",
+   "en": "mobile phone",
+   "district": "Rynek",
+   "sheet": 4,
+   "slot": 5
+  },
+  {
+   "id": "glasses",
+   "pl": "okulary",
+   "en": "round eyeglasses",
+   "district": "Uniwersytet",
+   "sheet": 4,
+   "slot": 6
+  },
+  {
+   "id": "sunglasses",
+   "pl": "okulary przeciwsłoneczne",
+   "en": "sunglasses",
+   "district": "Park",
+   "sheet": 4,
+   "slot": 7
+  },
+  {
+   "id": "wristwatch",
+   "pl": "zegarek na rękę",
+   "en": "wristwatch with strap",
+   "district": "Rynek",
+   "sheet": 4,
+   "slot": 8
+  },
+  {
+   "id": "ring_box",
+   "pl": "pudełko na obrączkę",
+   "en": "small ring box open",
+   "district": "Rynek",
+   "sheet": 5,
+   "slot": 1
+  },
+  {
+   "id": "locket",
+   "pl": "medalion",
+   "en": "heart locket on chain",
+   "district": "Park",
+   "sheet": 5,
+   "slot": 2
+  },
+  {
+   "id": "pocket_watch",
+   "pl": "zegarek kieszonkowy",
+   "en": "pocket watch on chain",
+   "district": "Rynek",
+   "sheet": 5,
+   "slot": 3
+  },
+  {
+   "id": "music_box",
+   "pl": "pozytywka",
+   "en": "wooden music box",
+   "district": "Stara Fabryka",
+   "sheet": 5,
+   "slot": 4
+  },
+  {
+   "id": "photo_album",
+   "pl": "album ze zdjęciami",
+   "en": "photo album",
+   "district": "Park",
+   "sheet": 5,
+   "slot": 5
+  },
+  {
+   "id": "savings_book",
+   "pl": "książeczka oszczędnościowa",
+   "en": "savings passbook",
+   "district": "Rynek",
+   "sheet": 5,
+   "slot": 6
+  },
+  {
+   "id": "perfume_bottle",
+   "pl": "flakonik perfum",
+   "en": "perfume bottle with atomizer",
+   "district": "Rynek",
+   "sheet": 5,
+   "slot": 7
+  },
+  {
+   "id": "pocket_compass",
+   "pl": "kompas kieszonkowy",
+   "en": "pocket compass",
+   "district": "Port",
+   "sheet": 5,
+   "slot": 8
+  },
+  {
+   "id": "scarf",
+   "pl": "szalik",
+   "en": "long knitted scarf",
+   "district": "Dworzec",
+   "sheet": 6,
+   "slot": 1
+  },
+  {
+   "id": "gloves",
+   "pl": "rękawiczki",
+   "en": "pair of gloves",
+   "district": "Park",
+   "sheet": 6,
+   "slot": 2
+  },
+  {
+   "id": "mittens",
+   "pl": "rękawice dziecięce",
+   "en": "pair of kids mittens joined by a string",
+   "district": "Park",
+   "sheet": 6,
+   "slot": 3
+  },
+  {
+   "id": "fedora_hat",
+   "pl": "kapelusz",
+   "en": "fedora hat",
+   "district": "Rynek",
+   "sheet": 6,
+   "slot": 4
+  },
+  {
+   "id": "baseball_cap",
+   "pl": "czapka z daszkiem",
+   "en": "baseball cap",
+   "district": "Park",
+   "sheet": 6,
+   "slot": 5
+  },
+  {
+   "id": "beanie",
+   "pl": "czapka zimowa",
+   "en": "knitted beanie with pompom",
+   "district": "Park",
+   "sheet": 6,
+   "slot": 6
+  },
+  {
+   "id": "beret",
+   "pl": "beret",
+   "en": "beret",
+   "district": "Rynek",
+   "sheet": 6,
+   "slot": 7
+  },
+  {
+   "id": "tie",
+   "pl": "krawat",
+   "en": "necktie",
+   "district": "Rynek",
+   "sheet": 6,
+   "slot": 8
+  },
+  {
+   "id": "shoe",
+   "pl": "półbut",
+   "en": "men's leather shoe",
+   "district": "Rynek",
+   "sheet": 7,
+   "slot": 1
+  },
+  {
+   "id": "rubber_boot",
+   "pl": "gumowiec",
+   "en": "rubber rain boot",
+   "district": "Port",
+   "sheet": 7,
+   "slot": 2
+  },
+  {
+   "id": "sneaker",
+   "pl": "trampek",
+   "en": "canvas sneaker",
+   "district": "Park",
+   "sheet": 7,
+   "slot": 3
+  },
+  {
+   "id": "ice_skates",
+   "pl": "łyżwy",
+   "en": "pair of ice skates tied together",
+   "district": "Park",
+   "sheet": 7,
+   "slot": 4
+  },
+  {
+   "id": "roller_skates",
+   "pl": "wrotki",
+   "en": "roller skate",
+   "district": "Park",
+   "sheet": 7,
+   "slot": 5
+  },
+  {
+   "id": "slipper",
+   "pl": "kapeć",
+   "en": "house slipper",
+   "district": "Stara Fabryka",
+   "sheet": 7,
+   "slot": 6
+  },
+  {
+   "id": "sandal",
+   "pl": "sandał",
+   "en": "kids sandal",
+   "district": "Park",
+   "sheet": 7,
+   "slot": 7
+  },
+  {
+   "id": "belt",
+   "pl": "pasek",
+   "en": "leather belt with buckle, coiled",
+   "district": "Rynek",
+   "sheet": 7,
+   "slot": 8
+  },
+  {
+   "id": "teddy_bear",
+   "pl": "miś",
+   "en": "teddy bear",
+   "district": "Park",
+   "sheet": 8,
+   "slot": 1
+  },
+  {
+   "id": "toy_car",
+   "pl": "autko",
+   "en": "toy car",
+   "district": "Park",
+   "sheet": 8,
+   "slot": 2
+  },
+  {
+   "id": "beach_ball",
+   "pl": "piłka",
+   "en": "beach ball with panels",
+   "district": "Park",
+   "sheet": 8,
+   "slot": 3
+  },
+  {
+   "id": "school_backpack",
+   "pl": "tornister",
+   "en": "school backpack",
+   "district": "Uniwersytet",
+   "sheet": 8,
+   "slot": 4
+  },
+  {
+   "id": "lunchbox",
+   "pl": "śniadaniówka",
+   "en": "school lunchbox",
+   "district": "Uniwersytet",
+   "sheet": 8,
+   "slot": 5
+  },
+  {
+   "id": "doll",
+   "pl": "lalka",
+   "en": "rag doll",
+   "district": "Park",
+   "sheet": 8,
+   "slot": 6
+  },
+  {
+   "id": "stuffed_rabbit",
+   "pl": "króliczek pluszowy",
+   "en": "stuffed rabbit toy",
+   "district": "Park",
+   "sheet": 8,
+   "slot": 7
+  },
+  {
+   "id": "kite",
+   "pl": "latawiec",
+   "en": "diamond kite with tail",
+   "district": "Park",
+   "sheet": 8,
+   "slot": 8
+  },
+  {
+   "id": "skateboard",
+   "pl": "deskorolka",
+   "en": "skateboard",
+   "district": "Park",
+   "sheet": 9,
+   "slot": 1
+  },
+  {
+   "id": "kick_scooter",
+   "pl": "hulajnoga",
+   "en": "kick scooter",
+   "district": "Park",
+   "sheet": 9,
+   "slot": 2
+  },
+  {
+   "id": "bike_helmet",
+   "pl": "kask rowerowy",
+   "en": "bicycle helmet",
+   "district": "Park",
+   "sheet": 9,
+   "slot": 3
+  },
+  {
+   "id": "tennis_racket",
+   "pl": "rakieta tenisowa",
+   "en": "tennis racket",
+   "district": "Park",
+   "sheet": 9,
+   "slot": 4
+  },
+  {
+   "id": "boxing_gloves",
+   "pl": "rękawice bokserskie",
+   "en": "pair of boxing gloves",
+   "district": "Port",
+   "sheet": 9,
+   "slot": 5
+  },
+  {
+   "id": "bicycle_pump",
+   "pl": "pompka rowerowa",
+   "en": "bicycle pump",
+   "district": "Port",
+   "sheet": 9,
+   "slot": 6
+  },
+  {
+   "id": "water_bottle",
+   "pl": "bidon",
+   "en": "sports water bottle",
+   "district": "Park",
+   "sheet": 9,
+   "slot": 7
+  },
+  {
+   "id": "jump_rope",
+   "pl": "skakanka",
+   "en": "jump rope with handles, coiled",
+   "district": "Park",
+   "sheet": 9,
+   "slot": 8
+  },
+  {
+   "id": "binoculars",
+   "pl": "lornetka",
+   "en": "binoculars",
+   "district": "Park",
+   "sheet": 10,
+   "slot": 1
+  },
+  {
+   "id": "guitar_case",
+   "pl": "futerał na gitarę",
+   "en": "guitar case",
+   "district": "Uniwersytet",
+   "sheet": 10,
+   "slot": 2
+  },
+  {
+   "id": "violin_case",
+   "pl": "futerał na skrzypce",
+   "en": "violin case",
+   "district": "Uniwersytet",
+   "sheet": 10,
+   "slot": 3
+  },
+  {
+   "id": "harmonica",
+   "pl": "organki",
+   "en": "harmonica",
+   "district": "Rynek",
+   "sheet": 10,
+   "slot": 4
+  },
+  {
+   "id": "sheet_music_folder",
+   "pl": "teczka na nuty",
+   "en": "music folder",
+   "district": "Uniwersytet",
+   "sheet": 10,
+   "slot": 5
+  },
+  {
+   "id": "art_folder",
+   "pl": "teczka rysunkowa",
+   "en": "large art portfolio folder",
+   "district": "Uniwersytet",
+   "sheet": 10,
+   "slot": 6
+  },
+  {
+   "id": "paint_box",
+   "pl": "pudełko z farbami",
+   "en": "watercolor paint box",
+   "district": "Uniwersytet",
+   "sheet": 10,
+   "slot": 7
+  },
+  {
+   "id": "trumpet",
+   "pl": "trąbka",
+   "en": "trumpet",
+   "district": "Rynek",
+   "sheet": 10,
+   "slot": 8
+  },
+  {
+   "id": "toolbox",
+   "pl": "skrzynka z narzędziami",
+   "en": "metal toolbox",
+   "district": "Port",
+   "sheet": 11,
+   "slot": 1
+  },
+  {
+   "id": "hard_hat",
+   "pl": "kask budowlany",
+   "en": "construction hard hat",
+   "district": "Port",
+   "sheet": 11,
+   "slot": 2
+  },
+  {
+   "id": "work_gloves",
+   "pl": "rękawice robocze",
+   "en": "pair of work gloves",
+   "district": "Port",
+   "sheet": 11,
+   "slot": 3
+  },
+  {
+   "id": "hammer",
+   "pl": "młotek",
+   "en": "hammer",
+   "district": "Stara Fabryka",
+   "sheet": 11,
+   "slot": 4
+  },
+  {
+   "id": "wrench",
+   "pl": "klucz francuski",
+   "en": "adjustable wrench",
+   "district": "Stara Fabryka",
+   "sheet": 11,
+   "slot": 5
+  },
+  {
+   "id": "doctors_bag",
+   "pl": "torba lekarska",
+   "en": "doctor's bag",
+   "district": "Rynek",
+   "sheet": 11,
+   "slot": 6
+  },
+  {
+   "id": "conductor_bag",
+   "pl": "torba konduktora",
+   "en": "tram conductor's ticket bag",
+   "district": "Dworzec",
+   "sheet": 11,
+   "slot": 7
+  },
+  {
+   "id": "ticket_puncher",
+   "pl": "kasownik ręczny",
+   "en": "hand ticket punch",
+   "district": "Dworzec",
+   "sheet": 11,
+   "slot": 8
+  },
+  {
+   "id": "cane",
+   "pl": "laska",
+   "en": "walking cane with curved handle",
+   "district": "Park",
+   "sheet": 12,
+   "slot": 1
+  },
+  {
+   "id": "glasses_case",
+   "pl": "etui na okulary",
+   "en": "glasses case",
+   "district": "Rynek",
+   "sheet": 12,
+   "slot": 2
+  },
+  {
+   "id": "hip_flask",
+   "pl": "piersiówka",
+   "en": "metal hip flask",
+   "district": "Port",
+   "sheet": 12,
+   "slot": 3
+  },
+  {
+   "id": "newspaper_roll",
+   "pl": "gazeta zwinięta",
+   "en": "rolled newspaper",
+   "district": "Rynek",
+   "sheet": 12,
+   "slot": 4
+  },
+  {
+   "id": "alarm_clock",
+   "pl": "budzik",
+   "en": "twin-bell alarm clock",
+   "district": "Stara Fabryka",
+   "sheet": 12,
+   "slot": 5
+  },
+  {
+   "id": "snow_globe",
+   "pl": "kula śnieżna",
+   "en": "snow globe",
+   "district": "Rynek",
+   "sheet": 12,
+   "slot": 6
+  },
+  {
+   "id": "hand_mirror",
+   "pl": "lusterko",
+   "en": "hand mirror",
+   "district": "Rynek",
+   "sheet": 12,
+   "slot": 7
+  },
+  {
+   "id": "knitting_basket",
+   "pl": "koszyk z włóczką",
+   "en": "knitting basket with yarn",
+   "district": "Stara Fabryka",
+   "sheet": 12,
+   "slot": 8
+  }
+ ],
+ "sheets": [
+  {
+   "sheet": 1,
+   "title": "Podróż i dworzec",
+   "items": [
+    "suitcase",
+    "duffel_bag",
+    "hiking_backpack",
+    "weekender",
+    "umbrella",
+    "folding_umbrella",
+    "neck_pillow",
+    "travel_mug"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. hard-shell suitcase with a handle; 2. soft duffel travel bag; 3. large hiking backpack with straps; 4. leather weekend bag with two handles; 5. long closed umbrella with a curved handle; 6. short folding umbrella; 7. U-shaped travel neck pillow; 8. travel mug with lid."
+  },
+  {
+   "sheet": 2,
+   "title": "Podróż i zakupy",
+   "items": [
+    "thermos",
+    "camera",
+    "headphones",
+    "document_wallet",
+    "briefcase",
+    "shopping_trolley",
+    "shopping_bag",
+    "picnic_basket"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. metal thermos flask with cup lid; 2. retro compact film camera; 3. over-ear headphones; 4. flat document wallet; 5. classic briefcase; 6. two-wheeled shopping trolley; 7. paper shopping bag with handles; 8. wicker picnic basket with lid."
+  },
+  {
+   "sheet": 3,
+   "title": "Dokumenty",
+   "items": [
+    "student_id",
+    "id_booklet",
+    "passport",
+    "transit_pass",
+    "driving_license",
+    "notebook",
+    "diary",
+    "envelope"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. small student ID booklet; 2. ID card booklet; 3. passport booklet; 4. tram season pass card; 5. folded driving license; 6. spiral notebook; 7. small planner with elastic band; 8. sealed envelope."
+  },
+  {
+   "sheet": 4,
+   "title": "Codzienne drobiazgi",
+   "items": [
+    "wallet",
+    "coin_purse",
+    "handbag",
+    "keys",
+    "phone",
+    "glasses",
+    "sunglasses",
+    "wristwatch"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. bifold wallet; 2. clasp coin purse; 3. ladies handbag with strap; 4. bunch of keys on a ring; 5. mobile phone; 6. round eyeglasses; 7. sunglasses; 8. wristwatch with strap."
+  },
+  {
+   "sheet": 5,
+   "title": "Pamiątki",
+   "items": [
+    "ring_box",
+    "locket",
+    "pocket_watch",
+    "music_box",
+    "photo_album",
+    "savings_book",
+    "perfume_bottle",
+    "pocket_compass"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. small ring box open; 2. heart locket on chain; 3. pocket watch on chain; 4. wooden music box; 5. photo album; 6. savings passbook; 7. perfume bottle with atomizer; 8. pocket compass."
+  },
+  {
+   "sheet": 6,
+   "title": "Odzież 1",
+   "items": [
+    "scarf",
+    "gloves",
+    "mittens",
+    "fedora_hat",
+    "baseball_cap",
+    "beanie",
+    "beret",
+    "tie"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. long knitted scarf; 2. pair of gloves; 3. pair of kids mittens joined by a string; 4. fedora hat; 5. baseball cap; 6. knitted beanie with pompom; 7. beret; 8. necktie."
+  },
+  {
+   "sheet": 7,
+   "title": "Obuwie",
+   "items": [
+    "shoe",
+    "rubber_boot",
+    "sneaker",
+    "ice_skates",
+    "roller_skates",
+    "slipper",
+    "sandal",
+    "belt"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. men's leather shoe; 2. rubber rain boot; 3. canvas sneaker; 4. pair of ice skates tied together; 5. roller skate; 6. house slipper; 7. kids sandal; 8. leather belt with buckle, coiled."
+  },
+  {
+   "sheet": 8,
+   "title": "Dzieci 1",
+   "items": [
+    "teddy_bear",
+    "toy_car",
+    "beach_ball",
+    "school_backpack",
+    "lunchbox",
+    "doll",
+    "stuffed_rabbit",
+    "kite"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. teddy bear; 2. toy car; 3. beach ball with panels; 4. school backpack; 5. school lunchbox; 6. rag doll; 7. stuffed rabbit toy; 8. diamond kite with tail."
+  },
+  {
+   "sheet": 9,
+   "title": "Sport",
+   "items": [
+    "skateboard",
+    "kick_scooter",
+    "bike_helmet",
+    "tennis_racket",
+    "boxing_gloves",
+    "bicycle_pump",
+    "water_bottle",
+    "jump_rope"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. skateboard; 2. kick scooter; 3. bicycle helmet; 4. tennis racket; 5. pair of boxing gloves; 6. bicycle pump; 7. sports water bottle; 8. jump rope with handles, coiled."
+  },
+  {
+   "sheet": 10,
+   "title": "Muzyka i hobby",
+   "items": [
+    "binoculars",
+    "guitar_case",
+    "violin_case",
+    "harmonica",
+    "sheet_music_folder",
+    "art_folder",
+    "paint_box",
+    "trumpet"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. binoculars; 2. guitar case; 3. violin case; 4. harmonica; 5. music folder; 6. large art portfolio folder; 7. watercolor paint box; 8. trumpet."
+  },
+  {
+   "sheet": 11,
+   "title": "Praca",
+   "items": [
+    "toolbox",
+    "hard_hat",
+    "work_gloves",
+    "hammer",
+    "wrench",
+    "doctors_bag",
+    "conductor_bag",
+    "ticket_puncher"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. metal toolbox; 2. construction hard hat; 3. pair of work gloves; 4. hammer; 5. adjustable wrench; 6. doctor's bag; 7. tram conductor's ticket bag; 8. hand ticket punch."
+  },
+  {
+   "sheet": 12,
+   "title": "Miejskie drobiazgi",
+   "items": [
+    "cane",
+    "glasses_case",
+    "hip_flask",
+    "newspaper_roll",
+    "alarm_clock",
+    "snow_globe",
+    "hand_mirror",
+    "knitting_basket"
+   ],
+   "prompt": "Create ONE image: a sheet of 8 separate objects arranged in 2 columns x 4 rows on a flat cream background (#EDE6D3). Leave generous empty space between objects; every object fully visible, not touching others or the image edges. Style: flat paper cut-out illustration in the Polish poster school, gouache, slightly rough hand-cut edges, thin uneven dark navy (#1B2440) outline, subtle dry-brush texture. CRITICAL: paint every object in NEUTRAL VERY LIGHT GREY only (one flat very light grey, about #E4E4E4, with only very subtle shading) - no colours, no patterns, no text, no letters, no numbers, no logos. Interior details (seams, straps, buttons, handles) are drawn only with the navy outline. Each object is shown front-on or slightly three-quarter, with an instantly recognizable silhouette and a large plain area in the middle with no details (a symbol will be added there later). Match the attached reference image exactly: grey fill, navy outline, cream background, same line weight and level of detail. Objects in order, left to right, top to bottom: 1. walking cane with curved handle; 2. glasses case; 3. metal hip flask; 4. rolled newspaper; 5. twin-bell alarm clock; 6. snow globe; 7. hand mirror; 8. knitting basket with yarn."
+  }
+ ]
+}
