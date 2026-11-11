@@ -3,3 +3,31 @@
   inset: 0;
   pointer-events: none;
 }
+
+.lfx-portrait, .lfx-face {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.lfx-face {
+  background: center bottom / contain no-repeat;
+  opacity: 0;
+}
+
+.lfx-grain, .lfx-phone, .lfx-shadow, .lfx-clip {
+  position: absolute;
+  pointer-events: none;
+}
+
+.lfx-grain { z-index: 22; background: #efe3c8; }
+.lfx-shadow { z-index: 3; background: #0a0a0a; }
+.lfx-clip { overflow: hidden; z-index: 24; }
+.lfx-shutter {
+  position: absolute;
+  inset: 0;
+  background: #0a0a0a;
+  border-bottom: 12px solid #efe3c8;
+}
+.lfx-phone { z-index: 25; background: #efe3c8; }
+.lfx-dim { z-index: 23; background: #0a0a0a; }

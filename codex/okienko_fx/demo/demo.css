@@ -1,0 +1,35 @@
+:root {
+  color-scheme: dark;
+  background: #0a0a0a;
+  color: #efe3c8;
+  font: 18px/1.35 "Courier Prime", "Courier New", monospace;
+}
+* { box-sizing: border-box; }
+body { max-width: 1640px; margin: auto; padding: 1rem; }
+header { display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid; margin-bottom: 1rem; }
+h1 { margin: 0 0 .5rem; font-size: clamp(1.6rem, 5vw, 3rem); letter-spacing: -.065em; }
+h1 small { font-size: .5em; letter-spacing: normal; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(315px, 365px); gap: 1rem; align-items: start; }
+aside { display: grid; gap: .8rem; }
+#viewport { position: relative; aspect-ratio: 3 / 2; overflow: hidden; border: 1px solid; }
+#stage { position: absolute; width: 1536px; height: 1024px; overflow: hidden; transform-origin: top left; background: #0a0a0a center/cover; }
+#guest { position: absolute; left: 245px; top: 45px; width: 650px; height: 610px; mix-blend-mode: screen; background: center bottom/contain no-repeat; }
+#glass { position: absolute; left: 255px; top: 45px; width: 630px; height: 615px; pointer-events: none; }
+#desk { position: absolute; left: 735px; top: 692px; width: 290px; height: 196px; z-index: 5; }
+#item { width: 240px; height: 195px; object-fit: contain; }
+#clock { position: absolute; top: 63px; right: 86px; z-index: 6; }
+#toast, #cash { position: absolute; z-index: 18; padding: 9px 15px; border: 2px solid; background: #0a0a0a; font-size: 29px; }
+#toast { top: 150px; right: 90px; opacity: 0; }
+#cash { bottom: 44px; right: 64px; }
+fieldset { min-width: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; padding: .65rem; }
+label { display: flex; align-items: center; gap: .3rem; flex-wrap: wrap; }
+button, select, input { font: inherit; color: inherit; }
+button, select, input[type=number] { background: #0a0a0a; border: 1px solid #efe3c8; padding: .3rem .45rem; }
+button { cursor: pointer; min-height: 42px; text-align: left; }
+button:hover, button:focus-visible { background: #efe3c8; color: #0a0a0a; }
+input[type=number], input[type=range] { width: 100%; min-width: 0; }
+.actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem; }
+.actions:empty { display: none; }
+.preview .actions { margin: .6rem 0; }
+#cue { display: block; min-height: 1.4em; }
+@media (max-width: 810px) { main { grid-template-columns: 1fr; } }

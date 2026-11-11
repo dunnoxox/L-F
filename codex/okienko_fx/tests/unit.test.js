@@ -20,3 +20,19 @@ test('wygaszenie ruchu zachowuje krańce', () => {
   assert.equal(ease(1), 1);
   assert.ok(ease(.5) > .5);
 });
+
+test('fallback zawiera te same osiemnaście profili co JSON', () => {
+  const profiles = require('../fx/profiles.json');
+  assert.deepEqual(require('../fx/lf_fx').internals.profiles, profiles);
+  assert.equal(Object.keys(profiles).length, 18);
+  for (const profile of Object.values(profiles)) {
+    assert.ok(['heavy', 'light', 'limp'].includes(profile.weight));
+    assert.ok(profile.breathMs >= 4000 && profile.breathMs <= 5000);
+    assert.ok(profile.sway >= 0 && profile.sway <= 3);
+    assert.ok(profile.duration >= 300 && profile.duration <= 900);
+    assert.ok(profile.intervalMs[0] < profile.intervalMs[1]);
+    for (const frames of [profile.tic, profile.broken].filter(Boolean)) {
+      assert.ok(frames.length >= 2 && frames.every(Number.isFinite));
+    }
+  }
+});

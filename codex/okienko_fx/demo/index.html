@@ -1,7 +1,39 @@
 <!doctype html>
-<html lang="pl"><meta charset="utf-8"><title>OKIENKO · LF_FX</title>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OKIENKO / LF_FX</title>
 <link rel="stylesheet" href="../fx/lf_fx.css">
-<div id="stage" style="position:relative;width:768px;height:512px;background:url('../sprites/bg/T1.jpg') center/cover"></div>
-<button id="shake">Wstrząs</button>
-<script src="../fx/lf_fx.js"></script>
-<script>LF_FX.init(); document.querySelector('button').onclick = () => LF_FX.shake('thunder');</script>
+<link rel="stylesheet" href="demo.css">
+<script defer src="../fx/lf_fx.js"></script>
+<script defer src="scenario.js"></script>
+</head>
+<body>
+<header><h1>OKIENKO <small>LF_FX</small></h1><output id="fps">— FPS</output></header>
+<main>
+  <section class="preview" aria-label="Scena demonstracyjna">
+    <div id="viewport"><div id="stage">
+      <div id="guest"></div><div id="glass"></div>
+      <div id="desk"><img id="item" alt="Rękawiczka" src="../sprites/items/rekawiczka_welna.png"></div>
+      <div id="clock"></div><div id="toast">+20 $</div><output id="cash">120 $</output>
+    </div></div>
+    <div id="scenes" class="actions"></div>
+    <output id="cue" aria-live="polite">—</output>
+  </section>
+  <aside aria-label="Sterowanie demonstracją">
+    <fieldset><legend>Ustawienia</legend>
+      <label>Postać <select id="character"><option value="wdowiec">Wdowiec</option><option value="chlopak">Chłopak</option><option value="maz">Evan</option><option value="siostra">Lena</option><option value="dama">Iris</option><option value="inspektor">Victor</option></select></label>
+      <label>Tło <select id="background"><option>T1</option><option>T2</option><option>T3</option><option>T4</option><option>T5</option></select></label>
+      <label>Ziarno <input id="seed" type="number" value="1"></label>
+      <label>Intensywność <input id="intensity" type="range" min="0" max="1" step=".05" value="1"></label>
+      <label><input id="enabled" type="checkbox" checked> Efekty</label>
+      <label><input id="flashes" type="checkbox"> Ogranicz błyski</label>
+      <label><input id="reduced" type="checkbox"> Ogranicz ruch</label>
+    </fieldset>
+    <div id="ambientControls" class="actions"></div>
+    <div id="effects" class="actions" aria-label="Efekty"></div>
+  </aside>
+</main>
+</body>
+</html>
