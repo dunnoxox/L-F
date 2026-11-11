@@ -1,0 +1,121 @@
+=== ZAKOŃCZENIA wg strategii (N=300) ===
+
+[uczciwy]
+   zag {"A":300}
+   skr {"C":300}
+   pop {"B":300}
+   ep {"referent":300}
+   el {"B":219,"N":81}
+   tear {"false":219,"true":81}
+   kasa końcowa {"min":170,"p10":170,"med":180,"p90":180,"max":180,"avg":175} | min kasa po sobocie (w trakcie) {"min":10,"p10":10,"med":20,"p90":20,"max":20,"avg":15} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 0.00
+   po sobocie 1..5 (mediana): 20 | 90 | 140 | 130 | 180 | Urząd końc. {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} Ludzie {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} bez_wpisu {"min":0,"p10":0,"med":0,"p90":0,"max":0,"avg":0} | ulepszenia {"regal":750,"drzwi":750}
+
+[ludzki]
+   zag {"A":300}
+   skr {"C":300}
+   pop {"A":300}
+   ep {"referent":300}
+   el {"A":219,"N":81}
+   tear {"false":219,"true":81}
+   kasa końcowa {"min":170,"p10":170,"med":180,"p90":180,"max":180,"avg":175} | min kasa po sobocie (w trakcie) {"min":10,"p10":10,"med":20,"p90":20,"max":20,"avg":15} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 0.00
+   po sobocie 1..5 (mediana): 20 | 90 | 140 | 130 | 180 | Urząd końc. {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} Ludzie {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} bez_wpisu {"min":0,"p10":0,"med":0,"p90":0,"max":0,"avg":0} | ulepszenia {"regal":750,"drzwi":750}
+
+[chciwy]
+   zag {"B":300}
+   skr {"C":300}
+   pop {"A":300}
+   ep {"nowysam":300}
+   el {"N":300}
+   tear {"false":218,"true":82}
+   kasa końcowa {"min":2429,"p10":2429,"med":2439,"p90":2439,"max":2499,"avg":2436} | min kasa po sobocie (w trakcie) {"min":699,"p10":699,"med":759,"p90":769,"max":769,"avg":734} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 1.47
+   po sobocie 1..5 (mediana): 759 | 889 | 939 | 1529 | 2439 | Urząd końc. {"min":6,"p10":6,"med":6,"p90":6,"max":8,"avg":6} Ludzie {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} bez_wpisu {"min":3,"p10":3,"med":3,"p90":3,"max":3,"avg":3} | ulepszenia {"regal":750,"drzwi":750}
+
+[kradnacy]
+   zag {"C":244,"B":56}
+   skr {"C":300}
+   pop {"B":258,"C":37,"A":5}
+   ep {"nowysam":300}
+   el {"N":300}
+   tear {"false":223,"true":77}
+   kasa końcowa {"min":1789,"p10":1789,"med":2189,"p90":2199,"max":2259,"avg":2089} | min kasa po sobocie (w trakcie) {"min":289,"p10":289,"med":459,"p90":469,"max":589,"avg":431} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 1.85
+   po sobocie 1..5 (mediana): 469 | 699 | 689 | 1279 | 2189 | Urząd końc. {"min":0,"p10":2,"med":5,"p90":8,"max":10,"avg":5} Ludzie {"min":0,"p10":2,"med":4,"p90":6,"max":9,"avg":4} bez_wpisu {"min":4,"p10":4,"med":6,"p90":7,"max":9,"avg":6} | ulepszenia {"regal":750,"drzwi":750}
+
+[odmawiajacy]
+   zag {"C":210,"A":5,"B":85}
+   skr {"C":287,"A2":10,"A":3}
+   pop {"B":271,"C":24,"A":5}
+   ep {"referent":281,"nowysam":19}
+   el {"B":197,"N":84,"C":14,"A":5}
+   tear {"false":232,"true":68}
+   kasa końcowa {"min":-230,"p10":20,"med":460,"p90":1000,"max":1280,"avg":469} | min kasa po sobocie (w trakcie) {"min":-280,"p10":-260,"med":10,"p90":120,"max":120,"avg":-26} | runy z długiem po jakiejś sobocie: 25% | audyty/run: 0.25
+   po sobocie 1..5 (mediana): 20 | 90 | 140 | 200 | 460 | Urząd końc. {"min":8,"p10":9,"med":10,"p90":10,"max":10,"avg":9} Ludzie {"min":0,"p10":0,"med":0,"p90":0,"max":2,"avg":0} bez_wpisu {"min":0,"p10":0,"med":2,"p90":3,"max":6,"avg":2} | ulepszenia {"regal":750,"drzwi":750}
+
+[wydajacy]
+   zag {"C":244,"B":53,"A":3}
+   skr {"C":300}
+   pop {"B":256,"C":42,"A":2}
+   ep {"referent":226,"nowysam":59,"zostajesz":15}
+   el {"N":119,"B":156,"C":24,"A":1}
+   tear {"true":75,"false":225}
+   kasa końcowa {"min":170,"p10":180,"med":380,"p90":680,"max":850,"avg":407} | min kasa po sobocie (w trakcie) {"min":10,"p10":10,"med":20,"p90":140,"max":140,"avg":52} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 0.00
+   po sobocie 1..5 (mediana): 20 | 90 | 140 | 240 | 380 | Urząd końc. {"min":4,"p10":6,"med":9,"p90":10,"max":10,"avg":9} Ludzie {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} bez_wpisu {"min":1,"p10":1,"med":2,"p90":3,"max":5,"avg":2} | ulepszenia {"regal":750,"drzwi":750}
+
+[urzednik]
+   zag {"C":166,"B":128,"A":6}
+   skr {"C":300}
+   pop {"B":300}
+   ep {"referent":300}
+   el {"N":82,"B":218}
+   tear {"true":82,"false":218}
+   kasa końcowa {"min":170,"p10":170,"med":250,"p90":450,"max":510,"avg":289} | min kasa po sobocie (w trakcie) {"min":10,"p10":10,"med":20,"p90":20,"max":20,"avg":15} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 0.00
+   po sobocie 1..5 (mediana): 20 | 90 | 140 | 130 | 250 | Urząd końc. {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} Ludzie {"min":0,"p10":0,"med":0,"p90":0,"max":0,"avg":0} bez_wpisu {"min":0,"p10":0,"med":1,"p90":2,"max":3,"avg":1} | ulepszenia {"regal":750,"drzwi":750}
+
+[pierwszy]
+   zag {"A":300}
+   skr {"A":300}
+   pop {"A":300}
+   ep {"referent":300}
+   el {"A":219,"N":81}
+   tear {"false":219,"true":81}
+   kasa końcowa {"min":170,"p10":170,"med":180,"p90":180,"max":180,"avg":175} | min kasa po sobocie (w trakcie) {"min":10,"p10":10,"med":20,"p90":20,"max":20,"avg":15} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 0.00
+   po sobocie 1..5 (mediana): 20 | 90 | 140 | 130 | 180 | Urząd końc. {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} Ludzie {"min":10,"p10":10,"med":10,"p90":10,"max":10,"avg":10} bez_wpisu {"min":0,"p10":0,"med":0,"p90":0,"max":0,"avg":0} | ulepszenia {"regal":750,"drzwi":750}
+
+[ostatni]
+   zag {"C":300}
+   skr {"C":300}
+   pop {"B":300}
+   ep {"nowysam":300}
+   el {"N":300}
+   tear {"false":218,"true":82}
+   kasa końcowa {"min":1669,"p10":1669,"med":1679,"p90":1679,"max":1739,"avg":1677} | min kasa po sobocie (w trakcie) {"min":169,"p10":169,"med":179,"p90":239,"max":239,"avg":190} | runy z długiem po jakiejś sobocie: 0% | audyty/run: 1.85
+   po sobocie 1..5 (mediana): 349 | 579 | 179 | 769 | 1679 | Urząd końc. {"min":4,"p10":4,"med":4,"p90":4,"max":6,"avg":4} Ludzie {"min":2,"p10":2,"med":2,"p90":2,"max":2,"avg":2} bez_wpisu {"min":5,"p10":5,"med":5,"p90":5,"max":5,"avg":5} | ulepszenia {"regal":750,"drzwi":750}
+
+[losowy]
+   zag {"C":230,"B":65,"A":5}
+   skr {"C":286,"A":11,"A2":3}
+   pop {"B":271,"C":29}
+   ep {"nowysam":108,"referent":188,"zostajesz":4}
+   el {"N":169,"B":119,"C":12}
+   tear {"false":213,"true":87}
+   kasa końcowa {"min":-150,"p10":290,"med":720,"p90":1210,"max":1700,"avg":740} | min kasa po sobocie (w trakcie) {"min":-270,"p10":-70,"med":149,"p90":390,"max":639,"avg":155} | runy z długiem po jakiejś sobocie: 15% | audyty/run: 0.58
+   po sobocie 1..5 (mediana): 190 | 309 | 290 | 439 | 720 | Urząd końc. {"min":2,"p10":8,"med":9,"p90":10,"max":10,"avg":9} Ludzie {"min":0,"p10":4,"med":8,"p90":10,"max":10,"avg":7} bez_wpisu {"min":0,"p10":1,"med":3,"p90":5,"max":7,"avg":3} | ulepszenia {"regal":750,"drzwi":750}
+
+=== PYTANIA: wszystkich 528 | nigdy nie pokazane graczowi (wszystkie strategie): 10
+  NIGDY_NIEPOKAZANE d5_noah T2 wymaga=null | Czemu Evan tak naciska na telefon?
+  NIGDY_NIEPOKAZANE d5_gus T3 wymaga=d5_gotowka_400 | Za zdjęciem leży dwieście pięćdziesiąt. Mówiłeś o dwudziestu.
+  NIGDY_NIEPOKAZANE d15_sam T2 wymaga=d15_zatwierdzenie_victora | W szufladzie jest zatwierdzenie z podpisem Victora. Co to?
+  NIGDY_NIEPOKAZANE d15_sam T3 wymaga=d15_szosta_linia | Na kalce jest szósta linia, zaklejona. Co tam jest?
+  NIGDY_NIEPOKAZANE d16_maya_lena T2 wymaga=d16_najem_lena | Jest tu potwierdzenie najmu mieszkania na nazwisko Mai. Czyje?
+  NIGDY_NIEPOKAZANE d21_maya_lena_priya T2 wymaga=d21_metka | Która walizka ma metkę z nazwiskiem?
+  NIGDY_NIEPOKAZANE d21_maya_lena_priya T3 wymaga=maya_testy_2 | Maya, powiedz jeszcze coś, zanim odejdziesz.
+  NIGDY_NIEPOKAZANE d23_iris_nora_victor T2 wymaga=kopie_2 | Iris, na stronie rejestru są nazwiska klientów. Skąd je masz?
+  NIGDY_NIEPOKAZANE d24_vera T1 wymaga=d24_umowa | Na umowie jest pętla w literze K. Czyj to podpis?
+  NIGDY_NIEPOKAZANE d24_vera T3 wymaga=d24_umowa | Czy ktoś kazał Ci to powiedzieć?
+  pokazane ale nigdy nie wybrane: 0
+=== DECYZJE: wszystkich 159 | nigdy nie wybrane: brak
+=== WEJŚCIA (default + wejscie_jesli): wszystkich 86 | nigdy nie użyte: d5_noah|default, d9_iris|default, d22_jonah|default, d23_iris_nora_victor|default, d23_rosa|default, d24_thomas|default
+
+=== MAGAZYN: maks. rzeczy w jednej skrzyni: 32 {"S":"odmawiajacy","s":163,"d":25}
+=== DWUZNACZNOŚĆ szukania (run 1, strategia 10 ): gość -> ile innych rzeczy w magazynie o TEJ SAMEJ widocznej nazwie
+  przypadków >0 w 500 szukań: 177
+   {"d5_victor":1,"d6_leo":1,"d11_maya":2,"d13_elias":2,"d13_odile":2,"d16_dorian":2,"d18_iris_nora":2,"d19_ada_leo":2,"d20_elias_sam":1,"d22_noah":2,"d22_stahl":1,"d22_jonah":2,"d23_iris_nora_victor":2,"d23_rosa":1,"d24_vera":3,"d24_leo":2,"d24_thomas":4,"d10_dario":1,"d17_evan":1,"d25_ksiega":1}

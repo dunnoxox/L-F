@@ -1,0 +1,55 @@
+
+## ty-forma czas przeszły (-łeś/-łaś) - 15 
+  d1_thomas T2 pytanie: Jak sprawdzić, że to właśnie ta?
+  d2_hana T2 pytanie: Dlaczego to takie pilne właśnie dzisiaj?
+  d2_hana zysk:odmow: Skrzypce wracają do prawdziwego właściciela, czyli do konserwatorium.
+  d5_victor reakcja:wykaz_paczke: Dziękuję. Dwa egzemplarze pokwitowania. Wpis: paczka 0412 w depozycie biura, dla właściciela.
+
+## myślnik – lub — (do przeglądu) - 55 
+  d1_thomas echo:wydaj: Dziękuję za rękawiczkę. W niedzielę pojechałem z Claire na cmentarz, obie leżały na kamieniu przez godzinę. Cl
+  d1_rosa echo:wydaj: Iris zeszła do pralni i spytała, kto mi pozwolił odbierać pieniądze przez okienko. Powiedziałam, że nikt, że s
+  d1_rosa echo:odmow: Iris oddała mi kopertę z potrąceniem: sto dziewięć dolarów. Dwadzieścia za spóźniony czynsz, który sama pobier
+  d1_rosa echo:wez_20: W kopercie brakowało mi dwudziestu dolarów. Iris naliczyła karę za spóźniony czynsz, drugie dwadzieścia. Czter
+
+## brak kropki na końcu - 134 
+  d1_thomas echo:wydaj: Dziękuję za rękawiczkę. W niedzielę pojechałem z Claire na cmentarz, obie leżały na kamieniu przez godzinę. Cl
+  d1_thomas etykieta:zatrzymaj_sprawdz: Zatrzymaj do sprawdzenia tożsamości
+  d1_thomas etykieta:wydaj_bez_wpisu: Wydaj bez wpisu, tak jak zrobił to Sam
+  d1_rosa echo:wydaj: Iris zeszła do pralni i spytała, kto mi pozwolił odbierać pieniądze przez okienko. Powiedziałam, że nikt, że s
+
+## wielokropek ASCII - 9 
+  d1_rosa reakcja:wez_20: Sto dziewięć? Zaraz, przeliczę jeszcze raz. ...Brakuje dwudziestu dolarów. Nie powiem nic, bo kto mi uwierzy.
+  d2_jonah reakcja:wez_pierscionek: Dziękuję, lecę. ...Eee, a pudełko? Jest puste! Zaraz, gdzie...? Ja... idę na policję.
+  d6_leo reakcja:wpisz_puszke: Dopisujesz? No... jak trzeba, to trzeba. Tylko niech nikt nie myśli, że wiem, od kogo.
+  d7_kit reakcja:wydaj: Dzięki, serio. Kot jedzie dalej. A tamten facet... jak coś będę widział, to wam powiem.
+
+## "Pan/Pani" zwrot - 33 
+  d1_rosa reakcja:przywlaszcz: Nie ma? To ostatnie miejsce, gdzie szukałam. Dziękuję, że sprawdziłeś. Powiem pani Iris, że wypłata przepadła 
+  d1_rosa echo:przywlaszcz: Sto dwadzieścia dziewięć dolarów, tyle było w kopercie. Ada pytała, czemu dziś na kolację tylko chleb. Pani Ir
+  d6_ada T2 odp: Żeby wszyscy wiedzieli, że znalazłam, a nie wzięłam. Pani w szkole mówi, że to jest różnica.
+  d6_ada T2 odp: Na Cooper Street dziewięć, na drugim piętrze. Nad nami mieszka nowy, w jego pokoju jest zimno. Pani Iris prosi
+
+## angielskie słowo - 3 
+  d10_dario wejscie: Cześć, Dario, motorniczy z jedenastki. Zgubiłem zeszyt z grafikiem dyżurów, gruby, w tłustej okładce, z gumką.
+  d10_dario T1 odp: Gruby, tłusta okładka, bo noszę go z kanapką. Gumka ledwo trzyma. Pachnie cebulą, uprzedzam.
+  d14_noah strata:rezerwacja_d22: Obiecujesz coś w imieniu Mai, a jeśli się nie pojawi, Noah uzna, że grasz na zwłokę.
+
+Pytania gracza w formie TY: 184 / 528 | w formie Pan/Pani: 2
+Goście 60+ pytani na TY: d1_thomas:1 d13_elias:4 d13_odile:3 d24_thomas:3 d12_linh:4 d9_stahl:3
+
+Identyczne teksty w 2+ miejscach: 1
+   d5_noah wejscie_jesli:d3_maz_i_siostra:wydaj_evan | d5_noah wejscie_jesli:d3_maz_i_siostra:wez_100_evan :: Noah Reyes, komisariat. Zgubiłem służbowy notes, czarny, na spirali, w jedenastc
+
+Najczęstsze 4-gramy (tiki językowe):
+   14 nie lubię naciskać ale
+   8 dobry wieczór iris bell
+   6 noah reyes komisariat zgubiłem
+   5 dobry wieczór thomas ward
+   5 dobry wieczór evan doyle
+   5 zgubiłem służbowy notes czarny
+   5 służbowy notes czarny na
+   5 notes czarny na spirali
+   5 czarny na spirali w
+   5 na spirali w jedenastce
+   5 nikt nie wie gdzie
+   5 iris bell nora vance

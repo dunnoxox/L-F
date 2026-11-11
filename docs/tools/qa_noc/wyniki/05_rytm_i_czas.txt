@@ -1,0 +1,51 @@
+DZIEŃ  goście  znaków_do_przeczytania  min(est.)
+  1 2   1679   150 4.3
+  2 2   1494   295 4.4
+  3 2   1645   155 4.3
+  4 1    891   305 2.7
+  5 3   2480   453 6.4
+  6 2   1745   305 4.8
+  7 2   1626   126 4.3
+  8 2   1704   448 4.7
+  9 2   1646   150 4.3
+ 10 2   1771   375 4.7
+ 11 2   1732   156 4.4
+ 12 2   1843   295 4.7
+ 13 2   1808   157 4.5
+ 14 2   1835   312 4.7
+ 15 2   1892   165 4.7
+ 16 2   1683   414 4.6
+ 17 2   1699   279 4.5
+ 18 2   1780   383 4.7
+ 19 2   1830   278 4.6
+ 20 1   1074   368 3
+ 21 1   1057   212 2.8
+ 22 3   2940   406 6.8
+ 23 2   2083   289 4.9
+ 24 3   3084   429 7.8
+ 25 2   2096   261 5.1
+Suma dni: 117 min + 5 sobót ~ 6 min + prolog 2 min => ~ 125 min ( 2.1 h) przy 1000 znaków/min i 35 s szukania
+
+Najdłuższe wizyty (znaki do przeczytania, śr. ścieżka):
+  d23_iris_nora_victor 23 1213 zn, wejście 236 zn, najdłuższa odp. 198
+  d20_elias_sam 20 1074 zn, wejście 212 zn, najdłuższa odp. 205
+  d21_maya_lena_priya 21 1057 zn, wejście 187 zn, najdłuższa odp. 137
+  d24_leo 24 1054 zn, wejście 187 zn, najdłuższa odp. 156
+  d25_sam_elias 25 1051 zn, wejście 227 zn, najdłuższa odp. 139
+  d25_ksiega 25 1045 zn, wejście 174 zn, najdłuższa odp. 146
+  d24_thomas 24 1044 zn, wejście 171 zn, najdłuższa odp. 153
+  d22_stahl 22 1031 zn, wejście 197 zn, najdłuższa odp. 136
+Najkrótsze:
+  d9_stahl 9 763
+  d3_dana 3 761
+  d7_evan 7 755
+  d2_jonah 2 749
+  d2_hana 2 745
+  d5_noah 5 736
+
+Odpowiedzi > 330 znaków (typing 16 ms/znak = 5.3 s): 0
+Wejścia > 330 zn: 0 
+
+Notatki S.H. (liczone przez /S\.H\./ w wnetrze[0]): 4 d1:d1_kwit_0417, d10:d10_pudelko_karta, d24:d24_kwit_0417, d6x:d6_puszka_odcinek
+Dni z >1 rzeczą z sekretem (gracz zajrzy do jednej): d1:2, d2:3, d5:3, d6:2, d8:2, d9:2, d10:2, d11:2, d12:2, d13:2, d14:2, d15:2, d16:2, d17:2, d18:2, d19:2, d22:3, d23:2, d24:4, d25:3
+Goście bez sekretu w rzeczy: 4 d3_dana, d6_ada, d7_kit, d15_pruitt

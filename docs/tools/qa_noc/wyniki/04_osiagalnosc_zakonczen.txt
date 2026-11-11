@@ -1,0 +1,19 @@
+N= 1500000
+el=A 9216 0.614%
+el=B 649315 43.288%
+el=C 82967 5.531%
+el=N 758502 50.567%
+ep=nowysam 511065 34.071%
+ep=referent 985852 65.723%
+ep=zostajesz 3083 0.206%
+pop=A 18510 1.234%
+pop=B 1314699 87.647%
+pop=C 166791 11.119%
+skr=A 35077 2.338%
+skr=A2 27597 1.840%
+skr=C 1437326 95.822%
+zag=A 16580 1.105%
+zag=B 279216 18.614%
+zag=C 1204204 80.280%
+kombinacji (zag,skr,pop/ep): 62
+NIEOSIĄGALNE (w próbie): skr=B
