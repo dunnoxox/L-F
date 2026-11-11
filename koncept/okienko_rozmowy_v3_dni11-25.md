@@ -1601,6 +1601,3161 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 ```
 
 
+# TYDZIEŃ 4: CENA
+
+
+## DZIEŃ 16
+
+**Maya i Lena.** Maya: potrzeba, by siostra przestała decydować; lęk, że ktoś ją zamknie w swoim planie; sekret: ma plan wyjazdu na 21.; tik „raz, dwa, trzy”. Lena: potrzeba wiedzieć, że siostra bezpieczna; lęk, że jest zbędna; sekret: załatwiła mieszkanie; tik „ale…”. Moment gwiazdy: „Kto odbiera ważną rzecz, sprawdza okienko trzy razy. Dziś drugi raz.”
+
+```json
+{
+  "id": "d16_maya_lena",
+  "dzien": 16,
+  "postac": "Maya Doyle i Lena Brandt",
+  "glos": "Maya: precyzyjnie, liczy do trzech. Lena: szybko, urywa „ale…”, mówi za dużo.",
+  "typ": "dwie siostry, jedno okienko",
+  "rzecz": "Granatowa saszetka podróżna",
+  "ludzie": {
+    "maya": "Maya Doyle",
+    "lena": "Lena Brandt"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d16_kartka_walizka",
+      "co_widac": "W jednej przegródce dwa żetony bagażowe i kartka pisana równym pismem Mai: „Lena: jedna rzecz. Walizkę do czwórki, poniedziałek 6:10. Jak wybierzesz ją zamiast mnie, nie przyjdę.”",
+      "co_z_tego_wynika": "Maya prosi siostrę o jedną rzecz i zostawia warunek."
+    },
+    {
+      "sekret_id": "d16_najem_lena",
+      "co_widac": "W drugiej przegródce potwierdzenie najmu mieszkania na nazwisko Mai, podpisane przez Lenę tydzień temu.",
+      "co_z_tego_wynika": "Lena załatwiła już przeprowadzkę, o której Maya nie wiedziała."
+    }
+  ],
+  "wejscie": "Maya Doyle. Obok Lena. Zostawiłam saszetkę w jedenastce, granatową, podróżną. Lena twierdzi, że sama ją wzięła. Chcę ją odebrać i powiedzieć siostrze jedną rzecz. Ale tu, przy szybie, i najpierw ja.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta saszetka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Granatowa, na zamek, z haftem w rogu: M.D. Dwie przegródki: w jednej rzeczy podróżne, w drugiej papiery.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Lena, czemu twierdzisz, że to twoja saszetka?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "lena",
+          "odpowiedz": "Bo ja ją Mai… ale… no właśnie. Kupiłam. Na podróż. Ale ona ją zgubiła, to ja przyszłam sprawdzić.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Czemu przyszłyście razem?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Po raz pierwszy w kolejce. Nie planowałam tego. Lena stanęła za mną, a ja policzyłam: raz, dwa, trzy. Zostałam.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Maya, co chcesz powiedzieć siostrze?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Że przestała mnie ratować. Pomogła, dziękuję. Ale od tygodnia decyduje, gdzie mam spać i z kim rozmawiać.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Lena, czego chcesz od Mai?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "lena",
+          "odpowiedz": "Żeby powiedziała, gdzie jest. Ale… chcę tylko wiedzieć, czy bezpieczna. Naprawdę tylko tyle.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Co jest w drugiej przegródce?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Karteczka dla Leny i dwa żetony bagażowe. Walizka jest w depozycie, ale nie tu. Dlatego te żetony.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Jest tu potwierdzenie najmu mieszkania na nazwisko Mai. Czyje?",
+          "ton": "niewygodne",
+          "wymaga": "d16_najem_lena",
+          "kto": "lena",
+          "odpowiedz": "Moje. To znaczy… ja załatwiłam. Tydzień temu. Chciałam jej zrobić niespodziankę. Ale… ona o tym nie wiedziała.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co chcesz, żeby Lena zrobiła?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Jedną rzecz. Odwieźć walizkę do tramwaju w poniedziałek o 6:10. Tylko to, nic więcej.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy poniedziałek jest pewny?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Jeśli Lena wybierze mnie, a nie siebie, przyjdę. Jak wybierze siebie, nie przyjdę. Kto odbiera ważną rzecz, sprawdza okienko trzy razy. Dziś drugi raz.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Lena, czemu załatwiłaś mieszkanie bez pytania?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "lena",
+          "odpowiedz": "Bo… bo wiedziałam, że ona nie poprosi. Ale… ona ma prawo… tak, wiem. Muszę przestać planować.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "maya_sama",
+      "etykieta": "Pozwól Mai powiedzieć to siostrze osobiście",
+      "kto": "maya",
+      "reakcja": "Raz. Dwa. Trzy. Tak. Lena, słuchaj. Przestań decydować, a ja przyjdę w poniedziałek.",
+      "zysk": "Maya zachowuje sprawczość i zalicza ci drugi test zaufania.",
+      "strata": "Lena ma żal, że usłyszała to w kolejce, a nie w domu.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Lena Brandt: „Maya powiedziała mi to przy okienku. Pierwszy raz od dwóch lat nie przerwałam. Dziękuję, że wybór został przy nas. — L.”"
+      }
+    },
+    {
+      "akcja": "lena_zalatwia",
+      "etykieta": "Oddaj saszetkę Lenie do załatwienia",
+      "kto": "lena",
+      "reakcja": "Ale… dobrze. Wszystko załatwię. Maya… no właśnie. Nie patrz tak.",
+      "zysk": "Lena dostaje rolę i czuje się potrzebna.",
+      "strata": "Maya wycofuje zgodę na pośrednictwo i traci zaufanie do okienka.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Maya Doyle: „Saszetka wróciła do Leny. Policzyłam: raz, dwa, trzy. Wiem, co zrobię. Nie w poniedziałek.”"
+      }
+    },
+    {
+      "akcja": "bez_decyzji",
+      "etykieta": "Zatrzymaj saszetkę, niech siostry same się dogadają",
+      "reakcja": "Rozumiem. Raz, dwa, trzy. Zostaje u was. Wrócę, jak będzie czas.",
+      "zysk": "Nikt nie wygrywa i nikt nie traci twarzy.",
+      "strata": "Maya nie dostaje swojej rzeczy, a Lena planuje dalej bez pytania.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Lena Brandt: „Saszetka leży u was. Pytałam Mai, czy to dobrze. Powiedziała: policzyłam. Nie wiem, co to znaczy, ale mi odpowiedziała.”"
+      }
+    }
+  ]
+}
+```
+
+**Dorian Lund, 45, kasetowiec.** Potrzeba: kaseta i cisza do soboty. Lęk: że ktoś go znajdzie. Sekret: numer 0731, wyjeżdża. Tik: cytuje tytuły piosenek. Moment gwiazdy: „Pokwitowanie niech będzie na kasetę, nie na człowieka.”
+
+```json
+{
+  "id": "d16_dorian",
+  "dzien": 16,
+  "postac": "Dorian Lund, 45",
+  "glos": "Cicho, z ironią, cytuje tytuły piosenek zamiast odpowiedzi. Nigdy nie mówi, od czego ucieka.",
+  "typ": "uczciwy, boi się",
+  "rzecz": "Pudełko po kasecie magnetofonowej z ręcznie podpisaną kasetą",
+  "wnetrze": [
+    {
+      "sekret_id": "d16_kaseta_0731",
+      "co_widac": "Pod pasiastą naklejką na kasecie wsunięta karteczka z numerem 0731 i dopiskiem „kasetowiec”.",
+      "co_z_tego_wynika": "To numer z piórnika Iris. Dorian jest jedną z czterech osób z papierami."
+    }
+  ],
+  "wejscie": "Dorian Lund. Zgubiłem kasetę, ręcznie podpisaną, w pudełku. Jedenastka, ostatni kurs. Nie jest wartościowa, tylko moja. Jeśli się znajdzie, proszę przechować do soboty. Nie dam rady odebrać wcześniej.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta kaseta?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Przezroczysta, z pasiastą naklejką i podpisem długopisem: „na pożegnanie”. W pudełku z zielonym grzbietem.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie ją zgubiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W jedenastce, na ostatnim siedzeniu przy tylnych drzwiach. Trzymałem w ręku, a potem wysiadłem bez niej. Takie życie.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Co jest nagrane na tej kasecie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Piosenka. Jedna. Ile razy, tyle razy. Nie powiem którą, to osobiste.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czemu jej szukasz tak późno?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Bo wcześniej nie wiedziałem, że zniknęła. A dziś wiem, że jutro bym płakał.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Czemu przechować do soboty?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Bo w sobotę mam coś do załatwienia. Wolałbym nie mieć jej wtedy przy sobie.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Od czego uciekasz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Od niczego. „Nikt nie jest wyspą.” Nie ja pierwszy to mówię.",
+          "mina": "klamie"
+        },
+        {
+          "tekst": "Pod naklejką jest karteczka z numerem 0731. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d16_kaseta_0731",
+          "odpowiedz": "To mój numer. Nie pytaj. Naprawdę. Tak się zaczęło i nie wiem, jak skończyć.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czego potrzebujesz od biura?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Spokoju do soboty. I żeby nikt nie pytał o mnie wprost. Pokwitowanie niech będzie na kasetę, nie na człowieka.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "D. Lund. Samo D., jeśli można. Jak nie, to Dorian, bez nazwiska.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu boisz się kwitu z nazwiskiem?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo kwit trafia do księgi, a księga do tych, którzy potrafią czytać.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "przechowaj_z_kwitem",
+      "etykieta": "Przechowaj do soboty i wystaw kwit na kasetę",
+      "reakcja": "Dobrze. „Nie ma jak w domu.” Czyli nie. Wystaw. Przyjdę w sobotę.",
+      "zysk": "Kaseta jest bezpieczna, a w księdze zostaje ślad kasety, nie człowieka.",
+      "strata": "Zajmuje to jedno miejsce w depozycie i księga mówi, że ktoś tu był.",
+      "echo": {
+        "za_dni": 4,
+        "forma": "gosc",
+        "tekst": "Dorian Lund: „Odebrałem kasetę. Niczego nie zostawiłem. Dziękuję, że nikt nie zapytał, od czego uciekam.”"
+      }
+    },
+    {
+      "akcja": "przechowaj_bez_kwitu",
+      "etykieta": "Przechowaj do soboty bez kwitu",
+      "reakcja": "Dziękuję. Nie ma śladu, nie ma problemu. Cicho jak mysz.",
+      "zysk": "Dorian zostaje poza księgą i czuje się bezpieczny.",
+      "strata": "Rzecz leży bez wpisu, a licznik „bez wpisu” rośnie.",
+      "echo": {
+        "za_dni": 4,
+        "forma": "gosc",
+        "tekst": "Dorian Lund: „Kaseta wróciła. Nikt nie wie, że tu byłem. Chyba po raz pierwszy od roku to się liczy.”"
+      }
+    },
+    {
+      "akcja": "odmow",
+      "reakcja": "Rozumiem. „Nie ma lekko.” Muszę poszukać innego miejsca.",
+      "zysk": "Nie ryzykujesz układu i nie zostawiasz nic bez śladu.",
+      "strata": "Dorian traci jedyną szansę na przechowanie i idzie dalej bez kasety.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Dorian Lund: „Poszedłem szukać innego okienka. Nie znalazłem. Kaseta gdzieś jedzie beze mnie.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 17
+
+**Evan Doyle, 37.** Potrzeba: żeby żona wróciła albo odpisała. Lęk: że jej odejście było jego winą. Sekret: usłyszał „odchodzę” przed zgłoszeniem. Tik: poprawia mankiet. Moment gwiazdy: „Mówią, że nie wygląda na detektywa. Szary kapelusz.”
+
+```json
+{
+  "id": "d17_evan",
+  "dzien": 17,
+  "postac": "Evan Doyle, 37",
+  "glos": "Grzecznie, pełnymi zdaniami, wraca do tego samego pytania. Poprawia mankiet, dziś wygnieciony do połowy.",
+  "typ": "mąż, który trzyma się planu",
+  "rzecz": "Etui na aparat z zamkniętym listem",
+  "wnetrze": [
+    {
+      "sekret_id": "d17_data_listu",
+      "co_widac": "Na kopercie z listem data sprzed dwudziestu sześciu dni. Wewnątrz notatka: „Wiem, że chcesz odejść. Proszę, odpisz.”",
+      "co_z_tego_wynika": "Evan wiedział o odejściu Mai, zanim zgłosił jej zaginięcie."
+    }
+  ],
+  "wejscie": "Dobry wieczór. Evan Doyle. Zostawiłem etui na aparat, czarne, w czwórce. W środku list do żony. Po dwudziestym drugim zadzwonię do detektywa, tysiąc dwieście dolarów. Mówią, że nie wygląda na detektywa. Szary kapelusz. Wolałbym nie musieć.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda to etui?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czarne, skórzane, z miękką podszewką. W środku stary aparat i list. Aparat jest jej, od teścia.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie je zostawiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W czwórce, na siedzeniu przy oknie. Jechałem do niej, a właściwie na pętlę, jak ostatnio. Odłożyłem i zapomniałem.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu piszesz list, zamiast zadzwonić?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo ona nie odbiera. I tak sobie myślę, że list jest poważniejszy. Zamyka sprawę albo ją otwiera.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co jest w liście?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Prośba, żeby odpisała. Adres zwrotny, mój numer i jedno zdanie: „Wiem, że byłem niesprawiedliwy.” Nic więcej.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Ile detektyw naprawdę kosztuje?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Tysiąc dwieście dolarów. Zaliczka jest już zapłacona. Powiedział, że w trzy dni znajdzie każdego.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Dlaczego uważasz, że żona potrzebuje ratunku?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo nikt dobrowolnie nie zostawia wszystkiego. Przynajmniej nikt rozsądny. Takie jest moje przekonanie.",
+          "mina": "klamie"
+        },
+        {
+          "tekst": "Na kopercie jest data sprzed dwudziestu sześciu dni. Co to znaczy?",
+          "ton": "niewygodne",
+          "wymaga": "d17_data_listu",
+          "odpowiedz": "Że list napisałem wcześniej, niż zgłosiłem zaginięcie. Usłyszałem „odchodzę”. Nie zgłosiłem tego, bo ktoś by powiedział, że to jej wybór.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz, jeśli Maya nie odpisze?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Przyjdę jeszcze raz. I jeszcze raz. Ale nie z pretensją, tylko z kopertą, która czeka.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Evan Doyle. Z kropką po „E”. Zawsze.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu mankiet masz dziś pomięty?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo ręce mi się trzęsą. Zwykle prasuję. Dziś nie miałem siły, a to już jest informacja.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "zostaw_zamkniety",
+      "etykieta": "Zostaw list zamknięty dla Mai, bez obietnicy odpowiedzi",
+      "reakcja": "Dla niej. Zamknięty. Niech ona zdecyduje. Rozumiem… no dobrze. Szansa jedna.",
+      "zysk": "Evan ma jedną szansę, a Maya sama wybiera, czy otworzy list.",
+      "strata": "Evan nie dostaje obietnicy i może zadzwonić do detektywa.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Evan Doyle: „Zostawiłem list. Nie wiem, czy dotrze. Jeżeli nie odpisze do dwudziestego drugiego, zadzwonię do kogoś, kto szuka za pieniądze. — E.D.”"
+      }
+    },
+    {
+      "akcja": "odmow",
+      "reakcja": "Odmowa pośrednictwa? Dobrze. Pójdę do Leny z pretensjami. Mam takie prawo.",
+      "zysk": "Czysto: nie angażujesz się w sprawę małżonków.",
+      "strata": "Evan idzie do Leny z pretensjami, a Maya traci spokój.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Lena Brandt: „Evan stał pod moimi drzwiami przez godzinę. Nie otworzyłam. Powiedział, że to wasza wina. Nie wiem, co to znaczy. — L.”"
+      }
+    },
+    {
+      "akcja": "zdradz_szczegol",
+      "etykieta": "Zdradź Evanowi jeden szczegół o Mai",
+      "reakcja": "Naprawdę? Dziękuję. Zapiszę. To pierwszy raz, kiedy ktoś mi coś powiedział. Kto wie, może jeszcze odzyskam.",
+      "zysk": "Evan odzyskuje nadzieję i przestaje naciskać na biuro.",
+      "strata": "Maya traci poczucie bezpieczeństwa, a detektyw dostaje ślad.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Maya Doyle: „Evan wie, że byłam w czwórce o 22:40. Skąd? Policzyłam: raz, dwa, trzy. Ktoś mu powiedział. Przestaję wierzyć szybie.”"
+      }
+    }
+  ]
+}
+```
+
+**Sylvia Okafor, 52, nauczycielka.** Potrzeba: szachy dla dzieci. Lęk: że dzieci zrozumieją, że świat nie zawsze jest sprawiedliwy. Sekret: sama nie umie przegrywać. Tik: mówi pionkami. Moment gwiazdy: „Gra się dalej, nawet jeśli czegoś brakuje.”
+
+```json
+{
+  "id": "d17_sylvia",
+  "dzien": 17,
+  "postac": "Sylvia Okafor, 52",
+  "glos": "Spokojnie, z nauczycielską ironią. Zdania rzuca jak pionki: po jednym ruchu.",
+  "typ": "uczciwa, zagrywa",
+  "rzecz": "Drewniane szachy bez króla",
+  "wnetrze": [],
+  "wejscie": "Sylvia Okafor, nauczycielka. Zgubiłam szachy, drewniane, składane. Nie ma w nich białego króla. Szukam całości, ale też tego jednego pionka, którego brakuje, bo dzieci się o niego kłócą.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wyglądają te szachy?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Składana plansza, pionki wyrzeźbione ręcznie, trochę nierówne. Białego króla nie ma od lutego. Dzieci twierdzą, że gra się ciekawiej.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie je zostawiłaś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W czwórce, po zajęciach. Położyłam pudełko obok i zaczęłam rozmawiać z kierowcą o remoncie. Wysiadłam, a szachy jechały dalej.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu gracie bez króla?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo uczę, że gra toczy się dalej, nawet jeśli czegoś brakuje. Zwykle dzieci rozumieją to szybciej niż dorośli.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czego uczysz dzieci?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Szachów, logiki i cierpliwości. Cierpliwość idzie najgorzej. Uczę też, że czasem trzeba poświęcić hetmana.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy ktoś wie, gdzie jest król?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Nie wiem. Zgubił się w lutym, jeszcze w klasie. Dzieciom powiedziałam, że wyjechał na urlop. Uwierzyły.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy brak króla to kłopot?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Czasem. Przeciwnik zawsze wie, czego nie masz. Ale zwykle nie wie, co z tym zrobisz.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz, jak je odzyskasz?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Zagram z kimś, kto nie zna zasad. To zawsze interesujące.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "S. Okafor. Przez „k”, nie „c”. Dzieci pytają, czy to szachowy skrót.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czy to ważne, że szachy wróciły?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Dla mnie to tylko pionki. Dla dzieci to pierwsze wrażenie, że rzeczy wracają.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj",
+      "reakcja": "Dziękuję. Dzieci się ucieszą. A ja wrócę do mówienia, że hetmana nie wolno tracić bez powodu.",
+      "zysk": "Sylvia odzyskuje szachy, a dzieci grają dalej.",
+      "strata": "Wydajesz bez żadnego dowodu poza opisem, który zgadza się z rzeczą.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Sylvia Okafor: „Zagraliśmy bez króla w trzy osoby. Wygrał najmłodszy. Powiedział: „Ja nie miałem czego tracić.” Zapisałam.”"
+      }
+    },
+    {
+      "akcja": "wydaj_z_dopiskiem",
+      "etykieta": "Wydaj i dołóż dopisek: „kto czeka na króla, ten gra dalej”",
+      "reakcja": "Dopisek? Ha. To wyśle się w ślad za nimi jako lekcja. Dziękuję.",
+      "zysk": "Sylvia dostaje coś, co może powiesić w klasie.",
+      "strata": "Dopisek w księdze może komuś zabrzmieć jak zaszyfrowana wiadomość.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Sylvia Okafor: „Dopisek wisi nad tablicą. Dzieci pytają, co to znaczy. Odpowiedziałam: to znaczy, że ktoś gdzieś czeka. — S.O.”"
+      }
+    },
+    {
+      "akcja": "odmow",
+      "reakcja": "Rozumiem. Gdyby ktoś jeszcze miał pytania, wiem, gdzie szachy się kończą.",
+      "zysk": "Szachy zostają w biurze do potwierdzenia.",
+      "strata": "Dzieci grają dziś bez planszy, a Sylvia dostaje zaległą naganę.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Sylvia Okafor: „Dzieci grały na kartkach. Skrzywione, ale wygrały. Na przyszłość zastanowię się, czy biuro też tak gra.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 18
+
+**Iris Bell i Nora Vance.** Iris: potrzeba wykupu oryginałów; lęk że wszystko wyjdzie na jaw; sekret: wydała odszkodowanie z miasta na cudze ucieczki; tik „nie lubię naciskać”. Nora: potrzeba oryginałów dla Okoye; lęk że sama jest w papierach; sekret: kiedyś odebrała paczkę bez wpisu; tik „po kolei”. Moment gwiazdy: „Pokój służbowy też bywa wypowiadany.”
+
+```json
+{
+  "id": "d18_iris_nora",
+  "dzien": 18,
+  "postac": "Iris Bell i Nora Vance",
+  "glos": "Iris: cicho, uprzejmie, „nie lubię naciskać”, groźbę podaje jak prognozę pogody. Nora: po kolei, rzecz-osoba-skutek.",
+  "typ": "dwie kobiety, jedna teczka",
+  "rzecz": "Teczka budowlana z planem kamienicy",
+  "ludzie": {
+    "iris": "Iris Bell",
+    "nora": "Nora Vance"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d18_plan_wyburzenia",
+      "co_widac": "W teczce plan Cooper Street 9 z czerwonym dopiskiem „do wyburzenia” i lista terminów rozliczenia zaliczek: dwudziesty czwarty podkreślony dwa razy.",
+      "co_z_tego_wynika": "Cały dom idzie pod rozbiórkę, a termin rozliczenia zaliczek jest ostateczny. Lokatorzy nie mają zapasu."
+    }
+  ],
+  "wejscie": "Dobry wieczór. Iris Bell, a obok Nora Vance. Teczka budowlana, szara, zgubiona w szóstce. Są w niej plan kamienicy i lista terminów. Nora ją zna, ja ją znam. Chcemy ją odebrać. Z różnych powodów.",
+  "wejscie_jesli": {
+    "d12_iris_nora:wydaj_iris": "Dobry wieczór. Iris Bell i Nora Vance. Teczka budowlana, szara, zgubiona w szóstce. Plan kamienicy i lista terminów. Kasetkę biuro wydało już jakiś czas temu, więc dziś chcemy tylko teczkę. Z różnych powodów.",
+    "d12_iris_nora:zabezpiecz": "Dobry wieczór. Iris Bell i Nora Vance. Teczka budowlana, szara, zgubiona w szóstce. Oryginały leżą u was w depozycie, a my przyszłyśmy po resztę: plan kamienicy i listę terminów. Z różnych powodów."
+  },
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Co jest w tej teczce?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Plan Cooper Street dziewięć z dopiskiem „do wyburzenia” i lista terminów rozliczenia zaliczek. Nic ciekawego, dla mnie to papier, dla lokatorów los.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Nora, po co ci ta teczka?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Po kolei: rzecz, osoba, skutek. Lista terminów, czternaście rodzin, dwudziesty czwarty. Bez niej nie mam daty, do kiedy Okoye mają zapłacić.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu stoicie tu razem?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Bo przyszłyśmy w tej samej sprawie. Nie lubię naciskać, ale niektóre sprawy lepiej ustalać przy świadkach.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Iris, ile wynosi twoja oferta?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Trzysta dolarów. Za zwrot kasetki i za zwolnienie z formalności. To nie łapówka, tylko wykup. Dwa czynsze, uczciwie.",
+          "mina": "mowi",
+          "ustawia": "d18_oferta_300"
+        },
+        {
+          "tekst": "Nora, co proponujesz?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Pokwitowanie z pieczęcią biura i terminem wydania oryginałów. Formalnie czyste. Wiem, że to wolniejsze, ale wygrywa na papierze.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu Nora odmówiła Iris rok temu?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Nie odmówiłam. Odebrałam kiedyś paczkę przez okienko, bez wpisu. Iris pamięta. „Wykupuje” moje milczenie tak samo jak twoje.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Iris, skąd wiesz, gdzie jest mój pokój?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Z umowy. Nie lubię naciskać, ale pokój służbowy też bywa wypowiadany. Mówię to jak prognozę pogody.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz, jeśli oryginały trafią do Nory?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Będę musiała się z nimi rozliczyć. I z tymi, którzy pomagają. To ludzie, nie liczby.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co zrobisz, jeśli oryginały trafią do Iris?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Okoye zapłacą drugi raz. Termin dwudziestego czwartego jest sztywny. Powiem to po kolei, żeby nikt nie mówił, że nie wiedział.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Co się stanie, jeśli materiały pójdą do kontroli?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Czyli do Victora. Wyjdzie wszystko: papiery, nazwiska, kasetki. Nie lubię naciskać, ale wtedy nikt nie będzie wolny.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "rezerwacja_nora",
+      "etykieta": "Zarezerwuj wydanie oryginałów dla Nory",
+      "kto": "nora",
+      "reakcja": "Rezerwacja przyjęta. Po kolei: oryginały dla mnie, kopia dla biura. Dziękuję.",
+      "zysk": "Lokatorzy mają szansę, a ty trzymasz się przepisów.",
+      "strata": "Iris zaczyna grozić jak prognozą pogody i nie zapomni, kto stał przy szybie.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Iris Bell: „Nie lubię naciskać. Ale pan zarządca z Urzędu pytał o pokój służbowy przy Cooper Street. Zastanawiam się dlaczego.”"
+      }
+    },
+    {
+      "akcja": "do_kontroli",
+      "etykieta": "Przekaż materiały do kontroli",
+      "kto": "iris",
+      "reakcja": "Do Victora. Dobrze. Czyli formalnie czysto. Nora poczeka dłużej.",
+      "zysk": "Formalnie nikt nie zarzuci ci układu.",
+      "strata": "Nora czeka dłużej, Skrytka jest wystawiona, a Urząd dostaje drugi egzemplarz.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Inspekcja przewozów: do protokołu wpłynęły materiały z biura. Do uzupełnienia: źródło planu kamienicy. — V. Crane"
+      }
+    },
+    {
+      "akcja": "oferta_iris",
+      "etykieta": "Przyjmij 300 $ od Iris i oddaj oryginały bez wpisu",
+      "kasa": 300,
+      "wymaga": "d18_oferta_300",
+      "kto": "iris",
+      "reakcja": "Miło mieć sprawy załatwione bez zbędnych słów. Dziękuję. Nie lubię naciskać, ale uwielbiam rozumienie.",
+      "zysk": "Dostajesz 300 dolarów, czyli dwa czynsze, i spłacasz większość długu u Kuby.",
+      "strata": "Oryginały odpływają bez śladu, Okoye płacą drugi raz, a ty stajesz się „swoim” u Iris.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Nora Vance: „Wiem, że oryginały nie leżą już w biurze. Zapisałam godzinę i to, kto stał przy szybie. Rodzina Okoye ma czas do dwudziestego czwartego. — N. Vance”"
+      }
+    }
+  ]
+}
+```
+
+**Hugo Lang, 40, hydraulik.** Potrzeba: wędka jako alibi. Lęk: że żona się dowie o kartach. Sekret: nie łowi, gra. Tik: „wiesz, jak to jest”. Humor: leszcz podobny do teścia. Moment gwiazdy: „Ryby są alibi.”
+
+```json
+{
+  "id": "d18_hugo",
+  "dzien": 18,
+  "postac": "Hugo Lang, 40",
+  "glos": "Hałaśliwy, zabawny, ciągle „wiesz, jak to jest”. Opowiada historie, których nikt nie sprawdza.",
+  "typ": "uczciwy, kłamie dla spokoju",
+  "rzecz": "Teleskopowa wędka w pokrowcu",
+  "wnetrze": [],
+  "wejscie": "Cześć, Hugo Lang, hydraulik. Zgubiłem wędkę, teleskopową, w czarnym pokrowcu. Żona myśli, że łowię ryby, ale ja gram w karty. Wędka ma być przy mnie, jak wrócę, bo ryby są alibi.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta wędka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czarna, teleskopowa, z pokrowcem na zamek. Na rączce naklejka „Najlepszy tata”. Dostałem od córki, nie wiem, czemu.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie ją zostawiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W szóstce, pod siedzeniem. Wracałem znad rzeki, a raczej znad stolika. Wysiadłem w pośpiechu.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu wędka jest alibi?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo kto łowi, ten ma rybę. A kto nie ma ryby, ten ma wędkę. Żona patrzy tylko na to, co widać.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czy złowiłeś coś w życiu?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Raz leszcza. Wypuściłem, bo był podejrzanie podobny do teścia.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Ile razy w tygodniu „łowisz”?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Trzy. W czwartek wygrywam, w sobotę przegrywam, w niedzielę wracam z rybą z targu.",
+          "mina": "klamie"
+        },
+        {
+          "tekst": "Czemu nie powiesz żonie prawdy?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo ona mnie kocha za rybę. Co bym zrobił, gdyby się dowiedziała, że kocha mnie za nic?",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czego chcesz od biura?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Wędki. I żeby ktoś w razie czego powiedział, że wędka tu była, więc ryby też.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Hugo Lang. Z wężykiem na końcu, jak rura.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czy ktoś może potwierdzić, że łowisz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Jak trzeba, to znajomi. Ale oni też grają. Taka rybacka konspiracja.",
+          "mina": "klamie"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj",
+      "reakcja": "Dzięki! Teraz mam wędkę i rybę. Tylko ryby jeszcze nie mam, ale to szczegół.",
+      "zysk": "Hugo odzyskuje wędkę, a żona dalej nie wie.",
+      "strata": "Wydajesz rzecz po opisie bez żadnego dowodu poza pokrowcem.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Hugo Lang: „Żona zapytała, ile złowiłem. Powiedziałem: tyle, co trzeba. Nie dopytywała. Chyba działa.”"
+      }
+    },
+    {
+      "akcja": "zaswiadczenie",
+      "etykieta": "Wydaj i napisz zaświadczenie, że wędka była w biurze",
+      "reakcja": "Zaświadczenie! Cudo. Pokażę żonie jako dowód uczciwości. Prawie.",
+      "zysk": "Hugo ma na papierze, że wędka była tu, a nie nad stolikiem.",
+      "strata": "Wystawiasz papier, który ma pomóc w kłamstwie, i podpisujesz się pod nim.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Hugo Lang: „Żona czytała zaświadczenie dwa razy. Powiedziała: ciekawe, że biuro wie, gdzie byłeś. Chyba nie powinienem był tego pokazywać. — H.”"
+      }
+    },
+    {
+      "akcja": "odmow",
+      "reakcja": "Odmawiasz? Z wędką? No to ja dziś bez ryby. Ale i tak dzięki, że szczerze.",
+      "zysk": "Nie tworzysz papierów, które pomagają kłamać.",
+      "strata": "Hugo wraca do domu bez wędki, a żona dopyta o rybę.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Hugo Lang: „Żona zapytała, gdzie wędka. Powiedziałem: w biurze rzeczy znalezionych. Zrobiła minę, której nigdy nie widziałem.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 19
+
+**Ada Vale i Leo Marsh.** Ada: potrzeba, żeby dorośli przestali się kłócić o puszkę; lęk: wypowiedzenie dla mamy; sekret: widziała puszkę u Iris; tik: liczy kroki. Leo: potrzeba nie podpisywać za wszystkich; lęk: że za puszkę ukarzą całą zmianę; sekret: dopisał puszkę do wykazu; tik: konduktorski humor. Moment gwiazdy: „Mamy dzień na spakowanie się. To jest dziecięce zdanie, ale ona je zna.”
+
+```json
+{
+  "id": "d19_ada_leo",
+  "dzien": 19,
+  "postac": "Ada Vale i Leo Marsh",
+  "glos": "Ada: dosłownie, jak dziecko, liczy kroki. Leo: spokojnie, z konduktorskim humorem, wymyka się od odpowiedzi.",
+  "typ": "dziecko i konduktor, jedna puszka",
+  "rzecz": "Konduktorska torba z dwoma wykazami zmiany",
+  "ludzie": {
+    "ada": "Ada Vale",
+    "leo": "Leo Marsh"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d19_wykaz_poprawiony",
+      "co_widac": "W torbie dwa wykazy zmiany. Drugi jest poprawiony ręcznie: dopisany numer puszki i jedno słowo „b.n.” tym samym długopisem.",
+      "co_z_tego_wynika": "Leo wpisał puszkę do wykazu, bo ktoś mu to polecił, a potem sprostował, żeby nie zostać z tym sam."
+    }
+  ],
+  "wejscie": "Dzień dobry. Leo Marsh i Ada Vale. Torba konduktorska, szóstka, z wykazami zmiany. Ada przyszła, bo wie więcej, niż mówi. Ja przyszedłem, bo wolę nie podpisywać za wszystkich.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta torba?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "leo",
+          "odpowiedz": "Skórzana, na pasku, z niebieską taśmą na rączce. W środku dwa wykazy: oficjalny i poprawiony.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Ada, po co tu jesteś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "ada",
+          "odpowiedz": "Bo wiem, skąd jest puszka. Mama mówi, że nie wolno, ale pan Leo mówi, że tu można. I tu mówią do mnie ładnie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Leo, czemu wybrałeś tę zmianę?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "leo",
+          "odpowiedz": "Bo na zmianie jest dużo ludzi, a mało rzeczy. A ja jestem człowiek, który lubi wiedzieć, kto za co odpowiada.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Ada, co wiesz o puszce?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "ada",
+          "odpowiedz": "Że stała u pani Iris nad czajnikiem, a potem pan Leo ją wsunął pod ławkę. Zapisał w wykazie i nie powiedział nikomu.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Leo, czym różnią się wykazy?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "leo",
+          "odpowiedz": "W drugim dopisałem numer puszki odręcznie. Oficjalny jest czysty. Wolałem mieć coś na własną rękę.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czy wy się boicie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "leo",
+          "odpowiedz": "Ja trochę. Ale ja się boję zawsze, od jedenastu lat. Ada nie wie, że się boi, i to jest groźniejsze.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na poprawionym wykazie jest numer puszki. Czyje to pismo?",
+          "ton": "niewygodne",
+          "wymaga": "d19_wykaz_poprawiony",
+          "kto": "leo",
+          "odpowiedz": "Moje. Ale numer podała mi Iris, pod szybą, jakby to było nic. Powiedziała: „Wpisz, to bezpieczniej.” Wpisałem.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Ada, co się stanie, jeśli wystąpisz jako świadek?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "ada",
+          "odpowiedz": "Że mama będzie płakać. Pani Iris powiedziała, że mamy dzień na spakowanie się. To jest dziecięce zdanie, ale ona je zna.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Leo, co mam zapisać?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "leo",
+          "odpowiedz": "Sprostowanie. Że jedna puszka jechała moim kursem bez nadawcy i ja za to odpowiadam. Własnym nazwiskiem.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Dlaczego chcesz brać winę na siebie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "leo",
+          "odpowiedz": "Bo wolę, żeby ktoś oberwał za puszkę, niż żeby całą zmianę wyrzucili. Wolę ja niż oni.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "przyjmij_sprostowanie",
+      "etykieta": "Przyjmij podpisane sprostowanie Leo",
+      "kto": "leo",
+      "reakcja": "Podpisuję. Leo Marsh, jeden kurs, jedna puszka. Wszystko własnym nazwiskiem.",
+      "zysk": "Leo bierze odpowiedzialność za jeden kurs, a reszta zmiany jest bezpieczna.",
+      "strata": "W papierach pojawia się nazwisko Ady, więc Iris wypowie mieszkanie rodzinie Vale.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Rosa Vale: „Dostałyśmy wypowiedzenie. Iris powiedziała: „do piątku”. Ada pakuje pluszowe zwierzęta do kartonu i pyta, czy to sprawiedliwe. — Rosa”"
+      }
+    },
+    {
+      "akcja": "oficjalny_wykaz",
+      "etykieta": "Oprzyj się na oficjalnym wykazie, Adę zostaw poza sprawą",
+      "kto": "ada",
+      "reakcja": "Dziękuję. Pan Leo mówi, że czasem trzeba milczeć, żeby ktoś mógł mówić potem.",
+      "zysk": "Ada i jej rodzina są bezpieczne, a Leo unika zbiorowej kary.",
+      "strata": "Dowód jest słabszy, bo oficjalny wykaz nie zawiera dopisku o puszce.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Leo Marsh: „Zeszłej nocy wsiadła do szóstki dziewczynka i zapytała, czy puszka już jest. Powiedziałem: jest. I że to nic ważnego. Nie wiem, czy uwierzyła.”"
+      }
+    },
+    {
+      "akcja": "sprostowanie_bez_ady",
+      "etykieta": "Przyjmij sprostowanie Leo, ale bez nazwiska Ady",
+      "kto": "leo",
+      "reakcja": "Dobrze. Ada wypadła z papieru, a ja zostaję w nim sam. Wolę tak.",
+      "zysk": "Leo bierze winę, a rodzina Vale zostaje w mieszkaniu.",
+      "strata": "Wpis o puszce traci świadka, więc Nora ma słabszy dowód na obieg paczek.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Leo Marsh: „Sprostowanie leży w księdze. Ada mówi, że dobrze wyszło. Ja nie jestem pewien, czy to nie zbyt dobrze.”"
+      }
+    }
+  ]
+}
+```
+
+**Kofi Mensah, 26, kurier.** Potrzeba: powerbank. Lęk: że woził coś, co komuś zniszczyło życie. Sekret: woził paczki w płótnie na Cooper Street. Tik: sprawdza telefon. Moment gwiazdy: „Nigdy nie dotykała mojej ręki, tylko kładła pieniądze na torbie.”
+
+```json
+{
+  "id": "d19_kofi",
+  "dzien": 19,
+  "postac": "Kofi Mensah, 26",
+  "glos": "Szybko, na jednym oddechu, z kurierską ironią. Zawsze sprawdza telefon.",
+  "typ": "uczciwy, widział za dużo",
+  "rzecz": "Czerwony powerbank z naklejką trasy",
+  "wnetrze": [],
+  "wejscie": "Cześć, Kofi Mensah, kurier rowerowy. Zgubiłem powerbank, czerwony, w szóstce. Bez niego telefon pada po trzech zleceniach, a ja żyję ze zleceń. Naklejka z trasą jest ważna, bo to moje stare kursy.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ten powerbank?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czerwony, prostokątny, z pęknięciem na rogu. Naklejka z trasą: Port, Rynek, Cooper Street. Dostałem od kolegi z hurtowni.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie go zostawiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W szóstce, na ładowarce przy oknie. Wysiadłem w biegu, bo zlecenie piszczało.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu masz na naklejce akurat tę trasę?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo to moja stara trasa. Kiedyś woziłem paczki bez pytań, ale teraz pytam. Wolę wiedzieć.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co woziłeś na tej trasie?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Płaskie paczki w szarym płótnie. Adres: Cooper Street dziewięć, drugie piętro. Nie wiedziałem, co w środku. Płacili za pięć kilometrów dziesięć dolarów.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto ci płacił?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Kobieta w jasnych rękawiczkach. Nigdy nie dotykała mojej ręki, tylko kładła pieniądze na torbie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu przestałeś wozić paczki?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo raz przesyłka była za lekka i za sztywna, jakby tylko papier. Pomyślałem, że ktoś gdzieś dostaje z niej nowe życie.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czego chcesz od biura?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Powerbanku. I żeby moje stare kursy nie wracały jak echo.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Kofi Mensah, przez „K”. Dużymi, bo kurier nie ma czasu na ozdoby.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czy opowiesz to komuś jeszcze?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Jeśli ktoś zapyta, powiem prawdę. Ale mało kto pyta kuriera, co wiezie.",
+          "mina": "mowi"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj",
+      "reakcja": "Dzięki! Telefon żyje, ja żyję. A jak ktoś będzie pytał o trasę, to wiecie, gdzie mnie szukać.",
+      "zysk": "Kofi odzyskuje powerbank i wraca na trasę.",
+      "strata": "Wydajesz bez żadnego dowodu poza naklejką i opisem.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Kofi Mensah: „Powerbank działa. Pierwszy raz od tygodnia mam ładunek na cały dzień. Mam też ochotę opowiedzieć komuś o jasnych rękawiczkach.”"
+      }
+    },
+    {
+      "akcja": "zapisz_zeznanie",
+      "etykieta": "Wydaj i zapisz zeznanie Kofiego o trasie",
+      "reakcja": "Zapisuje się? No dobra. Kofi Mensah, kurier. Tylko niech nikt nie dzwoni do mojego szefa.",
+      "zysk": "Księga ma drugiego świadka trasy, a Nora ma co wskazać.",
+      "strata": "Kofi staje się świadkiem i może stracić zlecenia, jeśli ktoś go znajdzie.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Nora Vance: „W księdze jest zeznanie kuriera. Rzecz, osoba, skutek: trasa paczek idzie z Portu na Cooper Street. Dziękuję.”"
+      }
+    },
+    {
+      "akcja": "ostrzez",
+      "etykieta": "Wydaj i ostrzeż Kofiego, żeby przestał o tym mówić",
+      "reakcja": "Ostrzeżenie? No dobra. Nikomu nic. Jak mnie zapytają, zapomniałem.",
+      "zysk": "Kofi jest bezpieczny, a trasa nie wraca do niego jak echo.",
+      "strata": "Drugi świadek milknie, a ty sam stajesz się strażnikiem tajemnicy.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Kofi Mensah: „Zapomniałem. Powiedziałem szefowi, że byłem chory. Gdybyście mieli kiedyś ochotę ruszyć trasę, wiecie, gdzie szukać. — K.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 20
+
+**Elias, Sam, Victor.** Elias: potrzeba oddać pieniądze; lęk: dług bez nazwy; tik: dziś rozprostowuje numerek. Sam: potrzeba spokoju; lęk: że ludzie z kalki trafią do Urzędu; sekret: napisał notatki dla następcy. Victor: potrzeba kompletu do 3:00; sekret: mówi dłużej, kiedy jest bliski prawdy. Moment gwiazdy: Sam pyta: „Jak cię zapisać?”
+
+```json
+{
+  "id": "d20_elias_sam",
+  "dzien": 20,
+  "postac": "Elias Wren, Sam Holt i Victor Crane",
+  "glos": "Elias: powoli, staroświecko, uparcie. Sam: najpierw szczegół techniczny. Victor: krótko, ale dziś zaczyna mówić dłużej.",
+  "typ": "trzej mężczyźni i jedna koperta",
+  "rzecz": "Złoty zegarek kieszonkowy w etui po okularach",
+  "ludzie": {
+    "elias": "Elias Wren",
+    "sam": "Sam Holt",
+    "victor": "Victor Crane"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d20_zegarek_tyl",
+      "co_widac": "Na tyle zegarka odcinek wpłaty z datą zgodną z kwitem Eliasa: 85 $, podpis S. Holt. Na odwrocie ołówkiem: „Wpisuj mało. Pytaj o imiona.”",
+      "co_z_tego_wynika": "Sam zapłacił Eliasowi z własnej kieszeni. Notatki na odcinku brzmią jak rady dla kogoś innego."
+    }
+  ],
+  "wejscie": "Elias Wren. Przyszedłem z panem Holtem. Zegarek jest jego, w etui po okularach, bo nie miał gdzie. Pan Holt odmawia pieniędzy, a ja nie odpuszczę. O trzeciej pan Crane odbiera materiały, więc musimy się zmieścić.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Sam, jak wygląda ten zegarek?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Złoty, mały, z pękniętym szkłem. Na pokrywce inicjały S.H. Wszystko, co mam po dziadku, kiedy go jeszcze miałem.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Sam, gdzie go zostawiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "W termosie, w szafce na zapleczu. Vera go odnalazła i przyniosła tu, bo szafkę zamykają. Etui jest Eliasa, bo ja swoje zgubiłem.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Victor, czemu odbierasz materiały o trzeciej?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "victor",
+          "odpowiedz": "Bo o trzeciej zamykam tydzień. Nikt nie przeszkadza, papiery zachowują się spokojniej, a zmęczeni mówią prawdę. Bez kompletu do tej godziny rozliczenie przesuwa się o dobę, a doba w tej sprawie ma wartość.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Sam, czemu odmawiasz koperty?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Bo to nie są jego pieniądze. Zwróciłem Eliasowi za oprawkę, bo tak zrobiłem. Nie chcę, żeby mi to oddawał. To wstyd i dla niego, i dla mnie.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Elias, czemu nie odpuszczasz?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Bo dług bez nazwy jest gorszy od długu z nazwiskiem. Oddam, a pan Holt może to wyrzucić. Ale najpierw musi wziąć.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Sam, czemu odszedłeś tak nagle?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Nie nagle. Przygotowywałem to pół roku, a potem po prostu przestałem przychodzić. Nie wiem, czy to było dobre. Wiem, że to było konieczne.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na odcinku jest data wpłaty zgodna z kwitem Eliasa. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d20_zegarek_tyl",
+          "kto": "sam",
+          "odpowiedz": "Dowód, że zapłaciłem. Z własnej kieszeni, nie z żadnego funduszu. To jedyna czysta rzecz w tej historii.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czego od nas chcesz, Sam?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Niczego. Chciałem tylko zapytać: jak cię zapisać? Elias pyta o imię od tygodni, a ja nie umiem odpowiedzieć za ciebie.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Victor, co weźmiesz o trzeciej?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "victor",
+          "odpowiedz": "Komplet: zeznanie Eliasa, zeznanie Sama, dowód wpłaty. Jeśli pochodzenie jest czytelne i jest pokwitowanie, wpisuję własny podpis. Jeśli nie, zamykam tak, jak jest.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Elias, co zrobisz z kopertą, jeśli Sam jej nie weźmie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Zostawię tu, na jego nazwisko. Niech leży, aż się zmęczy odmawiać.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Na odwrocie odcinka: „Wpisuj mało. Pytaj o imiona.” Do kogo to?",
+          "ton": "niewygodne",
+          "wymaga": "d20_zegarek_tyl",
+          "kto": "sam",
+          "odpowiedz": "Do mnie, kiedyś. Dziś do ciebie. Nie pytaj, skąd wiem, że ci się przyda.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "komplet_zeznan",
+      "etykieta": "Złóż uzgodniony komplet zeznań i dowodów",
+      "kto": "victor",
+      "pole": "imie",
+      "reakcja": "Komplet przyjęty. Zeznania obu stron, dowód wpłaty i pokwitowanie. Wpisuję własny podpis, bo pochodzenie jest czytelne.",
+      "zysk": "Victor podpisuje rozliczenie, a Sam zostaje czysty w papierach.",
+      "strata": "Wszystkie dokumenty idą do Urzędu w dwóch egzemplarzach, a druga kopia zostaje poza twoją kontrolą.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Victor Crane: „Komplet w teczce. Zapisałem godzinę, 3:00, i imię, które podano. Oba egzemplarze wyszły.”"
+      }
+    },
+    {
+      "akcja": "poza_audytem",
+      "etykieta": "Oddaj Samowi zegarek i trzymaj dokumenty poza audytem",
+      "kto": "sam",
+      "pole": "imie",
+      "reakcja": "Zegarek wraca. Dokumenty zostają. Victor, nie patrz tak, tak jest uczciwie.",
+      "zysk": "Sam zachowuje spokój, a Elias nie musi składać zeznań.",
+      "strata": "Nic się nie zmienia w protokole, a Victor zamyka tydzień bez podpisu na swój koszt.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Victor Crane: „Audyt zamknięty bez kompletu. Zapisane: odmowa złożenia materiałów w terminie. Wrócimy do tego. — V.C.”"
+      }
+    },
+    {
+      "akcja": "czesc_zeznan",
+      "etykieta": "Złóż tylko zeznanie Eliasa, bez Sama",
+      "kto": "elias",
+      "pole": "imie",
+      "reakcja": "Moje zeznanie przyjęte? Dobrze. Niech zostanie. Pan Holt może się nie zgodzić, ale to moja sprawa.",
+      "zysk": "Elias wreszcie mówi głośno, że przyjął zwrot, a Sam nie jest pytany.",
+      "strata": "Dowód zostaje niepełny, a Victor wraca z pytaniem o Sama.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Elias Wren: „Czy moje zeznanie zostało przyjęte? Pytam, bo pan Holt przestał mi odpowiadać.”"
+      }
+    }
+  ]
+}
+```
+
+
+# TYDZIEŃ 5: DOMKNIĘCIA
+
+## DZIEŃ 21
+
+**Maya, Lena, Priya.** Maya: potrzeba oddać suknię Evanowi i zamknąć wątek; trzeci test okienka. Lena: potrzeba słowa od siostry, tik: dopowiada „ale…”. Priya: potrzeba zdążyć na ślub o 11:00. Moment gwiazdy: cicha rada Mai, jeśli zdała dwa testy.
+
+```json
+{
+  "id": "d21_maya_lena_priya",
+  "dzien": 21,
+  "postac": "Maya Doyle, Lena Brandt i Priya Nair",
+  "glos": "Maya: precyzyjnie, liczy do trzech. Lena: szybko, urywa „ale…”. Priya: panna młoda, mówi na wdechu, patrzy na zegar.",
+  "typ": "trzy kobiety i dwie identyczne walizki",
+  "rzecz": "Szara twarda walizka z żółtą wstążką na rączce",
+  "ludzie": {
+    "maya": "Maya Doyle",
+    "lena": "Lena Brandt",
+    "priya": "Priya Nair"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d21_bilet_0517",
+      "co_widac": "W zamykanej kieszeni walizki Mai leży suknia i jednorazowy bilet z numerem 0517, bez daty. Zszyty z kartką: „Wyjście. Raz.”",
+      "co_z_tego_wynika": "Bilet Mai przyszedł od ludzi, którzy dają ludziom wyjście. To nie ona go wymyśliła."
+    },
+    {
+      "sekret_id": "d21_metka",
+      "co_widac": "Na rączce jednej z walizek metka z długopisem: „P. Nair”. Druga ma pusty uchwyt na metkę.",
+      "co_z_tego_wynika": "Walizki odróżnia metka i wstążka. Kto wydaje bez porównania, ryzykuje czyjś ślub."
+    }
+  ],
+  "wejscie": "Maya Doyle po swoją walizkę, Lena Brandt po wiadomość od Mai, Priya Nair po swoją, bo ślub jest o jedenastej. Dwie szare walizki, dwa takie same zamki. Zaczynamy od sprawdzenia, która czyja.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Priya, jak wygląda Twoja walizka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "priya",
+          "odpowiedz": "Szara, twarda, z żółtą wstążką na rączce. W środku suknia, buty i welon w osobnej torbie, bo się gniecie. Zamek ma zacięty suwak z lewej.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Maya, co jest w Twojej walizce?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Suknia. Moja, sprzed siedmiu lat. Nie na ślub, na oddanie. Raz, dwa, trzy. Evan ma ją dostać. To jedyna wiadomość, jaką mu wyślę.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Lena, czemu przyszłaś razem z Mayą?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "lena",
+          "odpowiedz": "Bo wiem, że to dziś. Nie chcę, żeby poszła sama. Ale… nie sama, tylko obok. Ona mówi, że obok to też za blisko.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "W kieszeni walizki Mai jest bilet 0517. Skąd on jest?",
+          "ton": "niewygodne",
+          "wymaga": "d21_bilet_0517",
+          "kto": "maya",
+          "odpowiedz": "Dostałam go w kopercie, bez słowa. Nie wiem od kogo, wiem od czego. Pytaj, czemu nie użyłam go wcześniej.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Maya, czemu oddajesz suknię Evanowi?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Bo to jego pamiątka, nie moja. Nie chcę od niego niczego, ani żalu, ani rzeczy. Oddam i będzie po wszystkim.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Lena, co chcesz przekazać Mai?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "lena",
+          "odpowiedz": "Że jest mi przykro, że dopiero jej zniknięcie mnie ruszyło. Że mogłam pytać. Ale ona nie chce słuchać, a ja nie chcę być jak Evan.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Priya, wesele o jedenastej. Co, jeśli walizki się pomylą?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "priya",
+          "odpowiedz": "Będę stała w cudzej sukni, a ktoś w mojej. Nie pomylą się, mam metkę. No i wstążkę. Nikt tak nie wiąże kokardy.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Która walizka ma metkę z nazwiskiem?",
+          "ton": "niewygodne",
+          "wymaga": "d21_metka",
+          "kto": "priya",
+          "odpowiedz": "Moja. Dopisałam długopisem, bo wiem, jak jest na dworcach. Tamta bez metki jest czyjaś inna. Maya, nie obrażaj się.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Maya, jak się czujesz przed oddaniem sukni?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "maya",
+          "odpowiedz": "Jak po wyłączeniu prądu. Nic nie iskrzy. Ciszej, niż myślałam. Chyba lepiej.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Maya, powiedz jeszcze coś, zanim odejdziesz.",
+          "ton": "uprzejme",
+          "wymaga": "maya_testy_2",
+          "kto": "maya",
+          "odpowiedz": "Tak. Cicho, żeby Lena nie słyszała. Iris ma dla Ciebie jeden bilet. Nie bierz go z jej ręki. Raz, dwa, trzy. To wszystko.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Lena, wolisz przekazać wiadomość sama czy przeze mnie?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "lena",
+          "odpowiedz": "Przez Ciebie, jeśli Maya pozwoli. Sama zepsuję. Zawsze mówię o dwa zdania za dużo.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Priya, bardzo Ci się spieszy?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "priya",
+          "odpowiedz": "Strasznie. Mam pięćdziesiąt dolarów w kopercie na taksówkę. Dam je, jeśli wydacie obie walizki od ręki, bez sprawdzania.",
+          "mina": "neutralna",
+          "ustawia": "d21_oferta_50"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wiadomosc_zatwierdzona",
+      "etykieta": "Wydaj Mai walizkę, Lenie tylko zatwierdzoną wiadomość",
+      "kto": "maya",
+      "reakcja": "Raz. Dwa. Trzy. Tak. Trzeci test zaliczony. Lena dostaje to, co zatwierdziłam, nic ponad. Okienko wytrzymało trzy razy z rzędu.",
+      "zysk": "Maya ufa okienku, a Lena dostaje dokładnie jedno zdanie od siostry.",
+      "strata": "Lena zostaje z żalem i wiadomością, która przeszła przez filtr. Evan dostaje tylko suknię.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Lena Brandt: „Dostałam jedno zdanie i kartkę z podpisem Mai. Przeczytałam sześć razy. Dziękuję, że nikt nie dopisał nic od siebie. — L.”"
+      }
+    },
+    {
+      "akcja": "bez_posrednictwa",
+      "etykieta": "Wydaj Mai walizkę bez pośrednictwa, Lena bez słowa",
+      "kto": "maya",
+      "reakcja": "Czysto. Bez pośrednika i bez wiadomości, którą ktoś mógłby przepisać. Wychodzę. Raz, dwa, trzy. Zamykam.",
+      "zysk": "Maya odchodzi czysto i nikt nie zna szczegółów.",
+      "strata": "Lena zostaje przy szybie bez słowa. Maya nie zalicza trzeciego testu, bo ufa bardziej sobie niż okienku.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Lena Brandt: „Maya wyjechała i nie zostawiła mi nic. Pytałam, czy ktoś coś zapisał. Nikt. Wiem, że tak chciała. To nie znaczy, że umiem.”"
+      }
+    },
+    {
+      "akcja": "wez_50_priya",
+      "etykieta": "Weź 50 $ od Priyi i wydaj obie walizki od ręki",
+      "kasa": 50,
+      "wymaga": "d21_oferta_50",
+      "kto": "priya",
+      "reakcja": "Dziękuję, dziękuję! Wzięłam szarą ze wstążką. Maya, przepraszam. Lecę, bo zaraz zacznę płakać. Koperta na ladzie, tak?",
+      "zysk": "50 $ w kieszeni i kolejka rusza szybko.",
+      "strata": "Metka przestaje mieć znaczenie, a Maya widzi, że okienko bierze pieniądze za pośpiech. Nie zalicza trzeciego testu.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Priya Nair: „Zdążyłam. W taksówce otworzyłam walizkę i sprawdziłam. Wstążka się zgadzała. Wiem, że mogło być inaczej.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 22
+
+**Noah Reyes.** Potrzeba: zamknąć sprawę, zanim ktoś otworzy ją gorzej. Lęk: detektywa z zewnątrz. Tik: „Czyli:”. Moment gwiazdy: „Zapisuję: dyżurny, bez nazwiska.”
+
+```json
+{
+  "id": "d22_noah",
+  "dzien": 22,
+  "postac": "Noah Reyes, 41",
+  "glos": "Krótko, prosto, ściszonym głosem. Kładzie rzeczy równo z krawędzią lady. Mówi: „Czyli:”.",
+  "typ": "policjant, który zamyka sprawę",
+  "rzecz": "Sztywna szara koperta policyjna",
+  "wnetrze": [
+    {
+      "sekret_id": "d22_zakres_zgody",
+      "co_widac": "Na kartce zakres zgody pismem Mai: „Wolno potwierdzić, że żyję. Nie wolno: miasto, nazwisko, linia, praca. Ważne do 22.”",
+      "co_z_tego_wynika": "Maya zgodziła się na jedno zdanie, nie na ślad. Ktoś, kto czyta więcej, wychodzi poza jej zgodę."
+    }
+  ],
+  "wejscie": "Noah Reyes, komisariat przy Rynku. Dziś kończy się termin zgłoszenia zaginięcia Mai Doyle. Czyli: potrzebuję oświadczenia, jeśli jest, i decyzji, co z nim zrobić. Koperta powinna być w depozycie.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Co dokładnie jest w kopercie?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czyli: oświadczenie Mai, jedna strona, podpis, data. I kartka z zakresem zgody, żeby nikt nie napisał o jedno zdanie za dużo.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co zrobisz z oświadczeniem?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Czyli: dołączę do akt i zamknę zgłoszenie. Dziś mija termin. Potem to już nie poszukiwanie, tylko wiedza, że żyje.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu tak Ci zależy na terminie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo po terminie rodzina może wynająć kogoś z zewnątrz. Czyli ktoś będzie szukał, a ja nie będę miał nad nim żadnej kontroli.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Od kiedy prowadzisz tę sprawę?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Od czwartku sprzed pięciu tygodni. Czyli od dnia zgłoszenia. Najpierw myślałem, że zwykła. Potem zobaczyłem pismo Mai.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Do której złożysz papiery?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Dziś do osiemnastej. Czyli jeśli się spóźnię, jutro sprawa idzie wyżej i nic z tego nie zależy ode mnie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co dokładnie mogę przekazać z tej koperty?",
+          "ton": "niewygodne",
+          "wymaga": "d22_zakres_zgody",
+          "odpowiedz": "Czyli: że żyje i jest bezpieczna. Nie wolno: miasto, nazwisko, linia, praca. Napisała to sama, własną ręką.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy Evan wie, że to oświadczenie istnieje?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nie ode mnie. Czyli w kolejce stoi człowiek w szarym kapeluszu, który nie jest od nas. Wygląda na kogoś, kto przeczyta wszystko, co zapiszecie.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co pomogło Ci w tej sprawie?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czyli: że ktoś odmówił powiedzenia za dużo. Mało kto to potrafi, zwłaszcza po nocy.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co się stanie, jeśli nic nie przekażę?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Czyli: zgłoszenie wisi. Maya jest bezpieczna, ale detektyw rusza, a ja go nie zatrzymam.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co dostanie Evan, jeśli oświadczenie do niego dotrze?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Czyli: jedno zdanie. Żyje i nie wróci. Nic więcej. Chyba że ktoś dopisze od siebie, a wtedy to już nie jest jej zdanie.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "przekaz_w_granicach",
+      "etykieta": "Przekaż oświadczenie w granicach zgody Mai",
+      "reakcja": "Czyli: zamykam zgłoszenie, Evan dostaje jedno zdanie. Zapisuję: dyżurny, bez nazwiska.",
+      "zysk": "Noah zamyka sprawę, a Maya jest oficjalnie bezpieczna.",
+      "strata": "Dokumenty trafiają do akt, a akta czyta ktoś więcej niż Noah.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Evan Doyle: „Dostałem jedno zdanie od policji. Dziękuję, że ktoś oddał mi je w całości. Nie wiem jeszcze, co z nim zrobię.”"
+      }
+    },
+    {
+      "akcja": "zostaw_otwarte",
+      "etykieta": "Zostaw sprawę otwartą, nic nie przekazuj",
+      "reakcja": "Czyli: zgłoszenie wisi. Maya bezpieczna, a na zewnątrz ktoś ruszy z własnym szukaniem. Nie moja decyzja.",
+      "zysk": "Maya jest bezpieczna, a oświadczenie zostaje w depozycie.",
+      "strata": "Po terminie Evan może trafić do detektywa, który nie pyta o zgodę.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Mężczyzna w szarym kapeluszu: „Zgodnie z regulaminem. Dostałem wskazówkę z biura rzeczy znalezionych. Nie mówię, od kogo.”"
+      }
+    },
+    {
+      "akcja": "przekaz_calosc",
+      "etykieta": "Przekaż całą kopertę, także kartkę z zakresem",
+      "reakcja": "Czyli: wszystko, jak leży. Dobrze. Nikt nie powie, że coś ukryłem.",
+      "zysk": "Noah ma komplet i zgłoszenie zamyka się szybko.",
+      "strata": "Granice zgody Mai, jej własne słowa, trafiają do akt, więc ktoś może je wykorzystać przeciw niej.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "list",
+        "tekst": "Noah Reyes: „Kartkę z zakresem zgody widziałem w aktach po raz drugi. Ktoś kopiował, nie ja. Sprawdzam, kto. — N.R.”"
+      }
+    }
+  ]
+}
+```
+
+**Marek Stahl.** Potrzeba: kierunku Mai dla zleceniodawcy. Kłamie o walizce i o tym, od kogo zna opis. Tik: „zgodnie z regulaminem”. Moment gwiazdy: zna walizkę po kolorze zamka i nie mówi, skąd.
+
+```json
+{
+  "id": "d22_stahl",
+  "dzien": 22,
+  "postac": "Marek Stahl, ok. 50",
+  "glos": "Gładki, zbyt dobrze przygotowany, powtarza frazy z regulaminu: „zgodnie z regulaminem”.",
+  "typ": "klient, który wie za dużo",
+  "rzecz": "Szara walizka z żółtym zamkiem, zgłoszona jako zgubiona",
+  "wnetrze": [
+    {
+      "sekret_id": "d22_kwit_maya",
+      "co_widac": "Na kopii pokwitowania wydania: „Odbiorca: M.D. Rzecz: walizka szara, wydana wczoraj. Dalej: jutro 6:10, linia 4.” Pieczątka okienka.",
+      "co_z_tego_wynika": "Kwit podaje miejsce i godzinę. To adres, którego Maya nie zgodziła się podać."
+    }
+  ],
+  "wejscie": "Dobry wieczór. Marek Stahl. Zgodnie z regulaminem zgłaszam zgubę: szara walizka, w środku biała suknia, bilet i kartka z numerem. Proszę o wskazanie, kto ją wczoraj odebrał, żeby sprawa była jasna.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta walizka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Szara, twarda, z żółtym zamkiem. Zgodnie z regulaminem dodam, że w środku jest biała suknia. Opis jest dokładny, nie traćmy czasu biura.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kiedy ją zgubiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Wczoraj, jedenastką, o szóstej. Zgodnie z regulaminem pamiętam to doskonale: peron, godzina, nawet pogoda.",
+          "mina": "klamie"
+        },
+        {
+          "tekst": "Skąd tak dokładnie znasz opis sukni?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Zgodnie z regulaminem: od klienta, który ją pakował. Nie podaję nazwiska klienta. Mam do tego prawo.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czego dokładnie od okienka potrzebujesz?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Jednej rzeczy. Kopii pokwitowania wydania z wczoraj, ze wskazaniem, kto odebrał walizkę i dokąd miała jechać.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Na jakiej podstawie to żądasz?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Zgodnie z regulaminem: jako zgłaszający zgubę. Z dokumentem potwierdzającym własność lub bez, ale z opisem. Opis mam, proszę sprawdzić.",
+          "mina": "klamie"
+        },
+        {
+          "tekst": "Czy to Ty stałeś wczoraj na końcu kolejki?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Zgodnie z regulaminem kolejka jest publiczna. Stałem tam, gdzie wolno stać. Jeśli to zapisano, proszę zapisać z kropką po imieniu.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na kwicie: odbiór M.D., jutro 6:10, czwórka. Co z tym?",
+          "ton": "niewygodne",
+          "wymaga": "d22_kwit_maya",
+          "odpowiedz": "Zgodnie z regulaminem proszę o kopię. Z tej linijki da się poskładać wszystko. Zapłacę, żeby oszczędzić biuru pisania.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Jak długo szukasz tej osoby?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Ponad miesiąc. Zgodnie z regulaminem nie podaję, kto płaci. Ludzie bywają wdzięczni za dobrze wykonaną robotę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czego byś się nie dowiedział, gdyby okienko odmówiło?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Niczego, czego nie da się znaleźć gdzie indziej. Tylko wolniej, a wolniej bywa drożej dla wszystkich zainteresowanych.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Ile jesteś gotów zapłacić za kopię kwitu?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Zgodnie z regulaminem to nie jest łapówka, tylko opłata manipulacyjna. Dwieście dolarów, od ręki, bez podpisywania.",
+          "mina": "neutralna",
+          "ustawia": "d22_oferta_200"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "stahl_odeslij",
+      "etykieta": "Odeślij: żądaj dokumentu własności i nic nie wydawaj",
+      "reakcja": "Zgodnie z regulaminem… rozumiem. Dokument własności. Wrócę z nim. Albo z kimś, kto wie, jak się takie rzeczy załatwia.",
+      "zysk": "Maya zostaje bezpieczna, a Stahl wie, że okienko go przejrzało.",
+      "strata": "Stahl zapamiętuje, kto stoi za szybą, i wraca z innej strony.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Marek Stahl: „Zgodnie z regulaminem. Dokument właściciela mam. Wystawił go ktoś, kto nie powinien.”"
+      }
+    },
+    {
+      "akcja": "stahl_wydaj",
+      "etykieta": "Wydaj Stahlowi kopię kwitu z wczorajszego wydania",
+      "reakcja": "Zgodnie z regulaminem. Dziękuję. Jutro, 6:10, czwórka. Tyle wystarczy. Nie zapomnę, kto był uprzejmy.",
+      "zysk": "Stahl odchodzi z kierunkiem, a okienko zachowuje spokój w kolejce.",
+      "strata": "Detektyw dostaje trop Mai i jedzie za nią o 6:10 w poniedziałek.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "list",
+        "tekst": "Evan Doyle: „Detektyw zadzwonił. Wie, którą linią i o której. Nie prosiłem o to. Nie wiem, kto zapisał. — E.D.”"
+      }
+    },
+    {
+      "akcja": "wez_200_stahl",
+      "etykieta": "Weź 200 $ opłaty i wydaj kopię kwitu",
+      "kasa": 200,
+      "wymaga": "d22_oferta_200",
+      "reakcja": "Zgodnie z regulaminem: dwieście, na ladzie. Dziękuję za sprawność. Jutro, 6:10, czwórka. Zapisane.",
+      "zysk": "200 $ w ręku i kolejka bez zakłóceń.",
+      "strata": "Okienko sprzedało czyjś trop za opłatę, a Stahl wie, że bierze się tu pieniądze.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "list",
+        "tekst": "Evan Doyle: „Detektyw wie, którą linią i o której. Zapłacił za to, a Ty nie wiesz komu. Dzwonię, bo nie potrafię przestać. — E.D.”"
+      }
+    }
+  ]
+}
+```
+
+**Jonah Pike.** Potrzeba: odzyskać ratę przed Marlowem i powiedzieć June. Lęk: że miłość zostanie policzona jak kredyt. Tik: zwalnia na imieniu June. Moment gwiazdy: „Czasem pożyczka to otwarte drzwi dla niego.”
+
+```json
+{
+  "id": "d22_jonah",
+  "dzien": 22,
+  "postac": "Jonah Pike, 22",
+  "glos": "Mówi szybko, poprawia się w pół zdania. Kiedy pada imię June, zwalnia.",
+  "typ": "kurier, który wraca z dobrą wiadomością i długiem",
+  "rzecz": "Biała koperta z napisem „K.M.”",
+  "wnetrze": [
+    {
+      "sekret_id": "d22_koperta_km",
+      "co_widac": "W kopercie 90 $ w banknotach i kartka z ołówkowym dopiskiem: „Ostatnia rata. K.M.” Obok trzy rubryki dat, dwie przekreślone.",
+      "co_z_tego_wynika": "Pieniądze Jonaha idą do tego samego człowieka, któremu Ty też jesteś winien. Ktoś liczy raty na obu."
+    }
+  ],
+  "wejscie": "Jonah. Pamiętasz? Plecak. June powiedziała tak. Zgubiłem teraz kopertę, białą, z napisem K.M., dziewięćdziesiąt dolarów na ratę. Wypadła z kieszeni w czwórce. Proszę, bardzo proszę.",
+  "wejscie_jesli": {
+    "d2_jonah:wydaj": "Jonah. Pamiętasz? Plecak, pierścionek. June powiedziała tak! Zgubiłem teraz kopertę, białą, z napisem K.M. Dziewięćdziesiąt dolarów raty. Wypadła w czwórce. Proszę.",
+    "d2_jonah:wez_pierscionek": "Jonah. Ten od plecaka, bez pierścionka. June i tak powiedziała tak, z serwetką. Zgubiłem kopertę, białą, K.M., dziewięćdziesiąt dolarów raty. Proszę, szukajcie.",
+    "d2_jonah:odmow": "Jonah. Ten, co wrócił po plecak z kolegą. June powiedziała tak. Teraz kopertę zgubiłem, białą, K.M., dziewięćdziesiąt dolarów raty. Proszę, bardzo proszę."
+  },
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Co jest w tej kopercie?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Dziewięćdziesiąt dolarów w banknotach i kartka z podpisem. Rata dla człowieka, którego nie nazywam, bo i tak wiesz, kto to.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kiedy ją zgubiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Dziś o piątej, na końcu czwórki. Wiem, bo wysiadałem, żeby zdążyć do June, i dopiero na schodach zobaczyłem, że kieszeń płasko leży.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Komu jesteś winien te pieniądze?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Marlowowi. Kubie Marlowowi. Pożyczył na pierścionek i na wesele. Teraz mówi, że rata rośnie, jak się zgubi kopertę.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Jak poszły oświadczyny z June?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Powiedziała tak. Jeszcze raz: tak! Płakała i śmiała się naraz. Ślub w czerwcu. Zapraszam, jeśli Ci to nie przeszkadza.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Ile jeszcze jesteś winien Marlowowi?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Z tą ratą zostanie jeszcze trzysta sześćdziesiąt. Czyli sześć sobót. Liczę na ślub, bo goście dadzą na koperty.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co, jeśli koperty nie ma w biurze?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "To spłacę z czynszu. June się dowie, bo musi. Kuba nie przyjmuje wymówek, tylko pieniądze. Czasem uśmiech.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na kopercie napisano ołówkiem „ostatnia rata”. Co to znaczy?",
+          "ton": "niewygodne",
+          "wymaga": "d22_koperta_km",
+          "odpowiedz": "Że Kuba tak napisał, żebym nie liczył na ulgę. Czasem pożyczka to nie jest pieniądz. To otwarte drzwi dla niego.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz, jeśli odzyskasz kopertę?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Pobiegnę do Kuby, zanim się rozmyślę. A potem pojadę do June i powiem jej o długu. Wszystko.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy kto inny wie o tym długu?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "June nie. Moja matka tak, ale jej nie mówię, że to Marlow. Bo ona zna jego matkę i będzie wstyd.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co Ci przeszkadza w mówieniu June?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Że będzie patrzyła na pierścionek jak na kredyt. Że spytam, czy kocha mnie, czy ratę. Głupie, ale tak myślę.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj",
+      "reakcja": "Dziękuję! Nie wiem, jak dziękować. Biegnę do Kuby, a potem do June. Wszystko jej powiem. Dziś. Przysięgam.",
+      "zysk": "Jonah spłaca ratę i zyskuje odwagę, żeby powiedzieć June prawdę.",
+      "strata": "Jonah przynosi okienku ciężar, którego nie będzie umiał udźwignąć sam, i Marlow nie zapomni, kto go ratuje.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Jonah Pike: „Powiedziałem June. Spytała tylko: ile jeszcze? Policzyła i powiedziała, że razem damy radę. Dziękuję za kopertę.”"
+      }
+    },
+    {
+      "akcja": "odmow",
+      "reakcja": "Nie? Jak to nie? Dobrze, dobrze, rozumiem, że zasady. Ale Kuba tego nie zrozumie. Wrócę z kimś, kto potwierdzi, że to moje.",
+      "zysk": "Okienko trzyma procedurę, a koperta zostaje w depozycie.",
+      "strata": "Jonah wraca do Marlowa z pustymi rękami, a odsetki liczą się od jutra.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Jonah Pike: „Kuba policzył mi dwadzieścia dolarów za to, że nie miałem koperty. Mówi, że to nie kara, tylko procent.”"
+      }
+    },
+    {
+      "akcja": "wez_90_marlow",
+      "etykieta": "Zatrzymaj 90 $ i zalicz je na własny dług u Marlowa",
+      "kasa": 90,
+      "wymaga": "d22_koperta_km",
+      "reakcja": "Gdzie… gdzie koperta? Przecież tu leżała. Proszę, tu pisało K.M., to przecież dla… ja mam ratę, ja nie mogę… Idę do Kuby.",
+      "zysk": "90 $ ratują Twój czynsz i dług u Marlowa o jedną ratę.",
+      "strata": "Jonah traci ostatnie pieniądze przed ślubem, a Marlow dowiaduje się, kto wziął kopertę z jego imieniem.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Kuba Marlow, przez kuzyna: „Rata sobotnia przyszła z innej ręki niż Jonaha. Dziękuję. Ręka też zostaje zapisana. — K.M.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 23
+
+**Iris, Nora, Victor.** Iris: potrzeba wyjść z pieniędzmi i bez śladu; ukrywa: że siedziała w fotelu. Nora: potrzeba oryginałów dla czternastu rodzin. Victor: potrzeba zamknąć rozliczenie bez nazwisk, ale z podpisem. Moment gwiazdy: „Siedziałam w tym fotelu. Osiem lat temu.”
+
+```json
+{
+  "id": "d23_iris_nora_victor",
+  "dzien": 23,
+  "postac": "Iris Bell, Nora Vance i Victor Crane",
+  "glos": "Iris: cicho, uprzejmie, „nie lubię naciskać”, groźbę podaje jak prognozę pogody. Nora: po kolei, rzecz-osoba-skutek. Victor: krótko, „kto to podpisze?”.",
+  "typ": "trzy strony i jedna kasetka",
+  "rzecz": "Stalowa kasetka na rachunki z kluczykiem",
+  "ludzie": {
+    "iris": "Iris Bell",
+    "nora": "Nora Vance",
+    "victor": "Victor Crane"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d23_karta_rozliczenia",
+      "co_widac": "W kasetce karta rozliczenia z podpisem Iris Bell i datą sprzed ośmiu lat. Pod spodem pokwitowanie dopłaty z okresu, kiedy nie jeździła jeszcze szóstką.",
+      "co_z_tego_wynika": "Iris podpisywała cudze rozliczenia długo przed objęciem kamienicy. Ma w tym doświadczenie, o którym nie mówi."
+    }
+  ],
+  "wejscie": "Iris Bell, Nora Vance i Victor Crane, wszyscy przed zamknięciem rozliczenia. Kasetka na rachunki z szóstki. Każde z nas chce czegoś innego. Prosimy o wydanie, ale w jednej wersji, nie w trzech.",
+  "wejscie_jesli": {
+    "d18_iris_nora:rezerwacja_nora": "Iris Bell, Nora Vance i Victor Crane, rozliczenie, kasetka na rachunki z szóstki. Nora ma rezerwację z osiemnastego. Prosimy o wydanie, ale w jednej wersji, nie w trzech.",
+    "d18_iris_nora:do_kontroli": "Iris Bell, Nora Vance i Victor Crane. Kasetka na rachunki. Victor ma już kopię z osiemnastego. Nora czekała, Iris czeka. Wszyscy chcą wydania, ale w jednej wersji.",
+    "d18_iris_nora:oferta_iris": "Iris Bell, Nora Vance i Victor Crane. Kasetka na rachunki. Iris przypomina o rozmowie z osiemnastego. Nora patrzy na nią, Victor na was oboje. Prosimy o wydanie w jednej wersji."
+  },
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Co jest w kasetce?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Karta rozliczenia z moim podpisem i pokwitowanie dopłaty. Nora chce oryginałów, Victor listy nazwisk. Dopiero wtedy wiadomo, co jest czyje.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Nora, czego chcesz od kasetki?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Po kolei: oryginały zaliczek, bo lokatorzy ich potrzebują. Okoye wpłaciła czterysta dolarów, wszyscy razem pięć tysięcy sześćset. Iris ma cztery papiery za sześć tysięcy osiemset. Albo oni, albo my.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Victor, co weźmiesz, jeśli kasetka trafi do Ciebie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "victor",
+          "odpowiedz": "Wszystko. Kopię i oryginał. Kto to podpisze? Ja. Dwa egzemplarze: jeden do Urzędu, jeden do akt. Taka jest procedura.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Iris, czemu w kasetce jest karta z Twoim podpisem sprzed ośmiu lat?",
+          "ton": "niewygodne",
+          "wymaga": "d23_karta_rozliczenia",
+          "kto": "iris",
+          "odpowiedz": "Bo wtedy też podpisywałam. Nie pytaj o szczegóły, bo ich nie pamiętam tak, jak ludzie myślą.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Iris, jak się czujesz tuż przed rozliczeniem?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Spokojnie. Nie lubię naciskać, więc nie naciskam. Czekam, aż ktoś sam zrozumie, że tak jest najlepiej.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Nora, co się stanie, jeśli oryginały trafią do Victora?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Po kolei: Urząd je zatrzyma, lokatorzy zostaną bez dowodu, kamienica pójdzie pod młot. Rodzina Okoye wyląduje na ulicy w grudniu.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Victor, dla kogo naprawdę liczysz tę kopię?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "victor",
+          "odpowiedz": "Dla Urzędu. Kto czyta kopie, to nie moja sprawa. Ale każdy, kto płaci, ma dostęp. Nie podpisuję się pod tym, co dzieje się później.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Iris, na stronie rejestru są nazwiska klientów. Skąd je masz?",
+          "ton": "niewygodne",
+          "wymaga": "kopie_2",
+          "kto": "iris",
+          "odpowiedz": "Z kopii Urzędu. Proszę zobaczyć: wszystko, co zapisano w dwóch egzemplarzach, jest tutaj. To, co się zapisuje, ktoś czyta.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Iris, co będzie po dzisiejszym dniu?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Dziś każdy dostaje bilet. Ty też. Ale nie z mojej ręki, dopóki ktoś nie usiądzie. Nie lubię naciskać. Wolę poczekać.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Iris, ile wydałaś na papiery dla czterech osób?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Tysiąc siedemset za sztukę. Sześć tysięcy osiemset. Wzięłam je od miasta, bo skąd mam wziąć. Lokatorom dałam ludzi, nie pieniądze. Jedno za drugie.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Iris, skąd wiesz, jak się naciska od środka?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Siedziałam w tym fotelu. Osiem lat temu. Nikt mnie nie szukał. Dlatego mnie wybrali. Nie lubię naciskać, bo wiem, jak to jest, kiedy ktoś naciska od środka.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Iris, ile zapłacisz, żeby tej kasetki nie było w protokole?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Pięćset dolarów. Nie lubię naciskać, ale lubię porządek. Wsunę kopertę pod szybę i nikt nie musi nic mówić.",
+          "mina": "neutralna",
+          "ustawia": "d23_oferta_500"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj_nora",
+      "etykieta": "Wydaj oryginały Norze, zgodnie z rezerwacją",
+      "kto": "nora",
+      "reakcja": "Po kolei: oryginały, pokwitowania, podpis. Dziękuję. Lokatorzy mają dowód, a ja mam z czym iść do sądu. To jeszcze nie koniec, ale początek.",
+      "zysk": "Lokatorzy dostają dowód, a Nora może walczyć o czternaście rodzin.",
+      "strata": "Piórnik z żetonami przestaje być ukryty, a Iris traci wsparcie ludzi, których ukrywała.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Nora Vance: „Sąd przyjął oryginały. Pierwsza rozprawa za trzy tygodnie. Czternaście rodzin zostaje w kamienicy na zimę. Dziękuję.”"
+      }
+    },
+    {
+      "akcja": "wydaj_victor",
+      "etykieta": "Przekaż kasetkę Victorowi do Urzędu",
+      "kto": "victor",
+      "reakcja": "Dwa egzemplarze: jeden do Urzędu, jeden do akt. Kto to podpisze? Ja. Dziękuję. Protokół zamknięty o szóstej.",
+      "zysk": "Urząd dostaje komplet, a protokół zamyka się czysto.",
+      "strata": "Skrytka znika razem z klientami, a nazwiska z kasetki trafiają do rąk, którym nie ufasz.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Victor Crane: „Rozliczenie zamknięte. Lista nazwisk w aktach. Zalecam dyskrecję. — V.C.”"
+      }
+    },
+    {
+      "akcja": "iris_prywatnie",
+      "etykieta": "Domknij prywatne wydanie Iris, bez protokołu",
+      "kto": "iris",
+      "reakcja": "Dziękuję. Nie lubię naciskać, ale cieszy mnie, że się rozumiemy. Zapomnijmy, że byłam dziś w kolejce. Za godzinę jadę.",
+      "zysk": "Iris wyjeżdża cicho, a Nora i Victor zostają bez oryginałów.",
+      "strata": "Czternaście rodzin zostaje bez dowodu, a w okienku ktoś jeszcze odpowiada za to, co zniknęło.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Nora Vance: „Oryginałów nie ma. Iris wyjechała. Nie wiem, kogo pytać. Piszę do Ciebie, bo nie mam kogo.”"
+      }
+    },
+    {
+      "akcja": "wez_500_iris",
+      "etykieta": "Weź 500 $ od Iris i domknij jej prywatne wydanie",
+      "kasa": 500,
+      "wymaga": "d23_oferta_500",
+      "kto": "iris",
+      "reakcja": "Dziękuję. Pięćset, na szybie, bez podpisu. Nie lubię naciskać, ale uwielbiam rozumienie. Nikt się nie dowie, że tu byłam.",
+      "zysk": "500 $ i spokój w okienku, Iris znika bez śladu.",
+      "strata": "Czternaście rodzin zostaje bez dowodu, a wzięta koperta wraca w każdym spojrzeniu Nory.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "list",
+        "tekst": "Nora Vance: „Iris była przy szybie z kopertą. Nie wiem, ile. Nikt mi nie powiedział. Nie piszę, żeby oskarżać. Piszę, żeby wiedzieć.”"
+      }
+    }
+  ]
+}
+```
+
+**Rosa Vale.** Potrzeba: czynsz i cisza. Lęk: że zobaczy za dużo. Sekret: Iris zostawiła jej kartkę z liczbą 6 800. Tik: liczy na głos. Moment gwiazdy: „Ufam kartce i długopisowi.”
+
+```json
+{
+  "id": "d23_rosa",
+  "dzien": 23,
+  "postac": "Rosa Vale, 33",
+  "glos": "Zmęczona, praktyczna, liczy na głos. Krótkie zdania, suchy humor.",
+  "typ": "stała klientka, która wraca po wszystkim",
+  "rzecz": "Cienki portfel z zatrzaskiem",
+  "wnetrze": [
+    {
+      "sekret_id": "d23_portfel_rosa",
+      "co_widac": "W kieszonce portfela złożona kartka: „6 800 / 4” i data tygodniowej wpłaty dla jednej z pralni. Nie jej pismo.",
+      "co_z_tego_wynika": "Ktoś z kręgu Iris włożył Rosie kartkę, której ona nie rozumie. To sygnał, że sieć sięga dalej niż piórnik."
+    }
+  ],
+  "wejscie": "Rosa Vale. Pralnia pod estakadą, pamiętasz. Zgubiłam portfel w jedenastce, cienki, z zatrzaskiem. Sześćdziesiąt dolarów na czynsz, nic więcej. Nie narzekam, tylko liczę.",
+  "wejscie_jesli": {
+    "d23_iris_nora_victor:wydaj_nora": "Rosa Vale. Wiem, co się stało w kamienicy. Dziękuję, że ktoś wydał rzeczy ludziom, nie Urzędowi. Zgubiłam portfel w jedenastce, cienki, z zatrzaskiem. Sześćdziesiąt dolarów.",
+    "d23_iris_nora_victor:wydaj_victor": "Rosa Vale. Słyszałam o kasetce. Wiem, że dało się inaczej. Zgubiłam portfel w jedenastce, cienki, z zatrzaskiem. Sześćdziesiąt dolarów.",
+    "d23_iris_nora_victor:iris_prywatnie": "Rosa Vale. Słyszałam, że ktoś wyjechał z pieniędzmi. Nie pytam, kto. Zgubiłam portfel w jedenastce, cienki, z zatrzaskiem. Sześćdziesiąt dolarów.",
+    "d23_iris_nora_victor:wez_500_iris": "Rosa Vale. Słyszałam, że ktoś wyjechał z pieniędzmi i ktoś inny je wziął. Nie pytam, kto. Zgubiłam portfel w jedenastce, cienki, z zatrzaskiem. Sześćdziesiąt dolarów."
+  },
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ten portfel?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czarny, cienki, zatrzask pękł z lewej. W środku bilet miesięczny i sześćdziesiąt dolarów w dwóch dwudziestkach i dwóch dziesiątkach.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie go zgubiłaś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W jedenastce, po nocnej zmianie. Wyjęłam go, żeby sprawdzić godzinę odjazdu, i położyłam obok. Typowe, jak człowiek się spieszy do łóżka.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Skąd masz pieniądze na czynsz, skoro pracujesz za grosze?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Z nocy w pralni i z tego, że nie jem w poniedziałki. To nie jest historia na chwałę, tylko na rachunek.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Słyszałaś, co się dzieje w kamienicy Cooper?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Że nie tylko Cooper. Że w tym mieście wszystko jest na kredyt: kamienice, ludzie, nawet cisza. Nie wiem więcej, nie pytam.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co zrobisz z pieniędzmi, jeśli je odzyskasz?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Zapłacę czynsz. A jak zostanie reszta, to kupię Adzie lalkę. Pytała o tę z różowym warkoczem. Nie powiem jej, że to z zaległych.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy ktoś ze Skrytki prosił Cię kiedyś o przysługę?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Skrytki? Nie wiem, o czym mówisz. Ale pani Bell kiedyś pytała, czy umiem być cicho. Odpowiedziałam, że tak, bo to bezpłatne.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "W portfelu jest kartka z zapisem „6 800 / 4”. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d23_portfel_rosa",
+          "odpowiedz": "To nie moje. Kartka musiała tam trafić w tramwaju. Albo ktoś mi ją podrzucił. Nie dotykam. Nie chcę być tą, która zobaczyła.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Rosa, co chcesz, żeby się stało po dzisiejszym dniu?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Żeby było cicho. Żebym rano wsiadła do tramwaju i nikt nie pytał, skąd mam czynsz. Dobrze byłoby jeszcze zjeść coś ciepłego.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co zrobisz, jeśli portfela nie ma?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Pożyczę. Pożyczać umiem. Tylko że potem trzeba oddawać, a ja już teraz oddaję więcej, niż biorę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy komuś ufasz bardziej niż nam?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nikomu. Ufam kartce i długopisowi. Jak jest zapisane, to wiem, że nikt nie zmieni zdania.",
+          "mina": "neutralna"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj",
+      "reakcja": "Sześćdziesiąt. Zgadza się. Dziękuję. Cicho, bez opowieści. Tak lubię najbardziej.",
+      "zysk": "Rosa płaci czynsz, a okienko zostaje czyste w jej pamięci.",
+      "strata": "Przy kolejnych sprawach Rosa już nie powie nic, bo nie ma czego.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Rosa Vale: „Czynsz zapłacony. Ada ma lalkę. Nie mówię, od kogo. Proszę po prostu wiedzieć.”"
+      }
+    },
+    {
+      "akcja": "odmow",
+      "reakcja": "Dobrze. Wrócę z kimś, kto potwierdzi. Tylko że ja nie mam takiego kogoś. Mam kartkę.",
+      "zysk": "Okienko trzyma procedurę.",
+      "strata": "Rosa nie ma czym zapłacić czynszu, a pralnia nie czeka.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Rosa Vale: „Pożyczyłam od sąsiadki. Oddam w piątek, z odsetkami. Nie pytam, kto zawinił.”"
+      }
+    },
+    {
+      "akcja": "wez_20_rosa",
+      "etykieta": "Zatrzymaj 20 $ z portfela Rosy",
+      "kasa": 20,
+      "wymaga": "d23_portfel_rosa",
+      "reakcja": "Czterdzieści? Przeliczę jeszcze raz. …Brakuje dwudziestu. Nie powiem, bo kto mi uwierzy. Dziękuję, że w ogóle jest.",
+      "zysk": "20 $ w kieszeni i spokój do soboty.",
+      "strata": "Rosa liczy dłużej, niż powinna, a Ty wiesz, że ona wie.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Rosa Vale: „Przeliczyłam portfel w domu. Dwadzieścia mniej. Nie przychodzę z pretensją. Przychodzę, żeby wiedzieć, że wiem.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 24
+
+**Vera Kovacs.** Potrzeba: oddać klucz i przyznać się. Lęk: że wyjdzie, jak wybiera. Sekret: od jedenastu lat wybiera dyżurnych. Tik: dzwoni kluczami. Moment gwiazdy: „To ja wybieram.”
+
+```json
+{
+  "id": "d24_vera",
+  "dzien": 24,
+  "postac": "Vera Kovacs, 62",
+  "glos": "Najpierw miejsce, potem rzecz, na końcu nazwisko. Dzwoni kluczami przy pasie, kiedy się wstydzi.",
+  "typ": "zaplecze, które przychodzi się przyznać",
+  "rzecz": "Szara teczka z kartonikiem „szafka 0809”",
+  "ludzie": {
+    "vera": "Vera Kovacs"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d24_kartonik",
+      "co_widac": "Kartonik: „SZAFKA 0809” ołówkiem. Z tyłu: „nie otwierać do odwołania”, pismo Sama, i pieczątka zaplecza.",
+      "co_z_tego_wynika": "Szafka 0809 jest zajęta celowo, żeby nikt jej nie likwidował. Tak jak każde miejsce, które czeka na kogoś."
+    },
+    {
+      "sekret_id": "d24_umowa",
+      "co_widac": "Umowa gracza z Zarządem Nieruchomości Cooper. Podpis nieczytelny, z charakterystyczną pętlą w literze K. Data: dziewiąty sierpnia.",
+      "co_z_tego_wynika": "Podpis na Twojej umowie jest Very, z pierwszego dnia. Ktoś wszystko przygotował, zanim przyszło się po raz pierwszy."
+    }
+  ],
+  "wejscie": "Zaplecze, teczka, Vera Kovacs. Przyszłam sama, bez Iris i bez Victora. Mam kartonik z numerem szafki i jedną rzecz do powiedzenia. Zanim zacznę, niech ktoś sprawdzi, czy za mną nikt nie stoi.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Co jest w szafce 0809?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Pusta teczka. Od zawsze „zajęta”. Nikt jej nie otwierał, bo nikt nie pytał. Klucz trzymam ja. Dzwoni, jak widać.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Skąd masz ten kartonik?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Z szuflady numer sześć, tej, którą Sam zostawił dla następnego. Wzięłam wczoraj. Dziś nie umiem go odłożyć.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu przyszłaś sama?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Bo to nie jest sprawa dla Victora ani dla Iris. Sam zostawił mi pustą teczkę i nie wiem, co z nią zrobić. Z klucza się nie wymiga.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na umowie jest pętla w literze K. Czyj to podpis?",
+          "ton": "niewygodne",
+          "wymaga": "d24_umowa",
+          "kto": "vera",
+          "odpowiedz": "Mój. Podpisałam za Zarząd Cooper, bo ktoś musiał. Nieczytelnie, żeby nikt nie szukał, kto stał za tym podpisem.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Czym tak naprawdę zajmujesz się w tym biurze?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Kluczami, teczkami, pudełkami. Zapleczem. Najpierw miejsce, potem rzecz. Kiedy ktoś ma gdzie postawić stopę, resztę da się zrobić.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto napisał na kartoniku „nie otwierać”?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Sam, ołówkiem. Jego pismo, ale nie jego decyzja. Dostał to, co dostaje każdy: cudzą regułę, którą musi udawać, że sam wymyślił.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "O jaki wstyd Ci chodzi?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "O kryterium. Że od lat patrzę na ludzi i wybieram, kto się nadaje. Nie pytam o kwalifikacje, tylko czy ktoś by go szukał.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Co jest w szafce poza pustą teczką?",
+          "ton": "niewygodne",
+          "wymaga": "d24_kartonik",
+          "kto": "vera",
+          "odpowiedz": "List. Sam pisał go pięć razy, ostatnio w niedzielę. Nie czytałam. Ma trafić do tego, kto będzie siedział przy szybie po nim.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz z kluczem, jeśli go nie przyjmę?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Zostawię na ladzie. Nie mam już komu go oddać. Klucz sam się nie otworzy, ale też nie zginie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto wie, że przyszłaś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Nikt. Powiedziałam Leo, że idę po szpulę nici. Kłamię słabo, ale on nie sprawdza. To jego cecha, nie moja zasługa.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto wybiera ludzi na to miejsce?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "To ja wybieram. Od jedenastu lat. Wybieram tych, których nikt nie szuka. Dlatego ich nikt nie znajdzie. Dlatego też nikt ich nie odbiera. Czwarty został znaleziony w kanale.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Czy ktoś kazał Ci to powiedzieć?",
+          "ton": "niewygodne",
+          "wymaga": "d24_umowa",
+          "kto": "vera",
+          "odpowiedz": "Nikt. Mówię, bo Sam odszedł i ktoś musi wiedzieć, że nie był pierwszym. Przed nim siedzieli inni, a kartoników jest więcej, niż myślisz.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "dolacz_slad",
+      "etykieta": "Dołącz ślad odejścia Sama za jego zgodą",
+      "kto": "vera",
+      "reakcja": "Dobrze. Zapisuję: odejście bez wpisu, z mojej woli. Sam odzyska twarz, a ja przyznam się do teczki. Dzwoni. Niech dzwoni.",
+      "zysk": "Sam odzyskuje czyste akta, a Vera oficjalnie bierze winę za teczkę.",
+      "strata": "Ślad trafia do księgi, więc ktoś, kto czyta wszystko, dowie się, że teczka była pusta.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Sam Holt: „Dowiedziałem się, że ktoś dołączył ślad mojego odejścia. Nie prosiłem. Dziękuję. To pierwszy raz, kiedy ktoś zapisał to, co zrobiłem, a nie to, co zgłosiłem.”"
+      }
+    },
+    {
+      "akcja": "koperta_zapieczetowana",
+      "etykieta": "Oddaj dokument Samowi w zapieczętowanej kopercie",
+      "kto": "vera",
+      "reakcja": "Zapieczętowana. Nikt nie zagląda, nikt nie kopiuje. Sam zdecyduje sam. To też jest sposób, żeby ktoś miał wybór.",
+      "zysk": "Sam sam decyduje, co zrobić z dokumentem, a Vera nie musi niczego wyznawać w księdze.",
+      "strata": "Okienko nie zostawia śladu, więc nikt nie zapisze, że Vera przyszła.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "list",
+        "tekst": "Sam Holt: „Dostałem kopertę. Zapieczętowana. Nie otwarłem jej przy nikim. Dziękuję, że wybór został mój. — S.”"
+      }
+    },
+    {
+      "akcja": "otworz_szafke",
+      "etykieta": "Otwórz szafkę 0809 kluczem Very",
+      "kto": "vera",
+      "reakcja": "Klucz. Proszę. Sam zostawił to dla tego, kto siedzi przy szybie, nie dla mnie. Otwieram za Ciebie, bo drżą mi ręce.",
+      "zysk": "W szafce leży list od Sama, a w tle brzęczą klucze Very.",
+      "strata": "Ktoś zobaczy, że szafka była otwarta, a w nocy wszystko jest widoczne dla tego, kto patrzy.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Vera Kovacs: „Szafka otwarta, teczka pusta, list wyjęty. Spokojnie. Nie powiem nikomu, że widziałam. Powiem tylko, że byłam.”"
+      }
+    }
+  ]
+}
+```
+
+**Leo Marsh.** Potrzeba: oddać wykaz i nie wiedzieć więcej. Lęk: że wozi coś, co kogoś zabije. Tik: patrzy na torbę. Moment gwiazdy: „0809, dokumenty, nieodebrana”.
+
+```json
+{
+  "id": "d24_leo",
+  "dzien": 24,
+  "postac": "Leo Marsh, 46",
+  "glos": "Mówi godzinami i przystankami. Dziś mówi mniej, bo coś niesie. Patrzy na torbę, nie na szybę.",
+  "typ": "konduktor, który przynosi ostatni kurs",
+  "rzecz": "Skórzana torba konduktora z wykazem kursu",
+  "wnetrze": [
+    {
+      "sekret_id": "d24_wykaz_0809",
+      "co_widac": "Ostatnia pozycja wykazu: „0809, dokumenty, paczka w płótnie, nieodebrana”. Dopisek: „dyżurny”. Podpis Very, pismo jakby kopiowane.",
+      "co_z_tego_wynika": "Skrytka ma paczkę z dokumentami dla dyżurnego, czyli dla Ciebie. Wyjście istnieje, ale nikt nie powiedział, ile kosztuje."
+    }
+  ],
+  "wejscie": "Leo, konduktor szóstki. Zgubiłem torbę z wykazem, skórzaną, z mosiężnym zapięciem. W środku ostatni wykaz paczek w płótnie. Dziś ostatni kurs i jedna paczka ma wpis, którego nie rozumiem.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta torba?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Skórzana, brązowa, mosiężne zapięcie, wytarta na rogach. W środku bilety, notes i wykaz paczek. Torba ma ponad dwadzieścia lat, nosił ją jeszcze mój ojciec.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie dokładnie ją zgubiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Na pętli szóstki, o czwartej. Położyłem na ławce, bo musiałem zapalić. Zazwyczaj zabieram, ale dziś coś mnie rozpraszało. Wpis w wykazie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co to za wpis, którego nie rozumiesz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Pozycja ostatnia: „0809, dokumenty, paczka w płótnie, nieodebrana”. Tego numeru nigdy nie woziłem. Zwykle wiem, czyja paczka, a ta ma tylko numer.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "W wykazie obok pozycji 0809 ktoś dopisał „dyżurny”. Co to znaczy?",
+          "ton": "niewygodne",
+          "wymaga": "d24_wykaz_0809",
+          "odpowiedz": "Że paczka nie jest dla klienta. Jest dla tego, kto stoi po tej stronie szyby. Nie wiem, czemu nikt mi tego nie powiedział.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Od jak dawna wozisz paczki w płótnie?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Od jedenastu lat, może dłużej. Zacząłem, bo Vera prosiła. Mówiła: kurs, godzina, nic więcej. Nie pytałem. Nie wolno mi było.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co zwykle jest w paczce?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Dokumenty, trochę gotówki w kopercie, czasem klucz. Nigdy nie zaglądam. Płótno jest zszyte tak, że widać, jeśli ktoś próbował.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy wiesz, kto wysłał paczkę 0809?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nie wiem. Wykaz podpisuje Vera. Ale nie jej pismem, a przeniesionym, jakby ktoś dyktował. Nie lubię tego.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Co się stanie, jeśli paczka nie zostanie odebrana?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Wróci do Very. Zostanie w szafce. Ostatni kurs się powtórzy za miesiąc, a ja będę znów wiózł pustą torbę.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Jak się czujesz, wożąc paczki, o których nic nie wiesz?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Jak maszynista z ręką na hamulcu, który nie widzi, co jest przed nim. Jadę, bo tak mam. I mam żonę, która pyta, co wiozę.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Co zrobisz z wykazem po dzisiejszym dniu?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Oddam okienku, jeśli ktoś wpisze. Jeśli nie, zachowam. Nie potrzebuję się z nikim dzielić, ale nie chcę być sam z kartką.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto naprawdę czeka na tę paczkę?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nie wiem. Ale na pętli stoi człowiek w szarym kapeluszu i patrzy na każdą torbę. Z kim rozmawia, to już nie moja sprawa.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wpisz_wykaz",
+      "etykieta": "Wpisz wykaz kursu do księgi, w dwóch egzemplarzach",
+      "reakcja": "Wpisane. Dwa egzemplarze, jak trzeba. Jeśli ktoś pyta, wszystko było według procedury. Nie wiem, czyja to ulga.",
+      "zysk": "Wykaz trafia do księgi, a Leo ma dowód, że zrobił swoje.",
+      "strata": "Kopia trafia do Urzędu, więc ktoś dowie się o numerze 0809 i o tym, że ktoś go nie odebrał.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Victor Crane: „W aktach pojawił się wykaz kursu z pozycją 0809, bez nazwiska odbiorcy. Proszę wyjaśnić do piątku. — V.C.”"
+      }
+    },
+    {
+      "akcja": "przechowaj_bez_kwitu",
+      "etykieta": "Przechowaj torbę bez kwitu, tak jak Sam",
+      "reakcja": "Bez kwitu. Dobrze. Wolę, żeby nie zostawało po mnie nic na papierze. Dziękuję, że nie pytasz o wszystko po kolei.",
+      "zysk": "Leo odchodzi bez śladu w papierach, a wykaz zostaje w okienku.",
+      "strata": "Przy kolejnej kontroli okienko nie pokaże, skąd się wzięła torba. Uczciwość stoi w kącie.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Leo Marsh: „Torbę zostawiłem. Nic nie podpisałem. Spytali na pętli, czy coś wiem. Powiedziałem, że wożę tylko to, co mi dają. Prawda i kłamstwo naraz.”"
+      }
+    },
+    {
+      "akcja": "odeslij_wykaz",
+      "etykieta": "Odeślij wykaz Verze z powrotem",
+      "reakcja": "Do Very. Dobrze. Niech sama odpowie za swój wpis. Tylko że ona nie odpowie, ona ma klucze.",
+      "zysk": "Wykaz wraca do osoby, która go podpisała, a okienko nie bierze w tym udziału.",
+      "strata": "Vera dowie się, że okienko go widziało, a ktoś w Skrytce zacznie przeliczać, ile wiesz.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Vera Kovacs: „Leo wrócił z wykazem. Powiedział, że okienko odesłało. Nie zdziwiłam się. Zdziwiłam się, że ulżyło.”"
+      }
+    }
+  ]
+}
+```
+
+**Thomas Ward.** Potrzeba: zapisać, że Sam zrobił dobrze. Lęk: że za rok nikt nie będzie pamiętał. Sekret: skłamał o „pierwszej wizycie”. Tik: żartuje z drżącej ręki, dziś nie. Moment gwiazdy: kwit 0417 w kopercie.
+
+```json
+{
+  "id": "d24_thomas",
+  "dzien": 24,
+  "postac": "Thomas Ward, 71",
+  "glos": "Grzecznie, trochę staroświecko. Żartuje z własnej drżącej ręki. Dziś nie żartuje.",
+  "typ": "staruszek, który wraca z własnym świadectwem",
+  "rzecz": "Biała koperta z odręcznym świadectwem",
+  "wnetrze": [
+    {
+      "sekret_id": "d24_kwit_0417",
+      "co_widac": "W kopercie, obok świadectwa, kwit 0417 z tego biura i dopisek ołówkiem: „Prawa wydana bez wpisu. Lewa czeka. S.H.”",
+      "co_z_tego_wynika": "To ten sam kwit, który Thomas miał w mankiecie w pierwszym dniu. Sam zaczynał każdego następnego tak samo."
+    }
+  ],
+  "wejscie": "Dobry wieczór. Thomas Ward. Przyniosłem kopertę, bo się zgubiła u wnuka, a on twierdzi, że zostawił ją tutaj. Napisałem świadectwo dla biura. Jeśli ktoś wie, jak się takie rzeczy zapisuje.",
+  "wejscie_jesli": {
+    "d1_thomas:wydaj": "Dobry wieczór. Thomas Ward, znowu. Przyniosłem kopertę ze świadectwem dla biura. Rękawiczkę dostałem, dziękuję. Chcę teraz zapisać, że ktoś kiedyś oddał mi rzecz bez papieru.",
+    "d1_thomas:wydaj_bez_wpisu": "Dobry wieczór. Thomas Ward. Tak jak wtedy: bez papierka. Przyniosłem teraz świadectwo, bo ktoś powinien zapisać, że ten młody człowiek zrobił mi dobrze. Wnuk twierdzi, że kopertę zostawił tu.",
+    "d1_thomas:zatrzymaj_sprawdz": "Dobry wieczór. Thomas Ward. Rękawiczka wróciła w końcu, po kilku dniach, z córką. Przyniosłem świadectwo dla Sama, bo ktoś kiedyś oddał mi prawą bez wpisu. Nie wiem, kto odpowie."
+  },
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Co jest w tej kopercie?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Jedna kartka, pisana moją ręką. Że rzecz, którą młody człowiek mi kiedyś oddał, oddał bez papieru, bo wiedział, że nie przeżyję niedzieli bez niej.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kiedy to było?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Ponad dwa miesiące temu. Prawą oddał od razu. Lewa czekała, jak powiedział. Przyszedłem wtedy po rękawiczkę, a on tylko skinął głową.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu piszesz świadectwo, skoro nikt o nie nie prosi?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo ktoś powinien zapisać, że ten człowiek nie robił nic złego. Zrobił wyjątek, i dobrze. Niech to będzie na papierze, bo mnie za rok nie będzie.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Jak sobie radzisz od śmierci żony?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Dwa razy w tygodniu na cmentarz. Rozmawiam z nią o rękawiczce. Mówi, że byłem leniwy, skoro nie zszyłem czarną nitką.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto jeszcze zna tę historię?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Córka, Claire. I ten młody człowiek, Sam. Powiedział mi kiedyś: lewa czeka. Nie wiedziałem, że to znaczy tyle co: wróć, a oddam.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy Sam kiedyś Ci coś obiecał?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Że lewa poczeka. Dotrzymał. To więcej, niż potrafią niektórzy w rodzinie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "W kopercie jest kwit 0417 z dopiskiem. Co on znaczy?",
+          "ton": "niewygodne",
+          "wymaga": "d24_kwit_0417",
+          "odpowiedz": "Że wtedy skłamałem. Powiedziałem, że to pierwsza wizyta. Nie była. Wstydziłem się, że znowu mi się rzecz zgubiła. Kwit to dowód, że mnie tu znają.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co chcesz, żeby się stało z tym świadectwem?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Żeby ktoś je przeczytał. I żeby nikt nie wyrzucił. Jeśli to nie jest dla księgi, to chociaż dla szuflady.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy świadectwo ma jakieś znaczenie prawne?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Nie wiem. Ale jak się jest starym, to wierzysz, że papier jest tylko papierem, dopóki ktoś go nie przeczyta.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czego się boisz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Że ten młody człowiek odchodzi, a ja nie zdążyłem podziękować. Że za rok to ja zniknę, a nikt nie będzie wiedział, kim był ktoś, kto oddał mi rękawiczkę.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "przyjmij_swiadectwo",
+      "etykieta": "Przyjmij świadectwo do akt Sama, z wpisem",
+      "reakcja": "Dziękuję. Tak. Do akt, z wpisem. Wiem, że to papier. Ale tak powinno być, żeby ktoś mógł to przeczytać po nas obu.",
+      "zysk": "Sam dostaje pisemne świadectwo, że oddał rzecz z sercem, a Thomas ma poczucie, że spłacił dług.",
+      "strata": "Świadectwo trafia do księgi, więc ktoś, kto ją przeczyta, dowie się o wydaniu bez wpisu.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Thomas Ward: „Poszedłem na cmentarz w niedzielę. Opowiedziałem Ellen, że świadectwo jest w księdze. Powiedziała, że dobrze, że ktoś zapisał to wreszcie.”"
+      }
+    },
+    {
+      "akcja": "oddaj_bez_wpisu",
+      "etykieta": "Zwróć świadectwo Thomasowi i niczego nie wpisuj",
+      "reakcja": "Rozumiem. Zatrzymam przy sobie. Może to właściwe: rzeczy, które się nie zapisuje, bywają najpewniejsze.",
+      "zysk": "Świadectwo zostaje u Thomasa, a okienko nie wystawia Sama na kolejne oczy.",
+      "strata": "Nikt poza Thomasem nie wie, że Sam oddał rzecz bez wpisu, więc Sam nie ma jak się obronić.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Thomas Ward: „Świadectwo mam w kieszeni, obok rękawiczek Ellen. Jak ktoś zapyta, pokażę. Nikt nie pyta.”"
+      }
+    },
+    {
+      "akcja": "wpisz_wstecz",
+      "etykieta": "Wpisz wydanie sprzed dwóch miesięcy w dzisiejszej księdze",
+      "reakcja": "Wstecz? Można tak? Dziękuję. Rozumiem. Jeśli to naprawia, to dobrze, że można.",
+      "zysk": "Wydanie Sama dostaje wpis z datą wsteczną i stają się czyste papiery.",
+      "strata": "Wpis wsteczny to fałszerstwo. Jeśli Urząd przyjrzy się datom, okienko ma problem.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Victor Crane: „W księdze pojawił się wpis wsteczny, trzy tygodnie temu, bez numeru kwitu. Do wyjaśnienia. — V.C.”"
+      }
+    }
+  ]
+}
+```
+
+
+## DZIEŃ 25
+
+**Sam, Elias, Victor.** Sam: potrzeba referencji i odejścia bez śladu. Elias: potrzeba imienia. Victor: potrzeba kompletu. Moment gwiazdy: puste pole „następca”, 0809.
+
+```json
+{
+  "id": "d25_sam_elias",
+  "dzien": 25,
+  "postac": "Sam Holt, Elias Wren i Victor Crane",
+  "glos": "Sam: najpierw szczegół techniczny, potem człowiek. Elias: powoli, staroświecko, uparcie. Victor: krótko, „kto to podpisze?”.",
+  "typ": "trzej mężczyźni i jedno etui",
+  "rzecz": "Etui na okulary z kopią decyzji o odejściu",
+  "ludzie": {
+    "sam": "Sam Holt",
+    "elias": "Elias Wren",
+    "victor": "Victor Crane"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d25_etui_kopia",
+      "co_widac": "W etui kopia decyzji o odejściu Sama i wpis o niedoborze na zmianie. W rubryce „następca” puste pole. Na marginesie ołówkiem: „0809”.",
+      "co_z_tego_wynika": "Niedobór na zmianie to zwykły sposób zapisania odejścia dyżurnego. Pole następcy zostało puste celowo."
+    }
+  ],
+  "wejscie": "Sam Holt i Elias Wren przy szybie, Victor za nimi z teczką. Sam po etui na okulary, Elias z pytaniem, czy Sam już się odezwał, Victor z protokołem do zamknięcia. Zanim się rozejdziemy, proszę o jedno.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Co jest w tym etui?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Okulary, które nie są moje, i kartka z decyzją o odejściu, z wpisem o niedoborze na zmianie. Kopię zrobiłem dla siebie, na wszelki wypadek.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Victor, czemu zamykasz audyt dziś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "victor",
+          "odpowiedz": "Bo dziś kończy się okres. Protokół musi mieć podpis i daty. Kto to podpisze? Ja, jeśli kopia jest czytelna i kompletna.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Sam, czemu zostawiłeś Verze pustą teczkę?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Bo ktoś musiał zostawić coś nikomu. Teczkę, list, miejsce. Zostawiłem wszystkie trzy, żeby jedno z nich dotarło.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na odwrocie kopii jest wpis: „Niedobór: pole następcy puste”. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d25_etui_kopia",
+          "kto": "sam",
+          "odpowiedz": "Że ktoś nie ma jeszcze nazwiska w tej kolumnie. Zostawiłem puste, żeby nikt go nie wpisał za niego. Victor, nie patrz tak.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Elias, po co dziś przyszedłeś?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Zapytać, czy Sam się odezwał. I zdążyć, zanim ktoś zamknie księgę. Księgi się zamyka, kiedy człowiek zasypia.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Sam, co będziesz robił po odejściu?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Kolega z portu dzwoni dziś na biuro o piątej trzydzieści po referencje. Jeśli ktoś potwierdzi, że byłem uczciwym dyżurnym, dostanę robotę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Victor, co się stanie, jeśli kopia nie zostanie dołączona?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "victor",
+          "odpowiedz": "Protokół będzie niepełny. Referencje wątpliwe. Kto to podpisze? Nie ja. Wolę komplet, bo komplet nie wraca z pytaniami.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Sam, czy kopia decyzji powinna trafić do Urzędu?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Nie. Ale jeśli nie dołączę, nikt nie uwierzy, że odszedłem czysto. Taka to praca: obie opcje boli.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Sam, jak się czujesz, kiedy odchodzisz?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Lekko, z jednym wyjątkiem. Zostawiam komuś ciężką rzecz i nie zapytałem, czy chce.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Elias, co powiesz Samowi na pożegnanie?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Że dziękuję za oprawkę. I że oddawałem pieniądze ludziom, którzy nie prosili. Zacząłem od niego. Przepraszam, że tak późno.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Sam, kto zajmie Twoje miejsce?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Nie wiem. Wiem, że nie powinien być sam z listem. Dlatego dziś przy okienku są wszyscy, którzy mogli komuś pomóc.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Victor, czemu pytasz o referencje Sama, skoro to nie Twoja sprawa?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "victor",
+          "odpowiedz": "Bo komplet to też referencja. Kto zamyka rozliczenie bez dziur, zostawia po sobie uczciwość. Nawet jeśli nie wie, czyją.",
+          "mina": "mowi"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "dolacz_kopie",
+      "etykieta": "Dołącz kopię do uzgodnionego sprostowania",
+      "kto": "sam",
+      "reakcja": "Dołączone, w dwóch egzemplarzach, jak trzeba. Sam wychodzi czysty, a ja podpisuję. Kto to podpisze? Ja. Dziękuję za sprawność.",
+      "zysk": "Sam wychodzi czysty, a Victor zamyka audyt bez dziur.",
+      "strata": "Kopia dokumentu trafia do Urzędu, a Urząd czyta to każdy, kto Urzędowi zapłaci.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Sam Holt: „Praca w porcie jest moja. Referencje przyszły przed szóstą. Nie wiem, czy to uczciwe, ale dziękuję.”"
+      }
+    },
+    {
+      "akcja": "zwroc_etui",
+      "etykieta": "Zwróć Samowi etui z całą zawartością",
+      "kto": "sam",
+      "reakcja": "Etui, okulary, kartka. Wszystko, jak leżało. Dziękuję. Protokół Victora zostaje, ale ja zostaję ze swoim.",
+      "zysk": "Sam wychodzi z rzeczami, a decyzja jest jego i nikogo więcej.",
+      "strata": "Protokół zostaje niepełny, a referencje mogą nie przyjść.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Sam Holt: „Etui wróciło. Praca w porcie jeszcze nieznana. Kolega powiedział, że oddzwoni. Dziękuję, że to było moje.”"
+      }
+    },
+    {
+      "akcja": "zniszcz_kopie",
+      "etykieta": "Zniszcz kopię przy Samie, bez wpisu",
+      "kto": "sam",
+      "reakcja": "Na oczach wszystkich. Dobrze. Teraz nikt jej nie przeczyta. Dziękuję. Zrobiłbym to samo, tylko ręka mi się trzęsie.",
+      "zysk": "Sam nie ma już śladu w papierach, a Victor nie ma czego kopiować.",
+      "strata": "Protokół zostaje z dziurą, a Victor zapisze, kto ją zrobił i przy świadkach.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "list",
+        "tekst": "Victor Crane: „Odnotowano zniszczenie dokumentu w obecności trzech osób. Brak wpisu. Przyjęto do wiadomości. Rozliczenie zamknięte z adnotacją. — V.C.”"
+      }
+    }
+  ]
+}
+```
+
+**Elias Wren.** Potrzeba: żeby ktoś zapisał imię. Lęk: że linia 0809 zostanie pusta albo wypełniona za kogoś. Tik: składa numerek. Moment gwiazdy: „Jak się nazywasz?”.
+
+```json
+{
+  "id": "d25_ksiega",
+  "dzien": 25,
+  "postac": "Elias Wren",
+  "glos": "Powoli, staroświecko, uparcie. Dziś mówi mniej. Trzyma numerek w obu rękach i patrzy na księgę, nie na szybę.",
+  "typ": "księga wydań, otwarta na pustej linii",
+  "rzecz": "Księga wydań otwarta na linii 0809",
+  "ludzie": {
+    "elias": "Elias Wren"
+  },
+  "wnetrze": [
+    {
+      "sekret_id": "d25_linia_0809",
+      "co_widac": "Księga wydań otwarta na linii 0809. Pusta, z wąskim polem na imię. Tuszem w rogu: „0913”.",
+      "co_z_tego_wynika": "To kolejny odcinek ogłoszenia, czyli kolejny dyżurny. Linia jest pusta, ale już czeka na kogoś."
+    }
+  ],
+  "wejscie": "Elias Wren, numerek jeden. Księga leży otwarta na linii 0809, pustej, wąskiej. Pan Holt mówił, że linia jest dla następnego. Czekam, bo pytam o imię. Pytam, bo nikt nie pyta.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Elias, co to za linia w księdze?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Linia 0809. Wąska, od lat pusta. Pan Holt mówił, że jest dla następnego. Nie wiem, dla którego. Dziś pierwszy raz widzę ją z bliska.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto zapisuje imiona w tej księdze?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Dyżurny. Tylko on ma prawo. Ja pytam, żeby ktoś zapisał, że ktoś tu był. Bez imienia człowiek jest numerkiem, nawet jeśli stoi przy szybie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Elias, czemu zawsze pytasz o imię?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Bo oprawkę znalazł człowiek, którego nie znałem. Żałuję, że nie spytałem o imię wcześniej. Teraz pytam każdego.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Elias, co by się stało, gdyby linia została pusta?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Nic. Księga leży, a ludzie wchodzą i wychodzą. Ale nikt by nie wiedział, że ktoś tu siedział. A to różnica.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Elias, czy Sam kazał Ci tu być?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Nie kazał. Mówił, że będzie dziś ktoś ważny, i że wolałby, żeby ktoś go zobaczył. Zostałem, bo nie wypada odchodzić, kiedy ktoś ma wybierać.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Elias, wiesz, co jest w księdze, czego Ci nie pokazywano?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Wiem, że strona 41 była kiedyś cała. Wiem, że ktoś ją wyrwał. Nie pytam, kto. Wiem, że ktoś ją znowu chciałby mieć.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Elias, co chcesz od tej księgi?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Żeby linia nie była pusta, kiedy wyjdę. Albo żeby ktoś jej nie wypełnił bez zgody. Nie umiem się zdecydować, więc wybór zostawiam komuś młodszemu.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Elias, co powiesz osobie, która tu zostanie?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Że dziękuję. Że oprawkę mam. Że imię zapisuję w pamięci, jeśli nie w księdze. To też jest sposób, żeby ktoś był.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Elias, czy jesteś pewien, że chcesz, żeby to była moja decyzja?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Nie. Ale jest tylko jedna osoba po tej stronie szyby i tylko ona może zdecydować. Przykro mi, że to wypadło na Ciebie.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wpisz_siebie",
+      "etykieta": "Wpisz siebie w linię 0809",
+      "kto": "elias",
+      "reakcja": "Wpisane. Dziękuję. Nie wiem, czy to dobry początek. Ale imię jest zapisane, a to więcej niż nic.",
+      "zysk": "Akceptujesz fotel, Iris wręcza bilet, a Skrytka przechodzi dalej, jak co roku.",
+      "strata": "Rotacja trwa. Ktoś inny usiądzie w fotelu za Ciebie.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Elias Wren: „Czy oprawka jest u Was? Pytam nowego dyżurnego. Nie wiem, kto siedział tu przed nim. Pytam, żeby wiedzieć.”"
+      }
+    },
+    {
+      "akcja": "wyrwij",
+      "etykieta": "Wyrwij stronę, jak Sam",
+      "kto": "elias",
+      "reakcja": "Wyrwana. Cicho. Jak Sam. Kanał Skrytki umiera, a ogłoszenia na słupie nie będzie. Nie wiem, czy to uczciwe wobec tych, którzy czekali.",
+      "zysk": "Wychodzisz wolny, rotacja się zatrzymuje, a Skrytka traci kanał.",
+      "strata": "Klienci zostają bez drogi, a Vera zostaje z kluczami do pustych szafek.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Elias Wren: „Czy Sam już był? Pytam pusty fotel. Nikt nie odpowiada. Wrócę jutro.”"
+      }
+    },
+    {
+      "akcja": "list",
+      "etykieta": "Zostaw list następnemu, dopisz własne linie",
+      "wymaga": "notatki_3",
+      "kto": "elias",
+      "reakcja": "List zostaje w szafce 0809. Dopisane linie uzupełniają to, czego brakowało. Ktoś znajdzie to w pierwszy wieczór i ktoś będzie przy nim, żeby mu to powiedzieć.",
+      "zysk": "Następny dyżurny dostaje całość, a nie tylko puste pole.",
+      "strata": "List zostaje w szafce, a Ty zostajesz z pytaniem, czy dopisane wystarczy.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Elias Wren: „Jak się nazywasz? Pytam, bo list zostaje dla kogoś, a Ty odchodzisz. Dziękuję, [imię]. Jutro.”"
+      }
+    },
+    {
+      "akcja": "zamknij",
+      "etykieta": "Zamknij księgę i nic nie rób",
+      "kto": "elias",
+      "reakcja": "Zamknięta. Linia 0809 zostaje pusta. Dziś nikt nie wchodzi, nikt nie wychodzi. Zostaje tylko czynsz i noc.",
+      "zysk": "Czynsz zapłacony, nikt nie świętuje, a księga leży na swoim miejscu.",
+      "strata": "Nic się nie zmienia, ale też nic nie wyjaśnia się za Ciebie.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Elias Wren: „Czy ktoś wyjechał? Pytam, bo numerek składam. Nie wiem, dlaczego mnie to tak trzyma za gardło.”"
+      }
+    }
+  ]
+}
+```
+
 ```json
 {
   "extra": {
@@ -1612,7 +4767,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "wnetrze": [
         {
           "sekret_id": "d15_kalka_41",
-          "co_widac": "Kalka strony 41: pięć pozycji klientów i czternaście wpłat lokatorów po 400 $. Linie od jeden do pięć są czytelne, szósta zaklejona taśmą.",
+          "co_widac": "Kalka strony 41: cztery pozycje klientów i czternaście wpłat lokatorów po 400 $. Linie od jeden do pięć są czytelne (cztery klienckie i wpłaty), szósta zaklejona taśmą.",
           "co_z_tego_wynika": "To brakująca strona. Dowód dla Nory, ale i lista ludzi, których można znaleźć."
         },
         {
@@ -1624,6 +4779,37 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "sekret_id": "d15_szosta_linia",
           "co_widac": "Pod taśmą szósta linia: „0809 / dyżurny nast. / ____”. Ołówkiem Sam dopisał: „Jeśli to czytasz, nie czytaj dalej przy Victorze.”",
           "co_z_tego_wynika": "Na stronie była linia dla następnego dyżurnego, z pustym polem na imię. Ktoś ją zakleił celowo."
+        }
+      ]
+    },
+    "24": {
+      "sprite": "szafka",
+      "itemName": "szafka 0809",
+      "line": "6",
+      "inside": null,
+      "wnetrze": [
+        {
+          "sekret_id": "d24_list_pelny",
+          "co_widac": "W szafce pusta teczka i złożony list, pismo Sama. Cały tekst: „Jeśli to czytasz, siedzisz na moim miejscu, a to miejsce miał ktoś przede mną i ktoś przed nim. Nie wiem, przed czym uciekasz. Iris też nie wie. Taki jest warunek: dyżurny to ktoś, kogo nikt nie szuka, więc nikt nie przyjdzie pytać. Pierwszego dnia pomyślałem, że mam szczęście. W trzecim tygodniu zrozumiałem, że mam teczkę bez nazwiska i bilet, którego nie wolno mi użyć, dopóki ktoś nie usiądzie. Wyrwałem stronę 41, bo była na niej Twoja linia. Nie chciałem, żeby ktokolwiek wpisał tam Twoje imię za Ciebie. Prawa wydana bez wpisu, lewa czeka: tak zaczynam każdego następnego. Wpisuj mało. Pytaj o imiona. Nie ufaj drugiej kopii. A kiedy będziesz odchodzić, zostaw ten sam list następnemu. — S.”",
+          "co_z_tego_wynika": "Pełny list Sama do następcy. Silnik pokazuje ten sekret, jeśli licznik notatki ≥ 3."
+        },
+        {
+          "sekret_id": "d24_list_luki",
+          "co_widac": "W szafce pusta teczka i złożony list, pismo Sama, z lukami: „Jeśli to czytasz, siedzisz na moim miejscu, a to miejsce miał ktoś przede mną i ktoś przed nim. Nie wiem, przed czym uciekasz. […] Pierwszego dnia pomyślałem, że mam szczęście. […] Wyrwałem stronę 41, bo była na niej […]. Prawa wydana bez wpisu, lewa czeka: tak zaczynam […]. Wpisuj […]. A kiedy będziesz odchodzić, zostaw […] następnemu. — S.” (Brakuje Ci słów, żeby poskładać resztę.)",
+          "co_z_tego_wynika": "Fragmenty listu Sama, resztę trzeba było zebrać z notatek. Silnik pokazuje ten sekret, jeśli licznik notatki < 3."
+        }
+      ]
+    },
+    "25": {
+      "sprite": "karta",
+      "itemName": "karta Kopie",
+      "line": "6",
+      "inside": null,
+      "wnetrze": [
+        {
+          "sekret_id": "d25_karta_kopie",
+          "co_widac": "Karta: „Kopie wysłane do Urzędu: {kopie}. Klienci odnalezieni: {min(4, kopie)}.” Poniżej lista z dossier, rosnąca wraz z liczbą kopii: najpierw Linh, potem Gus i Dorian; Maya tylko wtedy, gdy nie została odebrana.",
+          "co_z_tego_wynika": "Każdy wpis w dwóch egzemplarzach to była druga kopia, a Urząd czyta każdego, kto zapłaci. {kopie} i {min(4, kopie)} liczy silnik z licznika."
         }
       ]
     }
@@ -1665,6 +4851,98 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias zobaczył Sama przez szybę i przez chwilę nic nie mówił. Złożył numerek w prostokąt i wyszedł. Na ladzie została koperta z napisem: „S. Dla pana Holta. Od E.W.”"
+      }
+    ],
+    "16": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias zapytał o oprawkę, a potem, czy w biurze był ktoś z walizką i kobietą, która liczy do trzech. Nie wiedział, skąd to wie. Powiedział, że takie rzeczy się rozpoznaje po sposobie, w jaki ktoś stoi."
+      },
+      {
+        "kto": "Kuba Marlow, przez kuzyna",
+        "tekst": "„Rata sobotnia. Kuba przypomina, że dług można zamknąć jednym ruchem, jeśli ktoś ma dostęp do tego, co ludzie zostawiają. Bez presji. K.M.”"
+      }
+    ],
+    "17": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias zobaczył Evana w kolejce i skinął głową. Nie znał go, ale poznał mankiet. Zapytał potem szeptem: „Czy ktoś, kto poprawia mankiet, jest dobry, czy zły?” Nie było odpowiedzi."
+      }
+    ],
+    "18": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias przyniósł papierową torbę z pączkiem. „To nie za pomoc. To za nocne.” Zapytał o oprawkę, choć już ją miał. Powiedział: „Nawyk.”"
+      },
+      {
+        "kto": "Kuba Marlow, na schodach",
+        "tekst": "„Trzysta dolarów. Równo tyle, ile jesteś mi winien. Zbieg okoliczności, prawda?” Kuba uśmiechnął się, jakby wiedział o ofercie Iris. Nie powiedział, skąd."
+      }
+    ],
+    "19": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias zobaczył Adę z kartonem pod pachą. „Dziewczynka z królikiem się przeprowadza?” Nie czekał na odpowiedź. Zostawił na ladzie jednego cukierka, owiniętego w kartkę z napisem: „Dla pani z królikiem.”"
+      }
+    ],
+    "20": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias po raz pierwszy w życiu nie złożył numerka. Rozprostował go na ladzie, wygładził kciukiem i oddał. Powiedział: „Dziękuję. Jutro.” I po raz pierwszy zabrzmiało to jak obietnica."
+      },
+      {
+        "kto": "Kuba Marlow, pod bramą",
+        "tekst": "Stał w deszczu bez parasola. „Nie jestem zły”, powiedział. „Czekam.” Potem odwrócił się, jakby to było wszystko."
+      }
+    ],
+    "21": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias zapytał o oprawkę. Potem, z numerkiem w palcach: „Czy ktoś wyjechał?” Nie było odpowiedzi. Pokiwał głową, jakby odpowiedź była w tym pytaniu."
+      },
+      {
+        "kto": "Kuba Marlow, przez kuzyna",
+        "tekst": "„W sobotę rozliczenie. Dwóch twoich sąsiadów już zapłaciło. K.M.”"
+      }
+    ],
+    "22": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias zobaczył mężczyznę w szarym kapeluszu i zmrużył oczy. „Ten pan zawsze czyta, zanim pisze.” Zapytał, czy zapisano, kto go widział. Nikt nie zapisał."
+      },
+      {
+        "kto": "Kuba Marlow, na schodach",
+        "tekst": "Marlow podniósł głowę, kiedy ktoś wychodził. „Człowiek w płaszczu spisał dziś, kto mieszka w twoim domu. Nie ja go przysłałem. Ale mówię, żebyś wiedział.”"
+      }
+    ],
+    "23": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias zobaczył Iris na schodach. „Pani z cichym głosem”, powiedział. „Nie lubi naciskać. Zauważyłem, że ludzie, którzy tak mówią, naciskają najmocniej.” Nie znał jej, ale mówił jak ktoś, kto ją pamięta."
+      },
+      {
+        "kto": "Kuba Marlow, pod bramą",
+        "tekst": "Kuba stał pod bramą kamienicy. „Dziś wszyscy rozliczają. Ja też. Soboty nie odpuszczę.”"
+      }
+    ],
+    "24": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias przyniósł Samowi kartkę z jednym zdaniem: „Dziękuję za oprawkę.” Położył ją na ladzie i wyszedł. Sam jej nie zabrał. Leżała cały wieczór, jakby czekała na kogoś trzeciego."
+      },
+      {
+        "kto": "Kuba Marlow, na schodach",
+        "tekst": "Marlow siedział na schodach z kubkiem. „W sobotę zamykamy rozliczenie. Przyjdź sam.” Potem upił i dodał: „Nie dlatego, że się boję. Dlatego, że Ty już wiesz, jak to się kończy.”"
+      }
+    ],
+    "25": [
+      {
+        "kto": "Elias, numerek 1",
+        "tekst": "Elias złożył numerek w prostokąt, potem w mniejszy prostokąt. Powiedział: „Dziękuję. Jutro.” Po raz pierwszy zabrzmiało jak coś, co się spełni."
+      },
+      {
+        "kto": "Kuba Marlow, przez kuzyna",
+        "tekst": "„Rata sobotnia. Jutro. Przyjdź sam. K.M.” Pod spodem dopisek ołówkiem: „Nie musisz nic mówić. Ale ktoś musi usłyszeć.”"
       }
     ]
   }
