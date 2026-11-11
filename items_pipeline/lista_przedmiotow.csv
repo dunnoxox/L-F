@@ -1,0 +1,97 @@
+﻿arkusz,miejsce,id,nazwa_pl,opis_en,dzielnica
+1,1,suitcase,walizka,hard-shell suitcase with a handle,Dworzec
+1,2,duffel_bag,torba podróżna,soft duffel travel bag,Dworzec
+1,3,hiking_backpack,plecak turystyczny,large hiking backpack with straps,Dworzec
+1,4,weekender,torba weekendowa,leather weekend bag with two handles,Dworzec
+1,5,umbrella,parasol długi,long closed umbrella with a curved handle,Dworzec
+1,6,folding_umbrella,parasol składany,short folding umbrella,Dworzec
+1,7,neck_pillow,poduszka podróżna,U-shaped travel neck pillow,Dworzec
+1,8,travel_mug,kubek termiczny,travel mug with lid,Dworzec
+2,1,thermos,termos,metal thermos flask with cup lid,Dworzec
+2,2,camera,aparat fotograficzny,retro compact film camera,Rynek
+2,3,headphones,słuchawki,over-ear headphones,Uniwersytet
+2,4,document_wallet,etui na dokumenty,flat document wallet,Dworzec
+2,5,briefcase,aktówka,classic briefcase,Rynek
+2,6,shopping_trolley,wózek na zakupy,two-wheeled shopping trolley,Rynek
+2,7,shopping_bag,torba na zakupy,paper shopping bag with handles,Rynek
+2,8,picnic_basket,koszyk piknikowy,wicker picnic basket with lid,Park
+3,1,student_id,legitymacja szkolna,small student ID booklet,Uniwersytet
+3,2,id_booklet,dowód osobisty,ID card booklet,Rynek
+3,3,passport,paszport,passport booklet,Dworzec
+3,4,transit_pass,karta miejska,tram season pass card,Dworzec
+3,5,driving_license,prawo jazdy,folded driving license,Rynek
+3,6,notebook,notes,spiral notebook,Uniwersytet
+3,7,diary,terminarz,small planner with elastic band,Uniwersytet
+3,8,envelope,koperta z listem,sealed envelope,Rynek
+4,1,wallet,portfel,bifold wallet,Rynek
+4,2,coin_purse,portmonetka,clasp coin purse,Rynek
+4,3,handbag,torebka,ladies handbag with strap,Rynek
+4,4,keys,klucze,bunch of keys on a ring,Rynek
+4,5,phone,telefon,mobile phone,Rynek
+4,6,glasses,okulary,round eyeglasses,Uniwersytet
+4,7,sunglasses,okulary przeciwsłoneczne,sunglasses,Park
+4,8,wristwatch,zegarek na rękę,wristwatch with strap,Rynek
+5,1,ring_box,pudełko na obrączkę,small ring box open,Rynek
+5,2,locket,medalion,heart locket on chain,Park
+5,3,pocket_watch,zegarek kieszonkowy,pocket watch on chain,Rynek
+5,4,music_box,pozytywka,wooden music box,Stara Fabryka
+5,5,photo_album,album ze zdjęciami,photo album,Park
+5,6,savings_book,książeczka oszczędnościowa,savings passbook,Rynek
+5,7,perfume_bottle,flakonik perfum,perfume bottle with atomizer,Rynek
+5,8,pocket_compass,kompas kieszonkowy,pocket compass,Port
+6,1,scarf,szalik,long knitted scarf,Dworzec
+6,2,gloves,rękawiczki,pair of gloves,Park
+6,3,mittens,rękawice dziecięce,pair of kids mittens joined by a string,Park
+6,4,fedora_hat,kapelusz,fedora hat,Rynek
+6,5,baseball_cap,czapka z daszkiem,baseball cap,Park
+6,6,beanie,czapka zimowa,knitted beanie with pompom,Park
+6,7,beret,beret,beret,Rynek
+6,8,tie,krawat,necktie,Rynek
+7,1,shoe,półbut,men's leather shoe,Rynek
+7,2,rubber_boot,gumowiec,rubber rain boot,Port
+7,3,sneaker,trampek,canvas sneaker,Park
+7,4,ice_skates,łyżwy,pair of ice skates tied together,Park
+7,5,roller_skates,wrotki,roller skate,Park
+7,6,slipper,kapeć,house slipper,Stara Fabryka
+7,7,sandal,sandał,kids sandal,Park
+7,8,belt,pasek,"leather belt with buckle, coiled",Rynek
+8,1,teddy_bear,miś,teddy bear,Park
+8,2,toy_car,autko,toy car,Park
+8,3,beach_ball,piłka,beach ball with panels,Park
+8,4,school_backpack,tornister,school backpack,Uniwersytet
+8,5,lunchbox,śniadaniówka,school lunchbox,Uniwersytet
+8,6,doll,lalka,rag doll,Park
+8,7,stuffed_rabbit,króliczek pluszowy,stuffed rabbit toy,Park
+8,8,kite,latawiec,diamond kite with tail,Park
+9,1,skateboard,deskorolka,skateboard,Park
+9,2,kick_scooter,hulajnoga,kick scooter,Park
+9,3,bike_helmet,kask rowerowy,bicycle helmet,Park
+9,4,tennis_racket,rakieta tenisowa,tennis racket,Park
+9,5,boxing_gloves,rękawice bokserskie,pair of boxing gloves,Port
+9,6,bicycle_pump,pompka rowerowa,bicycle pump,Port
+9,7,water_bottle,bidon,sports water bottle,Park
+9,8,jump_rope,skakanka,"jump rope with handles, coiled",Park
+10,1,binoculars,lornetka,binoculars,Park
+10,2,guitar_case,futerał na gitarę,guitar case,Uniwersytet
+10,3,violin_case,futerał na skrzypce,violin case,Uniwersytet
+10,4,harmonica,organki,harmonica,Rynek
+10,5,sheet_music_folder,teczka na nuty,music folder,Uniwersytet
+10,6,art_folder,teczka rysunkowa,large art portfolio folder,Uniwersytet
+10,7,paint_box,pudełko z farbami,watercolor paint box,Uniwersytet
+10,8,trumpet,trąbka,trumpet,Rynek
+11,1,toolbox,skrzynka z narzędziami,metal toolbox,Port
+11,2,hard_hat,kask budowlany,construction hard hat,Port
+11,3,work_gloves,rękawice robocze,pair of work gloves,Port
+11,4,hammer,młotek,hammer,Stara Fabryka
+11,5,wrench,klucz francuski,adjustable wrench,Stara Fabryka
+11,6,doctors_bag,torba lekarska,doctor's bag,Rynek
+11,7,conductor_bag,torba konduktora,tram conductor's ticket bag,Dworzec
+11,8,ticket_puncher,kasownik ręczny,hand ticket punch,Dworzec
+12,1,cane,laska,walking cane with curved handle,Park
+12,2,glasses_case,etui na okulary,glasses case,Rynek
+12,3,hip_flask,piersiówka,metal hip flask,Port
+12,4,newspaper_roll,gazeta zwinięta,rolled newspaper,Rynek
+12,5,alarm_clock,budzik,twin-bell alarm clock,Stara Fabryka
+12,6,snow_globe,kula śnieżna,snow globe,Rynek
+12,7,hand_mirror,lusterko,hand mirror,Rynek
+12,8,knitting_basket,koszyk z włóczką,knitting basket with yarn,Stara Fabryka
