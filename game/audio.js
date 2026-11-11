@@ -66,6 +66,7 @@ function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;
  const last={};
  function sfx(n,limit){if(!ac)return false;const now=performance.now();if(limit&&last[n]&&now-last[n]<limit)return true; /* throttle != brak klipu: bez fallbacku syntezowanego */last[n]=now;return play('sfx_'+n,B.sfx,sg(n),rnd(.97,1.03))}
  function knock(kind){if(!ac)return;if(!sfx('knock_'+(kind||'polite'))){const t=ac.currentTime;[0,.17,.34].forEach(d=>tone(t+d,190,.35,.14,B.sfx,'sine',95))}}
+ function doorbell(){if(!ac)return;const ok=play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.7);later(()=>play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.35),230);if(!ok){const t=ac.currentTime;tone(t,1760,.1,.5,B.sfx);tone(t+.23,1320,.1,.7,B.sfx)}}
  function bell(){if(!ac)return;if(!sfx('bell_window')){const t=ac.currentTime;tone(t,1320,.12,1.1,B.sfx);tone(t,1980,.06,.8,B.sfx)}}
  function steps(kind){if(!ac)return;if(!sfx('steps_'+(kind||'boots'))){const t=ac.currentTime;[0,.35,.7].forEach(d=>burst(t+d,500,1.5,.18,.12,B.sfx))}}
  function tick(){if(ac)tone(ac.currentTime,520,.56,.14,B.ui)}
@@ -80,5 +81,5 @@ function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;
  function thunder(){if(!ac)return;play('amb_thunder_far',B.outside,EV_G.amb_thunder_far*1.6,rnd(.9,1));sfx('pile_collapse');later(()=>{sfx('power_out');lampBlink()},700)}
  function stopAmbient(){TM.splice(0).forEach(id=>{clearTimeout(id);clearInterval(id)});LS.splice(0).forEach(s=>{try{s.stop();s.disconnect()}catch(e){}})}
  function resume(){return ac?ac.resume():Promise.resolve()}
- return {stopAmbient,resume,state:()=>ac?ac.state:'none',init,music,sting,setDoor,thunder,setVol,vol,setWindow,knock,bell,steps,sfx,tick,stamp,sweep,mumble,lampBlink,on:()=>!!ac,win:()=>win,loaded:()=>Object.keys(S).length}
+ return {stopAmbient,resume,state:()=>ac?ac.state:'none',init,music,sting,setDoor,thunder,setVol,vol,setWindow,knock,bell,doorbell,steps,sfx,tick,stamp,sweep,mumble,lampBlink,on:()=>!!ac,win:()=>win,loaded:()=>Object.keys(S).length}
 })();
