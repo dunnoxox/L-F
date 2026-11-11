@@ -1632,7 +1632,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Lena załatwiła już przeprowadzkę, o której Maya nie wiedziała."
     }
   ],
-  "wejscie": "Maya Doyle. Obok Lena. Zostawiłam saszetkę w jedenastce, granatową, podróżną. Lena twierdzi, że sama ją wzięła. Chcę ją odebrać i powiedzieć siostrze jedną rzecz. Ale tu, przy szybie, i najpierw ja.",
+  "wejscie": "Maya Doyle. Zostawiłam w jedenastce granatową saszetkę podróżną. Obok stoi Lena, moja siostra, i mówi, że sama ją wzięła. To nieprawda. Chcę ją odebrać sama i powiedzieć Lenie jedną rzecz.",
   "tury": [
     {
       "pytania": [
@@ -1932,7 +1932,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Evan wiedział o odejściu Mai, zanim zgłosił jej zaginięcie."
     }
   ],
-  "wejscie": "Dobry wieczór. Evan Doyle. Zostawiłem etui na aparat, czarne, w czwórce. W środku list do żony. Po dwudziestym drugim zadzwonię do detektywa, tysiąc dwieście dolarów. Mówią, że nie wygląda na detektywa. Szary kapelusz. Wolałbym nie musieć.",
+  "wejscie": "Dobry wieczór. Evan Doyle. Zostawiłem w czwórce czarne etui na aparat, a w nim list do żony. Jeśli policja nic nie ustali, wynajmę detektywa za tysiąc dwieście dolarów. Wolałbym nie musieć.",
   "tury": [
     {
       "pytania": [
@@ -2982,7 +2982,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Walizki odróżnia metka i wstążka. Kto wydaje bez porównania, ryzykuje czyjś ślub."
     }
   ],
-  "wejscie": "Maya Doyle po swoją walizkę, Lena Brandt po wiadomość od Mai, Priya Nair po swoją, bo ślub jest o jedenastej. Dwie szare walizki, dwa takie same zamki. Zaczynamy od sprawdzenia, która czyja.",
+  "wejscie": "Maya Doyle po walizkę, Lena Brandt po wiadomość od Mai, a Priya Nair po swoją, bo ślub ma o jedenastej. Są dwie szare walizki i obie zamykają się tak samo. Zacznijmy od tego, która czyja.",
   "tury": [
     {
       "pytania": [
@@ -3406,7 +3406,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "stahl_wydaj",
       "etykieta": "Wydaj Stahlowi kopię kwitu z wczorajszego wydania",
       "reakcja": "Zgodnie z regulaminem. Dziękuję. Jutro, 6:10, czwórka. Tyle wystarczy. Nie zapomnę, kto był uprzejmy.",
-      "zysk": "Stahl odchodzi z kierunkiem, a okienko zachowuje spokój w kolejce.",
+      "zysk": "Stahl odchodzi z kierunkiem, a Ty zachowujesz czystą kieszeń i czyste sumienie wobec Marlowa.",
       "strata": "Detektyw dostaje trop Mai i jedzie za nią o 6:10 w poniedziałek.",
       "echo": {
         "za_dni": 1,
@@ -3421,7 +3421,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "wymaga": "d22_oferta_200",
       "reakcja": "Zgodnie z regulaminem: dwieście, na ladzie. Dziękuję za sprawność. Jutro, 6:10, czwórka. Zapisane.",
       "zysk": "200 $ w ręku i kolejka bez zakłóceń.",
-      "strata": "Okienko sprzedało czyjś trop za opłatę, a Stahl wie, że bierze się tu pieniądze.",
+      "strata": "Okienko sprzedało trop za opłatę: Urząd +2, kopie +1, a Stahl wraca z drugim pytaniem.",
       "echo": {
         "za_dni": 1,
         "forma": "list",
@@ -3605,11 +3605,11 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Iris podpisywała cudze rozliczenia długo przed objęciem kamienicy. Ma w tym doświadczenie, o którym nie mówi."
     }
   ],
-  "wejscie": "Iris Bell, Nora Vance i Victor Crane, wszyscy przed zamknięciem rozliczenia. Kasetka na rachunki z szóstki. Każde z nas chce czegoś innego. Prosimy o wydanie, ale w jednej wersji, nie w trzech.",
+  "wejscie": "Iris Bell, Nora Vance i Victor Crane, wszyscy przed zamknięciem rozliczenia. Kasetka na rachunki z szóstki. Każde z nas chce czegoś innego. Prosimy o wydanie w jednej wersji. Iris dodaje cicho: „Siedziałam w tym fotelu. Osiem lat temu.”",
   "wejscie_jesli": {
-    "d18_iris_nora:rezerwacja_nora": "Iris Bell, Nora Vance i Victor Crane, rozliczenie, kasetka na rachunki z szóstki. Nora ma rezerwację z osiemnastego. Prosimy o wydanie, ale w jednej wersji, nie w trzech.",
-    "d18_iris_nora:do_kontroli": "Iris Bell, Nora Vance i Victor Crane. Kasetka na rachunki. Victor ma już kopię z osiemnastego. Nora czekała, Iris czeka. Wszyscy chcą wydania, ale w jednej wersji.",
-    "d18_iris_nora:oferta_iris": "Iris Bell, Nora Vance i Victor Crane. Kasetka na rachunki. Iris przypomina o rozmowie z osiemnastego. Nora patrzy na nią, Victor na was oboje. Prosimy o wydanie w jednej wersji."
+    "d18_iris_nora:rezerwacja_nora": "Iris Bell, Nora Vance i Victor Crane, rozliczenie, kasetka na rachunki z szóstki. Nora ma rezerwację z osiemnastego. Prosimy o wydanie w jednej wersji. Iris dodaje cicho: „Siedziałam w tym fotelu. Osiem lat temu.”",
+    "d18_iris_nora:do_kontroli": "Iris Bell, Nora Vance i Victor Crane. Kasetka na rachunki. Victor ma już kopię z osiemnastego. Nora czekała, Iris czeka. Wszyscy chcą jednej wersji. Iris dodaje cicho: „Siedziałam w tym fotelu. Osiem lat temu.”",
+    "d18_iris_nora:oferta_iris": "Iris Bell, Nora Vance i Victor Crane. Kasetka na rachunki. Iris przypomina o rozmowie z osiemnastego. Nora patrzy na nią, Victor na was oboje. Prosimy o wydanie w jednej wersji. Iris dodaje cicho: „Siedziałam w tym fotelu. Osiem lat temu.”"
   },
   "tury": [
     {
@@ -3754,7 +3754,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "etykieta": "Domknij prywatne wydanie Iris, bez protokołu",
       "kto": "iris",
       "reakcja": "Dziękuję. Nie lubię naciskać, ale cieszy mnie, że się rozumiemy. Zapomnijmy, że byłam dziś w kolejce. Za godzinę jadę.",
-      "zysk": "Iris wyjeżdża cicho, a Nora i Victor zostają bez oryginałów.",
+      "zysk": "Iris wyjeżdża cicho, a Ty zostajesz czysty w protokole i czysty wobec Nory.",
       "strata": "Czternaście rodzin zostaje bez dowodu, a w okienku ktoś jeszcze odpowiada za to, co zniknęło.",
       "echo": {
         "za_dni": 2,
@@ -3770,7 +3770,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "kto": "iris",
       "reakcja": "Dziękuję. Pięćset, na szybie, bez podpisu. Nie lubię naciskać, ale uwielbiam rozumienie. Nikt się nie dowie, że tu byłam.",
       "zysk": "500 $ i spokój w okienku, Iris znika bez śladu.",
-      "strata": "Czternaście rodzin zostaje bez dowodu, a wzięta koperta wraca w każdym spojrzeniu Nory.",
+      "strata": "Czternaście rodzin bez dowodu, Nora składa skargę do Victora (Urząd +2), a wzięta koperta wraca w zakończeniu.",
       "echo": {
         "za_dni": 1,
         "forma": "list",
@@ -3958,7 +3958,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Podpis na Twojej umowie jest Very, z pierwszego dnia. Ktoś wszystko przygotował, zanim przyszło się po raz pierwszy."
     }
   ],
-  "wejscie": "Zaplecze, teczka, Vera Kovacs. Przyszłam sama, bez Iris i bez Victora. Mam kartonik z numerem szafki i jedną rzecz do powiedzenia. Zanim zacznę, niech ktoś sprawdzi, czy za mną nikt nie stoi.",
+  "wejscie": "Zaplecze, teczka, Vera Kovacs. Przyszłam sama, bez Iris i bez Victora. Mam kartonik z numerem szafki i jedną rzecz do powiedzenia. To ja wybieram. Od jedenastu lat. Wstyd mam od dawna.",
   "tury": [
     {
       "pytania": [
@@ -4074,7 +4074,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "dolacz_slad",
       "etykieta": "Dołącz ślad odejścia Sama za jego zgodą",
       "kto": "vera",
-      "reakcja": "Dobrze. Zapisuję: odejście bez wpisu, z mojej woli. Sam odzyska twarz, a ja przyznam się do teczki. Dzwoni. Niech dzwoni.",
+      "reakcja": "Zapisuję: odejście bez wpisu, z mojej woli. Sam odzyska twarz. Strona 41 jest Twoja.",
       "zysk": "Sam odzyskuje czyste akta, a Vera oficjalnie bierze winę za teczkę.",
       "strata": "Ślad trafia do księgi, więc ktoś, kto czyta wszystko, dowie się, że teczka była pusta.",
       "echo": {
@@ -4087,7 +4087,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "koperta_zapieczetowana",
       "etykieta": "Oddaj dokument Samowi w zapieczętowanej kopercie",
       "kto": "vera",
-      "reakcja": "Zapieczętowana. Nikt nie zagląda, nikt nie kopiuje. Sam zdecyduje sam. To też jest sposób, żeby ktoś miał wybór.",
+      "reakcja": "Zapieczętowana. Sam zdecyduje sam. A strona 41 jest Twoja.",
       "zysk": "Sam sam decyduje, co zrobić z dokumentem, a Vera nie musi niczego wyznawać w księdze.",
       "strata": "Okienko nie zostawia śladu, więc nikt nie zapisze, że Vera przyszła.",
       "echo": {
@@ -4100,7 +4100,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "otworz_szafke",
       "etykieta": "Otwórz szafkę 0809 kluczem Very",
       "kto": "vera",
-      "reakcja": "Klucz. Proszę. Sam zostawił to dla tego, kto siedzi przy szybie, nie dla mnie. Otwieram za Ciebie, bo drżą mi ręce.",
+      "reakcja": "Klucz. Sam zostawił to dla tego, kto siedzi przy szybie. Strona 41 jest Twoja.",
       "zysk": "W szafce leży list od Sama, a w tle brzęczą klucze Very.",
       "strata": "Ktoś zobaczy, że szafka była otwarta, a w nocy wszystko jest widoczne dla tego, kto patrzy.",
       "echo": {
@@ -4280,7 +4280,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "To ten sam kwit, który Thomas miał w mankiecie w pierwszym dniu. Sam zaczynał każdego następnego tak samo."
     }
   ],
-  "wejscie": "Dobry wieczór. Thomas Ward. Przyniosłem kopertę, bo się zgubiła u wnuka, a on twierdzi, że zostawił ją tutaj. Napisałem świadectwo dla biura. Jeśli ktoś wie, jak się takie rzeczy zapisuje.",
+  "wejscie": "Dobry wieczór. Thomas Ward. Zostawiłem u was kopertę ze świadectwem dla Sama, z moim pismem. Wnuk mówi, że leżała na ladzie. Proszę, jeśli ktoś ją widział, niech sprawdzi.",
   "wejscie_jesli": {
     "d1_thomas:wydaj": "Dobry wieczór. Thomas Ward, znowu. Przyniosłem kopertę ze świadectwem dla biura. Rękawiczkę dostałem, dziękuję. Chcę teraz zapisać, że ktoś kiedyś oddał mi rzecz bez papieru.",
     "d1_thomas:wydaj_bez_wpisu": "Dobry wieczór. Thomas Ward. Tak jak wtedy: bez papierka. Przyniosłem teraz świadectwo, bo ktoś powinien zapisać, że ten młody człowiek zrobił mi dobrze. Wnuk twierdzi, że kopertę zostawił tu.",
@@ -4436,7 +4436,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Niedobór na zmianie to zwykły sposób zapisania odejścia dyżurnego. Pole następcy zostało puste celowo."
     }
   ],
-  "wejscie": "Sam Holt i Elias Wren przy szybie, Victor za nimi z teczką. Sam po etui na okulary, Elias z pytaniem, czy Sam już się odezwał, Victor z protokołem do zamknięcia. Zanim się rozejdziemy, proszę o jedno.",
+  "wejscie": "Sam Holt i Elias Wren przy szybie, Victor za nimi z teczką. Sam po etui na okulary, Elias z pytaniem, czy Sam już się odezwał, Victor z protokołem do zamknięcia. Sam, Elias i Victor chcą tego samego: żeby to się dziś skończyło.",
   "tury": [
     {
       "pytania": [
@@ -4861,12 +4861,20 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Kuba Marlow, przez kuzyna",
         "tekst": "„Rata sobotnia. Kuba przypomina, że dług można zamknąć jednym ruchem, jeśli ktoś ma dostęp do tego, co ludzie zostawiają. Bez presji. K.M.”"
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Maya zostawiła na ladzie kartkę: „Walizka w poniedziałek. Nie spóźnij się.”"
       }
     ],
     "17": [
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias zobaczył Evana w kolejce i skinął głową. Nie znał go, ale poznał mankiet. Zapytał potem szeptem: „Czy ktoś, kto poprawia mankiet, jest dobry, czy zły?” Nie było odpowiedzi."
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Mężczyzna w szarym kapeluszu poprawił mankiet i wyszedł bez numerka. Evan patrzył za nim przez szybę."
       }
     ],
     "18": [
@@ -4877,12 +4885,20 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Kuba Marlow, na schodach",
         "tekst": "„Trzysta dolarów. Równo tyle, ile jesteś mi winien. Zbieg okoliczności, prawda?” Kuba uśmiechnął się, jakby wiedział o ofercie Iris. Nie powiedział, skąd."
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Na słupie przed biurem wisi nowa kartka: „Pokój służbowy do wynajęcia od zaraz. Bez referencji.”"
       }
     ],
     "19": [
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias zobaczył Adę z kartonem pod pachą. „Dziewczynka z królikiem się przeprowadza?” Nie czekał na odpowiedź. Zostawił na ladzie jednego cukierka, owiniętego w kartkę z napisem: „Dla pani z królikiem.”"
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Ada zostawiła rysunek: dom z dwoma oknami i napis „mamy dzień na spakowanie”."
       }
     ],
     "20": [
@@ -4893,6 +4909,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Kuba Marlow, pod bramą",
         "tekst": "Stał w deszczu bez parasola. „Nie jestem zły”, powiedział. „Czekam.” Potem odwrócił się, jakby to było wszystko."
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Sam napisał na odwrocie numerka: „Jak Cię zapisać?” Zostawił go pod szybą."
       }
     ],
     "21": [
@@ -4913,6 +4933,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Kuba Marlow, na schodach",
         "tekst": "Marlow podniósł głowę, kiedy ktoś wychodził. „Człowiek w płaszczu spisał dziś, kto mieszka w twoim domu. Nie ja go przysłałem. Ale mówię, żebyś wiedział.”"
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Pod drzwiami biura leżała kartka od Victora: „Jutro o 6:00 zamykam obieg. Proszę przynieść księgę.”"
       }
     ],
     "23": [
@@ -4933,6 +4957,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Kuba Marlow, na schodach",
         "tekst": "Marlow siedział na schodach z kubkiem. „W sobotę zamykamy rozliczenie. Przyjdź sam.” Potem upił i dodał: „Nie dlatego, że się boję. Dlatego, że Ty już wiesz, jak to się kończy.”"
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Pod szybą leżał klucz do szafki 0809. Na kartoniku: „Strona 41 jest Twoja.”"
       }
     ],
     "25": [
