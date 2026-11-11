@@ -4,6 +4,7 @@
 }(typeof window === 'object' ? window : globalThis, function () {
   'use strict';
 
+  const fallback = (value, defaultValue) => value == null ? defaultValue : value;
   const clamp = (value, min = 0, max = 1) => Math.max(min, Math.min(max, value));
   const ease = value => 1 - Math.pow(1 - value, 3);
   const mulberry32 = seed => () => {
@@ -15,7 +16,7 @@
   const traumaAt = (trauma, progress) => Math.pow(clamp(trauma) * (1 - clamp(progress)), 2);
   const presets = { knock: .25, thud: .35, thunder: .6, collapse: .8 };
   const effects = new Map(), jobs = new Set(), cues = new Set();
-  const tasks = new Set(), ambientJobs = new Map();
+  const tasks = new Set(), ambientJobs = new Map(), hitStops = new Set();
   let stage, raf = 0, previous = null, random = mulberry32(1);
   let enabled = true, flashes = true, intensity = 1, reduced = false, media;
   let sample = { frames: 0, total: 0 };
@@ -29,7 +30,7 @@
   };
   const add = (name, description, run) => effects.set(name, { name, description, run });
   const schedule = () => {
-    if (!raf && enabled && !document.hidden && (tasks.size || ambientJobs.size)) raf = requestAnimationFrame(frame);
+    if (!raf && enabled && !document.hidden && (tasks.size || ambientJobs.size || hitStops.size)) raf = requestAnimationFrame(frame);
   };
   function frame(now) {
     raf = 0;
@@ -41,7 +42,13 @@
       sample.frames++;
       sample.total += performance.now() - start;
     }
-    for (const task of [...tasks]) task(delta);
+    let remaining = delta;
+    for (const hit of [...hitStops]) {
+      remaining = Math.min(remaining, Math.max(0, delta - hit.remaining));
+      hit.remaining -= delta;
+      if (hit.remaining <= 0) hit.cancel();
+    }
+    if (remaining || !delta) for (const task of [...tasks]) if (tasks.has(task)) task(remaining);
     if (!tasks.size && !ambientJobs.size) previous = null;
     schedule();
   }
@@ -53,11 +60,13 @@
   function job(name, target, setup) {
     if (!stage || !enabled) return idle();
     let done = false, settle;
-    const cleanups = [];
+    const cleanups = [], timers = new Set();
     const handle = { name, target, finished: new Promise(resolve => { settle = resolve; }), cancel() {
       if (done) return;
       done = true;
       jobs.delete(handle);
+      for (const tick of timers) tasks.delete(tick);
+      timers.clear();
       for (const cleanup of cleanups.reverse()) cleanup();
       settle();
     }};
@@ -71,10 +80,9 @@
         const tick = delta => {
           elapsed += delta;
           update(clamp(elapsed / duration), elapsed);
-          if (elapsed >= duration) { tasks.delete(tick); if (!done) end(); }
+          if (elapsed >= duration) { tasks.delete(tick); timers.delete(tick); if (!done) end(); }
         };
-        context.cleanup(() => tasks.delete(tick));
-        if (!done) { tasks.add(tick); update(0, 0); schedule(); }
+        if (!done) { timers.add(tick); tasks.add(tick); update(0, 0); schedule(); }
       },
       animate(el, frames, duration, options = {}) {
         if (!el || done) return;
@@ -93,9 +101,15 @@
   }
   function stop(name, target) {
     const el = resolve(target);
+    if (target != null && !el) return;
+    if (target == null) {
+      if (!name || ambientJobs.has(name)) ambientStop(name);
+      if (!name || name === 'hitstop') for (const hit of [...hitStops]) hit.cancel();
+    }
     for (const handle of [...jobs]) {
       if ((!name || handle.name === name) && (target == null || el === handle.target)) handle.cancel();
     }
+    if (target == null && !name) { clearCurtain(); clearDayCurtain(); }
   }
   function shake(preset = 'knock') {
     const trauma = typeof preset === 'string' ? presets[preset] || 0 : clamp(Number(preset.trauma) || 0);
@@ -121,7 +135,11 @@
   }
   function motionPreference(event) {
     reduced = event.matches;
-    stop();
+    for (const handle of [...jobs]) {
+      if (!['guest.mount', 'clock.mount'].includes(handle.name)) handle.cancel();
+    }
+    if (reduced) for (const hit of [...hitStops]) hit.cancel();
+    if (!reduced && guestState.body) play('guest.breathe', guestState.body);
   }
   const resetExtensions = [];
   function reset() {
@@ -135,7 +153,10 @@
     init(options = {}) {
       const next = resolve(options.stage || '#stage');
       if (!next) throw new Error('LF_FX: brak sceny');
-      if (stage) reset();
+      if (stage) {
+        reset();
+        media.removeEventListener('change', motionPreference);
+      }
       stage = next;
       media = matchMedia('(prefers-reduced-motion: reduce)');
       media.addEventListener('change', motionPreference);
@@ -159,7 +180,10 @@
     seed(n) { random = mulberry32(n); },
     onCue(fn) { cues.add(fn); return () => cues.delete(fn); },
     setEnabled(value) { enabled = Boolean(value); if (!enabled && stage) reset(); },
-    setFlashes(value) { flashes = Boolean(value); },
+    setFlashes(value) {
+      flashes = Boolean(value);
+      if (!flashes) { stop('storm.flash'); stop('scene.cut'); }
+    },
     setIntensity(value) { intensity = clamp(Number(value) || 0); if (!intensity) stop('shake'); },
     setReduced(value) { motionPreference({ matches: value == null ? media.matches : Boolean(value) }); },
     list() { return [...effects.values()].map(({ name, description }) => ({ name, description })); },
@@ -542,7 +566,6 @@
   const move = (x = 0, y = 0, r = 0, s = 1) => ({
     translate: `${x}px ${y}px`, rotate: `${r}deg`, scale: String(s)
   });
-  const fadeFrames = duration => [{ opacity: 0 }, { opacity: 1, offset: .4 }, { opacity: 1, offset: duration > 250 ? .85 : .7 }];
   function animateEffect(name, target, frames, duration, opts = {}) {
     if (!target) return idle();
     stop(name, target);
@@ -554,10 +577,11 @@
       } : undefined));
   }
   function guestUnmount() {
-    const { el, body, faces, images, frame } = guestState;
+    const { el, body, layers, faces, images, frame } = guestState;
     if (!el) return;
     stop(undefined, el);
     if (body !== el) stop(undefined, body);
+    if (layers && layers.hands) stop('guest.tic', layers.hands);
     if (faces) faces.forEach(face => face.remove());
     if (frame) frame.remove();
     if (images) images.clear();
@@ -570,7 +594,7 @@
     const body = resolve(options.layers && options.layers.body) || el;
     const id = options.profile || 'wdowiec';
     const profile = typeof id === 'string' ? profileFor(id) : id;
-    Object.assign(guestState, { el, body, profile, layers: options.layers || {}, mood: options.mood || 'neutralna', broken: Boolean(options.broken) });
+    Object.assign(guestState, { el, body, profile, layers: options.layers || {}, mood: moods.includes(options.mood) ? options.mood : 'neutralna', broken: Boolean(options.broken) });
     const sprite = options.sprite || (typeof id === 'string' && ['wdowiec','chlopak','maz','siostra','dama','inspektor'].includes(id) ? id : null);
     const urlFor = options.spriteUrl || (sprite && (mood => `${options.spriteBase || 'assets/ppl/'}${sprite}_${mood}.jpg`));
     if (urlFor) {
@@ -701,6 +725,7 @@
   add('guest.liar_tell', 'Niejednoznaczne zawahanie', (el, opts) => {
     el = guestTarget(el);
     if (!el || (!opts.lie && random() >= clamp(opts.falseRate == null ? .25 : opts.falseRate))) return idle();
+    stop('guest.liar_tell', el);
     const prior = guestState.mood;
     setMood('klamie');
     stop('guest.breathe', el);
@@ -708,11 +733,11 @@
       const animation = !reduced && ctx.animate(el, [move(), move(2 * intensity), move(2 * intensity), move()], 600,
         { easing: 'steps(3, end)', composite: 'add' });
       ctx.cleanup(() => {
-        if (!ctx.completed || !enabled || guestState.body !== el) return;
+        if (!enabled || guestState.body !== el) return;
         if (guestState.mood === 'klamie') setMood(prior);
         play('guest.breathe', el);
       });
-      ctx.time(600, (_, elapsed) => { if (animation) animation.currentTime = elapsed; }, () => { ctx.completed = true; ctx.end(); });
+      ctx.time(600, (_, elapsed) => { if (animation) animation.currentTime = elapsed; });
     });
   });
 
@@ -810,10 +835,11 @@
     const dim = layer(ctx, 'lfx-overlay lfx-dim');
     const phone = resolve(opts.phone) || box(layer(ctx, 'lfx-phone'), 1110, 676, 85, 23);
     cue('phone_ring');
-    ctx.motion(dim, [{ opacity: 0 }, { opacity: .25 }, { opacity: 0 }], 750, {}, () => {});
+    const duration = flashes && !reduced ? 750 : 900;
+    ctx.motion(dim, [{ opacity: 0 }, { opacity: .25 }, { opacity: 0 }], duration, {}, () => {});
     ctx.motion(phone, reduced ? [{ opacity: .65 }, { opacity: 1 }] :
       [move(), move(0, -9, -4), move(), move(0, -9, 4), move(), move(0, -9, -4), move()],
-      750, { easing: reduced ? 'linear' : 'steps(6, end)' });
+      duration, { easing: reduced ? 'linear' : 'steps(6, end)' });
   }));
   for (const collapse of [false, true]) {
     const name = collapse ? 'pile.collapse' : 'pile.dig';
@@ -894,6 +920,427 @@
   };
   resetExtensions.push(() => api.autoButtons(false));
   Object.assign(api.internals, { profiles });
+
+  const paper = '#efe3c8';
+  let curtain, dayCurtain;
+  let powerDown = false;
+  const scenic = (ctx, type) => layer(ctx, `lfx-overlay lfx-${type}`);
+  const fades = (ctx, el, values, duration, done, easing = 'linear') =>
+    ctx.motion(el, values.map(opacity => ({ opacity })), duration, { easing }, done);
+
+  const ambientFactories = {
+    rain(opts, cleanup) {
+      const glass = resolve(opts.glass || '#glass');
+      const area = glass ? bounds(glass) : { x: 0, y: 0, w: stage.offsetWidth, h: stage.offsetHeight };
+      const canvas = box(place(stage, 'lfx-rain', 'canvas'), area.x, area.y, area.w, area.h);
+      cleanup(() => canvas.remove());
+      const dpr = Math.min(1.5, window.devicePixelRatio || 1);
+      canvas.width = Math.max(1, Math.round(area.w * dpr));
+      canvas.height = Math.max(1, Math.round(area.h * dpr));
+      const pen = canvas.getContext('2d');
+      pen.setTransform(dpr, 0, 0, dpr, 0, 0);
+      pen.strokeStyle = paper;
+      pen.lineWidth = 1.25;
+      const drops = [];
+      let elapsed = 0, gust = 0, nextGust = range(4200, 9000), previousCount = -1, wasReduced;
+      function drop() {
+        return { x: range(0, area.w), y: range(0, area.h), speed: range(.19, .74),
+          length: range(5, 18), bead: random() < .18, delay: range(20, 440), wobble: range(-1, 1) };
+      }
+      return delta => {
+        const level = Math.round(clamp(Number(opts.level) || 0, 0, 3));
+        const count = Math.round([0, 64, 175, 385][level] * intensity);
+        if (reduced && count === previousCount && wasReduced) return;
+        previousCount = count;
+        wasReduced = reduced;
+        while (drops.length < count) drops.push(drop());
+        elapsed += delta;
+        nextGust -= delta;
+        gust = Math.max(0, gust - delta);
+        if (nextGust <= 0) {
+          if (level === 3 && !reduced && count) {
+            gust = 550;
+            cue('rain_gust');
+          }
+          nextGust = range(4200, 9000);
+        }
+        const slant = level === 3 ? .43 + (gust ? .53 : 0) : .2;
+        const jitter = reduced ? 0 : Math.floor(elapsed / 95) % 3 - 1;
+        pen.clearRect(0, 0, area.w, area.h);
+        pen.beginPath();
+        for (let i = 0; i < count; i++) {
+          const p = drops[i];
+          if (!reduced) {
+            if (p.bead && p.delay > 0) p.delay -= delta;
+            else {
+              const dy = p.speed * delta * (.68 + level * .24);
+              p.y += dy;
+              p.x += dy * slant;
+            }
+            if (p.y > area.h + 20 || p.x > area.w + 20) {
+              p.y = p.y > area.h + 20 ? -p.length : range(0, area.h);
+              p.x = p.x > area.w + 20 ? -p.length : range(0, area.w);
+              p.delay = range(50, 380);
+            }
+          }
+          const x = Math.round(p.x + jitter * p.wobble);
+          const y = Math.round(p.y);
+          const stuck = p.bead && p.delay > 0;
+          pen.moveTo(x, y);
+          pen.lineTo(x + (stuck ? 0 : p.length * slant), y + (stuck ? 3 : p.length));
+          if (stuck) {
+            const next = drops[(i + 1) % count];
+            if (next !== p && Math.abs(next.x - x) < 9 && Math.abs(next.y - y) < 15) {
+              p.delay = 0;
+              p.length = Math.min(25, p.length + next.length / 3);
+              next.y = -next.length;
+            }
+          }
+        }
+        pen.stroke();
+      };
+    },
+    lamp(opts, cleanup) {
+      const lamp = place(stage, 'lfx-lamp');
+      cleanup(() => lamp.remove());
+      let time = 0, mode, pulse = 0, wait = 0, opacity = 0, start = 0, lastFrame = -1, flickerAllowed, lastGeometry;
+      return delta => {
+        const nextMode = powerDown ? 'out' : opts.mode || 'steady';
+        const canFlicker = flashes && !reduced;
+        const geometry = [opts.x == null ? 1150 : opts.x, opts.y == null ? 840 : opts.y, opts.r == null ? 310 : opts.r];
+        if (!lastGeometry || geometry.some((value, i) => value !== lastGeometry[i])) {
+          const [x, y, r] = geometry;
+          box(lamp, x - r, y - r * .23, r * 2, r * .46);
+          lastGeometry = geometry;
+        }
+        if (mode !== nextMode || flickerAllowed !== canFlicker) {
+          mode = nextMode;
+          flickerAllowed = canFlicker;
+          start = opacity;
+          time = 0;
+          pulse = 0;
+          lastFrame = -1;
+          wait = mode === 'buzz' ? range(1900, 5800) : 0;
+          if (mode === 'dying' || mode === 'flicker' || mode === 'on') cue('lamp_flicker', { mode });
+          if (!powerDown && mode === 'out') cue('power_out');
+        }
+        time += delta;
+        const base = (opts.opacity == null ? .44 : clamp(opts.opacity)) * intensity;
+        let value = base;
+        if (!canFlicker) {
+          const factor = fallback({ out: 0, dying: 0, flicker: .55, buzz: .86, on: 1, steady: 1 }[mode], 1);
+          value = start + (base * factor - start) * clamp(time / 500);
+        } else if (mode === 'out') value = 0;
+        else if (mode === 'buzz') {
+          if (time >= wait) {
+            pulse = time + 85;
+            wait = time + range(2000, 5700);
+            cue('lamp_flicker', { mode });
+          }
+          value *= time < pulse ? .64 : 1;
+        } else if (mode === 'flicker') {
+          const cycle = Math.floor(time / 210);
+          if (cycle !== lastFrame && cycle % 2 === 0 && cycle > 0) cue('lamp_flicker', { mode });
+          lastFrame = cycle;
+          value *= cycle % 2 ? .28 : 1;
+        } else if (mode === 'dying') {
+          const values = [1, .48, .76, .2, .45, 0];
+          const index = Math.min(5, Math.floor(time / 165));
+          value *= values[index];
+          if (index === 5 && lastFrame !== 5) cue('power_out');
+          lastFrame = index;
+        } else if (mode === 'on') {
+          value *= time < 95 ? .58 : time < 190 ? .24 : 1;
+        }
+        if (value !== opacity || !lamp.style.opacity) {
+          opacity = value;
+          lamp.style.opacity = String(value);
+        }
+        const flick = canFlicker && ((mode === 'buzz' && time < pulse) || (mode === 'flicker' && lastFrame % 2));
+        const scale = flick ? '.97 1.025' : '1';
+        if (lamp.style.scale !== scale) lamp.style.scale = scale;
+      };
+    },
+    dust(opts, cleanup) {
+      const dust = place(stage, 'lfx-overlay lfx-dust');
+      cleanup(() => dust.remove());
+      const particles = Array.from({ length: 36 }, () => ({
+        x: range(-1, 1), y: range(-1, 1), size: Math.floor(range(2, 6)), speed: range(.05, .18)
+      }));
+      for (const p of particles) p.el = place(dust, 'lfx-dust-bit');
+      let time = 100, elapsed = 0, previousIntensity, position = [];
+      return delta => {
+        const x = opts.x == null ? 1150 : opts.x, y = opts.y == null ? 805 : opts.y, r = opts.r == null ? 245 : opts.r;
+        const changed = x !== position[0] || y !== position[1] || r !== position[2];
+        time += delta;
+        if (!changed && previousIntensity === intensity && (reduced || time < 95)) return;
+        if (!reduced) elapsed += time;
+        time = 0;
+        previousIntensity = intensity;
+        position = [x, y, r];
+        const count = Math.round(intensity * particles.length);
+        particles.forEach((p, i) => {
+          if (changed) box(p.el, x, y, p.size, p.size);
+          p.el.style.opacity = i < count ? (i % 4 === 0 ? '.6' : '.26') : '0';
+          p.el.style.translate = `${Math.round(p.x * r + Math.sin(elapsed * .0015 + i) * 12)}px ${Math.round(((p.y + 1 - elapsed * .001 * p.speed % 2 + 2) % 2 - 1) * 65)}px`;
+        });
+      };
+    },
+    tram_light(opts, cleanup) {
+      const frame = box(place(stage, 'lfx-tram-frame'), fallback(opts.x, 1050), fallback(opts.y, 115), fallback(opts.w, 225), fallback(opts.h, 300));
+      const tram = place(frame, 'lfx-tram');
+      for (let i = 0; i < 5; i++) place(tram, 'lfx-tram-window');
+      cleanup(() => frame.remove());
+      let wait = opts.immediate ? 0 : range(40000, 90000);
+      let pass = -1;
+      return delta => {
+        if (pass < 0) {
+          wait -= delta;
+          if (wait > 0) return;
+          pass = 0;
+          cue('tram_pass');
+        }
+        pass += delta;
+        const progress = clamp(pass / 1450);
+        tram.style.opacity = powerDown ? '0' : String(intensity * .54 * (reduced ? Math.sin(progress * Math.PI) : 1));
+        tram.style.translate = reduced ? '-25% 0px' : `${-100 + progress * 190}% 0px`;
+        if (progress === 1) {
+          tram.style.opacity = '0';
+          pass = -1;
+          wait = range(40000, 90000);
+        }
+      };
+    }
+  };
+  function ambientStop(name) {
+    for (const [key, ambient] of [...ambientJobs]) if (!name || name === key) ambient.cancel();
+  }
+  function ambientStart(name, opts = {}) {
+    if (!enabled || !stage || !Object.prototype.hasOwnProperty.call(ambientFactories, name)) return idle();
+    ambientStop(name);
+    const options = { ...opts };
+    let remove, settle, cancelled = false;
+    const step = ambientFactories[name](options, cleanup => { remove = cleanup; });
+    const handle = { options, step, finished: new Promise(resolve => { settle = resolve; }), cancel() {
+      if (cancelled) return;
+      cancelled = true;
+      ambientJobs.delete(name);
+      remove();
+      settle();
+    }};
+    ambientJobs.set(name, handle);
+    step(0);
+    schedule();
+    return handle;
+  }
+  function ambientSet(name, opts) {
+    const ambient = ambientJobs.get(name);
+    if (ambient) {
+      Object.assign(ambient.options, opts);
+      ambient.step(0);
+      return ambient;
+    }
+    return ambientStart(name, opts);
+  }
+  api.ambient = { start: ambientStart, stop: ambientStop, set: ambientSet };
+  api.rain = { setLevel(level) { return level > 0 ? ambientSet('rain', { level }) : ambientStop('rain'); } };
+  resetExtensions.push(() => ambientStop());
+  for (const [name, label, options] of [
+    ['rain', 'Deszcz na szybie', { level: 2 }], ['lamp', 'Plama lampy sodowej', { mode: 'buzz' }],
+    ['dust', 'Pył w świetle', {}], ['tram_light', 'Światło tramwaju', { immediate: true }]
+  ]) add(name, label, (el, opts) => ambientStart(name, { ...options, ...opts }));
+
+  const svgNs = 'http://www.w3.org/2000/svg';
+  const clockState = { seconds: 0 };
+  function svg(parent, tag, attributes) {
+    const node = document.createElementNS(svgNs, tag);
+    for (const [key, value] of Object.entries(attributes)) node.setAttribute(key, value);
+    parent.append(node);
+    return node;
+  }
+  function clockFace() {
+    if (!clockState.hands) return;
+    const time = clockState.seconds;
+    clockState.hands[0].style.rotate = `${time / 120}deg`;
+    clockState.hands[1].style.rotate = `${Math.floor(time / 60) * 6}deg`;
+    clockState.hands[2].style.rotate = `${Math.floor(time) * 6}deg`;
+  }
+  function clockUnmount() {
+    stop('clock.set');
+    if (clockState.handle) clockState.handle.cancel();
+    delete clockState.handle;
+  }
+  function clockMount(target, { hh = 23, mm = 40, size = 100 } = {}) {
+    const el = resolve(target);
+    clockUnmount();
+    if (!enabled || !stage || !el) return idle();
+    clockState.seconds = hh * 3600 + mm * 60;
+    const face = svg(el, 'svg', { viewBox: '0 0 100 100', width: size, height: size, class: 'lfx-clock', 'aria-hidden': 'true' });
+    svg(face, 'circle', { cx: 50, cy: 50, r: 47, fill: '#0a0a0a', stroke: paper, 'stroke-width': 3 });
+    for (let i = 0; i < 12; i++) svg(face, 'line', { x1: 50, y1: 9, x2: 50, y2: i % 3 ? 14 : 19,
+      stroke: paper, 'stroke-width': i % 3 ? 1 : 3, transform: `rotate(${i * 30} 50 50)` });
+    clockState.hands = [[25, 4], [17, 2.8], [11, 1]].map(([y, width]) => svg(face, 'line',
+      { x1: 50, y1: 55, x2: 50, y2: y, stroke: paper, 'stroke-width': width, class: 'lfx-hand' }));
+    svg(face, 'circle', { cx: 50, cy: 50, r: 3, fill: paper });
+    clockFace();
+    clockState.handle = job('clock.mount', el, ctx => {
+      ctx.cleanup(() => { face.remove(); delete clockState.hands; });
+      let budget = 0;
+      let bounce = 0;
+      ctx.time(Infinity, (_, elapsed) => {
+        if (clockState.seeking) { budget = elapsed; return; }
+        if (elapsed - budget >= 1000) {
+          budget += 1000;
+          clockState.seconds++;
+          clockFace();
+          if (!reduced) {
+            clockState.hands[2].style.rotate = `${clockState.seconds * 6 + 1.6}deg`;
+            bounce = elapsed + 75;
+          }
+          if (clockState.seconds % 60 === 0) cue('tick_big');
+        } else if (bounce && elapsed >= bounce) {
+          bounce = 0;
+          clockFace();
+        }
+      });
+    });
+    return clockState.handle;
+  }
+  function clockSeek(end, animate) {
+    stop('clock.set');
+    if (!enabled || !clockState.hands) return idle();
+    const start = clockState.seconds;
+    const complete = () => { clockState.seconds = end; clockState.seeking = false; clockFace(); };
+    if (!animate || reduced || !stage) { complete(); return idle(); }
+    return job('clock.set', null, ctx => {
+      clockState.seeking = true;
+      ctx.cleanup(complete);
+      ctx.time(260, progress => {
+        clockState.seconds = start + (end - start) * ease(progress);
+        clockFace();
+      }, () => { ctx.end(); cue('tick_big'); });
+    });
+  }
+  api.clock = { mount: clockMount, unmount: clockUnmount,
+    set(hh, mm, { animate = false } = {}) { return clockSeek(hh * 3600 + mm * 60, animate); },
+    advance(min) { return clockSeek(clockState.seconds + min * 60, true); } };
+  resetExtensions.push(clockUnmount);
+  add('clock.advance', 'Przestawienie zegara', (el, opts) => api.clock.advance(fallback(opts.min, 25)));
+  api.hitstop = ms => {
+    if (!enabled || !stage || reduced) return idle();
+    let settle;
+    const handle = {
+      remaining: clamp(fallback(ms, 65), 40, 90),
+      finished: new Promise(resolve => { settle = resolve; }),
+      cancel() { hitStops.delete(handle); settle(); }
+    };
+    hitStops.add(handle);
+    schedule();
+    return handle;
+  };
+  add('hitstop', 'Krótka pauza animacji efektów', (el, opts) => api.hitstop(opts.ms));
+
+  add('storm.flash', 'Piorun i opóźniony grzmot', (el, opts) => {
+    stop('storm.flash');
+    return job('storm.flash', el, ctx => {
+      const bright = flashes && !reduced;
+      const flash = scenic(ctx, bright ? 'flash' : 'blackout');
+      const delay = clamp(fallback(opts.delay, range(300, 900)), 300, 900);
+      const duration = bright ? 255 : 920;
+      const light = bright ? [0, .7, 0, .41, 0] : [0, .34, 0];
+      fades(ctx, flash, light, duration, () => flash.remove(), bright ? 'steps(1, end)' : 'linear');
+        ctx.time(delay, () => {}, () => {
+        cue('thunder', { delay });
+        if (ctx.done) return;
+        ctx.cleanup(shake({ trauma: .6 }).cancel);
+      });
+      ctx.time(Math.max(duration, delay + 340), () => {});
+    });
+  });
+  function clearCurtain() {
+    if (curtain) curtain.remove();
+    curtain = null;
+    powerDown = false;
+  }
+  function blackout(on, el) {
+    const name = on ? 'power.out' : 'power.on';
+    stop('power.out');
+    stop('power.on');
+    if (on && !curtain) return idle();
+    const slow = !flashes || reduced;
+    return job(name, el, ctx => {
+      if (!on) {
+        clearCurtain();
+        powerDown = true;
+        curtain = place(stage, 'lfx-overlay lfx-blackout lfx-power');
+        curtain.style.opacity = '.85';
+        cue('power_out');
+      } else {
+        powerDown = false;
+        cue('lamp_flicker', { mode: 'on' });
+      }
+      const lamp = ambientJobs.get('lamp');
+      if (on && lamp) {
+        const before = lamp.options.mode;
+        if (before === 'out' || before === 'dying') lamp.options.mode = 'on';
+      }
+      const el = curtain;
+      if (on) ctx.cleanup(clearCurtain);
+      fades(ctx, el, on ? (slow ? [.85, 0] : [.85, .63, .72, 0]) : [0, .85], slow ? 500 : 235);
+    });
+  }
+  add('power.out', 'Zanik zasilania', el => blackout(true, el));
+  add('power.on', 'Powrót zasilania', el => blackout(false, el));
+  add('scene.cut', 'Jedna klatka czerni', el => {
+    if (!flashes || reduced) return idle();
+    return job('scene.cut', el, ctx => {
+      scenic(ctx, 'blackout');
+      let frames = 0;
+      ctx.time(Infinity, () => { if (++frames >= 3) ctx.end(); });
+    });
+  });
+  add('day.start', 'Otwarcie dnia', (el, opts) => job('day.start', el, ctx => {
+    const hold = Math.max(0, fallback(opts.holdMs, 900));
+    const duration = hold + 480;
+    if (opts.label != null) {
+      const card = layer(ctx, 'lfx-day-card');
+      card.textContent = opts.label;
+      ctx.motion(card, [{ ...move(0, reduced ? 0 : -24), opacity: 0 },
+        { ...move(), opacity: 1, offset: 240 / duration },
+        { ...move(), opacity: 1, offset: (240 + hold) / duration },
+        { ...move(0, reduced ? 0 : -12), opacity: 0 }], duration, {}, () => card.remove());
+    }
+    const dim = dayCurtain || scenic(ctx, 'blackout');
+    const prior = Boolean(dayCurtain);
+    dayCurtain = null;
+    ctx.cleanup(() => dim.remove());
+    const full = flashes && !reduced;
+    const light = prior ? [1, 0] : full ? [.58, 0] : [0, .32, 0];
+    fades(ctx, dim, light, full ? 280 : prior ? 500 : 900, () => dim.remove());
+    ctx.time(Math.max(duration, full ? 280 : prior ? 500 : 900), () => {});
+  }));
+  function clearDayCurtain() {
+    if (dayCurtain) dayCurtain.remove();
+    dayCurtain = null;
+  }
+  add('day.end', 'Rygiel i zamknięcie dnia', el => job('day.end', el, ctx => {
+    clearDayCurtain();
+    const dim = place(stage, 'lfx-overlay lfx-blackout');
+    dayCurtain = dim;
+    dim.style.opacity = '1';
+    const bolt = box(layer(ctx, 'lfx-bolt'), 1180, 495, 120, 20);
+    const duration = flashes && !reduced ? 280 : 500;
+    fades(ctx, dim, [0, 1], duration);
+    ctx.motion(bolt, reduced ? [{ opacity: 0 }, { opacity: 1 }] : [move(-80), move()], 170, {}, () => cue('door_bolt'));
+  }));
+  add('saturday', 'Ciepłe światło soboty', el => job('saturday', el, ctx => {
+    ambientStop('rain');
+    ambientSet('lamp', { mode: 'steady', opacity: .3 });
+    const dim = scenic(ctx, 'blackout');
+    const light = flashes && !reduced ? [.66, 0] : [0, .28, 0];
+    fades(ctx, dim, light, light.length === 2 ? 570 : 900);
+  }));
+  resetExtensions.push(clearCurtain);
 
   return api;
 }));
