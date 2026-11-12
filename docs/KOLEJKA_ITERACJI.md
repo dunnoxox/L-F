@@ -66,7 +66,25 @@ Trzy uwagi, każda sprawdzona graniem dnia 1, zanim cokolwiek zmieniłem.
 Granie: Thomas na pytanie „Po co wieczorem do Doków?” mówi „Nie. Stoję tu po swoją rzecz, nie na przesłuchanie.”, po naciśnięciu opowiada o córce i rosole. Działa lepiej niż sama odpowiedź, bo trzeba było o nią zawalczyć.
 
 Ocena szczera:
-- Odmowa ma na razie trzy ogólne zdania wspólne dla wszystkich. Starszy pan i dwudziestolatek odmawiają tymi samymi słowami. Silnik czyta pole `odmowa` przy pytaniu, więc wątek dialogów może dopisać własne zdanie każdej postaci.
-- Reguła ogólna odpala rzadko (u Jonaha w ogóle, bo jego pytania nie są oznaczone jako niewygodne). Bez pól `odmowa` w treści gracz zobaczy to raz na kilka wizyt.
+- Pierwsza wersja miała regułę ogólną z trzema zdaniami wspólnymi dla wszystkich. Wycofałem ją tego samego wieczoru: w próbie dnia 9 Sam Holt odpowiedział ogólnym „Nie. Tego nie powiem.” na pytanie o wyrwaną stronę 41, czyli na pytanie, które niesie fabułę. Odmowa działa teraz tylko tam, gdzie pytanie ma pole `odmowa` napisane głosem postaci. Wątek dialogów dopisał je do 19 scen z dni 1-10.
 - Lupa nie działa na dotyk bez przeciągania palcem. Na telefonie zostaje podpowiedź kropkowanym kółkiem po dwóch pudłach.
 - Regulamin widać w dniach 1-3, potem znika. Nie sprawdziłem, czy ktoś go w ogóle czyta przy pierwszej rozmowie.
+
+
+### I4: gra w 10 dni, na razie jako próba (12.11 wieczór)
+
+Stan: silnik gotowy i zagrany do zakończenia, ale wyłączony domyślnie. Włącza się w Ustawieniach, zakładka Dane, „Próba: gra w 10 dni”. Czeka na decyzję Tommy'ego z karty (dni 1-8 plus finał, pełne zagęszczenie albo dni 1-10 bez zwrotu).
+
+Zmiana: plan w `window.PLAN10` (`game/tropy.js`). Dni 1-8 bez zmian. Dzień 9: Iris z piórnikiem, Vera z pudełkiem Sama, Sam Holt. Dzień 10: Elias z Samem i Victorem (tu pada pytanie o imię), Sam po etui, księga na linii 0809. Warunki fabularne w silniku liczą się teraz po dniu, z którego scena pochodzi, więc przeniesiona scena dalej je spełnia. Sobota wypada po dniu 5 i 10, potem zakończenie. W dniach 9-10 nie ma ludzi z kolejki, żeby nie rozmywać finału.
+
+Granie (dni 9-10 od zapisu, do karty zakończenia): przechodzi bez błędów, kończy „Rotacją” z imieniem w księdze.
+
+Ocena szczera, czyli dlaczego to jeszcze nie jest wersja dla gracza:
+- Elias wchodzi w dniu 10 jako ktoś nowy, a scena zakłada, że znamy go od dawna („uzgodniliśmy to w zeszłym tygodniu”, żart z oprawką). W dniach 1-8 go nie ma. Trzeba go wprowadzić wcześniej albo przepisać wejście.
+- Dzień 10 to trzy sceny pod rząd z tymi samymi trzema mężczyznami i papierami (komplet zeznań, kopia decyzji, protokół). Mechanicznie się zamyka, dramatycznie to gruda. Finał potrzebuje jednej sceny z papierami, nie dwóch.
+- Vera w dniu 9 mówi, że Sam „dalej się nie zgłasza”, a Sam puka godzinę później. Albo to jest zamierzony zwrot i trzeba go zagrać (Vera wraca z nim), albo zgrzyt.
+- Epilog mówi o poniedziałku 13.09 i zamyka wątki Mai i Iris, które w 10 dniach nie zdążyły się rozegrać. Daty i dwa akapity do przepisania.
+- Zakończenie „Odebrany” wymagało trzech notatek S.H. i wątku skrytki. W próbie wystarczą dwie notatki i ugoda z Samem. To moja decyzja robocza, nie fabularna.
+- Nagłówek świtu pokazuje numer dnia. To stary błąd wbrew zasadzie tekstu, nie z tej iteracji.
+
+Wniosek: opcja „dni 1-8 plus finał” jest wykonalna bez pisania gry od nowa, ale wymaga czterech poprawek treści wyżej. To robota wątku dialogów po decyzji.
