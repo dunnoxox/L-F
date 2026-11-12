@@ -1,0 +1,336 @@
+# d11_maya
+? u Jak wygląda ten pokrowiec?
+= m Czarny, twardy. Gumkę z boku zszyłam sama. W środku łatka przyszyta niebieską nitką, bo czarna mi się skończyła. Sprawdź, to chwila.
+ ? n Opisujesz go bardzo dokładnie. Jakby ci zależało, żeby nikt się nie pomylił.
+ = n Zależy mi. Mój mąż też umie opisać moje rzeczy. Ale tylko z wierzchu. Łatki w środku nie widział nigdy.
+? r Gdzie i kiedy go zostawiłaś?
+= n W czwórce, wczoraj koło 22:40, przy tylnych drzwiach. Zostawiłam celowo. Nie pytaj, czy zapomniałam.
+ ? n Celowo? Po co zostawiać własne rzeczy w tramwaju?
+ = m Telefon, klucze, torba, teraz pokrowiec. Sprawdzam, czy ktoś po tej stronie szyby wytrzyma i nie zacznie rozdawać. Jak próba obwodu: puszczasz mały prąd i patrzysz, gdzie iskrzy.
+  ? n I gdzie iskrzyło?
+  = n Zapisuję sobie. Każdą rzecz: komu poszła i kto potem o niej wiedział. Dziś sprawdzam ostatni raz.
+? u Czego od nas potrzebujesz?
+= m Trzech rzeczy. Nikt nie wie, gdzie jestem. Policjant dostaje jedno zdanie: „Żyje. Nie wróci. Nie szukać”. Wszystko inne dopiero, jak powiem „tak”.
+ ? n A rodzina? Nie śpią od tygodni.
+ = e Wysłuchaj do końca. Raz. Dwa. Trzy. Nie. Nie bez mojego „tak”. Nawet jeśli nie śpią.
+ ? r Co z twoimi rzeczami, które u nas leżą?
+ = n Niech leżą. To depozyt. Zabiorę je, jak skończę. I nikt ich beze mnie nie czyta.
+ ? u Lena ci pomagała?
+ = n Na początku, z mieszkaniem. Potem zaczęła decydować, co mi wolno. Od jednego, który decydował za mnie, już uciekłam.
+? n Czemu tak patrzysz na moje ręce?
+= n Sprawdzam, co z nimi robisz. Ten, co siedział tu przed tobą, też nie wiedział, gdzie je podziać. A siedział dłużej.
+ ? r Znałaś Sama?
+ = n Z widzenia, przez szybę. Raz przetrzymał mi torbę przez tydzień i nie zapytał, co w niej jest. Dlatego wybrałam to okienko.
+? n @d7_evan:powiedz_linie Evan stał trzy noce na pętli czwórki. Wiesz o tym?
+= e Widziałam z wagonu. Stał równo, z termosem, jak ktoś, komu podano linię. Chcę wiedzieć, kto mu ją podał.
+? u @d3_maz_i_siostra:wydaj_evan Twój telefon dostał od nas Evan. Wiesz, co z nim zrobił?
+= n Wiem od Leny. Przeczytał jej wiadomość i poszedł do niej z awanturą. Zwarcie. Nie mam żalu, ale policzyłam.
+? u @d3_maz_i_siostra:wydaj_lena Twój telefon dostała Lena. Co z tego wyszło?
+= n Lena ma swoją wiadomość z powrotem, a Evan został z niczym i przestał wierzyć tej szybie. Jedno i drugie policzyłam.
+? r @d2_szalik_md Szalik z twoimi inicjałami też tu leży. Też zostawiony celowo?
+= n Szalik był pierwszy. Chciałam zobaczyć, czy ktoś go sprzeda albo poda dalej. Nikt nie podał. Więc zostawiałam kolejne rzeczy.
+? n @d11_trzy_warunki Pod łatką jest karteczka z trzema punktami. Kto je układał?
+= m Ja, przez trzy noce. W kolejności, w jakiej coś może się zepsuć. Pierwszy: nikt nie wie, gdzie jestem. Resztę dostanie ten, komu powiem „tak”.
+! szept_lenie Powiesz Lenie za moimi plecami? Policzyłam, że ktoś wygada. Szkoda, że akurat to okienko.
+
+# d11_grace
+? u Jak wygląda ta torebka?
+= m Granatowa, skórzana, na ramię. Pasek przetarty od smyczy z kartą. Na legitymacji mam zdjęcie z trzeciego roku, jeszcze z cerą.
+ ? r Co jest w środku oprócz legitymacji?
+ = n Klucze, tabletki na głowę i kartka z zakupami. Nic więcej.
+  ? n Ta kartka to na pewno zakupy?
+  = k Zakupy. Mleko, chleb. Tylko proszę jej nie czytać, jest głupia.
+? r Gdzie i kiedy ją zostawiłaś?
+= n W jedenastce, koło wpół do pierwszej. Zdjęłam ją z ramienia, bo bark mnie rwał po dźwiganiu pacjenta. Wysiadłam na Rynku bez niej.
+ ? u Wpół do pierwszej? To nie byłaś wtedy na dyżurze?
+ = m Wyskoczyłam na godzinę do domu, bo młodszy miał gorączkę. Dzieci śpią u sąsiadki. Oddział myśli, że jestem w magazynie leków, więc liczę minuty.
+? n Czemu nie wejdziesz na oddział bez karty?
+= n Drzwi są na kartę, a dyżurny nikogo nie wpuszcza na piękne oczy. Ma rację. Dziś mnie ta jego racja boli.
+ ? r Ktoś może potwierdzić, że torebka jest twoja?
+ = m Hollis, dyżurny z oddziału. Zadzwoń. Odbierze po trzecim sygnale i dwie minuty będzie gadał o grafiku.
+? n @d11_kartka_iris Na kartce stoi: „Iris, 400 $, żółta kopia u elektryczki”. Co to jest?
+= e Moje czterysta dolarów i dowód, że je wpłaciłam. Kopię schowała elektryczka, która robiła u nas instalację. Bo Iris nie lubi, kiedy lokatorzy mają papiery.
+ ? n Iris prosiła cię o coś w zamian?
+ = n O „drobną przysługę”. Iris zawsze prosi o drobną przysługę. A potem człowiek orientuje się, że jest jej coś winien.
+ ? r @d8_lena_i_nora:kopia_osobno Ta żółta kopia leży u nas w biurze.
+ = m Czyli jednak istnieje. Nora Vance będzie wiedziała, co z nią zrobić. Niech leży zamknięta, ja mam szóstą na karku.
+ ? r @d8_lena_i_nora:wydaj_lenie_cala Żółta kopia poszła razem z torbą do siostry elektryczki.
+ = n Nie wiedziałam. Czyli dowód mam w głowie i na tej kartce. Dlatego kartkę zabieram ze sobą, przepraszam.
+
+# d12_iris_nora
+? u ~iris Iris, co jest w tej kasetce?
+= k Rachunki. Karty rozliczeń kamienicy, nic ponad to. Sprawy moje i lokatorów.
+ ? n ~nora Nora, ty mówisz co innego?
+ = n Mówię: oryginały pokwitowań. Czternaście rodzin, po czterysta dolarów zaliczki. Bez nich Okoye zapłacą drugi raz, a ja nie mam jak udowodnić, że już płacili.
+ ? u ~iris Lokatorzy wiedzą, gdzie leżą ich papiery?
+ = n Wiedzą, że są bezpieczne. Czasem aż za bardzo, przyznaję. Zbierałam zaliczki, bo ktoś musiał, a nikt inny się nie garnął.
+? r ~nora Nora, po czym poznasz oryginał?
+= m Po kolei: numer z mojego wykazu, podpis „I.”, zielony stempel kamienicy. Jak wszystkie trzy się zgadzają, wiem.
+ ? r ~nora Co się stanie w czwartek, dziewiątego września?
+ = n Mija termin. Kto nie pokaże kwitu, wpłaca zaliczkę drugi raz albo się wyprowadza. Czternaście rodzin, dwanaście dni.
+ ? r @d8_lena_i_nora:wydaj_lenie_cala ~nora Żółta kopia poszła z torbą do Leny. Czym teraz udowodnisz wpłatę?
+ = n Numerem z wykazu: czterysta jedenaście. Papier można zgubić, liczby nie. Ale numer bez oryginału to dalej tylko moje słowo.
+ ? r @d8_lena_i_nora:kopia_osobno ~nora Żółta kopia leży u nas. To nie wystarczy?
+ = n Potwierdza jedną wpłatę, Okoye. I tylko wtedy, gdy da się ją przyłożyć do oryginału. Dlatego potrzebuję oryginałów.
+? n ~ada Ada, czemu pokazujesz na tę puszkę?
+= m Bo ma numerek z tego samego bloczka co papiery pani Iris. Mama mówi, że nie wolno gadać. Ale tu można, bo tu mówią do mnie ładnie.
+ ? n ~ada Co jeszcze widziałaś u pani Iris?
+ = n Że otwiera tę szufladę, co się zacina, bez patrzenia. Ja muszę kopnąć w lewy róg. Ona ma tam takie same pudełka jak to.
+ ? u ~iris Iris, mała mówi prawdę?
+ = n Dzieci widzą dużo i rozumieją po swojemu. Ada to dobra dziewczynka. Szkoda by było, gdyby jej mama miała przez to kłopoty.
+? n ~iris Czemu nie oddasz Norze oryginałów?
+= e Bo jak Nora pokaże je w Urzędzie, wyjdzie też to, co leży obok: papiery czworga ludzi, którzy już kupili bilet. Czternaście rodzin czy czworo ludzi? To nie jest pytanie retoryczne.
+ ? n ~iris W tej kasetce leżą też dokumenty ludzi z żetonów?
+ = n Kasetka jest jedna, papierów w niej dużo. Nieostrożne pytanie, więc nie odpowiem.
+ ? n @d9_iris:zetony_victor ~iris Piórnik poszedł do Victora. Co teraz z ludźmi z żetonów?
+ = n Są na liście inspekcji. Dla niego drobiazg, dla nich wyrok. Dlatego dziś nie mam już z czego ustępować.
+ ? n @d9_iris:zetony_iris ~iris Piórnik wrócił do ciebie. Gdzie są teraz żetony?
+ = k Bezpieczne. Cztery czekają na odbiór, piąty jeszcze nie ma opisu. Wszystko w najlepszym porządku.
+ ? n @d9_iris:depozyt ~iris Piórnik leży u nas w depozycie. Co z ludźmi z żetonów?
+ = n Czekają. Do soboty żadne z czworga nie dostanie dokumentu, a jedna rodzina ma pociąg o 5:40. To nie groźba, to rozkład jazdy.
+? n @d12_oryginaly ~iris W kasetce są dwie listy: wpłaty lokatorów i 6 800 dolarów od miasta. Czyje to pieniądze?
+= n Miasta, lokatorów i moje. W takiej kolejności, w jakiej je rozdzieliłam. Nora policzyła jedną stronę. To prawie uczciwe rozliczenie.
+ ? n ~nora Nora, wiedziałaś o pieniądzach z miasta?
+ = e Nie. Po kolei: miasto dało 6 800 na remont, lokatorzy drugie tyle w zaliczkach. Remontu nie było. Teraz rozumiem, czemu Iris „gubi” kwity.
+
+# d12_linh
+? u Jak wygląda ta pozytywka?
+= m Drewniana, mała, z gwiazdką na wieczku. Gra kołysankę, ale jedną nutę zacina. Milo mówi, że gwiazdka kaszle.
+ ? r Co jest w środku?
+ = n Mechanizm. I coś, czego wolałabym nie pokazywać. Proszę nie zdejmować dna.
+? r Gdzie ją zgubiłaś?
+= n W jedenastce, na siedzeniu, kiedy zdejmowałam Milo z kolan. Zasnął mi na rękach i zapomniałam o całym świecie.
+ ? u Ile lat ma Milo?
+ = m Sześć, skończył w maju. Do szkoły jeszcze nie chodzi. W szkole trzeba podać adres.
+? n Dokąd jedziecie tym rannym pociągiem?
+= n Proszę, nie. Nie dlatego, że nie ufam. Dlatego, że mi nie wolno.
+ ? n Ktoś was szuka?
+ = e Nie wiem. Dlatego pociąg jest o 5:40, a nie o dziewiątej. O dziewiątej on już nie śpi.
+ ? n Kto wam pomaga wyjechać?
+ = n Ktoś, kto bierze za to pieniądze i nie lubi, kiedy się o tym mówi. Proszę, więcej nie powiem.
+ ? u Czego ci teraz najbardziej trzeba?
+ = m Żeby Milo zasnął w pociągu. I żeby nikt nie zapisał mojego nazwiska obok jego imienia.
+? n @d12_pozytywka_0623 Pod dnem jest bilet i kartonik z numerem 0623. Co to?
+= e Proszę, nie pytaj. To wszystko, co mam po trzech latach odkładania. Jak ktoś się dowie, nie dojedziemy.
+ ? r @d9_iris:depozyt Żeton z tym numerem leży u nas w depozycie do soboty.
+ = n Wiem, Iris mi powiedziała. Pociąg mam o 5:40, depozyt jest do soboty. Czyli jadę bez papierów albo wcale.
+ ? r @d9_iris:zetony_victor Numer 0623 jest na liście inspektora.
+ = n Wiem, Iris mi powiedziała. Wsiądę. Ale będę się oglądać do ostatniej stacji.
+
+# d13_elias
+? u Jak wygląda ta oprawka?
+= m Złota, cieniutka, jedno ucho wygięte. Żona prostowała je kciukiem, a ono i tak wracało. Czterdzieści jeden lat tak się z nim siłowała.
+ ? r Sama oprawka, bez szkieł?
+ = n Szkła pękły, kiedy spadły. Zostało samo złoto i to krzywe ucho. Mnie wystarczy.
+? r Gdzie i kiedy zginęła?
+= n W czwórce, tuż przed Bożym Narodzeniem, jak wracaliśmy od szwagierki. Potem żona zachorowała i okularów już nie włożyła.
+ ? u To już osiem miesięcy. Czemu to nadal takie ważne?
+ = e Bo jej obiecałem, że się znajdą. Ona już nie sprawdzi, ale ja wiem, co obiecałem. Dziękuję, że ktoś pyta.
+? n Czemu Sam zapłacił za nią z własnej kieszeni?
+= n Bo obiecał, że znajdzie. Nie znalazł, więc zapłacił, jakby to była jego wina. Osiemdziesiąt cztery dolary. Dowiedziałem się, jak już było po wszystkim.
+ ? r Skąd znasz Sama?
+ = m Z tego okienka. Pan Holt przez dwa lata nie miał nazwiska na tabliczce. Potem dopisał ołówkiem: S. Holt. Chyba sam sobie przypominał.
+  ? r Kiedy widziałeś go ostatni raz?
+  = n Ponad miesiąc temu. Powiedział: „jeszcze nie, panie Eliasie”. A potem przestał przychodzić.
+ ? u Co chcesz zrobić z tym długiem?
+ = m Oddać mu do ręki. Cztery tygodnie odkładałem po dwadzieścia jeden dolarów z emerytury. Nie listem, nie przez kogoś. Do ręki.
+  ? n A jeśli Sam nie weźmie?
+  = n Odmówi, wiem. A ja nie ustąpię. On jest młodszy, ale to ja mam mniej czasu.
+? n @d13_kwit_zwrotu Kwit zwrotu ma numer paczki z wykazu Iris Bell. Co was łączy?
+= n Nie znam żadnej Iris. Pan Holt powiedział tylko: „proszę nie pytać, skąd pieniądze”. Wziąłem. Do dziś mi wstyd.
+ ? r Co ma się stać z tym kwitem?
+ = m Niech ktoś zapisze, że pan Holt zapłacił, a ja przyjąłem. Żeby to nie był dług bez nazwiska. To dla niego, nie dla mnie.
+ ? n Wiesz coś o paczkach, które jeżdżą szóstką?
+ = n Tyle, że konduktor ich nie lubi. Więcej nie wiem i wolę nie wiedzieć.
+
+# d13_odile
+? u Jak wygląda to pudełko?
+= m Okrągłe, niebieskie, po duńskich herbatnikach. Wieczko pogięte, bo siadam na nim na przystanku. W środku serwetka w kwiatki, a na serwetce moja uroda.
+ ? r Czemu trzymasz protezę w pudełku po herbatnikach?
+ = m A gdzie, dziecko? W kieszeni się pogniecie, szklanki do tramwaju nie wezmę. Pudełko szczelne i jeszcze pachnie masłem.
+ ? r Po czym poznać, że proteza jest twoja?
+ = n Od spodu wygrawerowane O.F. Dentysta mówił: żeby nikt nie zabrał. Dziecko, kto by to zabrał? Ale grawer jest.
+? r Jak to się stało, że została w szóstce?
+= n Jechałam rano do fryzjera, wyjęłam, bo uwierała, i położyłam pudełko obok. A potem zobaczyłam swój przystanek i poleciałam. W moim wieku się nie lata, to i głowa nie nadążyła.
+ ? n Jechałaś z biletem?
+ = n Dziś nie. Spieszyłam się i nie skasowałam. Zapłacę mandat, kochanie, jak trzeba.
+  ? n Dziś nie. A zwykle?
+  = m Będziemy liczyć? Wesele za dwie godziny, nie zdążysz. Często, dziecko. Ale zawsze z szacunkiem dla konduktora.
+? u Na czyj ślub się spieszysz?
+= e Wnuczki, Fridy. Kościół świętej Łucji, dziesiąta. Narzeczony ma wąsy jak szczotka do butów, ale ona go kocha, przysięgam.
+ ? n Rodzina wie, że nie masz zębów?
+ = n Nikt. Córce powiedziałam, że jestem przeziębiona i jem zupę. Zęby to sprawa prywatna, dziecko.
+ ? u A jak nie zdążysz ich odzyskać?
+ = m To będę się uśmiechać wewnętrznie. Frida się popłacze, ja się popłaczę, a wąsaty zacznie mówić o kredycie.
+? n @d13_mandat W pudełku jest mandat bez pieczątki, z dopiskiem konduktora: „zdarza się”.
+= e Dziecko, emerytura to czterysta dolarów i zęby na raty. Bilet kosztuje tyle co obiad. A Leo to dobry człowiek, więc nie piszcie na niego nic.
+
+# d13_tess
+? u Jak wygląda ta skrzynka?
+= m Zielona, metalowa, z trójką wybitą na wieczku. Zamek się zacina, otwiera się go płaskim śrubokrętem. Tobias dostał ją od ojca razem z zawodem.
+ ? r Co powinno być w środku?
+ = n Narzędzia. Zegarek, jeśli go tam schował. I klucz z numerkiem do jakiejś szafki, o której nic nie wiem. Chcę ją otworzyć sama, zanim ktoś mi powie, co w niej jest.
+? r Jak trafiła do nas?
+= n Pogłębiarka wyciągnęła ją z mułu w tym miesiącu. Policja rzeczna odesłała tramwajem jako rzecz bez właściciela. Zobaczyłam wykaz na słupie i poznałam wieczko po opisie.
+ ? n Ktoś jeszcze pytał o tę skrzynkę?
+ = n Nikt. Ja pierwsza. A jeśli ktoś pytał wcześniej, to powiedz mi kto. Naprawdę chcę wiedzieć.
+? u Kim był twój brat?
+= e Tobias Rusk, elektryk. Cichy, punktualny, nie pytał o więcej, niż trzeba. Brał nocne zmiany i nigdy nie mówił gdzie.
+ ? n Nocne zmiany, o których nie mówił. Dla kogo pracował?
+ = n Nie wiem. Raz przyniósł do domu kubek z zajezdni. Powiedział, że siedzi nocami przy jakimś okienku i pilnuje cudzych rzeczy. Myślałam, że żartuje.
+ ? n Policja mówi: wypadek. Nie wierzysz?
+ = e Tobias pływał jak ryba. I kiedy go wyłowili, nie miał zegarka, a nie zdejmował go nawet do kąpieli. To żaden dowód. Ale ja tym żyję od dwóch lat.
+  ? r Czemu przychodzisz dopiero teraz?
+  = n Bo przez dwa lata wolałam nie wiedzieć. Dopiero ta kartka na słupie ruszyła mnie z miejsca.
+? n @d13_zegarek_tr Na zegarku jest grawer: „T.R. — od T.”. Od kogo?
+= e Ode mnie. T. jak Tess. Dałam mu go na trzydzieste urodziny. Nosił na lewej ręce i nie zdejmował.
+ ? r Wskazówki stoją na 23:15. Co z tym zrobisz?
+ = m Zawiozę do zegarmistrza, który jest biegłym. Chcę mieć na papierze, o której stanął. Z papierem policja nie powie mi drugi raz „wypadek”.
+? n @d13_karta_szafki W przegródce jest klucz i karta z numerem szafki. Wiesz, gdzie ta szafka stoi?
+= n Nie wiem. Jeśli ty wiesz, nie mów na głos. Chcę stanąć przed nią z kluczem w ręku, a nie z cudzym opisem w głowie.
+
+# d14_noah
+? u Jak wygląda ten organizer?
+= m Czarny, skórzany, z gumką na grzbiecie. Noszę go pół roku, róg wytarł się na szaro.
+ ? r Co w nim jest?
+ = n Terminy, numery, adres Leny Brandt. I kalendarz, w którym wtorek, siódmy września, jest zakreślony na czerwono.
+? r Gdzie go zostawiłeś?
+= n W szóstce, po dyżurze. Położyłem obok termosu i wziąłem termos. Czyli: nie ten sprzęt. Drugi raz w miesiącu coś u was zostawiam.
+ ? n Policjant gubi dwie rzeczy w miesiąc. Co się z tobą dzieje?
+ = e Nie śpię. Od piątku, szóstego sierpnia, kiedy mąż przyszedł o 6:10 ze zdjęciem w kopercie. Czyli: sprawa siedzi mi w głowie zamiast w aktach.
+? n Co to za kartka do podpisu?
+= n Oświadczenie. Że Maya Doyle żyje, odeszła z własnej woli i nie chce kontaktu. Jej podpis zamyka sprawę. Tylko nie mam pewności, że ta kartka w ogóle do niej trafi.
+ ? r Mogę jej to przekazać, jeśli się tu pojawi?
+ = m Tylko jeśli przyjdzie sama. Nie proszę, żeby jej szukać. Proszę, żeby kartka tu leżała, na wszelki wypadek.
+ ? r Co się stanie we wtorek, jeśli podpisu nie będzie?
+ = n Sprawa idzie do wydziału, a tam nikt nie pyta, czy ktoś chce być znaleziony. A Doyle wynajmie detektywa. Podobno za tysiąc dwieście dolarów.
+  ? n Czemu wersja Evana ci nie pasuje?
+  = n To moje zmartwienie. Powiem tyle: ktoś nie mówi mi wszystkiego, a ja wolę pytać po cichu.
+? n Czemu patrzysz na moją tabliczkę?
+= n Bo jest pusta. Nie ma na niej nazwiska. Masz przy sobie jakiś dokument? Nie? Zapisuję: dyżurny, bez nazwiska. Nocą różnie bywa.
+ ? n Poprzedni dyżurny też nie miał nazwiska?
+ = n Miał, ołówkiem: Holt. Też bez skierowania, też z ogłoszenia. Czyli: ktoś lubi sadzać przy tym okienku ludzi, o których nikt nie zapyta.
+? n @d14_kartka_oswiadczenie W organizerze jest notatka: „Evan: 6:10, ulotki 22:15?”. Co to znaczy?
+= n Że zamówił ulotki z twarzą żony osiem godzin przed zgłoszeniem. Może zbieg okoliczności. Dlatego nie szukam jej na siłę.
+
+# d14_billie
+? u Jak wygląda ten kask?
+= m Różowy, z nalepką z gwiazdką. Z tyłu pęknięty, bo spadłam ze schodów. No, może dwa razy.
+ ? n Pęknięty kask już nie chroni. Wiesz o tym?
+ = n No weź, wiem. Ale nowy kosztuje trzydzieści dolców, a ten jest przynajmniej ładny. Lepszy pęknięty niż żaden, nie?
+? r Gdzie dokładnie go zostawiłaś?
+= n W czwórce, miałam go na kolanach. Gadałam przez telefon i wysiadłam bez niego. Serio, nawet nie poczułam.
+ ? r Co robisz w czwórce w środku nocy?
+ = m Jeżdżę. Hulajnogą, tramwajem, byle tam, gdzie nie ma nauczycieli. Raz konduktor z szóstki dał mi herbatę i nawet nie spytał, ile mam lat.
+  ? n Czemu nie siedzisz w domu?
+  = e Bo w domu pytają, czemu nie jestem w szkole. A w szkole pytają, co się dzieje w domu. To jeżdżę.
+? n Jaki egzamin masz jutro?
+= k Taki... z jazdy. Znaczy z fizyki. No, poprawkowy. Wiesz, o co chodzi.
+ ? n Do egzaminu z fizyki potrzebny jest kask?
+ = k No... bo to fizyka w praktyce. Prędkość, tarcie. Dobra, słabe to było.
+ ? n Ile ty naprawdę masz lat?
+ = k Osiemnaście. No, prawie. Siedemnaście? Dobra, szesnaście i pół. Ale w środku jestem dorosła.
+  ? u Czego się boisz, że tak kręcisz?
+  = e Że zadzwonicie do szkoły. Mam trzy dni nieobecności i bardzo ładne usprawiedliwienie. Podrobione, ale ładne.
+? n @d14_legitymacja Pod wyściółką jest legitymacja szkolna. Klasa 2B.
+= e Moja. Rocznik dwa tysiące dziewiąty. No dobra, już nie kłamię. Tylko nie dzwońcie, serio.
+
+# d15_sam
+? u ~sam Jak wygląda ten termos?
+= m Stalowy, zielony, z wgnieceniem na pokrywce. Spadł mi kiedyś z ciężarówki. Klamra jest lewostronna, ktoś pomyślał o mańkutach.
+ ? n ~sam Mówisz o klamrze i nie patrzysz na księgę. Nie chcesz tu być?
+ = n Nie chcę. Przesiedziałem przy tej szybie dwa lata. Wiem, jak to krzesło skrzypi i co leży w każdej szufladzie. Wolałbym nie wiedzieć.
+? r ~sam Czemu przychodzisz dopiero teraz?
+= n Bo Vera napisała, że zamykają szafkę. Inaczej bym nie przyszedł. Nie lubię tego miejsca.
+ ? u ~vera Vera, czemu go wezwałaś?
+ = m Bo zamykają szafkę, a on przez miesiąc nie przyszedł po nic. I wolałam, żeby ktoś przy tym był, kiedy będzie tu stał. Sam różnie znosi to okienko.
+ ? r ~sam Gdzie byłeś przez ten miesiąc?
+ = n W porcie. Kolega załatwił mi robotę przy przeładunku. Potrzebuję referencji do piątku, dziesiątego września, inaczej ją stracę. Stąd ich nie dostanę, wiem.
+? n ~sam Co się stało ze stroną czterdzieści jeden?
+= e Wyrwałem ją. Żeby nikt nie miał tych nazwisk. Nie pytaj więcej, bo powiem za dużo.
+ ? r ~sam Mówisz, że w szufladzie została kalka. Co mam z nią zrobić?
+ = n Zasłoń nazwiska albo oddaj ją mnie. Jak pokażesz bez zasłony, Nora ma swój dowód, ale czternaście rodzin ląduje na biurku Urzędu. Wybieraj: oni albo ja.
+  ? n ~sam Czemu Victor nie może jej zobaczyć?
+  = n Bo nie wierzę w drugie egzemplarze. Każda kartka, która idzie dalej, trafia w końcu do kogoś, kto umie czytać.
+ ? n ~sam Czyje nazwiska na niej były?
+ = n Ludzi, którzy wyjechali. I lokatorów, którzy zapłacili za coś, czego nie dostali. Na jednej stronie, obok siebie. Dlatego nie mogła zostać.
+? n ~sam Czemu wydałeś Thomasowi Wardowi rękawiczkę bez wpisu?
+= m Bo to pamiątka, a nie zguba. Wpis robi z niej zgubę. A on stracił już dość.
+ ? n ~sam Ile rzeczy wydałeś w ten sposób?
+ = n Nie liczyłem. Na początku jedną na tydzień. Potem ktoś zauważył, że umiem nie wpisywać, i zaczął z tego korzystać.
+? n @d15_termos_notatka ~sam W termosie jest kartonik: „Nie pytaj, od czego uciekasz. Nikt nie pyta”. Do kogo to pisałeś?
+= e Do siebie. Tak myślałem. Teraz widzę, że to pasuje do każdego, kto usiądzie na tym krześle. Do ciebie też.
+? n @d15_zatwierdzenie_victora ~sam W szufladzie jest zatwierdzenie z podpisem Victora. Co to?
+= n Rozliczenie, które Victor zamknął. Potem ktoś dopisał pozycje innym tuszem. Myślę, że nie on. On nie zmienia nawet przecinka.
+? n @d15_szosta_linia ~sam Na kalce jest szósta linia, zaklejona. Co pod nią jest?
+= e Nie czytaj tego na głos. Ta linia na kogoś czeka i nie wiem jeszcze, jak ci to powiedzieć. Po prostu nie czytaj dalej przy Victorze.
+
+# d15_pruitt
+? u Skąd masz tyle parasoli?
+= m Z pętli, z ławek, z kratek na przystankach. Padało cały tydzień, ludzie zostawiają. Zbieram, bo parasol bez człowieka to smutny widok.
+ ? r Co robisz, kiedy ktoś się po któryś zgłosi?
+ = m Oddaję z uśmiechem i o nic nie pytam. Raz przyszła kobieta po parasol w kwiatki i popłakała się ze szczęścia. Nie wiem czemu. Ale było miło.
+  ? n Często ktoś się zgłasza?
+  = e Dwa razy w tym roku. Reszta czeka. Nikt nie przychodzi, więc wszystko w porządku. Tak sobie mówię.
+? r Czemu oddajesz je dopiero dzisiaj?
+= n Bo wcześniej było ich dziesięć. Jedenaście to ładniejsza liczba. A przy okazji: nikt mnie nie pytał, to się nie narzucałem.
+ ? n Nie prościej zostawić je na przystanku?
+ = e Zmokną, wiatr porwie, ktoś złośliwy połamie. No i gdybym zostawił, nie miałbym po co tu przychodzić.
+? n Po co właściwie je zbierasz?
+= m Ktoś musi. Moja żona mówiła, że kto nie oddaje cudzych rzeczy, nie zasługuje na własne.
+ ? u Który jest najstarszy?
+ = m Ten czarny, z drewnianą rączką, z siedemdziesiątego dziewiątego. Ma krzywy drut. Jego nie oddaję, tylko przy okazji pokazuję. Jest mój. Znaczy jej.
+? n @d15_pruitt_kartka Do siatki jest przypięta lista: gdzie i kiedy który znaleziony. Po co ją prowadzisz?
+= m Żeby wiedzieć, który skąd. Każdy, kto wraca po parasol, mówi: „zostawiłem na pętli”. A ja wiem, na której i o której. To też jest kwit, tylko mój.
+ ? r Przy jednym stoi: „ulubiony, E.W. na rączce”. Czyj to?
+ = n Nie wiem czyj. Leżał w czwórce, przed świętami. Lubię go, bo jest porządnie zrobiony, a takich już nie robią. Jak się znajdzie E.W., oddam bez gadania.
+
+# d16_maya_lena
+? u ~maya Jak wygląda ta saszetka?
+= m Granatowa, na zamek, w rogu haft: M.D. Dwie przegródki. W jednej rzeczy na drogę, w drugiej papiery.
+ ? n ~maya Co jest w tej drugiej przegródce?
+ = n Kartka dla Leny i dwa żetony bagażowe. Moja walizka stoi w przechowalni, nie tutaj. Do niej są te żetony.
+? r ~lena Lena, czemu mówisz, że saszetka jest twoja?
+= n Bo ja ją kupiłam. Tydzień temu, Mai na drogę. Maya zostawiła ją w tramwaju, a ja przyszłam sprawdzić, czy tu jest. Ale... no dobrze. Kupiłam ją dla niej.
+ ? r ~lena Czego chcesz od Mai?
+ = e Żeby powiedziała, gdzie jest. Ale... nie, inaczej. Chcę tylko wiedzieć, czy jest bezpieczna. Naprawdę tylko tyle.
+ ? n ~maya Maya, to prawda, że kupiła ją Lena?
+ = n Prawda. Kupiła saszetkę, wybrała kolor i od razu włożyła do środka plan. Plan na moje życie, ułożony przez nią.
+? u ~maya Maya, co chcesz powiedzieć siostrze?
+= e Że ma przestać mnie ratować. Pomogła, dziękuję. Ale od tygodnia to ona decyduje, gdzie śpię i z kim rozmawiam.
+ ? r ~maya To czego od niej chcesz?
+ = m Jednej rzeczy. Żeby we wtorek o 6:10 postawiła moją walizkę w czwórce. Tylko tyle, nic więcej.
+  ? n ~maya A jeśli Lena zrobi po swojemu?
+  = n To nie przyjdę. Jeśli wybierze mnie, a nie swój plan, będę. Ważne okienko sprawdza się trzy razy. Dziś jest drugi.
+ ? u ~lena Lena, słyszysz to?
+ = e Słyszę. Ale... ja chciałam dobrze. Ktoś musiał myśleć za nią, kiedy uciekała z jedną torbą.
+? n ~maya Stoicie w jednej kolejce. Umówiłyście się?
+= n Nie. Lena stanęła za mną. Policzyłam: raz, dwa, trzy. I zostałam.
+? n @d16_najem_lena ~lena W saszetce jest umowa najmu na nazwisko Mai, podpisana przez Lenę. Co to?
+= e Moje. To znaczy... ja załatwiłam. Tydzień temu. Miała być niespodzianka. Ale... ona nic o tym nie wiedziała.
+ ? n ~lena Wynajęłaś jej mieszkanie bez pytania?
+ = n Bo wiedziałam, że sama nie poprosi. Ale... tak, wiem. Ona ma prawo sama wybrać. Muszę przestać planować za nią.
+? n @d16_kartka_walizka ~maya Na kartce stoi: „Jak wybierzesz ją zamiast mnie, nie przyjdę”. Kogo: ją?
+= n Walizkę. Czyli rzeczy, mieszkanie, cały porządek, który Lena dla mnie ułożyła. Albo przywiezie to, o co proszę, albo to, co sama uważa za słuszne.
+
+# d16_dorian
+? u Jak wygląda ta kaseta?
+= m Przezroczysta, z naklejką w paski, podpisana długopisem: „na pożegnanie”. W pudełku z zielonym grzbietem.
+ ? n Co jest na niej nagrane?
+ = n Jedna piosenka. W kółko, na obu stronach. Która, nie powiem. To osobiste.
+  ? u Kto ją dla ciebie nagrał?
+  = e Ktoś, do kogo nie dzwonię. I komu obiecałem, że będę jej słuchał. Słuchałem, aż taśma zaczęła falować.
+? r Gdzie ją zgubiłeś?
+= n W jedenastce, ostatni kurs, ostatnie siedzenie przy tylnych drzwiach. Całą drogę trzymałem ją w ręku. A wysiadłem bez niej. „Takie życie”.
+? r Czemu mamy ją trzymać akurat do soboty?
+= n Bo w sobotę mam coś do załatwienia. Wolałbym do tego czasu nie nosić jej przy sobie.
+ ? n Co takiego załatwiasz w sobotę?
+ = n Odbieram coś, po czym będę kimś trochę innym. Więcej nie powiem. Naprawdę nie pytaj.
+ ? n Od czego uciekasz?
+ = n Od ludzi, którzy pytają, czemu nie dzwonię. To moja sprawa.
+ ? r Na jakie nazwisko wystawić kwit?
+ = e Najlepiej na żadne. Niech będzie kwit na kasetę, nie na człowieka. Kwit idzie do księgi, a księgę czytają ci, co umieją czytać.
+? n @d16_kaseta_0731 Pod naklejką jest karteczka z numerem 0731 i słowem „kasetowiec”.
+= e To mój numer. Nie pytaj. Naprawdę. Od niego się zaczęło i nie wiem, jak to skończyć.
+ ? r @d9_zetony_numery Taki sam numer był na żetonie w piórniku Iris Bell.
+ = n To wiesz już więcej, niż powinno się wiedzieć po tamtej stronie szyby. W sobotę odbieram papiery. Do soboty mnie tu nie było.

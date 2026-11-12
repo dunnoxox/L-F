@@ -26,7 +26,7 @@ def load(path):
 
 def said_lines(g):
     t = g.get('wejscie', '') + ' ' + ' '.join(
-        q['odpowiedz'] for tt in g.get('tury', [])[:1] for q in tt['pytania']
+        q['odpowiedz'] for q in (g['rozmowa'] if g.get('rozmowa') else [q for tt in g.get('tury', [])[:1] for q in tt['pytania']])
         if q.get('mina') != 'klamie')
     m = re.search(RET, t, re.I)
     if m:

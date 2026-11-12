@@ -120,6 +120,7 @@ let rs = SEED; const rnd = () => (rs = (rs * 1103515245 + 12345) % 2147483648) /
       await shotOnce('magazyn_d' + st.day, 'magazyn_szukanie_d' + st.day); if (st.day <= 3 || st.day % 6 === 0) await audit(where + ' magazyn');
       // jeden pudło celowo (toast), raz na grę
       if (!seen.has('toast')) { seen.add('toast'); const wr = await page.$('.slot:not([data-target])'); if (wr) { await wr.click(); await sleep(150); await shot('toast_pomylka'); await audit('toast') } }
+      if (await has('.ogl')) { await page.click(await has('.ogl .take[data-target]') ? '.ogl .take[data-target]' : '.ogl .btn.ghost'); await sleep(500); continue } /* karta oględzin (tropy) */
       if (await has('.slot[data-target]')) { await click('.slot[data-target]', where); await sleep(700); continue }
       // przejdź po zakładkach
       const tabs = await page.$$('.tabs .tab'); let found = false;

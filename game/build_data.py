@@ -63,7 +63,7 @@ if os.path.exists(PK):
 _PAT={'4':r'\bczw[oó]r(ce|ka|kę|ki|ką|ek)\b|\blinii? 4\b','6':r'\bsz[oó]st(ce|ka|kę|ki|ką)\b|\blinii? 6\b','11':r'\bjedenast(ce|ka|kę|ki|ką)\b|\blinii? 11\b'}
 _RET=r'\b(wróci\w*|przyjecha\w*|przywiezi\w*)\s+(czwórką|szóstką|jedenastką)';_RM={'czwórką':'4','szóstką':'6','jedenastką':'11'}
 def _said(g):
-    t=g.get('wejscie','')+' '+' '.join(q['odpowiedz'] for tt in g.get('tury',[])[:1] for q in tt['pytania'] if q.get('mina')!='klamie')
+    t=g.get('wejscie','')+' '+' '.join(q['odpowiedz'] for q in (g['rozmowa'] if g.get('rozmowa') else [q for tt in g.get('tury',[])[:1] for q in tt['pytania']]) if q.get('mina')!='klamie' and not (g.get('rozmowa') and q.get('wymaga')))
     m=re.search(_RET,t,re.I)
     if m: return [_RM[m.group(2).lower()]]
     return [k for k,p in _PAT.items() if re.search(p,t,re.I)]
@@ -156,5 +156,10 @@ LANG.update({'found':'To nie było dla Twoich oczu.','notes_none':'Jeszcze nic t
  'name_h':'„Jak Cię zapisać?”','name_s':'Sam napisał to ołówkiem na odwrocie numerka i przesunął pod szybą. „Ktoś powinien wiedzieć, kto tu siedzi.” Wpisz cokolwiek. To imię jeszcze wróci.',
  'ep_odebrany':'W poniedziałek 13.09, gdy ktoś podpisał po Tobie, odchodzisz. Następca dostaje list, a przy nim stoi Vera i mówi prawdę zamiast milczeć.',
  'ep_odebrany_m':'W poniedziałek 13.09, gdy ktoś podpisał po Tobie, odchodzisz. Następca dostaje list, a przy nim stoi Vera i mówi prawdę zamiast milczeć. Z poranną pocztą przychodzi kartka od Mai: „Odebrane.”'})
-open('data.js','w',encoding='utf-8').write('window.DATA='+json.dumps(G,ensure_ascii=False)+';window.EXTRA='+json.dumps(EXTRA,ensure_ascii=False)+';window.WIECZOR='+json.dumps(WIECZOR,ensure_ascii=False)+';window.LANG='+json.dumps(LANG,ensure_ascii=False)+';')
+# ROZMOWA-DRZEWO: teksty silnika i widok zgodności dla starych narzędzi QA (g.tury liczone z g.rozmowa: tematy / dopytania / głębsze dopytania)
+LANG.update({'q_fresh':'dopytaj','turn_early':'Dość pytań. Do magazynu','eve_next':'Następna kartka','eve_skip':'Odłóż resztę','eve_of':'kartka {i} z {n}',
+ 'step_ask':'Krok 3: pytaj. Pytania z paskiem to dopytania do tego, co gość właśnie powiedział'})
+LANG['tut_l'][3]='Rozmawiaj: kliknij pytanie. Po każdej odpowiedzi pojawiają się dopytania do tego, co gość właśnie powiedział. Słuchaj uważnie, ktoś może kłamać.'
+SHIM=";window.DATA.forEach(function(g){if(g.rozmowa&&!g.tury)Object.defineProperty(g,'tury',{get:function(){var L=[[],[],[]];(function w(l,d){(l||[]).forEach(function(x){L[Math.min(d,2)].push(x);w(x.dalej,d+1)})})(g.rozmowa,0);if(!L[2].length)L[2]=L[1];return L.map(function(p){return{pytania:p}})}})});"
+open('data.js','w',encoding='utf-8').write('window.DATA='+json.dumps(G,ensure_ascii=False)+';window.EXTRA='+json.dumps(EXTRA,ensure_ascii=False)+';window.WIECZOR='+json.dumps(WIECZOR,ensure_ascii=False)+';window.LANG='+json.dumps(LANG,ensure_ascii=False)+';'+SHIM)
 print(len(G),'gości',len(EXTRA),'extra',len(WIECZOR),'wieczory')

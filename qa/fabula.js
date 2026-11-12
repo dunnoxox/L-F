@@ -101,7 +101,7 @@ function pickD(g, ds) { // ds: [{akcja, kasa}]
       await sleep(200); const g = DAYS[st.day][st.gi];
       if (entryLogged !== g.id) { entryLogged = g.id; curG = g; L(`\n### ${g.postac} [${g.id}] · rzecz: ${g.itemName}`); L('**Wejście** (' + (await txt('#say .lab')) + '): ' + (await page.$eval('#say span:last-child', e => e.textContent).catch(() => ''))); await shot('d' + st.day + '_' + g.id + '_wejscie') }
       const qs = await page.$$eval('#qs button.q', bs => bs.map(b => ({ sec: b.classList.contains('sec'), tekst: b.innerText.replace(/^wiesz ze środka\s*/i, '').trim() })));
-      const all = g.tury[st.turn].pytania; qs.forEach(q => { const d = all.find(x => q.tekst.endsWith(x.tekst) || x.tekst === q.tekst); q.ton = d ? d.ton : '?'; q.mina = d ? d.mina : '?' });
+      const all = g.rozmowa ? (function w(l, o) { (l || []).forEach(x => { o.push(x); w(x.dalej, o) }); return o })(g.rozmowa, []) : g.tury[st.turn].pytania; qs.forEach(q => { const d = all.find(x => q.tekst.endsWith(x.tekst) || x.tekst === q.tekst); q.ton = d ? d.ton : '?'; q.mina = d ? d.mina : '?' });
       const i = pickQ(g, qs);
       L(`Tura ${st.turn + 1}, do wyboru: ` + qs.map((q, j) => (j === i ? '**' : '') + `[${q.ton}${q.sec ? ', wiem ze środka' : ''}] ${q.tekst}` + (j === i ? '**' : '')).join(' | '));
       await page.$$eval('#qs button.q', (b, i) => b[i].click(), i); await sleep(350);
@@ -110,6 +110,7 @@ function pickD(g, ds) { // ds: [{akcja, kasa}]
     }
     if (await has('#qs button.btn') && !(await has('.zones')) && !(await has('.sum'))) { await page.click('#qs button.btn'); await sleep(500); continue }
     if (await has('.field .grid')) {
+      if (await has('.ogl')) { await page.click(await has('.ogl .take[data-target]') ? '.ogl .take[data-target]' : '.ogl .btn.ghost'); await sleep(500); continue } /* karta oględzin (tropy) */
       if (await has('.slot[data-target]')) { await page.click('.slot[data-target]'); await sleep(600); continue }
       const tabs = await page.$$('.tabs .tab'); let f = false; for (const t of tabs) { await t.click(); await sleep(120); if (await has('.slot[data-target]')) { f = true; break } }
       if (!f) { L('!! BLOKADA: rzeczy nie ma w magazynie'); koniec = 'BLOKADA d' + st.day; break } continue
