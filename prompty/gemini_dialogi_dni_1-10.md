@@ -19,6 +19,7 @@
 python3 -I koncept/rozmowy_dsl/wstaw.py          # musi wypisać: nieznane id: []
 cd game && python3 -I build_data.py && cd ..     # przebudowuje game/data.js
 python3 -I docs/tools/validate_dialogs.py        # musi wypisać OK
+node qa/tropy_test.js                            # cechy rzeczy z dni 1–3 nadal padają w rozmowie
 node qa/spojnosc_dialogow.js                     # raport docs/SPOJNOSC_DIALOGOW.md; WIEDZA, KALKA, PLEC mają być na zerze
 ```
 
@@ -73,6 +74,7 @@ Dla każdej z 21 scen:
 - Każda scena ma temat o wyglądzie rzeczy i dopytanie o znak szczególny. W odpowiedziach muszą zostać te same rzeczowniki, co dziś (biała nitka, czerwona wskazówka, naklejka „Mama”, odłamany dziób, pęknięta klamra itd.), bo gra rozpoznaje je po słowach.
 - Dla dni 1–3 obowiązuje plik `tropy.js`: każde wyrażenie z pola `re` musi dalej pasować do jakiejś odpowiedzi gościa bez `@`, na poziomie 0 albo 1. Nie zmieniaj tych sformułowań.
 - Dla dni 4–10 wpleć w odpowiedzi trzy konkretne cechy rzeczy (kolor albo materiał, kształt albo rozmiar, znak szczególny), każdą w osobnej odpowiedzi, tak żeby gracz, który nie dopytał, wiedział mniej.
+- Osobno, w odpowiedzi na temat „gdzie i kiedy”, gość podaje linię tramwaju i porę zguby (dzień albo godzinę). To czwarta cecha: w magazynie rzecz ma zawieszkę z linią i datą. Nie przenoś tej informacji do innej odpowiedzi i nie zmieniaj linii ani pory w dniach 1–3.
 - Kłamca albo ktoś, kto przyszedł po cudzą rzecz, zna ją tylko z wierzchu. Właściciel zna środek, ale mówi po swojemu i czasem się myli w drobiazgu. Uczciwy, który słabo pamięta, nie może wyjść na oszusta.
 - Gracz nigdy nie podpowiada cechy w pytaniu, jeśli jej wcześniej nie usłyszał albo nie znalazł (`@`).
 
@@ -187,7 +189,7 @@ rozmowa:
 
 - 2 do 3 linie `decyzja:`. Akcje: `wydaj`, `odmow`, `zatrzymaj`, `zadzwon` albo własna nazwa małymi literami z podkreślnikami. Najwyżej jedna decyzja z kasą dla gracza.
 - Rozmowa w tym samym zapisie co w punkcie 8, 20 do 30 par. Pytanie o sekret oznacz `@sekret` (dosłownie to słowo).
-- Trzy cechy z pola `cechy` muszą paść w odpowiedziach tymi samymi słowami, każda w innej odpowiedzi. Kłamca zna najwyżej dwie.
+- Trzy cechy z pola `cechy` muszą paść w odpowiedziach tymi samymi słowami, każda w innej odpowiedzi. Kłamca zna najwyżej dwie. Linia tramwaju i pora zguby padają osobno, w odpowiedzi na pytanie „gdzie i kiedy”.
 
 ### 11. Na koniec, zwykłym tekstem
 
