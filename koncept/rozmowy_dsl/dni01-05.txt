@@ -1,332 +1,852 @@
 # d1_thomas
-? u Jak wygląda ta rękawiczka?
-= m Brązowa skóra, damska, mały rozmiar. Przy kciuku zszyłem ją białą nitką, bo ciemnej w domu nie było. Krzywo, ale trzyma.
- ? r Biała nitka na brązowej skórze? Czemu nie u kaletnika?
- = e Bo tym razem to ja miałem zszyć. Ellen przez czterdzieści lat cerowała po mnie wszystko, raz mogłem ja. Ręka mi lata, więc wyszło, jak wyszło.
- ? u Jak sprawdzić, że to ta, a nie podobna?
- = m Drugą mam w kieszeni, o. Wystarczy położyć je kciukami do siebie: w prawej nitka czarna, w lewej biała. Czarna skończyła mi się w połowie roboty.
-? r Gdzie i kiedy zginęła?
-= n W czwórce, wczoraj wieczorem, jak jechałem do Doków. Leżała mi na kolanie i na zakręcie zsunęła się pod siedzenie. Zauważyłem dopiero w domu.
- ? n Po co wieczorem do Doków?
- = m Do córki, do Claire. W czwartki gotuje rosół i udaje, że przypadkiem wyszło za dużo. Ona nie wie, że rękawiczka zginęła, i wolałbym, żeby tak zostało.
-  ? n Czemu Claire ma nie wiedzieć?
-  = e O to już proszę nie pytać. To sprawa między mną a córką, nie między mną a okienkiem.
-  ? r A jeśli Claire sama tu przyjdzie pytać?
-  = n To proszę jej powiedzieć, że wszystko się znalazło. Ona martwi się o mnie bardziej niż ja o siebie.
-? n Po co wozić rękawiczki żony tramwajem?
-- To już chyba nie do formularza, prawda? Stary człowiek ma swoje dziwactwa.
-= e Noszę je w kieszeni płaszcza, jedną w drugiej. Jakbym trzymał ją za rękę. Głupie, wiem.
- ? u Wcale nie głupie. Długo byliście razem?
- = e Czterdzieści cztery lata. Poznaliśmy się w tramwaju, w dwójce, której już nie ma. Dlatego w niedzielę chcę jej zanieść obie.
+? u Jak wygląda rękawiczka?
+= m Brązowa skóra. Wytarta, ale nie popękana. Ellen mówiła, że dobra skóra ma się zestarzeć razem z człowiekiem.
+ ? r Jaki rozmiar?
+ = m Mały rozmiar. Ellen miała drobne dłonie. Mnie wchodzi tylko do połowy palców.
+  ? u Przymierzałeś ją?
+  = m Przy szyciu. Musiałem czymś rozepchać środek. Dłoń miałem pod ręką, że tak powiem.
+ ? r Po czym odróżnić ją od podobnej?
+ = m Przy kciuku zszyłem ją białą nitką. Krzywo. Ręka lata, ale nitka trzyma.
+  ? n Czemu akurat białą?
+  = n Została w pudełku Ellen. Ciemnej już nie było. Nie chciałem kupować całej szpulki na jeden kciuk.
+? r Gdzie w czwórce siedziałeś?
+= n W czwórce, wczoraj wieczorem, przy oknie. Rękawiczka leżała na kolanie, na zakręcie spadła. Nie zauważyłem od razu.
+ ? r Dokąd jechałeś?
+ = m Do córki, Claire, do Doków. W czwartki gotuje rosół i zawsze wychodzi jej za dużo.
+  ? u Wie, że szukasz rękawiczki?
+  = n Nie. I proszę jej nie mówić, jeśli przyjdzie. Zacznie mnie odprowadzać nawet do kiosku.
+ ? r Dlaczego nie była w kieszeni?
+ = n Wyjąłem ją, żeby sprawdzić szew. Człowiek raz coś zszyje i zaraz musi oglądać swoje dzieło.
+  ? u Szew puścił?
+  = m Nie. To ja puściłem rękawiczkę. Na nitkę nie ma co zwalać.
+? u Masz ze sobą drugą?
+= m W kieszeni. Proszę, prawa. Noszę ją osobno, odkąd lewa zginęła.
+ ? r Czym różnią się szwy?
+ = m W prawej nitka czarna, w lewej biała. Czarna skończyła się wcześniej. Obie szyte tą samą, niezbyt pewną ręką.
+  ? r Możesz ją zostawić na czas porównania?
+  = n Na ladzie, tak. Byle nie w magazynie. Jeszcze mi się zrobi z tego trzecia wizyta... To znaczy, trzecie szukanie.
+ ? u Nosisz je nawet wtedy, gdy jest ciepło?
+ = n W płaszczu. Jedną w drugiej. Portfel mam w drugiej kieszeni, żeby nic ich nie drapało.
+  ? u A kiedy zmieniasz płaszcz?
+  = e Przekładam najpierw rękawiczki. Telefonu czasem zapomnę. Tych nie powinienem.
+? u Co będzie, jeśli lewa się nie znajdzie?
+= n W niedzielę pojadę z jedną. Tylko będę wyglądał, jakbym znowu czegoś nie dopilnował.
+ ? u Kto pojedzie z tobą?
+ = m Claire. Niesie kwiaty, ja wodę. Tak się podzieliliśmy, żeby nie stać oboje z pustymi rękami.
+  ? u Możesz powiedzieć jej o zgubie w drodze.
+  = n Mogę. Tylko ona wtedy odłoży swoje sprawy i zacznie załatwiać moje. Nie po to gotuje ten rosół.
+ ? r Chcesz zostawić rękawiczki na grobie?
+ = e Na chwilę. Obie, obok siebie. Potem schowam, bo Ellen by mnie zrugała za marnowanie dobrej skóry.
+  ? u Zawsze tak pilnowała rzeczy?
+  = m Guziki trzymała według kolorów. Ja teraz szukam igły w pięciu pudełkach, a ona trafiała bez patrzenia.
 ? n %kwit To pierwsza wizyta w tym biurze?
-= k Pierwsza. Z urzędami się nie zadaję.
- ? n @d1_kwit_0417 #kwit To skąd w mankiecie kwit z tego biura, numer 0417?
- = e No dobrze, byłem tu. Sześć tygodni temu zgubiłem prawą. Taki młody człowiek, Sam, oddał mi ją od ręki. Powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstyd mi było, że gubię drugi raz.
-  ? r Sam mówił coś jeszcze?
-  = n Że lewa też kiedyś przyjdzie, bo rękawiczki chodzą parami. I żebym o nim za dużo nie opowiadał. To nie opowiadałem.
-? n @d1_kwit_0417 #kwit W mankiecie jest kwit z tego biura, numer 0417. Skąd?
-= e No dobrze, byłem tu już. Sześć tygodni temu zgubiłem prawą. Taki młody człowiek, Sam, oddał mi ją od ręki. Powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstyd mi było, że gubię drugi raz.
- ? r Sam mówił coś jeszcze?
- = n Że lewa też kiedyś przyjdzie, bo rękawiczki chodzą parami. I żebym o nim za dużo nie opowiadał. To nie opowiadałem.
- ? u Nie ma się czego wstydzić. Każdy coś gubi.
- = m Ale nie dwa razy to samo, po jednej naraz. Ellen by powiedziała, że robię to specjalnie, żeby mieć z kim pogadać.
-? n @d1_biala_nic Pod białą nicią jest starszy szew, brązowy. Czyj?
-= e Ellen. Szyła wieczorem przed telewizorem, nawet nie patrzyła na igłę. Swoją białą dołożyłem po lutym, bo jej nitka się przecierała. Nie umiałem jej wypruć.
+= k Pierwsza. Nie mam zwyczaju chodzić po urzędach.
+ ? r To skąd wiesz, gdzie jest nocne okienko?
+ = n Zajezdnię znam. Szyba się świeci, człowiek podchodzi. Jeszcze potrafię trafić tam, gdzie jasno.
+  ? u Trudno było tu przyjść?
+  = n Trudniej powiedzieć, że chodzi o jedną rękawiczkę. Przy innych zgubach to wygląda śmiesznie.
+ ? n @d1_kwit_0417 #kwit W mankiecie jest kwit 0417 sprzed sześciu tygodni. Skąd?
+ = e Byłem tu po prawą. Sam oddał bez wpisu. Wstyd mi, że teraz przychodzę po lewą, jakbym niczego nie umiał upilnować.
+  ? r Co Sam powiedział o lewej?
+  = n Że rękawiczki chodzą parami i ona też kiedyś przyjdzie. Żebym o nim dużo nie opowiadał. Więc nie opowiadałem.
+   ? n Ukrywasz jego pomoc czy własną zgubę?
+   = e Teraz już jedno i drugie. O nim prosił Sam, o rękawiczce sam nie chciałem mówić.
+    ? u Co mogę powiedzieć Claire, jeśli zapyta?
+    = n Że lewa się znalazła, jeśli się znajdzie. Resztę spróbuję powiedzieć sam.
+? u Dlaczego tak zależy ci na tej jednej parze?
+= e To rękawiczki Ellen. Nowe mogę kupić. Tylko nowych ona nigdy nie miała na rękach.
+ ? u Długo byliście razem?
+ = m Czterdzieści cztery lata. Poznaliśmy się w dwójce, której już nie ma. Miała bilet, ja nie miałem drobnych.
+  ? u Kupiła ci bilet?
+  = m Pożyczyła. Bardzo wyraźnie powiedziała: pożyczyła. Musiałem ją potem znaleźć, żeby oddać.
+ ? n A tę parę kto kupił?
+ - To już chyba nie do formularza, prawda? Stary człowiek ma swoje dziwactwa.
+ = n Nie pamiętam. Proszę nie wpisywać z tego, że nie moje. Pamiętam, jak je zdejmowała, nie gdzie był sklep.
+  ? u Jak zdejmowała?
+  = e Najpierw ciągnęła za każdy palec. Ja zawsze szarpałem za mankiet. Dlatego ona rzeczy miała latami.
+? n @d1_kwit_0417 #kwit Kwit 0417 mówi o prawej wydanej bez wpisu. To twoja?
+= e Tak. Sam mi ją oddał. Skłamałem, bo wstyd drugi raz przyjść z tym samym. Tylko rękawiczka inna.
+ ? r Dlaczego bez wpisu?
+ = n Powiedział, że pamiątka, nie zguba. Nie pytałem, czy wolno. Wziąłem i wyszedłem, zanim się rozmyślił.
+? u @d1_biala_nic Pod białym szwem jest brązowy. Kto go zrobił?
+= e Ellen. Mój jest na wierzchu. Jej nitka się przecierała, ale nie potrafiłem jej wypruć.
+! wydaj Schowam je razem. Teraz już nie będę sprawdzał szwu w tramwaju.
+> wydaj W niedzielę jadę z Claire na cmentarz z obiema rękawiczkami. Pytała, kto wydał prawą bez papieru. Powiedziałem, że nazwiska nie znam. — T. Ward
+! zatrzymaj_sprawdz Przyjdę z Claire. Tylko proszę nie mówić jej od progu, że ojciec znowu coś zgubił.
+> zatrzymaj_sprawdz Claire Ward: „Ojciec nie wychodzi z domu, żeby nic więcej nie zgubić. Potwierdzę, że rękawiczka jest mamy, ale kto oddał mu prawą bez papieru?”
+! wydaj_bez_wpisu Sam też tak zrobił. Włożę je do jednej kieszeni, a o papier nie będę pytał.
+> wydaj_bez_wpisu Thomas Ward: „Claire już wie, że odzyskałem obie. O tym, że dwa razy bez wpisu, jeszcze jej nie powiedziałem.”
 
 # d1_rosa
-? u Jak wygląda ta koperta?
-= m Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.
- ? r Jest na niej jakieś nazwisko?
- = n Moje, ołówkiem: Vale, przez V. I kwota w rogu, 129. Dziewiątka wygląda jak ósemka, ale to dziewiątka.
+? u Jak rozpoznać kopertę?
+= m Brązowa, z jedną zszywką. Zwykła biurowa, nie żadna na prezenty.
+ ? r Jak jest zamknięta?
+ = n Jedna zszywka, wbita krzywo. Kierownik zszywa na stojąco, więc połowa jest w papierze, połowa sterczy.
+  ? r Rozrywałaś ją przy liczeniu?
+  = m Odgięłam róg. Banknoty wysunęłam, zszywka została. Palec pamięta ją do teraz.
  ? r Co jest w środku oprócz pieniędzy?
- = n Kartka z naszymi nocami, złożona na pół. Kierownik wypisuje na niej, kto ile przerobił.
-? r Gdzie i o której ją zgubiłaś?
-= n W jedenastce, o szóstej rano, po nocce. Położyłam ją obok, żeby zapiąć torbę, i przysnęłam. Obudziłam się na pętli, już bez koperty.
- ? u Po nocce? To od której jesteś na nogach?
- = m Od wczoraj, od dziewiątej wieczorem. Potem mała do szkoły, potem tutaj. Śpię w tramwajach i tak to się potem kończy.
- ? n Ktoś siedział obok, kiedy przysnęłaś?
- = n Nie patrzyłam. Rano jedenastką jadą same takie jak ja, każda z zamkniętymi oczami. Nie chcę nikogo oskarżać. Chcę kopertę.
-? n Skąd pewność, że było w niej równo 129 dolarów?
-= m Bo liczyłam. Trzy noce po czterdzieści trzy, razem sto dwadzieścia dziewięć. Przeliczyłam trzy razy, zanim wsiadłam.
- ? r Tylko trzy noce? Tydzień ma więcej.
- = n Miałam cztery. Za czwartą nie dostałam. To długa historia, a ja nie mam siły na długie.
-  ? n Kto zdecydował, że za czwartą nie dostaniesz?
-  = n Iris Bell. Zarządza naszą kamienicą, odbiera za nas wypłaty z pralni i rozdaje w kopertach. Mieszkamy u niej, więc nikt się nie stawia.
- ? u Na co pójdą te pieniądze?
- = m Na czynsz, jutro termin. Za spóźnienie zarządczyni dolicza dwadzieścia dolarów kary. Czyli z każdym dniem tutaj robi mi się z tego sto dziewięć.
-? n @d1_lista_nocy W kopercie jest lista nocy. Czwarta przekreślona. Dlaczego?
-= e W czwartek wyszłam o północy, bo mała miała gorączkę. Iris Bell, nasza zarządczyni, skreśliła mi całą noc, nie pół. Cztery godziny przerobiłam za darmo.
- ? n Czemu się z nią nie kłóciłaś?
- - Pytasz jak ktoś, kto nigdy niczego nie wynajmował. Daj spokój.
- = n Bo wynajmuje mi pokój i załatwiła mi tę pralnię. Jak się pokłócę, nie mam ani jednego, ani drugiego. Policz sobie.
- ? u A córka? Już zdrowa?
- = m Zdrowa, dzięki. Ada, dziesięć lat, twarda sztuka. Dziś sama zrobiła sobie kanapki do szkoły. I mnie też.
-  ? n Kto zostaje z małą, kiedy masz nockę?
-  = e A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.
-! odmow No to pięknie. Jutro czynsz, a ja z pustymi rękami. Przyjdę rano z kierownikiem, niech on poświadczy.
+ = n Kartka z naszymi nocami. Złożona na pół, inaczej się nie mieści.
+  ? r Jest podpisana?
+  = m Na kopercie Vale, ołówkiem. W rogu 129. Dziewiątka wygląda jak ósemka, kierownik tak pisze.
+? r Kiedy została w tramwaju?
+= n O szóstej rano, w jedenastce. Odłożyłam obok, żeby zapiąć torbę. Obudziłam się na pętli.
+ ? u Po nocnej zmianie?
+ = m Od dziewiątej wieczorem na nogach. Potem córka do szkoły, potem szukanie koperty. Sen na raty, tylko bez odsetek.
+  ? u Córka poszła sama?
+  = m Ada, dziesięć lat. Kanapki zrobiła sobie i mnie. Moja jeszcze leży w torbie, nie mogę przełknąć.
+ ? r Ktoś siedział obok?
+ = n Nie patrzyłam. Same takie jak ja, głowy pod oknem. Nie będę wybierać złodziejki z zamkniętymi oczami.
+  ? r Pytałaś na pętli?
+  = n Tak. Odesłali tutaj. Zrobiłam tą jedenastką więcej kółek niż w pracy przy praniu.
+? r Skąd dokładnie kwota 129 dolarów?
+= m Trzy noce po czterdzieści trzy. Liczyłam przed tramwajem. Trzy razy, niestety dobrze.
+ ? n Niestety?
+ = n Bo pracowałam cztery noce. Za czwartą nie dostałam. Liczenie tego nie naprawi.
+  ? n Kto skreślił czwartą?
+  = n Iris Bell. Zarządza kamienicą, odbiera nasze wypłaty z pralni. Potem każda dostaje kopertę i ma nie marudzić.
+   ? n Możesz sprawdzić rachunek, zanim rozda pieniądze?
+   = n Widzę kartkę, kiedy dostaję kopertę. Wtedy pieniądze są już podzielone, a za mną stoją następne.
+    ? r Czyli liczenie ma tylko potwierdzić jej wynik?
+    = n Liczyć mogę, kłócić się też. Tylko ona potem wraca do kamienicy jako zarządczyni, a ja jako lokatorka.
+ ? r Dlaczego tak dokładnie je przeliczasz?
+ = m Jutro czynsz. Sto dwadzieścia dziewięć mam, sto dwadzieścia dziewięć muszę oddać. W takim rachunku nawet dolar hałasuje.
+  ? u Nic nie zostaje na jedzenie?
+  = n Z tego nie. W domu jest kasza. Nie przyszłam po litość, tylko po swoje pieniądze.
+? n Dlaczego wypłata jest w gotówce?
+= m Tak płaci pralnia. Papier dostaję, pieniędzy na konto nie. Mogę pracować albo pytać, czemu.
+ ? r Kto wręcza koperty?
+ = n Iris, zarządczyni. Odbiera zbiorczo. Mówi, że dzięki niej nie musimy stać po wypłatę.
+  ? n A jeśli chcesz odebrać osobiście?
+  = n To zapyta, po co komplikuję. Przy wszystkich. Potem trudno z nią rozmawiać o czynszu.
+ ? u Próbowałaś zmienić pracę?
+ = n Przy dziecku potrzebuję tych godzin. W pralni przynajmniej wiem, kiedy wyjdę. Z pieniędzmi gorzej.
+  ? u Kto zostaje wtedy z córką?
+  = n To już moja sprawa. Koperta ma moje nazwisko, nie opis całego mieszkania.
+? u Co się stanie, jeśli nie odzyskasz jej dziś?
+= n Dwadzieścia dolarów kary za czynsz. I nadal trzeba zapłacić sam czynsz. Kara go nie zastępuje.
+ ? n Kto nalicza karę?
+ = m Iris Bell. Ta sama, która rozdziela wypłaty. Pieniądze robią kółko, ja tylko na chwilę je trzymam.
+  ? r Możesz poprosić o odroczenie?
+  = n Mogę. Powie, że wszyscy mają dzieci i nie może robić wyjątków. Już słyszałam.
+ ? u Masz od kogo pożyczyć?
+ = n Od dziewczyn z pralni? Też jutro płacą. Jedna mi pożyczy, sama nie zapłaci. Razem wyjdzie drożej.
+  ? n A kierownik?
+  = m Może potwierdzić kopertę. Pieniędzy drugi raz nie da. Zszywkę pewnie tak.
+? r Jak możesz potwierdzić, że wypłata jest twoja?
+= m Nazwisko, kwota, kartka z nocami. Kierownik mnie zna. Tylko nie odbierze telefonu w środku nocy.
+ ? r Przyjdziesz z nim rano?
+ = n Jeśli trzeba. Ale rano będę też musiała odprowadzić małą. Nie rozdwoję się między pralnią a okienkiem.
+  ? u Którą sprawę wybierzesz?
+  = n Córkę. Potem tu przyjdę. I proszę nie uznać spóźnienia za dowód, że mi nie zależy.
+ ? n Czyje nazwisko widnieje na papierach wypłaty?
+ = n Jeśli chodzi o zbiorczy, będzie I. Bell. Ona odbiera za wszystkie, ale nie przepracowała za mnie tych nocy.
+  ? r Jak oddzielić twoją część od pozostałych?
+  = m Vale na kopercie i trzy noce na kartce. Sto dwadzieścia dziewięć, wciąż ta sama suma.
+? n @d1_lista_nocy Dlaczego czwarta noc na kartce jest przekreślona?
+= e Wyszłam o północy, Ada miała gorączkę. Iris skreśliła całą noc. Cztery godziny prania poszły za darmo.
+ ? u Ada już zdrowa?
+ = m Zdrowa. Rano zrobiła kanapki. Nie wie, ile mnie kosztował ten czwartek, i nie musi.
+ ? n Czemu nie upomnisz się o te cztery godziny?
+ - Pytasz jak ktoś, kto nigdy nie bał się o robotę. Daj spokój.
+ = n Iris wynajmuje mi pokój i załatwiła pralnię. Ja mam cztery godziny, ona dwa sposoby, żeby mnie wyrzucić. Policz sobie.
+! wydaj Przy szybie przeliczę. Sto dwadzieścia dziewięć, zgadza się. Teraz prosto do domu, żadnego drzemania.
+> wydaj Iris pytała, kto mi pozwolił odebrać kopertę. Od następnej wypłaty chodzę po pieniądze sama. — Rosa
+! odmow Rano przyjdę z kierownikiem. Jeśli go nie puszczą z pralni, to co mam przynieść, jego fartuch?
+> odmow Iris oddała mi sto dziewięć dolarów. Dwadzieścia potrąciła za czynsz, którego nie mogłam zapłacić bez koperty. — Rosa
+! wez_20 Sto dziewięć. Jeszcze raz: sto dziewięć. Nie będę krzyczeć, ale policzyć umiem.
+> wez_20 W kopercie brakowało dwudziestu dolarów, potem doszło dwadzieścia kary. Ada pyta, czemu znów biorę dodatkową noc. — Rosa
 
 # d2_jonah
-? u Co jest w tym plecaku?
-= m Ładowarka, książka, kupa starych biletów. I pudełko, w kieszeni od strony pleców. Pudełko jest najważniejsze.
- ? n Co jest w pudełku?
- = n Prezent. Niespodzianka. Więcej nie powiem, bo zapeszę.
-  ? u Dla kogo ta niespodzianka?
-  = e Dla June. To moja dziewczyna, pracuje w piekarni, wstaje o czwartej. O siódmej wpada do domu na kawę i wtedy chcę ją o coś zapytać.
- ? r Po co ci kupa starych biletów?
- = m Każdy jest z kursu, którym jechałem z June. Na odwrocie piszę datę. Wiem, że to dziwne. Znaczy nie dziwne, tylko... no dobra, dziwne.
-? r Gdzie i kiedy go zostawiłeś?
-= n W jedenastce, wczoraj wieczorem. Wcisnąłem go nogą pod składane siedzenie przy drzwiach, żeby June miała gdzie stanąć. I wysiadłem za nią jak cielę.
- ? n Wysiadłeś bez plecaka i nic cię nie tknęło?
- = m Patrzyłem na nią, nie na plecak. Skapnąłem się w domu, jak chciałem sprawdzić, czy pudełko dalej jest. Całą noc nie spałem.
- ? u Kim jest June?
- = e Moją dziewczyną. Dwa lata i trzy miesiące, liczę. Pracuje w piekarni, pachnie drożdżówką nawet w niedzielę. Dla niej jest to, co leży w plecaku.
-? n Co takiego stanie się o siódmej rano?
-- Eee, to prywatne. Znaczy nie tajne, tylko... prywatne. Możemy wrócić do plecaka?
-= e O siódmej June wpada z piekarni na kawę. Chcę ją wtedy o coś zapytać. O coś, o co pyta się raz w życiu. Dlatego potrzebuję plecaka.
- ? n A jak powie „nie”?
- = e To będzie najgorszy poranek w moim życiu. Ale wolę usłyszeć „nie”, niż dalej nie wiedzieć.
- ? u Wiesz już, jak ją zapytasz?
- = m Mam trzy wersje na serwetce. Dwie skreśliłem. Trzeciej się boję, bo jest krótka i nie ma się za czym schować.
-  ? n Przeczytasz mi tę trzecią?
-  = e Nie. Bez urazy, ale pierwsza usłyszy ją June, a nie okienko.
-? n @d2_paragon_raty Na paragonie jest 40 dolarów wpłaty, reszta w ratach. Stać cię na to?
-= e Nie stać. Jestem kurierem, wziąłem na sześć rat. Ale jak nie teraz, to kiedy? I tak, wiem, jak to brzmi.
- ? r June wie, że pierścionek jest na raty?
- = n Nie wie i się nie dowie, dopóki nie spłacę. Kazałaby oddać i kupić za to pralkę. Znam ją.
-? n @d2_serwetka_trzy Na serwetce są trzy wersje oświadczyn. Którą powiesz?
-= e Trzecią, tę krótką. Dwie pierwsze brzmiały jak reklama banku. Tylko nie pokazuj tej serwetki nikomu, serio.
+? u Jak wygląda plecak?
+= m Czarny, z pękniętą klamrą. Nie odpina się porządnie, trzeba trzymać obie połówki.
+ ? r Da się go zamknąć?
+ = m Da, mimo pękniętej klamry. Pasek przeciągam drugi raz. Jak ktoś pociągnie za klamrę, zostaje mu w ręce pół zapięcia.
+  ? u Nie boisz się, że coś wypadnie?
+  = n To ważne trzymam od strony pleców. Tam nikt nie sięgnie. Chyba że zostawię cały plecak, jak geniusz.
+ ? r Co jest w środku?
+ = m Ładowarka, książka, kupa starych biletów. I pudełko, w kieszeni od strony pleców.
+  ? n Co jest w pudełku?
+  = e Pierścionek. Dla June. O siódmej chcę zapytać. Tylko nie mów tego tak głośno, bo jeszcze się przestraszę.
+? r Gdzie go zostawiłeś?
+= n W jedenastce, wczoraj wieczorem, pod składanym siedzeniem przy drzwiach. June stała obok i chciałem zrobić miejsce.
+ ? u June jechała z tobą?
+ = m Moja dziewczyna. Wysiadłem za nią, a plecak pojechał dalej. Zachowałem się jak pies za kiełbasą. Nie, źle to brzmi.
+  ? u Wie, że tu jesteś?
+  = n Myśli, że mam kurs. Jestem kurierem, więc to nawet brzmi prawdopodobnie. Poza tym to prawda, tylko bez paczki.
+ ? r Kiedy zauważyłeś zgubę?
+ = n W domu. Chciałem sprawdzić kieszeń na plecach i złapałem za powietrze. Przez chwilę sprawdzałem jeszcze raz.
+  ? r Wracałeś na przystanek?
+  = m Na przystanek, na pętlę, tutaj. Trasę mam już przećwiczoną, tylko na rowerze zwykle lepiej mi idzie.
+? u Co ma się wydarzyć o siódmej?
+= e June wraca z piekarni na kawę. Wtedy poproszę ją o rękę. Znaczy, jeśli będę miał czym.
+ ? u Czemu akurat podczas kawy?
+ = m Wtedy jesteśmy sami i ona jeszcze nie zaczyna opowiadać, co trzeba naprawić. Później się nie wcisnę z pytaniem.
+  ? n Będzie po pracy. Nie lepiej dać jej odpocząć?
+  = n Może lepiej. Tylko przekładam od tygodnia. Jak plecak się znajdzie, już nie mam wymówki.
+ ? u Masz przygotowane słowa?
+ = m Na serwetce. Trzy wersje, dwie skreślone. Trzecia jest krótka i przez to najgorsza.
+  ? u Co jest złego w krótkiej?
+  = e Że potem od razu ona odpowiada. W długich mogłem jeszcze chwilę gadać.
+? n Dlaczego plecak musi wrócić jeszcze przed ranem?
+= n Mam w nim prezent dla June. Nie zastąpię go po drodze, nawet gdyby sklep był otwarty.
+ ? r Jest drogi?
+ = n Dla mnie tak. Dla jubilera pewnie nie. Patrzył, jakbym kupował baterię, a ja się spociłem.
+  ? n Zapłaciłeś już całość?
+  = e Nie. Resztę w ratach. Tylko nie chcę pierwszej rozmowy po oświadczynach zaczynać od spłacania.
+ ? u June będzie zła za tę zgubę?
+ = m Za plecak nie. Za to, że chodzę całą noc i nic nie mówię, już może. Ona lubi wiedzieć, o co się martwić.
+  ? u Powiesz jej potem?
+  = n O plecaku tak. O wszystkim naraz nie. Jeszcze zanim odpowie, będę musiał jej tłumaczyć pół życia.
+? r Jak udowodnisz, że plecak jest twój?
+= m Opiszę zawartość. Tylko nie wyciągaj tego małego pudełka na widok wszystkich.
+ ? n Co ci przeszkadza w pudełku na ladzie?
+ = n Ktoś zobaczy, ktoś skojarzy June. Piekarnia jest jak gazeta, tylko szybciej roznoszą wiadomości.
+  ? u Wszyscy ją znają?
+  = m Ci, co wstają wcześnie. Ja wcześniej nie wstawałem. Teraz znam nawet ceny bułek, których nie jem.
+ ? r Co jeszcze jest charakterystycznego w zawartości?
+ = m Bilety mają daty na odwrocie. Z kursów z June. To nie makulatura, proszę nie wyrzucać.
+  ? u Ona o nich wie?
+  = n Nie. O tych pewnie powiem prędzej niż o cenie prezentu. Chociaż bilety brzmią gorzej, kiedy mówię na głos.
+? u Co takiego zależy od zawartości plecaka?
+= e Chcę oświadczyć się June. Jeśli odmówi, to odmówi. Tylko chciałbym usłyszeć to od niej, nie od zamkniętego magazynu.
+ ? u Rozmawialiście o ślubie?
+ = m O mieszkaniu, pralce, takich rzeczach. Ślub trochę omijam, żeby nie zepsuć niespodzianki.
+  ? n Może nie chce niespodzianki?
+  = n Może. Wiesz co, tego już tutaj nie rozwiążę. Najpierw odzyskam plecak, potem będę pytał właściwą osobę.
+ ? u Wrócisz tutaj po wszystkim?
+ = m Jeśli się uda, powiem. Jak nie, też pewnie przyjdę, bo nadal mam pękniętą klamrę i głowę gdzie indziej.
+  ? r Naprawisz ją wreszcie?
+  = m Tak. Właśnie dostała pierwsze miejsce na liście wydatków. Tuż po czymś, czego jeszcze nie skończyłem spłacać.
+? n @d2_paragon_raty Czterdzieści wpłacone, dwieście do spłaty. June wie?
+= e Nie wie. Kazałaby oddać pierścionek i kupić pralkę. Chciałem raz przynieść coś, co nie jest potrzebne do sprzątania.
+ ? n A raty będziecie płacić razem?
+ - Eee, to prywatne. Znaczy nie tajne, tylko... prywatne. Możemy wrócić do plecaka?
+ = n Ja zapłacę. Wezmę kursy. Wiem, brzmi to łatwo, kiedy jeszcze nie trzeba wsiadać na rower.
+? u @d2_serwetka_trzy Na serwetce dwie wersje skreślone. Dlaczego zostawiłeś trzecią?
+= e W dwóch pierwszych obiecywałem za dużo. W trzeciej tylko pytam. Nie będę tu ćwiczył, bo jeszcze zapamiętam twój głos zamiast jej.
+! wydaj Sprawdzę tylną kieszeń. Jest. Dobra, teraz już tylko ja mogę to zepsuć.
+> wydaj Jonah: „Zdążyłem na kawę i zadałem pytanie bez serwetki. Trzymaj kciuki, jeśli masz kciuki.”
+! odmow Znajdę kogoś, kto potwierdzi. Tylko nie June, przecież nie mogę teraz przyprowadzić June.
+> odmow Jonah: „Odebrałem plecak rano, po kawie. June pyta, czemu od progu sprawdzam tylną kieszeń.”
+! wez_pierscionek Pudełko jest puste. Nie, zaczekaj, ono nie było puste. Idę na policję.
+> wez_pierscionek Noah Reyes: „Kurier zgłosił brak pierścionka w odebranym plecaku. Czyli: muszę sprawdzić, co działo się z nim w biurze.”
 
 # d2_hana
-? u Jak wygląda futerał?
-= m Czarny, sztywny, mosiężne zamki. Na wierzchu zielona naklejka, a rączka owinięta czerwoną taśmą, bo skóra się przetarła.
- ? r Co to za naklejka?
- = k Zwykła. Ozdobna. Ze sklepu muzycznego. Nic nie znaczy.
- ? u Co jest w środku oprócz skrzypiec?
- = m Kalafonia, jedwabna szmatka i nuty Mendelssohna z moimi zapiskami ołówkiem. Po tych zapiskach poznam je z zamkniętymi oczami.
-? r Gdzie go zostawiłaś?
-= n W czwórce, w ostatnim kursie. Postawiłam między nogami, zadzwoniła mama i wysiadłam z telefonem przy uchu. Bez futerału.
- ? u Co takiego powiedziała mama?
- = e Że wszyscy trzymają kciuki. Cała ulica wie o przesłuchaniu. Mama już upiekła ciasto na „po wszystkim”.
-  ? n Mama wie, na czyich skrzypcach grasz?
-  = e Nie mieszaj do tego mamy. Pytaj o futerał, o tramwaj, o co chcesz. O mamę nie.
- ? n Skrzypaczka zapomina skrzypiec?
- - Przyszłam po futerał, a nie po ocenę. Naprawdę nie mam na to czasu.
- = n Wiem, jak to wygląda. Od dwóch dni prawie nie śpię, ćwiczę po dziesięć godzin. Człowiek wtedy zapomina własnego nazwiska.
-? n Czyje to skrzypce?
-= k Moje. Oczywiście, że moje. Gram na nich od siedmiu lat.
- ? r Od siedmiu lat? To gdzie je kupiłaś?
- = k Dostałam. Od... od nauczycielki. Dawno. Naprawdę muszę się z tego tłumaczyć przed przesłuchaniem?
- ? r W środku powinna być etykieta lutnika. Co na niej jest?
- = n Jest jakaś, mała. Nazwiska nie pamiętam. Od lat tam nie zaglądałam.
-? n Co się stanie, jeśli nie dostaniesz ich przed ósmą?
-= e Zagra ktoś inny. Weszłam z listy rezerwowej, drugiego terminu nie będzie. Bez skrzypiec nie mam po co tam iść.
- ? u Daleko masz stąd do filharmonii?
- = m Cztery przystanki. Rozgrzewka jest o siódmej, więc jak wyjdę stąd przed szóstą, zdążę jeszcze rozruszać palce.
-? n @d2_etykieta_wyp Pod pokrywą jest kartka: „Wypożyczone do 7 sierpnia”. Dziś jest dziesiąty.
-= e Termin minął w sobotę. Komisja, która przedłuża, zbiera się dopiero w czwartek. Nie jestem złodziejką. Spóźniłam się trzy dni, a przesłuchanie mam za parę godzin.
- ? r Konserwatorium wie, że skrzypce jeździły po nocy tramwajem?
- = n Nie wie. Jak się dowie, nie wypożyczą mi już nawet pulpitu. Chcę zagrać i w czwartek sama je odnieść.
-? n @d2_naklejka_zielona Numer na naklejce ktoś zdrapywał paznokciem. Kto?
-= e Ja. W tramwaju, z nerwów. Ten numer wygląda jak metka na cudzej rzeczy. Chciałam, żeby przez jeden dzień były moje.
+? u Jak rozpoznać futerał?
+= m Czarny, sztywny. Rączka owinięta czerwoną taśmą, bo skóra się przetarła.
+ ? r Ma jakiś znak na zewnątrz?
+ = m Zielona naklejka. Z boku trochę zdrapana. Jest na wierzchu futerału, nie na skrzypcach.
+  ? n %naklejka Skąd to zdrapanie?
+  = k Zahaczyłam paznokciem. W tramwaju nie umiem trzymać rąk spokojnie. Teraz też nie.
+   ? n @d2_naklejka_zielona #naklejka Z naklejki zdrapano numer inwentarzowy. Przypadkiem?
+   = e Nie. Próbowałam go usunąć. Chciałam, żeby przez chwilę futerał nie wyglądał na cudzy.
+ ? r Co leży obok skrzypiec?
+ = m Kalafonia, jedwabna szmatka i nuty Mendelssohna. Na nutach moje zapiski ołówkiem.
+  ? u Po czym poznasz własne zapiski?
+  = m Wszystko poprawiam, a potem ścieram. Papier jest prawie przezroczysty w miejscach, gdzie najczęściej się mylę.
+? r Jak można zostawić futerał w tramwaju?
+= n Czwórka, ostatni kurs. Mama zadzwoniła, wstałam z telefonem przy uchu i wysiadłam. Futerał stał między moimi nogami i został w tramwaju.
+ ? u O czym rozmawiałyście?
+ = e O przesłuchaniu. Upiekła ciasto na potem. Nie wiem jeszcze, co będzie potem, ale ciasto już jest.
+  ? u Powiesz jej o zgubie?
+  = n Jak odzyskam. Inaczej zadzwoni do wszystkich i będę musiała uspokajać ją zamiast siebie.
+ ? r W którym miejscu siedziałaś?
+ = n W czwórce, przy oknie. Futerał stał pionowo, rączką do mnie. Wiem, jak go zostawiłam, nie wiem, jak mogłam wyjść.
+  ? n Ktoś mógł go zabrać za tobą?
+  - Przyszłam po futerał, a nie po czarne scenariusze. Naprawdę nie mam na to czasu.
+  = n Mógł. Ale liczę, że oddał, skoro przyszłam tutaj. Nie mam już pomysłu na kolejne miejsce.
+? n %wyp Czyje są skrzypce?
+= k Moje. Gram na nich od siedmiu lat. Proszę nie robić z tego czegoś dziwnego.
+ ? r Od kogo je masz?
+ = k Od nauczycielki. Dawno temu. Znam każdy dźwięk tego instrumentu.
+  ? n Pamiętasz nazwisko lutnika?
+  = n Etykieta jest w środku. Nazwisko mi wyleciało. Na przesłuchaniu pytają o grę, nie o etykiety.
+ ? n @d2_etykieta_wyp #wyp Kartka mówi: własność Konserwatorium, termin do 7 sierpnia. Jak to?
+ = e Są wypożyczone. Termin minął, a komisja zbiera się w czwartek. Bez nich nie zagram przesłuchania.
+  ? n Dlaczego od razu nie powiedziałaś?
+  = n Bo wtedy patrzy się tylko na datę. A ja przez cały czas pilnowałam tych skrzypiec. Do wczoraj.
+   ? n Znajomość instrumentu nie przedłuża wypożyczenia.
+   = n Wiem. Nie udowadniam, że termin nie minął. Proszę, żeby pozwolić mi zagrać mimo tego.
+    ? r Powiesz komisji, że skłamałaś o własności?
+    = n Jeśli zapytają, odpowiem. Nie obiecam teraz, że sama zacznę od najgorszego.
+? u Co czeka cię o ósmej?
+= m Przesłuchanie do orkiestry. Weszłam z listy rezerwowej. Ktoś zrezygnował i zadzwonili do mnie.
+ ? r Możesz dostać inny termin?
+ = n Nie. Albo przyjdę z instrumentem, albo zagra następna osoba. Tam nie zostawia się pustego krzesła.
+  ? u Masz jak pożyczyć inne skrzypce?
+  = n O tej porze nie. Nawet gdybym miała, musiałabym się przyzwyczaić. To nie jest zamiana parasola.
+ ? u Jak długo się przygotowujesz?
+ = m Teraz po dziesięć godzin dziennie. Sąsiedzi wiedzą, w którym miejscu mi nie wychodzi, pewnie lepiej ode mnie.
+  ? u A dziś udało się przespać choć chwilę?
+  = n Nie. Jak zamykam oczy, widzę futerał w odjeżdżającym tramwaju. Wolę stać przy szybie.
+? r Co zrobisz, jeśli znajdzie się podobny futerał?
+= m Poproszę o obejrzenie, nie zabiorę w ciemno. Zewnętrzne ślady można pomylić. Moje nuty rozpoznam.
+ ? n A sam instrument?
+ = m Też. Sposób, w jaki odpowiada pod smyczkiem. Tego nie potrafię wpisać w rubrykę, ale usłyszę od razu.
+  ? r Musiałabyś tu zagrać?
+  = n Wystarczy kilka dźwięków. Jeśli nie wolno, pokaż nuty. Nie będę urządzać koncertu kolejce.
+ ? u Co sprawdzisz najpierw?
+ = m Czy mostek stoi. Potem smyczek. Naklejki mogą się odkleić, tego nie naprawię przed ósmą.
+  ? n Myślisz, że coś się stało po drodze?
+  = n Nie wiem. I właśnie dlatego chcę zajrzeć, zanim zacznę obiecywać, że wszystko jest dobrze.
+? u Dlaczego właśnie ta orkiestra?
+= e Bo mnie zaprosili. Nie dlatego, że ktoś zna mamę albo nauczycielkę. Chcę wejść i zagrać.
+ ? u Mama też przyjdzie?
+ = m Czeka w domu z ciastem. Będzie dzwoniła, zanim komisja skończy pisać. Już to wiem.
+  ? u Co jej powiesz, jeśli nie dostaniesz miejsca?
+  = n Że zagrałam. Tyle chcę móc powiedzieć. Resztę da się jakoś przełknąć razem z tym ciastem.
+ ? n A jeśli trzeba będzie wybrać między przesłuchaniem a oddaniem skrzypiec?
+ = e Wiem, o co pytasz. Chcę je oddać po przesłuchaniu. Nie umiem zrobić obu rzeczy naraz.
+  ? n To obietnica czy prośba o wyjątek?
+  = n Prośba. Obietnicę też mogę dać, ale przecież nie znasz mnie na tyle, żeby to coś załatwiało.
+? n @d2_etykieta_wyp #wyp Dlaczego nie oddałaś instrumentu po terminie wypożyczenia?
+= e Czekałam na przesłuchanie. Komisja zbiera się w czwartek. Powinnam była zgłosić to wcześniej, zanim zostałam z cudzym instrumentem i wymówką.
+ ? r Konserwatorium wie o zgubie?
+ = n Nie. Jak się dowiedzą, mogą nie wypożyczyć mi już nawet pulpitu. Ale sama go zaniosę, nie będę prosić o tramwaj.
+? n @d2_naklejka_zielona #naklejka Na naklejce zdrapano numer inwentarzowy. Próbowałaś go usunąć?
+= e Tak. Paznokciem, w tramwaju. Chciałam, żeby przez chwilę nie wyglądały na cudze. Teraz nawet to jest dowodem przeciwko mnie.
+! wydaj W czwartek stanę przed komisją z futerałem. Dziś muszę najpierw stanąć przed tą drugą.
+> wydaj Zagrałam, a komisja przedłużyła wypożyczenie do końca roku. Numeru na naklejce już nie ruszam. — H. Moreau
+! odmow Powiedz w konserwatorium, że przyszłam sama. Niech chociaż to będzie zapisane poprawnie.
+> odmow Na przesłuchaniu zagrała następna osoba z listy. Ćwiczę na altówce koleżanki, a futerału nie mam nawet gdzie odłożyć. — H. Moreau
 
 # d2_ines
-? u Jak wygląda ten parasol?
-= m Czarny, automatyczny, z drewnianą rączką w kształcie kaczki. Kaczka ma odłamany dziób z lewej strony. Kupiłam go po zeszłorocznej wichurze.
- ? u Kaczka bez dzioba? Nietypowa rączka.
- = m Dlatego go kupiłam. Czarnych parasoli jest w tym mieście sto tysięcy. Z kaczką bez dzioba jeden. Lubię rzeczy, które da się rozpoznać.
-? r Gdzie go zostawiłaś?
-= n W czwórce, na haczyku przy tylnych drzwiach. Wysiadałam na pętli z torbami w obu rękach. Przypomniałam sobie, jak tramwaj już zakręcał.
- ? n Co robisz nocą na pętli czwórki?
- - A to już, za pozwoleniem, moja rzecz. Przyszłam po parasol.
- = n Rozwieszam ogłoszenia. Na pętli ludzie czekają i z nudów czytają wszystko, nawet słupy.
-? u O jakie ogłoszenie pytasz?
-= m „Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu”. Wasz słup stoi w dobrym miejscu. Wolę zapytać, niż żeby mi je ktoś zrywał.
- ? u Jak się wabi ten kot?
- = k Fryderyk. Rudy, z białą łapką. Na wołanie nie przychodzi, taki już ma charakter.
- ? n Od zimy? Po takim czasie koty raczej nie wracają.
- = n Wiem, ile żyje kot na ulicy. Ale na te ogłoszenia ktoś odpisuje. Zostawia kartki, nocą. Nie widziałam kto. Dopóki odpisuje, wieszam dalej.
-  ? n Co jest na tych kartkach?
-  = n Godziny. Numery linii. Raz samo „jeszcze nie”. O kocie ani razu. Proszę z tego nie wyciągać wniosków, ja też jeszcze nie wyciągam.
-? n @d2_parasol_kartka W rączce parasola jest zwinięte ogłoszenie o kocie. Po co je tam chowasz?
-= k Zapasowa kopia. Żeby mieć przy sobie, kiedy deszcz rozmoczy tamte. Nic więcej.
- ? n To na pewno jest ogłoszenie o kocie?
- = k Tak. O kocie. I trochę dla tych, którzy też kogoś szukają. Proszę nie czytać między wierszami, tam jest ciasno.
-! ines_potwierdz Dziękuję. Z pieczątką nikt go nie zerwie. Gdyby ktoś zostawił dla mnie odpowiedź, proszę jej nie czytać, tylko odłożyć.
-! ines_odmow Rozumiem. Powieszę na innym słupie. Szkoda, wasz stał najlepiej.
-! ines_zdejmij Zdejmiecie też to, co już wisi? Tam są cudze odpowiedzi, nie tylko moje kartki. No dobrze. Przynajmniej wiem, na kogo tu trafiłam.
+? u Jak wygląda parasol?
+= m Czarny, automatyczny. Nie składany do torebki, pełny. Proszę nie otwierać nad papierami.
+ ? r Jaka rączka?
+ = m Drewniana, w kształcie kaczki. Kaczka nie jest ozdobą doczepioną do rączki, tylko samą rączką.
+  ? u Wygodnie się ją trzyma?
+  = m Wygodniej niż torby, które wtedy niosłam. Parasol miał haczyk, a ręce tylko dwie.
+ ? r Co odróżnia go od takiego samego?
+ = m Dziób odłamany z lewej strony. Nie od deszczu. Już taki kupiłam, po wichurze.
+  ? n Kupiłaś uszkodzony?
+  = m Tańszy. Deszcz wpada od góry, nie przez kaczy dziób. Do tego łatwiej go rozpoznać.
+? r Gdzie został w czwórce?
+= n W czwórce, wczoraj, na haczyku przy tylnych drzwiach. Wysiadłam na pętli z torbami. Parasol przypomniał się za zakrętem.
+ ? r Próbowałaś dogonić tramwaj?
+ = m Mam sześćdziesiąt jeden lat i dwie torby. Tramwaj ma szyny. Wynik był do przewidzenia.
+  ? u Co zrobiłaś zamiast tego?
+  = n Spytałam, dokąd oddają zguby. Proszę, jestem. Bez parasola, ale bez zadyszki.
+ ? u Po co jechałaś na pętlę?
+ = n Rozwiesić ogłoszenia. Ludzie czekają i czytają, nawet jeśli nie zamierzali.
+  ? r Tam też pytasz o zgodę?
+  = n Pytam tam, gdzie ktoś pilnuje słupa. W pozostałych miejscach pytania musiałabym zadawać słupowi.
+? u Co ma być na ogłoszeniu?
+= m „Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu”. Krótkie. Długich nie czytają.
+ ? r Dlaczego odpowiedzi na słupie?
+ = n Bo tam ktoś zobaczył ogłoszenie i tam wróci. Nie każdy chce zostawiać telefon obcej osobie.
+  ? n Ty też nie chcesz podać telefonu?
+  = n Nie chcę odbierać po nocy żartów o rudych kotach. Słup nie musi spać.
+ ? u Jak długo ma wisieć?
+ = n Dopóki ktoś odpowiada. Sama zdejmę, kiedy będzie niepotrzebne. Nie zostawię strzępów na zimę.
+  ? r Jak poznasz, że odpowiedź jest dla ciebie?
+  = n Będzie pod moją kartką. Jeśli masz wątpliwość, odłóż. Nie trzeba jej najpierw rozwiązywać jak zagadki.
+? n %kot Jak wabi się kot?
+= k Fryderyk. Rudy, z białą łapką. Na wołanie nie przychodzi.
+ ? u Od zimy nie ma żadnego śladu?
+ = n Są odpowiedzi na kartkach. Dlatego dalej wieszam. Nie dlatego, że lubię obchodzić wszystkie pętle.
+  ? r Co ludzie piszą?
+  = n Godziny, numery linii. Raz „jeszcze nie”. O samym kocie niewiele, uprzedzę następne pytanie.
+ ? n Po co imię, skoro nie przychodzi na wołanie?
+ = n Bo przy zgłoszeniu pytają o imię. Nawet gdy nikt go potem nie używa.
+  ? n @d2_parasol_kartka #kot Schowana kartka i te odpowiedzi dotyczą naprawdę kota?
+  = n Nie szukam kota. Tyle mogę sprostować. Reszty nie będę tłumaczyć komuś, kto jeszcze nie zdecydował, czy pozwoli mi powiesić kartkę.
+? r Dlaczego zależy ci na naszym słupie?
+= m Stoi przy wejściu. Ludzie go mijają, kiedy patrzą na światło okienka. Nikt nie musi się specjalnie zatrzymywać.
+ ? r A pieczątka biura co zmieni?
+ = n Mniej chętnie zerwą. Papierek z pieczątką bywa dla niektórych ważniejszy od właściciela papierka.
+  ? n Chcesz, żeby wyglądało na urzędowe?
+  = n Na dozwolone. Nie proszę o podpis pod tym, czego nie wiesz. Proszę o zgodę na słup.
+ ? u Inne słupy nie wystarczą?
+ = n Wystarczą do wieszania. Nie wystarczą komuś, kto ma wrócić właśnie tutaj.
+  ? n Kto ma wrócić?
+  - A to już, za pozwoleniem, moja rzecz. Przyszłam po parasol.
+  = n Osoba, która przeczytała kartkę. To nie jest nazwisko, które można wpisać do księgi.
+? n Co mam robić z odpowiedziami?
+= n Zostawić pod ogłoszeniem albo odłożyć dla mnie, jeśli przemokną. Bez otwierania przy kolejce.
+ ? r Jak często je sprawdzasz?
+ = m Kiedy przejeżdżam. Nie będę dzwoniła co godzinę. Szyba ma służyć też innym ludziom.
+  ? u A jeśli długo nie przyjdziesz?
+  = n Nie wyrzucaj od razu. Nie każdy brak wizyty oznacza, że już nie zależy.
+ ? n A gdy ktoś będzie pytał, kto je odbiera?
+ = n Powiedz, że ogłoszenie wisi na słupie. To akurat może sprawdzić sam, bez twojej pomocy.
+  ? n Mam ukrywać twoje nazwisko?
+  = n Przedstawiłam się tobie. Na kartce nazwiska nie ma. Wystarczy nie dopisywać go za mnie.
+? n @d2_parasol_kartka #kot Po co ukrywać ogłoszenie w rączce parasola?
+= n Tam papier nie moknie. I nie, to nie tylko sprawa kota. Nie podam cudzych nazwisk, żeby uzasadnić własny parasol.
+ ? r Czego mam się spodziewać po odpowiedziach?
+ = n Czasem ktoś zostawia coś przy okienku. Jeśli to się stanie, nie pokazuj od razu całej kolejce. Na więcej się nie umawiamy.
+! ines_potwierdz Pieczątkę w rogu, żeby nie zakryła tekstu. Jeśli przyjdzie odpowiedź, proszę ją odłożyć bez czytania.
+> ines_potwierdz Ines Calloway: „Przyszła odpowiedź, a pod okienkiem ktoś coś zostawił. Proszę nie otwierać tego przy ludziach. — I.C.”
+! ines_odmow Parasol wezmę. Ogłoszenie powieszę gdzie indziej, tylko ktoś będzie musiał szukać drugiego słupa.
+> ines_odmow Ines Calloway: „Na nowym słupie też zostawiają kartki. Parasol wrócił na swój haczyk, tym razem w domu. — I.C.”
+! ines_zdejmij Moje zdejmij. Cudze odpowiedzi odłóż, ktoś może po nie wrócić. Nie są śmieciami tylko dlatego, że nie mają pieczątki.
+> ines_zdejmij Mężczyzna w szarym kapeluszu: „Szukam ogłoszenia o kocie, a słup jest pusty. Zgodnie z regulaminem zapiszę, kto kazał je zdjąć.”
 
 # d3_maz_i_siostra
-? u ~maz Jak wygląda ten telefon?
-= m Czarny, w skórzanym etui. Róg etui się odkleja. Kupiłem je Mai na rocznicę i sto razy mówiłem, żeby podkleiła.
- ? r ~maz Znasz kod do tego telefonu?
- = k Maya nie miała kodu. Nie mieliśmy przed sobą tajemnic.
- ? u ~siostra Lena, ty też poznajesz to etui?
- = n Poznaję. Pod spodem Maya trzyma nasze zdjęcie z dzieciństwa. Evan o nim nie wie. Prawda, Evan?
-? r ~siostra Kiedy Maya go zgubiła?
-= n W czwartek wieczorem, w jedenastce. Tylko że Maya nie gubi rzeczy. Zostawia je tam, gdzie ktoś przechowa i nie będzie pytał po co.
- ? n ~siostra Zostawia? Czyli zrobiła to specjalnie?
- = k Nie wiem. Tak mi się powiedziało. Od czwartku nie miałam od niej ani słowa. Naprawdę.
- ? r ~maz Evan, skąd wiecie, że akurat w jedenastce?
- = n Od policji. Motorniczy oddał telefon do zajezdni i zapamiętał kurs. Posterunkowy Reyes powiedział wprost: bez telefonu we wtorek zamyka sprawę.
-? n ~maz Jak wyglądał wasz ostatni wieczór?
-= k Zwyczajnie. Żadnej kłótni. Zjedliśmy kolację, Maya poszła do pracy i nie wróciła.
- ? n ~maz Do pracy po kolacji? Na noc?
- - Nie widzę związku z telefonem. Trzymajmy się sprawy, dobrze?
- = n Jest elektryczką, bierze nocne awarie. Wychodziła o różnych porach. Nie pilnowałem jej, jeśli o to chodzi.
- ? n ~maz Miała powód, żeby nie wrócić?
- = k Żadnego. Spokojne małżeństwo. Oboje dużo pracowaliśmy, to wszystko.
- ? u ~siostra Lena, tak to wyglądało?
- = n Mnie przy tej kolacji nie było. Evan mówi, że zwyczajnie, to pewnie tak mu się wydawało.
-? r ~maz Evan, co zrobisz z telefonem, jeśli go dostaniesz?
+? u ~maz Jak rozpoznać telefon?
+= m Czarny, w skórzanym etui. Kupiłem to etui Mai na rocznicę.
+ ? r ~maz Ma jakieś uszkodzenie?
+ = m Róg etui się odkleja. Mówiłem, żeby podkleiła, ale odkładała. Teraz akurat to się przyda.
+  ? u ~siostra Lena, też je poznasz?
+  = n Tak. Pod spodem jest nasze zdjęcie z dzieciństwa. Ale nie trzeba go wyciągać przy wszystkich.
+ ? r %kod ~maz Znasz kod do telefonu?
+ = k Nie miała kodu. Nie mieliśmy przed sobą tajemnic.
+  ? n ~maz To dlaczego nie chcesz po prostu poczekać na nią z odbiorem?
+  = n Bo zaginęła. Nie mogę czekać na osobę, której szukamy. Telefon może pomóc ją znaleźć.
+? r ~siostra Skąd wiadomo, że został w jedenastce?
+= n W czwartek wieczorem został w jedenastce. Motorniczy go oddał, policja zna kurs. Evan rozmawiał z Reyesem, ja nie.
+ ? r ~maz Co dokładnie powiedział Reyes?
+ = n Że telefon jest w biurze. We wtorek sprawa idzie dalej, więc potrzebuję go teraz, zanim zacznie krążyć po urzędach.
+  ? n ~maz Dalej czy do zamknięcia? Na wejściu mówisz, że ją zamkną.
+  = n Dla mnie to jedno. Przestanę mieć jednego człowieka, do którego mogę zadzwonić. Tak to rozumiem.
+ ? n %kontakt ~siostra Maya kontaktowała się z tobą po zaginięciu?
+ = k Od czwartku nie miałam od niej ani słowa. Nic nie wiem.
+  ? n @d3_telefon_wiadomosc #kontakt ~siostra W czwartek o 23:48 piszesz: „Nie wracaj do domu”. Dlaczego?
+  = e Bo zadzwoniła, że boi się wracać. Miałam po nią jechać w sobotę. Evan, odsuń się, nie będę przy tobie mówiła więcej.
+? n ~maz Co wydarzyło się przed jej wyjściem?
+= k Zjedliśmy kolację. Wyszła do pracy. Żadnej kłótni, zwyczajny wieczór.
+ ? r ~maz Pracuje nocami?
+ = n Jest elektryczką. Awarie zdarzają się o różnych porach. Nie pytałem o każdą klatkę schodową.
+  ? n ~maz A o godzinę powrotu?
+  = n O godzinę pytam. Mieszkamy razem, chyba mogę wiedzieć, kiedy zamknąć drzwi.
+ ? u ~siostra Lena, co możesz potwierdzić?
+ = n Nie było mnie przy kolacji. Nie będę potwierdzać czegoś tylko dlatego, że Evan mówi pełnymi zdaniami.
+  ? n ~siostra W takim razie czemu przyszłaś z nim?
+  = e Żeby nie wyszedł stąd z telefonem, zanim zdążę powiedzieć, że to rzecz Mai. Jej, nie jego.
+? r ~maz Co zrobisz z telefonem po odbiorze?
 = m Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.
- ? n +d3_evan_oferta ~maz A jeśli telefon zostanie u nas w depozycie?
- = n To policja dostanie go za późno. Zróbmy inaczej: sto dolarów od ręki i niczego nie trzeba wpisywać. Zgoda?
- ? r ~siostra Lena, a ty co byś z nim zrobiła?
- = n Schowałabym u siebie, aż Maya się odezwie. To jej rzecz. Nie Evana i nie policji.
-? n @d3_telefon_wiadomosc ~siostra Na ekranie jest wiadomość od Leny: „Nie wracaj do domu”. Co to znaczy?
-= e To ja napisałam. Maya zadzwoniła w czwartek, że boi się wracać. Jak Evan to przeczyta, przyjdzie do mnie. Proszę, nie dawaj mu tego telefonu.
- ? n ~maz Evan, czego Maya miała się bać?
- = k Niczego. Lena od lat nastawia ją przeciwko mnie. Napisała głupotę i teraz nie wie, jak z tego wybrnąć.
+ ? n +d3_evan_oferta ~maz A jeśli zostanie tutaj do odbioru przez policję?
+ = n Stracimy czas. Sto dolarów od ręki, bez wpisu, i sam go zaniosę. Nie trzeba czekać na papier.
+  ? n ~maz Za co te sto dolarów?
+  = n Za kłopot. Za to, że zajmujesz się naszą sprawą po nocy. Nie przypisuj temu od razu czegoś brzydkiego.
+ ? r ~siostra Lena, co ty zrobisz po odbiorze?
+ = n Schowam u siebie. Jak Maya się odezwie, oddam jej. Nie muszę czytać, żeby przechować.
+  ? n ~siostra Nawet jeśli policja o niego poprosi?
+  = n Wtedy porozmawiam z policją. Nie z Evanem przez policję. To jest różnica.
+? u ~siostra Dlaczego nie możecie ustalić tego między sobą?
+= n Bo on pyta, gdzie jest Maya, a ja pytam, czego ona chce. I każde uważa, że drugie nie odpowiada.
+ ? n ~maz Czego według ciebie chce Maya?
+ = k Wrócić do domu. Jak tylko się uspokoi, wróci. Lena robi z tego coś większego.
+  ? n ~maz Przed chwilą mówiłeś, że nie było kłótni. Z czego ma się uspokoić?
+  - Nie widzę związku z telefonem. Trzymajmy się sprawy, dobrze?
+  = n Ze wszystkiego. Praca, zmęczenie. Nie powiedziałem, że chodzi o mnie.
+ ? u ~siostra Możesz mówić za siostrę?
+ = n Nie. Dlatego nie chcę oddawać jej rzeczy komuś, kto twierdzi, że może.
+  ? r ~siostra Co proponujesz, jeśli telefon zostanie tutaj?
+  = n Żeby czekał na nią. Bez obietnicy, że przyjdzie. Ja takiej obietnicy nie złożę.
+? r ~maz Kto ma podpisać odbiór?
+= m Ja, Evan Doyle. Jestem jej mężem. Nie próbuję się tutaj ukrywać.
+ ? n ~maz Podpis daje ci prawo czy tylko zapisuje, kto zabrał rzecz?
+ = n Zapisze, że zabrał mąż. Dla mnie to wystarczy. Dla ciebie najwyraźniej nie.
+  ? r ~siostra Lena, podpiszesz swoim nazwiskiem?
+  = n Brandt. Nie Doyle. Nadal jestem jej siostrą, zanim to też zacznie być przeszkodą.
+ ? r ~maz A jeśli odbiór wymaga zgody Mai?
+ = n To nie wydasz go nikomu. Nie możemy jej spytać, właśnie dlatego tu stoimy.
+  ? u ~siostra Potrafisz zaakceptować taki wynik?
+  = e Nie podoba mi się. Ale wolę, żeby był za tą szybą, niż żebym znowu nie wiedziała, kto go czyta.
+? n @d3_telefon_wiadomosc #kontakt ~siostra Lena, dlaczego kazałaś Mai nie wracać do domu?
+= e Zadzwoniła przestraszona. Napisałam, że przyjadę w sobotę. Nie daj mu telefonu, bo wtedy pójdzie pytać pod moje drzwi.
+ ? n ~maz Evan, czego Maya się bała?
+ = k Niczego. Lena od lat nastawia ją przeciwko mnie. Teraz znalazła sposób, żeby zrobić to przy świadkach.
+ ? r ~siostra Potwierdzasz, że to twój numer?
+ = n Tak. Nie wycofam tego, co napisałam. Chcę tylko, żeby nie dostawał do ręki całej reszty.
+! wydaj_evan Zaniosę go Reyesowi. Lena, przestań patrzeć na ekran, idziemy.
+> wydaj_evan Evan przeczytał wiadomość i krzyczał pod moimi drzwiami, aż wyszła sąsiadka. Powtarzał, że skoro biuro wydało mu telefon, ma prawo pytać. — Lena
+! wydaj_lena Schowam go u siebie. Evan, odbiór podpisuję ja, nie musisz zaglądać mi przez ramię.
+> wydaj_lena Evan Doyle: „Telefon dostała Lena, ja nadal nie mogę go zobaczyć. Proszę pokazać, na jakiej podstawie wydano go właśnie jej.”
+! zatrzymaj Zostaje tutaj? Zapisz, że prosiłem o odbiór. Nie chcę jutro usłyszeć, że nikt się nie zgłosił.
+> zatrzymaj Noah Reyes: „Doyle dzwoni co godzinę w sprawie depozytu. Telefon jest u was, czyli przynajmniej tej rzeczy nie muszę szukać.”
+! wez_100_evan Sto, jak mówiłem. Telefon wezmę sam, Lena nie musi już niczego podpisywać.
+> wez_100_evan Lena Brandt: „Widziałam pieniądze przy szybie. Następnym razem, gdy Maya zapyta, gdzie zostawić rzecz, nie powiem o tym biurze.”
 
 # d3_dana
-? u Jak wygląda ten budzik?
-= m Blaszany, okrągły, dwa dzwonki na górze. Mam go dwanaście lat. Dzwoni tak, że sąsiad zza ściany wstaje razem ze mną.
- ? r Ma jakiś znak szczególny?
- = n Od spodu naklejkę „Mama”, bo od mamy go dostałam. I wgniecenie przy prawym dzwonku, jak zleciał z lodówki.
- ? u Sąsiad się nie skarży?
- = m Raz przyszedł. Powiedziałam, że ma budzenie gratis, i od tej pory zostawia mi pod drzwiami ogórki. Układ jest.
-? r Na którą jest nastawiony?
-= n Na czwartą piętnaście. Wskazówka od budzenia jest czerwona i krzywa, sama ją prostowałam kombinerkami.
- ? u Czwarta piętnaście? To o której zaczynasz?
- = m Za pięć piąta mam leżeć w kanale pod tramwajem. Jak wstanę kwadrans po czwartej, zdążę na kawę. Jak nie, to na nic.
-  ? r Długo już pracujesz w zajezdni?
-  = m Jedenaście lat, znam tam każdy zawias. A o waszym okienku wiem tyle, że w gazecie od miesiąca wisi to samo ogłoszenie: „praca nocna, bez referencji”. Długo nikt nie chciał, co?
- ? n Telefon nie może cię budzić?
- = n Telefon wyłączam przez sen, jedną ręką. Ten skacze po szafce i trzeba wstać, żeby go zdusić. Na mnie działa tylko przemoc.
-? n Po co wozisz budzik tramwajem?
-- A co, nie wolno? Bilet miałam ja, on jechał na kolanach.
-= m Bo nocowałam u siostry i wzięłam go ze sobą. Samego w domu nie zostawię. Śmiej się, proszę bardzo.
- ? u Co robiłaś u siostry?
- = n Pilnowałam jej dzieciaków, bo miała nockę. Trójka. Po takim wieczorze człowiek zostawiłby w tramwaju własną głowę.
-  ? n A ich ojciec gdzie był?
-  = e Hola. Przyszłam po budzik, nie do spowiedzi. O siostrę pytaj siostrę.
-? n @d3_rachunek_budzik Pod pokrywką jest rachunek z warsztatu. Naprawiasz go zamiast kupić nowy?
-= e Osiemnaście dolarów za mechanizm. Nowy kosztuje dziesięć. Ale ten dzwoni tak, jak dzwonił u mamy w kuchni. Na inny dźwięk bym nie wstała.
+? u Jak rozpoznać budzik?
+= m Blaszany, okrągły, dwa dzwonki na górze. Wygląda, jakby miał zaraz krzyczeć. I zwykle ma.
+ ? r Jakiś znak szczególny?
+ = n Na spodzie naklejka „Mama”. Od mamy go dostałam, więc podpisałam, żeby nikt nie myślał, że to sprzęt zajezdni.
+  ? u Długo ją tam trzymasz?
+  = m Dwanaście lat. Naklejka przetrzymała niejedną naprawę, więc nie będę jej teraz zdzierać.
+ ? r Jak wygląda wskazówka alarmu?
+ = m Jest czerwona, krzywa. Stoi na czwartą piętnaście. Prostowałam ją kombinerkami, bez konkursu piękności.
+  ? n Na wejściu mówisz o czwartej. To która godzina?
+  = m Kwadrans po. Mówię „na czwartą”, bo nikt o tej porze nie słucha minut. W magazynie akurat mają znaczenie.
+? r Po co wozić budzik tramwajem?
+= m Nocowałam u siostry. Wzięłam go, żeby rano nie rozbudzać całego domu szukaniem telefonu.
+ ? u Czemu u siostry?
+ = n Pilnowałam dzieci. Ona miała nockę, ja trójkę na głowie. Budzik chyba miał spokojniejszy wieczór.
+  ? u Dzieci nie chciały go zatrzymać?
+  = m Chciały zobaczyć, jak dzwoni. Pokazałam raz. Drugi raz już wolały bajkę.
+ ? r Gdzie został w szóstce?
+ = n W szóstce, kiedy wracałam po nocowaniu u siostry. Leżał obok mnie. Torbę wzięłam, jego nie.
+  ? n Dlaczego nie schowałaś go do torby?
+  = m Bo bałam się znowu skrzywić wskazówkę. Ochroniłam go przed torbą, zgubiłam w tramwaju. Zapisz sobie, ku przestrodze.
+? u O której zaczynasz pracę?
+= m Za pięć piąta mam już leżeć pod tramwajem. Kwadrans po czwartej pobudka, potem kawa i w drogę.
+ ? r Co się stanie, jeśli zaśpisz?
+ = n Ktoś zrobi moją robotę i nie będzie zadowolony. Tramwaj nie powie: Dana śpi, pojadę jutro.
+  ? u Nie mogą zadzwonić?
+  = m Mogą, jak już mnie brakuje. Budzik ma zadzwonić, zanim zacznie mnie brakować. Cały wynalazek na tym polega.
+ ? u Długo jesteś w zajezdni?
+ = m Jedenaście lat. Wiem, który zawias zaskrzypi, zanim otworzę drzwi.
+  ? r A o tym okienku coś wiesz?
+  = n Tyle, że od miesiąca w gazecie wisiało „praca nocna, bez referencji”. Nikt się nie palił. Teraz przynajmniej świeci.
+? n Telefon nie wystarczy do budzenia?
+= n Wyłączam przez sen. Jedną ręką, nawet oczu nie otwieram. Do niczego innego nie mam takiego talentu.
+ ? u A ten czym cię pokonuje?
+ = m Skacze po szafce. Trzeba go złapać. Jak już gonię blachę po pokoju, to jestem przytomna.
+  ? u Sąsiedzi też?
+  = m Jeden tak. Przyszedł się skarżyć, potem przywykł. Teraz zostawia ogórki, budzenie ma gratis.
+ ? r Próbowałaś ustawić kilka alarmów?
+ = n Tak. Wyłączyłam kilka alarmów. Nie będę płacić za dziesiąty, skoro ten jeden działa.
+  ? n Upierasz się przy nim, bo go znasz?
+  - A co, nie wolno? Każdy ma coś, przy czym się upiera.
+  = m Bo działa na mnie. Budzik może być sprawny i bezużyteczny. Tak jak mechanik przed kawą.
+? u Skąd masz ten budzik?
+= m Od mamy, dwanaście lat temu. Inni dostają biżuterię, ja urządzenie do przerywania snu.
+ ? u Sama go wybrała?
+ = n Tak. Znała mnie. Wiedziała, że delikatne dzwonienie tylko mi się przyśni.
+  ? u Miała taki sam?
+  = e Ten stał u niej w kuchni. Teraz u mnie. Dlatego wiem, jak powinien brzmieć.
+ ? r Dwanaście lat bez wymiany?
+ = m Bez wymiany całego. Mechanizm swoje przeszedł. Obudowa nadal daje radę, poza spotkaniem z podłogą.
+  ? n Naprawa jeszcze się opłaca?
+  = n W dolarach nie zawsze. Ale ja pytam, czy da się naprawić, nie czy ładniej wygląda nowy.
+? r Kto może potwierdzić, że jest twój?
+= m Siostra, sąsiad, pół zajezdni. Tylko każde będzie miało własną opowieść o tym hałasie.
+ ? r Przyprowadzisz kogoś, jeśli trzeba?
+ = n Przyprowadzę. Zamiast spać będziemy chodzić z papierami. Potem budzik obudzi osobę, która jeszcze nie zasnęła.
+  ? u Siostra jest teraz w domu?
+  = n Wraca z nocki. Nie będę jej wyciągać od dzieci, jeśli wystarczy obejrzeć naklejkę.
+ ? n Co zrobisz, jeśli go nie wydam?
+ = n Spróbuję zasnąć przy telefonie. Potem pewnie się spóźnię. Nie będę udawać, że mam tajny drugi budzik.
+  ? u Kupisz nowy?
+  = e Może. Tylko ten i tak odbiorę. Nowy nie będzie wiedział, jak mi zagrać na nerwach.
+? r Budzik jest gdzieś uszkodzony?
+= m Wgniecenie przy prawym dzwonku. Spadł z lodówki. Dlatego to prawa strona jest krzywa, nie obie.
+ ? u Dlaczego stał na lodówce?
+ = m Żebym musiała wstać. Na szafce mogłam go zgasić przez sen, lodówki z łóżka nie dosięgnę.
+  ? r Po upadku nadal dzwonił?
+  = n Dzwonił. Sprawdziłam, zanim złożyłam z powrotem. Blacha ucierpiała bardziej niż jego zapał.
+ ? n Próbowałaś wyprostować obudowę?
+ = n Zostawiłam. Wskazówkę poprawiłam, bo przeszkadzała w ustawianiu. Wgniecenie nie przeszkadza w budzeniu.
+  ? u Czyli nie musi wyglądać jak nowy?
+  = m Ma mnie postawić na nogi. Jak przy okazji stoi krzywo, to jakoś wytrzymam.
+? n @d3_rachunek_budzik Naprawa kosztowała osiemnaście dolarów, nowy dziesięć. Dlaczego?
+= e Bo po naprawie dalej brzmiał jak w kuchni u mamy. Za dziesięć kupię coś, co będę wyłączać przez sen.
+! wydaj No, kolego, czwarta piętnaście. Dziś jedziesz w torbie, żadne zwiedzanie tramwaju.
+> wydaj Dana Ruiz: „Budzik zadzwonił, sąsiad wstał, ja też. Tramwaj wyjechał bez czekania na mechanika.”
+! odmow Przyprowadzę kogoś z zajezdni. Jak przysnę pod szybą, obudź mnie, skoro trzymasz sprzęt.
+> odmow Dana Ruiz: „Czterdzieści minut spóźnienia, zapisane u przełożonego. Telefon wyłączyłam, jak mówiłam.”
 
 # d4_iris
-? u Jak wygląda ta paczka?
-= m Płaska, w szarym płótnie, przewiązana sznureczkiem. W środku nieduża kasetka na kłódkę. Nic, na co warto patrzeć.
- ? n Co jest w kasetce?
- = k Papierki lokatorów. Pokwitowania, drobne rozliczenia. Nudy, kochanie.
-  ? n Pokwitowania pod kłódką?
-  = n Ludzie są wścibscy, a cudze długi to ulubiona lektura sąsiadów. Kłódeczka kosztuje dolara, spokój w kamienicy jest bezcenny.
-? r Gdzie dokładnie została?
-= n W szóstce, w ostatnim kursie, na półce nad siedzeniem. Zawsze tam kładę i zawsze pamiętam. Wczoraj pierwszy raz nie.
- ? n Wozisz papiery lokatorów nocnym tramwajem?
- = n Lokatorzy pracują na zmiany i odbierają o różnych porach. Tramwaj to najtańszy goniec, a ja nie lubię przepłacać.
- ? u Co cię wczoraj tak rozproszyło?
- = m Jedna lokatorka spóźnia się z czynszem i liczyłam w głowie jej karę. Człowiek zamyśli się nad cudzą biedą i sam gubi.
-? u Kim są lokatorzy, którzy na nią czekają?
-= m Dwadzieścia rodzin spod dziewiątki. Zbieram od nich zaliczki na remont i trzymam ich dokumenty, żeby się nie pogubiły. Zabawne, prawda? Akurat mnie się zgubiło.
- ? n Czemu nikt z nich nie przyszedł po nią sam?
- - Nie lubię naciskać, ale to pytanie nie należy do okienka. Kasetka, proszę.
- = n Bo to moja odpowiedzialność. Nie lubię, jak ktoś obcy grzebie w sprawach moich lokatorów. Nikt by nie lubił.
- ? r Do kiedy paczka musi do nich wrócić?
- = n Najlepiej jeszcze dziś. Nie lubię naciskać, ale moi lokatorzy źle śpią, kiedy ich sprawy leżą w cudzej szufladzie.
-? r +d4_koperta_oferta Wydanie idzie z wpisem do księgi. Podpiszesz odbiór?
-= n Podpiszę, Iris Bell. Choć poprzednik nie wpisywał i wszystkim było wygodniej. Chciałabym zostawić kopertkę za fatygę. To nie opłata, tylko wyraz uznania. Sto dwadzieścia dolarów.
- ? n Poprzednik brał takie kopertki?
- = n Sam był bardzo życzliwym człowiekiem. Rozumiał, że nie wszystko musi mieć numerek. Szkoda, że tak nagle odszedł.
- ? r A jeśli wpis mimo wszystko będzie?
- = n To będzie. Poczekam na kwit jak każdy. Tylko że nowi zwykle sami odchodzą po pierwszym tygodniu, a ja zostaję. Mówię to życzliwie.
-? n @d4_blankiet_kasetka W kasetce widać paszport z wyciętą stroną. Czyj?
-= n Kogoś, kto w tym tygodniu wyjeżdża. Jeśli paczka tu zostanie, nie wyjedzie. Więcej wiedzieć nie trzeba, uwierz starszej kobiecie.
- ? n Na blankiecie stoi: „dla nocnej zmiany, bez wpisu”. Kto to pisał?
- = n Twój poprzednik. Ładny charakter pisma, prawda? Umowa była prosta: ja nie pytam, co on robi po nocach, on nie pyta, co jest w płótnie.
+? u Jak rozpoznać paczkę?
+= m Szare płótno. Zwykłe, bez wzorków. Nie chciałam, żeby się rzucała w oczy.
+ ? r Jaki ma kształt?
+ = m Płaska. Pod płótnem jest kasetka na kłódkę, więc nie zwija się jak woreczek. Proszę jej nie zgniatać.
+  ? r Kasetka jest zamknięta?
+  = n Na kłódkę. Cudze papiery, cudze oczy. Wolę oszczędzić wszystkim nieporozumień.
+ ? r Czym jest przewiązana?
+ = m Sznurkiem. Węzeł trzyma płótno, nie samą kasetkę. Rozplątanie wystarczy, bez nożyczek.
+  ? n Chcesz sprawdzić, czy ktoś rozwiązywał?
+  = n Chcę odebrać w takim stanie, w jakim zostawiłam. Drobna prośba, chyba zrozumiała.
+? r Gdzie została w szóstce?
+= n Na półce nad siedzeniem, ostatni kurs. Zawsze tam kładę. Wczoraj najwyraźniej nie powinnam.
+ ? u Co cię rozproszyło?
+ = m Liczyłam karę za spóźniony czynsz jednej lokatorki. Cudze rachunki też potrafią zająć człowiekowi głowę.
+  ? n Nie mogłaś policzyć w domu?
+  = n Mogłam. Mogłam też nie zgubić paczki. Wolałabym jednak porozmawiać o tym, co jeszcze da się zrobić.
+ ? r Dlaczego przewozisz to nocą?
+ = n Lokatorzy pracują na zmiany. Odbierają, kiedy wracają. Szóstka jeździ, nawet gdy biura już zamknięte.
+  ? n Tramwaj zastępuje ci gońca?
+  = m Tańszy i zwykle punktualny. Tylko trzeba pamiętać o własnej paczce, przyznaję.
+? n %papiery Co jest w kasetce?
+= k Zwykłe pokwitowania i drobne rozliczenia lokatorów. Nic poza tym.
+ ? n Po co kłódka do zwykłych rozliczeń?
+ = n Spróbuj zostawić cudzy dług na stole w kamienicy. Do wieczora każdy zna kwotę, a połowa ją podwoi.
+  ? r Kto ma klucz?
+  = n Osoba upoważniona. Nie będę wyliczać ludzi przy okienku. Paczka jest moja, klucze to osobna sprawa.
+ ? n @d4_blankiet_kasetka #papiery Przez szparę widać paszport z wyciętą stroną. To pokwitowanie?
+ = n To dokument człowieka, który chce wyjechać. Zatrzymasz paczkę, zatrzymasz jego wyjazd. Proszę rozważyć całość.
+  ? n Dlaczego ukrywasz to wśród rozliczeń?
+  = n Bo nie każdy, kto pyta o cudzy wyjazd, chce pomóc. Także tutaj, po obu stronach szyby.
+? u Którzy lokatorzy czekają na paczkę?
+= m Z Cooper Street dziewięć. Zarządzam dwudziestoma rodzinami. Nie będziemy teraz robić listy nazwisk.
+ ? r Czego od ciebie potrzebują?
+ = n Żeby ich sprawy nie utknęły w kolejnej szufladzie. Ja już wiem, co komu oddać. Tobie trzeba by tłumaczyć od początku.
+  ? n A jeśli ktoś chce odebrać bez ciebie?
+  = n Niech przyjdzie i powie. Tylko potem nie pytaj mnie, dlaczego dostał niewłaściwe papiery.
+ ? u Do rana naprawdę nie można poczekać?
+ = n Niektórzy już mają bilety. Tramwaj nie zaczeka na pieczątkę, a ja nie oddam im straconej podróży.
+  ? n Kto konkretnie ma bilet?
+  = n Nie podam nazwiska, żeby dostać paczkę. Wystarczy jedno źle zapamiętane słowo i człowiek zostaje na peronie.
+? r Jak chcesz załatwić odbiór?
+= m Sprawnie. Paczkę rozpoznajesz, nazwisko znasz. Nie musimy spędzić nad tym całej zmiany.
+ ? n +d4_koperta_oferta Co proponujesz zamiast zwykłego wpisu?
+ = n Kopertkę za fatygę. Sto dwadzieścia dolarów, paczka do mnie, bez wpisu. Poprzednik rozumiał takie drobne przysługi.
+  ? n Za co dokładnie płacisz: za fatygę czy za brak wpisu?
+  = n Za to, żeby ktoś nie musiał jutro tłumaczyć obcej osobie całego życia. Jeśli wolisz nazwać to inaczej, słucham.
+ ? r A jeśli zrobię pełny wpis?
+ = n Podpiszę. Iris Bell, czytelnie. Ja tu mieszkam i zostaję, niezależnie od tego, kto siedzi po drugiej stronie.
+  ? n Po co przypominać, że zostajesz?
+  = m Żeby było wiadomo, że można mnie znaleźć. Nie lubię naciskać. Lubię jasne ustalenia.
+? n Dlaczego właśnie ty trzymasz papiery lokatorów?
+= m Bo przychodzą do mnie, kiedy czegoś potrzebują. Potem wszyscy pytają, czemu mam tyle cudzych spraw.
+ ? n Mogą odmówić twojej pomocy?
+ = n Oczywiście. Mogą też stać samodzielnie w kolejkach. Nie zabieram nikomu tej przyjemności.
+  ? u A ty co dostajesz w zamian?
+  = m Za czas się płaci. Tobie też ktoś płaci za siedzenie tutaj. Mam nadzieję, że punktualnie.
+ ? r Znasz poprzedniego dyżurnego?
+ = n Sama? Znałam. Potrafił załatwić sprawę bez zakładania jej drugiej teczki. Szkoda, że tak nagle odszedł.
+  ? n Wiesz, dokąd?
+  - Nie lubię naciskać, ale to pytanie nie należy do okienka.
+  = n Gdybym wiedziała, mogłabym pytać jego o paczkę. A stoję tutaj, prawda?
+? n @d4_blankiet_kasetka #papiery Skąd dopisek „dla nocnej zmiany, bez wpisu” przy blankiecie?
+= n Od twojego poprzednika. Ja nie pytałam o jego noce, on nie pytał o moje paczki. Teraz trzeba się poznać od początku.
+ ? n Numer 0412 pozwoli znaleźć odbiorcę?
+ = n Pozwoli rozpoznać odbiór. Nie każdy numer musi od razu prowadzić do nazwiska.
+! rejestr Iris Bell, tutaj podpis. Zostaw mi kopię, skoro od dziś wszystko mamy tak dokładnie.
+> rejestr Paczka dotarła, pełny wpis też został zauważony. Zachowam swoje pokwitowanie, skoro oboje cenimy porządek. — I. Bell
+! koperta Kopertka pod spodem. Paczkę wezmę ostrożnie, nie trzeba jej już rozwiązywać.
+> koperta Paczuszka dotarła bez kłopotów. Przy kolejnej wizycie będę już wiedziała, z kim rozmawiam. — I. Bell
+! odmow_zglos Zapisz również, że prosiłam o odbiór przed ranem. Lokatorzy zapytają mnie, kto postanowił poczekać.
+> odmow_zglos Iris Bell: „Dwóch lokatorów pytało o dokumenty. Podałam im adres biura, żeby nie musieli polegać tylko na moim wyjaśnieniu.”
 
 # d5_noah
-? u Jak wygląda ten notes?
-= m Czarny, na spirali, do kieszeni. Wgnieciony z lewej strony, bo noszę go pod kaburą.
- ? r Co w nim jest?
- = n Notatki ze służby. Godziny, nazwiska. Nic, co wolno czytać przy okienku. To moje zmartwienie.
-? r Gdzie go zostawiłeś?
-= n W jedenastce, po dyżurze, na siedzeniu obok. Zagadałem się z motorniczym i wysiadłem bez notesu. Pierwszy raz od piętnastu lat.
- ? n Policjant wraca z dyżuru tramwajem?
- = m Mieszkam na końcu jedenastki. Radiowóz zostaje na komisariacie, a w tramwaju słyszę więcej niż za biurkiem.
- ? r O czym rozmawiałeś z motorniczym?
- = n O czwartkowym kursie. To on znalazł pod siedzeniem telefon Mai Doyle. Czyli: pytałem, kto wtedy z nią wysiadał. Nie pamiętał.
-? u Jak idzie sprawa Mai Doyle?
-= n Powoli. Mąż zgłosił zaginięcie, siostra twierdzi, że nic nie wie. Czyli: dwoje ludzi i żadnego konkretu.
- ? r Do kiedy masz na nią czas?
- = n Do wtorku, siódmego września, do szóstej rano. Potem akta idą do wydziału, a tam nikt nie pyta zaginionej, czy chce być znaleziona.
- ? n Wierzysz mężowi?
- - Czyli: przesłuchujesz policjanta. Ładnie. Śledztwa przy szybie nie komentuję.
- = n Wierzę godzinom. Na razie jego godziny mi się nie składają. Resztę zostawiam dla siebie.
-  ? u Można ci jakoś pomóc?
-  = m Można. Jak przy tym okienku zdarzy się coś dziwnego, zapisz godzinę i powiedz mi. Najlepiej zanim zapyta ktoś inny.
-? n @d3_maz_i_siostra:wydaj_evan|d3_maz_i_siostra:wez_100_evan Evan dostał od nas telefon. Co z nim zrobił?
-= n Przyniósł mi go rano. Zablokowany. Kodu podobno nie zna, bo żona „nigdy nie miała kodu”. Czyli: albo ktoś założył go po czwartku, albo mąż nie znał własnej żony.
-? n @d3_maz_i_siostra:wydaj_lena Telefon wzięła Lena. Co na to Evan?
-= n Dzwoni do mnie co godzinę, że siostra coś ukrywa. Lena mówi, że u niej telefon jest bezpieczny. Czyli: sprawdzam obie wersje.
-? n @d3_maz_i_siostra:zatrzymaj Telefon leży u nas w depozycie. Co na to Evan?
-= n Dzwoni co godzinę. Powtarzam mu, że to teraz sprawa policji, nie jego. Niech telefon leży, dopóki nie przyjdę po niego z papierem.
-? n @d5_notes_ulotki W notesie stoi: „ulotki, czwartek 22:15”. O co chodzi?
-= n Doyle zamówił ulotki z twarzą żony w czwartek o 22:15. Zaginięcie zgłosił w piątek o 6:10. Osiem godzin za wcześnie. Może zbieg okoliczności. To moje zmartwienie.
- ? n Skąd wiedział w czwartek, że żona nie wróci?
- = n Dobre pytanie. Zadam mu je sam, jak będę miał notes w ręku. A na razie umówmy się, że nikt tu do niego nie zaglądał.
+? u Jak wygląda notes?
+= m Czarny. Służbowy, bez ozdób. Takich jest sporo, więc sam kolor nie wystarczy.
+ ? r Jak jest oprawiony?
+ = n Na spirali, do kieszeni. Kartki da się odwrócić na tył, bez łamania grzbietu.
+  ? r Dużo kartek wyrwanych?
+  = n Notuję, nie rozdaję. Nie ustalajmy jednak właściciela na podstawie liczby pustych stron.
+ ? r Ma jakiś ślad używania?
+ = m Wgnieciony z lewej strony. Noszę pod kaburą. Czyli: odkształcenie, nie uszkodzenie po znalezieniu.
+  ? u Przeszkadza w pisaniu?
+  = n Na pierwszych kartkach. Potem się człowiek przyzwyczaja. Do rzeczy łatwiej niż do godzin, które się nie zgadzają.
+? r Gdzie został w jedenastce?
+= n W jedenastce, po dyżurze, na siedzeniu obok. Rozmawiałem z motorniczym i wysiadłem bez niego. Pierwszy raz od piętnastu lat.
+ ? r O czym rozmawialiście?
+ = n O kursie, w którym znalazł telefon Mai Doyle. Pytałem, kto z nią wysiadał. Nie zapamiętał.
+  ? n Wierzysz, że nie pamięta?
+  = n Sprawdzam to, co mówi. Brak pamięci nie jest jeszcze kłamstwem. Czyli: nie wpiszę mu świadka, którego nie widział.
+ ? u Często wracasz tramwajem?
+ = m Mieszkam na końcu jedenastki. Radiowóz zostaje na komisariacie. Nie jest dodatkiem do wypłaty.
+  ? r Ktoś mógł widzieć notes na siedzeniu?
+  = n Mógł. Jeśli go oddał, podziękuję. Jeśli czytał, to już moje zmartwienie.
+? u Jak idzie sprawa Mai?
+= n Mąż zgłasza zaginięcie, siostra mówi, że nic nie wie. Ja mam sprawdzić, czy ktoś potrzebuje pomocy, a nie rozstrzygać, kto głośniej pyta.
+ ? r Ile masz czasu?
+ = n Do wtorku, siódmego września, do szóstej rano. Potem akta idą do wydziału. Tam sprawa dostaje inne biurko.
+  ? n Inne biurko to koniec szukania?
+  = n Nie. Koniec mojego prowadzenia. Doyle nazywa to zamknięciem. Nie wszystko, co mówi mąż, jest nazwą procedury.
+ ? n Wierzysz Evanowi?
+ - Czyli przesłuchujesz policjanta. Ładnie. Śledztwa przy szybie nie komentuję.
+ = n Wierzę godzinom, kiedy da się je potwierdzić. Jego godziny na razie się nie składają.
+  ? r Co mam zapisywać, jeśli wróci?
+  = m Godzinę i to, o co pyta. Bez własnych dopisków o winie. Wniosek może poczekać, godzina potem ucieka.
+? r Jak potwierdzić, że notes należy do ciebie?
+= n Zadzwoń na komisariat przy Rynku. Dyżurny mnie zna. Tylko nie czytaj mu zeznań przez telefon.
+ ? n Nie wystarczy odznaka?
+ = n Potwierdza, kim jestem. Nie dowodzi, że każda czarna rzecz w magazynie jest moja.
+  ? u Nie przeszkadza ci sprawdzanie policjanta?
+  = n Czekanie przeszkadza. Sprawdzanie mniej. Zrób jedno porządnie, nie będziemy powtarzać drugiego.
+ ? r Co powiedzieć dyżurnemu?
+ = n Noah Reyes, zgubiony notes służbowy. Resztę ustalę z nim sam. Czyli: nazwisko, rzecz, bez zawartości.
+  ? n Dlaczego tak pilnujesz zawartości?
+  = n Bo zapisuję cudze słowa. Ktoś je powiedział policjantowi, nie całej kolejce do okienka.
+? n Czy rodzina ma prawo dostać rzeczy Mai?
+= n Rodzina może o nie wystąpić. To nie znaczy, że każdy przedmiot ma wrócić do męża, zanim zapytamy właścicielkę.
+ ? u A jeśli jej nie ma?
+ = n Wtedy trzeba ostrożniej, nie szybciej. Wiem, że przy szybie to brzmi jak prośba o dodatkowy kłopot.
+  ? n Potrafisz zagwarantować jej bezpieczeństwo?
+  = n Nie przez okienko i nie bez rozmowy z nią. Obietnic, których nie mogę sprawdzić, do notesu nie wpisuję.
+ ? r Co odróżnia zaginięcie od odejścia z domu?
+ = n Czasem jedno zdanie tej osoby. Tylko trzeba je usłyszeć od niej, nie od kogoś, kto zna ją najlepiej.
+  ? n A jeśli nie chce rozmawiać nawet z tobą?
+  = n To muszę ustalić, czy może odmówić swobodnie. Reszta to moje zmartwienie.
+? u Co się stanie, jeśli notes zostanie tutaj?
+= n Będę odtwarzał zapiski. Z pamięci daty wyglądają pewniej, niż są naprawdę. Wolałbym tego nie robić.
+ ? r Nie masz kopii?
+ = n Część informacji jest w aktach. Część jeszcze tutaj. To właśnie różnica między notesem a zamkniętą sprawą.
+  ? n Dlaczego nie przepisałeś wszystkiego?
+  = n Bo pracowałem, zanim wróciłem z pracy. Nie jest to usprawiedliwienie, tylko kolejność.
+ ? r Kto odpowie za zagubienie?
+ = n Ja. Dlatego proszę o potwierdzenie odbioru, nie o zniknięcie całej wizyty.
+  ? n Nawet gdyby ktoś już przeczytał?
+  = n Zwłaszcza wtedy. Bez zapisu nie ustalimy potem, kiedy i u kogo notes leżał.
+? n @d3_maz_i_siostra:wydaj_evan|d3_maz_i_siostra:wez_100_evan Co Evan zrobił z wydanym mu telefonem?
+= n Przyniósł rano. Zablokowany, kodu podobno nie zna. A wcześniej żona rzekomo żadnego kodu nie miała. Czyli: mam kolejne pytanie.
+? r @d3_maz_i_siostra:wydaj_lena Lena dostała telefon. Kontaktowała się z tobą?
+= n Twierdzi, że u niej jest bezpieczny. Evan dzwoni co godzinę. Sprawdzam, nie wybieram głośniejszego telefonu.
+? r @d3_maz_i_siostra:zatrzymaj Telefon nadal leży u nas. Co dalej?
+= n Niech zostanie. Przyjdę z dokumentem, jeśli będzie potrzebny do sprawy. Doyle może do mnie dzwonić, nie musi po niego wracać tutaj.
+? n @d5_notes_ulotki Czwartek 22:15, ulotki. Zgłoszenie dopiero rano. Co z tego wynika?
+= n Na razie kolejność. Prawie osiem godzin różnicy. Muszę spytać, skąd wiedział, że potrzebuje ulotek. Sam odstęp nie odpowie za niego.
+ ? n Może po prostu szukał jej przed zgłoszeniem?
+ = n Może. Właśnie dlatego zadaję pytania, zamiast stawiać znak równości między dwoma godzinami a winą.
+! wydaj Sprawdzę, czy kartki są całe. Odbiór podpiszę nazwiskiem, nie wystarczy sama odznaka.
+> wydaj Noah Reyes: „Notes wrócił do akt. Jeśli ktoś znowu pyta o telefon Mai, zapisz godzinę i przekaż mi tę informację.”
+! zadzwon Dzwoń na komisariat, numer dwanaście. Dyżurny potwierdzi, ja poczekam przy szybie.
+> zadzwon Potwierdzono odbiór notesu N. Reyesa. Zeznań nie odczytywano przez telefon. — Komisariat przy Rynku
 
 # d5_victor
-? u Jak wygląda ta teczka?
-= m Szary skaj, klamra z przodu, na rogu naklejka inspekcji. Na klapie inicjały V.C. i numer czterdzieści siedem.
- ? r Co jest w środku?
- = n Formularze, pieczątka, wykaz wydań z tego biura. Nikt spoza inspekcji nie ma prawa tam zaglądać. Jeśli ktoś zajrzał, chcę nazwisko.
-? r Gdzie ją zostawiłeś?
-= n W szóstce, o 4:10, na siedzeniu obok. Wysiadłem przy zajezdni bez teczki. Nie zdarza mi się to.
- ? n Inspektor jeździ nocnym tramwajem?
+? r Jak wygląda teczka?
+= n Szary skaj. Nie skóra. To ma znaczenie przy porównaniu.
+ ? r Jak się zamyka?
+ = n Klamrą z przodu. Bez zamka na klucz. Dokumenty zabezpiecza się obiegiem, nie zaufaniem do klamerki.
+  ? n A obieg zabezpieczył ją przed zostawieniem w tramwaju?
+  = n Nie. Zgubę zgłaszam ja i ja podpiszę odbiór. Możemy wrócić do rzeczy.
+ ? r Co ją wyróżnia?
+ = n Na rogu naklejka inspekcji. Na klapie V.C. i numer czterdzieści siedem. Proszę sprawdzić numer, nie samo podobieństwo.
+  ? r Czterdzieści siedem to numer sprawy?
+  = n Teczki. Sprawy się zmieniają, teczka zostaje. Dlatego numer jest na klapie.
+? r Gdzie została w szóstce?
+= n Na siedzeniu obok, o 4:10. Wysiadłem przy zajezdni. Nie zdarza mi się to.
+ ? n Po co inspektorowi nocny tramwaj?
  - Pytania zadaje kontrola, a nie kontrolowany. Jest na to paragraf.
- = n Sprawdzam, czy tramwaje jeżdżą tak, jak stoi w grafiku. Nie jeżdżą. A skoro już pytamy: kto cię tu skierował? W aktach nie mam żadnego skierowania.
-  ? r Nikt. To było ogłoszenie w gazecie.
-  = n „Bez referencji”. Czytałem. Poprzedni dyżurny też był bez referencji. Zapiszę to sobie.
-  ? n A kto skierował poprzedniego dyżurnego?
-  = n Nikt. I to jest pierwsze pytanie mojej kontroli. Drugie brzmi: dlaczego wszystkim to pasowało.
-? u Co właściwie kontrolujesz w tym biurze?
-= n Czy księga wydań zgadza się z magazynem i z kwitami. Wpis, kwit, podpis. Czasem któregoś brakuje. W tej księdze brakuje całej strony czterdzieści jeden.
- ? n Kto wyrwał tę stronę?
- = n Nie wiem. Księgę prowadził poprzedni dyżurny, Sam Holt. Od kilku tygodni nikt nie umie mi powiedzieć, gdzie on jest.
- ? r Za poprzednika wydania były w porządku?
- = n Nie wszystkie. Jedna rękawiczka wyszła bez księgi, jedna paczka bez wpisu. Dlatego potrzebuję teczki przed siódmą.
-  ? r Co będzie, jeśli teczki rano nie będzie?
-  = n Audyt przesunie się o tydzień. Przez tydzień ktoś zdąży poprawić księgę. Nie chcę nikomu dawać tego tygodnia.
-? n @d5_wykaz_dopisany W wykazie dwie pozycje są dopisane innym tuszem, z parafą V.C. Kto dopisywał?
-= e Ja. Pięć tygodni temu, z pamięci, po rozmowie z poprzednikiem. Bez dowodu. To niezgodne z regulaminem, więc proszę tego nie powtarzać.
- ? n Inspektor poprawia papiery po fakcie?
- = n Raz. Żeby wydania Holta w ogóle gdzieś istniały. Jeśli to wyjdzie, moja kontrola jest nieważna, a tej księgi nie przeczyta już nikt.
+ = n Żeby porównać rozkład z przejazdem. Przy biurku oba wyglądają identycznie. Na pętli już nie.
+  ? r Co się nie zgadzało?
+  = n Nie rozmawiam o wynikach kontroli z każdym, kto zapyta. Z tobą rozmawiam o teczce.
+ ? r Kiedy zauważyłeś brak?
+ = n Po wyjściu. W ręce miałem to, co wyjąłem, teczka została. Jedna rzecz odłożona obok wystarczy.
+  ? u Motorniczy może potwierdzić?
+  = n Kurs można ustalić. Najpierw sprawdźmy magazyn. Nie trzeba angażować całej zajezdni do odczytania V.C.
+? u Co sprawdzasz w naszym biurze?
+= n Księgę, magazyn i kwity. Trzy zapisy tej samej rzeczy powinny mówić to samo.
+ ? r Gdzie się rozchodzą?
+ = n W księdze brakuje strony czterdzieści jeden. To nie jest nieczytelny podpis, tylko brak strony.
+  ? n Wiesz, kto ją wyrwał?
+  = n Nie. Księgę prowadził Sam Holt. To wskazuje, kogo pytać, nie kto jest winny.
+ ? r Co z wydaniami poprzednika?
+ = n Prawa rękawiczka i paczka wyszły bez właściwego wpisu. Próbuję ustalić, ile rzeczy można jeszcze odtworzyć.
+  ? n Kto na tym ucierpiał?
+  = n Właśnie tego nie widać w pustej rubryce. Rzecz mogła trafić do właściciela albo do pierwszego chętnego.
+? r Dlaczego rozliczenie musi być o siódmej?
+= n Wtedy zamykam kontrolowany okres. Jeśli nie mam dokumentów, wynik jest niepełny.
+ ? r Co zrobisz bez teczki?
+ = n Audyt przesunie się o tydzień. Tydzień wystarczy, żeby księga zaczęła zgadzać się aż za dobrze.
+  ? n Podejrzewasz poprawianie wpisów?
+  = n Dlatego porównuję egzemplarze. Pojedynczy papier można poprawić. Trzeba jeszcze pamiętać o drugim.
+ ? u Nie możesz rozliczyć tego z pamięci?
+ = n Nie powinienem. Pamięć nie ma kopii ani daty naniesienia poprawki.
+  ? n Mówisz „nie powinienem”, nie „nie mogę”.
+  = n Mogę też podpisać pustą kartkę. Pytasz o możliwość czy o rzetelność kontroli?
+? r Co jest w teczce?
+= n Formularze, pieczątka, wykaz wydań z tego biura. Treść wykazu nie służy do publicznego sprawdzania właściciela.
+ ? n Nawet jeśli dotyczy naszego biura?
+ = n Wtedy otrzymasz właściwy egzemplarz. Z podpisem. Nie wyciągnięty ukradkiem z cudzej teczki.
+  ? r Kto podpisuje taki egzemplarz?
+  = n Ja oraz osoba potwierdzająca stan biura. Kto może to podpisać, ten powinien najpierw przeczytać.
+ ? r Dlaczego dwa egzemplarze?
+ = n Żeby po miesiącu nie rozmawiać o tym, co ktoś podobno widział. Jeden u mnie, drugi tutaj.
+  ? n A jeśli egzemplarze się różnią?
+  = n Zatrzymujemy obieg i ustalamy kiedy. Nie wybieramy wygodniejszego. Nawet jeśli opóźni to zamknięcie.
+? u Co wiadomo o poprzednim dyżurnym?
+= n Sam Holt. Od kilku tygodni nie mogę go znaleźć. Chcę jego wyjaśnień, nie opowieści kolejki.
+ ? r Jak tu trafił?
+ = n Bez referencji. Podobnie jak osoba, która odpowiedziała na obecne ogłoszenie. Czytam także gazety.
+  ? n Dlaczego to cię obchodzi?
+  = n Ktoś oddaje obcemu klucze, księgę i nocną zmianę. Potem wszyscy mówią, że nie wiedzieli, kto tu siedzi.
+ ? n Chcesz go ukarać czy odtworzyć wydania?
+ = n Najpierw odtworzyć. Jeśli zacznę od kary, dostanę mniej odpowiedzi i ładniejsze podpisy.
+  ? u Mówisz mu to samo?
+  = n Powiem, kiedy go znajdę. Nie składam za niego zeznań ani za niego nie odpowiadam.
+? n @d5_wykaz_dopisany #tusz Dopiski innym tuszem mają parafę V.C. To twoje pismo?
+= e Moje. Pięć tygodni temu odtworzyłem dwie pozycje po rozmowie z Holtem. Bez dowodu, z pamięci. Nie powinienem.
+ ? n Po co ryzykować własną kontrolę?
+ = n Żeby wydania w ogóle gdzieś istniały. Jeśli kontrolę unieważnią, nikt już nie przeczyta tej księgi tak, jak trzeba.
+ ? n Czyli twoje papiery też wymagają sprawdzenia?
+ = n Tak. Dlatego stoi parafa. Mogłem jej nie postawić. Proszę nie mylić tego z prośbą o pochwałę.
+? r @d4_iris:koperta Paczka wyszła bez wpisu. Jak to uzupełnić?
+= n Najpierw zgodnie z prawdą zapisać, że wyszła bez wpisu. Nie cofać daty i nie udawać, że od początku było czysto.
+? r @d4_iris:rejestr Iris podpisała odbiór paczki. Wpis wystarczy?
+= n Do potwierdzenia wydania tak. Do odpowiedzi, co było w środku, nie. Nie dopisuj do podpisu więcej, niż potwierdza.
+? r @d4_iris:odmow_zglos Zatrzymana paczka czeka na kontrolę. Co sprawdzisz?
+= n Numer 0412, stan depozytu, zgłoszenie. Kto może to podpisać? Potrzebuję osoby, która widziała przyjęcie.
+! wykaz_paczke Paczka 0412 w depozycie. Proszę sprawdzić treść przed podpisem, potem drugi egzemplarz zostaje tutaj.
+> wykaz_paczke Paczka 0412 ujęta w protokole. Do piątku proszę przygotować dokumenty poprzednich zmian. — V. Crane
+! potwierdz_wpis Iris Bell, odbiór potwierdzony. Podpisuję zgodność wpisu, nie zawartość paczki.
+> potwierdz_wpis Potwierdzono wydanie paczki 0412 zgodnie z księgą. Dokumenty poprzednich zmian nadal są potrzebne do kontroli. — V. Crane
+! spis_bez_paczki Potwierdzam przyjęcie spisu. Zgodność co do sztuki jeszcze nie kończy sprawdzania.
+> spis_bez_paczki Spis przyjęty, brak rozbieżności w podanych liczbach. Do zapisów o wydaniach wrócę osobno. — V. Crane
 
 # d5_gus
-? u Jak wygląda ten portfel?
-= m Brązowy, wytarty, na zatrzask. Mam go jedenaście lat, wygiął się pod moją kieszeń. Tylko on mi został z tamtego życia. Znaczy, ze starych rzeczy.
- ? n Z jakiego „tamtego życia”?
- = n Przejęzyczyłem się. Tylko tyle. Człowiek o tej porze gada, co mu ślina na język przyniesie.
-? r Co w nim jest?
-= k Prawo jazdy, dwadzieścia dolarów i zdjęcie córki. Tylko tyle, nic więcej.
+? u Jak rozpoznać portfel?
+= m Brązowy, wytarty. Tylko nie taki nowy, co go ktoś specjalnie postarzył. Mój sam to zrobił.
+ ? r Jak się zamyka?
+ = n Na zatrzask. Trzeba docisnąć. Jak zostanie otwarty, rozkłada się w kieszeni.
+  ? r Coś z niego wypada?
+  = n Monety. Dlatego ich tam nie trzymam. Papier siedzi dobrze, proszę nie potrząsać.
+ ? r Jaki ma znak szczególny?
+ = m Wygiął się pod kieszeń. Jedenaście lat tak noszę. Jak położysz płasko, jeden róg odstaje.
+  ? u Jedenaście lat z jednym portfelem?
+  = n Tylko on mi został ze starych rzeczy. Z tamtego... Nieważne. Nie trzeba wymieniać, póki trzyma.
+? r Gdzie go zostawiłeś?
+= n W jedenastce. Wyjmowałem, potem chowałem. Najwyraźniej nie tam, gdzie trzeba. Tylko tyle pamiętam.
+ ? r Miałeś wtedy płaszcz na sobie?
+ = m Tak. I szlafrok pod spodem. Kieszenie się mylą, jak człowiek wychodzi za szybko.
+  ? n Dlaczego tak się spieszyłeś?
+  = n Pokłóciłem się w domu. Z żoną, z teściową, z obiema. Tylko proszę nie pytać, która miała rację.
+ ? u Sprawdzałeś obie kieszenie?
+ = n Wszystkie. Przy ludziach na przystanku, wyglądało to jeszcze gorzej niż tutaj.
+  ? r Ktoś mógł potwierdzić, że go miałeś?
+  = n Nie będę wracał pytać. Tylko odszedłem stamtąd i chcę iść dalej.
+? n %zawartosc Co w nim jest?
+= k Prawo jazdy, dwadzieścia dolarów i zdjęcie córki. Nic więcej.
  ? u Ile lat ma córka?
- = e Siedem. Na zdjęciu ma pięć, nowszego nie mam. Tylko nie pytaj, kiedy ją ostatnio widziałem.
- ? r Na jakie nazwisko jest prawo jazdy?
- = n Pell. Gustaw Pell. Gus. Tylko proszę nie zapisywać, że byłem w szlafroku.
-  ? r Adres do wpisu?
-  = k Mill Street dwanaście. Nie, zaraz, piętnaście. Dwanaście to brat, ale on się wyprowadził.
-? n Szlafrok pod płaszczem, w środku nocy. Co się stało?
-- Nic się nie stało. Człowiek nie może wyjść w szlafroku? Portfel. Proszę.
-= n Pokłóciłem się w domu i wyszedłem, jak stałem. Z żoną, z teściową, z obiema naraz. Tylko o rodzinie nie rozmawiajmy.
- ? u Może zadzwonić do domu, że nic ci nie jest?
- = n Nie. Telefon jest tam, gdzie żona. Nie dzwonię. Tak będzie lepiej dla wszystkich.
- ? n Dokąd jedziesz o 5:40?
- = n Jedenastką do końca, a potem dalej. Daleko. Tylko nie pytaj dokąd. Jak nie wiesz, to nikomu nie powiesz.
-  ? n A kto miałby pytać?
-  = e Ci, co znaleźli mnie poprzednim razem. Wtedy urzędnik wydał mnie z pieczątką, nawet z dwiema. Jak portfel tu zostanie, utknę, a tu mnie znajdą.
-? n @d5_dwa_dowody W portfelu są dwa dowody: Pell i Ferro. To samo zdjęcie. Który jest twój?
-= n Dwa? To się da wytłumaczyć. Jeden po dziadku. A który mój, nie powiem, bo to się zawsze źle kończy.
- ? n Dziadek miał twoją twarz?
- = e Dobrze, już dobrze. Jeden jest stary, drugi nowy. Ktoś mi pomógł zacząć od początku i o 5:40 mam tramwaj. Tylko proszę, nie wpisuj obu nazwisk.
-? n @d5_gotowka_400 Za zdjęciem córki leży 250 dolarów. Skąd tyle?
-= e To nie na życie, tylko na wyjazd. Wszystko, co mam. Tylko nie mów nikomu, ile.
+ = e Siedem. Na zdjęciu pięć. Tylko nie pytaj, kiedy ostatnio ją widziałem.
+  ? u Zdjęcie chcesz odzyskać nawet bez reszty?
+  = e Tak. Ale nie zamieniajmy tego w wybór. Potrzebuję też dokumentów, choć o nich mówię mniej ładnie.
+ ? n @d5_gotowka_400 #zawartosc Za zdjęciem leży 250 dolarów. Dlaczego mówisz o dwudziestu?
+ = e Bo nie chcę, żeby cała kolejka znała kwotę. To na wyjazd, wszystko, co mam. Tylko nie wyjmuj na ladę.
+  ? n To twoje pieniądze?
+  = n Moje. Nie każdy pieniądz schowany osobno jest kradziony. Nie chcę ich stracić razem z portfelem drugi raz.
+? r Na jakie nazwisko szukać dokumentów?
+= n Pell. Gustaw Pell. Gus wystarczy w rozmowie, na papierze Gustaw.
+ ? r Jaki adres do wpisu?
+ = k Mill Street dwanaście. Piętnaście, przepraszam. Dwanaście to brat, już tam nie mieszka.
+  ? n Który adres mam zapisać?
+  = n Tylko jeszcze nie zapisuj. Podam, jak będę wiedział, co właściwie muszę podpisać.
+ ? n %dowody Jest tylko jeden dokument tożsamości?
+ = k Jeden. Prawo jazdy. Nie wiem, ile razy można pytać o ten sam portfel.
+  ? n @d5_dwa_dowody #dowody Są dwa dowody z twoim zdjęciem: Pell i Ferro. Dlaczego?
+  = e Jeden stary, drugi nowy. Ktoś mi pomógł wyjechać. Tylko nie wpisuj obu nazwisk obok siebie.
+   ? n Chcesz odebrać portfel na nazwisko, od którego uciekasz?
+   = e Chcę odebrać portfel. Tylko tyle. Jeśli wpiszesz oba, sam pokażę drogę tym, przed którymi jadę.
+    ? r Który zapis potwierdzi odbiór, nie trasę?
+    = n Pell. Tak się przedstawiłem. Drugiego proszę nie dopisuj dla porządku.
+? u Co będzie, jeśli nie zdążysz na 5:40?
+= n Zostanę tutaj. A tutaj mogą mnie znaleźć. Nie mówię o małej przesiadce, której szkoda.
+ ? n Kto może cię znaleźć?
+ - Nikt. Człowiek nie może po prostu chcieć portfela z powrotem? Proszę.
+ = e Ci, co poprzednio. Urzędnik też chciał tylko wypełnić rubrykę, a potem ktoś wiedział, gdzie przyjść.
+  ? r Co mogę zapisać, żeby ci nie zaszkodzić?
+  = n To, co potrzebne do portfela. Nie dokąd jadę. Tylko o ten jeden szczegół proszę.
+ ? r Masz bilet?
+ = n W portfelu. Dlatego nie mogę po prostu machnąć ręką i wyjść.
+  ? u Nie kupisz drugiego?
+  = n Bez pieniędzy z portfela? Tylko pomyśl. Nawet gdybym kupił, nadal nie miałbym dokumentów.
+? u Zadzwonić do kogoś, że nic ci nie jest?
+= n Nie do domu. Telefon został tam, gdzie żona. Tak będzie lepiej.
+ ? n A do kogoś spoza domu?
+ = n Nie chcę nikogo wciągać. Jak ktoś potwierdzi, że tu jestem, ktoś następny zapyta, dokąd poszedłem.
+  ? u Nie masz komu zaufać?
+  = n Mam za mało czasu, żeby to sprawdzać. Tylko portfel, potem tramwaj.
+ ? r Co zrobisz, jeśli trzeba będzie potwierdzić własność?
+ = n Przyjdę z kimś. Tak się mówi przy okienku, prawda? Nie wiem, kogo mam teraz przyprowadzić.
+  ? n Czyli obiecujesz coś, czego nie zrobisz?
+  = e Próbuję nie zamknąć sobie ostatnich drzwi. Tylko nie bierz tego za dowód, że portfel nie jest mój.
+? n @d5_dwa_dowody #dowody Pell i Ferro, to samo zdjęcie. Którym jesteś?
+= e Tym, który stoi w szlafroku. Jeden dokument był wcześniej, drugi ma być potem. Nie każ mi wybierać nazwiska na całą kolejkę.
+ ? r Kto załatwił drugi?
+ = n Nie powiem. Nawet jeśli portfel zostanie. To nie tylko moje nazwisko trafiłoby do księgi.
+? n @d5_gotowka_400 #zawartosc Czemu 250 dolarów jest schowane za zdjęciem?
+= n Bo tam nie wysuną się przy wyjmowaniu drobnych. To cały wyjazd. Tylko nie licz ich głośno.
+! wydaj Zdjęcie jest. Dokumenty też. Tylko o szlafroku zapomnijmy, dobrze?
+> wydaj Pocztówka z miasta, którego nazwy nie znam: „Portfel dojechał ze mną. Pell został tam, skąd wyjechałem. — G.”
+! odmow Znajdę kogoś, kto potwierdzi. Tylko proszę nie dzwonić, zanim wrócę.
+> odmow Żona Gusa Pella pytała telefonicznie o męża. Zostawił w domu klucze i trzy dolary; w biurze nie uzyskała informacji o jego pobycie.
+! zadzwon Nie dzwoń. Tylko nie policja. Portfel zostaw, ja już... muszę iść.
+> zadzwon Portfel z dwoma dowodami przyjęto do ewidencji. Zgłaszający odszedł przed przyjazdem patrolu. — N. Reyes
+! wez_250_gus Zdjęcie jest. Pieniądze... Nie, nic. Tylko oddaj już resztę.
+> wez_250_gus Zatrzymany na dworcu mężczyzna z dokumentem „Ferro” zgłosił brak 250 dolarów w odebranym portfelu. Prosimy o wyjaśnienie. — N. Reyes
