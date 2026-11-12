@@ -1,0 +1,754 @@
+## NOWY d1_mabel
+dzien: 1
+postac: Mabel Finch, 68
+glos: Mówi spokojnie i dokładnie, poprawia drobne nieścisłości, nie podnosi głosu.
+tik: mówi „nie całkiem”
+typ: uczciwy
+rzecz: Pęk kluczy na czerwonym kółku
+cechy: czerwone kółko | trzy klucze | spiłowany ząbek najmniejszego klucza
+blizniaki: cztery klucze na czerwonym kółku | trzy klucze, najmniejszy bez spiłowania
+sekret: W szczelinie kółka tkwi nitka od fartucha, a najmniejszy klucz ma spiłowany ząbek => właścicielka rozpozna ślad własnej naprawy, sam kolor nie wystarczy
+powiazanie: sąsiadka Thomasa, pożyczała mu narzędzia; nie wie o jego wizytach w biurze
+wejscie: Dobry wieczór, Mabel Finch. Zgubiłam klucze w czwórce. Mam zapas u sąsiadki, tylko ona lubi potem opowiadać, jak mnie uratowała.
+decyzja: wydaj | Wydaj klucze po porównaniu opisu | 0 | Trzy, zgadza się. Sąsiadka dziś nie będzie miała nowej opowieści. | Mabel wraca bez proszenia o zapas | Wydanie opiera się na opisie, bez dodatkowego świadka | Mabel: „Otworzyłam sama. Sąsiadka pytała, czemu mam taki dobry humor.”
+decyzja: zatrzymaj | Poczekaj na potwierdzenie sąsiadki | 0 | Przyprowadzę ją. Tylko wtedy trzeba będzie wysłuchać nas obu. | Druga osoba potwierdzi własność | Mabel musi ujawnić zgubę sąsiadce | Mabel: „Sąsiadka potwierdziła klucze i opowiedziała o wszystkim na klatce. Teraz każdy pyta, czy trafię do domu.”
+rozmowa:
+? u Jak wyglądają klucze?
+= m Czerwone kółko. Żadnego breloczka, bo zahaczał o podszewkę.
+ ? r Ile kluczy?
+ = n Trzy klucze. Do mieszkania, piwnicy i skrzynki. Liczę przy zamykaniu, nie tylko po zgubie.
+  ? n Tym razem liczenie nie pomogło?
+  = n Nie całkiem. Policzyłam przed wyjściem. Powinnam była też po tramwaju.
+ ? r Co odróżnia najmniejszy?
+ = m Spiłowany ząbek najmniejszego klucza. Sama poprawiałam, zacinał się w skrzynce.
+  ? u Sama piłowałaś?
+  = m Tak. Potem Thomas pożyczył pilnik, więc przez tydzień pytał, czy oddać, jakby to był serwis obiadowy.
+? r Gdzie i kiedy zostały?
+= n Czwórka, wieczorny kurs. Wyjmowałam chusteczkę i chyba wtedy wysunęły się z kieszeni.
+ ? r Która kieszeń?
+ = n Prawa. Lewą mam zszytą od środka. Teraz widzę, że powinnam była zszyć obie i nosić torbę.
+  ? r Sprawdzałaś podszewkę?
+  = m Tak. W domu, porządnie. Nie całkiem mi się podoba, że trzeba tu opowiadać o każdej dziurze.
+ ? u Wracałaś szukać?
+ = n Na pętlę. Powiedzieli, że klucze trafiają tutaj. Tyle wystarczyło, żeby zrobić jeszcze jedną podróż.
+  ? u Nie mogłaś wziąć zapasu?
+  = n Mogłam. Wolałam najpierw spróbować bez rodzinnej narady na klatce.
+? u Co jest złego w pomocy sąsiadki?
+= m Pomoc dobra. Opowieść potem długa. Za każdym razem jestem w niej mniej samodzielna.
+ ? u Już ci kiedyś otwierała?
+ = n Raz. Do dziś mówi „zawsze pomagam Mabel”. Raz i zawsze, nie całkiem to samo.
+  ? n Możesz powiedzieć, żeby nie rozpowiadała.
+  = n Mogę. Wtedy opowie, że jestem niewdzięczna. Klucze łatwiej odzyskać niż właściwą wersję historii.
+ ? r Zmienisz miejsce przechowywania zapasu?
+ = n Nie. Mieszka blisko i rzeczywiście pomaga. Nie zamierzam karać jej za gadanie brakiem możliwości pomocy.
+  ? u Czyli nadal jej ufasz?
+  = m Z kluczami tak. Ze zwięzłym opisem zdarzeń mniej.
+? r Jak potwierdzisz własność, jeśli opis nie wystarczy?
+= n Przyjdę z nią. Nie będę wyrywać kluczy przez szybę tylko po to, żeby zachować dumę.
+ ? r Zna najmniejszy klucz?
+ = m Zna skrzynkę. Kiedyś podlewała kwiaty i przyniosła mi pocztę. Trzeba było jej pokazać, jak przekręcić.
+  ? n Czyli ktoś jeszcze zna szczegóły.
+  = n Oczywiście. To klucze, nie tajemnica państwowa. Sprawdzaj kilka rzeczy, nie jedno hasło.
+ ? u Co zrobisz po odbiorze?
+ = m Przypnę kółko do wewnętrznej pętelki. Już ją doszyłam. Człowiek jednak coś robi między podróżami.
+  ? u I powiesz sąsiadce?
+  = n Powiem, że mam klucze. To prawda i ma odpowiednią długość.
+? r @sekret Skąd nitka w szczelinie kółka?
+= m Od fartucha, zaczepiło się przy wyjmowaniu. Nie wyciągaj igłą, czerwony lakier już wystarczająco obdrapany.
+
+## NOWY d1_owen
+dzien: 1
+postac: Owen Price, 59
+glos: Mówi niespiesznie, pewność stopniuje uczciwie, żartuje z własnych przyzwyczajeń.
+tik: oddziela „pamiętam” od „wydaje mi się”
+typ: uczciwy, słabo pamięta
+rzecz: Zielony termos z szerokim kubkiem
+cechy: zielony lakier | szeroki kubek | dwie rysy pod uchwytem
+blizniaki: wąski kubek | jedna rysa i niebieski korek
+sekret: Pod kubkiem schowana jest papierowa osłona z paczki herbaty, używana do wycierania gwintu => właściciel pamięta sposób użytkowania lepiej niż wygląd
+powiazanie: motorniczy z jedenastki, zna Daria z przerw na posiłek
+wejscie: Owen Price. Zostawiłem termos w jedenastce po zmianie. Kolor chyba zielony, tylko przy tej lampie wszystko robi się żółte.
+decyzja: wydaj | Wydaj termos po sprawdzeniu szczegółów | 0 | Gwint ten sam. Kubek dokręcę sam, trzeba go najpierw cofnąć. | Owen odzyskuje własny termos mimo niepewnego początku | Biuro przyjmuje opis częściowo oparty na nawykach | Owen: „Herbata nie wyciekła. Na korku przykleiłem nazwisko, sprawdzone przy dziennym świetle.”
+decyzja: zatrzymaj | Zatrzymaj do potwierdzenia przez kolegę | 0 | Dario pewnie pozna, ile razy mu z niego lałem. Przyjdziemy po zmianie. | Potwierdzenie nie zależy tylko od pamięci Owena | Kolega musi poświęcić przerwę na wizytę | Owen: „Dario potwierdził termos i zdążył opowiedzieć, co do herbaty pasuje. Przerwa minęła nam przy szybie.”
+rozmowa:
+? u Co pamiętasz na pewno z wyglądu?
+= m Zielony lakier. Przy dziennym świetle zielony, pamiętam. Tutaj nie będę się kłócił o odcień.
+ ? r Jaki kubek?
+ = n Szeroki kubek. Dwie dłonie można nim ogrzać. Wąski wyglądałby jak nakrętka od butelki.
+  ? u Zawsze z niego pijesz?
+  = m Ja tak. Dario czasem z własnego, ale i tak wypija połowę mojego termosu.
+ ? r Ma uszkodzenia?
+ = m Dwie rysy pod uchwytem. To pamiętam, bo zahacza mi paznokieć, kiedy myję.
+  ? n A kolor korka?
+  = n Nie pamiętam pewnie. Nie będę wybierał spośród kolorów, które mi podasz.
+? r Gdzie i kiedy go zostawiłeś?
+= n W jedenastce, po wieczornej zmianie. Przy miejscu, gdzie odkładałem torbę z jedzeniem.
+ ? r W torbie go nie było?
+ = n Nie. Nosiłem obok, żeby pojemnik z obiadem stał równo. Obiad dojechał, herbata nie.
+  ? u Kiedy zauważyłeś?
+  = m Przy zmywaniu. Kubka nie było, więc zacząłem od torby, potem od pamięci.
+ ? r Wiesz, który kurs?
+ = n Końcowy po mojej zmianie. Godziny z pamięci nie podam. Grafik pozwoli sprawdzić dokładnie.
+  ? n Nie boisz się, że niepewność utrudni odbiór?
+  = n Boję się bardziej, że powiem złą godzinę i ktoś będzie szukał nie tam.
+? u Dlaczego zależy ci na tym termosie?
+= m Nie cieknie, jeśli dobrze zamknąć. Z nowym człowiek najpierw dowiaduje się o wadach na własnej koszuli.
+ ? r Trzeba go zamykać inaczej?
+ = n Najpierw cofnąć kubek, aż gwint wskoczy. Potem dokręcić. Z rozpędu idzie krzywo.
+  ? r Pokażesz po znalezieniu?
+  = m Pokażę. Bez nalewania na ladę, spokojnie. Wystarczy pusty.
+ ? u Kto jeszcze go używał?
+ = n Dario pożyczał. Pozna ten gwint. Raz twierdził, że termos kłóci się z nim o kierunek.
+  ? r Możemy go zapytać?
+  = m Można. Tylko po zmianie, bo na trasie będzie pamiętał przystanki, nie mój kubek.
+? n Często mylą ci się takie rzeczy?
+= n Czasem kolor. Sposób, w jaki się zamyka, pamiętam lepiej. Ręce robią codziennie, oczy tylko mijają.
+ ? u Używasz innych termosów?
+ = n W zajezdni stoją podobne. Właśnie dlatego nie chcę dostać pierwszego zielonego.
+  ? r Co sprawdzisz przed zabraniem?
+  = m Gwint i rysy. Potem jeszcze zapach, chociaż herbata nie jest dowodem na wyłączność.
+ ? n Co, jeśli nie rozpoznasz?
+ = n Zostawię. Lepiej wrócić z Dariem niż komuś zabrać picie na całą noc.
+  ? u Możesz dziś kupić coś ciepłego?
+  = m Mogę. Tylko w papierowym kubku stygnie szybciej, niż człowiek dochodzi do przystanku.
+? r @sekret Po co pod kubkiem papier z opakowania herbaty?
+= m Wycieram gwint, zanim zakręcę. Nie powinienem zostawiać mokrego. Ten papierek miał wylądować w koszu, nie w protokole.
+
+## NOWY d2_nell
+dzien: 2
+postac: Nell Foster, 12
+glos: Mówi szybko i rzeczowo, pilnuje, by nie traktować jej jak małego dziecka.
+tik: poprawia „moja” na „pod moją opieką”
+typ: uczciwy
+rzecz: Lalka w żółtej sukience
+cechy: żółta sukienka | miękki tułów | jeden zielony guzik przy kołnierzu
+blizniaki: sztywny tułów | dwa zielone guziki
+sekret: W wewnętrznej kieszeni sukienki jest karteczka „Lila, nie prać włosów” => Nell naprawia i pilnuje lalki młodszej siostry, nie wstydzi się zabawki, tylko zawiedzionej obietnicy
+powiazanie: mieszka w sąsiedztwie Thomasa, zna go z klatki, nie zna jego historii
+wejscie: Nell Foster. Zostawiłam lalkę siostry w czwórce. Jest pod moją opieką, znaczy była, zanim wysiadłam.
+decyzja: wydaj | Wydaj lalkę Nell | 0 | Guzik jest. Dobra, teraz do torby i do samego domu jej nie otwieram. | Siostra odzyskuje zabawkę | Odbiór odbywa się bez dorosłego świadka | Nell: „Lila policzyła guzik i od razu zauważyła, że rozczesałam włosy. O tramwaju też powiedziałam.”
+decyzja: zatrzymaj | Poczekaj na dorosłego opiekuna | 0 | Przyjdę z mamą. Tylko nie mów od razu, że byłam taka nieodpowiedzialna, sama powiem. | Dorosły potwierdzi odbiór | Nell musi przyznać się do zguby przed odzyskaniem lalki | Nell: „Mama przyszła po lalkę, ja szłam obok. Lila pilnuje teraz i jej, i mnie.”
+rozmowa:
+? u Jak wygląda lalka?
+= m Żółta sukienka. Nie taka balowa, zwykła. W balowej nie da się jej posadzić.
+ ? r Z czego jest zrobiona?
+ = n Miękki tułów, ręce trochę twardsze. Można ją zgiąć, ale nie próbuj odrywać, żeby sprawdzić.
+  ? u Sama ją ubierałaś?
+  = m Pomagałam. Siostra ciągnie za głowę, jak coś nie przechodzi. Ja wolę odpiąć.
+ ? r Jakiś szczegół ubrania?
+ = m Jeden zielony guzik przy kołnierzu. Sama przyszyłam. Drugi byłby za trudny do zapinania.
+  ? u Umiesz szyć?
+  = m Guzik umiem. Nie powiedziałam, że płaszcz. Thomas z naszej klatki też pożycza nitki, a jest dorosły.
+? r Gdzie i kiedy została?
+= n W czwórce, po południu. Na siedzeniu od okna. Siedziała, nie leżała, bo siostra kazała pilnować.
+ ? r Siostra jechała z tobą?
+ = n Nie. Została w domu. Wzięłam lalkę do poprawienia sukienki, miała dostać wieczorem.
+  ? n Dlaczego nie poprawiałaś w domu?
+  = n Bo wtedy Lila co chwilę chce sprawdzić, czy już. U znajomej można skończyć jeden guzik bez narady.
+ ? u Kiedy zauważyłaś brak?
+ = n Przy wyjmowaniu torby. Igła była, lalka nie. Najpierw się ucieszyłam, że nie zgubiłam igły, potem przestałam.
+  ? u Powiedziałaś komuś?
+  = n Że szukam. Nie powiedziałam jeszcze Lili. Ona już czeka, kiedy skończy się szycie.
+? u Dlaczego tak pilnujesz, czyja to lalka?
+= m Bo jest siostry. Jak powiem „moja”, to potem wyjdzie, że mogę robić z nią, co chcę.
+ ? n A możesz ją odebrać za siostrę?
+ = n Mogę przynieść z powrotem rzecz, którą obiecałam pilnować. Jak trzeba mamy, przyjdę z mamą.
+  ? u Wolisz uniknąć rozmowy z mamą?
+  = n Wolę najpierw mieć lalkę. Wtedy opowieść kończy się oddaniem, a nie płaczem.
+ ? u Lila jest młodsza o dużo?
+ = m Na tyle, żeby wierzyć, że umiem wszystko. Nie chcę jej poprawiać akurat dzisiaj.
+  ? n Nie lepiej powiedzieć, że też się mylisz?
+  = n Powiem. Tylko nie chcę, żeby ćwiczyła tę wiadomość bez lalki do spania.
+? r Co zrobisz, jeśli znajdzie się podobna?
+= n Nie wezmę. Siostra zauważy guzik, zanim zdąży się ucieszyć. Wtedy będę miała dwie zguby, nie rozwiązanie.
+ ? r Poznasz bez sukienki?
+ = m Po tym, jak się zgina. Ale ubrania nie wyrzucaj, to byłaby cała moja robota od nowa.
+  ? n Sama zabawka nie wystarczy?
+  = n Wystarczy do spania. Do dotrzymania obietnicy potrzebny jeszcze guzik.
+ ? u Co powiesz po powrocie?
+ = n Że została w tramwaju i ktoś ją oddał. Nie że poszła na spacer. Lila już nie jest aż taka mała.
+  ? u A potem?
+  = m Potem siostra zabierze mi ją z rąk i sprawdzi włosy. Zawsze zaczyna od włosów.
+? r @sekret W kieszeni jest „Lila, nie prać włosów”. Kto to napisał?
+= m Ja. Po ostatnim myciu sterczały na wszystkie strony. To instrukcja dla siostry, nie imię lalki.
+
+## NOWY d3_caleb
+dzien: 3
+postac: Caleb Moss, 43
+glos: Mówi ostrożnie, konkretnie, przyznaje rację dopiero po sprawdzeniu szczegółu.
+tik: mówi „sprawdźmy jeszcze”
+typ: bliźniak
+rzecz: Okulary w czarnym etui
+cechy: czarne etui | okrągłe szkła | drut przy lewym zawiasie
+blizniaki: okulary z drutem przy prawym zawiasie, zgodne ze zgubą Caleba | prostokątne szkła i oba zawiasy całe
+sekret: Na wewnętrznej stronie lewego zausznika wyryto „B.W.” => oglądana para nie należy do Caleba, choć odpowiada ogólnemu opisowi
+powiazanie: brak
+wejscie: Caleb Moss. Okulary, czarne etui, zgubione w szóstce. Bez nich zobaczę, że coś podajesz, ale nie odczytam, co podpisuję.
+decyzja: wydaj | Wydaj oglądaną parę mimo rozbieżności | 0 | Wezmę, ale coś tu ciągnie inaczej. Sprawdzę jeszcze w domu. | Caleb wychodzi z okularami | Dostaje cudzą parę, niewłaściwą dla jego wzroku | Caleb: „Te okulary oddaję. Próba przeczytania gazety skończyła się bólem głowy, moje nadal się nie znalazły.”
+decyzja: zatrzymaj | Zatrzymaj tę parę i zapisz dokładny opis zguby | 0 | Prawy zawias, zapisz prawy. Poczekam na własne, nie na podobne. | Cudza para zostaje dla właściciela | Caleb wraca bez okularów | Caleb: „Sąsiad odczytał mi pocztę. To irytujące, ale przynajmniej nie zabrałem komuś jego oczu.”
+rozmowa:
+? u Jak wygląda etui?
+= m Czarne etui. Twarde, zamykane. Sam kolor pewnie niczego nie rozstrzyga.
+ ? r Jakie szkła?
+ = n Okrągłe szkła. Nie idealne koła, ale zdecydowanie nie prostokątne.
+  ? r Możesz sprawdzić bez zakładania?
+  = n Kształt tak. Drobny napis gorzej. Sprawdźmy jeszcze zawias, tam jest naprawa.
+ ? r Jak naprawiony?
+ = m Drut przy prawym zawiasie. Z mojej prawej strony, kiedy noszę. Nie od strony patrzącej osoby.
+  ? n @sekret Na oglądanej parze naprawiono lewy zawias.
+  = n Drut przy lewym zawiasie? To nie pasuje. Sprawdźmy jeszcze, czy oboje mówimy o noszeniu, nie o trzymaniu naprzeciwko.
+? r Gdzie i kiedy zginęły?
+= n W szóstce, rano. Schowałem do etui po czytaniu i chyba zostawiłem obok.
+ ? r Dlaczego zdjąłeś przed wyjściem?
+ = n Do chodzenia ich nie potrzebuję. Do drobnego druku tak. To nie jest tak, że bez nich widzę wyłącznie mgłę.
+  ? u Możesz wrócić sam?
+  = m Mogę. Tylko numer na kwicie przeczytaj mi na głos. Nie chcę zgadywać odbioru.
+ ? r Wracałeś pytać motorniczego?
+ = n Pytałem na pętli. Powiedzieli, że okulary przyjęto. Nie powiedzieli, że moje.
+  ? n A już miałeś pewność?
+  = n Nadzieję. Przy okienku łatwo pomylić jedno z drugim, kiedy bardzo chce się skończyć szukanie.
+? r Po czym jeszcze poznasz własną parę?
+= m Przy prawej skroni lekko uciska. Nie jest to zaleta, ale znam ją.
+ ? u Możesz po prostu przymierzyć?
+ = n Mogę. Tylko podobne też mogą przez chwilę wyglądać dobrze. Wolałbym nie wyjść z cudzą ulgą na nosie.
+  ? r Co będzie nie tak przy czytaniu?
+  = n Litery zaczną się rozjeżdżać. Nie od razu, dlatego chcę porównać naprawę.
+ ? n Może pomyliłeś stronę naprawy?
+ = n Możliwe. Ale mam ślad na prawej skroni i pamiętam, którą ręką poprawiam. Sprawdźmy jeszcze napis.
+  ? r Masz inicjały na zauszniku?
+  = n Nie. Nigdy niczego nie ryłem. Jeśli są, to już nie moja niepewność co do prawej strony.
+? u Co najbardziej utrudnia ci brak okularów?
+= n Poczta. Przychodzi drobny druk i od razu trzeba prosić kogoś, żeby wiedział o mnie więcej.
+ ? u Kto czyta?
+ = n Sąsiad. Uczciwy człowiek, tylko po każdym zdaniu chce jeszcze doradzić.
+  ? n Nie chcesz jego pomocy?
+  = n Chcę przeczytać rachunek, nie opowiadać, dlaczego przyszedł. Okulary nie zadają dodatkowych pytań.
+ ? r Co wybierzesz, jeśli ta para nie pasuje?
+ = n Zostawię. Sąsiad przeczyta jeszcze raz. Niech właściciel tej pary nie musi przez mnie robić tego samego.
+  ? u Zapiszemy dokładny opis?
+  = m Tak. Prawy zawias i brak inicjałów. Sprawdźmy jeszcze, czy dobrze to słychać przez szybę.
+? r @sekret Na zauszniku jest „B.W.”. Rozpoznajesz?
+= n Nie moje. Caleb Moss, inne litery. Już nie trzeba namawiać mnie, że to ta para.
+
+## NOWY d4_milo
+dzien: 4
+postac: Milo Grant, 24
+glos: Mówi szybko i poufale, po błędzie natychmiast proponuje drugą wersję.
+tik: mówi „to znaczy” przy poprawianiu strzału
+typ: kłamca: zgadywacz
+rzecz: Stalowy kubek podróżny z czarną pokrywką
+cechy: stalowa obudowa | czarna pokrywka | wyszczerbiony niebieski języczek pod klapką
+blizniaki: czerwony języczek, bez wyszczerbienia | niebieski języczek i gładka biała obudowa
+sekret: Pod klapką pokrywki widać wyszczerbiony niebieski języczek => zgłaszający zna wygląd widoczny z daleka, zgaduje szczegóły wnętrza
+powiazanie: brak
+wejscie: Milo Grant, kubek z tramwaju. Taki stalowy. Widziałem przez drzwi, że macie podobny, to chyba szybko pójdzie.
+decyzja: wydaj | Wydaj kubek na podstawie ogólnego opisu | 0 | No, mówiłem. Pokrywkę już sam sobie sprawdzę. | Kolejka rusza | Kubek trafia do osoby zgadującej własność | Właścicielka kubka: „Pod klapką był niebieski języczek z ubytkiem. Czemu nikt o to nie spytał przed wydaniem?”
+decyzja: odmow | Odmów po niezgodnej odpowiedzi | 0 | To znaczy mogłem pomylić kubki. Nie trzeba tego tak zapisywać. | Kubek zostaje dla właścicielki | Milo odchodzi bez przyznania się do próby | Właścicielka kubka: „Znalazłam go dzięki pokrywce. Obudowy wszyscy teraz mają takie same.”
+rozmowa:
+? r Opisz kubek bez patrzenia w drzwi.
+= m Stalowa obudowa. Taka srebrna. Widzisz, znam, nie ma co robić kłopotu.
+ ? r Jaka pokrywka?
+ = m Czarna pokrywka. To znaczy bardzo ciemna, ale czarna. Nie wszystko musi mieć nazwę od producenta.
+  ? n Dlaczego się poprawiasz?
+  = n Przez światło. Przy tej lampie wszystko inne. Ty masz bliżej, możesz sprawdzić.
+ ? r Jak wygląda mechanizm pod klapką?
+ = k Czerwony, cały. Zwykły taki kawałek, naciska się i leci.
+  ? n Nie pytam, jak działa. Pamiętasz konkretny szczegół?
+  = n Może nie czerwony. To znaczy zależy, który element nazywasz mechanizmem. Pokaż, powiem.
+? r Gdzie i kiedy został?
+= k W jedenastce, wczoraj wieczorem. Pod oknem, tam gdzie zwykle siadam.
+ ? r Przy którym wejściu?
+ = n Przy tylnym. Albo środkowym, zależy jak liczyć. Tramwaje są różne.
+  ? n Zgłaszasz przejazd czy zgadujesz?
+  = n Zgłaszam kubek. Nie spodziewałem się egzaminu z planu siedzeń.
+ ? r Kiedy zauważyłeś brak?
+ = k W domu, chciałem nalać. Właśnie dlatego przyszedłem.
+  ? u Co zwykle pijesz?
+  = n Kawę. Herbatę też, czasem. Po zapachu nie poznasz, myję przecież.
+? n Skąd wiesz, że ten przez drzwi jest twój?
+= n Wygląda jak mój. Samo się nasuwa. To znaczy chyba po to rzeczy tu leżą, żeby je znaleźć.
+ ? r Ile takich kubków może być w mieście?
+ = m Dużo. Ale ja stoję tutaj. Nie każdy przyjdzie, żeby coś odebrać.
+  ? n Samo przyjście wystarcza?
+  = n Nie powiedziałem, że samo. Kolor też podałem, i pokrywkę. Już dwa szczegóły.
+ ? r Co jest w nim tylko twojego?
+ = n Przyzwyczajenie. Dobrze leży w ręce. Jak dasz potrzymać, od razu rozpoznam.
+  ? n A bez podawania przez szybę?
+  = n No to opisałem. Więcej z daleka trudno wycisnąć, prawda?
+? u Co zrobisz, jeśli nie dostaniesz kubka?
+= n Pójdę. Nie będę tu siedział do rana dla kawałka stali.
+ ? n Przed chwilą zależało ci na rozpoznaniu.
+ = n Zależy, tylko mam swoje sprawy. To znaczy mogę wrócić z lepszym opisem.
+  ? r Skąd go weźmiesz?
+  = n Przypomnę sobie. Człowiek przy szybie czasem zapomina, a na przystanku już wie.
+ ? r Masz zdjęcie albo potwierdzenie zakupu?
+ = n Nie. Nikt sobie nie robi albumu kubka. To byłby dziwny człowiek.
+  ? u Właściciel może jednak pamiętać ukryty szczegół.
+  = n Może. Ja pamiętam zewnętrzne. Nie każdy ogląda swoje rzeczy od środka.
+? n @sekret Pod klapką jest wyszczerbiony niebieski języczek. Dlaczego podałeś czerwony?
+= e Wyszczerbiony niebieski języczek pod klapką? To znaczy ten nie mój. Dobra, nie musisz już wyciągać całego mechanizmu.
+
+## NOWY d4_edith
+dzien: 4
+postac: Edith Shaw, 47
+glos: Mówi zwięźle i twardo, czułość ujawnia przez szczegóły zakupów.
+tik: podlicza rzeczy zamiast pieniędzy
+typ: uczciwy
+rzecz: Płócienna torba z zakupami i zielonym nadrukiem
+cechy: zielony nadruk gruszki | dwa krótkie ucha | doszyta od środka kieszonka w kratkę
+blizniaki: nadruk jabłka | długie ucha i brak wewnętrznej kieszonki
+sekret: W kieszeni leży karteczka „bez cebuli”, a przy pieczywie osobny pakunek => zakupy są częściowo dla sąsiadki, która wstydzi się przyjmować jedzenie
+powiazanie: pracuje z Rosą w pralni, zna tylko jej codzienną pracę
+wejscie: Edith Shaw, pralnia. Torba z zakupami została w jedenastce. Jeśli coś się rozgniotło, oddaj i tak, nie trzeba tego upiększać.
+decyzja: wydaj | Wydaj zakupy po rozpoznaniu torby | 0 | Chleb, słoik, dwa pakunki. Resztę sprawdzę w domu, nie zrobię wam tu sklepu. | Jedzenie trafia do dwóch mieszkań | Potwierdzenie opiera się na opisie torby i zakupów | Edith: „Sąsiadka oddała pusty talerz, powiedziała, że porcja była za duża. Czyli zjadła.”
+decyzja: zatrzymaj | Zatrzymaj do potwierdzenia własności | 0 | Rano przyjdę z kimś z pralni. Zakupy nie staną się świeższe od dodatkowego podpisu. | Torba czeka na świadka | Edith musi kupić część jedzenia ponownie | Edith: „Dokupiłam pieczywo. Sąsiadka pytała, czemu dziś tak mało zostało z mojego obiadu.”
+rozmowa:
+? u Jak wygląda torba?
+= m Zielony nadruk gruszki. Nie napis, sam owoc. Materiał zwykły, płócienny.
+ ? r Jakie ma uchwyty?
+ = n Dwa krótkie ucha. Nie zarzucisz na ramię, trzeba nosić w ręce.
+  ? u Niewygodne przy większych zakupach?
+  = m Mniej włożę. Przynajmniej tak sobie obiecuję, zanim wejdę do sklepu.
+ ? r Co ją odróżnia w środku?
+ = m Doszyta od środka kieszonka w kratkę. Na listę i drobne, żeby nie nurkować pod chlebem.
+  ? r Kto ją doszył?
+  = m Ja. Rosa pożyczyła nożyczki w pralni. Nie wyszło równo, ale nie składam reklamacji sobie.
+? r Gdzie i kiedy została?
+= n Jedenastka, wieczorem po zakupach. Postawiłam między butami, potem wzięłam drugą torbę i wysiadłam.
+ ? r Były dwie podobne?
+ = n Nie. Druga z pracy. O niej pamiętałam, bo fartuch trzeba wyprać. Jedzenie zostało przez własny pośpiech.
+  ? u Nie mogłaś zrobić zakupów wcześniej?
+  = n Pracowałam. Sklep nie przyjdzie do pralni, nawet jeśli ładnie poproszę.
+ ? r Kiedy zorientowałaś się?
+ = m Przy drzwiach. Jedna ręka wolna, a miały być dwie zajęte. Proste liczenie, trochę za późno.
+  ? u Ktoś czekał na kolację?
+  = n Ja. I część miała pójść dalej. Nie trzeba wpisywać liczby talerzy.
+? r Co było w zakupach?
+= m Chleb, słoik, dwa pakunki. Jeden osobno od reszty, żeby nie nasiąkł zapachem.
+ ? r Dla kogo ten osobny?
+ = n Dla sąsiadki. Mówię, że za dużo kupiłam. Łatwiej jej wtedy wziąć.
+  ? n Naprawdę kupiłaś za dużo?
+  = n Dokładnie tyle, żeby „zostało”. Nie rozpowiadaj, bo będę musiała wymyślać inną wymówkę.
+ ? u Czemu nie przyjmuje wprost?
+ = n Bo całe życie sama dawała. Teraz przy talerzu zaczyna liczyć, kiedy odda. Od nadmiaru nie trzeba oddawać.
+  ? u Chce, żeby o niej zapomnieć?
+  = m Nie. Chce nie być sprawą do załatwienia. Ja też wolę być Edith niż „ta z pralni, co potrzebuje”.
+? n Co, jeśli zawartość jest uszkodzona?
+= n Oddaj. Słoik sprawdzę osobno, zgnieciony chleb nadal jest mój. Nie będę oskarżać magazynu o każdy okruszek.
+ ? r Zależy ci bardziej na torbie czy zakupach?
+ = m Dziś na zakupach. Jutro na torbie. Szycie kieszonki zajęło mi cały wieczór.
+  ? u Masz zapas w domu?
+  = n Trochę. Wystarczy na jeden talerz, na dwa trzeba się bardziej postarać.
+ ? r Przyprowadzisz świadka?
+ = n Z pralni ktoś pozna torbę. Tylko nie teraz, maszyny nie zatrzymają się dla mojej gruszki.
+  ? n Możesz poczekać do rana?
+  = n Mogę. Sąsiadka też powie, że może. Łatwo nam obu mówić, kiedy nie ma innego wyjścia.
+? r @sekret Co oznacza kartka „bez cebuli” w kieszeni?
+= m Ten osobny pakunek. Sąsiadka nie znosi cebuli, ale nie chce robić kłopotu, więc mówi dopiero po zjedzeniu. Teraz zapisuję wcześniej.
+
+## NOWY d6_ruth
+dzien: 6
+postac: Ruth Mercer, 76
+glos: Prosi o powtórzenie tylko niezrozumiałych słów, mówi celnie i nie pozwala mówić za siebie.
+tik: mówi „to słowo jeszcze raz”
+typ: uczciwy, słabo pamięta
+rzecz: Etui z aparatem słuchowym i fioletową gumką
+cechy: kremowe etui | owalny kształt | fioletowa gumka wokół zawiasu
+blizniaki: prostokątne etui | zielona gumka i inny model aparatu
+sekret: Pod wkładką jest pasek papieru z narysowaną strzałką, pokazującą kierunek wkładania baterii => Ruth pamięta własne ułatwienie, choć myli nazwę modelu
+powiazanie: mieszka obok Dany, rozpoznaje jej budzik; nie zna niczego o biurze
+wejscie: Ruth Mercer. Aparat słuchowy zostawiłam z pudełkiem w szóstce. Proszę mówić do mnie, nie do człowieka, który stoi za mną.
+decyzja: wydaj | Wydaj aparat po rozpoznaniu etui i wkładki | 0 | Strzałka jest. Założę go sama, wtedy powiedz jeszcze raz numer kwitu. | Ruth odzyskuje własny aparat | Numer modelu nie został potwierdzony z pamięci | Ruth: „Numer kwitu odczytałam sąsiadce bez pytania drugi raz. Kartka ze strzałką wróciła pod wkładkę.”
+decyzja: zatrzymaj | Poczekaj na kartę aparatu z domu | 0 | Przyniosę kartę. Napisz mi, czego potrzeba, żebym nie wracała po następną rzecz. | Własność zostanie sprawdzona z dokumentem | Ruth musi odbyć kolejną podróż bez aparatu | Ruth: „Przyniosłam kartę, ale numer na drzwiach kazano mi powtórzyć trzy razy. Słyszeć i być słuchaną to nie zawsze para.”
+rozmowa:
+? u Jaki kolor ma etui?
+= m Kremowe etui. Aparat jest ciemniejszy. Koloru samego aparatu nie nazwę pewnie przy tej szybie.
+ ? r Jaki kształt?
+ = n Owalny kształt. Mieści się w dłoni, bez ostrych rogów.
+  ? r Zamyka się szczelnie?
+  = n Zamyka, ale nie ufam zawiasowi. Dlatego coś dołożyłam, nie klej.
+ ? r Co jest przy zawiasie?
+ = m Fioletowa gumka wokół zawiasu. Przesuwam ją na środek, kiedy zamykam. Nie trzeba zrywać.
+  ? u Sama to wymyśliłaś?
+  = m Gumki nie wymyśliłam. Użytek znalazłam sama. Można zapisać bez zachwytu.
+? r Gdzie i kiedy została rzecz?
+= n W szóstce, po południu. Wyjęłam aparat, bo przeszkadzał mi hałas, i schowałam do pudełka.
+ ? r Pudełko trzymałaś w ręce?
+ = n Na kolanach. Potem szukałam biletu. Bilet znalazłam, nie zauważyłam, co zsunęło się obok.
+  ? n Jesteś pewna, że aparat jest w środku?
+  = m Tego tak. Zawsze chowam przed szukaniem czegoś innego. Nie zawsze potem podnoszę pudełko, jak widać.
+ ? u Ktoś pomagał po wyjściu?
+ = n Pytałam na pętli. Odpowiedzieli człowiekowi obok mnie. On słyszał, ale to ja potrzebowałam adresu.
+  ? u Mam pisać zamiast mówić?
+  = m Krótkie rzeczy można napisać. Pytania mów normalnie, nie trzeba dzielić każdego słowa na kawałki.
+? r Pamiętasz model aparatu?
+= n Nazwę mylę z poprzednim. To słowo jeszcze raz, jeśli będziesz czytać z pudełka. Zapisane mam w domu.
+ ? n Co pamiętasz lepiej niż nazwę?
+ = m Jak wkłada się baterię. Pod wkładką trzymam własną podpowiedź, mogę opisać przed otwarciem.
+  ? r Co na niej jest?
+  = n Strzałka narysowana na pasku papieru. Kierunek, nie żadne hasło. Sama zrobiłam, bo druk był za mały.
+ ? u Ktoś może przywieźć kartę z modelem?
+ = n Musiałabym zadzwonić. Sama pojadę, jeśli trzeba. Tylko nie stawiaj za mnie sąsiadki w roli właścicielki.
+  ? r Dlaczego to podkreślasz?
+  = n Bo przy pomocy łatwo zapomnieć, komu się pomaga. Pytanie do mnie ma odpowiedź ode mnie.
+? u Co jest najtrudniejsze bez aparatu?
+= n Rozmowa kilku osób. Jedna mówi, druga tłumaczy, trzecia podnosi głos i żadnej już nie rozumiem.
+ ? u W domu masz spokój?
+ = m Do budzika Dany. Ten nawet bez aparatu potrafi się przedstawić. Przynajmniej wiem, która pora.
+  ? r Dana może potwierdzić etui?
+  = n Może widziała. Nie będę obiecywać jej pamięci. O aparat pytaj mnie, o budzik ją.
+ ? r Co, jeśli znajdziemy podobny model?
+ = n Nie założę obcego tylko dlatego, że leży w kremowym pudełku. Sprawdźmy moje oznaczenie.
+  ? u A jeśli go nie ma?
+  = n Wrócę z kartą. Złość nie poprawi dopasowania aparatu.
+? r @sekret Pod wkładką jest papier ze strzałką. Opiszesz, do czego służy?
+= m Do kierunku baterii, jak mówiłam. Jeśli kartka się zagięła, rozprostuję, nie wyrzucaj jej jako opakowania.
+
+## NOWY d6_finn
+dzien: 6
+postac: Finn Webb, 19
+glos: Mówi szczerze o pieniądzach, obraca w żart to, czego się wstydzi.
+tik: pyta „ile z tego wychodzi?”
+typ: znalazca
+rzecz: Niebieska torba sportowa z białym paskiem
+cechy: niebieski nylon | jeden biały pasek | urwany uchwyt suwaka zastąpiony sznurkiem
+blizniaki: dwa białe paski | cały uchwyt suwaka i brak sznurka
+sekret: W bocznej kieszeni jest zeszyt treningów i karta z telefonem właściciela => właściciela można powiadomić, ale wpisanie znalazcy ujawni mu dane Finna
+powiazanie: brak
+wejscie: Finn Webb. Znalazłem torbę na pętli, przyniosłem całą. Chciałem spytać, czy jak ktoś odbierze, to coś mi się za to należy.
+decyzja: wpisz | Przyjmij torbę i zapisz prośbę o kontakt ze znalazcą | 0 | Zapisz, że proszę, nie że żądam. Jeszcze mnie właściciel wyceni przed torbą. | Właściciel może podziękować Finnowi | Finn zgadza się udostępnić dane kontaktowe | Finn: „Właściciel zadzwonił, oddał za przejazd. Mniej niż liczyłem, ale przynajmniej sam mnie zapytał.”
+decyzja: przyjmij_bez_danych | Przyjmij torbę bez danych znalazcy | 0 | Dobra, nie wpisuj. Tylko nie mów potem, że nikt jej nie przyniósł. | Torba trafi do właściciela bez ujawniania danych Finna | Finn rezygnuje z możliwości kontaktu i nagrody | Właściciel torby zostawił przy okienku podziękowanie dla znalazcy. Nie ma adresu, pod który można je przekazać.
+rozmowa:
+? r Co przyniosłeś?
+= m Niebieski nylon. Torba sportowa, ale nie zaglądałem do głównej części. Mokra była tylko od spodu.
+ ? r Jaki wzór?
+ = n Jeden biały pasek. Ciągnie się bokiem. Nie jest taśmą naklejoną na dziurę.
+  ? r Jest przedarta?
+  = n Nie widziałem. Możesz obejrzeć przy mnie, żeby potem nie było, że przyniosłem połowę.
+ ? r Co z zapięciem?
+ = m Urwany uchwyt suwaka zastąpiony sznurkiem. Sznurek trzyma, suwak działa.
+  ? n Skąd wiesz, skoro nie otwierałeś głównej części?
+  = n Otworzyłem boczną, szukając kontaktu. Głównej nie. Mogłem to powiedzieć od razu dokładniej.
+? r Gdzie i kiedy znalazłeś torbę?
+= n Pętla szóstki, wieczorem. Pod ławką, za moją nogą. Kopnąłem, zanim zobaczyłem.
+ ? r Dlaczego nie zostawiłeś przy budce?
+ = n Zamknięta. Przyniosłem tutaj, bo ktoś siedzi. Torba przy zamkniętych drzwiach nadal jest sama.
+  ? u Daleko ją niosłeś?
+  = m Wystarczająco, żeby sprawdzić, czy nagroda uwzględnia ciężar. Żartuję. Trochę.
+ ? r Ktoś widział, jak ją zabierasz?
+ = n Ludzie na pętli. Dlatego od razu mówię, skąd. Nie chcę potem usłyszeć, że wynosiłem cudze rzeczy po nocy.
+  ? r Chcesz potwierdzenie przyjęcia?
+  = m Tak. Nawet bez nagrody. Papier niech chociaż wróci ze mną, ileś z tego wychodzi.
+? u Na jaką nagrodę liczysz?
+= m Na przejazd i może coś ponad. Nie mam cennika uczciwości, tylko mało w kieszeni.
+ ? n Oddałbyś, gdyby nagrody nie było?
+ = n Już przyniosłem. Pytam przed odejściem, nie trzymam torby nad kanałem.
+  ? u Dlaczego boisz się pytać wprost?
+  = n Bo nagle człowiek wygląda gorzej niż ten, kto przeszedł obok. Ja przynajmniej się schyliłem.
+ ? r Chcesz, żeby właściciel dostał twój kontakt?
+ = n Jeśli inaczej nie porozmawiamy, tak. Tylko nie cały adres, telefon wystarczy.
+  ? n A jeśli zadzwoni z pretensją, że coś zginęło?
+  = n To właśnie mnie martwi. Obejrzyjmy teraz, co przyjmujesz. Niech później torba nie rośnie w opowieści.
+? r Co wiesz o zawartości?
+= n Z boku zeszyt i kartka. Dużej komory nie otwierałem. Nie będę wyceniał nagrody po cudzym sprzęcie.
+ ? r Kartkę przeczytałeś?
+ = n Numer telefonu zauważyłem. Nie zadzwoniłem, bateria mi padła. Dlatego nie poszedłem prosto do właściciela.
+  ? n Czytałeś też zeszyt?
+  = n Tytuł, treningi. Dalej nie. Nie trzeba znać czyichś przysiadów, żeby oddać torbę.
+ ? u A jeśli nie chcesz zostawić danych?
+ = n Przyjmij bez nich. Tylko wtedy nagroda też przepadnie, rozumiem. Sam wybiorę, co wolę.
+  ? r Co ważniejsze: kontakt czy spokój?
+  = n Jeszcze liczę. To pierwszy raz, kiedy coś znalazłem i okazało się, że oddanie też ma formularz.
+? r @sekret Na karcie jest telefon właściciela. Możemy zadzwonić teraz?
+= m Możemy. Powiedz, że torba cała, dopiero potem o mnie. Nie chcę zaczynać rozmowy od ceny.
+
+## NOWY d7_tessa
+dzien: 7
+postac: Tessa Reed, 32
+glos: Mówi pewnie i płynnie, przy pytaniach o używanie przedmiotu zaczyna powtarzać gotowe zdania.
+tik: powtarza „dokładnie taka”
+typ: kłamca: podsłuchiwacz spod okienka
+rzecz: Bordowa torba na zakupy z długim paskiem
+cechy: bordowy materiał | długi pasek | trójkątna łata wewnątrz dna
+blizniaki: krótkie uchwyty | okrągła łata na zewnątrz dna
+sekret: Pod usztywnieniem dna znajduje się trójkątna łata i zaschnięty klej => osoba, która naprawiała torbę, zna wnętrze; Tessa powtarza tylko opis zasłyszany przy okienku
+powiazanie: brak
+wejscie: Tessa Reed. Przyszłam po bordową torbę, dokładnie taką, o jakiej tu przed chwilą była mowa. Nie musisz drugi raz tłumaczyć, już wiem.
+decyzja: wydaj | Wydaj torbę na podstawie powtórzonego opisu | 0 | Tak, dokładnie taka. Już nie będę blokować kolejki. | Wizyta kończy się szybko | Podsłuchany opis wystarcza do zabrania cudzej rzeczy | Właścicielka torby: „Mówiłam przy szybie o bordowym materiale. O łacie miałam powiedzieć po powrocie z kwitem, ale torby już nie ma.”
+decyzja: odmow | Odmów po sprawdzeniu niewypowiedzianego szczegółu | 0 | To chyba podobna. Słyszałam opis, chciałam sprawdzić, nic się nie stało. | Właścicielka zachowuje możliwość odbioru | Tessa odchodzi bez wyjaśnienia swoich zamiarów | Właścicielka torby odebrała ją po opisaniu łaty. Odtąd ścisza głos, gdy podaje szczegóły swoich rzeczy.
+rozmowa:
+? r Co wiesz o wyglądzie torby?
+= m Bordowy materiał. Dokładnie taka, jak tu było powiedziane. Nie czerwony, bordowy.
+ ? r Jaki uchwyt?
+ = m Długi pasek. Przez ramię. Nie te krótkie, co trzeba trzymać w ręce.
+  ? n Dlaczego porównujesz z tym, co przed chwilą padło?
+  = n Bo usłyszałam swoją rzecz. Normalne, że człowiek podchodzi, kiedy rozpoznaje opis.
+ ? r Jak wygląda dno od środka?
+ = k Gładkie, bez żadnych napraw. Noszę ostrożnie. Torba jest w dobrym stanie.
+  ? n Pod usztywnieniem też?
+  = n Nie wyciągam go co wieczór. Dokładnie taka torba była opisywana, po co jeszcze ją rozbierać?
+? r Gdzie i kiedy ją zgubiłaś?
+= k W czwórce, wieczorem. Wracałam z zakupów. Przecież to torba na zakupy.
+ ? r Co z zakupami?
+ = n Wyjęłam wcześniej. Została pusta. Dlatego łatwo zapomnieć, nie ciąży na ramieniu.
+  ? n Wyjęłaś zakupy w tramwaju?
+  = n Przed jazdą. Mówię, że wracałam, nie że prosto ze sklepu. Nie łap mnie za każde słowo.
+ ? r W którym miejscu siedziałaś?
+ = n Przy oknie. Po tej stronie, gdzie nikt nie stał. Nie robiłam zdjęcia miejsca.
+  ? r Kiedy wróciłaś jej szukać?
+  = n Teraz. Właśnie teraz. Usłyszałam opis i pomyślałam, że nie trzeba dalszego szukania.
+? n Znasz osobę, która opisywała torbę?
+= n Nie. Stała przy szybie, ja czekałam. Nie pytam wszystkich o imię.
+ ? r Słyszałaś całą rozmowę?
+ = n Tyle, ile było słychać. Nie przykładam ucha do ściany, ludzie mówią głośno.
+  ? n Co usłyszałaś o środku?
+  = n Nic. To znaczy nic, co byłoby mi potrzebne. Własną torbę poznaje się z wierzchu.
+ ? r Ta osoba ma wrócić. Poczekasz?
+ = n Nie mam całego wieczoru. Jeśli opis pasuje, po co czekać, aż ktoś drugi będzie się kłócił?
+  ? n Dlaczego zakładasz kłótnię?
+  = n Bo dwie osoby i jedna rzecz. Zwykle nie kończy się wspólnym noszeniem.
+? r Jak możesz potwierdzić coś, czego nie było słychać?
+= n Mogę ją wziąć do ręki. Od razu będę wiedziała. Nie wszystko da się powiedzieć.
+ ? r Kto ją naprawiał?
+ = k Nikt, nie potrzebowała napraw. Dokładnie taka była od zakupu.
+  ? u A jeśli znajdę ślad naprawy?
+  = n To może nie moja. Nie trzeba od razu robić ze mnie złodziejki za podobny kolor.
+ ? n Dlaczego zależy ci na szybkim wydaniu?
+ = n Bo czekam jak inni. Tylko kiedy mówię krótko, robi się z tego podejrzenie.
+  ? r Zapiszesz własne dane do porównania po powrocie drugiej osoby?
+  = n Wolałabym wiedzieć najpierw, czy w ogóle zamierzasz wydać. Nie będę zostawiać danych za nic.
+? n @sekret Pod dnem jest trójkątna łata. Dlaczego twierdzisz, że napraw nie było?
+= e Trójkątna łata wewnątrz dna? Nie wiedziałam. Opis z zewnątrz pasował, więc podeszłam. Mogłam nie mówić, że na pewno moja.
+
+## NOWY d8_alma
+dzien: 8
+postac: Alma Brooks, 70
+glos: Mówi sucho i bez skrępowania o przedmiocie, irytuje ją cudza dyskrecja na pokaz.
+tik: mówi „nazwijmy rzecz”
+typ: bliźniak
+rzecz: Różowe pudełko na protezę z białą pokrywką
+cechy: różowy plastik | okrągłe pudełko | litera E pod pokrywką
+blizniaki: takie samo pudełko z literą A, odpowiadające opisowi Almy | prostokątne pudełko bez litery
+sekret: Pod pokrywką jest litera E, a wkładka ma inny kształt niż opisany przez Almę => podobieństwo opakowania nie potwierdza własności protezy
+powiazanie: lokatorka Cooper Street, zna Iris wyłącznie jako zarządczynię
+wejscie: Alma Brooks. Pudełko z protezą, szóstka. Nazwijmy rzecz od razu, żeby nie szeptać potem przez pół okienka.
+decyzja: wydaj | Wydaj podobne pudełko mimo niezgodnej litery | 0 | Wezmę sprawdzić, ale litera nadal się nie zgadza. Nie, to nie jest dobra ulga. | Alma kończy nocne poszukiwanie | Dostaje cudzą rzecz i musi ją zwrócić | Alma: „Oddaję całe pudełko, protezy nie używałam. Obie miałyśmy zostać z własnymi zębami, a wyszło inaczej.”
+decyzja: zatrzymaj | Zachowaj pudełko dla właściwej osoby i zapisz zgubę Almy | 0 | Litera A. Duża, od środka. Nazwijmy to dalszym szukaniem, nie załatwioną sprawą. | Cudza rzecz pozostaje w depozycie | Alma nadal nie odzyskała swojej | Alma: „Na obiad zrobiłam miękkie jedzenie. Na liście zgub proszę nadal zostawić A, nie poprawiać na tę, którą już macie.”
+rozmowa:
+? u Jakiego pudełka szukasz?
+= m Różowy plastik. Nie wstydzę się koloru ani zawartości. Opiszemy i znajdziemy, jeśli jest.
+ ? r Jaki kształt?
+ = n Okrągłe pudełko. Biała pokrywka. Mieści się w dłoni.
+  ? u Dlaczego nie trzymałaś w torbie?
+  = n Trzymałam. Potem przekładałam torbę. To zwykle ten moment, kiedy porządek przestaje działać.
+ ? r Jaki znak pod pokrywką?
+ = m Litera A. Napisałam sama. Przy takich samych pudełkach nazwijmy rzecz po właścicielce.
+  ? n @sekret W tym jest litera E. Co o tym myślisz?
+  = n Litera E pod pokrywką nie zrobi się A od mojego czekania. Może podobne, ale nie moje.
+? r Gdzie i kiedy je zgubiłaś?
+= n Szóstka, późny wieczór. Wracałam do Cooper Street. Wysiadałam z dwiema torbami.
+ ? r W której było?
+ = n Mniejszej. Przełożyłam zakupy, żeby uchwyty wytrzymały. Pudełko wyjęłam na chwilę.
+  ? n I nie schowałaś z powrotem?
+  = n Najwyraźniej. Nie będę oskarżać tramwaju, że ma własny pomysł na moje zęby.
+ ? u Ktoś może potwierdzić pudełko?
+ = n Z domu tak. Iris raczej nie, ona sprawdza czynsz, nie zawartość łazienkowej półki.
+  ? r Kogo poprosisz?
+  = n Osobę, która rzeczywiście je widziała. Nie pierwszego sąsiada, żeby przybył podpis.
+? n Może źle pamiętasz literę?
+= n Własną pierwszą literę pamiętam. Mogę pomylić odcień różu, nie powód, dla którego coś podpisałam.
+ ? r Jak odróżnisz samą protezę?
+ = n Po kształcie. Nie będę jednak przymierzać cudzej przy ladzie. Nazwijmy rzecz ostrożnością.
+  ? u Chcesz obejrzeć z bliska?
+  = m Tak, bez dotykania. Pokrywkę podnieś, ja popatrzę. To wystarczy do pierwszego nie.
+ ? r A jeśli ktoś zmył znak?
+ = n Wtedy znaku nie ma. Tu jest inna litera. To różne przypadki, nie trzeba ich sklejać dla wygody.
+  ? u Czyli wolisz wyjść bez rzeczy?
+  = n Wolę nie wyjść z cudzą. Bez własnej i tak już stoję.
+? u Co najbardziej utrudnia ci ta zguba?
+= n Jedzenie i rozmowę. Nie muszę wybierać, które bardziej, oba robię codziennie.
+ ? u Masz w domu coś miękkiego?
+ = m Zrobię. Człowiek nie zapomina gotować dlatego, że zgubi pudełko.
+  ? n Ktoś może pomóc?
+  = n Może, jeśli poproszę. Proszę teraz o szukanie, nie o organizowanie mi całego mieszkania.
+ ? r Jak zapisać zgłoszenie?
+ = n Alma Brooks, pudełko z literą A, proteza w środku. Bez „delikatna sprawa”, to nie pomaga znaleźć.
+  ? u Zostawić wiadomość, gdy się pojawi?
+  = m Tak. O pudełku. Resztę mam już wystarczająco dobrze zapamiętaną.
+? r @sekret Wkładka też ma inny kształt. Potwierdzasz, że to nie twoje?
+= n Potwierdzam. Litera i kształt mówią to samo. Możemy przestać negocjować z różowym plastikiem.
+
+## NOWY d9_silas
+dzien: 9
+postac: Silas Kent, 39
+glos: Mówi uprzejmie i płynnie, traktuje własny dokument jak zamknięcie każdej wątpliwości.
+tik: mówi „na dokumencie wszystko jest”
+typ: kłamca: profesjonalista z fałszywym dowodem
+rzecz: Czarny skórzany neseser z mosiężnymi zapięciami
+cechy: czarna skóra | dwa mosiężne zapięcia | wszyta pod podszewką metka z literami J.P.
+blizniaki: trzy zapięcia | podszewka bez metki i srebrne zapięcia
+sekret: Pod luźną podszewką jest metka J.P., a wydruk Silasa opisuje wyłącznie wygląd zewnętrzny bez numeru przedmiotu => dokument nie wiąże osoby z konkretnym neseserem
+powiazanie: brak
+wejscie: Silas Kent. Odbieram neseser, mam potwierdzenie zakupu. Poproszę sprawdzić dokument i przygotować odbiór, nie zajmę dużo czasu.
+decyzja: wydaj | Wydaj neseser na podstawie przedstawionego dokumentu | 0 | Proszę, podpis w odpowiednim miejscu. Dokument możemy uznać za wykorzystany. | Odbiór ma formalnie wyglądający załącznik | Fałszywe potwierdzenie prowadzi do wydania cudzej rzeczy | Właściciel nesesera: „Moje litery są pod podszewką. Osoba, której wydano neseser, nie mogła kupić go w podanym sklepie, naprawiałem go sam.”
+decyzja: zatrzymaj | Zatrzymaj neseser do sprawdzenia dokumentu | 0 | Zostawię kopię. Wrócę, kiedy skończycie ustalać, czy papier jest papierem. | Dokument nie zastępuje potwierdzenia własności | Wydanie zostaje opóźnione do sprawdzenia | Silas nie wrócił po pozostawioną kopię. Prawdziwy właściciel opisał metkę, zanim otwarto podszewkę.
+rozmowa:
+? r Jak wygląda neseser?
+= m Czarna skóra. Opis na dokumencie jest zgodny, nie ma potrzeby zgadywania.
+ ? r Jakie zamknięcie?
+ = m Dwa mosiężne zapięcia. Symetrycznie, z przodu. Proszę porównać, wszystko jest na dokumencie.
+  ? n To twój opis czy sprzedawcy?
+  = k Sprzedawcy. Właśnie dlatego ma wartość niezależnego potwierdzenia.
+ ? r Co rozpoznasz pod podszewką?
+ = k Nic tam nie ma, żadnych oznaczeń. Kupiony bez personalizacji, do pracy.
+  ? n Zaglądałeś pod nią?
+  = n Nie niszczę rzeczy, żeby poznać ich wnętrze. Zakup wystarcza do własności bez rozpruwania.
+? r Gdzie i kiedy go zostawiłeś?
+= k W szóstce, wieczorem. Na półce, kiedy wysiadałem po rozmowie telefonicznej.
+ ? r Kto może potwierdzić rozmowę?
+ = n Rozmówca nie widział półki. Możemy zebrać nazwiska, ale nie będą dowodem zgubienia.
+  ? n A ty masz taki dowód?
+  = n Mam dowód nabycia. Zgubienie właśnie zgłaszam, tak jak inni w kolejce.
+ ? r Po co jechałeś z pustym neseserem?
+ = n Nie powiedziałem, że pustym. Nie zamierzam też publicznie wyliczać dokumentów.
+  ? r Możesz opisać jedną rzecz bez treści dokumentu?
+  = n Przegrody i papier. Nie chcę, żeby cudzy protokół zawierał sprawy moich klientów.
+? r Jak dokument łączy ciebie z tym konkretnym przedmiotem?
+= m Nazwisko nabywcy, opis, data. Na dokumencie wszystko jest. Proszę czytać w tej kolejności.
+ ? r Jest indywidualny numer przedmiotu?
+ = n Nie każdy neseser ma numer. Brak numeru seryjnego nie oznacza braku właściciela.
+  ? n Zgadza się. Co odróżnia go od drugiego takiego samego?
+  = n Stan skóry. Przy użytkowaniu rzeczy nabierają własnego wyglądu. Trzeba mi pozwolić go obejrzeć.
+ ? r Mogę sprawdzić potwierdzenie w sklepie?
+ = n Możesz próbować, o tej porze zamknięte. Dokument jest po to, żeby nie dzwonić przy każdym odczycie.
+  ? u Poczekasz do otwarcia?
+  = n Jeśli zatrzymujesz, proszę o pisemną podstawę. Mój czas też jest częścią tej sprawy.
+? n Dlaczego naciskasz na sam papier?
+= m Bo rozmowę można różnie zapamiętać. Papier zostaje. Zawodowo wolę to, co da się potem pokazać.
+ ? r Zostawisz kopię do weryfikacji?
+ = n Tak. Kopię, nie oryginał. Na oryginale nie proszę stawiać pieczątek bez ustalenia.
+  ? n Co zrobisz, jeśli opis nie wystarczy?
+  = n Złożę ponowny wniosek. Nie podnoszę głosu, tylko oczekuję odpowiedzi w podobnej formie.
+ ? r Czyje inicjały powinny być na przedmiocie?
+ = k Żadne. Nie był znakowany. Odpowiedź się nie zmieni od drugiego pytania.
+  ? u A jeśli znajdę inne?
+  = n Wtedy będziemy ustalać, kiedy powstały. Nie każda późniejsza rysa unieważnia zakup.
+? n @sekret Pod podszewką jest metka J.P. Twierdzisz, że niczego tam nie ma.
+= n Wszyta pod podszewką metka z literami J.P.? Nie wiedziałem o niej. To nie oznacza, że potwierdzenie przestaje istnieć. Zostawię kopię do sprawdzenia.
+
+## NOWY d10_mara
+dzien: 10
+postac: Mara Ellis, 28
+glos: Mówi prosto, rozróżnia wiedzę własną od przekazanej, złości się na robienie z niej posłańca bez prawa pytania.
+tik: mówi „to wiem od niego”
+typ: pełnomocnik
+rzecz: Granatowa kurtka robocza z odblaskiem
+cechy: granatowy materiał | rozmiar XL | odblask przyszyty tylko przy lewym mankiecie
+blizniaki: rozmiar M | odblaski na obu mankietach
+sekret: W wewnętrznej kieszeni jest zapisana prośba o nieoddawanie klucza razem z kurtką bez telefonu do właściciela => upoważnienie do kurtki nie rozstrzyga odbioru zawartości
+powiazanie: pracuje w kopiarni z Kitem, zna jego codzienną pracę, nie zna sprawy ulotek
+wejscie: Mara Ellis. Przyszłam po kurtkę brata, mam jego upoważnienie. Jest na zmianie i nie może wyjść; opis podyktował, część rzeczy znam sama.
+decyzja: wydaj | Wydaj kurtkę z całą zawartością na podstawie upoważnienia | 0 | Cała kurtka, wpisane. Klucza nie wyjmuję, niech sam sprawdzi kieszenie. | Brat szybko odzyskuje ubranie | Biuro pomija osobną prośbę dotyczącą klucza | Mara: „Brat odzyskał kurtkę, ale pytał, czemu oddano też klucz bez telefonu. Upoważnił mnie do ubrania, nie pomyślał, że to trzeba rozdzielić.”
+decyzja: zadzwon | Potwierdź z bratem zakres odbioru | 0 | Zadzwoń. Tylko daj mi usłyszeć odpowiedź, bo potem to ja będę tłumaczyć czekanie. | Właściciel sam określa, co wydać | Rozmowa przerywa mu pracę | Mara: „Telefon zabrał mu przerwę, ale odebrałam dokładnie to, na co się zgodził. O klucz nie było już sporu.”
+decyzja: zatrzymaj | Poczekaj na osobisty odbiór właściciela | 0 | Oddam mu upoważnienie. Nie będę drugi raz brać wolnego po coś, czego i tak nie mogę odebrać. | Biuro nie rozstrzyga niejasnego zakresu upoważnienia | Mara traci czas, brat nadal pracuje bez kurtki | Mara: „Brat przyjdzie sam po zmianie. W kopiarni odrobiłam wyjście, więc jego kurtka zajęła nam obojgu wieczór.”
+rozmowa:
+? u Jaki kolor ma kurtka?
+= m Granatowy materiał. To wiem sama, wisi u niego w przedpokoju, kiedy nie pracuje.
+ ? r Jaki rozmiar?
+ = n Rozmiar XL. To wiem od niego. Metkę rzadko oglądam, nie noszę jej.
+  ? n Czemu nie jesteś pewna bez jego słowa?
+  = n Bo to ubranie brata. Upoważnienie nie sprawia, że pamiętam jego metki.
+ ? r Co ma charakterystycznego?
+ = m Odblask przyszyty tylko przy lewym mankiecie. Ten naprawiałam, więc znam z bliska.
+  ? u Dlaczego tylko z jednej strony?
+  = n Tyle miałam taśmy. Drugi miał dokupić. Jak widać, do oddania kurtki szybciej znalazł posłańca.
+? r Gdzie i kiedy ją zostawił?
+= n Jedenastka, rano po nocnej zmianie. To wiem od niego. Sama w tym tramwaju nie jechałam.
+ ? r Na siedzeniu czy na wieszaku?
+ = n Powiedział, że przewiesił obok. Dokładniej nie będę wymyślać. Można go spytać przez telefon.
+  ? u Dlaczego nie zadzwonił sam do biura?
+  = n Wolał wysłać mnie. Z papierem, żeby było łatwiej. Łatwiej jemu, na razie.
+ ? r Jak dostałaś upoważnienie?
+ = n Podpisał przed zmianą. Mam też jego kontakt. Nie przepisałam podpisu z innej kartki.
+  ? r Co dokładnie wpisał?
+  = n Odbiór kurtki. Bez opisu każdej kieszeni, nie pomyśleliśmy o tym.
+? u Skąd możesz wyjść w środku pracy?
+= m Z kopiarni. Kit został przy maszynie. Odbiję mu tę przerwę, nie chcę dokładać cudzej zguby do jego roboty.
+ ? r Możesz długo czekać?
+ = n Mogę, ale ktoś potem zrobi moje zamówienia. Czekanie przy szybie też wychodzi komuś z czasu.
+  ? n Brat o tym wie?
+  = n Wie, że pracuję. Nie wiem, czy policzył, ile kosztuje „tylko odbierz”.
+ ? u Mogłaś odmówić?
+ = n Mogłam. Kurtkę naprawiałam, opis znałam, więc pomyślałam, że będzie prosto.
+  ? u Następnym razem odmówisz?
+  = m Następnym razem zapytam, co jest w kieszeniach. Odmowę zostawię na później.
+? r Co wiesz o zawartości kieszeni?
+= n Niewiele. Upoważnił mnie do kurtki. Nie przetrząsam mu ubrań, nawet kiedy je naprawiam.
+ ? n Oddać wszystko razem?
+ = n Jeśli tak wynika z jego zgody. Jeśli jest w środku coś osobno opisane, zadzwońmy.
+  ? r Nie wolisz po prostu zabrać i iść?
+  = n Wolę nie wracać z pretensją za rzecz, o której nawet nie wiedziałam.
+ ? u Może nie odebrać telefonu?
+ = n Wtedy zostanie decyzja: czekać albo przyjść osobiście. Nie będę mówić za niego tylko dlatego, że stoję bliżej.
+  ? r Zgadzasz się na zapis samej kurtki i osobno zawartości?
+  = m Tak. To wiem od siebie. Wreszcie coś, do czego nie trzeba dzwonić do brata.
+? r @sekret Jest prośba o telefon przed oddaniem klucza. Wiedziałaś?
+= n Nie. Zadzwońmy. Niech sam powie, czy miał na myśli każdego, czy zapomniał poprawić kartkę przed wysłaniem mnie.
+
+## NOWY d10_arthur
+dzien: 10
+postac: Arthur Lane, 64
+glos: Mówi starannie, szybko wycofuje się z tonu nauczyciela, gdy zauważy, że poucza.
+tik: zaczyna od „proszę sprawdzić”, potem łagodnieje
+typ: uczciwy
+rzecz: Zeszyt w pomarańczowej okładce
+cechy: pomarańczowa okładka | format A5 | ostatnia kartka zszyta niebieską nicią
+blizniaki: format A4 | ostatnia kartka wklejona taśmą
+sekret: Na ostatniej stronie jest lista osób i przy kilku nazwiskach puste miejsca zamiast ocen => emerytowany nauczyciel chce przeprosić dawnych uczniów, ale nie ma wszystkich adresów i nie chce ich ujawniać
+powiazanie: brak
+wejscie: Arthur Lane, szukam zeszytu z czwórki. Pomarańczowa okładka. Jeśli ktoś czytał, proszę nie wywoływać tych nazwisk przy kolejce.
+decyzja: wydaj | Wydaj zeszyt po rozpoznaniu oprawy | 0 | Niebieska nić trzyma. Nazwiska sprawdzę już sam, nie trzeba ich odczytywać. | Arthur odzyskuje prywatne zapiski | Biuro rezygnuje z czytania danych jako dodatkowego sprawdzianu | Arthur: „Wysłałem pierwszy list. Odpowiedzi nie żądam, chociaż przez całe życie właśnie tego uczyłem się wymagać.”
+decyzja: zatrzymaj | Zatrzymaj do dodatkowego potwierdzenia | 0 | Przyniosę inny zeszyt z tym samym pismem. Proszę nie robić z cudzych nazwisk hasła odbioru. | Można porównać charakter pisma bez ujawniania listy | Arthur musi wrócić i odłożyć wysłanie listów | Arthur: „Przygotowałem próbkę pisma. Przeprosiny odłożyłem znowu, tym razem mam na to kwit.”
+rozmowa:
+? u Jak wygląda zeszyt?
+= m Pomarańczowa okładka. Proszę sprawdzić odcień... Nie, wystarczy pomarańczowa, nie robimy zadania z kolorów.
+ ? r Jaki rozmiar?
+ = n Format A5. Mały zeszyt, nie duży do rysunków. Mieści się w kieszeni płaszcza.
+  ? u Dlaczego nie nosisz w torbie?
+  = m W kieszeni łatwiej wyjąć i coś dopisać. Jak widać, łatwiej też odłożyć bez torby.
+ ? r Jakiś ślad naprawy?
+ = m Ostatnia kartka zszyta niebieską nicią. Wypadła przy grzbiecie, nie chciałem jej przepisywać.
+  ? n Dlaczego właśnie tej?
+  = n Bo zaczęłoby się poprawianie. Chciałem zachować to, co napisałem za pierwszym razem.
+? r Gdzie i kiedy został?
+= n W czwórce, wieczorem. Czytałem i położyłem obok, żeby zapiąć płaszcz.
+ ? r Co wtedy czytałeś?
+ = n Własne zapiski. Rzeczy, które powinienem był powiedzieć ludziom wcześniej.
+  ? u Przemówienie?
+  = n Nie. Listy, każdy osobno. W przemówieniu łatwo zgubić człowieka, do którego naprawdę się mówi.
+ ? r Wiesz, kto siedział obok?
+ = n Nie zapamiętałem. Teraz chciałbym powiedzieć, że uważałem na wszystko, ale byłaby to nieprawda.
+  ? u Kiedy zauważyłeś brak?
+  = m W domu. Chciałem dopisać zdanie i nagle miałem tylko długopis. Całkiem sprawny, niewiele pomocny.
+? n Dlaczego nie chcesz odczytywania nazwisk?
+= n Należą do ludzi, którzy nie prosili o obecność w moim zeszycie. To, że go zgubiłem, nie jest ich zgodą.
+ ? r Kim są dla ciebie?
+ = n Dawni uczniowie. Skończyłem uczyć. Nie wszystko, co po mnie pamiętają, chciałbym zostawić bez odpowiedzi.
+  ? u Chcesz ich przeprosić?
+  = e Niektórych. Bez „ale” po drugim zdaniu. Na tym najczęściej kończy się pisanie.
+ ? n Oni czekają na te listy?
+ = n Nie wiem. Właśnie dlatego nie mogę żądać, żeby mi odpowiedzieli. To nie wypracowanie do oddania.
+  ? u A jeśli nie chcą ich dostać?
+  = n Przyjmę. Przynajmniej próbuję nie zaczynać kolejnej rozmowy od stawiania warunków.
+? r Jak potwierdzisz własność bez czytania listy?
+= m Nić, format, pismo. Mogę napisać zdanie obok. Nie musi zawierać żadnego nazwiska.
+ ? r Masz inny zeszyt do porównania?
+ = n W domu. Zawód zostawia stos papierów. Po raz pierwszy może się przydać bez zajmowania półki.
+  ? u Przyniesiesz, jeśli trzeba?
+  = n Przyniosę. Proszę tylko wskazać jeden warunek, nie dopisywać nowego po każdej podróży.
+ ? u Co zrobisz po odzyskaniu?
+ = n Wyślę pierwszy list, zanim poprawię go kolejny raz. Poprawianie bywa wygodnym sposobem, żeby niczego nie wysłać.
+  ? n A jeśli zabraknie adresu?
+  = n Nie wyślę. Nie będę wypytywał przypadkowych ludzi tylko po to, żeby ulżyć sobie cudzym kosztem.
+? r @sekret Przy nazwiskach są puste miejsca zamiast ocen. Dlaczego?
+= e Ręka zrobiła rubryki z przyzwyczajenia. Potem dotarło do mnie, że tym razem nie mam komu wystawiać stopnia.

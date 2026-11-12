@@ -2,342 +2,1002 @@
 
 Wygenerowane przez `node qa/spojnosc_dialogow.js`. Automat tylko wskazuje podejrzane miejsca; o tym, czy para pytanie/odpowiedź gra, decyduje czytanie (`--pelny PLIK` daje wypis wszystkich węzłów).
 
-Scen: 55, par pytanie/odpowiedź: 647. W nowym zapisie (drzewo wątków): 37 scen, w starym (trzy sztywne tury): 18.
+Scen: 55, par pytanie/odpowiedź: 1116. W nowym zapisie (drzewo wątków): 37 scen, w starym (trzy sztywne tury): 18.
 
 | flaga | drzewa | stare tury | co znaczy |
 |---|---|---|---|
-| PROZNIA | 33 | 69 | opcja nie zaczepia się o poprzednią kwestię gościa na którejś ścieżce |
+| PROZNIA | 205 | 69 | opcja nie zaczepia się o poprzednią kwestię gościa na którejś ścieżce |
 | WIEDZA | 2 | 109 | opcja zakłada nazwę albo liczbę, której gracz nie musiał usłyszeć |
-| LUZNE | 138 | 34 | opcja nawiązuje do rozmowy, ale nie do końcówki żadnej odpowiedzi (miękkie) |
-| OBOK | 288 | 136 | odpowiedź bez wspólnego słowa z pytaniem (miękkie, sprawdzić ręcznie) |
+| LUZNE | 294 | 34 | opcja nawiązuje do rozmowy, ale nie do końcówki żadnej odpowiedzi (miękkie) |
+| OBOK | 619 | 136 | odpowiedź bez wspólnego słowa z pytaniem (miękkie, sprawdzić ręcznie) |
 | KALKA | 0 | 0 | zwrot jak z tłumaczenia |
-| PLEC | 1 | 0 | gracz dostaje płeć albo pan/pani |
+| PLEC | 2 | 0 | gracz dostaje płeć albo pan/pani |
 | DLUGIE | 0 | 0 | za długa kwestia |
 
 ## d1_thomas (dzień 1, Thomas Ward, 71, drzewo)
 
-- **OBOK** 1: „Jak wygląda ta rękawiczka?” -> „Brązowa skóra, damska, mały rozmiar. Przy kciuku zszyłem ją białą nitką, bo ciemnej w domu…”
-- **OBOK** 1.1: „Biała nitka na brązowej skórze? Czemu nie u kaletnika?” -> „Bo tym razem to ja miałem zszyć. Ellen przez czterdzieści lat cerowała po mnie wszystko, r…”
-- **OBOK** 1.2: „Jak sprawdzić, że to ta, a nie podobna?” -> „Drugą mam w kieszeni, o. Wystarczy położyć je kciukami do siebie: w prawej nitka czarna, w…”
-- **LUZNE** 1.2: dopytanie „Jak sprawdzić, że to ta, a nie podobna?” nie zaczepia się o: „…Przy kciuku zszyłem ją białą nitką, bo ciemnej w domu nie było. Krzywo, ale trzyma.”
-- **OBOK** 2: „Gdzie i kiedy zginęła?” -> „W czwórce, wczoraj wieczorem, jak jechałem do Doków. Leżała mi na kolanie i na zakręcie zs…”
-- **OBOK** 2.1: „Po co wieczorem do Doków?” -> „Do córki, do Claire. W czwartki gotuje rosół i udaje, że przypadkiem wyszło za dużo. Ona n…”
-- **LUZNE** 2.1: dopytanie „Po co wieczorem do Doków?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Leżała mi na kolanie i na zakręcie zsunęła się pod siedzenie. Zauważyłem dopiero w domu.”
-- **OBOK** 2.1.1: „Czemu Claire ma nie wiedzieć?” -> „O to już proszę nie pytać. To sprawa między mną a córką, nie między mną a okienkiem.…”
-- **LUZNE** 2.1.1: dopytanie „Czemu Claire ma nie wiedzieć?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…W czwartki gotuje rosół i udaje, że przypadkiem wyszło za dużo. Ona nie wie, że rękawiczka zginęła, i wolałbym, żeby tak zostało.”
-- **OBOK** 2.1.2: „A jeśli Claire sama tu przyjdzie pytać?” -> „To proszę jej powiedzieć, że wszystko się znalazło. Ona martwi się o mnie bardziej niż ja …”
-- **OBOK** 3: „Po co wozić rękawiczki żony tramwajem?” -> „Noszę je w kieszeni płaszcza, jedną w drugiej. Jakbym trzymał ją za rękę. Głupie, wiem.…”
-- **OBOK** 3.1: „Wcale nie głupie. Długo byliście razem?” -> „Czterdzieści cztery lata. Poznaliśmy się w tramwaju, w dwójce, której już nie ma. Dlatego …”
-- **OBOK** 4.1: „To skąd w mankiecie kwit z tego biura, numer 0417?” -> „No dobrze, byłem tu. Sześć tygodni temu zgubiłem prawą. Taki młody człowiek, Sam, oddał mi…”
-- **OBOK** 4.1.1: „Sam mówił coś jeszcze?” -> „Że lewa też kiedyś przyjdzie, bo rękawiczki chodzą parami. I żebym o nim za dużo nie opowi…”
-- **LUZNE** 4.1.1: dopytanie „Sam mówił coś jeszcze?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstyd mi było, że gubię drugi raz.”
-- **OBOK** 5: „W mankiecie jest kwit z tego biura, numer 0417. Skąd?” -> „No dobrze, byłem tu już. Sześć tygodni temu zgubiłem prawą. Taki młody człowiek, Sam, odda…”
-- **OBOK** 5.1: „Sam mówił coś jeszcze?” -> „Że lewa też kiedyś przyjdzie, bo rękawiczki chodzą parami. I żebym o nim za dużo nie opowi…”
-- **LUZNE** 5.1: dopytanie „Sam mówił coś jeszcze?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstyd mi było, że gubię drugi raz.”
-- **OBOK** 5.2: „Nie ma się czego wstydzić. Każdy coś gubi.” -> „Ale nie dwa razy to samo, po jednej naraz. Ellen by powiedziała, że robię to specjalnie, ż…”
+- **OBOK** 1: „Jak wygląda rękawiczka?” -> „Brązowa skóra. Wytarta, ale nie popękana. Ellen mówiła, że dobra skóra ma się zestarzeć ra…”
+- **PROZNIA** 1.1: dopytanie „Jaki rozmiar?” nie zaczepia się o: „…Wytarta, ale nie popękana. Ellen mówiła, że dobra skóra ma się zestarzeć razem z człowiekiem.”
+- **OBOK** 1.1.1: „Przymierzałeś ją?” -> „Przy szyciu. Musiałem czymś rozepchać środek. Dłoń miałem pod ręką, że tak powiem.…”
+- **PROZNIA** 1.1.1: dopytanie „Przymierzałeś ją?” nie zaczepia się o: „…Ellen miała drobne dłonie. Mnie wchodzi tylko do połowy palców.”
+- **OBOK** 1.2: „Po czym odróżnić ją od podobnej?” -> „Przy kciuku zszyłem ją białą nitką. Krzywo. Ręka lata, ale nitka trzyma.…”
+- **PROZNIA** 1.2: dopytanie „Po czym odróżnić ją od podobnej?” nie zaczepia się o: „…Wytarta, ale nie popękana. Ellen mówiła, że dobra skóra ma się zestarzeć razem z człowiekiem.”
+- **OBOK** 1.2.1: „Czemu akurat białą?” -> „Została w pudełku Ellen. Ciemnej już nie było. Nie chciałem kupować całej szpulki na jeden…”
+- **LUZNE** 1.2.1: dopytanie „Czemu akurat białą?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Krzywo. Ręka lata, ale nitka trzyma.”
+- **OBOK** 2.1: „Dokąd jechałeś?” -> „Do córki, Claire, do Doków. W czwartki gotuje rosół i zawsze wychodzi jej za dużo.…”
+- **PROZNIA** 2.1: dopytanie „Dokąd jechałeś?” nie zaczepia się o: „…Rękawiczka leżała na kolanie, na zakręcie spadła. Nie zauważyłem od razu.”
+- **LUZNE** 2.1.1: dopytanie „Wie, że szukasz rękawiczki?” nie zaczepia się o: „…Do córki, Claire, do Doków. W czwartki gotuje rosół i zawsze wychodzi jej za dużo.”
+- **OBOK** 2.2: „Dlaczego nie była w kieszeni?” -> „Wyjąłem ją, żeby sprawdzić szew. Człowiek raz coś zszyje i zaraz musi oglądać swoje dzieło…”
+- **PROZNIA** 2.2: dopytanie „Dlaczego nie była w kieszeni?” nie zaczepia się o: „…Rękawiczka leżała na kolanie, na zakręcie spadła. Nie zauważyłem od razu.”
+- **OBOK** 3: „Masz ze sobą drugą?” -> „W kieszeni. Proszę, prawa. Noszę ją osobno, odkąd lewa zginęła.…”
+- **OBOK** 3.1: „Czym różnią się szwy?” -> „W prawej nitka czarna, w lewej biała. Czarna skończyła się wcześniej. Obie szyte tą samą, …”
+- **PROZNIA** 3.1: dopytanie „Czym różnią się szwy?” nie zaczepia się o: „…Proszę, prawa. Noszę ją osobno, odkąd lewa zginęła.”
+- **OBOK** 3.1.1: „Możesz ją zostawić na czas porównania?” -> „Na ladzie, tak. Byle nie w magazynie. Jeszcze mi się zrobi z tego trzecia wizyta... To zna…”
+- **PROZNIA** 3.1.1: dopytanie „Możesz ją zostawić na czas porównania?” nie zaczepia się o: „…Czarna skończyła się wcześniej. Obie szyte tą samą, niezbyt pewną ręką.”
+- **OBOK** 3.2: „Nosisz je nawet wtedy, gdy jest ciepło?” -> „W płaszczu. Jedną w drugiej. Portfel mam w drugiej kieszeni, żeby nic ich nie drapało.…”
+- **LUZNE** 3.2: dopytanie „Nosisz je nawet wtedy, gdy jest ciepło?” nie zaczepia się o: „…Proszę, prawa. Noszę ją osobno, odkąd lewa zginęła.”
+- **OBOK** 3.2.1: „A kiedy zmieniasz płaszcz?” -> „Przekładam najpierw rękawiczki. Telefonu czasem zapomnę. Tych nie powinienem.…”
+- **LUZNE** 3.2.1: dopytanie „A kiedy zmieniasz płaszcz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Jedną w drugiej. Portfel mam w drugiej kieszeni, żeby nic ich nie drapało.”
+- **OBOK** 4: „Co będzie, jeśli lewa się nie znajdzie?” -> „W niedzielę pojadę z jedną. Tylko będę wyglądał, jakbym znowu czegoś nie dopilnował.…”
+- **OBOK** 4.1: „Kto pojedzie z tobą?” -> „Claire. Niesie kwiaty, ja wodę. Tak się podzieliliśmy, żeby nie stać oboje z pustymi rękam…”
+- **PROZNIA** 4.1: dopytanie „Kto pojedzie z tobą?” nie zaczepia się o: „…W niedzielę pojadę z jedną. Tylko będę wyglądał, jakbym znowu czegoś nie dopilnował.”
+- **OBOK** 4.1.1: „Możesz powiedzieć jej o zgubie w drodze.” -> „Mogę. Tylko ona wtedy odłoży swoje sprawy i zacznie załatwiać moje. Nie po to gotuje ten r…”
+- **LUZNE** 4.1.1: dopytanie „Możesz powiedzieć jej o zgubie w drodze.” nie zaczepia się o: „…Niesie kwiaty, ja wodę. Tak się podzieliliśmy, żeby nie stać oboje z pustymi rękami.”
+- **OBOK** 4.2: „Chcesz zostawić rękawiczki na grobie?” -> „Na chwilę. Obie, obok siebie. Potem schowam, bo Ellen by mnie zrugała za marnowanie dobrej…”
+- **LUZNE** 4.2: dopytanie „Chcesz zostawić rękawiczki na grobie?” nie zaczepia się o: „…W niedzielę pojadę z jedną. Tylko będę wyglądał, jakbym znowu czegoś nie dopilnował.”
+- **OBOK** 4.2.1: „Zawsze tak pilnowała rzeczy?” -> „Guziki trzymała według kolorów. Ja teraz szukam igły w pięciu pudełkach, a ona trafiała be…”
+- **PROZNIA** 4.2.1: dopytanie „Zawsze tak pilnowała rzeczy?” nie zaczepia się o: „…Obie, obok siebie. Potem schowam, bo Ellen by mnie zrugała za marnowanie dobrej skóry.”
+- **OBOK** 5.1: „To skąd wiesz, gdzie jest nocne okienko?” -> „Zajezdnię znam. Szyba się świeci, człowiek podchodzi. Jeszcze potrafię trafić tam, gdzie j…”
+- **LUZNE** 5.1: dopytanie „To skąd wiesz, gdzie jest nocne okienko?” nie zaczepia się o: „…Pierwsza. Nie mam zwyczaju chodzić po urzędach.”
+- **OBOK** 5.1.1: „Trudno było tu przyjść?” -> „Trudniej powiedzieć, że chodzi o jedną rękawiczkę. Przy innych zgubach to wygląda śmieszni…”
+- **PROZNIA** 5.1.1: dopytanie „Trudno było tu przyjść?” nie zaczepia się o: „…Szyba się świeci, człowiek podchodzi. Jeszcze potrafię trafić tam, gdzie jasno.”
+- **OBOK** 5.2: „W mankiecie jest kwit 0417 sprzed sześciu tygodni. Skąd?” -> „Byłem tu po prawą. Sam oddał bez wpisu. Wstyd mi, że teraz przychodzę po lewą, jakbym nicz…”
+- **OBOK** 5.2.1: „Co Sam powiedział o lewej?” -> „Że rękawiczki chodzą parami i ona też kiedyś przyjdzie. Żebym o nim dużo nie opowiadał. Wi…”
+- **PROZNIA** 5.2.1: dopytanie „Co Sam powiedział o lewej?” nie zaczepia się o: „…Sam oddał bez wpisu. Wstyd mi, że teraz przychodzę po lewą, jakbym niczego nie umiał upilnować.”
+- **OBOK** 5.2.1.1: „Ukrywasz jego pomoc czy własną zgubę?” -> „Teraz już jedno i drugie. O nim prosił Sam, o rękawiczce sam nie chciałem mówić.…”
+- **LUZNE** 5.2.1.1: dopytanie „Ukrywasz jego pomoc czy własną zgubę?” nie zaczepia się o: „…Żebym o nim dużo nie opowiadał. Więc nie opowiadałem.”
+- **OBOK** 5.2.1.1.1: „Co mogę powiedzieć Claire, jeśli zapyta?” -> „Że lewa się znalazła, jeśli się znajdzie. Resztę spróbuję powiedzieć sam.…”
+- **LUZNE** 5.2.1.1.1: dopytanie „Co mogę powiedzieć Claire, jeśli zapyta?” nie zaczepia się o: „…Teraz już jedno i drugie. O nim prosił Sam, o rękawiczce sam nie chciałem mówić.”
+- **OBOK** 6: „Dlaczego tak zależy ci na tej jednej parze?” -> „To rękawiczki Ellen. Nowe mogę kupić. Tylko nowych ona nigdy nie miała na rękach.…”
+- **OBOK** 6.1: „Długo byliście razem?” -> „Czterdzieści cztery lata. Poznaliśmy się w dwójce, której już nie ma. Miała bilet, ja nie …”
+- **PROZNIA** 6.1: dopytanie „Długo byliście razem?” nie zaczepia się o: „…Nowe mogę kupić. Tylko nowych ona nigdy nie miała na rękach.”
+- **OBOK** 6.1.1: „Kupiła ci bilet?” -> „Pożyczyła. Bardzo wyraźnie powiedziała: pożyczyła. Musiałem ją potem znaleźć, żeby oddać.…”
+- **OBOK** 6.2.1: „Jak zdejmowała?” -> „Najpierw ciągnęła za każdy palec. Ja zawsze szarpałem za mankiet. Dlatego ona rzeczy miała…”
+- **OBOK** 7.1: „Dlaczego bez wpisu?” -> „Powiedział, że pamiątka, nie zguba. Nie pytałem, czy wolno. Wziąłem i wyszedłem, zanim się…”
+- **LUZNE** 7.1: dopytanie „Dlaczego bez wpisu?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Skłamałem, bo wstyd drugi raz przyjść z tym samym. Tylko rękawiczka inna.”
+- **OBOK** 8: „Pod białym szwem jest brązowy. Kto go zrobił?” -> „Ellen. Mój jest na wierzchu. Jej nitka się przecierała, ale nie potrafiłem jej wypruć.…”
 
 ## d1_rosa (dzień 1, Rosa Vale, 33, drzewo)
 
-- **OBOK** 1: „Jak wygląda ta koperta?” -> „Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.…”
-- **OBOK** 1.1: „Jest na niej jakieś nazwisko?” -> „Moje, ołówkiem: Vale, przez V. I kwota w rogu, 129. Dziewiątka wygląda jak ósemka, ale to …”
-- **LUZNE** 1.1: dopytanie „Jest na niej jakieś nazwisko?” nie zaczepia się o: „…Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.”
-- **OBOK** 1.2: „Co jest w środku oprócz pieniędzy?” -> „Kartka z naszymi nocami, złożona na pół. Kierownik wypisuje na niej, kto ile przerobił.…”
-- **LUZNE** 1.2: dopytanie „Co jest w środku oprócz pieniędzy?” nie zaczepia się o: „…Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.”
-- **OBOK** 2: „Gdzie i o której ją zgubiłaś?” -> „W jedenastce, o szóstej rano, po nocce. Położyłam ją obok, żeby zapiąć torbę, i przysnęłam…”
-- **OBOK** 2.1: „Po nocce? To od której jesteś na nogach?” -> „Od wczoraj, od dziewiątej wieczorem. Potem mała do szkoły, potem tutaj. Śpię w tramwajach …”
-- **LUZNE** 2.1: dopytanie „Po nocce? To od której jesteś na nogach?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Położyłam ją obok, żeby zapiąć torbę, i przysnęłam. Obudziłam się na pętli, już bez koperty.”
-- **OBOK** 3: „Skąd pewność, że było w niej równo 129 dolarów?” -> „Bo liczyłam. Trzy noce po czterdzieści trzy, razem sto dwadzieścia dziewięć. Przeliczyłam …”
-- **OBOK** 3.1: „Tylko trzy noce? Tydzień ma więcej.” -> „Miałam cztery. Za czwartą nie dostałam. To długa historia, a ja nie mam siły na długie.…”
-- **OBOK** 3.1.1: „Kto zdecydował, że za czwartą nie dostaniesz?” -> „Iris Bell. Zarządza naszą kamienicą, odbiera za nas wypłaty z pralni i rozdaje w kopertach…”
-- **OBOK** 3.2: „Na co pójdą te pieniądze?” -> „Na czynsz, jutro termin. Za spóźnienie zarządczyni dolicza dwadzieścia dolarów kary. Czyli…”
-- **LUZNE** 3.2: dopytanie „Na co pójdą te pieniądze?” nie zaczepia się o: „…Trzy noce po czterdzieści trzy, razem sto dwadzieścia dziewięć. Przeliczyłam trzy razy, zanim wsiadłam.”
-- **OBOK** 4.1: „Czemu się z nią nie kłóciłaś?” -> „Bo wynajmuje mi pokój i załatwiła mi tę pralnię. Jak się pokłócę, nie mam ani jednego, ani…”
-- **PROZNIA** 4.1: dopytanie „Czemu się z nią nie kłóciłaś?” nie zaczepia się o: „…Iris Bell, nasza zarządczyni, skreśliła mi całą noc, nie pół. Cztery godziny przerobiłam za darmo.”
-- **LUZNE** 4.2: dopytanie „A córka? Już zdrowa?” nie zaczepia się o: „…Iris Bell, nasza zarządczyni, skreśliła mi całą noc, nie pół. Cztery godziny przerobiłam za darmo.”
-- **OBOK** 4.2.1: „Kto zostaje z małą, kiedy masz nockę?” -> „A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.…”
-- **PROZNIA** 4.2.1: dopytanie „Kto zostaje z małą, kiedy masz nockę?” nie zaczepia się o: „…Dziś sama zrobiła sobie kanapki do szkoły. I mnie też.”
+- **OBOK** 1: „Jak rozpoznać kopertę?” -> „Brązowa, z jedną zszywką. Zwykła biurowa, nie żadna na prezenty.…”
+- **OBOK** 1.1: „Jak jest zamknięta?” -> „Jedna zszywka, wbita krzywo. Kierownik zszywa na stojąco, więc połowa jest w papierze, poł…”
+- **LUZNE** 1.1: dopytanie „Jak jest zamknięta?” nie zaczepia się o: „…Brązowa, z jedną zszywką. Zwykła biurowa, nie żadna na prezenty.”
+- **OBOK** 1.1.1: „Rozrywałaś ją przy liczeniu?” -> „Odgięłam róg. Banknoty wysunęłam, zszywka została. Palec pamięta ją do teraz.…”
+- **PROZNIA** 1.1.1: dopytanie „Rozrywałaś ją przy liczeniu?” nie zaczepia się o: „…Jedna zszywka, wbita krzywo. Kierownik zszywa na stojąco, więc połowa jest w papierze, połowa sterczy.”
+- **OBOK** 1.2: „Co jest w środku oprócz pieniędzy?” -> „Kartka z naszymi nocami. Złożona na pół, inaczej się nie mieści.…”
+- **LUZNE** 1.2: dopytanie „Co jest w środku oprócz pieniędzy?” nie zaczepia się o: „…Brązowa, z jedną zszywką. Zwykła biurowa, nie żadna na prezenty.”
+- **OBOK** 1.2.1: „Jest podpisana?” -> „Na kopercie Vale, ołówkiem. W rogu 129. Dziewiątka wygląda jak ósemka, kierownik tak pisze…”
+- **PROZNIA** 1.2.1: dopytanie „Jest podpisana?” nie zaczepia się o: „…Kartka z naszymi nocami. Złożona na pół, inaczej się nie mieści.”
+- **OBOK** 2: „Kiedy została w tramwaju?” -> „O szóstej rano, w jedenastce. Odłożyłam obok, żeby zapiąć torbę. Obudziłam się na pętli.…”
+- **OBOK** 2.1: „Po nocnej zmianie?” -> „Od dziewiątej wieczorem na nogach. Potem córka do szkoły, potem szukanie koperty. Sen na r…”
+- **PROZNIA** 2.1: dopytanie „Po nocnej zmianie?” nie zaczepia się o: „…Odłożyłam obok, żeby zapiąć torbę. Obudziłam się na pętli.”
+- **OBOK** 2.1.1: „Córka poszła sama?” -> „Ada, dziesięć lat. Kanapki zrobiła sobie i mnie. Moja jeszcze leży w torbie, nie mogę prze…”
+- **PROZNIA** 2.2.1: dopytanie „Pytałaś na pętli?” nie zaczepia się o: „…Same takie jak ja, głowy pod oknem. Nie będę wybierać złodziejki z zamkniętymi oczami.”
+- **OBOK** 3: „Skąd dokładnie kwota 129 dolarów?” -> „Trzy noce po czterdzieści trzy. Liczyłam przed tramwajem. Trzy razy, niestety dobrze.…”
+- **OBOK** 3.1: „Niestety?” -> „Bo pracowałam cztery noce. Za czwartą nie dostałam. Liczenie tego nie naprawi.…”
+- **OBOK** 3.1.1: „Kto skreślił czwartą?” -> „Iris Bell. Zarządza kamienicą, odbiera nasze wypłaty z pralni. Potem każda dostaje kopertę…”
+- **PROZNIA** 3.1.1.1: dopytanie „Możesz sprawdzić rachunek, zanim rozda pieniądze?” nie zaczepia się o: „…Zarządza kamienicą, odbiera nasze wypłaty z pralni. Potem każda dostaje kopertę i ma nie marudzić.”
+- **OBOK** 3.1.1.1.1: „Czyli liczenie ma tylko potwierdzić jej wynik?” -> „Liczyć mogę, kłócić się też. Tylko ona potem wraca do kamienicy jako zarządczyni, a ja jak…”
+- **LUZNE** 3.1.1.1.1: dopytanie „Czyli liczenie ma tylko potwierdzić jej wynik?” nie zaczepia się o: „…Widzę kartkę, kiedy dostaję kopertę. Wtedy pieniądze są już podzielone, a za mną stoją następne.”
+- **LUZNE** 3.2: dopytanie „Dlaczego tak dokładnie je przeliczasz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Liczyłam przed tramwajem. Trzy razy, niestety dobrze.”
+- **OBOK** 3.2.1: „Nic nie zostaje na jedzenie?” -> „Z tego nie. W domu jest kasza. Nie przyszłam po litość, tylko po swoje pieniądze.…”
+- **PROZNIA** 3.2.1: dopytanie „Nic nie zostaje na jedzenie?” nie zaczepia się o: „…Sto dwadzieścia dziewięć mam, sto dwadzieścia dziewięć muszę oddać. W takim rachunku nawet dolar hałasuje.”
+- **OBOK** 4.1: „Kto wręcza koperty?” -> „Iris, zarządczyni. Odbiera zbiorczo. Mówi, że dzięki niej nie musimy stać po wypłatę.…”
+- **LUZNE** 4.1: dopytanie „Kto wręcza koperty?” nie zaczepia się o: „…Papier dostaję, pieniędzy na konto nie. Mogę pracować albo pytać, czemu.”
+- **OBOK** 4.1.1: „A jeśli chcesz odebrać osobiście?” -> „To zapyta, po co komplikuję. Przy wszystkich. Potem trudno z nią rozmawiać o czynszu.…”
+- **LUZNE** 4.1.1: dopytanie „A jeśli chcesz odebrać osobiście?” nie zaczepia się o: „…Odbiera zbiorczo. Mówi, że dzięki niej nie musimy stać po wypłatę.”
+- **OBOK** 4.2: „Próbowałaś zmienić pracę?” -> „Przy dziecku potrzebuję tych godzin. W pralni przynajmniej wiem, kiedy wyjdę. Z pieniędzmi…”
+- **OBOK** 4.2.1: „Kto zostaje wtedy z córką?” -> „To już moja sprawa. Koperta ma moje nazwisko, nie opis całego mieszkania.…”
+- **LUZNE** 4.2.1: dopytanie „Kto zostaje wtedy z córką?” nie zaczepia się o: „…W pralni przynajmniej wiem, kiedy wyjdę. Z pieniędzmi gorzej.”
+- **OBOK** 5: „Co się stanie, jeśli nie odzyskasz jej dziś?” -> „Dwadzieścia dolarów kary za czynsz. I nadal trzeba zapłacić sam czynsz. Kara go nie zastęp…”
+- **OBOK** 5.1: „Kto nalicza karę?” -> „Iris Bell. Ta sama, która rozdziela wypłaty. Pieniądze robią kółko, ja tylko na chwilę je …”
+- **PROZNIA** 5.1: dopytanie „Kto nalicza karę?” nie zaczepia się o: „…I nadal trzeba zapłacić sam czynsz. Kara go nie zastępuje.”
+- **OBOK** 5.1.1: „Możesz poprosić o odroczenie?” -> „Mogę. Powie, że wszyscy mają dzieci i nie może robić wyjątków. Już słyszałam.…”
+- **PROZNIA** 5.1.1: dopytanie „Możesz poprosić o odroczenie?” nie zaczepia się o: „…Ta sama, która rozdziela wypłaty. Pieniądze robią kółko, ja tylko na chwilę je trzymam.”
+- **PROZNIA** 5.2: dopytanie „Masz od kogo pożyczyć?” nie zaczepia się o: „…I nadal trzeba zapłacić sam czynsz. Kara go nie zastępuje.”
+- **OBOK** 5.2.1: „A kierownik?” -> „Może potwierdzić kopertę. Pieniędzy drugi raz nie da. Zszywkę pewnie tak.…”
+- **LUZNE** 5.2.1: dopytanie „A kierownik?” nie zaczepia się o: „…Jedna mi pożyczy, sama nie zapłaci. Razem wyjdzie drożej.”
+- **OBOK** 6: „Jak możesz potwierdzić, że wypłata jest twoja?” -> „Nazwisko, kwota, kartka z nocami. Kierownik mnie zna. Tylko nie odbierze telefonu w środku…”
+- **LUZNE** 6.1: dopytanie „Przyjdziesz z nim rano?” nie zaczepia się o: „…Kierownik mnie zna. Tylko nie odbierze telefonu w środku nocy.”
+- **OBOK** 6.1.1: „Którą sprawę wybierzesz?” -> „Córkę. Potem tu przyjdę. I proszę nie uznać spóźnienia za dowód, że mi nie zależy.…”
+- **PROZNIA** 6.1.1: dopytanie „Którą sprawę wybierzesz?” nie zaczepia się o: „…Ale rano będę też musiała odprowadzić małą. Nie rozdwoję się między pralnią a okienkiem.”
+- **OBOK** 6.2: „Czyje nazwisko widnieje na papierach wypłaty?” -> „Jeśli chodzi o zbiorczy, będzie I. Bell. Ona odbiera za wszystkie, ale nie przepracowała z…”
+- **LUZNE** 6.2: dopytanie „Czyje nazwisko widnieje na papierach wypłaty?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Kierownik mnie zna. Tylko nie odbierze telefonu w środku nocy.”
+- **OBOK** 6.2.1: „Jak oddzielić twoją część od pozostałych?” -> „Vale na kopercie i trzy noce na kartce. Sto dwadzieścia dziewięć, wciąż ta sama suma.…”
+- **PROZNIA** 6.2.1: dopytanie „Jak oddzielić twoją część od pozostałych?” nie zaczepia się o: „…Bell. Ona odbiera za wszystkie, ale nie przepracowała za mnie tych nocy.”
+- **LUZNE** 7.1: dopytanie „Ada już zdrowa?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Iris skreśliła całą noc. Cztery godziny prania poszły za darmo.”
 
 ## d2_jonah (dzień 2, Jonah Pike, 22, drzewo)
 
-- **OBOK** 1: „Co jest w tym plecaku?” -> „Ładowarka, książka, kupa starych biletów. I pudełko, w kieszeni od strony pleców. Pudełko …”
-- **OBOK** 1.1: „Co jest w pudełku?” -> „Prezent. Niespodzianka. Więcej nie powiem, bo zapeszę.…”
-- **OBOK** 1.1.1: „Dla kogo ta niespodzianka?” -> „Dla June. To moja dziewczyna, pracuje w piekarni, wstaje o czwartej. O siódmej wpada do do…”
-- **OBOK** 1.2: „Po co ci kupa starych biletów?” -> „Każdy jest z kursu, którym jechałem z June. Na odwrocie piszę datę. Wiem, że to dziwne. Zn…”
-- **LUZNE** 1.2: dopytanie „Po co ci kupa starych biletów?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…I pudełko, w kieszeni od strony pleców. Pudełko jest najważniejsze.”
-- **OBOK** 2: „Gdzie i kiedy go zostawiłeś?” -> „W jedenastce, wczoraj wieczorem. Wcisnąłem go nogą pod składane siedzenie przy drzwiach, ż…”
-- **OBOK** 2.1: „Wysiadłeś bez plecaka i nic cię nie tknęło?” -> „Patrzyłem na nią, nie na plecak. Skapnąłem się w domu, jak chciałem sprawdzić, czy pudełko…”
-- **OBOK** 2.2: „Kim jest June?” -> „Moją dziewczyną. Dwa lata i trzy miesiące, liczę. Pracuje w piekarni, pachnie drożdżówką n…”
-- **OBOK** 3.1: „A jak powie „nie”?” -> „To będzie najgorszy poranek w moim życiu. Ale wolę usłyszeć „nie”, niż dalej nie wiedzieć.…”
-- **LUZNE** 3.1: dopytanie „A jak powie „nie”?” nie zaczepia się o: „…O coś, o co pyta się raz w życiu. Dlatego potrzebuję plecaka.”
-- **OBOK** 3.2: „Wiesz już, jak ją zapytasz?” -> „Mam trzy wersje na serwetce. Dwie skreśliłem. Trzeciej się boję, bo jest krótka i nie ma s…”
-- **LUZNE** 3.2: dopytanie „Wiesz już, jak ją zapytasz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…O coś, o co pyta się raz w życiu. Dlatego potrzebuję plecaka.”
-- **PROZNIA** 4.1: dopytanie „June wie, że pierścionek jest na raty?” nie zaczepia się o: „…Ale jak nie teraz, to kiedy? I tak, wiem, jak to brzmi.”
+- **OBOK** 1: „Jak wygląda plecak?” -> „Czarny, z pękniętą klamrą. Nie odpina się porządnie, trzeba trzymać obie połówki.…”
+- **OBOK** 1.1: „Da się go zamknąć?” -> „Da, mimo pękniętej klamry. Pasek przeciągam drugi raz. Jak ktoś pociągnie za klamrę, zosta…”
+- **LUZNE** 1.1: dopytanie „Da się go zamknąć?” nie zaczepia się o: „…Czarny, z pękniętą klamrą. Nie odpina się porządnie, trzeba trzymać obie połówki.”
+- **OBOK** 1.1.1: „Nie boisz się, że coś wypadnie?” -> „To ważne trzymam od strony pleców. Tam nikt nie sięgnie. Chyba że zostawię cały plecak, ja…”
+- **PROZNIA** 1.1.1: dopytanie „Nie boisz się, że coś wypadnie?” nie zaczepia się o: „…Pasek przeciągam drugi raz. Jak ktoś pociągnie za klamrę, zostaje mu w ręce pół zapięcia.”
+- **OBOK** 1.2: „Co jest w środku?” -> „Ładowarka, książka, kupa starych biletów. I pudełko, w kieszeni od strony pleców.…”
+- **LUZNE** 1.2: dopytanie „Co jest w środku?” nie zaczepia się o: „…Czarny, z pękniętą klamrą. Nie odpina się porządnie, trzeba trzymać obie połówki.”
+- **OBOK** 1.2.1: „Co jest w pudełku?” -> „Pierścionek. Dla June. O siódmej chcę zapytać. Tylko nie mów tego tak głośno, bo jeszcze s…”
+- **OBOK** 2: „Gdzie go zostawiłeś?” -> „W jedenastce, wczoraj wieczorem, pod składanym siedzeniem przy drzwiach. June stała obok i…”
+- **OBOK** 2.1: „June jechała z tobą?” -> „Moja dziewczyna. Wysiadłem za nią, a plecak pojechał dalej. Zachowałem się jak pies za kie…”
+- **OBOK** 2.1.1: „Wie, że tu jesteś?” -> „Myśli, że mam kurs. Jestem kurierem, więc to nawet brzmi prawdopodobnie. Poza tym to prawd…”
+- **PROZNIA** 2.1.1: dopytanie „Wie, że tu jesteś?” nie zaczepia się o: „…Zachowałem się jak pies za kiełbasą. Nie, źle to brzmi.”
+- **OBOK** 2.2: „Kiedy zauważyłeś zgubę?” -> „W domu. Chciałem sprawdzić kieszeń na plecach i złapałem za powietrze. Przez chwilę sprawd…”
+- **PROZNIA** 2.2: dopytanie „Kiedy zauważyłeś zgubę?” nie zaczepia się o: „…W jedenastce, wczoraj wieczorem, pod składanym siedzeniem przy drzwiach. June stała obok i chciałem zrobić miejsce.”
+- **PROZNIA** 2.2.1: dopytanie „Wracałeś na przystanek?” nie zaczepia się o: „…Chciałem sprawdzić kieszeń na plecach i złapałem za powietrze. Przez chwilę sprawdzałem jeszcze raz.”
+- **OBOK** 3: „Co ma się wydarzyć o siódmej?” -> „June wraca z piekarni na kawę. Wtedy poproszę ją o rękę. Znaczy, jeśli będę miał czym.…”
+- **OBOK** 3.1: „Czemu akurat podczas kawy?” -> „Wtedy jesteśmy sami i ona jeszcze nie zaczyna opowiadać, co trzeba naprawić. Później się n…”
+- **PROZNIA** 3.1: dopytanie „Czemu akurat podczas kawy?” nie zaczepia się o: „…Wtedy poproszę ją o rękę. Znaczy, jeśli będę miał czym.”
+- **LUZNE** 3.1.1: dopytanie „Będzie po pracy. Nie lepiej dać jej odpocząć?” nie zaczepia się o: „…Wtedy jesteśmy sami i ona jeszcze nie zaczyna opowiadać, co trzeba naprawić. Później się nie wcisnę z pytaniem.”
+- **OBOK** 3.2: „Masz przygotowane słowa?” -> „Na serwetce. Trzy wersje, dwie skreślone. Trzecia jest krótka i przez to najgorsza.…”
+- **PROZNIA** 3.2: dopytanie „Masz przygotowane słowa?” nie zaczepia się o: „…Wtedy poproszę ją o rękę. Znaczy, jeśli będę miał czym.”
+- **OBOK** 3.2.1: „Co jest złego w krótkiej?” -> „Że potem od razu ona odpowiada. W długich mogłem jeszcze chwilę gadać.…”
+- **OBOK** 4: „Dlaczego plecak musi wrócić jeszcze przed ranem?” -> „Mam w nim prezent dla June. Nie zastąpię go po drodze, nawet gdyby sklep był otwarty.…”
+- **OBOK** 4.1: „Jest drogi?” -> „Dla mnie tak. Dla jubilera pewnie nie. Patrzył, jakbym kupował baterię, a ja się spociłem.…”
+- **PROZNIA** 4.1: dopytanie „Jest drogi?” nie zaczepia się o: „…Mam w nim prezent dla June. Nie zastąpię go po drodze, nawet gdyby sklep był otwarty.”
+- **PROZNIA** 4.1.1: dopytanie „Zapłaciłeś już całość?” nie zaczepia się o: „…Dla jubilera pewnie nie. Patrzył, jakbym kupował baterię, a ja się spociłem.”
+- **OBOK** 4.2: „June będzie zła za tę zgubę?” -> „Za plecak nie. Za to, że chodzę całą noc i nic nie mówię, już może. Ona lubi wiedzieć, o c…”
+- **OBOK** 4.2.1: „Powiesz jej potem?” -> „O plecaku tak. O wszystkim naraz nie. Jeszcze zanim odpowie, będę musiał jej tłumaczyć pół…”
+- **LUZNE** 4.2.1: dopytanie „Powiesz jej potem?” nie zaczepia się o: „…Za to, że chodzę całą noc i nic nie mówię, już może. Ona lubi wiedzieć, o co się martwić.”
+- **OBOK** 5: „Jak udowodnisz, że plecak jest twój?” -> „Opiszę zawartość. Tylko nie wyciągaj tego małego pudełka na widok wszystkich.…”
+- **OBOK** 5.1: „Co ci przeszkadza w pudełku na ladzie?” -> „Ktoś zobaczy, ktoś skojarzy June. Piekarnia jest jak gazeta, tylko szybciej roznoszą wiado…”
+- **OBOK** 5.1.1: „Wszyscy ją znają?” -> „Ci, co wstają wcześnie. Ja wcześniej nie wstawałem. Teraz znam nawet ceny bułek, których n…”
+- **PROZNIA** 5.1.1: dopytanie „Wszyscy ją znają?” nie zaczepia się o: „…Ktoś zobaczy, ktoś skojarzy June. Piekarnia jest jak gazeta, tylko szybciej roznoszą wiadomości.”
+- **OBOK** 5.2: „Co jeszcze jest charakterystycznego w zawartości?” -> „Bilety mają daty na odwrocie. Z kursów z June. To nie makulatura, proszę nie wyrzucać.…”
+- **LUZNE** 5.2.1: dopytanie „Ona o nich wie?” nie zaczepia się o: „…Z kursów z June. To nie makulatura, proszę nie wyrzucać.”
+- **OBOK** 6: „Co takiego zależy od zawartości plecaka?” -> „Chcę oświadczyć się June. Jeśli odmówi, to odmówi. Tylko chciałbym usłyszeć to od niej, ni…”
+- **PROZNIA** 6.1: dopytanie „Rozmawialiście o ślubie?” nie zaczepia się o: „…Jeśli odmówi, to odmówi. Tylko chciałbym usłyszeć to od niej, nie od zamkniętego magazynu.”
+- **OBOK** 6.1.1: „Może nie chce niespodzianki?” -> „Może. Wiesz co, tego już tutaj nie rozwiążę. Najpierw odzyskam plecak, potem będę pytał wł…”
+- **OBOK** 6.2: „Wrócisz tutaj po wszystkim?” -> „Jeśli się uda, powiem. Jak nie, też pewnie przyjdę, bo nadal mam pękniętą klamrę i głowę g…”
+- **PROZNIA** 6.2: dopytanie „Wrócisz tutaj po wszystkim?” nie zaczepia się o: „…Jeśli odmówi, to odmówi. Tylko chciałbym usłyszeć to od niej, nie od zamkniętego magazynu.”
+- **LUZNE** 6.2.1: dopytanie „Naprawisz ją wreszcie?” nie zaczepia się o: „…Jeśli się uda, powiem. Jak nie, też pewnie przyjdę, bo nadal mam pękniętą klamrę i głowę gdzie indziej.”
+- **OBOK** 7.1: „A raty będziecie płacić razem?” -> „Ja zapłacę. Wezmę kursy. Wiem, brzmi to łatwo, kiedy jeszcze nie trzeba wsiadać na rower.…”
+- **LUZNE** 7.1: dopytanie „A raty będziecie płacić razem?” nie zaczepia się o: „…Kazałaby oddać pierścionek i kupić pralkę. Chciałem raz przynieść coś, co nie jest potrzebne do sprzątania.”
 
 ## d2_hana (dzień 2, Hana Moreau, 26, drzewo)
 
-- **OBOK** 1: „Jak wygląda futerał?” -> „Czarny, sztywny, mosiężne zamki. Na wierzchu zielona naklejka, a rączka owinięta czerwoną …”
-- **OBOK** 1.2: „Co jest w środku oprócz skrzypiec?” -> „Kalafonia, jedwabna szmatka i nuty Mendelssohna z moimi zapiskami ołówkiem. Po tych zapisk…”
-- **LUZNE** 1.2: dopytanie „Co jest w środku oprócz skrzypiec?” nie zaczepia się o: „…Czarny, sztywny, mosiężne zamki. Na wierzchu zielona naklejka, a rączka owinięta czerwoną taśmą, bo skóra się przetarła.”
-- **OBOK** 2: „Gdzie go zostawiłaś?” -> „W czwórce, w ostatnim kursie. Postawiłam między nogami, zadzwoniła mama i wysiadłam z tele…”
-- **LUZNE** 2.2: dopytanie „Skrzypaczka zapomina skrzypiec?” nie zaczepia się o: „…Postawiłam między nogami, zadzwoniła mama i wysiadłam z telefonem przy uchu. Bez futerału.”
-- **OBOK** 3.2: „W środku powinna być etykieta lutnika. Co na niej jest?” -> „Jest jakaś, mała. Nazwiska nie pamiętam. Od lat tam nie zaglądałam.…”
-- **LUZNE** 3.2: dopytanie „W środku powinna być etykieta lutnika. Co na niej jest?” nie zaczepia się o: „…Oczywiście, że moje. Gram na nich od siedmiu lat.”
-- **OBOK** 4: „Co się stanie, jeśli nie dostaniesz ich przed ósmą?” -> „Zagra ktoś inny. Weszłam z listy rezerwowej, drugiego terminu nie będzie. Bez skrzypiec ni…”
-- **PROZNIA** 4.1: dopytanie „Daleko masz stąd do filharmonii?” nie zaczepia się o: „…Weszłam z listy rezerwowej, drugiego terminu nie będzie. Bez skrzypiec nie mam po co tam iść.”
-- **OBOK** 5: „Pod pokrywą jest kartka: „Wypożyczone do 7 sierpnia”. Dziś jest dziesiąty.” -> „Termin minął w sobotę. Komisja, która przedłuża, zbiera się dopiero w czwartek. Nie jestem…”
-- **LUZNE** 5.1: dopytanie „Konserwatorium wie, że skrzypce jeździły po nocy tramwajem?” nie zaczepia się o: „…Nie jestem złodziejką. Spóźniłam się trzy dni, a przesłuchanie mam za parę godzin.”
+- **OBOK** 1: „Jak rozpoznać futerał?” -> „Czarny, sztywny. Rączka owinięta czerwoną taśmą, bo skóra się przetarła.…”
+- **OBOK** 1.1: „Ma jakiś znak na zewnątrz?” -> „Zielona naklejka. Z boku trochę zdrapana. Jest na wierzchu futerału, nie na skrzypcach.…”
+- **PROZNIA** 1.1: dopytanie „Ma jakiś znak na zewnątrz?” nie zaczepia się o: „…Czarny, sztywny. Rączka owinięta czerwoną taśmą, bo skóra się przetarła.”
+- **OBOK** 1.2: „Co leży obok skrzypiec?” -> „Kalafonia, jedwabna szmatka i nuty Mendelssohna. Na nutach moje zapiski ołówkiem.…”
+- **LUZNE** 1.2: dopytanie „Co leży obok skrzypiec?” nie zaczepia się o: „…Czarny, sztywny. Rączka owinięta czerwoną taśmą, bo skóra się przetarła.”
+- **OBOK** 1.2.1: „Po czym poznasz własne zapiski?” -> „Wszystko poprawiam, a potem ścieram. Papier jest prawie przezroczysty w miejscach, gdzie n…”
+- **OBOK** 2.1: „O czym rozmawiałyście?” -> „O przesłuchaniu. Upiekła ciasto na potem. Nie wiem jeszcze, co będzie potem, ale ciasto ju…”
+- **PROZNIA** 2.1: dopytanie „O czym rozmawiałyście?” nie zaczepia się o: „…Mama zadzwoniła, wstałam z telefonem przy uchu i wysiadłam. Futerał stał między moimi nogami i został w tramwaju.”
+- **OBOK** 2.1.1: „Powiesz jej o zgubie?” -> „Jak odzyskam. Inaczej zadzwoni do wszystkich i będę musiała uspokajać ją zamiast siebie.…”
+- **LUZNE** 2.1.1: dopytanie „Powiesz jej o zgubie?” nie zaczepia się o: „…Upiekła ciasto na potem. Nie wiem jeszcze, co będzie potem, ale ciasto już jest.”
+- **OBOK** 2.2: „W którym miejscu siedziałaś?” -> „W czwórce, przy oknie. Futerał stał pionowo, rączką do mnie. Wiem, jak go zostawiłam, nie …”
+- **PROZNIA** 2.2: dopytanie „W którym miejscu siedziałaś?” nie zaczepia się o: „…Mama zadzwoniła, wstałam z telefonem przy uchu i wysiadłam. Futerał stał między moimi nogami i został w tramwaju.”
+- **LUZNE** 3.1: dopytanie „Od kogo je masz?” nie zaczepia się o: „…Gram na nich od siedmiu lat. Proszę nie robić z tego czegoś dziwnego.”
+- **PROZNIA** 3.1.1: dopytanie „Pamiętasz nazwisko lutnika?” nie zaczepia się o: „…Dawno temu. Znam każdy dźwięk tego instrumentu.”
+- **OBOK** 3.2.1: „Dlaczego od razu nie powiedziałaś?” -> „Bo wtedy patrzy się tylko na datę. A ja przez cały czas pilnowałam tych skrzypiec. Do wczo…”
+- **PROZNIA** 3.2.1: dopytanie „Dlaczego od razu nie powiedziałaś?” nie zaczepia się o: „…Termin minął, a komisja zbiera się w czwartek. Bez nich nie zagram przesłuchania.”
+- **OBOK** 3.2.1.1: „Znajomość instrumentu nie przedłuża wypożyczenia.” -> „Wiem. Nie udowadniam, że termin nie minął. Proszę, żeby pozwolić mi zagrać mimo tego.…”
+- **PROZNIA** 3.2.1.1: dopytanie „Znajomość instrumentu nie przedłuża wypożyczenia.” nie zaczepia się o: „…A ja przez cały czas pilnowałam tych skrzypiec. Do wczoraj.”
+- **OBOK** 3.2.1.1.1: „Powiesz komisji, że skłamałaś o własności?” -> „Jeśli zapytają, odpowiem. Nie obiecam teraz, że sama zacznę od najgorszego.…”
+- **PROZNIA** 3.2.1.1.1: dopytanie „Powiesz komisji, że skłamałaś o własności?” nie zaczepia się o: „…Nie udowadniam, że termin nie minął. Proszę, żeby pozwolić mi zagrać mimo tego.”
+- **OBOK** 4: „Co czeka cię o ósmej?” -> „Przesłuchanie do orkiestry. Weszłam z listy rezerwowej. Ktoś zrezygnował i zadzwonili do m…”
+- **PROZNIA** 4.1: dopytanie „Możesz dostać inny termin?” nie zaczepia się o: „…Weszłam z listy rezerwowej. Ktoś zrezygnował i zadzwonili do mnie.”
+- **OBOK** 4.1.1: „Masz jak pożyczyć inne skrzypce?” -> „O tej porze nie. Nawet gdybym miała, musiałabym się przyzwyczaić. To nie jest zamiana para…”
+- **LUZNE** 4.1.1: dopytanie „Masz jak pożyczyć inne skrzypce?” nie zaczepia się o: „…Albo przyjdę z instrumentem, albo zagra następna osoba. Tam nie zostawia się pustego krzesła.”
+- **OBOK** 4.2: „Jak długo się przygotowujesz?” -> „Teraz po dziesięć godzin dziennie. Sąsiedzi wiedzą, w którym miejscu mi nie wychodzi, pewn…”
+- **PROZNIA** 4.2: dopytanie „Jak długo się przygotowujesz?” nie zaczepia się o: „…Weszłam z listy rezerwowej. Ktoś zrezygnował i zadzwonili do mnie.”
+- **LUZNE** 4.2.1: dopytanie „A dziś udało się przespać choć chwilę?” nie zaczepia się o: „…Teraz po dziesięć godzin dziennie. Sąsiedzi wiedzą, w którym miejscu mi nie wychodzi, pewnie lepiej ode mnie.”
+- **OBOK** 5: „Co zrobisz, jeśli znajdzie się podobny futerał?” -> „Poproszę o obejrzenie, nie zabiorę w ciemno. Zewnętrzne ślady można pomylić. Moje nuty roz…”
+- **OBOK** 5.1: „A sam instrument?” -> „Też. Sposób, w jaki odpowiada pod smyczkiem. Tego nie potrafię wpisać w rubrykę, ale usłys…”
+- **LUZNE** 5.1: dopytanie „A sam instrument?” nie zaczepia się o: „…Zewnętrzne ślady można pomylić. Moje nuty rozpoznam.”
+- **OBOK** 5.1.1: „Musiałabyś tu zagrać?” -> „Wystarczy kilka dźwięków. Jeśli nie wolno, pokaż nuty. Nie będę urządzać koncertu kolejce.…”
+- **PROZNIA** 5.1.1: dopytanie „Musiałabyś tu zagrać?” nie zaczepia się o: „…Sposób, w jaki odpowiada pod smyczkiem. Tego nie potrafię wpisać w rubrykę, ale usłyszę od razu.”
+- **OBOK** 5.2: „Co sprawdzisz najpierw?” -> „Czy mostek stoi. Potem smyczek. Naklejki mogą się odkleić, tego nie naprawię przed ósmą.…”
+- **PROZNIA** 5.2: dopytanie „Co sprawdzisz najpierw?” nie zaczepia się o: „…Zewnętrzne ślady można pomylić. Moje nuty rozpoznam.”
+- **PROZNIA** 5.2.1: dopytanie „Myślisz, że coś się stało po drodze?” nie zaczepia się o: „…Potem smyczek. Naklejki mogą się odkleić, tego nie naprawię przed ósmą.”
+- **OBOK** 6: „Dlaczego właśnie ta orkiestra?” -> „Bo mnie zaprosili. Nie dlatego, że ktoś zna mamę albo nauczycielkę. Chcę wejść i zagrać.…”
+- **OBOK** 6.1: „Mama też przyjdzie?” -> „Czeka w domu z ciastem. Będzie dzwoniła, zanim komisja skończy pisać. Już to wiem.…”
+- **LUZNE** 6.1: dopytanie „Mama też przyjdzie?” nie zaczepia się o: „…Nie dlatego, że ktoś zna mamę albo nauczycielkę. Chcę wejść i zagrać.”
+- **OBOK** 6.1.1: „Co jej powiesz, jeśli nie dostaniesz miejsca?” -> „Że zagrałam. Tyle chcę móc powiedzieć. Resztę da się jakoś przełknąć razem z tym ciastem.…”
+- **LUZNE** 6.1.1: dopytanie „Co jej powiesz, jeśli nie dostaniesz miejsca?” nie zaczepia się o: „…Będzie dzwoniła, zanim komisja skończy pisać. Już to wiem.”
+- **LUZNE** 6.2: dopytanie „A jeśli trzeba będzie wybrać między przesłuchaniem a oddaniem skrzypiec?” nie zaczepia się o: „…Nie dlatego, że ktoś zna mamę albo nauczycielkę. Chcę wejść i zagrać.”
+- **LUZNE** 6.2.1: dopytanie „To obietnica czy prośba o wyjątek?” nie zaczepia się o: „…Chcę je oddać po przesłuchaniu. Nie umiem zrobić obu rzeczy naraz.”
+- **PROZNIA** 7.1: dopytanie „Konserwatorium wie o zgubie?” nie zaczepia się o: „…Komisja zbiera się w czwartek. Powinnam była zgłosić to wcześniej, zanim zostałam z cudzym instrumentem i wymówką.”
 
 ## d2_ines (dzień 2, Ines Calloway, 61, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten parasol?” -> „Czarny, automatyczny, z drewnianą rączką w kształcie kaczki. Kaczka ma odłamany dziób z le…”
-- **OBOK** 2: „Gdzie go zostawiłaś?” -> „W czwórce, na haczyku przy tylnych drzwiach. Wysiadałam na pętli z torbami w obu rękach. P…”
-- **OBOK** 3: „O jakie ogłoszenie pytasz?” -> „„Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu”. Wasz słup stoi w dobrym…”
-- **LUZNE** 3.1: dopytanie „Jak się wabi ten kot?” nie zaczepia się o: „…Wasz słup stoi w dobrym miejscu. Wolę zapytać, niż żeby mi je ktoś zrywał.”
-- **OBOK** 3.2: „Od zimy? Po takim czasie koty raczej nie wracają.” -> „Wiem, ile żyje kot na ulicy. Ale na te ogłoszenia ktoś odpisuje. Zostawia kartki, nocą. Ni…”
-- **LUZNE** 3.2: dopytanie „Od zimy? Po takim czasie koty raczej nie wracają.” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Wasz słup stoi w dobrym miejscu. Wolę zapytać, niż żeby mi je ktoś zrywał.”
-- **OBOK** 3.2.1: „Co jest na tych kartkach?” -> „Godziny. Numery linii. Raz samo „jeszcze nie”. O kocie ani razu. Proszę z tego nie wyciąga…”
-- **LUZNE** 3.2.1: dopytanie „Co jest na tych kartkach?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Nie widziałam kto. Dopóki odpisuje, wieszam dalej.”
-- **LUZNE** 4.1: dopytanie „To na pewno jest ogłoszenie o kocie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Żeby mieć przy sobie, kiedy deszcz rozmoczy tamte. Nic więcej.”
+- **OBOK** 1: „Jak wygląda parasol?” -> „Czarny, automatyczny. Nie składany do torebki, pełny. Proszę nie otwierać nad papierami.…”
+- **LUZNE** 1.1: dopytanie „Jaka rączka?” nie zaczepia się o: „…Nie składany do torebki, pełny. Proszę nie otwierać nad papierami.”
+- **PROZNIA** 1.1.1: dopytanie „Wygodnie się ją trzyma?” nie zaczepia się o: „…Drewniana, w kształcie kaczki. Kaczka nie jest ozdobą doczepioną do rączki, tylko samą rączką.”
+- **OBOK** 1.2: „Co odróżnia go od takiego samego?” -> „Dziób odłamany z lewej strony. Nie od deszczu. Już taki kupiłam, po wichurze.…”
+- **LUZNE** 1.2: dopytanie „Co odróżnia go od takiego samego?” nie zaczepia się o: „…Nie składany do torebki, pełny. Proszę nie otwierać nad papierami.”
+- **OBOK** 1.2.1: „Kupiłaś uszkodzony?” -> „Tańszy. Deszcz wpada od góry, nie przez kaczy dziób. Do tego łatwiej go rozpoznać.…”
+- **PROZNIA** 2.1: dopytanie „Próbowałaś dogonić tramwaj?” nie zaczepia się o: „…Wysiadłam na pętli z torbami. Parasol przypomniał się za zakrętem.”
+- **OBOK** 2.1.1: „Co zrobiłaś zamiast tego?” -> „Spytałam, dokąd oddają zguby. Proszę, jestem. Bez parasola, ale bez zadyszki.…”
+- **LUZNE** 2.1.1: dopytanie „Co zrobiłaś zamiast tego?” nie zaczepia się o: „…Tramwaj ma szyny. Wynik był do przewidzenia.”
+- **OBOK** 2.2: „Po co jechałaś na pętlę?” -> „Rozwiesić ogłoszenia. Ludzie czekają i czytają, nawet jeśli nie zamierzali.…”
+- **LUZNE** 2.2.1: dopytanie „Tam też pytasz o zgodę?” nie zaczepia się o: „…Rozwiesić ogłoszenia. Ludzie czekają i czytają, nawet jeśli nie zamierzali.”
+- **OBOK** 3: „Co ma być na ogłoszeniu?” -> „„Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu”. Krótkie. Długich nie cz…”
+- **OBOK** 3.1: „Dlaczego odpowiedzi na słupie?” -> „Bo tam ktoś zobaczył ogłoszenie i tam wróci. Nie każdy chce zostawiać telefon obcej osobie…”
+- **LUZNE** 3.1: dopytanie „Dlaczego odpowiedzi na słupie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Krótkie. Długich nie czytają.”
+- **OBOK** 3.2: „Jak długo ma wisieć?” -> „Dopóki ktoś odpowiada. Sama zdejmę, kiedy będzie niepotrzebne. Nie zostawię strzępów na zi…”
+- **OBOK** 3.2.1: „Jak poznasz, że odpowiedź jest dla ciebie?” -> „Będzie pod moją kartką. Jeśli masz wątpliwość, odłóż. Nie trzeba jej najpierw rozwiązywać …”
+- **LUZNE** 3.2.1: dopytanie „Jak poznasz, że odpowiedź jest dla ciebie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Sama zdejmę, kiedy będzie niepotrzebne. Nie zostawię strzępów na zimę.”
+- **OBOK** 4.1: „Od zimy nie ma żadnego śladu?” -> „Są odpowiedzi na kartkach. Dlatego dalej wieszam. Nie dlatego, że lubię obchodzić wszystki…”
+- **LUZNE** 4.1: dopytanie „Od zimy nie ma żadnego śladu?” nie zaczepia się o: „…Rudy, z białą łapką. Na wołanie nie przychodzi.”
+- **OBOK** 4.1.1: „Co ludzie piszą?” -> „Godziny, numery linii. Raz „jeszcze nie”. O samym kocie niewiele, uprzedzę następne pytani…”
+- **PROZNIA** 4.1.1: dopytanie „Co ludzie piszą?” nie zaczepia się o: „…Dlatego dalej wieszam. Nie dlatego, że lubię obchodzić wszystkie pętle.”
+- **OBOK** 5: „Dlaczego zależy ci na naszym słupie?” -> „Stoi przy wejściu. Ludzie go mijają, kiedy patrzą na światło okienka. Nikt nie musi się sp…”
+- **LUZNE** 5.1: dopytanie „A pieczątka biura co zmieni?” nie zaczepia się o: „…Ludzie go mijają, kiedy patrzą na światło okienka. Nikt nie musi się specjalnie zatrzymywać.”
+- **OBOK** 5.1.1: „Chcesz, żeby wyglądało na urzędowe?” -> „Na dozwolone. Nie proszę o podpis pod tym, czego nie wiesz. Proszę o zgodę na słup.…”
+- **PROZNIA** 5.1.1: dopytanie „Chcesz, żeby wyglądało na urzędowe?” nie zaczepia się o: „…Mniej chętnie zerwą. Papierek z pieczątką bywa dla niektórych ważniejszy od właściciela papierka.”
+- **LUZNE** 5.2: dopytanie „Inne słupy nie wystarczą?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Ludzie go mijają, kiedy patrzą na światło okienka. Nikt nie musi się specjalnie zatrzymywać.”
+- **OBOK** 5.2.1: „Kto ma wrócić?” -> „Osoba, która przeczytała kartkę. To nie jest nazwisko, które można wpisać do księgi.…”
+- **OBOK** 6: „Co mam robić z odpowiedziami?” -> „Zostawić pod ogłoszeniem albo odłożyć dla mnie, jeśli przemokną. Bez otwierania przy kolej…”
+- **OBOK** 6.1: „Jak często je sprawdzasz?” -> „Kiedy przejeżdżam. Nie będę dzwoniła co godzinę. Szyba ma służyć też innym ludziom.…”
+- **LUZNE** 6.1: dopytanie „Jak często je sprawdzasz?” nie zaczepia się o: „…Zostawić pod ogłoszeniem albo odłożyć dla mnie, jeśli przemokną. Bez otwierania przy kolejce.”
+- **LUZNE** 6.1.1: dopytanie „A jeśli długo nie przyjdziesz?” nie zaczepia się o: „…Nie będę dzwoniła co godzinę. Szyba ma służyć też innym ludziom.”
+- **OBOK** 6.2: „A gdy ktoś będzie pytał, kto je odbiera?” -> „Powiedz, że ogłoszenie wisi na słupie. To akurat może sprawdzić sam, bez twojej pomocy.…”
+- **LUZNE** 6.2: dopytanie „A gdy ktoś będzie pytał, kto je odbiera?” nie zaczepia się o: „…Zostawić pod ogłoszeniem albo odłożyć dla mnie, jeśli przemokną. Bez otwierania przy kolejce.”
+- **PROZNIA** 6.2.1: dopytanie „Mam ukrywać twoje nazwisko?” nie zaczepia się o: „…Powiedz, że ogłoszenie wisi na słupie. To akurat może sprawdzić sam, bez twojej pomocy.”
+- **OBOK** 7.1: „Czego mam się spodziewać po odpowiedziach?” -> „Czasem ktoś zostawia coś przy okienku. Jeśli to się stanie, nie pokazuj od razu całej kole…”
+- **PROZNIA** 7.1: dopytanie „Czego mam się spodziewać po odpowiedziach?” nie zaczepia się o: „…I nie, to nie tylko sprawa kota. Nie podam cudzych nazwisk, żeby uzasadnić własny parasol.”
 
 ## d3_maz_i_siostra (dzień 3, Evan Doyle, 37, i Lena Brandt, 31, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten telefon?” -> „Czarny, w skórzanym etui. Róg etui się odkleja. Kupiłem je Mai na rocznicę i sto razy mówi…”
-- **LUZNE** 1.1: dopytanie „Znasz kod do tego telefonu?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Róg etui się odkleja. Kupiłem je Mai na rocznicę i sto razy mówiłem, żeby podkleiła.”
-- **WIEDZA** 2: „Kiedy Maya go zgubiła?” używa „may”, a gracz nie musiał tego usłyszeć na tej ścieżce
-- **OBOK** 2.2: „Evan, skąd wiecie, że akurat w jedenastce?” -> „Od policji. Motorniczy oddał telefon do zajezdni i zapamiętał kurs. Posterunkowy Reyes pow…”
-- **LUZNE** 2.2: dopytanie „Evan, skąd wiecie, że akurat w jedenastce?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Tylko że Maya nie gubi rzeczy. Zostawia je tam, gdzie ktoś przechowa i nie będzie pytał po co.”
-- **OBOK** 3.1: „Do pracy po kolacji? Na noc?” -> „Jest elektryczką, bierze nocne awarie. Wychodziła o różnych porach. Nie pilnowałem jej, je…”
-- **OBOK** 3.3: „Lena, tak to wyglądało?” -> „Mnie przy tej kolacji nie było. Evan mówi, że zwyczajnie, to pewnie tak mu się wydawało.…”
-- **LUZNE** 3.3: dopytanie „Lena, tak to wyglądało?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Żadnej kłótni. Zjedliśmy kolację, Maya poszła do pracy i nie wróciła.”
-- **OBOK** 4: „Evan, co zrobisz z telefonem, jeśli go dostaniesz?” -> „Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.…”
-- **OBOK** 4.1: „A jeśli telefon zostanie u nas w depozycie?” -> „To policja dostanie go za późno. Zróbmy inaczej: sto dolarów od ręki i niczego nie trzeba …”
-- **LUZNE** 4.1: dopytanie „A jeśli telefon zostanie u nas w depozycie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.”
-- **OBOK** 4.2: „Lena, a ty co byś z nim zrobiła?” -> „Schowałabym u siebie, aż Maya się odezwie. To jej rzecz. Nie Evana i nie policji.…”
-- **LUZNE** 4.2: dopytanie „Lena, a ty co byś z nim zrobiła?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.”
+- **OBOK** 1: „Jak rozpoznać telefon?” -> „Czarny, w skórzanym etui. Kupiłem to etui Mai na rocznicę.…”
+- **OBOK** 1.1: „Ma jakieś uszkodzenie?” -> „Róg etui się odkleja. Mówiłem, żeby podkleiła, ale odkładała. Teraz akurat to się przyda.…”
+- **PROZNIA** 1.1: dopytanie „Ma jakieś uszkodzenie?” nie zaczepia się o: „…Czarny, w skórzanym etui. Kupiłem to etui Mai na rocznicę.”
+- **LUZNE** 1.1.1: dopytanie „Lena, też je poznasz?” nie zaczepia się o: „…Mówiłem, żeby podkleiła, ale odkładała. Teraz akurat to się przyda.”
+- **LUZNE** 1.2: dopytanie „Znasz kod do telefonu?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Czarny, w skórzanym etui. Kupiłem to etui Mai na rocznicę.”
+- **OBOK** 1.2.1: „To dlaczego nie chcesz po prostu poczekać na nią z odbiorem?” -> „Bo zaginęła. Nie mogę czekać na osobę, której szukamy. Telefon może pomóc ją znaleźć.…”
+- **LUZNE** 1.2.1: dopytanie „To dlaczego nie chcesz po prostu poczekać na nią z odbiorem?” nie zaczepia się o: „…Nie miała kodu. Nie mieliśmy przed sobą tajemnic.”
+- **OBOK** 2.1: „Co dokładnie powiedział Reyes?” -> „Że telefon jest w biurze. We wtorek sprawa idzie dalej, więc potrzebuję go teraz, zanim za…”
+- **OBOK** 2.1.1: „Dalej czy do zamknięcia? Na wejściu mówisz, że ją zamkną.” -> „Dla mnie to jedno. Przestanę mieć jednego człowieka, do którego mogę zadzwonić. Tak to roz…”
+- **LUZNE** 2.2: dopytanie „Maya kontaktowała się z tobą po zaginięciu?” nie zaczepia się o: „…Motorniczy go oddał, policja zna kurs. Evan rozmawiał z Reyesem, ja nie.”
+- **OBOK** 3.1: „Pracuje nocami?” -> „Jest elektryczką. Awarie zdarzają się o różnych porach. Nie pytałem o każdą klatkę schodow…”
+- **LUZNE** 3.1.1: dopytanie „A o godzinę powrotu?” nie zaczepia się o: „…Awarie zdarzają się o różnych porach. Nie pytałem o każdą klatkę schodową.”
+- **LUZNE** 3.2: dopytanie „Lena, co możesz potwierdzić?” nie zaczepia się o: „…Wyszła do pracy. Żadnej kłótni, zwyczajny wieczór.”
+- **OBOK** 3.2.1: „W takim razie czemu przyszłaś z nim?” -> „Żeby nie wyszedł stąd z telefonem, zanim zdążę powiedzieć, że to rzecz Mai. Jej, nie jego.…”
+- **LUZNE** 3.2.1: dopytanie „W takim razie czemu przyszłaś z nim?” nie zaczepia się o: „…Nie było mnie przy kolacji. Nie będę potwierdzać czegoś tylko dlatego, że Evan mówi pełnymi zdaniami.”
+- **OBOK** 4: „Co zrobisz z telefonem po odbiorze?” -> „Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.…”
+- **OBOK** 4.1: „A jeśli zostanie tutaj do odbioru przez policję?” -> „Stracimy czas. Sto dolarów od ręki, bez wpisu, i sam go zaniosę. Nie trzeba czekać na papi…”
+- **LUZNE** 4.1: dopytanie „A jeśli zostanie tutaj do odbioru przez policję?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.”
+- **OBOK** 4.1.1: „Za co te sto dolarów?” -> „Za kłopot. Za to, że zajmujesz się naszą sprawą po nocy. Nie przypisuj temu od razu czegoś…”
+- **OBOK** 4.2: „Lena, co ty zrobisz po odbiorze?” -> „Schowam u siebie. Jak Maya się odezwie, oddam jej. Nie muszę czytać, żeby przechować.…”
+- **LUZNE** 4.2: dopytanie „Lena, co ty zrobisz po odbiorze?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.”
+- **LUZNE** 4.2.1: dopytanie „Nawet jeśli policja o niego poprosi?” nie zaczepia się o: „…Jak Maya się odezwie, oddam jej. Nie muszę czytać, żeby przechować.”
+- **OBOK** 5: „Dlaczego nie możecie ustalić tego między sobą?” -> „Bo on pyta, gdzie jest Maya, a ja pytam, czego ona chce. I każde uważa, że drugie nie odpo…”
+- **OBOK** 5.1.1: „Przed chwilą mówiłeś, że nie było kłótni. Z czego ma się uspokoić?” -> „Ze wszystkiego. Praca, zmęczenie. Nie powiedziałem, że chodzi o mnie.…”
+- **LUZNE** 5.2: dopytanie „Możesz mówić za siostrę?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Bo on pyta, gdzie jest Maya, a ja pytam, czego ona chce. I każde uważa, że drugie nie odpowiada.”
+- **OBOK** 5.2.1: „Co proponujesz, jeśli telefon zostanie tutaj?” -> „Żeby czekał na nią. Bez obietnicy, że przyjdzie. Ja takiej obietnicy nie złożę.…”
+- **LUZNE** 5.2.1: dopytanie „Co proponujesz, jeśli telefon zostanie tutaj?” nie zaczepia się o: „…Nie. Dlatego nie chcę oddawać jej rzeczy komuś, kto twierdzi, że może.”
+- **OBOK** 6: „Kto ma podpisać odbiór?” -> „Ja, Evan Doyle. Jestem jej mężem. Nie próbuję się tutaj ukrywać.…”
+- **LUZNE** 6.1: dopytanie „Podpis daje ci prawo czy tylko zapisuje, kto zabrał rzecz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Jestem jej mężem. Nie próbuję się tutaj ukrywać.”
+- **OBOK** 6.1.1: „Lena, podpiszesz swoim nazwiskiem?” -> „Brandt. Nie Doyle. Nadal jestem jej siostrą, zanim to też zacznie być przeszkodą.…”
+- **LUZNE** 6.1.1: dopytanie „Lena, podpiszesz swoim nazwiskiem?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Dla mnie to wystarczy. Dla ciebie najwyraźniej nie.”
+- **OBOK** 6.2: „A jeśli odbiór wymaga zgody Mai?” -> „To nie wydasz go nikomu. Nie możemy jej spytać, właśnie dlatego tu stoimy.…”
+- **LUZNE** 6.2: dopytanie „A jeśli odbiór wymaga zgody Mai?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Jestem jej mężem. Nie próbuję się tutaj ukrywać.”
+- **LUZNE** 6.2.1: dopytanie „Potrafisz zaakceptować taki wynik?” nie zaczepia się o: „…To nie wydasz go nikomu. Nie możemy jej spytać, właśnie dlatego tu stoimy.”
+- **OBOK** 7: „Lena, dlaczego kazałaś Mai nie wracać do domu?” -> „Zadzwoniła przestraszona. Napisałam, że przyjadę w sobotę. Nie daj mu telefonu, bo wtedy p…”
+- **LUZNE** 7.1: dopytanie „Evan, czego Maya się bała?” nie zaczepia się o: „…Napisałam, że przyjadę w sobotę. Nie daj mu telefonu, bo wtedy pójdzie pytać pod moje drzwi.”
+- **LUZNE** 7.2: dopytanie „Potwierdzasz, że to twój numer?” nie zaczepia się o: „…Napisałam, że przyjadę w sobotę. Nie daj mu telefonu, bo wtedy pójdzie pytać pod moje drzwi.”
 
 ## d3_dana (dzień 3, Dana Ruiz, 38, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten budzik?” -> „Blaszany, okrągły, dwa dzwonki na górze. Mam go dwanaście lat. Dzwoni tak, że sąsiad zza ś…”
-- **OBOK** 1.1: „Ma jakiś znak szczególny?” -> „Od spodu naklejkę „Mama”, bo od mamy go dostałam. I wgniecenie przy prawym dzwonku, jak zl…”
-- **PROZNIA** 1.1: dopytanie „Ma jakiś znak szczególny?” nie zaczepia się o: „…Mam go dwanaście lat. Dzwoni tak, że sąsiad zza ściany wstaje razem ze mną.”
-- **OBOK** 1.2: „Sąsiad się nie skarży?” -> „Raz przyszedł. Powiedziałam, że ma budzenie gratis, i od tej pory zostawia mi pod drzwiami…”
-- **OBOK** 2: „Na którą jest nastawiony?” -> „Na czwartą piętnaście. Wskazówka od budzenia jest czerwona i krzywa, sama ją prostowałam k…”
-- **LUZNE** 2.1.1: dopytanie „Długo już pracujesz w zajezdni?” nie zaczepia się o: „…Jak wstanę kwadrans po czwartej, zdążę na kawę. Jak nie, to na nic.”
-- **OBOK** 3: „Po co wozisz budzik tramwajem?” -> „Bo nocowałam u siostry i wzięłam go ze sobą. Samego w domu nie zostawię. Śmiej się, proszę…”
-- **OBOK** 3.1: „Co robiłaś u siostry?” -> „Pilnowałam jej dzieciaków, bo miała nockę. Trójka. Po takim wieczorze człowiek zostawiłby …”
-- **LUZNE** 3.1: dopytanie „Co robiłaś u siostry?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Samego w domu nie zostawię. Śmiej się, proszę bardzo.”
-- **OBOK** 3.1.1: „A ich ojciec gdzie był?” -> „Hola. Przyszłam po budzik, nie do spowiedzi. O siostrę pytaj siostrę.…”
-- **LUZNE** 3.1.1: dopytanie „A ich ojciec gdzie był?” nie zaczepia się o: „…Trójka. Po takim wieczorze człowiek zostawiłby w tramwaju własną głowę.”
+- **OBOK** 1: „Jak rozpoznać budzik?” -> „Blaszany, okrągły, dwa dzwonki na górze. Wygląda, jakby miał zaraz krzyczeć. I zwykle ma.…”
+- **OBOK** 1.1: „Jakiś znak szczególny?” -> „Na spodzie naklejka „Mama”. Od mamy go dostałam, więc podpisałam, żeby nikt nie myślał, że…”
+- **PROZNIA** 1.1: dopytanie „Jakiś znak szczególny?” nie zaczepia się o: „…Wygląda, jakby miał zaraz krzyczeć. I zwykle ma.”
+- **OBOK** 1.1.1: „Długo ją tam trzymasz?” -> „Dwanaście lat. Naklejka przetrzymała niejedną naprawę, więc nie będę jej teraz zdzierać.…”
+- **LUZNE** 1.1.1: dopytanie „Długo ją tam trzymasz?” nie zaczepia się o: „…Na spodzie naklejka Mama. Od mamy go dostałam, więc podpisałam, żeby nikt nie myślał, że to sprzęt zajezdni.”
+- **OBOK** 1.2: „Jak wygląda wskazówka alarmu?” -> „Jest czerwona, krzywa. Stoi na czwartą piętnaście. Prostowałam ją kombinerkami, bez konkur…”
+- **OBOK** 2: „Po co wozić budzik tramwajem?” -> „Nocowałam u siostry. Wzięłam go, żeby rano nie rozbudzać całego domu szukaniem telefonu.…”
+- **OBOK** 2.1: „Czemu u siostry?” -> „Pilnowałam dzieci. Ona miała nockę, ja trójkę na głowie. Budzik chyba miał spokojniejszy w…”
+- **LUZNE** 2.1.1: dopytanie „Dzieci nie chciały go zatrzymać?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Ona miała nockę, ja trójkę na głowie. Budzik chyba miał spokojniejszy wieczór.”
+- **LUZNE** 2.2: dopytanie „Gdzie został w szóstce?” nie zaczepia się o: „…Nocowałam u siostry. Wzięłam go, żeby rano nie rozbudzać całego domu szukaniem telefonu.”
+- **OBOK** 3: „O której zaczynasz pracę?” -> „Za pięć piąta mam już leżeć pod tramwajem. Kwadrans po czwartej pobudka, potem kawa i w dr…”
+- **OBOK** 3.1: „Co się stanie, jeśli zaśpisz?” -> „Ktoś zrobi moją robotę i nie będzie zadowolony. Tramwaj nie powie: Dana śpi, pojadę jutro.…”
+- **LUZNE** 3.1: dopytanie „Co się stanie, jeśli zaśpisz?” nie zaczepia się o: „…Za pięć piąta mam już leżeć pod tramwajem. Kwadrans po czwartej pobudka, potem kawa i w drogę.”
+- **PROZNIA** 3.1.1: dopytanie „Nie mogą zadzwonić?” nie zaczepia się o: „…Ktoś zrobi moją robotę i nie będzie zadowolony. Tramwaj nie powie: Dana śpi, pojadę jutro.”
+- **OBOK** 3.2: „Długo jesteś w zajezdni?” -> „Jedenaście lat. Wiem, który zawias zaskrzypi, zanim otworzę drzwi.…”
+- **LUZNE** 3.2: dopytanie „Długo jesteś w zajezdni?” nie zaczepia się o: „…Za pięć piąta mam już leżeć pod tramwajem. Kwadrans po czwartej pobudka, potem kawa i w drogę.”
+- **OBOK** 3.2.1: „A o tym okienku coś wiesz?” -> „Tyle, że od miesiąca w gazecie wisiało „praca nocna, bez referencji”. Nikt się nie palił. …”
+- **LUZNE** 3.2.1: dopytanie „A o tym okienku coś wiesz?” nie zaczepia się o: „…Jedenaście lat. Wiem, który zawias zaskrzypi, zanim otworzę drzwi.”
+- **OBOK** 4: „Telefon nie wystarczy do budzenia?” -> „Wyłączam przez sen. Jedną ręką, nawet oczu nie otwieram. Do niczego innego nie mam takiego…”
+- **OBOK** 4.1: „A ten czym cię pokonuje?” -> „Skacze po szafce. Trzeba go złapać. Jak już gonię blachę po pokoju, to jestem przytomna.…”
+- **LUZNE** 4.1: dopytanie „A ten czym cię pokonuje?” nie zaczepia się o: „…Jedną ręką, nawet oczu nie otwieram. Do niczego innego nie mam takiego talentu.”
+- **OBOK** 4.1.1: „Sąsiedzi też?” -> „Jeden tak. Przyszedł się skarżyć, potem przywykł. Teraz zostawia ogórki, budzenie ma grati…”
+- **LUZNE** 4.1.1: dopytanie „Sąsiedzi też?” nie zaczepia się o: „…Trzeba go złapać. Jak już gonię blachę po pokoju, to jestem przytomna.”
+- **PROZNIA** 4.2: dopytanie „Próbowałaś ustawić kilka alarmów?” nie zaczepia się o: „…Jedną ręką, nawet oczu nie otwieram. Do niczego innego nie mam takiego talentu.”
+- **OBOK** 4.2.1: „Upierasz się przy nim, bo go znasz?” -> „Bo działa na mnie. Budzik może być sprawny i bezużyteczny. Tak jak mechanik przed kawą.…”
+- **LUZNE** 4.2.1: dopytanie „Upierasz się przy nim, bo go znasz?” nie zaczepia się o: „…Wyłączyłam kilka alarmów. Nie będę płacić za dziesiąty, skoro ten jeden działa.”
+- **OBOK** 5: „Skąd masz ten budzik?” -> „Od mamy, dwanaście lat temu. Inni dostają biżuterię, ja urządzenie do przerywania snu.…”
+- **LUZNE** 5.1: dopytanie „Sama go wybrała?” nie zaczepia się o: „…Od mamy, dwanaście lat temu. Inni dostają biżuterię, ja urządzenie do przerywania snu.”
+- **OBOK** 5.1.1: „Miała taki sam?” -> „Ten stał u niej w kuchni. Teraz u mnie. Dlatego wiem, jak powinien brzmieć.…”
+- **PROZNIA** 5.2.1: dopytanie „Naprawa jeszcze się opłaca?” nie zaczepia się o: „…Mechanizm swoje przeszedł. Obudowa nadal daje radę, poza spotkaniem z podłogą.”
+- **OBOK** 6: „Kto może potwierdzić, że jest twój?” -> „Siostra, sąsiad, pół zajezdni. Tylko każde będzie miało własną opowieść o tym hałasie.…”
+- **LUZNE** 6.1: dopytanie „Przyprowadzisz kogoś, jeśli trzeba?” nie zaczepia się o: „…Siostra, sąsiad, pół zajezdni. Tylko każde będzie miało własną opowieść o tym hałasie.”
+- **OBOK** 6.1.1: „Siostra jest teraz w domu?” -> „Wraca z nocki. Nie będę jej wyciągać od dzieci, jeśli wystarczy obejrzeć naklejkę.…”
+- **PROZNIA** 6.1.1: dopytanie „Siostra jest teraz w domu?” nie zaczepia się o: „…Zamiast spać będziemy chodzić z papierami. Potem budzik obudzi osobę, która jeszcze nie zasnęła.”
+- **OBOK** 6.2: „Co zrobisz, jeśli go nie wydam?” -> „Spróbuję zasnąć przy telefonie. Potem pewnie się spóźnię. Nie będę udawać, że mam tajny dr…”
+- **LUZNE** 6.2: dopytanie „Co zrobisz, jeśli go nie wydam?” nie zaczepia się o: „…Siostra, sąsiad, pół zajezdni. Tylko każde będzie miało własną opowieść o tym hałasie.”
+- **PROZNIA** 6.2.1: dopytanie „Kupisz nowy?” nie zaczepia się o: „…Potem pewnie się spóźnię. Nie będę udawać, że mam tajny drugi budzik.”
+- **OBOK** 7: „Budzik jest gdzieś uszkodzony?” -> „Wgniecenie przy prawym dzwonku. Spadł z lodówki. Dlatego to prawa strona jest krzywa, nie …”
+- **LUZNE** 7.1.1: dopytanie „Po upadku nadal dzwonił?” nie zaczepia się o: „…Żebym musiała wstać. Na szafce mogłam go zgasić przez sen, lodówki z łóżka nie dosięgnę.”
+- **OBOK** 7.2: „Próbowałaś wyprostować obudowę?” -> „Zostawiłam. Wskazówkę poprawiłam, bo przeszkadzała w ustawianiu. Wgniecenie nie przeszkadz…”
+- **PROZNIA** 7.2: dopytanie „Próbowałaś wyprostować obudowę?” nie zaczepia się o: „…Spadł z lodówki. Dlatego to prawa strona jest krzywa, nie obie.”
+- **OBOK** 7.2.1: „Czyli nie musi wyglądać jak nowy?” -> „Ma mnie postawić na nogi. Jak przy okazji stoi krzywo, to jakoś wytrzymam.…”
+- **LUZNE** 7.2.1: dopytanie „Czyli nie musi wyglądać jak nowy?” nie zaczepia się o: „…Wskazówkę poprawiłam, bo przeszkadzała w ustawianiu. Wgniecenie nie przeszkadza w budzeniu.”
 
 ## d4_iris (dzień 4, Iris Bell, 56, drzewo)
 
-- **OBOK** 1: „Jak wygląda ta paczka?” -> „Płaska, w szarym płótnie, przewiązana sznureczkiem. W środku nieduża kasetka na kłódkę. Ni…”
-- **OBOK** 1.1.1: „Pokwitowania pod kłódką?” -> „Ludzie są wścibscy, a cudze długi to ulubiona lektura sąsiadów. Kłódeczka kosztuje dolara,…”
-- **OBOK** 2: „Gdzie dokładnie została?” -> „W szóstce, w ostatnim kursie, na półce nad siedzeniem. Zawsze tam kładę i zawsze pamiętam.…”
-- **LUZNE** 2.1: dopytanie „Wozisz papiery lokatorów nocnym tramwajem?” nie zaczepia się o: „…Zawsze tam kładę i zawsze pamiętam. Wczoraj pierwszy raz nie.”
-- **OBOK** 2.2: „Co cię wczoraj tak rozproszyło?” -> „Jedna lokatorka spóźnia się z czynszem i liczyłam w głowie jej karę. Człowiek zamyśli się …”
-- **OBOK** 3: „Kim są lokatorzy, którzy na nią czekają?” -> „Dwadzieścia rodzin spod dziewiątki. Zbieram od nich zaliczki na remont i trzymam ich dokum…”
-- **LUZNE** 3.1: dopytanie „Czemu nikt z nich nie przyszedł po nią sam?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zabawne, prawda? Akurat mnie się zgubiło.”
-- **OBOK** 3.2: „Do kiedy paczka musi do nich wrócić?” -> „Najlepiej jeszcze dziś. Nie lubię naciskać, ale moi lokatorzy źle śpią, kiedy ich sprawy l…”
-- **LUZNE** 3.2: dopytanie „Do kiedy paczka musi do nich wrócić?” nie zaczepia się o: „…Zabawne, prawda? Akurat mnie się zgubiło.”
-- **OBOK** 4.1: „Poprzednik brał takie kopertki?” -> „Sam był bardzo życzliwym człowiekiem. Rozumiał, że nie wszystko musi mieć numerek. Szkoda,…”
-- **LUZNE** 4.1: dopytanie „Poprzednik brał takie kopertki?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…To nie opłata, tylko wyraz uznania. Sto dwadzieścia dolarów.”
-- **OBOK** 4.2: „A jeśli wpis mimo wszystko będzie?” -> „To będzie. Poczekam na kwit jak każdy. Tylko że nowi zwykle sami odchodzą po pierwszym tyg…”
-- **LUZNE** 4.2: dopytanie „A jeśli wpis mimo wszystko będzie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…To nie opłata, tylko wyraz uznania. Sto dwadzieścia dolarów.”
-- **OBOK** 5: „W kasetce widać paszport z wyciętą stroną. Czyj?” -> „Kogoś, kto w tym tygodniu wyjeżdża. Jeśli paczka tu zostanie, nie wyjedzie. Więcej wiedzie…”
-- **OBOK** 5.1: „Na blankiecie stoi: „dla nocnej zmiany, bez wpisu”. Kto to pisał?” -> „Twój poprzednik. Ładny charakter pisma, prawda? Umowa była prosta: ja nie pytam, co on rob…”
-- **LUZNE** 5.1: dopytanie „Na blankiecie stoi: „dla nocnej zmiany, bez wpisu”. Kto to pisał?” nie zaczepia się o: „…Jeśli paczka tu zostanie, nie wyjedzie. Więcej wiedzieć nie trzeba, uwierz starszej kobiecie.”
+- **OBOK** 1: „Jak rozpoznać paczkę?” -> „Szare płótno. Zwykłe, bez wzorków. Nie chciałam, żeby się rzucała w oczy.…”
+- **OBOK** 1.1: „Jaki ma kształt?” -> „Płaska. Pod płótnem jest kasetka na kłódkę, więc nie zwija się jak woreczek. Proszę jej ni…”
+- **PROZNIA** 1.1: dopytanie „Jaki ma kształt?” nie zaczepia się o: „…Zwykłe, bez wzorków. Nie chciałam, żeby się rzucała w oczy.”
+- **OBOK** 1.1.1: „Kasetka jest zamknięta?” -> „Na kłódkę. Cudze papiery, cudze oczy. Wolę oszczędzić wszystkim nieporozumień.…”
+- **OBOK** 1.2: „Czym jest przewiązana?” -> „Sznurkiem. Węzeł trzyma płótno, nie samą kasetkę. Rozplątanie wystarczy, bez nożyczek.…”
+- **LUZNE** 1.2: dopytanie „Czym jest przewiązana?” nie zaczepia się o: „…Zwykłe, bez wzorków. Nie chciałam, żeby się rzucała w oczy.”
+- **OBOK** 1.2.1: „Chcesz sprawdzić, czy ktoś rozwiązywał?” -> „Chcę odebrać w takim stanie, w jakim zostawiłam. Drobna prośba, chyba zrozumiała.…”
+- **PROZNIA** 1.2.1: dopytanie „Chcesz sprawdzić, czy ktoś rozwiązywał?” nie zaczepia się o: „…Węzeł trzyma płótno, nie samą kasetkę. Rozplątanie wystarczy, bez nożyczek.”
+- **OBOK** 2: „Gdzie została w szóstce?” -> „Na półce nad siedzeniem, ostatni kurs. Zawsze tam kładę. Wczoraj najwyraźniej nie powinnam…”
+- **OBOK** 2.1: „Co cię rozproszyło?” -> „Liczyłam karę za spóźniony czynsz jednej lokatorki. Cudze rachunki też potrafią zająć czło…”
+- **PROZNIA** 2.1: dopytanie „Co cię rozproszyło?” nie zaczepia się o: „…Zawsze tam kładę. Wczoraj najwyraźniej nie powinnam.”
+- **PROZNIA** 2.1.1: dopytanie „Nie mogłaś policzyć w domu?” nie zaczepia się o: „…Liczyłam karę za spóźniony czynsz jednej lokatorki. Cudze rachunki też potrafią zająć człowiekowi głowę.”
+- **OBOK** 2.2: „Dlaczego przewozisz to nocą?” -> „Lokatorzy pracują na zmiany. Odbierają, kiedy wracają. Szóstka jeździ, nawet gdy biura już…”
+- **LUZNE** 2.2: dopytanie „Dlaczego przewozisz to nocą?” nie zaczepia się o: „…Zawsze tam kładę. Wczoraj najwyraźniej nie powinnam.”
+- **OBOK** 2.2.1: „Tramwaj zastępuje ci gońca?” -> „Tańszy i zwykle punktualny. Tylko trzeba pamiętać o własnej paczce, przyznaję.…”
+- **LUZNE** 2.2.1: dopytanie „Tramwaj zastępuje ci gońca?” nie zaczepia się o: „…Odbierają, kiedy wracają. Szóstka jeździ, nawet gdy biura już zamknięte.”
+- **OBOK** 3.1: „Po co kłódka do zwykłych rozliczeń?” -> „Spróbuj zostawić cudzy dług na stole w kamienicy. Do wieczora każdy zna kwotę, a połowa ją…”
+- **PROZNIA** 3.1.1: dopytanie „Kto ma klucz?” nie zaczepia się o: „…Spróbuj zostawić cudzy dług na stole w kamienicy. Do wieczora każdy zna kwotę, a połowa ją podwoi.”
+- **OBOK** 3.2: „Przez szparę widać paszport z wyciętą stroną. To pokwitowanie?” -> „To dokument człowieka, który chce wyjechać. Zatrzymasz paczkę, zatrzymasz jego wyjazd. Pro…”
+- **OBOK** 3.2.1: „Dlaczego ukrywasz to wśród rozliczeń?” -> „Bo nie każdy, kto pyta o cudzy wyjazd, chce pomóc. Także tutaj, po obu stronach szyby.…”
+- **LUZNE** 3.2.1: dopytanie „Dlaczego ukrywasz to wśród rozliczeń?” nie zaczepia się o: „…Zatrzymasz paczkę, zatrzymasz jego wyjazd. Proszę rozważyć całość.”
+- **OBOK** 4: „Którzy lokatorzy czekają na paczkę?” -> „Z Cooper Street dziewięć. Zarządzam dwudziestoma rodzinami. Nie będziemy teraz robić listy…”
+- **OBOK** 4.1: „Czego od ciebie potrzebują?” -> „Żeby ich sprawy nie utknęły w kolejnej szufladzie. Ja już wiem, co komu oddać. Tobie trzeb…”
+- **PROZNIA** 4.1: dopytanie „Czego od ciebie potrzebują?” nie zaczepia się o: „…Zarządzam dwudziestoma rodzinami. Nie będziemy teraz robić listy nazwisk.”
+- **LUZNE** 4.1.1: dopytanie „A jeśli ktoś chce odebrać bez ciebie?” nie zaczepia się o: „…Ja już wiem, co komu oddać. Tobie trzeba by tłumaczyć od początku.”
+- **LUZNE** 4.2: dopytanie „Do rana naprawdę nie można poczekać?” nie zaczepia się o: „…Zarządzam dwudziestoma rodzinami. Nie będziemy teraz robić listy nazwisk.”
+- **OBOK** 5: „Jak chcesz załatwić odbiór?” -> „Sprawnie. Paczkę rozpoznajesz, nazwisko znasz. Nie musimy spędzić nad tym całej zmiany.…”
+- **PROZNIA** 5.1: dopytanie „Co proponujesz zamiast zwykłego wpisu?” nie zaczepia się o: „…Paczkę rozpoznajesz, nazwisko znasz. Nie musimy spędzić nad tym całej zmiany.”
+- **OBOK** 5.1.1: „Za co dokładnie płacisz: za fatygę czy za brak wpisu?” -> „Za to, żeby ktoś nie musiał jutro tłumaczyć obcej osobie całego życia. Jeśli wolisz nazwać…”
+- **OBOK** 5.2: „A jeśli zrobię pełny wpis?” -> „Podpiszę. Iris Bell, czytelnie. Ja tu mieszkam i zostaję, niezależnie od tego, kto siedzi …”
+- **LUZNE** 5.2: dopytanie „A jeśli zrobię pełny wpis?” nie zaczepia się o: „…Paczkę rozpoznajesz, nazwisko znasz. Nie musimy spędzić nad tym całej zmiany.”
+- **OBOK** 5.2.1: „Po co przypominać, że zostajesz?” -> „Żeby było wiadomo, że można mnie znaleźć. Nie lubię naciskać. Lubię jasne ustalenia.…”
+- **OBOK** 6: „Dlaczego właśnie ty trzymasz papiery lokatorów?” -> „Bo przychodzą do mnie, kiedy czegoś potrzebują. Potem wszyscy pytają, czemu mam tyle cudzy…”
+- **PROZNIA** 6.1: dopytanie „Mogą odmówić twojej pomocy?” nie zaczepia się o: „…Bo przychodzą do mnie, kiedy czegoś potrzebują. Potem wszyscy pytają, czemu mam tyle cudzych spraw.”
+- **OBOK** 6.1.1: „A ty co dostajesz w zamian?” -> „Za czas się płaci. Tobie też ktoś płaci za siedzenie tutaj. Mam nadzieję, że punktualnie.…”
+- **LUZNE** 6.1.1: dopytanie „A ty co dostajesz w zamian?” nie zaczepia się o: „…Mogą też stać samodzielnie w kolejkach. Nie zabieram nikomu tej przyjemności.”
+- **OBOK** 6.2: „Znasz poprzedniego dyżurnego?” -> „Sama? Znałam. Potrafił załatwić sprawę bez zakładania jej drugiej teczki. Szkoda, że tak n…”
+- **PROZNIA** 6.2: dopytanie „Znasz poprzedniego dyżurnego?” nie zaczepia się o: „…Bo przychodzą do mnie, kiedy czegoś potrzebują. Potem wszyscy pytają, czemu mam tyle cudzych spraw.”
+- **OBOK** 6.2.1: „Wiesz, dokąd?” -> „Gdybym wiedziała, mogłabym pytać jego o paczkę. A stoję tutaj, prawda?…”
+- **PROZNIA** 6.2.1: dopytanie „Wiesz, dokąd?” nie zaczepia się o: „…Potrafił załatwić sprawę bez zakładania jej drugiej teczki. Szkoda, że tak nagle odszedł.”
+- **OBOK** 7: „Skąd dopisek „dla nocnej zmiany, bez wpisu” przy blankiecie?” -> „Od twojego poprzednika. Ja nie pytałam o jego noce, on nie pytał o moje paczki. Teraz trze…”
+- **PROZNIA** 7.1: dopytanie „Numer 0412 pozwoli znaleźć odbiorcę?” nie zaczepia się o: „…Ja nie pytałam o jego noce, on nie pytał o moje paczki. Teraz trzeba się poznać od początku.”
 
 ## d5_noah (dzień 5, Noah Reyes, 42, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten notes?” -> „Czarny, na spirali, do kieszeni. Wgnieciony z lewej strony, bo noszę go pod kaburą.…”
-- **OBOK** 1.1: „Co w nim jest?” -> „Notatki ze służby. Godziny, nazwiska. Nic, co wolno czytać przy okienku. To moje zmartwien…”
-- **LUZNE** 1.1: dopytanie „Co w nim jest?” nie zaczepia się o: „…Czarny, na spirali, do kieszeni. Wgnieciony z lewej strony, bo noszę go pod kaburą.”
-- **OBOK** 2: „Gdzie go zostawiłeś?” -> „W jedenastce, po dyżurze, na siedzeniu obok. Zagadałem się z motorniczym i wysiadłem bez n…”
-- **LUZNE** 2.1: dopytanie „Policjant wraca z dyżuru tramwajem?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zagadałem się z motorniczym i wysiadłem bez notesu. Pierwszy raz od piętnastu lat.”
-- **OBOK** 2.2: „O czym rozmawiałeś z motorniczym?” -> „O czwartkowym kursie. To on znalazł pod siedzeniem telefon Mai Doyle. Czyli: pytałem, kto …”
-- **OBOK** 3: „Jak idzie sprawa Mai Doyle?” -> „Powoli. Mąż zgłosił zaginięcie, siostra twierdzi, że nic nie wie. Czyli: dwoje ludzi i żad…”
-- **OBOK** 3.1: „Do kiedy masz na nią czas?” -> „Do wtorku, siódmego września, do szóstej rano. Potem akta idą do wydziału, a tam nikt nie …”
-- **PROZNIA** 3.1: dopytanie „Do kiedy masz na nią czas?” nie zaczepia się o: „…Mąż zgłosił zaginięcie, siostra twierdzi, że nic nie wie. Czyli: dwoje ludzi i żadnego konkretu.”
-- **OBOK** 3.2: „Wierzysz mężowi?” -> „Wierzę godzinom. Na razie jego godziny mi się nie składają. Resztę zostawiam dla siebie.…”
-- **LUZNE** 3.2: dopytanie „Wierzysz mężowi?” nie zaczepia się o: „…Mąż zgłosił zaginięcie, siostra twierdzi, że nic nie wie. Czyli: dwoje ludzi i żadnego konkretu.”
-- **OBOK** 3.2.1: „Można ci jakoś pomóc?” -> „Można. Jak przy tym okienku zdarzy się coś dziwnego, zapisz godzinę i powiedz mi. Najlepie…”
-- **PROZNIA** 3.2.1: dopytanie „Można ci jakoś pomóc?” nie zaczepia się o: „…Na razie jego godziny mi się nie składają. Resztę zostawiam dla siebie.”
-- **OBOK** 4: „Evan dostał od nas telefon. Co z nim zrobił?” -> „Przyniósł mi go rano. Zablokowany. Kodu podobno nie zna, bo żona „nigdy nie miała kodu”. C…”
-- **OBOK** 7.1: „Skąd wiedział w czwartek, że żona nie wróci?” -> „Dobre pytanie. Zadam mu je sam, jak będę miał notes w ręku. A na razie umówmy się, że nikt…”
-- **LUZNE** 7.1: dopytanie „Skąd wiedział w czwartek, że żona nie wróci?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Może zbieg okoliczności. To moje zmartwienie.”
+- **OBOK** 1: „Jak wygląda notes?” -> „Czarny. Służbowy, bez ozdób. Takich jest sporo, więc sam kolor nie wystarczy.…”
+- **OBOK** 1.1: „Jak jest oprawiony?” -> „Na spirali, do kieszeni. Kartki da się odwrócić na tył, bez łamania grzbietu.…”
+- **PROZNIA** 1.1: dopytanie „Jak jest oprawiony?” nie zaczepia się o: „…Służbowy, bez ozdób. Takich jest sporo, więc sam kolor nie wystarczy.”
+- **OBOK** 1.1.1: „Dużo kartek wyrwanych?” -> „Notuję, nie rozdaję. Nie ustalajmy jednak właściciela na podstawie liczby pustych stron.…”
+- **OBOK** 1.2: „Ma jakiś ślad używania?” -> „Wgnieciony z lewej strony. Noszę pod kaburą. Czyli: odkształcenie, nie uszkodzenie po znal…”
+- **PROZNIA** 1.2: dopytanie „Ma jakiś ślad używania?” nie zaczepia się o: „…Służbowy, bez ozdób. Takich jest sporo, więc sam kolor nie wystarczy.”
+- **OBOK** 1.2.1: „Przeszkadza w pisaniu?” -> „Na pierwszych kartkach. Potem się człowiek przyzwyczaja. Do rzeczy łatwiej niż do godzin, …”
+- **PROZNIA** 1.2.1: dopytanie „Przeszkadza w pisaniu?” nie zaczepia się o: „…Noszę pod kaburą. Czyli: odkształcenie, nie uszkodzenie po znalezieniu.”
+- **OBOK** 2.1: „O czym rozmawialiście?” -> „O kursie, w którym znalazł telefon Mai Doyle. Pytałem, kto z nią wysiadał. Nie zapamiętał.…”
+- **LUZNE** 2.1.1: dopytanie „Wierzysz, że nie pamięta?” nie zaczepia się o: „…Pytałem, kto z nią wysiadał. Nie zapamiętał.”
+- **OBOK** 2.2: „Często wracasz tramwajem?” -> „Mieszkam na końcu jedenastki. Radiowóz zostaje na komisariacie. Nie jest dodatkiem do wypł…”
+- **PROZNIA** 2.2: dopytanie „Często wracasz tramwajem?” nie zaczepia się o: „…Rozmawiałem z motorniczym i wysiadłem bez niego. Pierwszy raz od piętnastu lat.”
+- **LUZNE** 2.2.1: dopytanie „Ktoś mógł widzieć notes na siedzeniu?” nie zaczepia się o: „…Radiowóz zostaje na komisariacie. Nie jest dodatkiem do wypłaty.”
+- **OBOK** 3: „Jak idzie sprawa Mai?” -> „Mąż zgłasza zaginięcie, siostra mówi, że nic nie wie. Ja mam sprawdzić, czy ktoś potrzebuj…”
+- **OBOK** 3.1: „Ile masz czasu?” -> „Do wtorku, siódmego września, do szóstej rano. Potem akta idą do wydziału. Tam sprawa dost…”
+- **PROZNIA** 3.1: dopytanie „Ile masz czasu?” nie zaczepia się o: „…Mąż zgłasza zaginięcie, siostra mówi, że nic nie wie. Ja mam sprawdzić, czy ktoś potrzebuje pomocy, a nie rozstrzygać, kto głośniej pyta.”
+- **OBOK** 3.2: „Wierzysz Evanowi?” -> „Wierzę godzinom, kiedy da się je potwierdzić. Jego godziny na razie się nie składają.…”
+- **PROZNIA** 3.2: dopytanie „Wierzysz Evanowi?” nie zaczepia się o: „…Mąż zgłasza zaginięcie, siostra mówi, że nic nie wie. Ja mam sprawdzić, czy ktoś potrzebuje pomocy, a nie rozstrzygać, kto głośniej pyta.”
+- **OBOK** 3.2.1: „Co mam zapisywać, jeśli wróci?” -> „Godzinę i to, o co pyta. Bez własnych dopisków o winie. Wniosek może poczekać, godzina pot…”
+- **LUZNE** 3.2.1: dopytanie „Co mam zapisywać, jeśli wróci?” nie zaczepia się o: „…Wierzę godzinom, kiedy da się je potwierdzić. Jego godziny na razie się nie składają.”
+- **OBOK** 4: „Jak potwierdzić, że notes należy do ciebie?” -> „Zadzwoń na komisariat przy Rynku. Dyżurny mnie zna. Tylko nie czytaj mu zeznań przez telef…”
+- **OBOK** 4.1: „Nie wystarczy odznaka?” -> „Potwierdza, kim jestem. Nie dowodzi, że każda czarna rzecz w magazynie jest moja.…”
+- **PROZNIA** 4.1: dopytanie „Nie wystarczy odznaka?” nie zaczepia się o: „…Dyżurny mnie zna. Tylko nie czytaj mu zeznań przez telefon.”
+- **LUZNE** 4.1.1: dopytanie „Nie przeszkadza ci sprawdzanie policjanta?” nie zaczepia się o: „…Potwierdza, kim jestem. Nie dowodzi, że każda czarna rzecz w magazynie jest moja.”
+- **OBOK** 4.2: „Co powiedzieć dyżurnemu?” -> „Noah Reyes, zgubiony notes służbowy. Resztę ustalę z nim sam. Czyli: nazwisko, rzecz, bez …”
+- **OBOK** 4.2.1: „Dlaczego tak pilnujesz zawartości?” -> „Bo zapisuję cudze słowa. Ktoś je powiedział policjantowi, nie całej kolejce do okienka.…”
+- **OBOK** 5.1: „A jeśli jej nie ma?” -> „Wtedy trzeba ostrożniej, nie szybciej. Wiem, że przy szybie to brzmi jak prośba o dodatkow…”
+- **LUZNE** 5.1.1: dopytanie „Potrafisz zagwarantować jej bezpieczeństwo?” nie zaczepia się o: „…Wtedy trzeba ostrożniej, nie szybciej. Wiem, że przy szybie to brzmi jak prośba o dodatkowy kłopot.”
+- **OBOK** 5.2: „Co odróżnia zaginięcie od odejścia z domu?” -> „Czasem jedno zdanie tej osoby. Tylko trzeba je usłyszeć od niej, nie od kogoś, kto zna ją …”
+- **PROZNIA** 5.2: dopytanie „Co odróżnia zaginięcie od odejścia z domu?” nie zaczepia się o: „…Rodzina może o nie wystąpić. To nie znaczy, że każdy przedmiot ma wrócić do męża, zanim zapytamy właścicielkę.”
+- **OBOK** 5.2.1: „A jeśli nie chce rozmawiać nawet z tobą?” -> „To muszę ustalić, czy może odmówić swobodnie. Reszta to moje zmartwienie.…”
+- **LUZNE** 5.2.1: dopytanie „A jeśli nie chce rozmawiać nawet z tobą?” nie zaczepia się o: „…Czasem jedno zdanie tej osoby. Tylko trzeba je usłyszeć od niej, nie od kogoś, kto zna ją najlepiej.”
+- **OBOK** 6: „Co się stanie, jeśli notes zostanie tutaj?” -> „Będę odtwarzał zapiski. Z pamięci daty wyglądają pewniej, niż są naprawdę. Wolałbym tego n…”
+- **OBOK** 6.1: „Nie masz kopii?” -> „Część informacji jest w aktach. Część jeszcze tutaj. To właśnie różnica między notesem a z…”
+- **PROZNIA** 6.1: dopytanie „Nie masz kopii?” nie zaczepia się o: „…Z pamięci daty wyglądają pewniej, niż są naprawdę. Wolałbym tego nie robić.”
+- **OBOK** 6.1.1: „Dlaczego nie przepisałeś wszystkiego?” -> „Bo pracowałem, zanim wróciłem z pracy. Nie jest to usprawiedliwienie, tylko kolejność.…”
+- **PROZNIA** 6.1.1: dopytanie „Dlaczego nie przepisałeś wszystkiego?” nie zaczepia się o: „…Część jeszcze tutaj. To właśnie różnica między notesem a zamkniętą sprawą.”
+- **OBOK** 6.2: „Kto odpowie za zagubienie?” -> „Ja. Dlatego proszę o potwierdzenie odbioru, nie o zniknięcie całej wizyty.…”
+- **LUZNE** 6.2: dopytanie „Kto odpowie za zagubienie?” nie zaczepia się o: „…Z pamięci daty wyglądają pewniej, niż są naprawdę. Wolałbym tego nie robić.”
+- **OBOK** 6.2.1: „Nawet gdyby ktoś już przeczytał?” -> „Zwłaszcza wtedy. Bez zapisu nie ustalimy potem, kiedy i u kogo notes leżał.…”
+- **PROZNIA** 6.2.1: dopytanie „Nawet gdyby ktoś już przeczytał?” nie zaczepia się o: „…Ja. Dlatego proszę o potwierdzenie odbioru, nie o zniknięcie całej wizyty.”
+- **OBOK** 7: „Co Evan zrobił z wydanym mu telefonem?” -> „Przyniósł rano. Zablokowany, kodu podobno nie zna. A wcześniej żona rzekomo żadnego kodu n…”
+- **OBOK** 10.1: „Może po prostu szukał jej przed zgłoszeniem?” -> „Może. Właśnie dlatego zadaję pytania, zamiast stawiać znak równości między dwoma godzinami…”
+- **LUZNE** 10.1: dopytanie „Może po prostu szukał jej przed zgłoszeniem?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Muszę spytać, skąd wiedział, że potrzebuje ulotek. Sam odstęp nie odpowie za niego.”
 
 ## d5_victor (dzień 5, Victor Crane, 51, drzewo)
 
-- **OBOK** 1: „Jak wygląda ta teczka?” -> „Szary skaj, klamra z przodu, na rogu naklejka inspekcji. Na klapie inicjały V.C. i numer c…”
-- **OBOK** 1.1: „Co jest w środku?” -> „Formularze, pieczątka, wykaz wydań z tego biura. Nikt spoza inspekcji nie ma prawa tam zag…”
-- **LUZNE** 1.1: dopytanie „Co jest w środku?” nie zaczepia się o: „…Na klapie inicjały V.C. i numer czterdzieści siedem.”
-- **OBOK** 2: „Gdzie ją zostawiłeś?” -> „W szóstce, o 4:10, na siedzeniu obok. Wysiadłem przy zajezdni bez teczki. Nie zdarza mi si…”
-- **LUZNE** 2.1: dopytanie „Inspektor jeździ nocnym tramwajem?” nie zaczepia się o: „…Wysiadłem przy zajezdni bez teczki. Nie zdarza mi się to.”
-- **OBOK** 2.1.1: „Nikt. To było ogłoszenie w gazecie.” -> „„Bez referencji”. Czytałem. Poprzedni dyżurny też był bez referencji. Zapiszę to sobie.…”
-- **LUZNE** 2.1.1: dopytanie „Nikt. To było ogłoszenie w gazecie.” nie zaczepia się o: „…A skoro już pytamy: kto cię tu skierował? W aktach nie mam żadnego skierowania.”
-- **OBOK** 3: „Co właściwie kontrolujesz w tym biurze?” -> „Czy księga wydań zgadza się z magazynem i z kwitami. Wpis, kwit, podpis. Czasem któregoś b…”
-- **LUZNE** 3.2: dopytanie „Za poprzednika wydania były w porządku?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Czasem któregoś brakuje. W tej księdze brakuje całej strony czterdzieści jeden.”
-- **OBOK** 3.2.1: „Co będzie, jeśli teczki rano nie będzie?” -> „Audyt przesunie się o tydzień. Przez tydzień ktoś zdąży poprawić księgę. Nie chcę nikomu d…”
-- **OBOK** 4: „W wykazie dwie pozycje są dopisane innym tuszem, z parafą V.C. Kto dopisywał?” -> „Ja. Pięć tygodni temu, z pamięci, po rozmowie z poprzednikiem. Bez dowodu. To niezgodne z …”
-- **OBOK** 4.1: „Inspektor poprawia papiery po fakcie?” -> „Raz. Żeby wydania Holta w ogóle gdzieś istniały. Jeśli to wyjdzie, moja kontrola jest niew…”
-- **LUZNE** 4.1: dopytanie „Inspektor poprawia papiery po fakcie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Bez dowodu. To niezgodne z regulaminem, więc proszę tego nie powtarzać.”
+- **OBOK** 1: „Jak wygląda teczka?” -> „Szary skaj. Nie skóra. To ma znaczenie przy porównaniu.…”
+- **OBOK** 1.1: „Jak się zamyka?” -> „Klamrą z przodu. Bez zamka na klucz. Dokumenty zabezpiecza się obiegiem, nie zaufaniem do …”
+- **PROZNIA** 1.1: dopytanie „Jak się zamyka?” nie zaczepia się o: „…Nie skóra. To ma znaczenie przy porównaniu.”
+- **OBOK** 1.2: „Co ją wyróżnia?” -> „Na rogu naklejka inspekcji. Na klapie V.C. i numer czterdzieści siedem. Proszę sprawdzić n…”
+- **PROZNIA** 1.2: dopytanie „Co ją wyróżnia?” nie zaczepia się o: „…Nie skóra. To ma znaczenie przy porównaniu.”
+- **OBOK** 2: „Gdzie została w szóstce?” -> „Na siedzeniu obok, o 4:10. Wysiadłem przy zajezdni. Nie zdarza mi się to.…”
+- **OBOK** 2.1: „Po co inspektorowi nocny tramwaj?” -> „Żeby porównać rozkład z przejazdem. Przy biurku oba wyglądają identycznie. Na pętli już ni…”
+- **LUZNE** 2.1: dopytanie „Po co inspektorowi nocny tramwaj?” nie zaczepia się o: „…Wysiadłem przy zajezdni. Nie zdarza mi się to.”
+- **PROZNIA** 2.1.1: dopytanie „Co się nie zgadzało?” nie zaczepia się o: „…Przy biurku oba wyglądają identycznie. Na pętli już nie.”
+- **OBOK** 2.2: „Kiedy zauważyłeś brak?” -> „Po wyjściu. W ręce miałem to, co wyjąłem, teczka została. Jedna rzecz odłożona obok wystar…”
+- **PROZNIA** 2.2: dopytanie „Kiedy zauważyłeś brak?” nie zaczepia się o: „…Wysiadłem przy zajezdni. Nie zdarza mi się to.”
+- **OBOK** 2.2.1: „Motorniczy może potwierdzić?” -> „Kurs można ustalić. Najpierw sprawdźmy magazyn. Nie trzeba angażować całej zajezdni do odc…”
+- **PROZNIA** 2.2.1: dopytanie „Motorniczy może potwierdzić?” nie zaczepia się o: „…W ręce miałem to, co wyjąłem, teczka została. Jedna rzecz odłożona obok wystarczy.”
+- **OBOK** 3: „Co sprawdzasz w naszym biurze?” -> „Księgę, magazyn i kwity. Trzy zapisy tej samej rzeczy powinny mówić to samo.…”
+- **OBOK** 3.1: „Gdzie się rozchodzą?” -> „W księdze brakuje strony czterdzieści jeden. To nie jest nieczytelny podpis, tylko brak st…”
+- **PROZNIA** 3.1: dopytanie „Gdzie się rozchodzą?” nie zaczepia się o: „…Księgę, magazyn i kwity. Trzy zapisy tej samej rzeczy powinny mówić to samo.”
+- **PROZNIA** 3.1.1: dopytanie „Wiesz, kto ją wyrwał?” nie zaczepia się o: „…W księdze brakuje strony czterdzieści jeden. To nie jest nieczytelny podpis, tylko brak strony.”
+- **OBOK** 3.2: „Co z wydaniami poprzednika?” -> „Prawa rękawiczka i paczka wyszły bez właściwego wpisu. Próbuję ustalić, ile rzeczy można j…”
+- **PROZNIA** 3.2: dopytanie „Co z wydaniami poprzednika?” nie zaczepia się o: „…Księgę, magazyn i kwity. Trzy zapisy tej samej rzeczy powinny mówić to samo.”
+- **OBOK** 3.2.1: „Kto na tym ucierpiał?” -> „Właśnie tego nie widać w pustej rubryce. Rzecz mogła trafić do właściciela albo do pierwsz…”
+- **LUZNE** 3.2.1: dopytanie „Kto na tym ucierpiał?” nie zaczepia się o: „…Prawa rękawiczka i paczka wyszły bez właściwego wpisu. Próbuję ustalić, ile rzeczy można jeszcze odtworzyć.”
+- **OBOK** 4: „Dlaczego rozliczenie musi być o siódmej?” -> „Wtedy zamykam kontrolowany okres. Jeśli nie mam dokumentów, wynik jest niepełny.…”
+- **OBOK** 4.1: „Co zrobisz bez teczki?” -> „Audyt przesunie się o tydzień. Tydzień wystarczy, żeby księga zaczęła zgadzać się aż za do…”
+- **LUZNE** 4.1: dopytanie „Co zrobisz bez teczki?” nie zaczepia się o: „…Wtedy zamykam kontrolowany okres. Jeśli nie mam dokumentów, wynik jest niepełny.”
+- **PROZNIA** 4.1.1: dopytanie „Podejrzewasz poprawianie wpisów?” nie zaczepia się o: „…Audyt przesunie się o tydzień. Tydzień wystarczy, żeby księga zaczęła zgadzać się aż za dobrze.”
+- **LUZNE** 4.2: dopytanie „Nie możesz rozliczyć tego z pamięci?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Wtedy zamykam kontrolowany okres. Jeśli nie mam dokumentów, wynik jest niepełny.”
+- **OBOK** 5: „Co jest w teczce?” -> „Formularze, pieczątka, wykaz wydań z tego biura. Treść wykazu nie służy do publicznego spr…”
+- **OBOK** 5.1: „Nawet jeśli dotyczy naszego biura?” -> „Wtedy otrzymasz właściwy egzemplarz. Z podpisem. Nie wyciągnięty ukradkiem z cudzej teczki…”
+- **OBOK** 5.2: „Dlaczego dwa egzemplarze?” -> „Żeby po miesiącu nie rozmawiać o tym, co ktoś podobno widział. Jeden u mnie, drugi tutaj.…”
+- **PROZNIA** 5.2: dopytanie „Dlaczego dwa egzemplarze?” nie zaczepia się o: „…Formularze, pieczątka, wykaz wydań z tego biura. Treść wykazu nie służy do publicznego sprawdzania właściciela.”
+- **OBOK** 5.2.1: „A jeśli egzemplarze się różnią?” -> „Zatrzymujemy obieg i ustalamy kiedy. Nie wybieramy wygodniejszego. Nawet jeśli opóźni to z…”
+- **LUZNE** 5.2.1: dopytanie „A jeśli egzemplarze się różnią?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Żeby po miesiącu nie rozmawiać o tym, co ktoś podobno widział. Jeden u mnie, drugi tutaj.”
+- **OBOK** 6: „Co wiadomo o poprzednim dyżurnym?” -> „Sam Holt. Od kilku tygodni nie mogę go znaleźć. Chcę jego wyjaśnień, nie opowieści kolejki…”
+- **OBOK** 6.1: „Jak tu trafił?” -> „Bez referencji. Podobnie jak osoba, która odpowiedziała na obecne ogłoszenie. Czytam także…”
+- **PROZNIA** 6.1: dopytanie „Jak tu trafił?” nie zaczepia się o: „…Od kilku tygodni nie mogę go znaleźć. Chcę jego wyjaśnień, nie opowieści kolejki.”
+- **OBOK** 6.1.1: „Dlaczego to cię obchodzi?” -> „Ktoś oddaje obcemu klucze, księgę i nocną zmianę. Potem wszyscy mówią, że nie wiedzieli, k…”
+- **LUZNE** 6.1.1: dopytanie „Dlaczego to cię obchodzi?” nie zaczepia się o: „…Podobnie jak osoba, która odpowiedziała na obecne ogłoszenie. Czytam także gazety.”
+- **LUZNE** 6.2: dopytanie „Chcesz go ukarać czy odtworzyć wydania?” nie zaczepia się o: „…Od kilku tygodni nie mogę go znaleźć. Chcę jego wyjaśnień, nie opowieści kolejki.”
+- **OBOK** 6.2.1: „Mówisz mu to samo?” -> „Powiem, kiedy go znajdę. Nie składam za niego zeznań ani za niego nie odpowiadam.…”
+- **LUZNE** 6.2.1: dopytanie „Mówisz mu to samo?” nie zaczepia się o: „…Najpierw odtworzyć. Jeśli zacznę od kary, dostanę mniej odpowiedzi i ładniejsze podpisy.”
+- **OBOK** 7: „Dopiski innym tuszem mają parafę V.C. To twoje pismo?” -> „Moje. Pięć tygodni temu odtworzyłem dwie pozycje po rozmowie z Holtem. Bez dowodu, z pamię…”
+- **LUZNE** 7.1: dopytanie „Po co ryzykować własną kontrolę?” nie zaczepia się o: „…Bez dowodu, z pamięci. Nie powinienem.”
+- **LUZNE** 7.2: dopytanie „Czyli twoje papiery też wymagają sprawdzenia?” nie zaczepia się o: „…Bez dowodu, z pamięci. Nie powinienem.”
+- **OBOK** 10: „Zatrzymana paczka czeka na kontrolę. Co sprawdzisz?” -> „Numer 0412, stan depozytu, zgłoszenie. Kto może to podpisać? Potrzebuję osoby, która widzi…”
 
 ## d5_gus (dzień 5, Gus Pell, 55, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten portfel?” -> „Brązowy, wytarty, na zatrzask. Mam go jedenaście lat, wygiął się pod moją kieszeń. Tylko o…”
-- **OBOK** 1.1: „Z jakiego „tamtego życia”?” -> „Przejęzyczyłem się. Tylko tyle. Człowiek o tej porze gada, co mu ślina na język przyniesie…”
-- **OBOK** 2.1: „Ile lat ma córka?” -> „Siedem. Na zdjęciu ma pięć, nowszego nie mam. Tylko nie pytaj, kiedy ją ostatnio widziałem…”
-- **OBOK** 2.2: „Na jakie nazwisko jest prawo jazdy?” -> „Pell. Gustaw Pell. Gus. Tylko proszę nie zapisywać, że byłem w szlafroku.…”
-- **PROZNIA** 2.2.1: dopytanie „Adres do wpisu?” nie zaczepia się o: „…Gus. Tylko proszę nie zapisywać, że byłem w szlafroku.”
-- **LUZNE** 3.1: dopytanie „Może zadzwonić do domu, że nic ci nie jest?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Z żoną, z teściową, z obiema naraz. Tylko o rodzinie nie rozmawiajmy.”
-- **PROZNIA** 3.2: dopytanie „Dokąd jedziesz o 5:40?” nie zaczepia się o: „…Z żoną, z teściową, z obiema naraz. Tylko o rodzinie nie rozmawiajmy.”
-- **OBOK** 3.2.1: „A kto miałby pytać?” -> „Ci, co znaleźli mnie poprzednim razem. Wtedy urzędnik wydał mnie z pieczątką, nawet z dwie…”
-- **OBOK** 4: „W portfelu są dwa dowody: Pell i Ferro. To samo zdjęcie. Który jest twój?” -> „Dwa? To się da wytłumaczyć. Jeden po dziadku. A który mój, nie powiem, bo to się zawsze źl…”
-- **OBOK** 4.1: „Dziadek miał twoją twarz?” -> „Dobrze, już dobrze. Jeden jest stary, drugi nowy. Ktoś mi pomógł zacząć od początku i o 5:…”
-- **OBOK** 5: „Za zdjęciem córki leży 250 dolarów. Skąd tyle?” -> „To nie na życie, tylko na wyjazd. Wszystko, co mam. Tylko nie mów nikomu, ile.…”
+- **OBOK** 1: „Jak rozpoznać portfel?” -> „Brązowy, wytarty. Tylko nie taki nowy, co go ktoś specjalnie postarzył. Mój sam to zrobił.…”
+- **OBOK** 1.1: „Jak się zamyka?” -> „Na zatrzask. Trzeba docisnąć. Jak zostanie otwarty, rozkłada się w kieszeni.…”
+- **PROZNIA** 1.1: dopytanie „Jak się zamyka?” nie zaczepia się o: „…Tylko nie taki nowy, co go ktoś specjalnie postarzył. Mój sam to zrobił.”
+- **OBOK** 1.1.1: „Coś z niego wypada?” -> „Monety. Dlatego ich tam nie trzymam. Papier siedzi dobrze, proszę nie potrząsać.…”
+- **PROZNIA** 1.1.1: dopytanie „Coś z niego wypada?” nie zaczepia się o: „…Trzeba docisnąć. Jak zostanie otwarty, rozkłada się w kieszeni.”
+- **OBOK** 1.2: „Jaki ma znak szczególny?” -> „Wygiął się pod kieszeń. Jedenaście lat tak noszę. Jak położysz płasko, jeden róg odstaje.…”
+- **PROZNIA** 1.2: dopytanie „Jaki ma znak szczególny?” nie zaczepia się o: „…Tylko nie taki nowy, co go ktoś specjalnie postarzył. Mój sam to zrobił.”
+- **OBOK** 1.2.1: „Jedenaście lat z jednym portfelem?” -> „Tylko on mi został ze starych rzeczy. Z tamtego... Nieważne. Nie trzeba wymieniać, póki tr…”
+- **OBOK** 2: „Gdzie go zostawiłeś?” -> „W jedenastce. Wyjmowałem, potem chowałem. Najwyraźniej nie tam, gdzie trzeba. Tylko tyle p…”
+- **LUZNE** 2.1: dopytanie „Miałeś wtedy płaszcz na sobie?” nie zaczepia się o: „…Najwyraźniej nie tam, gdzie trzeba. Tylko tyle pamiętam.”
+- **OBOK** 2.1.1: „Dlaczego tak się spieszyłeś?” -> „Pokłóciłem się w domu. Z żoną, z teściową, z obiema. Tylko proszę nie pytać, która miała r…”
+- **PROZNIA** 2.1.1: dopytanie „Dlaczego tak się spieszyłeś?” nie zaczepia się o: „…I szlafrok pod spodem. Kieszenie się mylą, jak człowiek wychodzi za szybko.”
+- **OBOK** 2.2: „Sprawdzałeś obie kieszenie?” -> „Wszystkie. Przy ludziach na przystanku, wyglądało to jeszcze gorzej niż tutaj.…”
+- **PROZNIA** 2.2: dopytanie „Sprawdzałeś obie kieszenie?” nie zaczepia się o: „…Najwyraźniej nie tam, gdzie trzeba. Tylko tyle pamiętam.”
+- **LUZNE** 2.2.1: dopytanie „Ktoś mógł potwierdzić, że go miałeś?” nie zaczepia się o: „…Wszystkie. Przy ludziach na przystanku, wyglądało to jeszcze gorzej niż tutaj.”
+- **OBOK** 3.1: „Ile lat ma córka?” -> „Siedem. Na zdjęciu pięć. Tylko nie pytaj, kiedy ostatnio ją widziałem.…”
+- **OBOK** 3.2: „Za zdjęciem leży 250 dolarów. Dlaczego mówisz o dwudziestu?” -> „Bo nie chcę, żeby cała kolejka znała kwotę. To na wyjazd, wszystko, co mam. Tylko nie wyjm…”
+- **LUZNE** 3.2.1: dopytanie „To twoje pieniądze?” nie zaczepia się o: „…To na wyjazd, wszystko, co mam. Tylko nie wyjmuj na ladę.”
+- **OBOK** 4: „Na jakie nazwisko szukać dokumentów?” -> „Pell. Gustaw Pell. Gus wystarczy w rozmowie, na papierze Gustaw.…”
+- **PROZNIA** 4.1: dopytanie „Jaki adres do wpisu?” nie zaczepia się o: „…Gustaw Pell. Gus wystarczy w rozmowie, na papierze Gustaw.”
+- **LUZNE** 4.1.1: dopytanie „Który adres mam zapisać?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Piętnaście, przepraszam. Dwanaście to brat, już tam nie mieszka.”
+- **LUZNE** 4.2: dopytanie „Jest tylko jeden dokument tożsamości?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Gustaw Pell. Gus wystarczy w rozmowie, na papierze Gustaw.”
+- **OBOK** 4.2.1: „Są dwa dowody z twoim zdjęciem: Pell i Ferro. Dlaczego?” -> „Jeden stary, drugi nowy. Ktoś mi pomógł wyjechać. Tylko nie wpisuj obu nazwisk obok siebie…”
+- **OBOK** 4.2.1.1.1: „Który zapis potwierdzi odbiór, nie trasę?” -> „Pell. Tak się przedstawiłem. Drugiego proszę nie dopisuj dla porządku.…”
+- **PROZNIA** 4.2.1.1.1: dopytanie „Który zapis potwierdzi odbiór, nie trasę?” nie zaczepia się o: „…Tylko tyle. Jeśli wpiszesz oba, sam pokażę drogę tym, przed którymi jadę.”
+- **OBOK** 5: „Co będzie, jeśli nie zdążysz na 5:40?” -> „Zostanę tutaj. A tutaj mogą mnie znaleźć. Nie mówię o małej przesiadce, której szkoda.…”
+- **OBOK** 5.1: „Kto może cię znaleźć?” -> „Ci, co poprzednio. Urzędnik też chciał tylko wypełnić rubrykę, a potem ktoś wiedział, gdzi…”
+- **OBOK** 5.1.1: „Co mogę zapisać, żeby ci nie zaszkodzić?” -> „To, co potrzebne do portfela. Nie dokąd jadę. Tylko o ten jeden szczegół proszę.…”
+- **PROZNIA** 5.1.1: dopytanie „Co mogę zapisać, żeby ci nie zaszkodzić?” nie zaczepia się o: „…Ci, co poprzednio. Urzędnik też chciał tylko wypełnić rubrykę, a potem ktoś wiedział, gdzie przyjść.”
+- **OBOK** 5.2: „Masz bilet?” -> „W portfelu. Dlatego nie mogę po prostu machnąć ręką i wyjść.…”
+- **PROZNIA** 5.2: dopytanie „Masz bilet?” nie zaczepia się o: „…A tutaj mogą mnie znaleźć. Nie mówię o małej przesiadce, której szkoda.”
+- **PROZNIA** 5.2.1: dopytanie „Nie kupisz drugiego?” nie zaczepia się o: „…W portfelu. Dlatego nie mogę po prostu machnąć ręką i wyjść.”
+- **LUZNE** 6.1: dopytanie „A do kogoś spoza domu?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Telefon został tam, gdzie żona. Tak będzie lepiej.”
+- **OBOK** 6.1.1: „Nie masz komu zaufać?” -> „Mam za mało czasu, żeby to sprawdzać. Tylko portfel, potem tramwaj.…”
+- **OBOK** 6.2: „Co zrobisz, jeśli trzeba będzie potwierdzić własność?” -> „Przyjdę z kimś. Tak się mówi przy okienku, prawda? Nie wiem, kogo mam teraz przyprowadzić.…”
+- **LUZNE** 6.2: dopytanie „Co zrobisz, jeśli trzeba będzie potwierdzić własność?” nie zaczepia się o: „…Telefon został tam, gdzie żona. Tak będzie lepiej.”
+- **OBOK** 6.2.1: „Czyli obiecujesz coś, czego nie zrobisz?” -> „Próbuję nie zamknąć sobie ostatnich drzwi. Tylko nie bierz tego za dowód, że portfel nie j…”
+- **LUZNE** 6.2.1: dopytanie „Czyli obiecujesz coś, czego nie zrobisz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Tak się mówi przy okienku, prawda? Nie wiem, kogo mam teraz przyprowadzić.”
+- **OBOK** 7: „Pell i Ferro, to samo zdjęcie. Którym jesteś?” -> „Tym, który stoi w szlafroku. Jeden dokument był wcześniej, drugi ma być potem. Nie każ mi …”
+- **OBOK** 8: „Czemu 250 dolarów jest schowane za zdjęciem?” -> „Bo tam nie wysuną się przy wyjmowaniu drobnych. To cały wyjazd. Tylko nie licz ich głośno.…”
 
 ## d6_ada (dzień 6, Ada Vale, 10, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten królik?” -> „Szary, pluszowy. Jedno ucho ma doszyte czerwoną nitką. I dziurkę w nosie, jakby miał katar…”
-- **OBOK** 1.1: „Ktoś go bardzo naprawiał. Myślisz, że jest czyjś ulubiony?” -> „Na pewno. Jak się komuś nie chce, to nie przyszywa ucha, tylko kupuje nowego. Dlatego nie …”
-- **LUZNE** 1.1: dopytanie „Ktoś go bardzo naprawiał. Myślisz, że jest czyjś ulubiony?” nie zaczepia się o: „…Jedno ucho ma doszyte czerwoną nitką. I dziurkę w nosie, jakby miał katar.”
-- **OBOK** 2: „Gdzie dokładnie go znalazłaś?” -> „Na ławce przy pętli szóstki, trzy kroki od słupka. Liczyłam. Siedział sam, jakby na kogoś …”
-- **LUZNE** 2.1: dopytanie „Co robisz sama w nocy na pętli?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Liczyłam. Siedział sam, jakby na kogoś czekał.”
-- **OBOK** 2.2: „Ktoś jeszcze był wtedy przy ławce?” -> „Pan konduktor z szóstki palił przy budce. Patrzył na zegarek, którego nie miał. I jakaś pa…”
-- **LUZNE** 2.2: dopytanie „Ktoś jeszcze był wtedy przy ławce?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Liczyłam. Siedział sam, jakby na kogoś czekał.”
-- **OBOK** 3.1: „Co ma być na tym kwicie?” -> „Że Ada Vale, dziesięć lat, znalazła królika. Dużymi literami, bo pani w szkole czyta tylko…”
-- **LUZNE** 3.1: dopytanie „Co ma być na tym kwicie?” nie zaczepia się o: „…Pani w szkole mówi, że to duża różnica. A mama mówi, że bez kwitu nikt nie uwierzy.”
-- **PROZNIA** 3.2: dopytanie „Jaki adres wpisać?” nie zaczepia się o: „…Pani w szkole mówi, że to duża różnica. A mama mówi, że bez kwitu nikt nie uwierzy.”
+- **OBOK** 1: „Jakiego królika przyniosłaś?” -> „Szarego, pluszowego. Nie żywego. Żywego bym nie wkładała pod kurtkę.…”
+- **OBOK** 1.1: „Jaki jest duży?” -> „Mieści mi się pod pachą. Jak trzymam za brzuch, nogi wiszą. Nie jest taki malutki do klucz…”
+- **PROZNIA** 1.1: dopytanie „Jaki jest duży?” nie zaczepia się o: „…Nie żywego. Żywego bym nie wkładała pod kurtkę.”
+- **OBOK** 1.1.1: „Niosłaś go pod kurtką?” -> „Żeby nie moknął. Mnie i tak mama wysuszy, a jego nie wiadomo kto.…”
+- **LUZNE** 1.1.1: dopytanie „Niosłaś go pod kurtką?” nie zaczepia się o: „…Jak trzymam za brzuch, nogi wiszą. Nie jest taki malutki do kluczy.”
+- **OBOK** 1.2: „Ma coś, po czym właściciel go pozna?” -> „Ucho doszyte czerwoną nitką. I dziurkę w nosie. Wygląda, jakby miał katar, ale suchy.…”
+- **LUZNE** 1.2: dopytanie „Ma coś, po czym właściciel go pozna?” nie zaczepia się o: „…Nie żywego. Żywego bym nie wkładała pod kurtkę.”
+- **OBOK** 1.2.1: „Skąd wiesz, że ucho było naprawiane?” -> „Bo drugie jest inaczej. Jak ktoś nie lubi królika, nie szyje mu ucha. Dlatego go wzięłam.…”
+- **LUZNE** 1.2.1: dopytanie „Skąd wiesz, że ucho było naprawiane?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…I dziurkę w nosie. Wygląda, jakby miał katar, ale suchy.”
+- **OBOK** 2: „Gdzie dokładnie leżał?” -> „Na ławce przy pętli szóstki, trzy kroki od słupka. Moje kroki, nie takie wielkie.…”
+- **OBOK** 2.1: „Ktoś siedział obok?” -> „Konduktor stał przy budce. Patrzył na rękę, ale nie miał zegarka. Na ławce nikogo.…”
+- **PROZNIA** 2.1: dopytanie „Ktoś siedział obok?” nie zaczepia się o: „…Na ławce przy pętli szóstki, trzy kroki od słupka. Moje kroki, nie takie wielkie.”
+- **LUZNE** 2.1.1: dopytanie „Pytałaś go o królika?” nie zaczepia się o: „…Patrzył na rękę, ale nie miał zegarka. Na ławce nikogo.”
+- **OBOK** 2.2: „Od razu go zabrałaś?” -> „Najpierw patrzyłam, czy ktoś wróci. Była pani z walizką, ale szła w drugą stronę.…”
+- **LUZNE** 2.2: dopytanie „Od razu go zabrałaś?” nie zaczepia się o: „…Na ławce przy pętli szóstki, trzy kroki od słupka. Moje kroki, nie takie wielkie.”
+- **PROZNIA** 2.2.1: dopytanie „Wołałaś za nią?” nie zaczepia się o: „…Najpierw patrzyłam, czy ktoś wróci. Była pani z walizką, ale szła w drugą stronę.”
+- **OBOK** 3: „Po co potrzebujesz kwitu?” -> „Żeby było napisane, że znalazłam. Nie że zabrałam. Mama mówi, że bez papieru ludzie sobie …”
+- **OBOK** 3.1: „Co wpisać?” -> „Ada Vale, dziesięć lat. Dużymi literami, żeby pani w szkole zobaczyła od razu.…”
+- **PROZNIA** 3.1: dopytanie „Co wpisać?” nie zaczepia się o: „…Nie że zabrałam. Mama mówi, że bez papieru ludzie sobie wybiorą gorsze.”
+- **LUZNE** 3.2: dopytanie „Chcesz nagrodę za królika?” nie zaczepia się o: „…Nie że zabrałam. Mama mówi, że bez papieru ludzie sobie wybiorą gorsze.”
+- **OBOK** 3.2.1: „A gdy właściciel podziękuje?” -> „To dobrze. Tylko niech go już nie zostawia, bo to ucho nie wytrzyma ciągłego gubienia.…”
+- **LUZNE** 3.2.1: dopytanie „A gdy właściciel podziękuje?” nie zaczepia się o: „…Kwit. Jak dostanę pieniądze, mama spyta skąd i znowu będzie trzeba tłumaczyć.”
+- **OBOK** 4: „Czemu chodzisz sama po pętli?” -> „Mama ma nocną zmianę w pralni. Nudzi mi się. Liczę kamienie, ostatnio sto dwa.…”
+- **LUZNE** 4.1: dopytanie „Mama wie o tych spacerach?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Nudzi mi się. Liczę kamienie, ostatnio sto dwa.”
+- **PROZNIA** 4.1.1: dopytanie „Wrócisz teraz prosto do domu?” nie zaczepia się o: „…Mówi, żeby nie brać cudzego, oddawać znalezione i nie łazić po pętli. Dwa robię dobrze.”
+- **OBOK** 4.2: „Gdzie mieszkasz?” -> „Cooper Street dziewięć, drugie piętro. Ojej. Pani Iris mówiła, żeby nie podawać adresu.…”
+- **PROZNIA** 4.2: dopytanie „Gdzie mieszkasz?” nie zaczepia się o: „…Nudzi mi się. Liczę kamienie, ostatnio sto dwa.”
+- **OBOK** 4.2.1: „Dlaczego?” -> „Mama mówi, że pani Iris potrafi zabrać mieszkanie, jak ktoś dużo gada. Mówi to, kiedy myśl…”
+- **OBOK** 5.1: „O co go spytać?” -> „O naprawę. Ktoś przecież musiał przytrzymać ucho. Może pamięta, której nitki użył.…”
+- **LUZNE** 5.1: dopytanie „O co go spytać?” nie zaczepia się o: „…Niech sam opowie, jaki królik. Jak mu pokażesz, to każdy potrafi powiedzieć, że szary.”
+- **OBOK** 5.1.1: „A jeśli nie pamięta?” -> „To może szyła jego mama. Ja też nie wiem, gdzie mama trzyma wszystkie nitki.…”
+- **OBOK** 5.2: „A jeśli nikt nie przyjdzie?” -> „To niech zostanie tutaj, gdzie sucho. Nie na ławce. Mogę go czasem zobaczyć?…”
+- **LUZNE** 5.2: dopytanie „A jeśli nikt nie przyjdzie?” nie zaczepia się o: „…Niech sam opowie, jaki królik. Jak mu pokażesz, to każdy potrafi powiedzieć, że szary.”
+- **OBOK** 5.2.1: „Nie chcesz go wtedy zabrać?” -> „Chcę, ale to nie to samo. Jak ja się spóźnię po swoją rzecz, też ma na mnie czekać.…”
+- **LUZNE** 5.2.1: dopytanie „Nie chcesz go wtedy zabrać?” nie zaczepia się o: „…Nie na ławce. Mogę go czasem zobaczyć?”
+- **OBOK** 6: „Komu można powiedzieć, że go przyniosłaś?” -> „Mamie i pani w szkole. I właścicielowi, żeby wiedział, że nie leżał już na deszczu.…”
+- **OBOK** 6.1: „A wpisać do papierów dla urzędu?” -> „A potem kto czyta? W szkole kartkę czyta pani, a potem wszyscy. W urzędzie też tak?…”
+- **LUZNE** 6.1: dopytanie „A wpisać do papierów dla urzędu?” nie zaczepia się o: „…Mamie i pani w szkole. I właścicielowi, żeby wiedział, że nie leżał już na deszczu.”
+- **PLEC** 6.1: odpowiedź: „pani”
+- **PROZNIA** 6.1.1: dopytanie „Chcesz mieć nazwisko na kwicie czy wszędzie?” nie zaczepia się o: „…W szkole kartkę czyta pani, a potem wszyscy. W urzędzie też tak?”
+- **OBOK** 6.2: „Co powiesz mamie po powrocie?” -> „Że oddałam królika. O pętli też, bo przecież jest na kwicie. Tego już nie da się pominąć.…”
+- **OBOK** 6.2.1: „Nie boisz się, że będzie zła?” -> „Będzie. Ale mniej niż wtedy, gdy znajdzie królika w moim łóżku.…”
+- **PROZNIA** 6.2.1: dopytanie „Nie boisz się, że będzie zła?” nie zaczepia się o: „…O pętli też, bo przecież jest na kwicie. Tego już nie da się pominąć.”
+- **LUZNE** 7.1: dopytanie „Dlaczego tata schował kartkę pod uchem?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Jak się zgubi, niech ktoś odda. No to oddaję, tylko Zuzi nie znam.”
+- **OBOK** 8: „Znasz puszkę z takim odcinkiem z bloczka Iris?” -> „Widziałam u niej w kuchni, nad czajnikiem. Dno się ruszało. Tylko nie mów, że ode mnie wie…”
+- **PROZNIA** 8.1: dopytanie „Kto ci ją pokazywał?” nie zaczepia się o: „…Dno się ruszało. Tylko nie mów, że ode mnie wiesz.”
+- **OBOK** 9: „Mama odzyskała kopertę. Mówiła ci o tym?” -> „Przeliczyła przy stole i jeszcze raz przy drzwiach. Potem schowała tak, żebym ja też nie z…”
+- **OBOK** 10: „Jak mama się trzyma?” -> „Płakała w kuchni. Mówiła, że brakuje pieniędzy. Nie wiem, kto wziął, ale ja dlatego wszyst…”
 
 ## d6_leo (dzień 6, Leo Marsh, 46, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten zegarek?” -> „Mosiężny, kieszonkowy, na łańcuszku. Na wieczku grawer: „za trzydzieści lat”. Żona mówi, ż…”
-- **OBOK** 1.1: „Trzydzieści lat czego?” -> „Służby. Ale nie mojej. To zegarek dziadka mojej żony, też jeździł na szóstce. Przeżył trze…”
-- **OBOK** 1.2: „Konduktor bez zegarka. Jak pilnujesz kursów?” -> „Na oko. I źle. Dziś dwa razy odjechałem za wcześnie, a raz ktoś biegł i nie zdążył. Nie lu…”
-- **LUZNE** 1.2: dopytanie „Konduktor bez zegarka. Jak pilnujesz kursów?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Na wieczku grawer: za trzydzieści lat. Żona mówi, że za trzydzieści lat to ja już nie będę wiedział, która godzina.”
-- **OBOK** 2: „Kiedy go zgubiłeś?” -> „O 22:47, na pętli. Wiem co do minuty, bo spojrzałem, która godzina, i odłożyłem go na ławk…”
-- **LUZNE** 2.1: dopytanie „Na ławce przy pętli szóstki? Kto tam wtedy był?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Wiem co do minuty, bo spojrzałem, która godzina, i odłożyłem go na ławkę. I tyle go widziałem.”
-- **LUZNE** 2.2: dopytanie „Co wiozłeś tym ostatnim kursem?” nie zaczepia się o: „…Wiem co do minuty, bo spojrzałem, która godzina, i odłożyłem go na ławkę. I tyle go widziałem.”
-- **PROZNIA** 2.2.1: dopytanie „Nikt cię nie prosił, żebyś o czymś nie mówił?” nie zaczepia się o: „…Normalny kurs. Nic ponad to.”
-- **OBOK** 3.1: „Kto dzwoni o drugiej z pretensjami?” -> „Żona. Sprawdza, czy zjadłem. Trzydzieści lat po ślubie, a ona dalej myśli, że bez niej umr…”
-- **OBOK** 4.1: „To nie pierwsza taka puszka, prawda?” -> „Trzecia w tym miesiącu. Zawsze ostatni kurs, zawsze pod ławką po lewej. Rano już jej nie m…”
-- **LUZNE** 4.1: dopytanie „To nie pierwsza taka puszka, prawda?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Dopisałem do wykazu, żeby nie mieć kłopotów, jakby co. Nie pytam, kto ma ją odebrać.”
+- **OBOK** 1: „Jak wygląda zegarek?” -> „Mosiężny. Na rękę patrzę z przyzwyczajenia, nie szukaj na tej podstawie paska.…”
+- **OBOK** 1.1: „Co ma zamiast paska?” -> „Kieszonkowy, na łańcuszku. Kiedy odkładam, zwijam łańcuszek obok, żeby nie zwisał. Tym raz…”
+- **OBOK** 1.2: „Jakiś napis?” -> „Na wieczku „za trzydzieści lat”. Bez „służby”, miejsca zabrakło. Żona ma z tego żarty do d…”
+- **PROZNIA** 1.2: dopytanie „Jakiś napis?” nie zaczepia się o: „…Mosiężny. Na rękę patrzę z przyzwyczajenia, nie szukaj na tej podstawie paska.”
+- **OBOK** 1.2.1: „Za twoją służbę?” -> „Dziadka żony. Też szóstka. Zegarek przeżył trzech naczelników, o dziadku tego nie powiem.…”
+- **OBOK** 2: „Gdzie został?” -> „Na ławce na pętli. O 22:47 jeszcze go miałem, spojrzałem i odłożyłem.…”
+- **OBOK** 2.1: „Na wejściu mówisz, że dopiero sięgnąłeś do pustej kieszeni.” -> „Przy odjeździe. Wtedy zrozumiałem, że został na ławce. Opowiadam od zguby, nie od każdego …”
+- **LUZNE** 2.1: dopytanie „Na wejściu mówisz, że dopiero sięgnąłeś do pustej kieszeni.” nie zaczepia się o: „…Na ławce na pętli. O 22:47 jeszcze go miałem, spojrzałem i odłożyłem.”
+- **PROZNIA** 2.1.1: dopytanie „Wracałeś na tę ławkę?” nie zaczepia się o: „…Wtedy zrozumiałem, że został na ławce. Opowiadam od zguby, nie od każdego przystanku.”
+- **OBOK** 2.2: „Kto był w pobliżu?” -> „Dziewczynka liczyła kamienie. Pluszak leżał na ławce. Nie będę z tego robił zeznania, że d…”
+- **PROZNIA** 2.2: dopytanie „Kto był w pobliżu?” nie zaczepia się o: „…Na ławce na pętli. O 22:47 jeszcze go miałem, spojrzałem i odłożyłem.”
+- **OBOK** 2.2.1: „Znasz ją?” -> „Z widzenia. Na pętli częściej spotyka się tych samych ludzi niż we własnej kuchni.…”
+- **PROZNIA** 2.2.1: dopytanie „Znasz ją?” nie zaczepia się o: „…Pluszak leżał na ławce. Nie będę z tego robił zeznania, że dziecko wzięło zegarek.”
+- **OBOK** 3: „Jak pilnujesz kursów bez zegarka?” -> „Źle. Na oko. Dwa razy ruszyłem za wcześnie, raz ktoś nie dobiegł.…”
+- **OBOK** 3.1: „Nie masz telefonu?” -> „Pada w połowie zmiany. Żona potrafi zadzwonić akurat wtedy, kiedy bateria ma ostatnie zdan…”
+- **PROZNIA** 3.1: dopytanie „Nie masz telefonu?” nie zaczepia się o: „…Na oko. Dwa razy ruszyłem za wcześnie, raz ktoś nie dobiegł.”
+- **OBOK** 3.1.1: „O co pyta?” -> „Czy zjadłem. Po trzydziestu latach małżeństwa nadal nie wierzy w moją samodzielność przy k…”
+- **PROZNIA** 3.1.1: dopytanie „O co pyta?” nie zaczepia się o: „…Pada w połowie zmiany. Żona potrafi zadzwonić akurat wtedy, kiedy bateria ma ostatnie zdanie.”
+- **LUZNE** 3.2: dopytanie „Możesz patrzeć na zegar na pętli?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Na oko. Dwa razy ruszyłem za wcześnie, raz ktoś nie dobiegł.”
+- **OBOK** 3.2.1: „Ile może kosztować parę minut różnicy?” -> „Kogoś przesiadkę. Mnie wpis. Zegarowi nic się nie stanie, dlatego nie będę na niego krzycz…”
+- **PROZNIA** 3.2.1: dopytanie „Ile może kosztować parę minut różnicy?” nie zaczepia się o: „…Pomiędzy przystankami zegar zostaje na pętli. Nie zawsze da się poczekać na cudzą rękę.”
+- **OBOK** 4: „Co wozi szóstka ostatnim kursem?” -> „Ludzi, torby, walizki. To nadal tramwaj. Nie zmienia zawodu po zmroku.…”
+- **OBOK** 4.1: „Rzeczy bez właściciela też?” -> „Zdarzają się. Jak coś leży pod ławką, lepiej zapisać, niż kopnąć i udawać, że nie ma.…”
+- **LUZNE** 4.1: dopytanie „Rzeczy bez właściciela też?” nie zaczepia się o: „…To nadal tramwaj. Nie zmienia zawodu po zmroku.”
+- **OBOK** 4.1.1: „Zawsze zapisujesz?” -> „Staram się. Nie każdy podaje nazwisko do torby. Moje nazwisko zostaje przy kursie tak czy …”
+- **PROZNIA** 4.2: dopytanie „Ktoś prosi, żeby nie pytać?” nie zaczepia się o: „…To nadal tramwaj. Nie zmienia zawodu po zmroku.”
+- **OBOK** 4.2.1: „Czyli wiesz więcej, niż mówisz?” -> „Wiem, gdzie mam się zatrzymać. Resztę zostawmy. Nie przyszedłem składać raportu z pasażeró…”
+- **LUZNE** 4.2.1: dopytanie „Czyli wiesz więcej, niż mówisz?” nie zaczepia się o: „…O przystanek, o chwilę, o to, żebym nie patrzył. Nie mogę opowiadać każdej rozmowy.”
+- **OBOK** 5: „Co powie żona na zgubę?” -> „Że zgubiłem pamiątkę po jej dziadku. I będzie miała rację, najgorszy rodzaj rozmowy.…”
+- **OBOK** 5.1: „Już wie?” -> „Jeszcze nie powiedziałem. Telefon żyje do połowy zmiany, ja mam nadzieję odzyskać zegarek …”
+- **PROZNIA** 5.1: dopytanie „Już wie?” nie zaczepia się o: „…Że zgubiłem pamiątkę po jej dziadku. I będzie miała rację, najgorszy rodzaj rozmowy.”
+- **OBOK** 5.1.1: „Zataisz to, jeśli się znajdzie?” -> „Powiem przy kolacji. Jak będę miał zegarek, przynajmniej jedna rzecz w tej historii będzie…”
+- **LUZNE** 5.1.1: dopytanie „Zataisz to, jeśli się znajdzie?” nie zaczepia się o: „…Jeszcze nie powiedziałem. Telefon żyje do połowy zmiany, ja mam nadzieję odzyskać zegarek do końca.”
+- **OBOK** 5.2: „Dlaczego go nie zostawiasz w domu?” -> „Bo jest do używania. Trzyma czas. Dziadek nie dostał go po to, żeby potem leżał pod szkłem…”
+- **LUZNE** 5.2: dopytanie „Dlaczego go nie zostawiasz w domu?” nie zaczepia się o: „…Że zgubiłem pamiątkę po jej dziadku. I będzie miała rację, najgorszy rodzaj rozmowy.”
+- **OBOK** 5.2.1: „A jeśli znowu go zgubisz?” -> „To będę dwa razy głupi. Nie planuję, ale pierwszy raz też nie był w rozkładzie.…”
+- **LUZNE** 5.2.1: dopytanie „A jeśli znowu go zgubisz?” nie zaczepia się o: „…Trzyma czas. Dziadek nie dostał go po to, żeby potem leżał pod szkłem.”
+- **OBOK** 6: „Jak potwierdzić własność?” -> „Grawer, łańcuszek, żona. W tej kolejności, jeśli można. Żona opowie dłużej niż grawer.…”
+- **OBOK** 6.1: „Zgadzasz się na telefon do niej?” -> „Jeśli trzeba. Uprzedź tylko, że chodzi o zegarek, a nie o wypadek na szóstce.…”
+- **LUZNE** 6.1: dopytanie „Zgadzasz się na telefon do niej?” nie zaczepia się o: „…W tej kolejności, jeśli można. Żona opowie dłużej niż grawer.”
+- **OBOK** 6.1.1: „Bo od razu pomyśli o wypadku?” -> „Jak biuro dzwoni po nocy, nikt nie zakłada, że gratulują punktualności.…”
+- **OBOK** 6.2: „A gdy zatrzymam go do wyjaśnienia?” -> „Przyjdę ponownie. Tylko nie wpisuj mi potem spóźnienia jako dowodu, że się nie przejmuję.…”
+- **LUZNE** 6.2: dopytanie „A gdy zatrzymam go do wyjaśnienia?” nie zaczepia się o: „…W tej kolejności, jeśli można. Żona opowie dłużej niż grawer.”
+- **OBOK** 7.1: „Zdarzyło się wcześniej?” -> „Trzecia w tym miesiącu. Ostatni kurs, pod ławką po lewej. Rano znika. Nie wiem, kto odbier…”
+- **LUZNE** 7.1: dopytanie „Zdarzyło się wcześniej?” nie zaczepia się o: „…Wsunięta pod ławkę. Dopisałem, żeby nie wyszło, że nic nie jechało.”
+- **OBOK** 7.1.1: „Dlaczego schowałeś kartkę w zegarku?” -> „Żeby mieć przy sobie, jeśli ktoś zapyta o mój kurs. No i ktoś właśnie pyta.…”
+- **LUZNE** 7.1.1: dopytanie „Dlaczego schowałeś kartkę w zegarku?” nie zaczepia się o: „…Rano znika. Nie wiem, kto odbiera.”
+- **OBOK** 7.2: „Chcesz zostawić ślad czy uniknąć pytań?” -> „Jedno i drugie, jeśli się da. Wiem, że teraz wychodzi, że się nie da.…”
+- **PROZNIA** 7.2: dopytanie „Chcesz zostawić ślad czy uniknąć pytań?” nie zaczepia się o: „…Wsunięta pod ławkę. Dopisałem, żeby nie wyszło, że nic nie jechało.”
 
 ## d7_kit (dzień 7, Kit Navarro, 17, drzewo)
 
-- **OBOK** 1: „Jak wyglądają te słuchawki?” -> „Czarne, nauszne. Lewa muszla oklejona taśmą, na prawej naklejka: kot w kasku. Kupiłem ją z…”
-- **OBOK** 1.1: „Czemu kot ma kask?” -> „Bo jedzie na rowerze, a jest odpowiedzialny. W przeciwieństwie do mnie, co widać po tym, ż…”
-- **OBOK** 2: „Gdzie je zostawiłeś?” -> „W czwórce, na siedzeniu przy oknie, jak wracałem z roboty. Przysnąłem na pół minuty i wysi…”
-- **OBOK** 2.1: „Wracasz z roboty w środku nocy? Gdzie pracujesz?” -> „W kopiarni na Rynku, na praktykach. Mam siedemnaście lat, po nocach niby nie wolno, więc o…”
-- **OBOK** 2.1.1: „Co się robi w kopiarni po nocach?” -> „Ksero, laminowanie, bindowanie. Ulotki, plakaty, dyplomy. W nocy przychodzą tacy, co wolą,…”
-- **OBOK** 2.1.1.1: „Na przykład kto? Pamiętasz kogoś z zeszłego tygodnia?” -> „W czwartek, 22:15. Facet w szarym płaszczu zamówił tysiąc ulotek z twarzą kobiety. „Zaginę…”
-- **LUZNE** 2.1.1.1.1: dopytanie „Jak się nazywał ten facet?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zapłacił gotówką i powiedział, że to żona. Serio, uśmiechał się przy tym.”
-- **OBOK** 3: „Co ci zrobi szef, jak się dowie o słuchawkach?” -> „Zdejmie mi dziesięć dolarów z wypłaty i palnie pogadankę. Pogadankę przeżyję. Dziesięć dol…”
-- **OBOK** 3.1: „Co mu przeszkadza w słuchawkach?” -> „Mówi, że ksero ma być słychać, a ja mam słyszeć klientów. Słyszę. Tylko z muzyką mniej bol…”
-- **OBOK** 4: „Czemu powiedziałeś mi o tych ulotkach?” -> „Bo patrzysz, jakby cię to serio obchodziło. Mało kto tak patrzy. No i ten facet był dziwny…”
-- **OBOK** 4.1: „Zostaje u was jakiś ślad po takim zamówieniu?” -> „Kopia w segregatorze, z datą i godziną. Szef kocha segregatory bardziej niż ludzi. Nikomu …”
-- **PROZNIA** 4.1: dopytanie „Zostaje u was jakiś ślad po takim zamówieniu?” nie zaczepia się o: „…Mało kto tak patrzy. No i ten facet był dziwny, a komuś musiałem to powiedzieć.”
-- **OBOK** 5: „Pod taśmą na muszli jest banknot i karteczka „za ciszę”. Co to?” -> „Dwa dolary dla szefa, jakby mnie przyłapał. Raz zadziałało. Nie mów mu, serio, bo następny…”
+- **OBOK** 1: „Jak rozpoznać słuchawki?” -> „Czarne. Bez kolorowych światełek. W ciemnym tramwaju nie świecą, niestety.…”
+- **OBOK** 1.1: „Co trzyma je w całości?” -> „Nauszne, taśma na lewej muszli. Taśma i nadzieja. Na razie taśma lepiej.…”
+- **LUZNE** 1.1: dopytanie „Co trzyma je w całości?” nie zaczepia się o: „…Bez kolorowych światełek. W ciemnym tramwaju nie świecą, niestety.”
+- **PROZNIA** 1.1.1: dopytanie „Pękły przy pracy?” nie zaczepia się o: „…Taśma i nadzieja. Na razie taśma lepiej.”
+- **OBOK** 1.2: „Jaka naklejka?” -> „Kot w kasku na prawej muszli. Jedzie na rowerze, odpowiedzialny obywatel. Za dolara.…”
+- **LUZNE** 1.2: dopytanie „Jaka naklejka?” nie zaczepia się o: „…Bez kolorowych światełek. W ciemnym tramwaju nie świecą, niestety.”
+- **OBOK** 1.2.1: „Kask nie pomógł przed zgubieniem?” -> „Jemu nic się nie stało. To ja wysiadłem bez głowy. W sensie bez słuchawek.…”
+- **LUZNE** 1.2.1: dopytanie „Kask nie pomógł przed zgubieniem?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Jedzie na rowerze, odpowiedzialny obywatel. Za dolara.”
+- **LUZNE** 2.1: dopytanie „Wracałeś z kopiarni?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Przysnąłem i wysiadłem. Muzyka już nie grała.”
+- **PROZNIA** 2.1.1: dopytanie „Dlaczego zostajesz?” nie zaczepia się o: „…Praktyki. Mam siedemnaście lat, więc po nocy oficjalnie już dawno mnie tam nie ma.”
+- **LUZNE** 2.2: dopytanie „Ktoś siedział obok?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Przysnąłem i wysiadłem. Muzyka już nie grała.”
+- **OBOK** 2.2.1: „Może ktoś cię budził?” -> „Tramwaj zahamował. Najlepsza funkcja transportu, pobudka w cenie biletu. Tylko pamięci nie…”
+- **PROZNIA** 2.2.1: dopytanie „Może ktoś cię budził?” nie zaczepia się o: „…Nie kojarzę. Nie będę wymyślał twarzy, żeby pytanie miało odpowiedź.”
+- **OBOK** 3: „Co szef ma do słuchawek?” -> „Mam słyszeć klientów i maszynę. Jak maszyna zaczyna chrupać inaczej, trzeba biec. Ja to sł…”
+- **OBOK** 3.1: „A klientów?” -> „Też. Tylko wolę, jak mówią raz, a nie pokazują palcem i wzdychają.…”
+- **LUZNE** 3.1: dopytanie „A klientów?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Jak maszyna zaczyna chrupać inaczej, trzeba biec. Ja to słyszę nawet z muzyką.”
+- **OBOK** 3.1.1: „To po co ryzykujesz karę?” -> „Bo przez kilka godzin samo ksero robi z głowy pudełko. Muzyka przynajmniej coś zmienia.…”
+- **LUZNE** 3.1.1: dopytanie „To po co ryzykujesz karę?” nie zaczepia się o: „…Też. Tylko wolę, jak mówią raz, a nie pokazują palcem i wzdychają.”
+- **OBOK** 3.2: „Jaką karę dostaniesz?” -> „Dziesięć dolarów mniej. I pogadankę gratis. Serio, na samo gadanie jakoś bym zarobił uszam…”
+- **PROZNIA** 3.2: dopytanie „Jaką karę dostaniesz?” nie zaczepia się o: „…Jak maszyna zaczyna chrupać inaczej, trzeba biec. Ja to słyszę nawet z muzyką.”
+- **LUZNE** 3.2.1: dopytanie „Masz to gdzieś zapisane?” nie zaczepia się o: „…I pogadankę gratis. Serio, na samo gadanie jakoś bym zarobił uszami.”
+- **OBOK** 4: „Co robicie w kopiarni nocą?” -> „Ksero, laminowanie, bindowanie. To samo, tylko ludzie bardziej się spieszą i mniej chcą pa…”
+- **OBOK** 4.1: „Jakie zamówienie zapamiętałeś ostatnio?” -> „Ulotki ze zdjęciem kobiety. „Zaginęła”. Dużo. Takie się pamięta dłużej niż menu.…”
+- **LUZNE** 4.1: dopytanie „Jakie zamówienie zapamiętałeś ostatnio?” nie zaczepia się o: „…Ksero, laminowanie, bindowanie. To samo, tylko ludzie bardziej się spieszą i mniej chcą paragonów.”
+- **OBOK** 4.1.1: „Kto je zamawiał i kiedy?” -> „Facet w szarym płaszczu. Czwartek, 22:15, tysiąc sztuk. Powiedział, że żona. Uśmiechał się…”
+- **LUZNE** 4.1.1: dopytanie „Kto je zamawiał i kiedy?” nie zaczepia się o: „…Dużo. Takie się pamięta dłużej niż menu.”
+- **OBOK** 4.2: „Zostaje kopia zamówienia?” -> „W segregatorze, data i godzina. Szef nie wyrzuci kartki, póki da się ją przechować w więks…”
+- **LUZNE** 4.2: dopytanie „Zostaje kopia zamówienia?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Ksero, laminowanie, bindowanie. To samo, tylko ludzie bardziej się spieszą i mniej chcą paragonów.”
+- **LUZNE** 4.2.1: dopytanie „Każdy może tam zajrzeć?” nie zaczepia się o: „…W segregatorze, data i godzina. Szef nie wyrzuci kartki, póki da się ją przechować w większej teczce.”
+- **OBOK** 5: „Jak możesz potwierdzić, że to twoje słuchawki?” -> „Opiszę je. Paragonu nie mam. Za naklejkę też nie, gdyby to miało pomóc śledztwu.…”
+- **OBOK** 5.1: „Ktoś z kopiarni je zna?” -> „Szef. Ale jeśli do niego zadzwonisz, to od razu policzy dziesięć dolarów. I spyta, czemu j…”
+- **LUZNE** 5.1: dopytanie „Ktoś z kopiarni je zna?” nie zaczepia się o: „…Paragonu nie mam. Za naklejkę też nie, gdyby to miało pomóc śledztwu.”
+- **OBOK** 5.1.1: „Wolisz odmowę niż telefon?” -> „Wolę, żeby wystarczył kot i taśma. Jeśli nie wystarczą, powiedz wprost. Niech przynajmniej…”
+- **PROZNIA** 5.1.1: dopytanie „Wolisz odmowę niż telefon?” nie zaczepia się o: „…Ale jeśli do niego zadzwonisz, to od razu policzy dziesięć dolarów. I spyta, czemu jestem tutaj.”
+- **OBOK** 5.2: „Co sprawdzisz po odbiorze?” -> „Czy grają obie. Lewa czasem przerywa, trzeba ruszyć przewodem. To nie znaczy, że ktoś tuta…”
+- **PROZNIA** 5.2: dopytanie „Co sprawdzisz po odbiorze?” nie zaczepia się o: „…Paragonu nie mam. Za naklejkę też nie, gdyby to miało pomóc śledztwu.”
+- **OBOK** 5.2.1: „Nie chcesz sprawniejszych?” -> „Chcę też wypłaty bez potrąceń. Jedno i drugie na razie zostaje w dziale marzenia.…”
+- **LUZNE** 5.2.1: dopytanie „Nie chcesz sprawniejszych?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Lewa czasem przerywa, trzeba ruszyć przewodem. To nie znaczy, że ktoś tutaj popsuł.”
+- **OBOK** 6: „Co zrobisz, jeśli dziś ich nie odzyskasz?” -> „Wrócę do kopiarni. Maszyna nie przestanie chodzić, bo mam zły wieczór.…”
+- **LUZNE** 6.1: dopytanie „Będziesz jeszcze mówił o tym, co tam widzisz?” nie zaczepia się o: „…Wrócę do kopiarni. Maszyna nie przestanie chodzić, bo mam zły wieczór.”
+- **LUZNE** 6.1.1: dopytanie „Boisz się klienta czy szefa?” nie zaczepia się o: „…Zależy komu. Jak każde zdanie kończy się nazwiskiem w księdze, człowiek zaczyna mówić o pogodzie.”
+- **OBOK** 6.2: „Co mogę zapisać o tej wizycie?” -> „Że odebrałem słuchawki. Na inne rzeczy pytaj osobno, serio. Nie wszystko jest w pakiecie.…”
+- **LUZNE** 6.2: dopytanie „Co mogę zapisać o tej wizycie?” nie zaczepia się o: „…Wrócę do kopiarni. Maszyna nie przestanie chodzić, bo mam zły wieczór.”
+- **OBOK** 7: „Czemu powiedziałeś o ulotkach?” -> „Bo twarz była na tysiącu kartek, a ten facet się uśmiechał. Może tak reaguje ze strachu, n…”
+- **OBOK** 7.1: „Potwierdzisz godzinę, jeśli zapyta policjant?” -> „W segregatorze jest. Powiem, gdzie sprawdzić. Tylko nie róbcie ze mnie od razu kogoś, kto …”
+- **LUZNE** 7.1: dopytanie „Potwierdzisz godzinę, jeśli zapyta policjant?” nie zaczepia się o: „…Może tak reaguje ze strachu, nie wiem. Nie chcę sam rozstrzygać.”
+- **OBOK** 8.1: „A jeśli następnym razem zażąda więcej?” -> „To zostanę bez muzyki i bez dwóch dolarów. Nie mam na to sprytnej odpowiedzi.…”
+- **LUZNE** 8.1: dopytanie „A jeśli następnym razem zażąda więcej?” nie zaczepia się o: „…Raz wziął. Serio, nie śmiej się, dwa dolary to mniej niż dziesięć.”
 
 ## d7_evan (dzień 7, Evan Doyle, 37, drzewo)
 
-- **OBOK** 1: „Jak wygląda to etui?” -> „Brązowa skóra, zatrzask. W środku kartonik z inicjałami M.D. i znaczkiem nieskończoności. …”
-- **LUZNE** 1.1: dopytanie „Ile kluczy jest w środku?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…i znaczkiem nieskończoności. To jej pismo.”
-- **OBOK** 1.1.1: „W etui są dwa klucze. Drugi ma wybite „14”.” -> „Drugiego nie znam. Maya miała swoje sprawy. Powiesz mi, do czego on jest? Bo ja chciałbym …”
-- **OBOK** 2.1: „Po co ci numer linii?” -> „Będę wiedział, gdzie ona wsiada. Stanę na pętli i poczekam. Chcę tylko porozmawiać.…”
-- **LUZNE** 2.1: dopytanie „Po co ci numer linii?” nie zaczepia się o: „…W czwórce albo w jedenastce. Dlatego pytam: którym tramwajem przyjechały?”
-- **LUZNE** 2.1.1: dopytanie „A jeśli ona nie chce rozmawiać?” nie zaczepia się o: „…Stanę na pętli i poczekam. Chcę tylko porozmawiać.”
-- **LUZNE** 2.2: dopytanie „Policja nie może ci tego powiedzieć?” nie zaczepia się o: „…W czwórce albo w jedenastce. Dlatego pytam: którym tramwajem przyjechały?”
-- **LUZNE** 3.1: dopytanie „Powiedziała ci wcześniej, że odchodzi?” nie zaczepia się o: „…Od czwartku wieczorem. Zgłosiłem jeszcze tej samej nocy, jak tylko zrozumiałem, że nie wraca.”
-- **OBOK** 3.2: „Co zrobisz, kiedy ją znajdziesz?” -> „Zabiorę ją do domu i zrobię jej herbaty. Wszystko wróci na swoje miejsce. U mnie wszystko …”
-- **PROZNIA** 3.2: dopytanie „Co zrobisz, kiedy ją znajdziesz?” nie zaczepia się o: „…Od czwartku wieczorem. Zgłosiłem jeszcze tej samej nocy, jak tylko zrozumiałem, że nie wraca.”
-- **OBOK** 4: „W etui są dwa klucze: zwykły i mały, z numerem 14. Do czego ten drugi?” -> „Drugiego nie znam. Maya miała swoje sprawy. Powiesz mi, do czego on jest? Bo ja chciałbym …”
+- **OBOK** 1: „Jak wygląda etui?” -> „Brązowa skóra. Znam je, nie zgłaszam przypadkowego przedmiotu.…”
+- **OBOK** 1.1: „Jak się zamyka?” -> „Zatrzaskiem. Wystarczy docisnąć. Nie ma suwaka ani kłódki.…”
+- **PROZNIA** 1.1: dopytanie „Jak się zamyka?” nie zaczepia się o: „…Brązowa skóra. Znam je, nie zgłaszam przypadkowego przedmiotu.”
+- **PROZNIA** 1.1.1: dopytanie „Był sprawny?” nie zaczepia się o: „…Wystarczy docisnąć. Nie ma suwaka ani kłódki.”
+- **OBOK** 1.2: „Co pozwoli je odróżnić od innych?” -> „Kartonik w środku. M.D. i znak nieskończoności. Jej pismo.…”
+- **LUZNE** 1.2: dopytanie „Co pozwoli je odróżnić od innych?” nie zaczepia się o: „…Brązowa skóra. Znam je, nie zgłaszam przypadkowego przedmiotu.”
+- **LUZNE** 1.2.1: dopytanie „Ile jest kluczy?” nie zaczepia się o: „…i znak nieskończoności. Jej pismo.”
+- **OBOK** 1.2.1.1: „W etui są dwa klucze. Skąd mały z numerem 14?” -> „Drugiego nie znam. Chcę się dowiedzieć, co otwiera, nie będę udawał, że wiem.…”
+- **OBOK** 2.1: „Mogła. A jeśli ktoś je znalazł i przewiózł?” -> „Wtedy sprawdzę zły przystanek. To moje godziny, nie twoje. Wolę sprawdzić niż nic nie robi…”
+- **OBOK** 2.1.1: „Co zrobisz na przystanku?” -> „Poczekam. Popatrzę, kto wysiada. W końcu ktoś ją widział, nie mogła zniknąć między drzwiam…”
+- **LUZNE** 2.1.1: dopytanie „Co zrobisz na przystanku?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…To moje godziny, nie twoje. Wolę sprawdzić niż nic nie robić.”
+- **OBOK** 2.2.1: „Skąd wiesz, czego chce, skoro nie rozmawiacie?” -> „Znam ją. Ty znasz cudze zguby. Nie będziemy chyba porównywać, kto spędził z nią więcej cza…”
+- **PROZNIA** 2.2.1: dopytanie „Skąd wiesz, czego chce, skoro nie rozmawiacie?” nie zaczepia się o: „…Ma dom, męża, spokój. Nie ma się czego bać.”
+- **PROZNIA** 3.1: dopytanie „Co uznałeś za sygnał, że nie wróci?” nie zaczepia się o: „…Od czwartku wieczorem. Zgłosiłem zaginięcie tej samej nocy, od razu.”
+- **OBOK** 3.1.1: „Przecież wcześniej pracowała nocą.” -> „Praca to co innego. Wiem, ile zwykle zajmuje. Nie trzeba pilnować zegarka, żeby zauważyć z…”
+- **LUZNE** 3.1.1: dopytanie „Przecież wcześniej pracowała nocą.” nie zaczepia się o: „…Nie odbierała. Nie lubię, kiedy ktoś wychodzi i nie można się dowiedzieć, gdzie jest.”
+- **OBOK** 3.2.1: „Czemu pytasz o źródło zamiast wyjaśnić kolejność?” -> „Bo ktoś robi ze mnie podejrzanego za to, że zacząłem szukać żony bez czekania do rana.…”
+- **PROZNIA** 3.2.1: dopytanie „Czemu pytasz o źródło zamiast wyjaśnić kolejność?” nie zaczepia się o: „…Ulotki zamówiłem wcześniej, na wszelki wypadek. Kto przekazuje ci te godziny?”
+- **OBOK** 4: „Co zrobisz z kluczami, jeśli je odzyskasz?” -> „Będą w domu. Tam, gdzie powinny być. Jeśli Maya wróci, nie będzie musiała ich szukać.…”
+- **OBOK** 4.1: „Jak wejdzie, jeśli klucze będą w środku?” -> „Otworzę. Jestem. Właśnie to próbuję powiedzieć od początku.…”
+- **LUZNE** 4.1: dopytanie „Jak wejdzie, jeśli klucze będą w środku?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Tam, gdzie powinny być. Jeśli Maya wróci, nie będzie musiała ich szukać.”
+- **OBOK** 4.1.1: „A kiedy wyjdziesz jej szukać?” -> „Przecież mogę zostawić wiadomość. Nie musisz układać mi dnia, wystarczy wydać etui.…”
+- **LUZNE** 4.1.1: dopytanie „A kiedy wyjdziesz jej szukać?” nie zaczepia się o: „…Jestem. Właśnie to próbuję powiedzieć od początku.”
+- **OBOK** 4.2: „Chcesz zostawić jej coś przy okienku?” -> „List mogę. Tylko chciałbym wiedzieć, że trafi do niej, a nie do kolejnej szuflady.…”
+- **LUZNE** 4.2: dopytanie „Chcesz zostawić jej coś przy okienku?” nie zaczepia się o: „…Tam, gdzie powinny być. Jeśli Maya wróci, nie będzie musiała ich szukać.”
+- **LUZNE** 4.2.1: dopytanie „Bez obietnicy, że przyjdzie?” nie zaczepia się o: „…List mogę. Tylko chciałbym wiedzieć, że trafi do niej, a nie do kolejnej szuflady.”
+- **OBOK** 5: „Dlaczego nie odbiera ich sama?” -> „Bo jej nie ma. Gdybym wiedział, gdzie jest, nie musiałbym prosić o numer tramwaju.…”
+- **OBOK** 5.1: „Policja może potwierdzić twoje zgłoszenie?” -> „Może. Powiedzą też, że dorosły ma prawo wyjść z domu. Słyszałem to wystarczająco często.…”
+- **PROZNIA** 5.1: dopytanie „Policja może potwierdzić twoje zgłoszenie?” nie zaczepia się o: „…Bo jej nie ma. Gdybym wiedział, gdzie jest, nie musiałbym prosić o numer tramwaju.”
+- **OBOK** 5.1.1: „Nie zgadzasz się z tym?” -> „Z wyjściem tak. Ze zniknięciem bez słowa nie. Małżeństwo nie polega na zostawianiu rzeczy …”
+- **LUZNE** 5.1.1: dopytanie „Nie zgadzasz się z tym?” nie zaczepia się o: „…Powiedzą też, że dorosły ma prawo wyjść z domu. Słyszałem to wystarczająco często.”
+- **PROZNIA** 5.2: dopytanie „Lena może przekazać wiadomość?” nie zaczepia się o: „…Bo jej nie ma. Gdybym wiedział, gdzie jest, nie musiałbym prosić o numer tramwaju.”
+- **PROZNIA** 5.2.1: dopytanie „Zapytałeś ją spokojnie?” nie zaczepia się o: „…Lena twierdzi, że nic nie wie. A jednak wszyscy pytają ją, jakby miała więcej praw niż ja.”
+- **OBOK** 6: „Co mam zapisać o tej wizycie?” -> „Że Evan Doyle prosił o klucze żony i informację o ich znalezieniu. Czytelnie, bez dopisywa…”
+- **OBOK** 6.1: „A jeśli odmówię informacji o trasie?” -> „Zapisz również odmowę. Wrócę. Wolę mieć ślad, niż za każdym razem zaczynać od przedstawian…”
+- **PROZNIA** 6.1.1: dopytanie „Jak długo będziesz wracał?” nie zaczepia się o: „…Wrócę. Wolę mieć ślad, niż za każdym razem zaczynać od przedstawiania się.”
+- **OBOK** 6.2.1: „Bo rzecz i miejsce pobytu właścicielki to nie to samo.” -> „Dla ciebie dwie rubryki. Dla mnie jedna osoba. Proszę nie rozcinać tego tak wygodnie.…”
+- **LUZNE** 6.2.1: dopytanie „Bo rzecz i miejsce pobytu właścicielki to nie to samo.” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Etui świadczy, że była gdzieś niedawno, trasa mówi gdzie. Dlaczego mam zadowolić się połową?”
+- **LUZNE** 7.1: dopytanie „Skąd więc wiesz, że etui jest tutaj?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…W czwórce albo w jedenastce, dlatego pytam o linię. Pory też nie podam, jeśli jej nie znam.”
+- **LUZNE** 7.1.1: dopytanie „Czy opisujesz to, co widziałeś przed zaginięciem?” nie zaczepia się o: „…Rzeczy trafiają do biura, więc przyszedłem. Mam czekać, aż ktoś sam zadzwoni?”
+- **OBOK** 7.2: „Co zmieni sama pora znalezienia?” -> „Zawęzi czekanie. Nie będę stał na pętli od pierwszego do ostatniego kursu, jeśli wiem, kie…”
+- **PROZNIA** 7.2: dopytanie „Co zmieni sama pora znalezienia?” nie zaczepia się o: „…W czwórce albo w jedenastce, dlatego pytam o linię. Pory też nie podam, jeśli jej nie znam.”
+- **OBOK** 7.2.1: „Pora znalezienia nie musi być porą jej przejazdu.” -> „To sprawdzę. Każda informacja może być niedokładna, nie znaczy, że wolę nie mieć żadnej.…”
+- **LUZNE** 7.2.1: dopytanie „Pora znalezienia nie musi być porą jej przejazdu.” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zawęzi czekanie. Nie będę stał na pętli od pierwszego do ostatniego kursu, jeśli wiem, kiedy jechała.”
+- **OBOK** 8: „W środku są dwa klucze. Do czego mały z numerem 14?” -> „Drugiego nie znam. Maya miała swoje sprawy. Jeśli wiesz, co otwiera, powiedz.…”
+- **LUZNE** 8.1: dopytanie „Przed chwilą nie potrzebowała innych kluczy.” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Maya miała swoje sprawy. Jeśli wiesz, co otwiera, powiedz.”
+- **OBOK** 10: „Za telefon zapłaciłeś sto dolarów. Dziś też liczysz na brak wpisu?” -> „Liczę, że nie będziemy udawać obcych. Wtedy udało się porozumieć, dziś pytam o własną żonę…”
+- **OBOK** 11: „Telefon dostała Lena. Czemu nadal pytasz tutaj?” -> „Bo od niej niczego się nie dowiedziałem. Biuro przynajmniej musi zapisać, kiedy odmawia.…”
+- **OBOK** 12: „Telefon był u ciebie. Dlaczego nie pomógł znaleźć Mai?” -> „Był zablokowany. Zaniosłem Reyesowi. Teraz szukam następnego śladu, zamiast siedzieć i pat…”
+- **OBOK** 13: „Telefon nadal czeka na Mayę. Etui może czekać obok.” -> „Dwie jej rzeczy będą bezpieczne, a o niej dalej nic. Naprawdę to uznajesz za załatwienie s…”
 
 ## d8_lena_i_nora (dzień 8, Lena Brandt i Nora Vance, drzewo)
 
-- **OBOK** 1: „Lena, czyja jest ta torba?” -> „Mai, mojej siostry. Sama jej ją kupiłam na urodziny. Narzędzia dla kobiety, dziwny prezent…”
-- **OBOK** 1.1: „Po czym ją poznasz?” -> „Po obcęgach z żółtą izolacją i miarce z literą „M”. Ale... no właśnie. Nora też wie, co je…”
-- **PROZNIA** 1.1: dopytanie „Po czym ją poznasz?” nie zaczepia się o: „…Narzędzia dla kobiety, dziwny prezent, wiem. Teraz to jedyna jej rzecz, jakiej mogę dotknąć.”
-- **OBOK** 1.2: „Co zrobisz z torbą, jeśli ją dostaniesz?” -> „Zabiorę do siebie. A jak Maya wróci, to jej oddam. Przecież to jej.…”
-- **LUZNE** 1.2: dopytanie „Co zrobisz z torbą, jeśli ją dostaniesz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Narzędzia dla kobiety, dziwny prezent, wiem. Teraz to jedyna jej rzecz, jakiej mogę dotknąć.”
-- **OBOK** 2: „Nora, czego szukasz w cudzej torbie?” -> „Po kolei: rzecz, osoba, skutek. Papier w podszewce. Rodzina Okoye. Bez tego papieru nie ma…”
-- **OBOK** 2.1: „Skąd wiesz, że w podszewce jest papier?” -> „Z mojego zeszytu. Spisuję numery wszystkich pokwitowań w kamienicy. Jednej kopii brakuje, …”
-- **OBOK** 2.2: „O jakiej wpłacie mówimy?” -> „Czternaście rodzin, każda po czterysta dolarów zaliczki na remont. Termin rozliczenia: czw…”
-- **OBOK** 2.2.1: „Kto brał te zaliczki?” -> „Zarządczyni, Iris Bell. Bierze gotówkę, wydaje kwit, oryginał zostawia sobie. A potem bywa…”
-- **LUZNE** 2.2.1: dopytanie „Kto brał te zaliczki?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Termin rozliczenia: czwartek, dziewiąty września. Kto nie pokaże kwitu, płaci drugi raz albo się wyprowadza.”
-- **OBOK** 4: „Która z was ustąpi?” -> „Ja nie. Za mną stoi czternaście rodzin. Lena pewnie też nie, bo za nią stoi siostra. Dlate…”
-- **OBOK** 5: „W podszewce jest żółta kopia: 400 dolarów, podpis „I.”. Czyj to podpis?” -> „Iris Bell. Znam go z dwudziestu pokwitowań. Czyli Okoye zapłacili, a Maya schowała dowód. …”
+- **OBOK** 1: „Jak rozpoznać torbę?” -> „Szara. Narzędziowa, kupiłam ją Mai. Nie wygląda jak elegancki prezent, wiem.…”
+- **OBOK** 1.1: „Jaki ma kształt?” -> „Podłużna, żeby weszły narzędzia. Nie plecak. Maya nosiła ją w ręce, nawet kiedy była za ci…”
+- **PROZNIA** 1.1: dopytanie „Jaki ma kształt?” nie zaczepia się o: „…Narzędziowa, kupiłam ją Mai. Nie wygląda jak elegancki prezent, wiem.”
+- **OBOK** 1.1.1: „Dlaczego kupiłaś właśnie ją?” -> „Bo miała porozrywane kieszenie od śrubokrętów. Chciałam kupić coś, czego nie odłoży do sza…”
+- **PROZNIA** 1.1.1: dopytanie „Dlaczego kupiłaś właśnie ją?” nie zaczepia się o: „…Nie plecak. Maya nosiła ją w ręce, nawet kiedy była za ciężka.”
+- **OBOK** 1.2: „Co jest charakterystycznego?” -> „Rozpruta podszewka. W środku obcęgi z żółtą izolacją i miarka z literą „M”. Ale Nora też z…”
+- **PROZNIA** 1.2: dopytanie „Co jest charakterystycznego?” nie zaczepia się o: „…Narzędziowa, kupiłam ją Mai. Nie wygląda jak elegancki prezent, wiem.”
+- **OBOK** 1.2.1: „Skąd ją znasz?” -> „Maya pracowała w kamienicy. Widziałam narzędzia, ale przyszłam po papier. Po kolei: torba …”
+- **PROZNIA** 1.2.1: dopytanie „Skąd ją znasz?” nie zaczepia się o: „…W środku obcęgi z żółtą izolacją i miarka z literą M. Ale Nora też zna zawartość.”
+- **OBOK** 2: „Jakiego papieru szukasz?” -> „Kopii pokwitowania rodziny Okoye. Bez niej mają zapłacić drugi raz albo się wyprowadzić.…”
+- **OBOK** 2.1: „Za co zapłacili?” -> „Zaliczka na remont, czterysta dolarów od rodziny. Czternaście rodzin, termin rozliczenia: …”
+- **OBOK** 2.1.1: „Kto przyjmował pieniądze?” -> „Iris Bell. Zostawia sobie oryginał, potem bywa, że nie pamięta wpłaty. Pamięć nie może tu …”
+- **PROZNIA** 2.1.1: dopytanie „Kto przyjmował pieniądze?” nie zaczepia się o: „…Zaliczka na remont, czterysta dolarów od rodziny. Czternaście rodzin, termin rozliczenia: czwartek, dziewiąty września.”
+- **OBOK** 2.2.1: „Twój zeszyt nie wystarczy jako dowód wpłaty?” -> „To mój zapis numeru. Potrzebujemy pokwitowania, na którym przyjęcie pieniędzy potwierdziła…”
+- **LUZNE** 2.2.1: dopytanie „Twój zeszyt nie wystarczy jako dowód wpłaty?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Spisuję numery pokwitowań, tej kopii brakuje. Maya pracowała w kamienicy w tym samym tygodniu.”
+- **OBOK** 3: „Co chcesz zrobić z torbą?” -> „Zabrać do siebie. Oddać Mai, kiedy się odezwie. Nie chcę, żeby jej rzeczy leżały wszędzie …”
+- **OBOK** 3.1: „U ciebie też będą poza jej domem.” -> „U mnie przynajmniej czekają na nią. Nie na kogoś, kto przyjdzie ze swoim powodem, żeby je …”
+- **OBOK** 3.1.1: „Nie ufasz Norze?” -> „Ufam, że chce pomóc rodzinie. Ale to nie znaczy, że może czytać wszystko, co Maya schowała…”
+- **PROZNIA** 3.1.1: dopytanie „Nie ufasz Norze?” nie zaczepia się o: „…U mnie przynajmniej czekają na nią. Nie na kogoś, kto przyjdzie ze swoim powodem, żeby je zabrać.”
+- **LUZNE** 3.2: dopytanie „A jeśli w torbie jest cudze pokwitowanie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Oddać Mai, kiedy się odezwie. Nie chcę, żeby jej rzeczy leżały wszędzie poza domem.”
+- **OBOK** 3.2.1: „Tyle ci wystarczy?” -> „Jeśli da się potwierdzić wpłatę. Przedmiot, osoba, skutek. Narzędzia nie zapłacą za remont…”
+- **PROZNIA** 3.2.1: dopytanie „Tyle ci wystarczy?” nie zaczepia się o: „…Tylko trzeba oddzielić ten papier od reszty. Nie całą torbę nazwać dowodem.”
+- **OBOK** 4: „Dlaczego przyszłyście razem?” -> „Żeby nie wydać torby jednej z nas, zanim druga zdąży powiedzieć, czego potrzebuje. Nie zga…”
+- **LUZNE** 4.1: dopytanie „Lena, też tak uważasz?” nie zaczepia się o: „…Żeby nie wydać torby jednej z nas, zanim druga zdąży powiedzieć, czego potrzebuje. Nie zgadzamy się, ale to możemy ustalić.”
+- **LUZNE** 4.1.1: dopytanie „Dasz Lenie obejrzeć papier razem z tobą?” nie zaczepia się o: „…Tylko ona mówi kopia, a potem wyciąga rękę po całą torbę. Wolę przy tym stać.”
+- **OBOK** 4.2.1: „Lena?” -> „Dlatego stoimy tutaj. Gdybym umiała sama wybrać, już bym się z nią pokłóciła i poszła.…”
+- **OBOK** 5: „Skąd związek torby Mai z papierami z kamienicy?” -> „Instalację. Jest elektryczką. Mówiła, że widziała coś, czego nie powinna, a potem urwała.…”
+- **PROZNIA** 5.2: dopytanie „Maya zostawiała u ciebie dokumenty?” nie zaczepia się o: „…Jest elektryczką. Mówiła, że widziała coś, czego nie powinna, a potem urwała.”
+- **OBOK** 5.2.1: „A jeśli nie znajdziesz potwierdzenia swojej wersji?” -> „Zostaną zapisy, ale to słabszy dowód. Nie powiem rodzinie, że to tyle samo.…”
+- **OBOK** 6.1: „Zgodzisz się na takie obejrzenie?” -> „Przy mnie. I tylko tego, co dotyczy wpłaty. Nie chcę później słyszeć, że przy okazji znale…”
+- **LUZNE** 6.1: dopytanie „Zgodzisz się na takie obejrzenie?” nie zaczepia się o: „…Trzeba jednak wiedzieć, co zasłaniamy. Kopia bez nazwiska może dowodzić wpłaty, ale gorzej dowodzi, kto zapłacił.”
+- **OBOK** 6.1.1: „Jeśli to wydłuży odbiór?” -> „Poczekam. Wolę stać przy szybie niż potem zgadywać, co ktoś zrobił z jej rzeczami.…”
+- **LUZNE** 6.1.1: dopytanie „Jeśli to wydłuży odbiór?” nie zaczepia się o: „…I tylko tego, co dotyczy wpłaty. Nie chcę później słyszeć, że przy okazji znaleziono coś jeszcze.”
+- **OBOK** 6.2: „Gdzie miałby zostać dokument?” -> „W biurze, z potwierdzeniem. Torba dla Leny. Inaczej jedna z nas wyjdzie z cudzą sprawą pod…”
+- **PROZNIA** 6.2: dopytanie „Gdzie miałby zostać dokument?” nie zaczepia się o: „…Trzeba jednak wiedzieć, co zasłaniamy. Kopia bez nazwiska może dowodzić wpłaty, ale gorzej dowodzi, kto zapłacił.”
+- **LUZNE** 6.2.1: dopytanie „To załatwia problem rodziny?” nie zaczepia się o: „…Torba dla Leny. Inaczej jedna z nas wyjdzie z cudzą sprawą pod pachą.”
+- **LUZNE** 7.1: dopytanie „Lena, wiedziałaś o tej kopii?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Znam podpis z innych pokwitowań. Teraz mamy coś, co można porównać, nie tylko to, co pamiętam.”
+- **OBOK** 9: „Evan przeczytał wiadomość. Co się stało potem?” -> „Przyszedł pod moje drzwi. Krzyczał, aż wyszła sąsiadka. Dlatego tym razem stoję przy odbio…”
+- **OBOK** 10: „Telefon czeka tutaj. Torba też może zostać?” -> „Może. Tylko ja wtedy znowu wrócę do domu bez niczego, a Maya nadal nie będzie wiedziała, g…”
 
 ## d8_bree (dzień 8, Bree Halm, 29, drzewo)
 
-- **PROZNIA** 1.1: dopytanie „Ma jakieś znaki? Coś wydrapanego, podpis?” nie zaczepia się o: „…Brat upuścił go na schodach. Mówi, że teraz aparat ma charakter.”
-- **LUZNE** 1.2: dopytanie „Co jest na filmie w środku?” nie zaczepia się o: „…Brat upuścił go na schodach. Mówi, że teraz aparat ma charakter.”
-- **OBOK** 2: „Gdzie go zostawiłaś?” -> „W jedenastce, na siedzeniu. Rozmawiałam przez telefon z lekarzem brata i wysiadłam, nie og…”
-- **OBOK** 2.1: „Co z bratem?” -> „Teo, Teodor Halm. Leży na ortopedii z nogą w gipsie. Rower. Twierdzi, że to nie jego wina,…”
-- **LUZNE** 2.1.1: dopytanie „Po co mu w szpitalu aparat na kliszę?” nie zaczepia się o: „…Rower. Twierdzi, że to nie jego wina, czyli jego.”
-- **OBOK** 3: „Mówisz, że masz paragon. Jaki?” -> „Z komisu na Rynku, sprzed dwóch lat. Mam zdjęcie w telefonie. Słuchaj, jest cena, jest dat…”
-- **LUZNE** 3.1: dopytanie „Na paragonie jest numer seryjny?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Słuchaj, jest cena, jest data, jest napisane srebrny. Czego chcieć więcej?”
-- **LUZNE** 3.2: dopytanie „Paragon bez numeru to za mało. Aparat może tu poczekać.” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Słuchaj, jest cena, jest data, jest napisane srebrny. Czego chcieć więcej?”
-- **OBOK** 4: „Pod klapką baterii jest wydrapane „R.O.”. Czyje to inicjały?” -> „No dobra. Raf Okoye, sąsiad z Cooper Street. Pożyczył bratu aparat. Ale to się nie liczy, …”
+- **OBOK** 1: „Jak wygląda aparat?” -> „Srebrny. Analogowy. Słuchaj, mam paragon, ale mogę też opisać.…”
+- **PROZNIA** 1.1: dopytanie „Duży czy kieszonkowy?” nie zaczepia się o: „…Analogowy. Słuchaj, mam paragon, ale mogę też opisać.”
+- **OBOK** 1.2: „Ma uszkodzenia?” -> „Wgniecenie w lewym rogu. Brat upuścił na schodach. Aparat ma charakter, tak twierdzi.…”
+- **PROZNIA** 1.2: dopytanie „Ma uszkodzenia?” nie zaczepia się o: „…Analogowy. Słuchaj, mam paragon, ale mogę też opisać.”
+- **PROZNIA** 1.3: dopytanie „Jakieś inicjały albo znak pod klapką?” nie zaczepia się o: „…Analogowy. Słuchaj, mam paragon, ale mogę też opisać.”
+- **OBOK** 1.3.1: „Pod klapką baterii jest R.O. Czyje to inicjały?” -> „Rafa Okoye. Sąsiad pożyczył aparat bratu. Mam paragon, ale rozumiem, że teraz będziesz pyt…”
+- **OBOK** 2.1: „Co się stało bratu?” -> „Teo, Teodor Halm, ortopedia. Noga w gipsie, rower. Twierdzi, że nie jego wina. Brzmi znajo…”
+- **OBOK** 2.1.1: „Można z nim potwierdzić aparat?” -> „Teraz? W szpitalu? Słuchaj, mam paragon, właśnie po to go przyniosłam, żeby nie budzić cho…”
+- **LUZNE** 2.1.1: dopytanie „Można z nim potwierdzić aparat?” nie zaczepia się o: „…Twierdzi, że nie jego wina. Brzmi znajomo?”
+- **OBOK** 2.2: „Kiedy zorientowałaś się, że go nie masz?” -> „Po wyjściu. Ramię lżejsze, pasek został na siedzeniu. Nie trzeba do tego śledztwa.…”
+- **LUZNE** 2.2: dopytanie „Kiedy zorientowałaś się, że go nie masz?” nie zaczepia się o: „…Rozmawiałam z lekarzem brata, nie sprawdzałam godziny. Człowiek słyszy o szpitalu i zapomina o rzeczach.”
+- **PROZNIA** 2.2.1: dopytanie „Wróciłaś na pętlę?” nie zaczepia się o: „…Ramię lżejsze, pasek został na siedzeniu. Nie trzeba do tego śledztwa.”
+- **OBOK** 3: „Co dokładnie potwierdza paragon?” -> „Zakup srebrnego aparatu w komisie na Rynku. Cena, data. Mam zdjęcie w telefonie.…”
+- **PROZNIA** 3.1: dopytanie „Jest numer seryjny?” nie zaczepia się o: „…Cena, data. Mam zdjęcie w telefonie.”
+- **LUZNE** 3.1.1: dopytanie „Więc może dotyczyć innego srebrnego aparatu.” nie zaczepia się o: „…W tym komisie najwyraźniej nie wpisali. Ja nie drukuję ich paragonów.”
+- **OBOK** 3.2.1: „Kto ma oryginał?” -> „Brat. Nie mam przy sobie całej szuflady jego dokumentów. Miało wystarczyć potwierdzenie za…”
+- **LUZNE** 3.2.1: dopytanie „Kto ma oryginał?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Bo telefon mam przy sobie. Papier po dwóch latach wygląda gorzej, a zdjęcie da się powiększyć.”
+- **OBOK** 4.1: „Skoro nie widziałaś, skąd wiesz, że nieważne?” -> „Powiedziałam „pewnie”. Ludzie robią zdjęcia na wakacjach. To nie jest tajna informacja.…”
+- **LUZNE** 4.1.1: dopytanie „Aparat jest potrzebny czy właśnie film?” nie zaczepia się o: „…Ludzie robią zdjęcia na wakacjach. To nie jest tajna informacja.”
+- **OBOK** 4.2.1: „To czemu mówisz, że nic ważnego?” -> „Dla niego ważne. Dla biura nie. Nie każde rodzinne zdjęcie trzeba oglądać przez lupę.…”
+- **LUZNE** 4.2.1: dopytanie „To czemu mówisz, że nic ważnego?” nie zaczepia się o: „…Mieszka daleko, lubi papierowe zdjęcia. Nie zrobi tego bez filmu, prawda?”
+- **OBOK** 5: „Dlaczego musi wrócić dziś?” -> „Brat czeka. Jeśli mam drugi raz jechać do szpitala, wolę z tym, po co mnie wysłał.…”
+- **OBOK** 5.1: „Co się stanie, jeśli poczeka?” -> „Ja stracę kolejny wieczór, on będzie dzwonił. Nie wszystkim płacą za siedzenie przy szybie…”
+- **LUZNE** 5.1: dopytanie „Co się stanie, jeśli poczeka?” nie zaczepia się o: „…Brat czeka. Jeśli mam drugi raz jechać do szpitala, wolę z tym, po co mnie wysłał.”
+- **LUZNE** 5.1.1: dopytanie „Bez potwierdzenia numeru aparat może zostać w depozycie.” nie zaczepia się o: „…Ja stracę kolejny wieczór, on będzie dzwonił. Nie wszystkim płacą za siedzenie przy szybie.”
+- **OBOK** 5.2: „Może przyjść ktoś inny z potwierdzeniem?” -> „Po to przyszłam ja. Jeśli sprowadzisz całą rodzinę, nadal będziecie patrzeć na ten sam par…”
+- **PROZNIA** 5.2: dopytanie „Może przyjść ktoś inny z potwierdzeniem?” nie zaczepia się o: „…Brat czeka. Jeśli mam drugi raz jechać do szpitala, wolę z tym, po co mnie wysłał.”
+- **OBOK** 5.2.1: „A właściciel z dokumentem zawierającym numer?” -> „Powiem bratu, czego żądasz. Ale nie obiecuję, że nagle pojawi się papier, którego komis ni…”
+- **LUZNE** 5.2.1: dopytanie „A właściciel z dokumentem zawierającym numer?” nie zaczepia się o: „…Po to przyszłam ja. Jeśli sprowadzisz całą rodzinę, nadal będziecie patrzeć na ten sam paragon.”
+- **OBOK** 6: „Co mam zapisać jako podstawę wydania?” -> „Paragon i mój odbiór. Bree Halm. Słuchaj, przecież nie zakrywam twarzy.…”
+- **LUZNE** 6.1: dopytanie „Odbierasz własny aparat czy w cudzym imieniu?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Bree Halm. Słuchaj, przecież nie zakrywam twarzy.”
+- **PROZNIA** 6.1.1: dopytanie „Masz od niego upoważnienie?” nie zaczepia się o: „…Mówiłam od wejścia. Nie będę teraz twierdzić, że chodzi o mój.”
+- **OBOK** 6.2: „Co, jeśli zgłosi się inny właściciel?” -> „Pokażesz, komu wydano. Po to zapisujesz nazwisko. Nie każesz chyba każdej rzeczy czekać na…”
+- **LUZNE** 6.2: dopytanie „Co, jeśli zgłosi się inny właściciel?” nie zaczepia się o: „…Bree Halm. Słuchaj, przecież nie zakrywam twarzy.”
+- **OBOK** 6.2.1: „Zgadzasz się wrócić wyjaśnić?” -> „Jeśli naprawdę ktoś przyjdzie, nie jeśli komuś wyda się podobna. Słuchaj, zostawmy choć ty…”
+- **PROZNIA** 6.2.1: dopytanie „Zgadzasz się wrócić wyjaśnić?” nie zaczepia się o: „…Po to zapisujesz nazwisko. Nie każesz chyba każdej rzeczy czekać na wszystkich mieszkańców.”
+- **OBOK** 7: „Pod klapką jest „R.O.”. Czyje inicjały?” -> „Raf Okoye, sąsiad. Pożyczył bratu. Paragon nadal mam, to przecież nie znika tylko dlatego,…”
+- **OBOK** 7.1: „Na pasku klucz do lokalu Okoye. Kto naprawdę cię przysłał?” -> „Ktoś płaci za odbiór. Tyle powiem. Nie pytam, co jest na kliszy, i nie będę zgadywać za ci…”
+- **LUZNE** 7.1: dopytanie „Na pasku klucz do lokalu Okoye. Kto naprawdę cię przysłał?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Pożyczył bratu. Paragon nadal mam, to przecież nie znika tylko dlatego, że ktoś coś wydrapał.”
+- **LUZNE** 7.1.1: dopytanie „Czyli paragon nie dowodzi prawa do tego aparatu.” nie zaczepia się o: „…Tyle powiem. Nie pytam, co jest na kliszy, i nie będę zgadywać za ciebie.”
 
 ## d9_iris (dzień 9, Iris Bell i Victor Crane, drzewo)
 
-- **LUZNE** 1.1: dopytanie „Co znaczą numery na tych żetonach?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Pięć sztuk, nic więcej. Nudy, kochanie.”
-- **OBOK** 1.2: „Czyje to skrzynki?” -> „Moich lokatorów. Nazwisk nie podam, to ich sprawa. Są ludzie, którzy chcą mieć po prostu ś…”
-- **LUZNE** 1.2: dopytanie „Czyje to skrzynki?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Pięć sztuk, nic więcej. Nudy, kochanie.”
-- **OBOK** 2: „Czego chce od piórnika inspekcja?” -> „Numeru odbioru i podpisu. Kto to podpisze? Pokwitowanie w dwóch egzemplarzach, jeden idzie…”
-- **OBOK** 2.1: „Co się nie zgadza w księdze?” -> „Numery. Piórnik przyjechał szóstką, a wpisu nie ma. Brakuje też trzech kwitów z zeszłego m…”
-- **PROZNIA** 2.1: dopytanie „Co się nie zgadza w księdze?” nie zaczepia się o: „…Kto to podpisze? Pokwitowanie w dwóch egzemplarzach, jeden idzie do Urzędu.”
-- **OBOK** 2.2: „Co będzie, kiedy piórnik trafi do Urzędu?” -> „Zostanie opisany w protokole. Ktoś ten protokół przeczyta i wyciągnie wnioski. Ja nie wyci…”
-- **OBOK** 2.2.1: „Iris, co ty na to?” -> „Że protokoły czyta więcej osób, niż pan Crane sądzi. A ja nie lubię, jak nazwiska moich lo…”
-- **LUZNE** 2.2.1: dopytanie „Iris, co ty na to?” nie zaczepia się o: „…Ja nie wyciągam. Ja zapisuję.”
-- **OBOK** 3: „Czemu oboje przyszliście po to samo?” -> „Bo żetony przyjechały szóstką, a pan Crane lubi wszystko, co przyjeżdża. Mnie wystarczy, ż…”
-- **PROZNIA** 3.1: dopytanie „Czemu mam wierzyć tobie, a nie jemu?” nie zaczepia się o: „…Bo żetony przyjechały szóstką, a pan Crane lubi wszystko, co przyjeżdża. Mnie wystarczy, że wrócą tam, skąd wyjechały.”
-- **OBOK** 4: „Na odwrocie żetonów są karteczki: „kobieta z walizką”, „matka z synem”. Co to?” -> „Opisy. Żeby goniec wiedział, komu oddać paczkę. Więcej przy panu Crane nie powiem.…”
-- **OBOK** 4.1: „Co jest w tych paczkach?” -> „Papiery na nowe życie. Dla ludzi, których ktoś bije albo ściga. Biorę za to pieniądze i ni…”
-- **LUZNE** 4.2: dopytanie „Piąty żeton, 0809, nie ma opisu. Dla kogo jest?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Żeby goniec wiedział, komu oddać paczkę. Więcej przy panu Crane nie powiem.”
+- **OBOK** 1: „Jak wygląda piórnik?” -> „Metalowy, matowy. Bez kwiatków. Taki nie zwraca niczyjej uwagi, dopóki się nie zgubi.…”
+- **OBOK** 1.1: „Jak jest zamykany?” -> „Na zatrzask. Nie potrzeba kluczyka. Wystarczy nie szarpać.…”
+- **PROZNIA** 1.1: dopytanie „Jak jest zamykany?” nie zaczepia się o: „…Bez kwiatków. Taki nie zwraca niczyjej uwagi, dopóki się nie zgubi.”
+- **OBOK** 1.1.1: „To wystarczy inspekcji do identyfikacji?” -> „Do porównania z magazynem. Nie do ustalenia właściciela. To osobne rubryki.…”
+- **OBOK** 1.2: „Jak wygląda wnętrze?” -> „Dwa przedziały. Żetony mogą się przemieścić, ale przegródka zostaje. Proszę nie wysypywać …”
+- **LUZNE** 1.2: dopytanie „Jak wygląda wnętrze?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Bez kwiatków. Taki nie zwraca niczyjej uwagi, dopóki się nie zgubi.”
+- **OBOK** 1.2.1: „Ile żetonów?” -> „Pięć. To akurat można policzyć bez rozmowy o całej kamienicy.…”
+- **OBOK** 2.1: „Czyje skrzynki?” -> „Moich lokatorów. Nazwisk nie podam. Nie każdy chce, żeby jego sprawy jeździły do Urzędu.…”
+- **OBOK** 2.1.1: „Numery skrzynek też są tajne?” -> „Same nie. Z nazwiskami już mówią więcej. Dlatego nie układajmy tutaj całego spisu.…”
+- **LUZNE** 2.1.1: dopytanie „Numery skrzynek też są tajne?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Nazwisk nie podam. Nie każdy chce, żeby jego sprawy jeździły do Urzędu.”
+- **OBOK** 2.2: „Po co na żetonach opisy ludzi zamiast numerów mieszkań?” -> „Żeby goniec rozpoznał odbiorcę paczki. „Kobieta z walizką” wystarczy, nie trzeba czytać na…”
+- **OBOK** 2.2.1: „Co jest w paczkach?” -> „Papiery na nowe życie. Dla ludzi, których ktoś bije albo ściga. Pobieram opłatę, nie udaję…”
+- **OBOK** 2.2.1.1: „Tego też będzie dotyczył protokół?” -> „Zapiszę to, co zostało powiedziane, z podaniem źródła. Nie potwierdzę jednym podpisem całe…”
+- **LUZNE** 2.2.1.1: dopytanie „Tego też będzie dotyczył protokół?” nie zaczepia się o: „…Dla ludzi, których ktoś bije albo ściga. Pobieram opłatę, nie udaję, że robię to za darmo.”
+- **OBOK** 3: „Czego szuka tutaj inspekcja?” -> „Numeru odbioru i potwierdzenia. Piórnik przyjechał szóstką bez właściwego wpisu. Chcę przy…”
+- **OBOK** 3.1: „Co trafi do Urzędu?” -> „Protokół. Jeden egzemplarz tam, drugi zostaje. Kto to podpisze?…”
+- **PROZNIA** 3.1: dopytanie „Co trafi do Urzędu?” nie zaczepia się o: „…Piórnik przyjechał szóstką bez właściwego wpisu. Chcę przywrócić ciągłość dokumentów.”
+- **WIEDZA** 3.1: „Co trafi do Urzędu?” używa „urz”, a gracz nie musiał tego usłyszeć na tej ścieżce
+- **OBOK** 3.1.1: „Kto będzie go czytał?” -> „Osoby prowadzące dalsze czynności. Nie wybieram ich po nazwiskach przy tym okienku.…”
+- **LUZNE** 3.1.1: dopytanie „Kto będzie go czytał?” nie zaczepia się o: „…Jeden egzemplarz tam, drugi zostaje. Kto to podpisze?”
+- **OBOK** 3.2: „Dlaczego nie chcesz protokołu?” -> „Bo czyta go więcej osób, niż pan Crane zamierza. Potem ktoś niewymieniony w rozmowie wie, …”
+- **PROZNIA** 3.2: dopytanie „Dlaczego nie chcesz protokołu?” nie zaczepia się o: „…Piórnik przyjechał szóstką bez właściwego wpisu. Chcę przywrócić ciągłość dokumentów.”
+- **LUZNE** 3.2.1: dopytanie „Możesz zagwarantować, kto zobaczy numery?” nie zaczepia się o: „…Bo czyta go więcej osób, niż pan Crane zamierza. Potem ktoś niewymieniony w rozmowie wie, na kogo czekać.”
+- **OBOK** 4: „Dlaczego odbiór jest pilny?” -> „Czworo ludzi już ma bilety i czeka na swoją kolej. Nie lubię naciskać, ale ich podróży nie…”
+- **LUZNE** 4.1: dopytanie „A jeśli zostawię piórnik do soboty?” nie zaczepia się o: „…Czworo ludzi już ma bilety i czeka na swoją kolej. Nie lubię naciskać, ale ich podróży nie przełożę jednym zdaniem.”
+- **OBOK** 4.1.1: „Nie możesz przekazać paczek bez żetonów?” -> „Żetony służą właśnie temu, żeby nie wydawać na ładną opowieść. Tobie powinno to być bliski…”
+- **LUZNE** 4.1.1: dopytanie „Nie możesz przekazać paczek bez żetonów?” nie zaczepia się o: „…Jedna rodzina jedzie jutro o 5:40. W sobotę będzie można bardzo spokojnie wyjaśnić, dlaczego nie pojechała.”
+- **PROZNIA** 4.2: dopytanie „Możesz sprawdzić i od razu zwrócić?” nie zaczepia się o: „…Czworo ludzi już ma bilety i czeka na swoją kolej. Nie lubię naciskać, ale ich podróży nie przełożę jednym zdaniem.”
+- **OBOK** 4.2.1: „Wydanie po spisaniu ci wystarczy?” -> „Dostanę piórnik. Ludzie dostaną ryzyko, o którym ich nie uprzedziłam. To nie jest ten sam …”
+- **PROZNIA** 4.2.1: dopytanie „Wydanie po spisaniu ci wystarczy?” nie zaczepia się o: „…Sprawdzenie tworzy zapis. Jeśli ktoś liczy, że po obejrzeniu zapomnę numery, niech nie nazywa tego kontrolą.”
+- **OBOK** 5: „Co da jeden egzemplarz zamiast dwóch?” -> „Potwierdzi czynność tutaj. Nie zakończy pełnego obiegu. Zapiszę również, dlaczego drugiego…”
+- **LUZNE** 5.1: dopytanie „Uznasz to za odmowę współpracy?” nie zaczepia się o: „…Nie zakończy pełnego obiegu. Zapiszę również, dlaczego drugiego nie otrzymałem.”
+- **LUZNE** 5.1.1: dopytanie „Możesz na tym poprzestać?” nie zaczepia się o: „…Za ograniczoną współpracę. Słowa mają znaczenie, nawet kiedy wynik ci się nie podoba.”
+- **LUZNE** 5.2: dopytanie „Czy taki kompromis ci odpowiada?” nie zaczepia się o: „…Nie zakończy pełnego obiegu. Zapiszę również, dlaczego drugiego nie otrzymałem.”
+- **OBOK** 5.2.1: „Wolisz więc brak jakiegokolwiek zapisu?” -> „Wolę dostać rzecz. Wpis staje się moją sprawą wtedy, kiedy kogoś po nim znajdą.…”
+- **PROZNIA** 5.2.1: dopytanie „Wolisz więc brak jakiegokolwiek zapisu?” nie zaczepia się o: „…Pan Crane ma podpis, ja nadal nie mam piórnika. Czasem kompromis oznacza tylko, że obie strony stoją dłużej.”
+- **OBOK** 6: „Co masz z pomagania tym ludziom?” -> „Opłatę za pracę i kłopoty, których nie biorą na siebie inni. Nie przyszłam po odznakę za d…”
+- **OBOK** 6.1: „A jeśli ktoś nie ma pieniędzy?” -> „Wtedy jest trudniej. Nie będę obiecywać przy inspektorze, że wszystkim wszystko załatwię.…”
+- **LUZNE** 6.1: dopytanie „A jeśli ktoś nie ma pieniędzy?” nie zaczepia się o: „…Opłatę za pracę i kłopoty, których nie biorą na siebie inni. Nie przyszłam po odznakę za dobroć.”
+- **LUZNE** 6.1.1: dopytanie „Księga to pokaże?” nie zaczepia się o: „…Wtedy jest trudniej. Nie będę obiecywać przy inspektorze, że wszystkim wszystko załatwię.”
+- **OBOK** 6.2: „Można ci odmówić bez utraty twojej pomocy?” -> „Można. Tylko konsekwencje odmowy też są prawdziwe. Nie wymyśliłam odjazdu o 5:40 na potrze…”
+- **PROZNIA** 6.2: dopytanie „Można ci odmówić bez utraty twojej pomocy?” nie zaczepia się o: „…Opłatę za pracę i kłopoty, których nie biorą na siebie inni. Nie przyszłam po odznakę za dobroć.”
+- **OBOK** 6.2.1: „Kto wtedy odpowiada przed czekającymi?” -> „Ja. I powiem im dokładnie, gdzie piórnik został. Bez ozdabiania.…”
+- **LUZNE** 6.2.1: dopytanie „Kto wtedy odpowiada przed czekającymi?” nie zaczepia się o: „…Tylko konsekwencje odmowy też są prawdziwe. Nie wymyśliłam odjazdu o 5:40 na potrzeby tej rozmowy.”
+- **OBOK** 7: „Co oznaczają opisy na odwrocie pięciu żetonów?” -> „Odbiorców paczek z papierami. Czterech opisanych, piąty czeka. Przy panu Crane nie podam n…”
+- **OBOK** 10: „Poprzednia paczka została zatrzymana. Co z jej odbiorcami?” -> „Nadal pytają. Nie podałam im twoich domysłów, podałam adres biura. Dziś wolałabym nie dopi…”
 
 ## d9_stahl (dzień 9, Marek Stahl, ok. 50, drzewo)
 
-- **LUZNE** 1.1: dopytanie „Jest w nim metka producenta?” nie zaczepia się o: „…Szary, filcowy, granatowa wstążka, rozmiar pięćdziesiąt osiem. Zgodnie z regulaminem podaję wszystko od razu.”
-- **LUZNE** 1.2: dopytanie „Jakieś inicjały w środku?” nie zaczepia się o: „…Szary, filcowy, granatowa wstążka, rozmiar pięćdziesiąt osiem. Zgodnie z regulaminem podaję wszystko od razu.”
-- **LUZNE** 2.1: dopytanie „Na pewno sam?” nie zaczepia się o: „…Wczoraj, czwórka, około dwudziestej drugiej. Siedziałem sam, kapelusz leżał na półce nad oknem.”
-- **OBOK** 2.2: „O dwudziestej drugiej? Dokąd jechałeś?” -> „Do domu. Z kancelarii. Dużo ostatnio pracuję przy cudzych papierach.…”
-- **OBOK** 2.2.1: „Przy czyich papierach?” -> „Tego regulamin nie każe mi podawać. A czego nie każe, tego nie podaję. Dobra zasada, polec…”
-- **OBOK** 3.2: „A jeśli kapelusz zostanie u nas?” -> „To odejdę. Ale nie od razu. Postoję chwilę, jeśli wolno. Lubię patrzeć, jak ktoś pracuje. …”
-- **OBOK** 4.1: „Po co to sprawdzasz? Dla kogo?” -> „Dla siebie. I dla ludzi, którzy płacą za wiedzę, jak pracuje nocna zmiana. Proszę się nie …”
-- **LUZNE** 4.1: dopytanie „Po co to sprawdzasz? Dla kogo?” nie zaczepia się o: „…Kapelusz nie jest mój. Chciałem zobaczyć, czy to okienko wyda rzecz za sam ładny opis.”
+- **OBOK** 1: „Jak wygląda kapelusz?” -> „Szary filc. Zgodnie z regulaminem zaczynam od materiału i koloru.…”
+- **OBOK** 1.1: „Jaką ma wstążkę?” -> „Granatową, dookoła. Bez piór i innych dodatków.…”
+- **LUZNE** 1.1: dopytanie „Jaką ma wstążkę?” nie zaczepia się o: „…Szary filc. Zgodnie z regulaminem zaczynam od materiału i koloru.”
+- **OBOK** 1.1.1: „Często go nosisz?” -> „Do pracy. Kapelusz porządkuje wygląd, nawet jeśli reszta dnia nie daje się uporządkować.…”
+- **LUZNE** 1.1.1: dopytanie „Często go nosisz?” nie zaczepia się o: „…Granatową, dookoła. Bez piór i innych dodatków.”
+- **PROZNIA** 1.2: dopytanie „Jaki rozmiar?” nie zaczepia się o: „…Szary filc. Zgodnie z regulaminem zaczynam od materiału i koloru.”
+- **OBOK** 1.2.1: „Metka podaje 56, podszewka J.K. Skąd ta pewność?” -> „Z opisu, który przygotowałem. Nie z własnego kapelusza. Dobrze, to nie moja rzecz.…”
+- **LUZNE** 2.1: dopytanie „Ktoś mógł potwierdzić ten przejazd?” nie zaczepia się o: „…Na półce nad oknem, wczoraj około dwudziestej drugiej. Siedziałem sam.”
+- **OBOK** 2.1.1: „Czyli samego przejazdu też nie potwierdzisz?” -> „Podaję godzinę i linię. Zgodnie z regulaminem od czegoś trzeba zacząć.…”
+- **LUZNE** 2.1.1: dopytanie „Czyli samego przejazdu też nie potwierdzisz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Nikt obok nie siedział. Nie prosiłem innych pasażerów o zaświadczenia.”
+- **OBOK** 2.2: „Dokąd wracałeś?” -> „Do domu, z kancelarii. Ostatnio dużo pracy przy cudzych papierach.…”
+- **PROZNIA** 2.2: dopytanie „Dokąd wracałeś?” nie zaczepia się o: „…Na półce nad oknem, wczoraj około dwudziestej drugiej. Siedziałem sam.”
+- **LUZNE** 3.1: dopytanie „Ktoś może potwierdzić, że go nosisz?” nie zaczepia się o: „…Został w domu. Zgłoszenie składam teraz, dokument mogę przynieść później.”
+- **OBOK** 3.1.1: „Można do niej zadzwonić?” -> „O tej porze nie. Proszę zachować proporcje. Kapelusz nie staje się ważniejszy od człowieka…”
+- **LUZNE** 3.1.1: dopytanie „Można do niej zadzwonić?” nie zaczepia się o: „…Jest w delegacji. Nie będziemy jej przecież ściągać dla filcu.”
+- **OBOK** 3.2: „Zgodzisz się odebrać dopiero z potwierdzeniem?” -> „Jeśli tak tutaj postanowisz. Interesuje mnie, czy tak samo postępujesz z każdym.…”
+- **PROZNIA** 3.2: dopytanie „Zgodzisz się odebrać dopiero z potwierdzeniem?” nie zaczepia się o: „…Został w domu. Zgłoszenie składam teraz, dokument mogę przynieść później.”
+- **OBOK** 3.2.1: „Dlaczego interesują cię inni?” -> „Bo zasada, która działa raz, a raz nie, jest czyimś nastrojem. Regulamin powinien być trwa…”
+- **OBOK** 4.1: „Do rozmowy potrzebny kapelusz?” -> „Pierwsze wrażenie. Zanim zacznie się sprawdzanie dokumentów, człowiek już kogoś ocenił.…”
+- **OBOK** 4.1.1: „Na moje wrażenie też liczysz?” -> „Każdy, kto się przedstawia, na coś liczy. Ja przynajmniej mówię spokojnie.…”
+- **OBOK** 4.2: „Możesz wziąć inny?” -> „Mógłbym. Przyszedłem jednak zgłosić ten. W biurze rzeczy znalezionych to chyba wystarczają…”
+- **PROZNIA** 4.2: dopytanie „Możesz wziąć inny?” nie zaczepia się o: „…Jutro ważna rozmowa. Żona twierdzi, że bez kapelusza wyglądam nieprzekonująco.”
+- **OBOK** 4.2.1: „A jeśli się nie znajdzie?” -> „Rozmowa się odbędzie. Strata kapelusza nie zwalnia z obowiązków, zgodnie z regulaminem i b…”
+- **LUZNE** 4.2.1: dopytanie „A jeśli się nie znajdzie?” nie zaczepia się o: „…Przyszedłem jednak zgłosić ten. W biurze rzeczy znalezionych to chyba wystarczający powód.”
+- **OBOK** 5: „Skąd tak dobrze znasz regulamin?” -> „Czytam, zanim czegoś żądam. Dzięki temu oszczędzam czas osobie po drugiej stronie.…”
+- **OBOK** 5.1: „Która zasada dotyczy opisu?” -> „Że powinien pozwolić rozpoznać przedmiot. Nie pamiętam numeru punktu. Sens jest ważniejszy…”
+- **LUZNE** 5.1: dopytanie „Która zasada dotyczy opisu?” nie zaczepia się o: „…Czytam, zanim czegoś żądam. Dzięki temu oszczędzam czas osobie po drugiej stronie.”
+- **OBOK** 5.1.1: „A rozpoznanie oznacza prawo do odebrania?” -> „To właśnie powinno być jasno rozstrzygnięte. Podobają mi się takie pytania.…”
+- **LUZNE** 5.1.1: dopytanie „A rozpoznanie oznacza prawo do odebrania?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Nie pamiętam numeru punktu. Sens jest ważniejszy od numeru.”
+- **OBOK** 5.2: „Co, jeśli opis pasuje tylko z zewnątrz?” -> „Wtedy pytasz o środek. O ile wcześniej nie pokazujesz środka pytaniem. Inaczej każdy staje…”
+- **LUZNE** 5.2: dopytanie „Co, jeśli opis pasuje tylko z zewnątrz?” nie zaczepia się o: „…Czytam, zanim czegoś żądam. Dzięki temu oszczędzam czas osobie po drugiej stronie.”
+- **PROZNIA** 5.2.1: dopytanie „Skąd wiesz, że tutaj tak sprawdzamy?” nie zaczepia się o: „…O ile wcześniej nie pokazujesz środka pytaniem. Inaczej każdy staje się właścicielem.”
+- **OBOK** 6: „Co zrobisz po odmowie?” -> „Odejdę. Ale może postoję chwilę, jeśli wolno. Lubię popatrzeć, jak pracuje nowe okienko.…”
+- **OBOK** 6.1: „Na co chcesz patrzeć?” -> „Na kolejność. Kto mówi, kto pyta, kiedy otwiera się księga. Drobiazgi zdradzają organizacj…”
+- **PROZNIA** 6.1: dopytanie „Na co chcesz patrzeć?” nie zaczepia się o: „…Ale może postoję chwilę, jeśli wolno. Lubię popatrzeć, jak pracuje nowe okienko.”
+- **OBOK** 6.1.1: „Ktoś ci za to płaci?” -> „Zadajesz coraz ciekawsze pytania. Na to przy zgłoszeniu kapelusza nie muszę odpowiadać.…”
+- **LUZNE** 6.1.1: dopytanie „Ktoś ci za to płaci?” nie zaczepia się o: „…Kto mówi, kto pyta, kiedy otwiera się księga. Drobiazgi zdradzają organizację pracy.”
+- **PROZNIA** 6.2: dopytanie „Nie przeszkadza ci kolejka?” nie zaczepia się o: „…Ale może postoję chwilę, jeśli wolno. Lubię popatrzeć, jak pracuje nowe okienko.”
+- **OBOK** 6.2.1: „A jeśli poproszę, żebyś wyszedł?” -> „Wyjdę. Też warto wiedzieć, gdzie kończy się cierpliwość do uprzejmej rozmowy.…”
+- **LUZNE** 6.2.1: dopytanie „A jeśli poproszę, żebyś wyszedł?” nie zaczepia się o: „…Stanę z boku. Jeśli to niedozwolone, proszę wskazać zasadę.”
+- **OBOK** 7.1: „Dla kogo to sprawdzasz?” -> „Dla siebie i ludzi, którzy płacą za wiedzę o nocnej zmianie. Nazwisk nie podam, zgodnie z …”
+- **OBOK** 7.2: „Co o tym okienku im powiesz?” -> „Że trzeba znać więcej niż wstążkę. Resztę jeszcze obserwuję.…”
+- **LUZNE** 7.2: dopytanie „Co o tym okienku im powiesz?” nie zaczepia się o: „…Sprawdzałem, czy dobry opis wystarczy do wydania. Nie wystarczył, jak widzę.”
 
 ## d10_vera (dzień 10, Vera Kovacs, 62, drzewo)
 
-- **OBOK** 1: „Jak wygląda to pudełko?” -> „Blaszane, na sprzączkę. Na wieczku wgniecenie, bo raz na nim usiadłam w poczekalni. Zapina…”
-- **OBOK** 1.1: „Co jest w środku?” -> „Pasek od zegarka i kartka z inwentarza. Nic, co miałoby cenę.…”
-- **LUZNE** 1.1: dopytanie „Co jest w środku?” nie zaczepia się o: „…Na wieczku wgniecenie, bo raz na nim usiadłam w poczekalni. Zapina się z oporem.”
-- **OBOK** 2: „Gdzie dokładnie je zgubiłaś?” -> „W jedenastce, wczoraj, ostatni kurs. Położyłam obok siebie i wysiadłam bez niego. Zoriento…”
-- **LUZNE** 2.1: dopytanie „Po co wozisz do domu pudełko z cudzej szafki?” nie zaczepia się o: „…Położyłam obok siebie i wysiadłam bez niego. Zorientowałam się, bo klucze dzwoniły, a ręce miałam puste.”
-- **OBOK** 3: „Kim był dla ciebie Sam Holt?” -> „Kolegą z nocy. Siedział przy tej szybie, ja zamykałam zaplecze. Odszedł ponad miesiąc temu…”
-- **OBOK** 3.1: „Dlaczego akurat ty?” -> „Bo mnie prosił. Powiedział: trzymaj, aż wrócę. Dopóki szafka jest zajęta, nikt jej nie lik…”
-- **LUZNE** 3.1: dopytanie „Dlaczego akurat ty?” nie zaczepia się o: „…Odszedł ponad miesiąc temu, bez słowa. Tylko ja jeszcze pilnuję jego szafki.”
-- **OBOK** 3.2.1.1: „Dokąd pisałaś? Masz jego adres?” -> „Tego nie powiem nikomu, kto siedzi na jego krześle krócej niż miesiąc. Bez obrazy.…”
-- **LUZNE** 3.2.1.1: dopytanie „Dokąd pisałaś? Masz jego adres?” nie zaczepia się o: „…On nigdy nie odpisuje, on przychodzi. To znaczy, powinien przyjść.”
-- **LUZNE** 4.1: dopytanie „Na wieczku ktoś napisał: „Teczka jest pusta. Tak ma być”. O jaką teczkę chodzi?” nie zaczepia się o: „…Klucz dostałam od Sama i zostawiłam w tej szufladzie, żeby następny nie musiał go szukać. Czyli żeby nie musiało szukać to, co teraz siedzi na jego krześle.”
+- **OBOK** 1: „Jak rozpoznać pudełko?” -> „Z zaplecza, blaszane. Nie drewniane. Na drewnie przynajmniej człowiek by się wahał, zanim …”
+- **OBOK** 1.1: „Jaki ma kształt?” -> „Niskie, prostokątne. Mieściło się w szafce Sama. Nie jest to wielka skrzynia z warsztatu.…”
+- **PROZNIA** 1.1: dopytanie „Jaki ma kształt?” nie zaczepia się o: „…Nie drewniane. Na drewnie przynajmniej człowiek by się wahał, zanim usiądzie.”
+- **OBOK** 1.1.1: „Jak się zamyka?” -> „Na sprzączkę, z oporem. Proszę docisnąć wieko, nie ciągnąć za blachę.…”
+- **PROZNIA** 1.1.1: dopytanie „Jak się zamyka?” nie zaczepia się o: „…Mieściło się w szafce Sama. Nie jest to wielka skrzynia z warsztatu.”
+- **OBOK** 1.2: „Ma jakiś ślad?” -> „Wgniecenie na wieczku. Usiadłam na nim w poczekalni. To akurat mogę poświadczyć osobiście.…”
+- **PROZNIA** 1.2: dopytanie „Ma jakiś ślad?” nie zaczepia się o: „…Nie drewniane. Na drewnie przynajmniej człowiek by się wahał, zanim usiądzie.”
+- **OBOK** 1.2.1: „Sam wiedział o wgnieceniu?” -> „To nie jest rzecz, którą łatwo ukryć. Gorzej mi powiedzieć, że je teraz zgubiłam, niż że n…”
+- **LUZNE** 1.2.1: dopytanie „Sam wiedział o wgnieceniu?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Usiadłam na nim w poczekalni. To akurat mogę poświadczyć osobiście.”
+- **OBOK** 2.1: „Po co zabrałaś je z szafki?” -> „Żeby nie wyrzucono. Zaplecze nie jest przechowalnią, tak mówią. Sam nie wrócił, więc rzecz…”
+- **LUZNE** 2.1: dopytanie „Po co zabrałaś je z szafki?” nie zaczepia się o: „…Klucze miałam przy pasie, ręce po wyjściu puste. Wtedy zauważyłam.”
+- **OBOK** 2.1.1: „Zabranie bez niego nie robi z nich twoich.” -> „Wiem. Dlatego od wejścia mówię, czyje. Nie chcę podpisywać się za właściciela.…”
+- **OBOK** 2.2: „Dlaczego nie zostawiłaś go w zajezdni?” -> „Szafkę zamykają w przyszły piątek. Potem zbiorcze archiwum. Chciałam mieć co mu oddać, kie…”
+- **LUZNE** 2.2: dopytanie „Dlaczego nie zostawiłaś go w zajezdni?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Klucze miałam przy pasie, ręce po wyjściu puste. Wtedy zauważyłam.”
+- **OBOK** 3: „Kim jest dla ciebie Sam?” -> „Kolegą z nocy. On przy szybie, ja na zapleczu. Człowiek wie, gdzie pali się drugie światło…”
+- **OBOK** 3.1: „Kiedy odszedł?” -> „Ponad miesiąc temu. Bez pożegnania. Szafka została, więc nie wyglądało to od razu jak koni…”
+- **PROZNIA** 3.1: dopytanie „Kiedy odszedł?” nie zaczepia się o: „…On przy szybie, ja na zapleczu. Człowiek wie, gdzie pali się drugie światło.”
+- **OBOK** 3.1.1: „Dalej jej pilnujesz?” -> „Dopóki mogę. Przy zamykaniu przechodzę obok. Czasem sprawdzam, czy nic się nie zmieniło, c…”
+- **LUZNE** 3.1.1: dopytanie „Dalej jej pilnujesz?” nie zaczepia się o: „…Bez pożegnania. Szafka została, więc nie wyglądało to od razu jak koniec.”
+- **OBOK** 3.2: „Dlaczego zostawił ci rzeczy?” -> „Prosił, żebym trzymała, aż wróci. Nie podał dnia. Teraz każdy chce ode mnie daty, której n…”
+- **PROZNIA** 3.2: dopytanie „Dlaczego zostawił ci rzeczy?” nie zaczepia się o: „…On przy szybie, ja na zapleczu. Człowiek wie, gdzie pali się drugie światło.”
+- **OBOK** 3.2.1: „Dlaczego się zgodziłaś?” -> „Bo to było łatwe zdanie: „potrzymasz?”. Trudne zrobiło się później.…”
+- **PROZNIA** 3.2.1: dopytanie „Dlaczego się zgodziłaś?” nie zaczepia się o: „…Nie podał dnia. Teraz każdy chce ode mnie daty, której nie dostałam.”
+- **OBOK** 4: „Co jest w pudełku?” -> „Pasek od zegarka, bez tarczy, i karta inwentarza. Nic, co ktoś kupi na straganie.…”
+- **PROZNIA** 4.1.1: dopytanie „Sam nie powiedział?” nie zaczepia się o: „…Nie wiem. Nie wyrzucam rzeczy kolegi dlatego, że nie umiem wyjaśnić każdej z osobna.”
+- **OBOK** 4.2: „Czego dotyczy karta?” -> „Inwentarza szuflady. Numer jest na niej. Wolę odczytać, niż pomylić i zrobić nowy problem.…”
+- **OBOK** 5: „Co stanie się po zamknięciu szafki?” -> „Rzeczy pójdą do zbiorczego archiwum Urzędu. Dalej będę miała numer, ale nie będę miała pud…”
+- **OBOK** 5.1: „Sam nie może odebrać z archiwum?” -> „Może próbować. Najpierw będzie musiał dowiedzieć się, pod czym zapisali. Nie chcę mu zosta…”
+- **LUZNE** 5.1.1: dopytanie „To dlatego wyniosłaś pudełko?” nie zaczepia się o: „…Najpierw będzie musiał dowiedzieć się, pod czym zapisali. Nie chcę mu zostawić samej kolejki do następnego okienka.”
+- **OBOK** 5.2: „Co napisałaś Samowi?” -> „Że szafkę zamykają w piątek. Że ma przyjść po swoje. Bez wyrzutów, choć pierwszą kartkę wy…”
+- **PROZNIA** 5.2: dopytanie „Co napisałaś Samowi?” nie zaczepia się o: „…Rzeczy pójdą do zbiorczego archiwum Urzędu. Dalej będę miała numer, ale nie będę miała pudełka.”
+- **OBOK** 5.2.1: „Co było na pierwszej?” -> „Żeby wreszcie się odezwał. Nie wysłałam. Nie chcę, żeby bał się przyjść jeszcze bardziej.…”
+- **OBOK** 6: „Co chcesz ode mnie dla Sama?” -> „Żeby jego rzeczy zostały jego rzeczami. Osobistymi, nie zbiorczą pozostałością po dyżurnym…”
+- **OBOK** 6.1.1: „A jeśli upomni się Urząd?” -> „Powiem, skąd je wzięłam. Nie będę opowiadać, że samo wyszło z szafki.…”
+- **LUZNE** 6.1.1: dopytanie „A jeśli upomni się Urząd?” nie zaczepia się o: „…Vera Kovacs. Nie podpiszę, że pudełko moje.”
+- **OBOK** 6.2: „Komu powiedzieć o planowanym powrocie?” -> „Sam ma dostać wiadomość. Reszcie nie obiecuj za niego. Może nie chce wejść do pomieszczeni…”
+- **PROZNIA** 6.2: dopytanie „Komu powiedzieć o planowanym powrocie?” nie zaczepia się o: „…Żeby jego rzeczy zostały jego rzeczami. Osobistymi, nie zbiorczą pozostałością po dyżurnym.”
+- **PROZNIA** 6.2.1: dopytanie „Boisz się, że nie wróci przez nas?” nie zaczepia się o: „…Reszcie nie obiecuj za niego. Może nie chce wejść do pomieszczenia pełnego czekających ludzi.”
+- **OBOK** 7: „Karta wskazuje szufladę numer sześć z naszego biura. Dlaczego?” -> „Należała do Sama. Klucz zostawiłam w niej dla następnej osoby przy szybie. Żeby nie trzeba…”
+- **OBOK** 7.1: „Dlaczego klucz został właśnie w szufladzie?” -> „Zostawiłam go dla następnej osoby przy szybie. Nie pomyślałam, że bez opisu będzie wygląda…”
+- **LUZNE** 7.2: dopytanie „Na wieku jest „Teczka jest pusta. Tak ma być”. Co to znaczy?” nie zaczepia się o: „…Klucz zostawiłam w niej dla następnej osoby przy szybie. Żeby nie trzeba było zaczynać od szukania.”
+- **OBOK** 7.2.1.1: „A jeśli ktoś weźmie to za twoje potwierdzenie?” -> „To proszę dopisać: Vera nie wie. Niech chociaż jedno zdanie o mnie będzie dokładne.…”
+- **LUZNE** 7.2.1.1: dopytanie „A jeśli ktoś weźmie to za twoje potwierdzenie?” nie zaczepia się o: „…Dlatego mówię, że są jego. Gorzej byłoby dopowiedzieć coś od siebie, żeby brzmiało pewniej.”
 
 ## d10_dario (dzień 10, Dario Ruiz, 29, drzewo)
 
-- **OBOK** 1: „Jak wygląda ten zeszyt?” -> „Gruby, okładka tłusta, bo noszę go razem z kanapką. Gumka ledwo trzyma. Pachnie cebulą, up…”
-- **OBOK** 1.1: „Co w nim jest oprócz grafiku?” -> „Przepisy na zupy i numery telefonów. I parę długów, cudzych. Chcesz kanapkę? Mam drugą.…”
-- **LUZNE** 1.1: dopytanie „Co w nim jest oprócz grafiku?” nie zaczepia się o: „…Gumka ledwo trzyma. Pachnie cebulą, uprzedzam.”
-- **OBOK** 1.1.1: „Czyje to długi?” -> „O nie. Kto mi wisi, wie on i ja. Jakbym rozpowiadał, nikt by u mnie więcej nie pożyczył.…”
-- **LUZNE** 1.1.1: dopytanie „Czyje to długi?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Chcesz kanapkę? Mam drugą.”
-- **OBOK** 2: „Gdzie go zgubiłeś?” -> „W jedenastce, na pętli, jak jadłem. Położyłem zeszyt obok kanapki. Kanapkę zjadłem, a zesz…”
-- **OBOK** 3: „Pytałeś o Sama. Kim on dla ciebie jest?” -> „Kolegą. Siedział przy tym okienku przed tobą. Zawsze miał dla mnie herbatę i dobre słowo. …”
-- **OBOK** 3.1: „Od kiedy go nie ma?” -> „Ponad miesiąc. Powiedział, że idzie do portu coś załatwić. Potem przestał odbierać telefon…”
-- **LUZNE** 3.1.1: dopytanie „Co miał do załatwienia w porcie?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Potem przestał odbierać telefon. Pytam po całej zajezdni.”
-- **OBOK** 3.2: „Czemu pytasz akurat tutaj?” -> „Bo to jego miejsce. Jak ktoś ma coś wiedzieć, to ten, kto siedzi na jego krześle.…”
-- **LUZNE** 3.2: dopytanie „Czemu pytasz akurat tutaj?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Zawsze miał dla mnie herbatę i dobre słowo. Teraz go nie ma i nikt nie wie, gdzie jest.”
-- **OBOK** 3.2.1: „A jak nikt ci nie odpowie?” -> „To będę pytał dalej. Aż ktoś powie albo aż mi się znudzi. To drugie mi się nie zdarza.…”
-- **LUZNE** 3.2.1: dopytanie „A jak nikt ci nie odpowie?” nie zaczepia się o: „…Bo to jego miejsce. Jak ktoś ma coś wiedzieć, to ten, kto siedzi na jego krześle.”
+- **OBOK** 1: „Jak rozpoznać zeszyt?” -> „Okładka tłusta. Nosiłem razem z kanapką. Pachnie cebulą, uprzedzam, żeby nie było reklamac…”
+- **LUZNE** 1.1: dopytanie „Jaki gruby?” nie zaczepia się o: „…Nosiłem razem z kanapką. Pachnie cebulą, uprzedzam, żeby nie było reklamacji.”
+- **OBOK** 1.1.1: „Przepisy między dyżurami?” -> „Jak ktoś opowiada dobrą zupę, zapisuję tam, gdzie mam papier. Dyżur potem łatwiej znaleźć,…”
+- **OBOK** 1.2: „Czym się zamyka?” -> „Gumką, ledwo trzymającą. Bez niej kartki się rozchodzą. Nie ciągnij za mocno, bo zostanie …”
+- **PROZNIA** 1.2: dopytanie „Czym się zamyka?” nie zaczepia się o: „…Nosiłem razem z kanapką. Pachnie cebulą, uprzedzam, żeby nie było reklamacji.”
+- **OBOK** 1.2.1: „Są luźne kartki?” -> „Trochę. Dlatego ta gumka. Gdyby coś wypadło, też poproszę, nawet jeśli wygląda jak lista z…”
+- **OBOK** 2: „Gdzie został w jedenastce?” -> „Na pętli, obok kanapki. Kanapkę zjadłem, zeszyt pojechał dalej. Ręce wykonały połowę zadan…”
+- **OBOK** 2.1: „Nie zauważyłeś, że go nie niesiesz?” -> „Miałem drugą kanapkę. Jedzenie mnie zajmuje. Masz, weź, jeszcze jest dobra.…”
+- **LUZNE** 2.1: dopytanie „Nie zauważyłeś, że go nie niesiesz?” nie zaczepia się o: „…Kanapkę zjadłem, zeszyt pojechał dalej. Ręce wykonały połowę zadania.”
+- **OBOK** 2.1.1: „Próbujesz zapłacić kanapką?” -> „Dzielę się. Jeśli trzeba zapisać, wpisz cebulę. Nie chcę zeszytu bez pokwitowania za kromk…”
+- **LUZNE** 2.1.1: dopytanie „Próbujesz zapłacić kanapką?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Jedzenie mnie zajmuje. Masz, weź, jeszcze jest dobra.”
+- **OBOK** 2.2: „Kto prowadził następny kurs?” -> „Ktoś z naszej zmiany. Właśnie nazwisko sprawdziłbym w zeszycie. Bez niego wszystkich znam …”
+- **PROZNIA** 2.2: dopytanie „Kto prowadził następny kurs?” nie zaczepia się o: „…Kanapkę zjadłem, zeszyt pojechał dalej. Ręce wykonały połowę zadania.”
+- **LUZNE** 2.2.1: dopytanie „Motorniczy nie pamięta grafiku?” nie zaczepia się o: „…Właśnie nazwisko sprawdziłbym w zeszycie. Bez niego wszystkich znam tylko z twarzy.”
+- **OBOK** 3: „Dlaczego pytasz o Sama?” -> „Kolega. Miał tutaj herbatę. Ja przynosiłem kanapki. Teraz nikt nie wie, gdzie go nosi.…”
+- **OBOK** 3.1: „Od kiedy go nie widzisz?” -> „Ponad miesiąc. Powiedział, że idzie do portu coś załatwić. Potem przestał odbierać.…”
+- **LUZNE** 3.1: dopytanie „Od kiedy go nie widzisz?” nie zaczepia się o: „…Ja przynosiłem kanapki. Teraz nikt nie wie, gdzie go nosi.”
+- **OBOK** 3.2: „Bywał u ciebie poza pracą?” -> „Znałem go tutaj. To też jest znajomość. Nie muszę wiedzieć, jaki ma stół w kuchni, żeby za…”
+- **PROZNIA** 3.2: dopytanie „Bywał u ciebie poza pracą?” nie zaczepia się o: „…Ja przynosiłem kanapki. Teraz nikt nie wie, gdzie go nosi.”
+- **OBOK** 3.2.1: „Może po prostu nie chce kontaktu?” -> „Może. Niech powie, odpuszczę. Ciszy nie umiem odróżnić od tego, że coś mu się stało.…”
+- **PROZNIA** 3.2.1: dopytanie „Może po prostu nie chce kontaktu?” nie zaczepia się o: „…To też jest znajomość. Nie muszę wiedzieć, jaki ma stół w kuchni, żeby zauważyć, że go nie ma.”
+- **OBOK** 4: „Gdzie już pytałeś o Sama?” -> „Po zajezdni. Tych, co przychodzą przed świtem, i tych, co wychodzą. Każdy odsyła do następ…”
+- **OBOK** 4.1: „Dlaczego znów przychodzisz do okienka?” -> „Bo to jego miejsce. Ktoś kiedyś zapyta o niego nie mnie, tylko tutaj. Nie chcę przegapić.…”
+- **OBOK** 4.1.1: „Co zrobisz, jeśli nikt nic nie wie?” -> „Wrócę. Kanapki i tak robię. Jedna więcej mnie nie zrujnuje.…”
+- **LUZNE** 4.1.1: dopytanie „Co zrobisz, jeśli nikt nic nie wie?” nie zaczepia się o: „…Ktoś kiedyś zapyta o niego nie mnie, tylko tutaj. Nie chcę przegapić.”
+- **OBOK** 4.2: „Rozpowiadasz wszystko, co usłyszysz?” -> „Jak dobrą wiadomość, to pewnie tak. W zajezdni ludzie też czekają. Złą najpierw sprawdzę.…”
+- **PROZNIA** 4.2: dopytanie „Rozpowiadasz wszystko, co usłyszysz?” nie zaczepia się o: „…Tych, co przychodzą przed świtem, i tych, co wychodzą. Każdy odsyła do następnego.”
+- **OBOK** 4.2.1: „Dobra też może zaszkodzić.” -> „To powiedz, jeśli coś ma zostać przy szybie. Nie czytam z miny tak dobrze, jak z grafiku.…”
+- **LUZNE** 4.2.1: dopytanie „Dobra też może zaszkodzić.” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…W zajezdni ludzie też czekają. Złą najpierw sprawdzę.”
+- **OBOK** 5: „Jak poradzisz sobie bez zeszytu?” -> „Spytam o zmianę, potem o następną. W końcu ktoś powie, że mam przestać pytać i zapisywać. …”
+- **LUZNE** 5.1: dopytanie „Nie możesz mieć osobnej kartki z grafikiem?” nie zaczepia się o: „…W końcu ktoś powie, że mam przestać pytać i zapisywać. No właśnie zapisuję.”
+- **PROZNIA** 5.1.1: dopytanie „Telefon?” nie zaczepia się o: „…Mogę. Tylko osobna kartka zawsze jest w innej kieszeni niż ta, którą sprawdzam.”
+- **OBOK** 5.2: „Co grozi za spóźnienie?” -> „Dodatkowy dyżur, zła mina szefa. Ja to przeżyję, gorzej ktoś, kto czeka na tramwaj do robo…”
+- **PROZNIA** 5.2: dopytanie „Co grozi za spóźnienie?” nie zaczepia się o: „…W końcu ktoś powie, że mam przestać pytać i zapisywać. No właśnie zapisuję.”
+- **PROZNIA** 5.2.1: dopytanie „Możesz od razu zadzwonić po godzinę zmiany?” nie zaczepia się o: „…Dodatkowy dyżur, zła mina szefa. Ja to przeżyję, gorzej ktoś, kto czeka na tramwaj do roboty.”
+- **OBOK** 6: „Co jeszcze w nim zapisujesz?” -> „Numery telefonów, przepisy, cudze długi. Nie wszystko, czego się nie spłaci, warto skreśla…”
+- **OBOK** 6.1: „Prowadzisz rachunki za kanapki?” -> „Jak ktoś mówi „oddaję potem”, zapisuję. Żeby nie musiał się zastanawiać, czy wisi dwa, czy…”
+- **PROZNIA** 6.1: dopytanie „Prowadzisz rachunki za kanapki?” nie zaczepia się o: „…Numery telefonów, przepisy, cudze długi. Nie wszystko, czego się nie spłaci, warto skreślać.”
+- **OBOK** 6.1.1: „Ściągasz te długi?” -> „Przynoszę kolejną kanapkę. Słaby ze mnie wierzyciel, ale nikt nie mówi, że głodny.…”
+- **LUZNE** 6.1.1: dopytanie „Ściągasz te długi?” nie zaczepia się o: „…Jak ktoś mówi oddaję potem, zapisuję. Żeby nie musiał się zastanawiać, czy wisi dwa, czy dwanaście.”
+- **OBOK** 6.2: „Właściciela da się poznać po zapiskach?” -> „Po grafiku i moim piśmie. Cebula jest dodatkowym świadkiem, bez prawa podpisu.…”
+- **LUZNE** 6.2: dopytanie „Właściciela da się poznać po zapiskach?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Numery telefonów, przepisy, cudze długi. Nie wszystko, czego się nie spłaci, warto skreślać.”
+- **OBOK** 6.2.1: „Kto potwierdzi pismo?” -> „Ktoś z zajezdni. Przyprowadzę, jeśli trzeba. Tylko nie każ wybierać największego długu na …”
+- **OBOK** 7.1: „Co mu powiesz, jeśli wróci?” -> „Najpierw, żeby zjadł. Potem zapytam, gdzie był. Łatwiej czekać na odpowiedź, jak człowiek …”
+- **LUZNE** 7.1: dopytanie „Co mu powiesz, jeśli wróci?” nie zaczepia się o: „…Dlatego obok napisałem Czy on żyje?. Trzynaście dolarów może sobie zostać w zeszycie.”
+- **OBOK** 8: „Vera chce, żeby Sam przyszedł w piątek po rzeczy. To niepewne.” -> „Ale wiadomość do niego poszła? To już coś. Nie będę mówił, że na pewno wróci. Chociaż chci…”
+- **OBOK** 9: „Jego pudełko jest zapisane jako osobiste. Nadal czeka.” -> „To dobrze. Niech wraca do własnych rzeczy, a nie do rubryki „po poprzedniku”.…”
 
 ## d11_maya (dzień 11, Maya Doyle, 34, drzewo)
 
