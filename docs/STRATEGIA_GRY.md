@@ -1,6 +1,6 @@
 # STRATEGIA GRY: LOST & FRAUD
 
-Stan na 12.11.2026. Podstawa: ręczne przejście dnia 1 w przeglądarce (klik po kliku, ze zrzutami), zapis pełnych 25 dni z `qa/fabula.js`, czytanie `game/game.js` i `game/data.js`, CD2 (`prompty/CD2_master_prompt.md`, `prompty/CD2_analiza_gier.md`). Wykonanie: `docs/KOLEJKA_ITERACJI.md`.
+Stan na 12.11.2026. Podstawa: ręczne przejście dnia 1 w przeglądarce (klik po kliku, ze zrzutami), zapis przejścia z `qa/fabula.js`, czytanie `game/game.js` i `game/data.js`, CD2 (`prompty/CD2_master_prompt.md`, `prompty/CD2_analiza_gier.md`). Wykonanie: `docs/KOLEJKA_ITERACJI.md`.
 
 ## 1. Diagnoza w jednym zdaniu
 
@@ -23,7 +23,7 @@ Dowody z grania i z kodu:
 | „Dialog ma być w pełni rozgałęziony” | **Podważam** | Dziś jest 588 pytań i 175 decyzji. Pełne drzewa mnożą to razy 2 do 3 i każda gałąź musi przejść spójność. To miesiąc pisania i największe źródło nowych błędów. Wystarczy „węzeł”: tematy odblokowane tym, co gość powiedział, i limit pytań. Ważniejsze od liczby gałęzi jest to, żeby odpowiedź była do czegoś potrzebna. |
 | „Teksty brzmią jak tłumaczenie” | **Podtrzymuję częściowo** | Thomas i Dana brzmią dobrze („Nowy nie będzie mnie lubił”). Słabe są pytania gracza (urzędowe) i sceny wieloosobowe. To robi wątek dialogów. |
 | „Koniec dnia to ściana kartek” | **Podtrzymuję** | W dniu 1 są 2 kartki i jest dobrze. Bot QA notował 9 listów w dniu 24. Limit 6 to wciąż za dużo. |
-| „25 dni” | **Podtrzymuję liczbę, podważam kolejność pracy** | 55 wizyt po ok. 4 minuty to 4 do 5 godzin, uczciwie za 9,99 $ (Unpacking: 3 do 4 h za 20 $). Błąd był inny: szlifowano 25 dni naraz, zanim pierwszy tydzień był dobry. Dni 6 do 25 zamrażam, dopóki dni 1 do 5 nie przejdą testu „chcę zagrać jutro”. Tydzień 1 to zarazem demo na Steam. |
+| „10 dni, ale dobrych” (decyzja z 12.11) | **Podtrzymuję, z jednym warunkiem** | Zgadza się z CD2 (prawo 7: krótko i gęsto) i kasuje dołek dni 13 do 19 z przeglądu fabuły. Warunek: dziś dzień ma 2 do 3 wizyt po ok. 4 minuty, więc 10 takich dni to ok. 1,5 godziny. Steam zwraca pieniądze za grę z czasem poniżej 2 godzin, czyli gracz mógłby ją skończyć i oddać. Dlatego 10 dni po 3 do 4 wizyty (35 z 55 istniejących, najlepsze), razem ok. 3 godzin, plus 9 zakończeń jako powód do drugiego przejścia. |
 | „Trzeba to zrobić od nowa” | **Odrzucam** | To byłaby trzecia przebudowa. Grafika, dźwięk, silnik dnia, 55 gości i zakończenia zostają. Zmieniamy jeden szew: rozmowa → magazyn. |
 | „Miałeś być samograjem” | **Zarzut słuszny** | Noc poszła w assety i balans, bo nikt nie zapisał, czym jest „lepiej”. Od teraz każda iteracja ma kryterium sprawdzane graniem, a nie listą zmian. |
 
@@ -51,17 +51,26 @@ Dostawa i jedno zajrzenie do środka (sekret) → pukanie → rozmowa (tropy alb
 
 Każdy krok musi odpowiadać na pytanie z poprzedniego. Krok, który tego nie robi, wypada.
 
-## 6. Krzywa napięcia 25 dni (jedna nowa reguła na tydzień)
+## 6. Dziesięć dni: krzywa napięcia i co zostaje z 25
 
-| Dni | Reguła szukania | Napięcie fabuły |
-|---|---|---|
-| 1 do 5 | Bliźniaki 2, potem 3. Tropy z rozmowy. Dzień 3: dwoje ludzi chce jednej rzeczy. Dzień 5: pierwszy, którego opis nie pasuje do niczego. | Strona 41, Maya, koperta Rosy. Koniec tygodnia: pierwszy czynsz. |
-| 6 do 10 | Bałagan: po burzy rzeczy leżą w złych skrzyniach, hałda rośnie. Oszust zna wierzch, nie zna środka. | Skrytka się odsłania. Złodziej zaczyna płacić. |
-| 11 do 15 | Rzeczy poza księgą: nie ma zawieszki, zostaje tylko rozmowa. | Maya przy okienku, Sam w dniu 15. |
-| 16 do 20 | Kłamią ci, których lubię. Tropy przeczą sympatii. | Zwrot z fotelem w dniu 20. |
-| 21 do 25 | Bez nowych reguł. Wypłaty. | Odsłony i finał. |
+Dwa tygodnie po 5 dni, sobota z czynszem po dniu 5, finał po dniu 10. Trzy wątki zostają (Zaginiona, Skrytka, Poprzednik), zwrot z fotelem też, tylko wcześniej. W każdym dniu jedna nowa reguła szukania i jeden moment „na głos”.
 
-Dołek z przeglądu fabuły (dni 13 do 19) zasypuje nowa reguła szukania co tydzień, nie nowy tekst.
+| Dzień | Skąd (stare dni) | Reguła szukania | Co się dzieje |
+|---|---|---|---|
+| 1 | 1, część 2 | Bliźniaki, tropy z rozmowy | Thomas i kwit S.H., koperta Rosy (pierwsza pokusa), Ines i ogłoszenie |
+| 2 | 2, 3 | Trzy bliźniaki, pytanie-pułapka, które nic nie daje | Jonah z pierścionkiem, Hana (pierwsze kłamstwo do wykrycia), Dana |
+| 3 | 3, 4 | Dwoje ludzi, jedna rzecz | Evan i Lena o telefon Mai, Iris przedstawia się jako władza |
+| 4 | 5, 6 | Opis, który nie pasuje do żadnej rzeczy | Noah z policji, Victor, Gus z dwoma dowodami |
+| 5 | 7, 8, 9 | Bałagan po burzy, rzeczy w złych skrzyniach | Evan wraca z pieniędzmi, żetony Skrytki, Stahl. Sobota: czynsz i pierwszy audyt |
+| 6 | 10, 11, 12 | Rzecz bez zawieszki, poza księgą | Vera i szafka Sama, Maya żyje i staje przy szybie |
+| 7 | 15, 16, 18 | Kłamie ktoś, kogo lubię | Sam Holt przy okienku, Maya z Leną, Iris z Norą |
+| 8 | 20, 21, 22 | Bez nowej reguły | Zwrot: strona 41 to moja strona, pytanie o imię. Stahl po Mayę |
+| 9 | 23, 24 | Wszystkie reguły naraz, najdłuższa noc | Iris płaci albo traci, Vera mówi, kto wybiera dyżurnych, Thomas wraca |
+| 10 | 25 | Jedna rzecz: księga | Sam, Elias, gest na księdze, finał i epilogi |
+
+Z 25 dni wypadają w całości stare dni 13, 14, 17, 19 i połowa gości pobocznych (zostają ci, którzy niosą wątek albo mają najlepszą scenę). Zakończeń zostaje 9, bo zależą od decyzji, nie od liczby dni. Zwrot ma zachować trzy ślady na różnych nośnikach (CD2 3.7): kwit w rękawiczce w dniu 1, ogłoszenie Ines, szafka u Very.
+
+Ryzyko techniczne: silnik ma numery dni wpisane na sztywno (dzień 20 pyta o imię, `did(15,...)`, `d25_ksiega`, burze, kartki o świcie). Kondensacja to tabela „stary dzień → nowy dzień” w jednym miejscu i przepięcie warunków z numerów dni na identyfikatory wizyt. To osobna iteracja (I4), po tym, jak rdzeń zadziała na dniach 1 do 3.
 
 ## 7. Co wycinamy, bo przeszkadza
 
@@ -70,7 +79,8 @@ Dołek z przeglądu fabuły (dni 13 do 19) zasypuje nowa reguła szukania co tyd
 - Sztywne trzy tury z dziewięcioma pytaniami (robi wątek dialogów).
 - Ściana kartek o świcie (robi wątek dialogów).
 - Liczniki „Urząd 7/10, Ludzie 5/10” w sobotę. To miernik moralny. Zostają skutki: kto przyszedł, kto nie, co napisał zarządca.
-- Dalsze szlifowanie dni 6 do 25, dopóki tydzień 1 nie jest dobry.
+- Stare dni 13, 14, 17, 19 i goście poboczni bez wątku (gra ma 10 dni).
+- Szlifowanie drugiego tygodnia, dopóki dni 1 do 5 nie są dobre.
 - Nowe grafiki i dźwięki, o ile nie wymaga ich iteracja z kolejki.
 
 ## 8. Podział z wątkiem dialogów (żeby się nie dublować)
