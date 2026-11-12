@@ -89,6 +89,7 @@
       "tekst": "Po co wozić rękawiczki żony tramwajem?",
       "ton": "niewygodne",
       "wymaga": null,
+      "odmowa": "To już chyba nie do formularza, prawda? Stary człowiek ma swoje dziwactwa.",
       "odpowiedz": "Noszę je w kieszeni płaszcza, jedną w drugiej. Jakbym trzymał ją za rękę. Głupie, wiem.",
       "mina": "emocja",
       "dalej": [
@@ -315,6 +316,7 @@
           "tekst": "Czemu się z nią nie kłóciłaś?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Pytasz jak ktoś, kto nigdy niczego nie wynajmował. Daj spokój.",
           "odpowiedz": "Bo wynajmuje mi pokój i załatwiła mi tę pralnię. Jak się pokłócę, nie mam ani jednego, ani drugiego. Policz sobie.",
           "mina": "neutralna"
         },
@@ -470,6 +472,7 @@
       "tekst": "Co takiego stanie się o siódmej rano?",
       "ton": "niewygodne",
       "wymaga": null,
+      "odmowa": "Eee, to prywatne. Znaczy nie tajne, tylko... prywatne. Możemy wrócić do plecaka?",
       "odpowiedz": "O siódmej June wpada z piekarni na kawę. Chcę ją wtedy o coś zapytać. O coś, o co pyta się raz w życiu. Dlatego potrzebuję plecaka.",
       "mina": "emocja",
       "dalej": [
@@ -645,6 +648,7 @@
           "tekst": "Skrzypaczka zapomina skrzypiec?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Przyszłam po futerał, a nie po ocenę. Naprawdę nie mam na to czasu.",
           "odpowiedz": "Wiem, jak to wygląda. Od dwóch dni prawie nie śpię, ćwiczę po dziesięć godzin. Człowiek wtedy zapomina własnego nazwiska.",
           "mina": "neutralna"
         }
@@ -793,6 +797,7 @@
           "tekst": "Co robisz nocą na pętli czwórki?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "A to już, za pozwoleniem, moja rzecz. Przyszłam po parasol.",
           "odpowiedz": "Rozwieszam ogłoszenia. Na pętli ludzie czekają i z nudów czytają wszystko, nawet słupy.",
           "mina": "neutralna"
         }
@@ -986,6 +991,7 @@
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "maz",
+          "odmowa": "Nie widzę związku z telefonem. Trzymajmy się sprawy, dobrze?",
           "odpowiedz": "Jest elektryczką, bierze nocne awarie. Wychodziła o różnych porach. Nie pilnowałem jej, jeśli o to chodzi.",
           "mina": "neutralna"
         },
@@ -1196,6 +1202,7 @@
       "tekst": "Po co wozisz budzik tramwajem?",
       "ton": "niewygodne",
       "wymaga": null,
+      "odmowa": "A co, nie wolno? Bilet miałam ja, on jechał na kolanach.",
       "odpowiedz": "Bo nocowałam u siostry i wzięłam go ze sobą. Samego w domu nie zostawię. Śmiej się, proszę bardzo.",
       "mina": "mowi",
       "dalej": [
@@ -1339,6 +1346,7 @@
           "tekst": "Czemu nikt z nich nie przyszedł po nią sam?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Nie lubię naciskać, ale to pytanie nie należy do okienka. Kasetka, proszę.",
           "odpowiedz": "Bo to moja odpowiedzialność. Nie lubię, jak ktoś obcy grzebie w sprawach moich lokatorów. Nikt by nie lubił.",
           "mina": "neutralna"
         },
@@ -1528,6 +1536,7 @@
           "tekst": "Wierzysz mężowi?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Czyli: przesłuchujesz policjanta. Ładnie. Śledztwa przy szybie nie komentuję.",
           "odpowiedz": "Wierzę godzinom. Na razie jego godziny mi się nie składają. Resztę zostawiam dla siebie.",
           "mina": "neutralna",
           "dalej": [
@@ -1665,6 +1674,7 @@
           "tekst": "Inspektor jeździ nocnym tramwajem?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Pytania zadaje kontrola, a nie kontrolowany. Jest na to paragraf.",
           "odpowiedz": "Sprawdzam, czy tramwaje jeżdżą tak, jak stoi w grafiku. Nie jeżdżą. A skoro już pytamy: kto cię tu skierował? W aktach nie mam żadnego skierowania.",
           "mina": "neutralna",
           "dalej": [
@@ -1864,6 +1874,7 @@
       "tekst": "Szlafrok pod płaszczem, w środku nocy. Co się stało?",
       "ton": "niewygodne",
       "wymaga": null,
+      "odmowa": "Nic się nie stało. Człowiek nie może wyjść w szlafroku? Portfel. Proszę.",
       "odpowiedz": "Pokłóciłem się w domu i wyszedłem, jak stałem. Z żoną, z teściową, z obiema naraz. Tylko o rodzinie nie rozmawiajmy.",
       "mina": "neutralna",
       "dalej": [
@@ -2031,6 +2042,7 @@
           "tekst": "Co robisz sama w nocy na pętli?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Mama mówi, że jak ktoś pyta, gdzie jestem w nocy, to mam zapytać, po co mu to. No to: po co?",
           "odpowiedz": "Mama ma nocną zmianę w pralni, a mnie się nudzi. Chodzę po pętli i liczę kamienie. Wczoraj były sto dwa.",
           "mina": "neutralna",
           "dalej": [
@@ -2258,6 +2270,7 @@
           "tekst": "To nie pierwsza taka puszka, prawda?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Ja jestem od biletów, nie od puszek. I chciałbym, żeby tak zostało.",
           "odpowiedz": "Trzecia w tym miesiącu. Zawsze ostatni kurs, zawsze pod ławką po lewej. Rano już jej nie ma. Mnie płacą za jeżdżenie, nie za ciekawość.",
           "mina": "neutralna"
         }
@@ -2397,6 +2410,7 @@
       "tekst": "Co ci zrobi szef, jak się dowie o słuchawkach?",
       "ton": "niewygodne",
       "wymaga": null,
+      "odmowa": "Ej, serio? To ma iść do protokołu? Wolę nie zapeszać.",
       "odpowiedz": "Zdejmie mi dziesięć dolarów z wypłaty i palnie pogadankę. Pogadankę przeżyję. Dziesięć dolarów gorzej.",
       "mina": "mowi",
       "dalej": [
@@ -2753,6 +2767,7 @@
       "ton": "niewygodne",
       "wymaga": null,
       "kto": "siostra",
+      "odmowa": "A po co ci to? Wszyscy ostatnio pytają o Mayę i nikt nie mówi dlaczego.",
       "odpowiedz": "Tak, jako elektryczka, na Cooper Street dziewięć. Ale... no tak, tam rządzi Iris. Nie rozmawiałyśmy o tym. Maya mówiła tylko, że widziała coś, czego nie powinna.",
       "mina": "neutralna",
       "dalej": [
@@ -3134,6 +3149,7 @@
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "iris",
+          "odmowa": "Nie przy panu Crane’ie. I nie przy szybie, która ma uszy.",
           "odpowiedz": "Papiery na nowe życie. Dla ludzi, których ktoś bije albo ściga. Biorę za to pieniądze i nie wstydzę się tego. Reszta nie jest dla inspekcji.",
           "mina": "emocja"
         },
@@ -3292,6 +3308,7 @@
       "tekst": "Czemu tak ci zależy akurat na tym kapeluszu?",
       "ton": "niewygodne",
       "wymaga": null,
+      "odmowa": "Regulamin nie wymaga uzasadnienia. Sprawdziłem.",
       "odpowiedz": "Jutro mam ważną rozmowę, a bez kapelusza wyglądam nieprzekonująco. Tak twierdzi moja żona.",
       "mina": "mowi",
       "dalej": [
@@ -3439,6 +3456,7 @@
           "tekst": "Dlaczego akurat ty?",
           "ton": "niewygodne",
           "wymaga": null,
+          "odmowa": "Bo tak. Są pytania, na które człowiek z zaplecza nie odpowiada od progu.",
           "odpowiedz": "Bo mnie prosił. Powiedział: trzymaj, aż wrócę. Dopóki szafka jest zajęta, nikt jej nie likwiduje.",
           "mina": "neutralna"
         },
@@ -3605,6 +3623,7 @@
               "tekst": "Co miał do załatwienia w porcie?",
               "ton": "niewygodne",
               "wymaga": null,
+              "odmowa": "Ej, powoli. Najpierw zeszyt, potem plotki o koledze.",
               "odpowiedz": "Nie mówił. Miał pod pachą szarą teczkę i minę, jakby szedł do dentysty. Tyle widziałem.",
               "mina": "neutralna"
             }

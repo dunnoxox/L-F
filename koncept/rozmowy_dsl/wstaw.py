@@ -5,6 +5,7 @@ Pole "tury" znika, w jego miejscu pojawia się "rozmowa": lista tematów, każdy
 Zapis:
   # id_sceny
   ? u [@wymaga] [+ustawia] [~kto] [#klucz] [%gasi] Pytanie gracza        (u uprzejme, r rzeczowe, n niewygodne)
+  - Odmowa (opcjonalnie, między ? a =): gość najpierw mówi to; odpowiedź pada dopiero, gdy gracz naciśnie drugi raz
   = m Odpowiedź gościa                                           (m mówi, n neutralna, e emocja, k kłamie)
    ? r Dopytanie (jedna spacja wcięcia = poziom niżej; widać je tylko zaraz po odpowiedzi wyżej)
    = n ...
@@ -40,6 +41,9 @@ for f in sorted(glob.glob(os.path.join(HERE, '*.txt'))):
             assert d <= len(stack), where
             stack = stack[:d]
             (cur['rozmowa'] if d == 0 else stack[-1].setdefault('dalej', [])).append(q); stack.append(q)
+        elif body[0] == '-':
+            q = stack[d]; assert 'odmowa' not in q and 'odpowiedz' not in q, where
+            q['odmowa'] = body[1:].strip()
         elif body[0] == '=':
             m, t = body[1:].strip().split(' ', 1); assert m in MINA, where
             q = stack[d]; assert 'odpowiedz' not in q, where
@@ -47,7 +51,7 @@ for f in sorted(glob.glob(os.path.join(HERE, '*.txt'))):
             if 'dalej' in q: q['dalej'] = q.pop('dalej')
         else: sys.exit('zła linia ' + where)
 def order(q):
-    o = {k: q[k] for k in ('tekst', 'ton', 'wymaga', 'ustawia', 'kto', 'klucz', 'gasi', 'odpowiedz', 'mina') if k in q}
+    o = {k: q[k] for k in ('tekst', 'ton', 'wymaga', 'ustawia', 'kto', 'klucz', 'gasi', 'odmowa', 'odpowiedz', 'mina') if k in q}
     assert 'odpowiedz' in q, q['tekst']
     if q.get('dalej'): o['dalej'] = [order(x) for x in q['dalej']]
     return o

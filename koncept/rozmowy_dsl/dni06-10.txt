@@ -6,6 +6,7 @@
 ? r Gdzie dokładnie go znalazłaś?
 = n Na ławce przy pętli szóstki, trzy kroki od słupka. Liczyłam. Siedział sam, jakby na kogoś czekał.
  ? n Co robisz sama w nocy na pętli?
+ - Mama mówi, że jak ktoś pyta, gdzie jestem w nocy, to mam zapytać, po co mu to. No to: po co?
  = n Mama ma nocną zmianę w pralni, a mnie się nudzi. Chodzę po pętli i liczę kamienie. Wczoraj były sto dwa.
   ? u Mama wie, że tam chodzisz?
   = m Wie i się gniewa. Mówi, że brać nic nie wolno, oddawać trzeba, a po pętli nie łazić. Dwa z trzech robię dobrze.
@@ -48,6 +49,7 @@
 ? n @d6_zegarek_list Pod wieczkiem jest kartka z wykazu z dopiskiem „+ puszka (b.n.)”. Jaka puszka?
 = e Ktoś mi ją wsunął pod ławkę. Bez nadawcy, „b.n.”. Dopisałem do wykazu, żeby nie mieć kłopotów, jakby co. Nie pytam, kto ma ją odebrać.
  ? n To nie pierwsza taka puszka, prawda?
+ - Ja jestem od biletów, nie od puszek. I chciałbym, żeby tak zostało.
  = n Trzecia w tym miesiącu. Zawsze ostatni kurs, zawsze pod ławką po lewej. Rano już jej nie ma. Mnie płacą za jeżdżenie, nie za ciekawość.
 
 # d7_kit
@@ -66,6 +68,7 @@
     ? n Jak się nazywał ten facet?
     = e Nie powiem. Serio. Nazwisko jest w segregatorze, a segregator jest szefa. Jak to wyjdzie ode mnie, wylatuję.
 ? n Co ci zrobi szef, jak się dowie o słuchawkach?
+- Ej, serio? To ma iść do protokołu? Wolę nie zapeszać.
 = m Zdejmie mi dziesięć dolarów z wypłaty i palnie pogadankę. Pogadankę przeżyję. Dziesięć dolarów gorzej.
  ? n Co mu przeszkadza w słuchawkach?
  = n Mówi, że ksero ma być słychać, a ja mam słyszeć klientów. Słyszę. Tylko z muzyką mniej boli.
@@ -120,6 +123,7 @@
   ? n ~nora Kto brał te zaliczki?
   = n Zarządczyni, Iris Bell. Bierze gotówkę, wydaje kwit, oryginał zostawia sobie. A potem bywa, że kwitu „nie pamięta”.
 ? n ~siostra Maya pracowała w tej kamienicy?
+- A po co ci to? Wszyscy ostatnio pytają o Mayę i nikt nie mówi dlaczego.
 = n Tak, jako elektryczka, na Cooper Street dziewięć. Ale... no tak, tam rządzi Iris. Nie rozmawiałyśmy o tym. Maya mówiła tylko, że widziała coś, czego nie powinna.
  ? n ~siostra Co takiego widziała?
  = k Nie powiedziała. Naprawdę. Urwała w pół zdania i zmieniła temat. Ja też teraz zmienię.
@@ -178,6 +182,7 @@
 ? n @d9_zetony_numery ~iris Na odwrocie żetonów są karteczki: „kobieta z walizką”, „matka z synem”. Co to?
 = n Opisy. Żeby goniec wiedział, komu oddać paczkę. Więcej przy panu Crane nie powiem.
  ? n ~iris Co jest w tych paczkach?
+ - Nie przy panu Crane’ie. I nie przy szybie, która ma uszy.
  = e Papiery na nowe życie. Dla ludzi, których ktoś bije albo ściga. Biorę za to pieniądze i nie wstydzę się tego. Reszta nie jest dla inspekcji.
  ? u ~iris Piąty żeton, 0809, nie ma opisu. Dla kogo jest?
  = n Jeszcze dla nikogo. Opis przyjdzie, kiedy przyjdzie człowiek. Nie zadaję takich pytań, dopóki ktoś nie zapłaci.
@@ -198,6 +203,7 @@
   ? n Przy czyich papierach?
   = n Tego regulamin nie każe mi podawać. A czego nie każe, tego nie podaję. Dobra zasada, polecam.
 ? n Czemu tak ci zależy akurat na tym kapeluszu?
+- Regulamin nie wymaga uzasadnienia. Sprawdziłem.
 = m Jutro mam ważną rozmowę, a bez kapelusza wyglądam nieprzekonująco. Tak twierdzi moja żona.
  ? u Żona może potwierdzić, że jest twój?
  = k Mogłaby, ale jest w delegacji. Zaświadczenie przyniosę jutro, zgodnie z regulaminem.
@@ -220,6 +226,7 @@
 ? u Kim był dla ciebie Sam Holt?
 = e Kolegą z nocy. Siedział przy tej szybie, ja zamykałam zaplecze. Odszedł ponad miesiąc temu, bez słowa. Tylko ja jeszcze pilnuję jego szafki.
  ? n Dlaczego akurat ty?
+ - Bo tak. Są pytania, na które człowiek z zaplecza nie odpowiada od progu.
  = n Bo mnie prosił. Powiedział: trzymaj, aż wrócę. Dopóki szafka jest zajęta, nikt jej nie likwiduje.
  ? r Co będzie, jak zamkną szafkę w piątek?
  = n Rzeczy pójdą do zbiorczego archiwum Urzędu i nikt ich potem nie znajdzie. Dlatego wezwałam Sama na piątek. Chcę, żeby miał co zabrać.
@@ -246,6 +253,7 @@
  ? r Od kiedy go nie ma?
  = n Ponad miesiąc. Powiedział, że idzie do portu coś załatwić. Potem przestał odbierać telefon. Pytam po całej zajezdni.
   ? n Co miał do załatwienia w porcie?
+  - Ej, powoli. Najpierw zeszyt, potem plotki o koledze.
   = n Nie mówił. Miał pod pachą szarą teczkę i minę, jakby szedł do dentysty. Tyle widziałem.
  ? n Czemu pytasz akurat tutaj?
  = n Bo to jego miejsce. Jak ktoś ma coś wiedzieć, to ten, kto siedzi na jego krześle.

@@ -75,8 +75,8 @@ Dla każdej z 21 scen z dni 1–10 i każdej z 5 scen finałowych:
 
 ### 4a. Odmowy i powód pytań
 
-- **Gość ma prawo powiedzieć „nie” i ma to robić mocno.** W każdej scenie 2 do 4 twarde odmowy, każda głosem tej postaci: „A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.”, „Hola. Przyszłam po budzik, nie do spowiedzi.”, „Tego regulamin nie każe mi podawać.” Nie każdy unik jest grzeczny: ktoś się obrazi, ktoś zakpi, ktoś zamilknie w pół zdania.
-- **Odmowa kosztuje.** Zjada jedno z pięciu pytań i zamyka gałąź (pod odmową nie ma dopytań albo jest jedno, które tylko pogarsza sprawę). Raz na scenę odmowa może zamknąć inny temat: daj odmowie `#klucz`, a tematowi, który ma zniknąć, `%klucz` (gość się zraził i o tym już nie powie).
+- **Gość ma prawo powiedzieć „nie” i ma to robić mocno.** W każdej scenie 2 do 4 twarde odmowy (łącznie obu rodzajów opisanych niżej), każda głosem tej postaci: „A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.”, „Hola. Przyszłam po budzik, nie do spowiedzi.”, „Tego regulamin nie każe mi podawać.” Nie każdy unik jest grzeczny: ktoś się obrazi, ktoś zakpi, ktoś zamilknie w pół zdania.
+- **Dwa rodzaje odmowy.** (a) Odmowa do przełamania: linia `- tekst` między `?` a `=`. Gość najpierw mówi „nie” tym tekstem, pytanie zostaje z dopiskiem „Naciśnij”; gdy gracz naciśnie, pada zwykła odpowiedź z linii `=`, a gość traci cierpliwość w magazynie. Daj ją 1 do 2 wścibskim pytaniom na scenę, takim, których odpowiedź naprawdę coś odsłania. Nie dawaj jej pytaniom, których odpowiedź niesie cechę rzeczy, pytaniom z `@` ani odpowiedziom `= k`. (b) Odmowa ostateczna: sama odpowiedź `=` jest odmową i nic jej nie przełamie. Zjada jedno z pięciu pytań i zamyka gałąź. Raz na scenę może zamknąć inny temat: daj jej `#klucz`, a tematowi, który ma zniknąć, `%klucz`.
 - **Odmowa jest wskazówką.** Uczciwy odmawia w sprawach prywatnych (rodzina, wstyd, pieniądze), a o rzeczy mówi chętnie. Kłamca odwrotnie: o sobie opowiada gładko, zacina się przy szczegółach rzeczy. Gracz ma to wyczuć, nikt mu tego nie mówi.
 - **Naciśnięty za mocno gość odbija pytanie:** „A ty kto, że pytasz?”, „To też jest w formularzu?”. Co najmniej raz na scenę.
 - **Gracz ma powód, żeby pytać.** Regulamin biura każe przed wydaniem ustalić dwie rzeczy: że rzecz należy do zgłaszającego (szczegóły, których nie widać z daleka) i jak zginęła (linia, pora), bo po tym szuka się jej w magazynie. Pytania o rzecz i o okoliczności są więc służbowe i goście to rozumieją. Pytania o życie są ponad regulamin: gracz zadaje je, bo coś w odpowiedzi nie pasuje albo zaciekawia, i właśnie przy nich goście mają prawo się postawić. Pytanie osobiste zawsze zaczepia się o konkret z odpowiedzi („Po nocce? To od której jesteś na nogach?”), nigdy nie pada znikąd.
@@ -113,6 +113,7 @@ Dla każdej z 21 scen z dni 1–10 i każdej z 5 scen finałowych:
 ```
 # id_sceny
 ? T [znaczniki] Pytanie gracza
+- Odmowa do przełamania (opcjonalna, patrz 4a)
 = M Odpowiedź gościa
  ? T Dopytanie (jedna spacja wcięcia na każdy poziom głębiej)
  = M Odpowiedź
@@ -123,7 +124,7 @@ Dla każdej z 21 scen z dni 1–10 i każdej z 5 scen finałowych:
 
 - `T` to ton pytania: `u` uprzejme, `r` rzeczowe, `n` niewygodne.
 - `M` to mina gościa: `m` mówi, `n` neutralna, `e` emocja, `k` kłamie. Przy `k` treść odpowiedzi jest kłamstwem.
-- Po każdym `?` idzie dokładnie jedno `=` na tym samym wcięciu. Wcięcie to wyłącznie spacje, po jednej na poziom.
+- Po każdym `?` idzie dokładnie jedno `=` na tym samym wcięciu, a między nimi najwyżej jedna linia `-`. Wcięcie to wyłącznie spacje, po jednej na poziom.
 - Znaczniki stoją między tonem a tekstem, oddzielone spacjami:
   - `@id` pytanie widać tylko, gdy gracz zna sekret albo podjął decyzję. Używaj wyłącznie identyfikatorów, które są w kartach (pole „W środku rzeczy”) albo już występują w obecnych plikach. Zapis `@a|b` znaczy „a albo b”.
   - `+flaga` pytanie ustawia flagę. Zostaw tylko te, które już są (`+d3_evan_oferta`, `+d4_koperta_oferta`, `+d7_kit_ulotki`, `+d8_bree_oferta`), przy pytaniach o tym samym sensie.
