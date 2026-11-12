@@ -144,7 +144,14 @@
         "tekst": "Thomas Ward: „Mówiłem Claire, że w tym biurze ludzie wydają od ręki. Nie powiedziałem jej, że to wasz drugi raz bez papierka.”"
       }
     }
-  ]
+  ],
+  "rola": "wdowiec, który kłamie ze wstydu",
+  "watki": [
+    "Poprzednik"
+  ],
+  "tik": "żartuje z drżącej ręki",
+  "potrzeba": "lewa rękawiczka żony na niedzielę",
+  "slad": "kwit 0417 zdradza, że już tu był"
 }
 ```
 
@@ -286,7 +293,15 @@
         "tekst": "W kopercie brakowało mi dwudziestu dolarów. Iris naliczyła karę za spóźniony czynsz, drugie dwadzieścia. Cztery dychy w plecy przez jedną noc. Nie mówię, że ktoś wziął. Mówię, że brakuje. — Rosa"
       }
     }
-  ]
+  ],
+  "rola": "praczka z kopertą wypłaty",
+  "watki": [
+    "kamienica",
+    "pieniądze"
+  ],
+  "tik": "liczy na głos",
+  "potrzeba": "129 $ na czynsz do jutra",
+  "slad": "nazwisko I. Bell na odcinku wypłat"
 }
 ```
 
@@ -431,7 +446,15 @@
       },
       "wymaga": "d2_paragon_raty"
     }
-  ]
+  ],
+  "rola": "kurier z pierścionkiem na raty",
+  "watki": [
+    "Marlow",
+    "pieniądze"
+  ],
+  "tik": "zwalnia na imieniu June",
+  "potrzeba": "plecak z pierścionkiem na jutro",
+  "slad": "raty zdradzają dług, który ma Marlow"
 }
 ```
 
@@ -456,24 +479,84 @@
   "tury": [
     {
       "pytania": [
-        {"tekst": "Jak wygląda futerał?", "ton": "uprzejme", "wymaga": null, "odpowiedz": "Czarny, sztywny, z mosiężnymi zamkami. W środku wieka zielona naklejka, a rączka owinięta czerwoną taśmą.", "mina": "mowi"},
-        {"tekst": "Gdzie dokładnie go zostawiłaś?", "ton": "rzeczowe", "wymaga": null, "odpowiedz": "W czwórce, w ostatnim kursie. Postawiłam go między nogami, zadzwoniła mama i wysiadłam bez futerału.", "mina": "neutralna"},
-        {"tekst": "Czyje to są skrzypce?", "ton": "niewygodne", "wymaga": null, "odpowiedz": "Moje. Oczywiście, że moje. Gram na nich od siedmiu lat.", "mina": "klamie"}
+        {
+          "tekst": "Jak wygląda futerał?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czarny, sztywny, z mosiężnymi zamkami. W środku wieka zielona naklejka, a rączka owinięta czerwoną taśmą.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie dokładnie go zostawiłaś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W czwórce, w ostatnim kursie. Postawiłam go między nogami, zadzwoniła mama i wysiadłam bez futerału.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czyje to są skrzypce?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Moje. Oczywiście, że moje. Gram na nich od siedmiu lat.",
+          "mina": "klamie"
+        }
       ]
     },
     {
       "pytania": [
-        {"tekst": "Co jeszcze jest w futerale?", "ton": "uprzejme", "wymaga": null, "odpowiedz": "Kalafonia, szmatka z jedwabiu i nuty Mendelssohna z moimi zapiskami ołówkiem.", "mina": "mowi"},
-        {"tekst": "Czy w skrzypcach jest etykieta lutnika?", "ton": "rzeczowe", "wymaga": null, "odpowiedz": "Jest, ale mała. Nazwiska nie pamiętam, od lat nie zaglądałam do środka.", "mina": "neutralna"},
-        {"tekst": "Dlaczego to takie pilne właśnie dzisiaj?", "ton": "niewygodne", "wymaga": null, "odpowiedz": "Bo przesłuchanie jest jutro o ósmej. Dostałam się z listy rezerwowej, drugiej szansy nie będzie.", "mina": "emocja"},
-        {"tekst": "Pod pokrywą jest kartka: wypożyczenie do 7 sierpnia. Co to znaczy?", "ton": "niewygodne", "wymaga": "d2_etykieta_wyp", "odpowiedz": "Że termin minął w sobotę. Konserwatorium nie przedłużyło, bo komisja zbiera się dopiero w poniedziałek. Nie jestem złodziejką, tylko spóźniłam się o dwa dni. Ale gram jutro.", "mina": "emocja"}
+        {
+          "tekst": "Co jeszcze jest w futerale?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Kalafonia, szmatka z jedwabiu i nuty Mendelssohna z moimi zapiskami ołówkiem.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy w skrzypcach jest etykieta lutnika?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Jest, ale mała. Nazwiska nie pamiętam, od lat nie zaglądałam do środka.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Dlaczego to takie pilne właśnie dzisiaj?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo przesłuchanie jest jutro o ósmej. Dostałam się z listy rezerwowej, drugiej szansy nie będzie.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Pod pokrywą jest kartka: wypożyczenie do 7 sierpnia. Co to znaczy?",
+          "ton": "niewygodne",
+          "wymaga": "d2_etykieta_wyp",
+          "odpowiedz": "Że termin minął w sobotę. Konserwatorium nie przedłużyło, bo komisja zbiera się dopiero w poniedziałek. Nie jestem złodziejką, tylko spóźniłam się o dwa dni. Ale gram jutro.",
+          "mina": "emocja"
+        }
       ]
     },
     {
       "pytania": [
-        {"tekst": "Daleko stąd do filharmonii?", "ton": "uprzejme", "wymaga": null, "odpowiedz": "Cztery przystanki. Próba jest o siódmej, więc jeśli wyjdę stąd przed szóstą, zdążę rozgrzać palce.", "mina": "mowi"},
-        {"tekst": "Odbiór instrumentu wymaga podpisu. Podpiszesz?", "ton": "rzeczowe", "wymaga": null, "odpowiedz": "Hana Moreau. Napiszę czytelnie, choć ręka mi drży od wczoraj.", "mina": "neutralna"},
-        {"tekst": "Co będzie, jeśli skrzypce wrócą do konserwatorium?", "ton": "niewygodne", "wymaga": null, "odpowiedz": "Wtedy ktoś inny zagra moje przesłuchanie, a mnie wykreślą z listy. Bez skrzypiec nie mam po co tam iść.", "mina": "emocja"}
+        {
+          "tekst": "Daleko stąd do filharmonii?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Cztery przystanki. Próba jest o siódmej, więc jeśli wyjdę stąd przed szóstą, zdążę rozgrzać palce.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Odbiór instrumentu wymaga podpisu. Podpiszesz?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Hana Moreau. Napiszę czytelnie, choć ręka mi drży od wczoraj.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Co będzie, jeśli skrzypce wrócą do konserwatorium?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Wtedy ktoś inny zagra moje przesłuchanie, a mnie wykreślą z listy. Bez skrzypiec nie mam po co tam iść.",
+          "mina": "emocja"
+        }
       ]
     }
   ],
@@ -483,16 +566,31 @@
       "reakcja": "Dziękuję. W poniedziałek pójdę do komisji, obiecuję. Najpierw zagram.",
       "zysk": "Hana zagra przesłuchanie i ma szansę dostać miejsce w orkiestrze.",
       "strata": "Oddajesz instrument konserwatorium komuś, komu wypożyczenie wygasło wczoraj.",
-      "echo": {"za_dni": 2, "forma": "list", "tekst": "Zagrałam. Nikt nie wiedział, że skrzypce są po terminie. W poniedziałek komisja przedłużyła mi wypożyczenie do końca roku. Przepraszam za zamieszanie. — H. Moreau"}
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Zagrałam. Nikt nie wiedział, że skrzypce są po terminie. W poniedziałek komisja przedłużyła mi wypożyczenie do końca roku. Przepraszam za zamieszanie. — H. Moreau"
+      }
     },
     {
       "akcja": "odmow",
       "reakcja": "Rozumiem. Skrzypce należą do konserwatorium. Powiedz im chociaż, że sama się zgłosiłam.",
       "zysk": "Skrzypce wracają do prawdziwego właściciela, czyli do konserwatorium.",
       "strata": "Hana traci przesłuchanie i miejsce na liście.",
-      "echo": {"za_dni": 2, "forma": "list", "tekst": "Konserwatorium odebrało skrzypce i podziękowało za sumienność. Na przesłuchaniu zagrał ktoś inny. Ja gram teraz na altówce koleżanki w piwnicy. Dyplom mam. Orkiestry nie. — H. Moreau"}
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Konserwatorium odebrało skrzypce i podziękowało za sumienność. Na przesłuchaniu zagrał ktoś inny. Ja gram teraz na altówce koleżanki w piwnicy. Dyplom mam. Orkiestry nie. — H. Moreau"
+      }
     }
-  ]
+  ],
+  "rola": "skrzypaczka z cudzymi skrzypcami",
+  "watki": [
+    "humor"
+  ],
+  "tik": "mówi jak recytacja",
+  "potrzeba": "skrzypce na przesłuchanie o ósmej",
+  "slad": "wypożyczenie z konserwatorium skończyło się już wczoraj"
 }
 ```
 
@@ -669,7 +767,14 @@
       },
       "wymaga": "d3_evan_oferta"
     }
-  ]
+  ],
+  "rola": "mąż i szwagierka po telefon Mai",
+  "watki": [
+    "Zaginiona"
+  ],
+  "tik": "Evan poprawia mankiet",
+  "potrzeba": "telefon Mai z jedną wiadomością",
+  "slad": "SMS „Nie wracaj do domu” rozdziela ich"
 }
 ```
 
@@ -785,7 +890,14 @@
         "tekst": "Dana Ruiz: „Spóźniłam się do pracy o czterdzieści minut. Przełożony zapisał. A ja zapamiętam, kto mi nie oddał budzika.”"
       }
     }
-  ]
+  ],
+  "rola": "mechaniczka z ukochanym budzikiem",
+  "watki": [
+    "humor"
+  ],
+  "tik": "mówi głośno i prosto",
+  "potrzeba": "budzik na czwartą rano",
+  "slad": "dwie minuty oddechu po ciężkiej scenie"
 }
 ```
 
@@ -888,7 +1000,7 @@
           "tekst": "W kasetce widać brzeg paszportu z wyciętą stroną. Czyj to?",
           "ton": "niewygodne",
           "wymaga": "d4_blankiet_kasetka",
-          "odpowiedz": "Takiego, kto w tym tygodniu jedzie. Jeśli paczka zostanie, nie pojedzie. Nie lubię naciskać, ale nowi zwykle odchodzą w pierwszym tygodniu.",
+          "odpowiedz": "Takiego, kto w tym tygodniu jedzie. Jeśli paczka zostanie, nie pojedzie. Nowi zwykle odchodzą w pierwszym tygodniu.",
           "mina": "emocja"
         }
       ]
@@ -933,7 +1045,16 @@
         "tekst": "Iris Bell: „Rano zgłosiło się do mnie dwóch lokatorów, pytali, gdzie są ich dokumenty. Powiedziałam, że biuro zatrzymało je z powodu procedury. Nie byli zadowoleni.”"
       }
     }
-  ]
+  ],
+  "rola": "zarządczyni z kopertą za fatygę",
+  "watki": [
+    "Skrytka",
+    "kamienica",
+    "pieniądze"
+  ],
+  "tik": "„drobna przysługa” zamiast groźby",
+  "potrzeba": "paczka w płótnie z kasetką",
+  "slad": "120 $ w szufladzie albo zwrot"
 }
 ```
 
@@ -1092,7 +1213,14 @@
         "tekst": "Dyżurny z komisariatu potwierdził: notes N. Reyesa. Dziękujemy za czujność. Następnym razem wystarczy minuta. — Komisariat przy Rynku"
       }
     }
-  ]
+  ],
+  "rola": "policjant po notes z zeznaniem",
+  "watki": [
+    "Zaginiona"
+  ],
+  "tik": "mówi „Czyli:” i pomija",
+  "potrzeba": "notes z zeznaniem Evana",
+  "slad": "wątpliwości co do Evana zostają niewypowiedziane"
 }
 ```
 
@@ -1241,7 +1369,14 @@
         "tekst": "Spis przyjęty. Tydzień zgodny co do sztuki, co mnie niepokoi. Wrócę do tej księgi. — V. Crane"
       }
     }
-  ]
+  ],
+  "rola": "inspektor, który rozlicza księgę",
+  "watki": [
+    "Urząd"
+  ],
+  "tik": "pyta „Kto to podpisze?”",
+  "potrzeba": "teczka kontroli do rozliczenia",
+  "slad": "dopisy innym tuszem wskazują na Sama"
 }
 ```
 
@@ -1411,7 +1546,15 @@
       },
       "wymaga": "d5_gotowka_400"
     }
-  ]
+  ],
+  "rola": "mężczyzna w szlafroku z dwoma dowodami",
+  "watki": [
+    "Skrytka",
+    "pieniądze"
+  ],
+  "tik": "zaczyna zdania od „tylko”",
+  "potrzeba": "portfel przed odjazdem o 5:40",
+  "slad": "żeton 0412 i gotówka za zdjęciem"
 }
 ```
 
@@ -1555,7 +1698,15 @@
         "tekst": "Ada Vale: „Pokazałam karteczkę pani w szkole. Powiedziała, że to nie jest oficjalny kwit, ale że jest ładnie napisany. Wzięła go do gabloty.”"
       }
     }
-  ]
+  ],
+  "rola": "dziesięciolatka, która wie za dużo",
+  "watki": [
+    "kamienica",
+    "Skrytka"
+  ],
+  "tik": "liczy kroki do słupka",
+  "potrzeba": "kwit za znalezionego królika",
+  "slad": "widziała puszkę z ruchomym dnem u Iris"
 }
 ```
 
@@ -1623,8 +1774,8 @@
           "tekst": "Co wiozłeś ostatnim kursem?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Ludzi, dwie torby i walizkę. Normalny kurs.",
-          "mina": "klamie"
+          "odpowiedz": "Ludzi, dwie torby i walizkę. Normalny kurs, nic ponad to.",
+          "mina": "neutralna"
         },
         {
           "tekst": "Pod wieczkiem jest dopisek „+ puszka (b.n.)”. Jaka puszka?",
@@ -1698,7 +1849,14 @@
       },
       "wymaga": "d6_zegarek_list"
     }
-  ]
+  ],
+  "rola": "konduktor zagubiony bez zegarka",
+  "watki": [
+    "Skrytka"
+  ],
+  "tik": "patrzy na pusty nadgarstek",
+  "potrzeba": "zegarek z grawerem na kursy",
+  "slad": "dopisek „puszka” zmienia cały rejestr kursu"
 }
 ```
 
@@ -1836,7 +1994,15 @@
         "tekst": "Kit Navarro: „Dziś w kopiarni było cicho. Ksero słychać, a muzyki nie. Serio, nie lubię tej ciszy.”"
       }
     }
-  ]
+  ],
+  "rola": "praktykant, który boi się wylecieć",
+  "watki": [
+    "Zaginiona",
+    "humor"
+  ],
+  "tik": "mówi „serio”",
+  "potrzeba": "słuchawki z kotem w kasku",
+  "slad": "widział zamówienie ulotek w czwartek 22:15"
 }
 ```
 
@@ -1989,7 +2155,14 @@
         "tekst": "Evan Doyle: „Wróciłem, jak obiecałem. Nikt mi nie chciał powiedzieć, gdzie są klucze. Czyli mężowi się odmawia. Dobrze wiedzieć. Zapisałem godzinę.”"
       }
     }
-  ]
+  ],
+  "rola": "mąż kłamca, który zna godziny",
+  "watki": [
+    "Zaginiona"
+  ],
+  "tik": "poprawia wygnieciony mankiet",
+  "potrzeba": "klucze Mai i jej linia",
+  "slad": "ulotki zamówił, zanim zgłosił zaginięcie żony"
 }
 ```
 
@@ -2153,7 +2326,15 @@
         "tekst": "Lena Brandt: „Torba leży u was, a ja o niej myślę każdą noc. Wiem, że przepisy. Ale to jej torba, a ja nie mam po niej nic innego.”"
       }
     }
-  ]
+  ],
+  "rola": "siostra i prawniczka po jedną torbę",
+  "watki": [
+    "kamienica",
+    "Zaginiona"
+  ],
+  "tik": "Nora liczy: rzecz, osoba, skutek",
+  "potrzeba": "torba narzędziowa albo kopia pokwitowania",
+  "slad": "kopia 400 $ w rozprutej podszewce"
 }
 ```
 
@@ -2297,7 +2478,15 @@
       },
       "wymaga": "d8_bree_oferta"
     }
-  ]
+  ],
+  "rola": "kobieta z paragonem na wszystko",
+  "watki": [
+    "kamienica",
+    "pieniądze"
+  ],
+  "tik": "mówi „Słuchaj, mam paragon”",
+  "potrzeba": "srebrny aparat „brata”",
+  "slad": "aparat Okoye i oferta 80 $"
 }
 ```
 
@@ -2426,7 +2615,7 @@
           "ton": "niewygodne",
           "kto": "iris",
           "wymaga": null,
-          "odpowiedz": "Nie masz. Zrób, co uznasz za słuszne. Ja tylko mówię, że czterech ludzi kupiło bilet. Nie lubię naciskać.",
+          "odpowiedz": "Nie masz. Zrób, co uznasz za słuszne. Ja tylko mówię, że czterech ludzi kupiło bilet.",
           "mina": "mowi"
         }
       ]
@@ -2437,7 +2626,7 @@
       "akcja": "zetony_iris",
       "etykieta": "Wydaj piórnik Iris",
       "kto": "iris",
-      "reakcja": "Dziękuję. Nie lubię naciskać, ale cieszę się, że się rozumiemy.",
+      "reakcja": "Dziękuję. Cieszę się, że się rozumiemy.",
       "zysk": "Czterech ludzi z żetonów jest bezpiecznych, a Iris będzie ci to pamiętać.",
       "strata": "Skrytka działa poza księgą, a Victor zapisze, że go zignorowano.",
       "echo": {
@@ -2456,7 +2645,7 @@
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Iris Bell: „Nie lubię naciskać. Ale czterech moich lokatorów dostało dziś pisma z Urzędu. Ciekawe, kto pokazał im ich numery.”"
+        "tekst": "Iris Bell: „Czterech moich lokatorów dostało dziś pisma z Urzędu. Ciekawe, kto pokazał im ich numery.”"
       }
     },
     {
@@ -2485,7 +2674,16 @@
         "tekst": "Iris Bell: „Piórnik leży w depozycie. Rozumiem procedury. Ale jeden z moich ludzi ma jutro pociąg.”"
       }
     }
-  ]
+  ],
+  "rola": "zarządczyni i inspektor o jeden piórnik",
+  "watki": [
+    "Skrytka",
+    "Urząd",
+    "Fotel"
+  ],
+  "tik": "Iris cicho, Victor „kto podpisze?”",
+  "potrzeba": "piórnik z pięcioma żetonami",
+  "slad": "numery to daty zamówienia, 0809 na końcu"
 }
 ```
 
@@ -2626,7 +2824,15 @@
         "tekst": "Inspekcja przewozów: odnotowano telefon w sprawie niezgodności opisu. Nie wszystko wymaga telefonu. — V. Crane"
       }
     }
-  ]
+  ],
+  "rola": "zbyt grzeczny zgłaszający kapelusz",
+  "watki": [
+    "Zaginiona",
+    "Urząd"
+  ],
+  "tik": "mówi „zgodnie z regulaminem”",
+  "potrzeba": "szary filcowy kapelusz bez dowodu",
+  "slad": "kłamie o sobie i wraca w d22"
 }
 ```
 
@@ -2690,7 +2896,7 @@
           "ton": "rzeczowe",
           "wymaga": null,
           "odpowiedz": "Pasek od zegarka i kartka z inwentarza. Nic wartościowego.",
-          "mina": "klamie"
+          "mina": "neutralna"
         },
         {
           "tekst": "Dlaczego to ty zajmujesz się jego szafką?",
@@ -2771,7 +2977,16 @@
         "tekst": "Vera Kovacs: „Zatrzymane do piątku. Powiedziałam Samowi. Nie odpisał, ale chyba przeczytał. To znaczy, że może przyjdzie.”"
       }
     }
-  ]
+  ],
+  "rola": "zaplecze z kluczami przy pasie",
+  "watki": [
+    "Poprzednik",
+    "Skrytka",
+    "Fotel"
+  ],
+  "tik": "dzwoni kluczami, gdy się wstydzi",
+  "potrzeba": "pudełko z szafki Sama",
+  "slad": "wezwała Sama na zamknięcie jego starej szafki"
 }
 ```
 
@@ -2814,8 +3029,8 @@
           "tekst": "Co jest w tym zeszycie poza grafikiem?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Przepisy na zupy i numery telefonów. Nic ważnego. Masz kanapkę, poczęstuj się.",
-          "mina": "klamie"
+          "odpowiedz": "Przepisy na zupy i numery telefonów. Masz kanapkę, poczęstuj się.",
+          "mina": "mowi"
         }
       ]
     },
@@ -2913,7 +3128,15 @@
       },
       "wymaga": "d10_vera:pokwituj_osobista|d10_vera:zatrzymaj_do_15|d10_vera:archiwum"
     }
-  ]
+  ],
+  "rola": "motorniczy, który płaci kanapką",
+  "watki": [
+    "Poprzednik",
+    "humor"
+  ],
+  "tik": "mówi „masz, weź kanapkę”",
+  "potrzeba": "zeszyt grafiku dyżurów",
+  "slad": "zapisał dług Sama i pyta o niego"
 }
 ```
 

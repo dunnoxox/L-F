@@ -30,3 +30,9 @@ Blok `epilogi_elias` na końcu pliku: odebrany, wyrwana_strona, rotacja, rotacja
 
 ## Ekran końcowy
 Licznik Urząd po finale nazywa się „Ekspozycja” i nie jest pokazywany jako dobro.
+
+## Pola rekordu gościa (do plakietki)
+Każdy gość w obu plikach ma teraz pola: `rola` (krótki opis), `watki` (lista: Zaginiona, Skrytka, Poprzednik, Fotel, Urząd, Marlow, kamienica, pieniądze, humor), `tik`, `potrzeba`, `slad` (zdanie 6-10 słów: co po gościu zostaje w historii). Pola nie wpływają na walidator.
+
+## Nowi goście
+`d20_tobias` (d20) i `d21_mina` (d21); nowe akcje `wez_60_tobias` (+60 $, jak inne wez_*) i `wyloz_94` (−94 $, jak wyloz_*).
