@@ -147,6 +147,8 @@ window.PLAN10={od:8,
  dni:{8:['d8_lena_i_nora','d8_bree','d10_vera'],9:['d9_iris','d13_elias','d15_sam','d24_vera'],10:['d20_elias_sam','d25_ksiega']},
  /* z których starych dni brać kartki o świcie (bez tych, które przeczą przeniesionym scenom) */
  ev:{8:[8],9:[24],10:[]},
+ /* własne kartki o świcie (dopisywane do dnia): zapowiedź, że w ostatnią sobotę Marlow bierze wszystko */
+ kartki:{8:[{kto:'Kuba Marlow, przez kuzyna',tekst:'„Kuba pyta, czy zdążysz do soboty. Mówi, że to ostatnia i że rat już nie będzie. Co zostanie do oddania, weźmie z lady sam, ile będzie leżało. K.M.”'}]},
  tytul:{8:'Żółta kartka w podszewce',9:'Kartonik z numerem szafki',10:'Księga otwarta na twojej stronie'},final_h:'Koniec zmiany.',
  /* epilog dopasowany do 10 dni: bez dat i bez wątków, które się nie rozegrały */
  lang:{pr1_lab_end:'Słup przy zajezdni',
@@ -160,4 +162,4 @@ window.PLAN10={od:8,
   ep_rotacja_lb:'Peron o świcie, pusty bilet, nowa twarz w nowym mieście. Na słupie wisi świeży odcinek ogłoszenia: 0913. Listu nikt nie znalazł.'}};
 window.TRT.s_d10='Próba: gra w 10 dni (zwrot i finał w dniach 9-10)';
 window.TRT.niezg='To ta rzecz, ale w środku jest co innego, niż mówił gość. Leży na ladzie. Ty decydujesz.';
-window.TRT.mar_all='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $. Do oddania zostaje {r} $.';window.TRT.mar_all0='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $ i drze kartkę z długiem.';
+window.TRT.mar_wait_k='Na ratę dla Marlowa nie starczyło. Kuba tym razem nie mówi, że poczeka. Do oddania: ${r}.';window.TRT.mar_all='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $. Do oddania zostaje {r} $.';window.TRT.mar_all0='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $ i drze kartkę z długiem.';

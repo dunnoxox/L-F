@@ -22,7 +22,7 @@
 python3 -I koncept/rozmowy_dsl/wstaw.py          # musi wypisać: nieznane id: []
 cd game && python3 -I build_data.py && cd ..     # przebudowuje game/data.js
 python3 -I docs/tools/validate_dialogs.py        # musi wypisać OK
-node qa/tropy_test.js                            # cechy rzeczy z dni 1–5 nadal padają w rozmowie
+node qa/tropy_test.js                            # cechy rzeczy z dni 1–8 nadal padają w rozmowie
 node qa/spojnosc_dialogow.js                     # raport docs/SPOJNOSC_DIALOGOW.md; WIEDZA, KALKA, PLEC mają być na zerze
 ```
 
@@ -85,9 +85,9 @@ Dla każdej z 21 scen z dni 1–10 i każdej z 5 scen pliku `final.txt`:
 ### 5. Rozmowa musi pomagać w magazynie
 
 - Każda scena ma temat o wyglądzie rzeczy i dopytanie o znak szczególny. W odpowiedziach muszą zostać te same rzeczowniki, co dziś (biała nitka, czerwona wskazówka, naklejka „Mama”, odłamany dziób, pęknięta klamra itd.), bo gra rozpoznaje je po słowach.
-- Dla dni 1–5 obowiązuje plik `tropy.js`: każde wyrażenie z pola `re` musi dalej pasować do jakiejś odpowiedzi gościa bez `@`, na poziomie 0 albo 1. Nie zmieniaj tych sformułowań.
+- Dla dni 1–8 obowiązuje plik `tropy.js`: każde wyrażenie z pola `re` musi dalej pasować do jakiejś odpowiedzi gościa bez `@`, na poziomie 0 albo 1. Nie zmieniaj tych sformułowań.
 - Dla dni 4–10 wpleć w odpowiedzi trzy konkretne cechy rzeczy (kolor albo materiał, kształt albo rozmiar, znak szczególny), każdą w osobnej odpowiedzi, tak żeby gracz, który nie dopytał, wiedział mniej.
-- Osobno, w odpowiedzi na temat „gdzie i kiedy”, gość podaje linię tramwaju i porę zguby (dzień albo godzinę). To czwarta cecha: w magazynie rzecz ma zawieszkę z linią i datą. Nie przenoś tej informacji do innej odpowiedzi i nie zmieniaj linii ani pory w dniach 1–5. U Gusa (`d5_gus`) odpowiedź na „Co w nim jest?” musi zostać kłamstwem o dwudziestu dolarach: na tym kłamstwie stoi mechanika magazynu.
+- Osobno, w odpowiedzi na temat „gdzie i kiedy”, gość podaje linię tramwaju i porę zguby (dzień albo godzinę). To czwarta cecha: w magazynie rzecz ma zawieszkę z linią i datą. Nie przenoś tej informacji do innej odpowiedzi i nie zmieniaj linii ani pory w dniach 1–8. U Gusa (`d5_gus`) odpowiedź na „Co w nim jest?” musi zostać kłamstwem o dwudziestu dolarach: na tym kłamstwie stoi mechanika magazynu. To samo dotyczy Evana (`d7_evan`, kłamie, że klucz jest jeden) i Bree (`d8_bree`, kłamie, że rzecz nie ma żadnych znaków): te odpowiedzi muszą zostać kłamstwami.
 - Kłamca albo ktoś, kto przyszedł po cudzą rzecz, zna ją tylko z wierzchu. Właściciel zna środek, ale mówi po swojemu i czasem się myli w drobiazgu. Uczciwy, który słabo pamięta, nie może wyjść na oszusta.
 - Gracz nigdy nie podpowiada cechy w pytaniu, jeśli jej wcześniej nie usłyszał albo nie znalazł (`@`).
 
