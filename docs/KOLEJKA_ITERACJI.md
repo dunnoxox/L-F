@@ -140,3 +140,35 @@ Ocena szczera:
 - 190 $ nadwyżki u bezbłędnego to wciąż luz, ale 250 $ Gusa jest już większe niż cały zapas z tygodnia. Typowego gracza z dwiema pomyłkami i jednym gościem, który wyszedł, szacuję na 70-100 $. To szacunek, nie pomiar.
 - Próg czasu dla kolejki sprawdziłem na liczbach i odrzuciłem: noc ma 370 minut, trzy wizyty zajmują 180-255, więc podniesienie progu z 45 do 70 minut zabiera najwyżej jedną osobę i tylko dociekliwemu. Za słaba dźwignia.
 - Prawdziwa presja powinna przyjść z soboty tygodnia 2 (rachunki, rata) i z tego, że pomyłki bolą. To reszta I6, nieruszona.
+
+
+### I7, część 1: dni 6-8 na nowym rdzeniu (12.11 wieczór)
+
+Zmiana: tropy dla Leo (zegarek), Kita (słuchawki), Evana (etui), Leny z Norą (torba) i Bree (aparat). Ada zostaje po staremu, bo ona rzecz przynosi, a nie szuka.
+- Leo: obejrzenie zegarka pokazuje dopisek „+ puszka” i odblokowuje decyzję „wpisz puszkę”. Wcześniej wymagało to zajrzenia akurat do tej rzeczy przy dostawie.
+- Kit: taśma na lewej muszli, kot na prawej. Bliźniak ma odwrotnie.
+- Evan mówi, że w etui jest jeden klucz. Są dwa, mały z numerem 14. Na zawieszce stoi numer linii, o który Evan pyta, więc gracz trzyma w ręku dokładnie tę wiedzę, której gość chce.
+- Torba: miarka z literą „M”, bliźniak ma „W”.
+- Bree mówi, że aparat nie ma znaków. Ma wydrapane R.O. i pełny film.
+
+Granie: dni 6-8 przejściem kontrolnym od zapisu, bez błędów, wszystkie sześć sekretów odkrytych z oględzin w magazynie. Pełnej ręcznej rozmowy z każdym z pięciu gości nie robiłem.
+
+Ocena szczera:
+- Trzech kłamców (Gus, Evan, Bree) działa na tej samej sztuczce: słowa kontra rzecz. Za trzecim razem gracz będzie tego szukał z góry. To dobre jako nauka wzorca w tygodniu 1-2, ale finał potrzebuje kłamstwa innego rodzaju.
+- Sekret z oględzin w magazynie sprawia, że zaglądanie przy dostawie traci sens: po co zgadywać jedną rzecz o 23:40, skoro i tak obejrzę ją przy gościu. Dostawa powinna dawać coś, czego magazyn nie da (np. czas na spokojne obejrzenie, zanim gość zacznie się niecierpliwić). Do przemyślenia, nie ruszone.
+- Ada bez zmian to dziura w rytmie dnia 6: jedyna wizyta bez szukania.
+
+
+### Przejście dni 1-10 jednym ciągiem w próbie 10 dni (12.11 wieczór)
+
+Gracz bezbłędny i uczciwy, od nowej gry do karty zakończenia: 24 wizyty z imieniem, zero błędów w konsoli, pytanie o imię pada w dniu 10, księga zamyka grę.
+
+| Świt | pon. | wt. | śr. | czw. | pt. | sob. 1 | pon. | wt. | śr. | czw. | pt. | sob. 2 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Gotówka | 80 | 230 | 340 | 410 | 560 | 190 | 300 | 410 | 560 | 720 | 800 | 410 |
+
+Ocena szczera:
+- Silnik i treść spinają się w całość. To pierwszy raz, kiedy gra w 10 dni przeszła od ogłoszenia na słupie do epilogu.
+- Tydzień 2 jest finansowo jeszcze luźniejszy niż tydzień 1: bezbłędny gracz kończy z 410 $. W finale pieniądze nie grają żadnej roli. Jeśli dług u Marlowa ma coś znaczyć na końcu, sobota 2 musi boleć albo rata musi rosnąć.
+- 24 wizyty to według moich czasów z grania ręcznego 3-4 minuty na wizytę, czyli 70-95 minut plus kolejka i świty. Blisko dwóch godzin, ale bez zapasu. Próg zwrotu Steam dalej jest ryzykiem.
+- To przejście robił automat, który zawsze wybiera pierwszą decyzję. Nie mówi nic o tym, czy dni 8-10 trzymają napięcie. Tego nie umiem ocenić bez człowieka przy grze.
