@@ -88,3 +88,23 @@ Ocena szczera, czyli dlaczego to jeszcze nie jest wersja dla gracza:
 - Nagłówek świtu pokazuje numer dnia. To stary błąd wbrew zasadzie tekstu, nie z tej iteracji.
 
 Wniosek: opcja „dni 1-8 plus finał” jest wykonalna bez pisania gry od nowa, ale wymaga czterech poprawek treści wyżej. To robota wątku dialogów po decyzji.
+
+
+### I5: dni 4-5 na nowym rdzeniu (12.11 wieczór)
+
+Zmiana: tropy dla Iris (paczka), Noaha (notes), Victora (teczka) i Gusa (portfel). Trzy nowe rzeczy w mechanice:
+- **Liczba słownie.** Victor mówi „numer czterdzieści siedem”, w skrzyni leżą teczki V.C. 47, V.C. 74 i W.C. 47. Pasuje do postaci: pedant sprawdza, czy ty też nim jesteś.
+- **Opis, który nie pasuje do żadnej rzeczy.** Gus mówi, że w portfelu jest prawo jazdy, 20 $ i zdjęcie córki. Portfel, który zgadza się z wyglądu, ma w środku dwa dowody i zwitek banknotów. Bliźniak, który zgadza się ze słowami, ma inne zapięcie i kształt. Kłamstwo wychodzi w magazynie, z rzeczy, a nie z dźwięku.
+- **Oględziny w magazynie odkrywają sekret.** Kto obejrzy portfel Gusa, widzi 250 $ za zdjęciem i przy ladzie dostaje opcję „zatrzymaj 250 $”. Wcześniej ta opcja zależała od tego, czy przy dostawie akurat zajrzało się do tej jednej rzeczy.
+
+Granie: dzień 5 ręcznie, trzy wizyty. Victor: cztery teczki, różnica w jednej cyfrze, znalezione po przeczytaniu kart. Gus: po wzięciu właściwego portfela lada mówi „w środku jest co innego, niż mówił gość” i jest pięć opcji, w tym dwie z kradzieżą.
+
+Ocena szczera:
+- Gus to pierwsza wizyta, w której szukanie zmienia decyzję. To jest to, czego brakowało: dylemat „ukraść czy nie” pojawia się, bo coś znalazłem, a nie dlatego, że gra dała przycisk.
+- Iris i Noah to wciąż ten sam schemat co dni 1-3, tylko z inną rzeczą. Poprawne, bez nowej myśli. Iris zasługuje na więcej: jej paczka ma blankiet „bez wpisu”, który powinien wychodzić w oględzinach tak jak u Gusa.
+- Komunikat o niezgodności pojawia się tylko, gdy gracz zapytał „Co w nim jest?”. Kto nie zapytał, dostaje opcję 250 $ bez zdania o kłamstwie. Uznaję to za uczciwe: nie słyszał kłamstwa, więc nie ma czego porównać.
+- Klucze z kolejki: zamiast liczby kluczy (grafika pokazuje trzy) jest plakietka. Błąd z I3 naprawiony.
+- Dalej brakuje wnioskowania u ludzi z kolejki. Nie ruszone.
+- Cały tydzień z sobotą nadal niezagrany ręcznie.
+
+Dopisek do I4 (ten sam wieczór): wątek dialogów przepisał plan na dni 8-10 (Vera z pudełkiem w dniu 8, Elias przy szybie w dniu 9 przed finałem, wyznanie Very w dniu 9, dzień 10 w dwóch scenach, epilog bez dat). To usuwa cztery braki z listy wyżej. Zagrałem dni 8-10 od zapisu do karty zakończenia na nowej treści: bez błędów, zakończenie „Rotacja”. Po mojej stronie poprawione: nagłówek świtu pokazuje datę zamiast numeru dnia, pasek nitek w 10 dniach nie pokazuje wątków Mai i Skrytki, które nie mają jak się rozegrać. Niesprawdzone: przejście dni 1-10 w całości jednym ciągiem.

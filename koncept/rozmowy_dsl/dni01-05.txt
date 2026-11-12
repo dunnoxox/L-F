@@ -9,9 +9,12 @@
 = n W czwórce, wczoraj wieczorem, jak jechałem do Doków. Leżała mi na kolanie i na zakręcie zsunęła się pod siedzenie. Zauważyłem dopiero w domu.
  ? n Po co wieczorem do Doków?
  = m Do córki, do Claire. W czwartki gotuje rosół i udaje, że przypadkiem wyszło za dużo. Ona nie wie, że rękawiczka zginęła, i wolałbym, żeby tak zostało.
+  ? n Czemu Claire ma nie wiedzieć?
+  = e O to już proszę nie pytać. To sprawa między mną a córką, nie między mną a okienkiem.
   ? r A jeśli Claire sama tu przyjdzie pytać?
   = n To proszę jej powiedzieć, że wszystko się znalazło. Ona martwi się o mnie bardziej niż ja o siebie.
 ? n Po co wozić rękawiczki żony tramwajem?
+- To już chyba nie do formularza, prawda? Stary człowiek ma swoje dziwactwa.
 = e Noszę je w kieszeni płaszcza, jedną w drugiej. Jakbym trzymał ją za rękę. Głupie, wiem.
  ? u Wcale nie głupie. Długo byliście razem?
  = e Czterdzieści cztery lata. Poznaliśmy się w tramwaju, w dwójce, której już nie ma. Dlatego w niedzielę chcę jej zanieść obie.
@@ -54,9 +57,12 @@
 ? n @d1_lista_nocy W kopercie jest lista nocy. Czwarta przekreślona. Dlaczego?
 = e W czwartek wyszłam o północy, bo mała miała gorączkę. Iris Bell, nasza zarządczyni, skreśliła mi całą noc, nie pół. Cztery godziny przerobiłam za darmo.
  ? n Czemu się z nią nie kłóciłaś?
+ - Pytasz jak ktoś, kto nigdy niczego nie wynajmował. Daj spokój.
  = n Bo wynajmuje mi pokój i załatwiła mi tę pralnię. Jak się pokłócę, nie mam ani jednego, ani drugiego. Policz sobie.
  ? u A córka? Już zdrowa?
  = m Zdrowa, dzięki. Ada, dziesięć lat, twarda sztuka. Dziś sama zrobiła sobie kanapki do szkoły. I mnie też.
+  ? n Kto zostaje z małą, kiedy masz nockę?
+  = e A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.
 ! odmow No to pięknie. Jutro czynsz, a ja z pustymi rękami. Przyjdę rano z kierownikiem, niech on poświadczy.
 
 # d2_jonah
@@ -75,11 +81,14 @@
  ? u Kim jest June?
  = e Moją dziewczyną. Dwa lata i trzy miesiące, liczę. Pracuje w piekarni, pachnie drożdżówką nawet w niedzielę. Dla niej jest to, co leży w plecaku.
 ? n Co takiego stanie się o siódmej rano?
+- Eee, to prywatne. Znaczy nie tajne, tylko... prywatne. Możemy wrócić do plecaka?
 = e O siódmej June wpada z piekarni na kawę. Chcę ją wtedy o coś zapytać. O coś, o co pyta się raz w życiu. Dlatego potrzebuję plecaka.
  ? n A jak powie „nie”?
  = e To będzie najgorszy poranek w moim życiu. Ale wolę usłyszeć „nie”, niż dalej nie wiedzieć.
  ? u Wiesz już, jak ją zapytasz?
  = m Mam trzy wersje na serwetce. Dwie skreśliłem. Trzeciej się boję, bo jest krótka i nie ma się za czym schować.
+  ? n Przeczytasz mi tę trzecią?
+  = e Nie. Bez urazy, ale pierwsza usłyszy ją June, a nie okienko.
 ? n @d2_paragon_raty Na paragonie jest 40 dolarów wpłaty, reszta w ratach. Stać cię na to?
 = e Nie stać. Jestem kurierem, wziąłem na sześć rat. Ale jak nie teraz, to kiedy? I tak, wiem, jak to brzmi.
  ? r June wie, że pierścionek jest na raty?
@@ -98,7 +107,10 @@
 = n W czwórce, w ostatnim kursie. Postawiłam między nogami, zadzwoniła mama i wysiadłam z telefonem przy uchu. Bez futerału.
  ? u Co takiego powiedziała mama?
  = e Że wszyscy trzymają kciuki. Cała ulica wie o przesłuchaniu. Mama już upiekła ciasto na „po wszystkim”.
+  ? n Mama wie, na czyich skrzypcach grasz?
+  = e Nie mieszaj do tego mamy. Pytaj o futerał, o tramwaj, o co chcesz. O mamę nie.
  ? n Skrzypaczka zapomina skrzypiec?
+ - Przyszłam po futerał, a nie po ocenę. Naprawdę nie mam na to czasu.
  = n Wiem, jak to wygląda. Od dwóch dni prawie nie śpię, ćwiczę po dziesięć godzin. Człowiek wtedy zapomina własnego nazwiska.
 ? n Czyje to skrzypce?
 = k Moje. Oczywiście, że moje. Gram na nich od siedmiu lat.
@@ -125,6 +137,7 @@
 ? r Gdzie go zostawiłaś?
 = n W czwórce, na haczyku przy tylnych drzwiach. Wysiadałam na pętli z torbami w obu rękach. Przypomniałam sobie, jak tramwaj już zakręcał.
  ? n Co robisz nocą na pętli czwórki?
+ - A to już, za pozwoleniem, moja rzecz. Przyszłam po parasol.
  = n Rozwieszam ogłoszenia. Na pętli ludzie czekają i z nudów czytają wszystko, nawet słupy.
 ? u O jakie ogłoszenie pytasz?
 = m „Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu”. Wasz słup stoi w dobrym miejscu. Wolę zapytać, niż żeby mi je ktoś zrywał.
@@ -158,6 +171,7 @@
 ? n ~maz Jak wyglądał wasz ostatni wieczór?
 = k Zwyczajnie. Żadnej kłótni. Zjedliśmy kolację, Maya poszła do pracy i nie wróciła.
  ? n ~maz Do pracy po kolacji? Na noc?
+ - Nie widzę związku z telefonem. Trzymajmy się sprawy, dobrze?
  = n Jest elektryczką, bierze nocne awarie. Wychodziła o różnych porach. Nie pilnowałem jej, jeśli o to chodzi.
  ? n ~maz Miała powód, żeby nie wrócić?
  = k Żadnego. Spokojne małżeństwo. Oboje dużo pracowaliśmy, to wszystko.
@@ -190,9 +204,12 @@
  ? n Telefon nie może cię budzić?
  = n Telefon wyłączam przez sen, jedną ręką. Ten skacze po szafce i trzeba wstać, żeby go zdusić. Na mnie działa tylko przemoc.
 ? n Po co wozisz budzik tramwajem?
+- A co, nie wolno? Bilet miałam ja, on jechał na kolanach.
 = m Bo nocowałam u siostry i wzięłam go ze sobą. Samego w domu nie zostawię. Śmiej się, proszę bardzo.
  ? u Co robiłaś u siostry?
  = n Pilnowałam jej dzieciaków, bo miała nockę. Trójka. Po takim wieczorze człowiek zostawiłby w tramwaju własną głowę.
+  ? n A ich ojciec gdzie był?
+  = e Hola. Przyszłam po budzik, nie do spowiedzi. O siostrę pytaj siostrę.
 ? n @d3_rachunek_budzik Pod pokrywką jest rachunek z warsztatu. Naprawiasz go zamiast kupić nowy?
 = e Osiemnaście dolarów za mechanizm. Nowy kosztuje dziesięć. Ale ten dzwoni tak, jak dzwonił u mamy w kuchni. Na inny dźwięk bym nie wstała.
 
@@ -212,6 +229,7 @@
 ? u Kim są lokatorzy, którzy na nią czekają?
 = m Dwadzieścia rodzin spod dziewiątki. Zbieram od nich zaliczki na remont i trzymam ich dokumenty, żeby się nie pogubiły. Zabawne, prawda? Akurat mnie się zgubiło.
  ? n Czemu nikt z nich nie przyszedł po nią sam?
+ - Nie lubię naciskać, ale to pytanie nie należy do okienka. Kasetka, proszę.
  = n Bo to moja odpowiedzialność. Nie lubię, jak ktoś obcy grzebie w sprawach moich lokatorów. Nikt by nie lubił.
  ? r Do kiedy paczka musi do nich wrócić?
  = n Najlepiej jeszcze dziś. Nie lubię naciskać, ale moi lokatorzy źle śpią, kiedy ich sprawy leżą w cudzej szufladzie.
@@ -242,6 +260,7 @@
  ? r Do kiedy masz na nią czas?
  = n Do wtorku, siódmego września, do szóstej rano. Potem akta idą do wydziału, a tam nikt nie pyta zaginionej, czy chce być znaleziona.
  ? n Wierzysz mężowi?
+ - Czyli: przesłuchujesz policjanta. Ładnie. Śledztwa przy szybie nie komentuję.
  = n Wierzę godzinom. Na razie jego godziny mi się nie składają. Resztę zostawiam dla siebie.
   ? u Można ci jakoś pomóc?
   = m Można. Jak przy tym okienku zdarzy się coś dziwnego, zapisz godzinę i powiedz mi. Najlepiej zanim zapyta ktoś inny.
@@ -264,6 +283,7 @@
 ? r Gdzie ją zostawiłeś?
 = n W szóstce, o 4:10, na siedzeniu obok. Wysiadłem przy zajezdni bez teczki. Nie zdarza mi się to.
  ? n Inspektor jeździ nocnym tramwajem?
+ - Pytania zadaje kontrola, a nie kontrolowany. Jest na to paragraf.
  = n Sprawdzam, czy tramwaje jeżdżą tak, jak stoi w grafiku. Nie jeżdżą. A skoro już pytamy: kto cię tu skierował? W aktach nie mam żadnego skierowania.
   ? r Nikt. To było ogłoszenie w gazecie.
   = n „Bez referencji”. Czytałem. Poprzedni dyżurny też był bez referencji. Zapiszę to sobie.
@@ -296,6 +316,7 @@
   ? r Adres do wpisu?
   = k Mill Street dwanaście. Nie, zaraz, piętnaście. Dwanaście to brat, ale on się wyprowadził.
 ? n Szlafrok pod płaszczem, w środku nocy. Co się stało?
+- Nic się nie stało. Człowiek nie może wyjść w szlafroku? Portfel. Proszę.
 = n Pokłóciłem się w domu i wyszedłem, jak stałem. Z żoną, z teściową, z obiema naraz. Tylko o rodzinie nie rozmawiajmy.
  ? u Może zadzwonić do domu, że nic ci nie jest?
  = n Nie. Telefon jest tam, gdzie żona. Nie dzwonię. Tak będzie lepiej dla wszystkich.
