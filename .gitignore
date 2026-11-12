@@ -12,3 +12,4 @@ unity/**/UserSettings/
 *.csproj
 *.sln
 node_modules/
+docs/ux/start/
