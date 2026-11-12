@@ -42,7 +42,7 @@ window.TROPY={
 };
 window.TRT={head:'Z rozmowy',none:'Na razie wiesz tylko, czego szukasz. Reszta padła w rozmowie albo nie padła.',
  ask:'? dopytaj przez szybę',ask_cost:'Każde dopytanie zabiera gościowi kratkę cierpliwości.',take:'Na ladę',back:'Odłóż',other:'Nie tego szuka gość.',
- wrong:'„To nie moja rzecz.” Pomyłka idzie z Twojej kieszeni.',fine:15,step:'Krok 5: obejrzyj podobne rzeczy i połóż na ladzie tę, która pasuje do rozmowy',card:'Oględziny',uw:'Rzuca się w oczy'};
+ wrong:'„To nie moja rzecz.” Pomyłka idzie z Twojej kieszeni.',fine:15,wrong1:'„To nie moja rzecz.” Pierwsza pomyłka na koszt biura. Każda następna: 15 $ z Twojej kieszeni.',step:'Krok 5: obejrzyj podobne rzeczy i połóż na ladzie tę, która pasuje do rozmowy',card:'Oględziny',uw:'Rzuca się w oczy'};
 window.TR={
  has:g=>!!window.TROPY[g.id],
  known(g,heard){const t=window.TROPY[g.id],o={};Object.keys(t.pola).forEach(k=>{o[k]=t.re[k].test(heard||'')});return o},
