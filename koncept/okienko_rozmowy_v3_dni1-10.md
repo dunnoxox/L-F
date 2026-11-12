@@ -29,95 +29,128 @@
     }
   ],
   "wejscie": "Dobry wieczór. Thomas Ward. Zgubiłem lewą rękawiczkę mojej żony, w tramwaju czwórce. Ellen zmarła w lutym. W niedzielę idę na cmentarz i nie chcę iść z jedną.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ta rękawiczka?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Brązowa skóra, damska, mały rozmiar. Przy kciuku zszyłem ją białą nitką, bo ciemnej w domu nie było. Krzywo, ale trzyma.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ta rękawiczka?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Brązowa skóra, mały rozmiar. Przy kciuku zszyłem ją białą nitką, bo ciemnej nie miałem. Krzywo, ale trzyma.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie i kiedy się zgubiła?",
+          "tekst": "Biała nitka na brązowej skórze? Czemu nie u kaletnika?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "W czwórce, wczoraj wieczorem, jak jechałem do Doków. Leżała mi na kolanie i zsunęła się pod siedzenie na zakręcie.",
-          "mina": "neutralna"
+          "odpowiedz": "Bo tym razem to ja miałem zszyć. Ellen przez czterdzieści lat cerowała po mnie wszystko, raz mogłem ja. Ręka mi lata, więc wyszło, jak wyszło.",
+          "mina": "emocja"
         },
         {
-          "tekst": "Czemu rękawiczki żony były w tramwaju?",
+          "tekst": "Jak sprawdzić, że to ta, a nie podobna?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Drugą mam w kieszeni, o. Wystarczy położyć je kciukami do siebie: w prawej nitka czarna, w lewej biała. Czarna skończyła mi się w połowie roboty.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "tekst": "Gdzie i kiedy zginęła?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W czwórce, wczoraj wieczorem, jak jechałem do Doków. Leżała mi na kolanie i na zakręcie zsunęła się pod siedzenie. Zauważyłem dopiero w domu.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Po co wieczorem do Doków?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Noszę je w kieszeni, jedną w drugiej, jakbym trzymał ją za rękę. Głupie, wiem.",
+          "odpowiedz": "Do córki, do Claire. W czwartki gotuje rosół i udaje, że przypadkiem wyszło za dużo. Ona nie wie, że rękawiczka zginęła, i wolałbym, żeby tak zostało.",
+          "mina": "mowi",
+          "dalej": [
+            {
+              "tekst": "A jeśli Claire sama tu przyjdzie pytać?",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "odpowiedz": "To proszę jej powiedzieć, że wszystko się znalazło. Ona martwi się o mnie bardziej niż ja o siebie.",
+              "mina": "neutralna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Po co wozić rękawiczki żony tramwajem?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Noszę je w kieszeni płaszcza, jedną w drugiej. Jakbym trzymał ją za rękę. Głupie, wiem.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Wcale nie głupie. Długo byliście razem?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czterdzieści cztery lata. Poznaliśmy się w tramwaju, w dwójce, której już nie ma. Dlatego w niedzielę chcę jej zanieść obie.",
           "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "To pierwsza wizyta w tym biurze?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "gasi": "kwit",
+      "odpowiedz": "Pierwsza. Z urzędami się nie zadaję.",
+      "mina": "klamie",
+      "dalej": [
         {
-          "tekst": "Na kogo wpisać tę rękawiczkę?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Na Ellen Ward. A mnie jako Thomas Ward, przez h.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Jak sprawdzić, że to właśnie ta?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Drugą mam w kieszeni. Proszę je położyć kciukami do siebie: w prawej nitka jest czarna, w lewej biała. Czarna mi się skończyła.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czy to pierwsza wizyta w tym biurze?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Pierwsza. Z urzędami się nie zadaję.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "W mankiecie jest kwit z tego biura, numer 0417. Skąd on?",
+          "tekst": "To skąd w mankiecie kwit z tego biura, numer 0417?",
           "ton": "niewygodne",
           "wymaga": "d1_kwit_0417",
-          "odpowiedz": "No dobrze, byłem tu. Sześć tygodni temu zgubiłem prawą. Młody człowiek, Sam, oddał mi ją od ręki i powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstydziłem się, że to drugi raz.",
-          "mina": "emocja"
+          "klucz": "kwit",
+          "odpowiedz": "No dobrze, byłem tu. Sześć tygodni temu zgubiłem prawą. Taki młody człowiek, Sam, oddał mi ją od ręki. Powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstyd mi było, że gubię drugi raz.",
+          "mina": "emocja",
+          "dalej": [
+            {
+              "tekst": "Sam mówił coś jeszcze?",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "odpowiedz": "Że lewa też kiedyś przyjdzie, bo rękawiczki chodzą parami. I żebym o nim za dużo nie opowiadał. To nie opowiadałem.",
+              "mina": "neutralna"
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "W mankiecie jest kwit z tego biura, numer 0417. Skąd?",
+      "ton": "niewygodne",
+      "wymaga": "d1_kwit_0417",
+      "klucz": "kwit",
+      "odpowiedz": "No dobrze, byłem tu już. Sześć tygodni temu zgubiłem prawą. Taki młody człowiek, Sam, oddał mi ją od ręki. Powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstyd mi było, że gubię drugi raz.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Jest jakiś dokument ze zdjęciem?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Mam dowód, ale ręka mi drży, a zdjęcie jest sprzed dziesięciu lat. Córka lepiej mnie poświadczy.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Może ktoś jeszcze zgłosić się po tę rękawiczkę?",
+          "tekst": "Sam mówił coś jeszcze?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Córka, Claire. Ale ona nie wie, że rękawiczka się zgubiła. Jakby przyszła, niech jej ktoś powie, że wszystko w porządku.",
+          "odpowiedz": "Że lewa też kiedyś przyjdzie, bo rękawiczki chodzą parami. I żebym o nim za dużo nie opowiadał. To nie opowiadałem.",
           "mina": "neutralna"
         },
         {
-          "tekst": "Co będzie, jeśli rękawiczka zostanie tu do niedzieli?",
-          "ton": "niewygodne",
+          "tekst": "Nie ma się czego wstydzić. Każdy coś gubi.",
+          "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Pójdę na cmentarz z jedną. Ellen by się śmiała, że sto razy mi mówiła, żebym pilnował rzeczy.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Pod białą nicią jest starszy szew, brązowy. Czyj?",
-          "ton": "niewygodne",
-          "wymaga": "d1_biala_nic",
-          "odpowiedz": "Ellen. Szyła go wieczorem przed telewizorem. Białą dodałem po lutym, bo brązowa się przecierała. Nie chciałem jej zdejmować.",
-          "mina": "emocja"
+          "odpowiedz": "Ale nie dwa razy to samo, po jednej naraz. Ellen by powiedziała, że robię to specjalnie, żeby mieć z kim pogadać.",
+          "mina": "mowi"
         }
       ]
+    },
+    {
+      "tekst": "Pod białą nicią jest starszy szew, brązowy. Czyj?",
+      "ton": "niewygodne",
+      "wymaga": "d1_biala_nic",
+      "odpowiedz": "Ellen. Szyła wieczorem przed telewizorem, nawet nie patrzyła na igłę. Swoją białą dołożyłem po lutym, bo jej nitka się przecierała. Nie umiałem jej wypruć.",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -185,85 +218,97 @@
     }
   ],
   "wejscie": "Dobry wieczór. Rosa Vale, pracuję w pralni pod estakadą. Zgubiłam kopertę z wypłatą, 129 dolarów, w jedenastce. Jutro mam czynsz, więc to cały mój tydzień.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ta koperta?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ta koperta?",
+          "tekst": "Jest na niej jakieś nazwisko?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Moje, ołówkiem: Vale, przez V. I kwota w rogu, 129. Dziewiątka wygląda jak ósemka, ale to dziewiątka.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Gdzie i o której ją zgubiłaś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W jedenastce, o szóstej rano, po nocce. Położyłam ją obok, żeby zapiąć torbę, i przysnęłam. Obudziłam się na pętli, już bez koperty.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Po nocce? To od której jesteś na nogach?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Brązowa, jedna zszywka. Zszywka weszła krzywo, bo kierownik zszywał na stojąco.",
+          "odpowiedz": "Od wczoraj, od dziewiątej wieczorem. Potem mała do szkoły, potem tutaj. Śpię w tramwajach i tak to się potem kończy.",
           "mina": "mowi"
         },
         {
-          "tekst": "Gdzie i o której ją zgubiłaś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W jedenastce, o szóstej rano. Położyłam ją obok, żeby zapiąć torbę, i zasnęłam do pętli.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Skąd wiadomo, że było tam 129 dolarów?",
+          "tekst": "Ktoś siedział obok, kiedy przysnęłaś?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo liczyłam. Trzy noce po 43 dolary, to daje 129. Przeliczyłam trzy razy.",
+          "odpowiedz": "Nie patrzyłam. Rano jedenastką jadą same takie jak ja, każda z zamkniętymi oczami. Nie chcę nikogo oskarżać. Chcę kopertę.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Skąd pewność, że było w niej równo 129 dolarów?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Bo liczyłam. Trzy noce po czterdzieści trzy, razem sto dwadzieścia dziewięć. Przeliczyłam trzy razy, zanim wsiadłam.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Tylko trzy noce? Tydzień ma więcej.",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Miałam cztery. Za czwartą nie dostałam. To długa historia, a ja nie mam siły na długie.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Kto zdecydował, że za czwartą nie dostaniesz?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Iris Bell. Zarządza naszą kamienicą, odbiera za nas wypłaty z pralni i rozdaje w kopertach. Mieszkamy u niej, więc nikt się nie stawia.",
+              "mina": "neutralna"
+            }
+          ]
+        },
+        {
+          "tekst": "Na co pójdą te pieniądze?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Na czynsz, jutro termin. Za spóźnienie zarządczyni dolicza dwadzieścia dolarów kary. Czyli z każdym dniem tutaj robi mi się z tego sto dziewięć.",
           "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "W kopercie jest lista nocy. Czwarta przekreślona. Dlaczego?",
+      "ton": "niewygodne",
+      "wymaga": "d1_lista_nocy",
+      "odpowiedz": "W czwartek wyszłam o północy, bo mała miała gorączkę. Iris Bell, nasza zarządczyni, skreśliła mi całą noc, nie pół. Cztery godziny przerobiłam za darmo.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Kto ci wypłacił te pieniądze?",
+          "tekst": "Czemu się z nią nie kłóciłaś?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo wynajmuje mi pokój i załatwiła mi tę pralnię. Jak się pokłócę, nie mam ani jednego, ani drugiego. Policz sobie.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "A córka? Już zdrowa?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Iris Bell, zarządczyni naszej kamienicy. Odbiera wypłatę z pralni i rozdaje nam w domu. Koperta była od niej.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co jeszcze jest w środku, poza pieniędzmi?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Kartka z naszymi nocami. Nic ważnego.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czemu wypłatę odbiera Iris, a nie same pracownice?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Tak ustaliła. Dla niej wygodnie, dla nas nie bardzo, ale mieszkamy u niej, więc nie dyskutuję.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Na liście jedna noc jest przekreślona. Dlaczego?",
-          "ton": "niewygodne",
-          "wymaga": "d1_lista_nocy",
-          "odpowiedz": "W czwartek wyszłam o północy, bo córka miała gorączkę. Iris skreśliła całą noc, nie połowę. Czterdzieści trzy dolary za cztery godziny, które przepracowałam. Nie chcę o tym gadać.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Przeliczysz pieniądze przy okienku?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Tak, przy szybie. Jak się ma sto dwadzieścia dziewięć na cały tydzień, to się liczy co do centa.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Rosa Vale, przez V. Podpiszę, jak przeliczę.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co będzie, jeśli wypłata nie wróci dzisiaj?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Spóźnię się z czynszem, a Iris liczy za to dwadzieścia dolarów kary. Dostanę sto dziewięć zamiast stu dwudziestu dziewięciu.",
+          "odpowiedz": "Zdrowa, dzięki. Ada, dziesięć lat, twarda sztuka. Dziś sama zrobiła sobie kanapki do szkoły. I mnie też.",
           "mina": "mowi"
         }
       ]
@@ -283,7 +328,7 @@
     },
     {
       "akcja": "odmow",
-      "reakcja": "Dobrze, powiedzcie Iris. Poczekam, tylko czynsz nie poczeka.",
+      "reakcja": "No to pięknie. Jutro czynsz, a ja z pustymi rękami. Przyjdę rano z kierownikiem, niech on poświadczy.",
       "zysk": "Koperta wraca do osoby wskazanej na odcinku, czyli do Iris, zgodnie z przepisem.",
       "strata": "Rosa płaci dwadzieścia dolarów kary za spóźniony czynsz.",
       "echo": {
@@ -342,95 +387,107 @@
     }
   ],
   "wejscie": "Cześć, Jonah. Zgubiłem plecak w jedenastce, czarny, z pękniętą klamrą. Potrzebuję go przed siódmą rano, bo w kieszeni jest coś ważnego. Naprawdę ważnego.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Co jest w tym plecaku?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Ładowarka, książka, kupa starych biletów. I pudełko, w kieszeni od strony pleców. Pudełko jest najważniejsze.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Co jest w plecaku?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Ładowarka, książka, mnóstwo biletów, nie wiem, czemu je zbieram. I pudełko w kieszeni na plecach. Pudełko jest najważniejsze.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie i kiedy go zgubiłeś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W jedenastce, wczoraj wieczorem, pod składanym siedzeniem przy drzwiach. Wcisnąłem go nogą, żeby June miała gdzie stanąć.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co jest w tym pudełku?",
+          "tekst": "Co jest w pudełku?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Prezent. Niespodzianka, więcej nie powiem.",
-          "mina": "emocja"
+          "odpowiedz": "Prezent. Niespodzianka. Więcej nie powiem, bo zapeszę.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Dla kogo ta niespodzianka?",
+              "ton": "uprzejme",
+              "wymaga": null,
+              "odpowiedz": "Dla June. To moja dziewczyna, pracuje w piekarni, wstaje o czwartej. O siódmej wpada do domu na kawę i wtedy chcę ją o coś zapytać.",
+              "mina": "emocja"
+            }
+          ]
+        },
+        {
+          "tekst": "Po co ci kupa starych biletów?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Każdy jest z kursu, którym jechałem z June. Na odwrocie piszę datę. Wiem, że to dziwne. Znaczy nie dziwne, tylko... no dobra, dziwne.",
+          "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie i kiedy go zostawiłeś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W jedenastce, wczoraj wieczorem. Wcisnąłem go nogą pod składane siedzenie przy drzwiach, żeby June miała gdzie stanąć. I wysiadłem za nią jak cielę.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Wysiadłeś bez plecaka i nic cię nie tknęło?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Patrzyłem na nią, nie na plecak. Skapnąłem się w domu, jak chciałem sprawdzić, czy pudełko dalej jest. Całą noc nie spałem.",
+          "mina": "mowi"
+        },
         {
           "tekst": "Kim jest June?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Moją dziewczyną. Pracuje w piekarni, wstaje o czwartej. O siódmej rano, zanim wyjdzie, chcę ją o coś zapytać. Dlatego ten plecak.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Jak chcesz jej to powiedzieć?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W kuchni, zanim założy buty. Mam trzy wersje na serwetce. Żadna mi się nie podoba.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "A jak odmówi?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "To będzie najgorszy poranek mojego życia. Ale wolę zapytać, niż się nie dowiedzieć.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Na paragonie 40 dolarów wpłaty i reszta na raty. Stać cię na to?",
-          "ton": "niewygodne",
-          "wymaga": "d2_paragon_raty",
-          "odpowiedz": "Nie stać. Wziąłem na sześć rat, jestem kurierem. Ale ona jest tego warta. I tak, wiem, jak to brzmi.",
+          "odpowiedz": "Moją dziewczyną. Dwa lata i trzy miesiące, liczę. Pracuje w piekarni, pachnie drożdżówką nawet w niedzielę. Dla niej jest to, co leży w plecaku.",
           "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Co takiego stanie się o siódmej rano?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "O siódmej June wpada z piekarni na kawę. Chcę ją wtedy o coś zapytać. O coś, o co pyta się raz w życiu. Dlatego potrzebuję plecaka.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Zdążysz do domu przed siódmą?",
+          "tekst": "A jak powie „nie”?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "To będzie najgorszy poranek w moim życiu. Ale wolę usłyszeć „nie”, niż dalej nie wiedzieć.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Wiesz już, jak ją zapytasz?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Rowerem dziesięć minut. Zdążę z zapasem, byle ktoś mi go dał dzisiaj.",
+          "odpowiedz": "Mam trzy wersje na serwetce. Dwie skreśliłem. Trzeciej się boję, bo jest krótka i nie ma się za czym schować.",
           "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Jonah Pike. Pike jak ta ryba.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co zrobisz, jeśli plecak nie wróci przed siódmą?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Przełożę, ale June od razu zauważy, że coś jest nie tak. Ona zawsze wie. Przy niej nie umiem kłamać.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Na serwetce są trzy wersje oświadczyn. Którą wybierzesz?",
-          "ton": "niewygodne",
-          "wymaga": "d2_serwetka_trzy",
-          "odpowiedz": "Trzecią, krótką. Dwie pierwsze brzmiały jak reklama. Jak powiem ją źle, to powiem ją źle. Tylko nie pokazuj serwetki nikomu, serio.",
-          "mina": "emocja"
         }
       ]
+    },
+    {
+      "tekst": "Na paragonie jest 40 dolarów wpłaty, reszta w ratach. Stać cię na to?",
+      "ton": "niewygodne",
+      "wymaga": "d2_paragon_raty",
+      "odpowiedz": "Nie stać. Jestem kurierem, wziąłem na sześć rat. Ale jak nie teraz, to kiedy? I tak, wiem, jak to brzmi.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "June wie, że pierścionek jest na raty?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Nie wie i się nie dowie, dopóki nie spłacę. Kazałaby oddać i kupić za to pralkę. Znam ją.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Na serwetce są trzy wersje oświadczyn. Którą powiesz?",
+      "ton": "niewygodne",
+      "wymaga": "d2_serwetka_trzy",
+      "odpowiedz": "Trzecią, tę krótką. Dwie pierwsze brzmiały jak reklama banku. Tylko nie pokazuj tej serwetki nikomu, serio.",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -505,95 +562,114 @@
     }
   ],
   "wejscie": "Dobry wieczór. Hana Moreau, skrzypaczka. Zgubiłam futerał ze skrzypcami w czwórce. O ósmej rano mam przesłuchanie do orkiestry i bez tych skrzypiec nie mam po co przychodzić.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda futerał?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Czarny, sztywny, mosiężne zamki. Na wierzchu zielona naklejka, a rączka owinięta czerwoną taśmą, bo skóra się przetarła.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda futerał?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Czarny, sztywny, z mosiężnymi zamkami. W środku wieka zielona naklejka, a rączka owinięta czerwoną taśmą.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie dokładnie go zostawiłaś?",
+          "tekst": "Co to za naklejka?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "W czwórce, w ostatnim kursie. Postawiłam go między nogami, zadzwoniła mama i wysiadłam bez futerału.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czyje to są skrzypce?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Moje. Oczywiście, że moje. Gram na nich od siedmiu lat.",
+          "odpowiedz": "Zwykła. Ozdobna. Ze sklepu muzycznego. Nic nie znaczy.",
           "mina": "klamie"
+        },
+        {
+          "tekst": "Co jest w środku oprócz skrzypiec?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Kalafonia, jedwabna szmatka i nuty Mendelssohna z moimi zapiskami ołówkiem. Po tych zapiskach poznam je z zamkniętymi oczami.",
+          "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie go zostawiłaś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W czwórce, w ostatnim kursie. Postawiłam między nogami, zadzwoniła mama i wysiadłam z telefonem przy uchu. Bez futerału.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Co jeszcze jest w futerale?",
+          "tekst": "Co takiego powiedziała mama?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Kalafonia, szmatka z jedwabiu i nuty Mendelssohna z moimi zapiskami ołówkiem.",
-          "mina": "mowi"
+          "odpowiedz": "Że wszyscy trzymają kciuki. Cała ulica wie o przesłuchaniu. Mama już upiekła ciasto na „po wszystkim”.",
+          "mina": "emocja"
         },
         {
-          "tekst": "Czy w skrzypcach jest etykieta lutnika?",
-          "ton": "rzeczowe",
+          "tekst": "Skrzypaczka zapomina skrzypiec?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Jest, ale mała. Nazwiska nie pamiętam, od lat nie zaglądałam do środka.",
+          "odpowiedz": "Wiem, jak to wygląda. Od dwóch dni prawie nie śpię, ćwiczę po dziesięć godzin. Człowiek wtedy zapomina własnego nazwiska.",
           "mina": "neutralna"
-        },
-        {
-          "tekst": "Dlaczego to takie pilne właśnie dzisiaj?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo przesłuchanie mam rano, o ósmej. Dostałam się z listy rezerwowej, drugiej szansy nie będzie.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Pod pokrywą jest kartka: wypożyczenie do 7 sierpnia. Co to znaczy?",
-          "ton": "niewygodne",
-          "wymaga": "d2_etykieta_wyp",
-          "odpowiedz": "Że termin minął w sobotę. Konserwatorium nie przedłużyło, bo komisja zbiera się dopiero w czwartek. Nie jestem złodziejką, tylko spóźniłam się o trzy dni. Ale przesłuchanie mam dziś rano.",
-          "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Czyje to skrzypce?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Moje. Oczywiście, że moje. Gram na nich od siedmiu lat.",
+      "mina": "klamie",
+      "dalej": [
         {
-          "tekst": "Daleko stąd do filharmonii?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Cztery przystanki. Próba jest o siódmej, więc jeśli wyjdę stąd przed szóstą, zdążę rozgrzać palce.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór instrumentu wymaga podpisu. Podpiszesz?",
+          "tekst": "Od siedmiu lat? To gdzie je kupiłaś?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Hana Moreau. Napiszę czytelnie, choć ręka mi drży od wczoraj.",
-          "mina": "neutralna"
+          "odpowiedz": "Dostałam. Od... od nauczycielki. Dawno. Naprawdę muszę się z tego tłumaczyć przed przesłuchaniem?",
+          "mina": "klamie"
         },
         {
-          "tekst": "Co będzie, jeśli skrzypce wrócą do konserwatorium?",
-          "ton": "niewygodne",
+          "tekst": "W środku powinna być etykieta lutnika. Co na niej jest?",
+          "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Wtedy ktoś inny zagra moje przesłuchanie, a mnie wykreślą z listy. Bez skrzypiec nie mam po co tam iść.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Zielona naklejka jest częściowo zdrapana. Kto ją zdrapywał?",
-          "ton": "niewygodne",
-          "wymaga": "d2_naklejka_zielona",
-          "odpowiedz": "Ja. Z nerwów, w tramwaju. Numer inwentarzowy wygląda jak etykieta kradzieży, a ja nie kradnę. Chciałam, żeby przez chwilę było moje.",
-          "mina": "emocja"
+          "odpowiedz": "Jest jakaś, mała. Nazwiska nie pamiętam. Od lat tam nie zaglądałam.",
+          "mina": "neutralna"
         }
       ]
+    },
+    {
+      "tekst": "Co się stanie, jeśli nie dostaniesz ich przed ósmą?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Zagra ktoś inny. Weszłam z listy rezerwowej, drugiego terminu nie będzie. Bez skrzypiec nie mam po co tam iść.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Daleko masz stąd do filharmonii?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Cztery przystanki. Rozgrzewka jest o siódmej, więc jak wyjdę stąd przed szóstą, zdążę jeszcze rozruszać palce.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "tekst": "Pod pokrywą jest kartka: „Wypożyczone do 7 sierpnia”. Dziś jest dziesiąty.",
+      "ton": "niewygodne",
+      "wymaga": "d2_etykieta_wyp",
+      "odpowiedz": "Termin minął w sobotę. Komisja, która przedłuża, zbiera się dopiero w czwartek. Nie jestem złodziejką. Spóźniłam się trzy dni, a przesłuchanie mam za parę godzin.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Konserwatorium wie, że skrzypce jeździły po nocy tramwajem?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Nie wie. Jak się dowie, nie wypożyczą mi już nawet pulpitu. Chcę zagrać i w czwartek sama je odnieść.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Numer na naklejce ktoś zdrapywał paznokciem. Kto?",
+      "ton": "niewygodne",
+      "wymaga": "d2_naklejka_zielona",
+      "odpowiedz": "Ja. W tramwaju, z nerwów. Ten numer wygląda jak metka na cudzej rzeczy. Chciałam, żeby przez jeden dzień były moje.",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -648,85 +724,83 @@
     }
   ],
   "wejscie": "Ines Calloway. Zgubiłam parasol z rączką w kształcie kaczki, w czwórce, wczoraj. Poza tym chciałabym zapytać, czy wolno mi wieszać ogłoszenia na słupie przy wejściu. Kot, rudy, od zimy.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten parasol?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Czarny, automatyczny, z drewnianą rączką w kształcie kaczki. Kaczka ma odłamany dziób z lewej strony. Kupiłam go po zeszłorocznej wichurze.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten parasol?",
+          "tekst": "Kaczka bez dzioba? Nietypowa rączka.",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Czarny, automatyczny, rączka w kształcie kaczki. Dziób ma odłamany z lewej. Kupiłam go po zeszłorocznej wichurze.",
+          "odpowiedz": "Dlatego go kupiłam. Czarnych parasoli jest w tym mieście sto tysięcy. Z kaczką bez dzioba jeden. Lubię rzeczy, które da się rozpoznać.",
           "mina": "mowi"
-        },
+        }
+      ]
+    },
+    {
+      "tekst": "Gdzie go zostawiłaś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W czwórce, na haczyku przy tylnych drzwiach. Wysiadałam na pętli z torbami w obu rękach. Przypomniałam sobie, jak tramwaj już zakręcał.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Gdzie dokładnie go zostawiłaś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W czwórce, na haczyku przy tylnych drzwiach. Wysiadałam na pętli, ręce miałam pełne torby i zostawiłam go dopiero w zakręcie.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czemu pytasz o ogłoszenie, a nie wieszasz po prostu?",
+          "tekst": "Co robisz nocą na pętli czwórki?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo wolę zapytać. Słupy mają właścicieli. Ten przy wejściu ma właściciela, którego jeszcze nie poznałam.",
+          "odpowiedz": "Rozwieszam ogłoszenia. Na pętli ludzie czekają i z nudów czytają wszystko, nawet słupy.",
           "mina": "neutralna"
-        },
+        }
+      ]
+    },
+    {
+      "tekst": "O jakie ogłoszenie pytasz?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "„Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu”. Wasz słup stoi w dobrym miejscu. Wolę zapytać, niż żeby mi je ktoś zrywał.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "W rączce jest kartka z ogłoszeniem o kocie. Skąd?",
-          "ton": "niewygodne",
-          "wymaga": "d2_parasol_kartka",
-          "odpowiedz": "Mój tekst. Wkładam kopię do rączki, żeby nie zgubić. A kota nie ma od zimy, więc proszę nie pytać.",
+          "tekst": "Jak się wabi ten kot?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Fryderyk. Rudy, z białą łapką. Na wołanie nie przychodzi, taki już ma charakter.",
           "mina": "klamie"
+        },
+        {
+          "tekst": "Od zimy? Po takim czasie koty raczej nie wracają.",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Wiem, ile żyje kot na ulicy. Ale na te ogłoszenia ktoś odpisuje. Zostawia kartki, nocą. Nie widziałam kto. Dopóki odpisuje, wieszam dalej.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Co jest na tych kartkach?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Godziny. Numery linii. Raz samo „jeszcze nie”. O kocie ani razu. Proszę z tego nie wyciągać wniosków, ja też jeszcze nie wyciągam.",
+              "mina": "neutralna"
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "W rączce parasola jest zwinięte ogłoszenie o kocie. Po co je tam chowasz?",
+      "ton": "niewygodne",
+      "wymaga": "d2_parasol_kartka",
+      "odpowiedz": "Zapasowa kopia. Żeby mieć przy sobie, kiedy deszcz rozmoczy tamte. Nic więcej.",
+      "mina": "klamie",
+      "dalej": [
         {
-          "tekst": "Jak wygląda Twój kot?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Rudy, z białą łapką. Wabi się Fryderyk. Nie przychodzi na wołanie, tylko na ciszę.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Od kiedy go nie ma?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Od zimy. Dokładnie od pierwszego śniegu. Drzwi były zamknięte, a on wyszedł oknem, którego nie otwiera się od środka.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czemu nikt nie odpowiada na Twoje ogłoszenia?",
+          "tekst": "To na pewno jest ogłoszenie o kocie?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Odpowiada. To znaczy: ktoś zostawia kartkę z odpowiedzią. Przychodzi nocą, nie widziałam kto. Potem już nie szukam.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Co chcesz, żebym zrobił z ogłoszeniem?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Żeby ogłoszenie zostało. Tylko tyle. Jak ktoś przyjdzie z kotem, powiedzcie mu, że szukam, i nie pytajcie o resztę.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Podpiszesz odbiór parasola?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Ines Calloway. Pisownia z jednym „l”. Proszę zapisać równo.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czy to naprawdę jest ogłoszenie o kocie?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Tak. Dla kota. Dla innych, którzy też szukają. Proszę nie czytać między wierszami, bo ich tam jest dwa razy więcej.",
+          "odpowiedz": "Tak. O kocie. I trochę dla tych, którzy też kogoś szukają. Proszę nie czytać między wierszami, tam jest ciasno.",
           "mina": "klamie"
         }
       ]
@@ -736,7 +810,7 @@
     {
       "akcja": "ines_potwierdz",
       "etykieta": "Potwierdź ogłoszenie i przybij pieczątkę okienka",
-      "reakcja": "Dziękuję. Kartka z pieczątką okienka wisi na słupie jak legitymacja. Nie pytajcie, dla kogo.",
+      "reakcja": "Dziękuję. Z pieczątką nikt go nie zerwie. Gdyby ktoś zostawił dla mnie odpowiedź, proszę jej nie czytać, tylko odłożyć.",
       "zysk": "Parasol wraca do Ines, a ogłoszenie ma pieczątkę, więc nikt go nie zdejmie.",
       "strata": "Okienko jest teraz widoczne na słupie, a ktoś przeczyta pieczątkę jako zaproszenie.",
       "echo": {
@@ -748,7 +822,7 @@
     {
       "akcja": "ines_odmow",
       "etykieta": "Wydaj parasol, ogłoszenia odmów",
-      "reakcja": "Rozumiem. Słup ma właściciela, ale wiesza się je na innych. Dobrze.",
+      "reakcja": "Rozumiem. Powieszę na innym słupie. Szkoda, wasz stał najlepiej.",
       "zysk": "Okienko nie robi za tablicę ogłoszeń i nikt nie zapyta o słup.",
       "strata": "Ines znajdzie inny słup, a kartki będą wisieć dalej, tylko bez Twojej wiedzy.",
       "echo": {
@@ -760,7 +834,7 @@
     {
       "akcja": "ines_zdejmij",
       "etykieta": "Wydaj parasol i zdejmij ogłoszenie ze słupa",
-      "reakcja": "Zdejmiecie? To cudze kartki, nie moje. Dobrze, wiem, kto je dostał.",
+      "reakcja": "Zdejmiecie też to, co już wisi? Tam są cudze odpowiedzi, nie tylko moje kartki. No dobrze. Przynajmniej wiem, na kogo tu trafiłam.",
       "zysk": "Słup przy wejściu jest czysty, a do biura nikt nie przynosi kartek.",
       "strata": "Ktoś czekał na odpowiedź na tym słupie i nie dostanie jej.",
       "echo": {
@@ -805,97 +879,135 @@
   ],
   "wejscie": "Dobry wieczór. Evan Doyle, a to Lena, siostra mojej żony. Oboje przyszliśmy po telefon Mai, która zaginęła w czwartek. Zostawiła go w jedenastce. Policja daje sprawie czas do wtorku, siódmego września, a potem ją zamyka. Nie mamy czasu.",
   "wejscie_kto": "maz",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten telefon?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "maz",
+      "odpowiedz": "Czarny, w skórzanym etui. Róg etui się odkleja. Kupiłem je Mai na rocznicę i sto razy mówiłem, żeby podkleiła.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten telefon?",
-          "ton": "uprzejme",
-          "kto": "maz",
-          "wymaga": null,
-          "odpowiedz": "Czarny, w skórzanym etui z odklejonym rogiem. Kupiłem jej to etui na rocznicę.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Kiedy Maya go zgubiła?",
+          "tekst": "Znasz kod do tego telefonu?",
           "ton": "rzeczowe",
-          "kto": "siostra",
           "wymaga": null,
-          "odpowiedz": "W czwartek wieczorem, w jedenastce. Ale ona nie gubi rzeczy. Zostawia je tam, gdzie ktoś je przechowa i nie zapyta, po co.",
+          "kto": "maz",
+          "odpowiedz": "Maya nie miała kodu. Nie mieliśmy przed sobą tajemnic.",
           "mina": "klamie"
         },
         {
-          "tekst": "Jak wyglądała ostatnia rozmowa z Mayą?",
-          "ton": "niewygodne",
-          "kto": "maz",
+          "tekst": "Lena, ty też poznajesz to etui?",
+          "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Zwyczajnie. Nie było żadnej kłótni. Zjedliśmy kolację, poszła do pracy i nie wróciła.",
-          "mina": "klamie"
+          "kto": "siostra",
+          "odpowiedz": "Poznaję. Pod spodem Maya trzyma nasze zdjęcie z dzieciństwa. Evan o nim nie wie. Prawda, Evan?",
+          "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Kiedy Maya go zgubiła?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "siostra",
+      "odpowiedz": "W czwartek wieczorem, w jedenastce. Tylko że Maya nie gubi rzeczy. Zostawia je tam, gdzie ktoś przechowa i nie będzie pytał po co.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Co jest w tym telefonie?",
-          "ton": "uprzejme",
-          "kto": "siostra",
-          "wymaga": null,
-          "odpowiedz": "Zdjęcia, muzyka, kontakty. I trochę wiadomości ode mnie, zwykłe rzeczy między siostrami.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Po co policji ten telefon?",
-          "ton": "rzeczowe",
-          "kto": "maz",
-          "wymaga": null,
-          "odpowiedz": "Żeby sprawdzić, dokąd poszła. Policjant powiedział, że bez telefonu do wtorku, siódmego września, zamkną sprawę i tyle.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czy Maya miała powód, żeby odejść?",
+          "tekst": "Zostawia? Czyli zrobiła to specjalnie?",
           "ton": "niewygodne",
-          "kto": "maz",
           "wymaga": null,
-          "odpowiedz": "Żadnego. Mieliśmy spokojne małżeństwo. Oboje dużo pracowaliśmy, to wszystko.",
+          "kto": "siostra",
+          "odpowiedz": "Nie wiem. Tak mi się powiedziało. Od czwartku nie miałam od niej ani słowa. Naprawdę.",
           "mina": "klamie"
         },
         {
-          "tekst": "SMS od Leny: „Nie wracaj do domu.” Co to znaczy?",
-          "ton": "niewygodne",
-          "kto": "siostra",
-          "wymaga": "d3_telefon_wiadomosc",
-          "odpowiedz": "To ja napisałam. Maya zadzwoniła w czwartek, że boi się wracać. Jak Evan to przeczyta, przyjdzie do mnie. Proszę nie dawać mu tego telefonu.",
-          "mina": "emocja"
+          "tekst": "Evan, skąd wiecie, że akurat w jedenastce?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "maz",
+          "odpowiedz": "Od policji. Motorniczy oddał telefon do zajezdni i zapamiętał kurs. Posterunkowy Reyes powiedział wprost: bez telefonu we wtorek zamyka sprawę.",
+          "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Jak wyglądał wasz ostatni wieczór?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "maz",
+      "odpowiedz": "Zwyczajnie. Żadnej kłótni. Zjedliśmy kolację, Maya poszła do pracy i nie wróciła.",
+      "mina": "klamie",
+      "dalej": [
         {
-          "tekst": "Kiedy ostatnio miałaś od niej wieści?",
-          "ton": "uprzejme",
-          "kto": "siostra",
+          "tekst": "Do pracy po kolacji? Na noc?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Od czwartku nic. Ani słowa. Naprawdę.",
+          "kto": "maz",
+          "odpowiedz": "Jest elektryczką, bierze nocne awarie. Wychodziła o różnych porach. Nie pilnowałem jej, jeśli o to chodzi.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Miała powód, żeby nie wrócić?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "maz",
+          "odpowiedz": "Żadnego. Spokojne małżeństwo. Oboje dużo pracowaliśmy, to wszystko.",
           "mina": "klamie"
         },
         {
-          "tekst": "Co zrobisz z telefonem, jeśli go dostaniesz?",
-          "ton": "rzeczowe",
-          "kto": "maz",
+          "tekst": "Lena, tak to wyglądało?",
+          "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Zaniosę go policjantowi, Reyesowi z komisariatu przy Rynku. Jeszcze dziś.",
-          "mina": "mowi"
+          "kto": "siostra",
+          "odpowiedz": "Mnie przy tej kolacji nie było. Evan mówi, że zwyczajnie, to pewnie tak mu się wydawało.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Evan, co zrobisz z telefonem, jeśli go dostaniesz?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "maz",
+      "odpowiedz": "Zaniosę Reyesowi na komisariat przy Rynku. Jeszcze tej nocy.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "A jeśli telefon zostanie u nas w depozycie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "ustawia": "d3_evan_oferta",
+          "kto": "maz",
+          "odpowiedz": "To policja dostanie go za późno. Zróbmy inaczej: sto dolarów od ręki i niczego nie trzeba wpisywać. Zgoda?",
+          "mina": "neutralna"
         },
         {
-          "tekst": "Co będzie, jeśli telefon zostanie w biurze?",
-          "ton": "niewygodne",
-          "kto": "maz",
+          "tekst": "Lena, a ty co byś z nim zrobiła?",
+          "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Policja dostanie go za późno. Wiesz co, sto dolarów od ręki, i nikt nie musi tego wpisywać. Zgoda?",
-          "mina": "mowi",
-          "ustawia": "d3_evan_oferta"
+          "kto": "siostra",
+          "odpowiedz": "Schowałabym u siebie, aż Maya się odezwie. To jej rzecz. Nie Evana i nie policji.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Na ekranie jest wiadomość od Leny: „Nie wracaj do domu”. Co to znaczy?",
+      "ton": "niewygodne",
+      "wymaga": "d3_telefon_wiadomosc",
+      "kto": "siostra",
+      "odpowiedz": "To ja napisałam. Maya zadzwoniła w czwartek, że boi się wracać. Jak Evan to przeczyta, przyjdzie do mnie. Proszę, nie dawaj mu tego telefonu.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Evan, czego Maya miała się bać?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "maz",
+          "odpowiedz": "Niczego. Lena od lat nastawia ją przeciwko mnie. Napisała głupotę i teraz nie wie, jak z tego wybrnąć.",
+          "mina": "klamie"
         }
       ]
     }
@@ -983,88 +1095,84 @@
     }
   ],
   "wejscie": "Cześć, Dana Ruiz, mechanik w zajezdni. Zgubiłam budzik w szóstce, taki blaszany, z dwoma dzwonkami. Bez niego nie wstanę na czwartą, a w zajezdni nikt nie czeka, jak ktoś się spóźni.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten budzik?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Blaszany, okrągły, dwa dzwonki na górze. Mam go dwanaście lat. Dzwoni tak, że sąsiad zza ściany wstaje razem ze mną.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten budzik?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Blaszany, okrągły, dwa dzwonki na górze. Mam go od dwunastu lat i dzwoni tak, że sąsiad się budzi.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Na którą jest nastawiony?",
+          "tekst": "Ma jakiś znak szczególny?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Na czwartą piętnaście. Wskazówka alarmu jest czerwona, krzywa, bo kiedyś ją naprawiałam kombinerkami.",
-          "mina": "mowi"
+          "odpowiedz": "Od spodu naklejkę „Mama”, bo od mamy go dostałam. I wgniecenie przy prawym dzwonku, jak zleciał z lodówki.",
+          "mina": "neutralna"
         },
         {
-          "tekst": "Czemu zabierasz budzik do tramwaju?",
-          "ton": "niewygodne",
+          "tekst": "Sąsiad się nie skarży?",
+          "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Bo wczoraj poszłam spać u siostry. Nie chciałam go zostawić samego, wiesz, jak to jest.",
+          "odpowiedz": "Raz przyszedł. Powiedziałam, że ma budzenie gratis, i od tej pory zostawia mi pod drzwiami ogórki. Układ jest.",
           "mina": "mowi"
-        },
-        {
-          "tekst": "Pod pokrywką jest rachunek z warsztatu. Co to?",
-          "ton": "niewygodne",
-          "wymaga": "d3_rachunek_budzik",
-          "odpowiedz": "Osiemnaście dolarów za mechanizm. Nowy kosztuje więcej, a ten ma ton, który znam. Jak się zepsuje, nie wstanę. To głupie, ale to mój zegar.",
-          "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Na którą jest nastawiony?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "Na czwartą piętnaście. Wskazówka od budzenia jest czerwona i krzywa, sama ją prostowałam kombinerkami.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Co masz jeszcze w torbie?",
+          "tekst": "Czwarta piętnaście? To o której zaczynasz?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Klucz francuski, kanapkę i gazetę. W gazecie ciągle to samo ogłoszenie, że szukają kogoś do nocnego okienka. Bez referencji. Kanapka jest dla budzika, żartuję.",
-          "mina": "mowi"
+          "odpowiedz": "Za pięć piąta mam leżeć w kanale pod tramwajem. Jak wstanę kwadrans po czwartej, zdążę na kawę. Jak nie, to na nic.",
+          "mina": "mowi",
+          "dalej": [
+            {
+              "tekst": "Długo już pracujesz w zajezdni?",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "odpowiedz": "Jedenaście lat, znam tam każdy zawias. A o waszym okienku wiem tyle, że w gazecie od miesiąca wisi to samo ogłoszenie: „praca nocna, bez referencji”. Długo nikt nie chciał, co?",
+              "mina": "mowi"
+            }
+          ]
         },
         {
-          "tekst": "Czym potwierdzisz, że to twój?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Na spodzie jest naklejka „Mama”, bo mama mi go dała. I wgniecenie przy prawym dzwonku, jak spadł z lodówki.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Jak długo pracujesz w zajezdni?",
+          "tekst": "Telefon nie może cię budzić?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Jedenaście lat. Znam tu każdy zawias. A dziś stoję w kolejce przez budzik. Śmieszne, nie?",
+          "odpowiedz": "Telefon wyłączam przez sen, jedną ręką. Ten skacze po szafce i trzeba wstać, żeby go zdusić. Na mnie działa tylko przemoc.",
           "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Po co wozisz budzik tramwajem?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Bo nocowałam u siostry i wzięłam go ze sobą. Samego w domu nie zostawię. Śmiej się, proszę bardzo.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Kiedy musisz być w zajezdni?",
+          "tekst": "Co robiłaś u siostry?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Za pięć piąta. Jak wstanę o czwartej piętnaście, zdążę na kawę. Jak nie, na nic.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Dana Ruiz, przez „z” na końcu. Wszyscy piszą „s”.",
+          "odpowiedz": "Pilnowałam jej dzieciaków, bo miała nockę. Trójka. Po takim wieczorze człowiek zostawiłby w tramwaju własną głowę.",
           "mina": "neutralna"
-        },
-        {
-          "tekst": "Co będzie, jeśli budzik zostanie w biurze?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Kupię nowy, ale ten ma w sobie moje dwanaście lat. Nowy nie będzie mnie lubił.",
-          "mina": "emocja"
         }
       ]
+    },
+    {
+      "tekst": "Pod pokrywką jest rachunek z warsztatu. Naprawiasz go zamiast kupić nowy?",
+      "ton": "niewygodne",
+      "wymaga": "d3_rachunek_budzik",
+      "odpowiedz": "Osiemnaście dolarów za mechanizm. Nowy kosztuje dziesięć. Ale ten dzwoni tak, jak dzwonił u mamy w kuchni. Na inny dźwięk bym nie wstała.",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -1121,87 +1229,115 @@
     }
   ],
   "wejscie": "Dobry wieczór. Iris Bell, zarządzam kamienicą przy Cooper Street dziewięć. Zgubiła mi się paczka w szarym płótnie, w szóstce, ostatnim kursem. Drobiazg, ale lokatorzy czekają na nią do rana.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
-        {
-          "tekst": "Jak wygląda ta paczka?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Płaska, w szarym płótnie, związana sznurkiem. W środku niewielka kasetka na kłódkę.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie dokładnie została?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W szóstce, ostatnim kursem, na półce nad siedzeniem. Zawsze tak kładę i zawsze pamiętam. Wczoraj nie.",
-          "mina": "neutralna"
-        },
+      "tekst": "Jak wygląda ta paczka?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Płaska, w szarym płótnie, przewiązana sznureczkiem. W środku nieduża kasetka na kłódkę. Nic, na co warto patrzeć.",
+      "mina": "mowi",
+      "dalej": [
         {
           "tekst": "Co jest w kasetce?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Papiery lokatorów. Pokwitowania, drobne rozliczenia. Nic ciekawego.",
-          "mina": "klamie"
+          "odpowiedz": "Papierki lokatorów. Pokwitowania, drobne rozliczenia. Nudy, kochanie.",
+          "mina": "klamie",
+          "dalej": [
+            {
+              "tekst": "Pokwitowania pod kłódką?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Ludzie są wścibscy, a cudze długi to ulubiona lektura sąsiadów. Kłódeczka kosztuje dolara, spokój w kamienicy jest bezcenny.",
+              "mina": "neutralna"
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie dokładnie została?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W szóstce, w ostatnim kursie, na półce nad siedzeniem. Zawsze tam kładę i zawsze pamiętam. Wczoraj pierwszy raz nie.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Kim są ci lokatorzy?",
-          "ton": "uprzejme",
+          "tekst": "Wozisz papiery lokatorów nocnym tramwajem?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Dwadzieścia rodzin z kamienicy. Zbieram od nich zaliczki na remont i trzymam ich dokumenty, żeby się nie zgubiły. Ironia, prawda?",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czemu paczka jedzie tramwajem, a nie pocztą?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Bo lokatorzy odbierają o różnych godzinach, a tramwaj to najtańszy goniec.",
+          "odpowiedz": "Lokatorzy pracują na zmiany i odbierają o różnych porach. Tramwaj to najtańszy goniec, a ja nie lubię przepłacać.",
           "mina": "neutralna"
         },
         {
-          "tekst": "Czemu tej paczki nie może odebrać nikt inny?",
+          "tekst": "Co cię wczoraj tak rozproszyło?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Jedna lokatorka spóźnia się z czynszem i liczyłam w głowie jej karę. Człowiek zamyśli się nad cudzą biedą i sam gubi.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "tekst": "Kim są lokatorzy, którzy na nią czekają?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Dwadzieścia rodzin spod dziewiątki. Zbieram od nich zaliczki na remont i trzymam ich dokumenty, żeby się nie pogubiły. Zabawne, prawda? Akurat mnie się zgubiło.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Czemu nikt z nich nie przyszedł po nią sam?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo to moje. Nie lubię, jak ktoś grzebie w rzeczach lokatorów.",
+          "odpowiedz": "Bo to moja odpowiedzialność. Nie lubię, jak ktoś obcy grzebie w sprawach moich lokatorów. Nikt by nie lubił.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Do kiedy paczka musi do nich wrócić?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Najlepiej jeszcze dziś. Nie lubię naciskać, ale moi lokatorzy źle śpią, kiedy ich sprawy leżą w cudzej szufladzie.",
           "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Wydanie idzie z wpisem do księgi. Podpiszesz odbiór?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "ustawia": "d4_koperta_oferta",
+      "odpowiedz": "Podpiszę, Iris Bell. Choć poprzednik nie wpisywał i wszystkim było wygodniej. Chciałabym zostawić kopertkę za fatygę. To nie opłata, tylko wyraz uznania. Sto dwadzieścia dolarów.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Zależy ci na czasie?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Najlepiej dziś. Nie lubię naciskać, ale lokatorzy lubią spać spokojnie.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Oczywiście, Iris Bell. I chciałabym zostawić drobną kopertę za fatygę, nie jako opłatę, tylko jako wyraz uznania. Sto dwadzieścia dolarów.",
-          "mina": "neutralna",
-          "ustawia": "d4_koperta_oferta"
-        },
-        {
-          "tekst": "A jeśli paczka wyjdzie z wpisem w księdze?",
+          "tekst": "Poprzednik brał takie kopertki?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "To wyjdzie. Poprzednik nie wpisywał i wszystkim było wygodnie. Poczekam. Tylko lokatorzy czekać nie lubią.",
+          "odpowiedz": "Sam był bardzo życzliwym człowiekiem. Rozumiał, że nie wszystko musi mieć numerek. Szkoda, że tak nagle odszedł.",
           "mina": "neutralna"
         },
         {
-          "tekst": "W kasetce widać brzeg paszportu z wyciętą stroną. Czyj to?",
+          "tekst": "A jeśli wpis mimo wszystko będzie?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "To będzie. Poczekam na kwit jak każdy. Tylko że nowi zwykle sami odchodzą po pierwszym tygodniu, a ja zostaję. Mówię to życzliwie.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "W kasetce widać paszport z wyciętą stroną. Czyj?",
+      "ton": "niewygodne",
+      "wymaga": "d4_blankiet_kasetka",
+      "odpowiedz": "Kogoś, kto w tym tygodniu wyjeżdża. Jeśli paczka tu zostanie, nie wyjedzie. Więcej wiedzieć nie trzeba, uwierz starszej kobiecie.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Na blankiecie stoi: „dla nocnej zmiany, bez wpisu”. Kto to pisał?",
           "ton": "niewygodne",
-          "wymaga": "d4_blankiet_kasetka",
-          "odpowiedz": "Takiego, kto w tym tygodniu jedzie. Jeśli paczka zostanie, nie pojedzie. Nowi zwykle odchodzą w pierwszym tygodniu.",
-          "mina": "emocja"
+          "wymaga": null,
+          "odpowiedz": "Twój poprzednik. Ładny charakter pisma, prawda? Umowa była prosta: ja nie pytam, co on robi po nocach, on nie pyta, co jest w płótnie.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -1284,107 +1420,112 @@
     "d3_maz_i_siostra:wydaj_lena": "Noah Reyes, komisariat. Zgubiłem służbowy notes, czarny, na spirali, w jedenastce. Telefon Mai Doyle wydano jej siostrze, nie mężowi. Doyle jest wściekły i dzwoni do mnie co godzinę.",
     "d3_maz_i_siostra:zatrzymaj": "Noah Reyes, komisariat. Zgubiłem służbowy notes, czarny, na spirali, w jedenastce. Telefon Mai Doyle został u was. Doyle dzwoni do mnie co godzinę, a ja nie wiem, co mu odpowiadać."
   },
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten notes?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Czarny, na spirali, do kieszeni. Wgnieciony z lewej strony, bo noszę go pod kaburą.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten notes?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Czarny, na spirali, wgnieciony z lewej strony. Zawsze kładę go równo z krawędzią blatu.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie go zostawiłeś?",
+          "tekst": "Co w nim jest?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "W jedenastce, po dyżurze, na siedzeniu obok. Rozmawiałem z kierowcą i wysiadłem bez niego.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co jest w tym notesie?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Notatki ze służby. Nic, co wolno komuś pokazywać.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "W notesie jest zapis: ulotki Evana, czwartek 22:15. Co to znaczy?",
-          "ton": "niewygodne",
-          "wymaga": "d5_notes_ulotki",
-          "odpowiedz": "Że Doyle zamówił ulotki z twarzą żony osiem godzin przed zgłoszeniem. Zgłosił w piątek o 6:10. Może zbieg okoliczności, nie chcę tego rozstrzygać przy okienku. To moje zmartwienie.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Jak idzie sprawa Mai Doyle?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Powoli. Mąż zgłosił zaginięcie w czwartek, siostra twierdzi, że nic nie wie. Za mało, żeby ruszyć z miejsca.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Do kiedy sprawa jest otwarta?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Do wtorku, siódmego września, do szóstej rano. Potem sprawa idzie do wydziału, a tam nikt nie pyta zaginionej o zgodę.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czemu Evan tak naciska na telefon?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Mówi, że z troski o żonę. Ja się pytam, po co mu telefon, skoro żona i tak wróci.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Evan dostał telefon. Co z nim zrobił?",
-          "ton": "niewygodne",
-          "wymaga": "d3_maz_i_siostra:wydaj_evan|d3_maz_i_siostra:wez_100_evan",
-          "odpowiedz": "Przyniósł mi go rano. Zablokowany kodem, którego jakoby nie zna. Mówi, że żona nigdy nie miała kodu. To mi nie pasuje.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Telefon dostała Lena. Co na to Evan?",
-          "ton": "niewygodne",
-          "wymaga": "d3_maz_i_siostra:wydaj_lena",
-          "odpowiedz": "Dzwoni co godzinę, że siostra coś ukrywa. Lena twierdzi, że telefon jest u niej bezpieczny. Obie wersje chcę sprawdzić.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Telefon został w biurze. Co na to Evan?",
-          "ton": "niewygodne",
-          "wymaga": "d3_maz_i_siostra:zatrzymaj",
-          "odpowiedz": "Dzwoni co godzinę, a wie, że telefon leży u was. Mówię mu, że to sprawa policji, a nie jego.",
+          "odpowiedz": "Notatki ze służby. Godziny, nazwiska. Nic, co wolno czytać przy okienku. To moje zmartwienie.",
           "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie go zostawiłeś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W jedenastce, po dyżurze, na siedzeniu obok. Zagadałem się z motorniczym i wysiadłem bez notesu. Pierwszy raz od piętnastu lat.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Można jakoś pomóc w tej sprawie?",
-          "ton": "uprzejme",
+          "tekst": "Policjant wraca z dyżuru tramwajem?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Jak coś będzie nietypowe, zapisz godzinę i powiedz mi. Najlepiej zanim zapyta ktoś inny.",
+          "odpowiedz": "Mieszkam na końcu jedenastki. Radiowóz zostaje na komisariacie, a w tramwaju słyszę więcej niż za biurkiem.",
           "mina": "mowi"
         },
         {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
+          "tekst": "O czym rozmawiałeś z motorniczym?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Reyes, przez „y”. Proszę.",
+          "odpowiedz": "O czwartkowym kursie. To on znalazł pod siedzeniem telefon Mai Doyle. Czyli: pytałem, kto wtedy z nią wysiadał. Nie pamiętał.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Jak idzie sprawa Mai Doyle?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Powoli. Mąż zgłosił zaginięcie, siostra twierdzi, że nic nie wie. Czyli: dwoje ludzi i żadnego konkretu.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Do kiedy masz na nią czas?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Do wtorku, siódmego września, do szóstej rano. Potem akta idą do wydziału, a tam nikt nie pyta zaginionej, czy chce być znaleziona.",
           "mina": "neutralna"
         },
         {
-          "tekst": "Czemu sam jeździsz nocnym tramwajem?",
+          "tekst": "Wierzysz mężowi?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Wracam z dyżuru, mieszkam na końcu jedenastki. Czasem po drodze trafia się sprawa.",
-          "mina": "mowi"
+          "odpowiedz": "Wierzę godzinom. Na razie jego godziny mi się nie składają. Resztę zostawiam dla siebie.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Można ci jakoś pomóc?",
+              "ton": "uprzejme",
+              "wymaga": null,
+              "odpowiedz": "Można. Jak przy tym okienku zdarzy się coś dziwnego, zapisz godzinę i powiedz mi. Najlepiej zanim zapyta ktoś inny.",
+              "mina": "mowi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Evan dostał od nas telefon. Co z nim zrobił?",
+      "ton": "niewygodne",
+      "wymaga": "d3_maz_i_siostra:wydaj_evan|d3_maz_i_siostra:wez_100_evan",
+      "odpowiedz": "Przyniósł mi go rano. Zablokowany. Kodu podobno nie zna, bo żona „nigdy nie miała kodu”. Czyli: albo ktoś założył go po czwartku, albo mąż nie znał własnej żony.",
+      "mina": "neutralna"
+    },
+    {
+      "tekst": "Telefon wzięła Lena. Co na to Evan?",
+      "ton": "niewygodne",
+      "wymaga": "d3_maz_i_siostra:wydaj_lena",
+      "odpowiedz": "Dzwoni do mnie co godzinę, że siostra coś ukrywa. Lena mówi, że u niej telefon jest bezpieczny. Czyli: sprawdzam obie wersje.",
+      "mina": "neutralna"
+    },
+    {
+      "tekst": "Telefon leży u nas w depozycie. Co na to Evan?",
+      "ton": "niewygodne",
+      "wymaga": "d3_maz_i_siostra:zatrzymaj",
+      "odpowiedz": "Dzwoni co godzinę. Powtarzam mu, że to teraz sprawa policji, nie jego. Niech telefon leży, dopóki nie przyjdę po niego z papierem.",
+      "mina": "neutralna"
+    },
+    {
+      "tekst": "W notesie stoi: „ulotki, czwartek 22:15”. O co chodzi?",
+      "ton": "niewygodne",
+      "wymaga": "d5_notes_ulotki",
+      "odpowiedz": "Doyle zamówił ulotki z twarzą żony w czwartek o 22:15. Zaginięcie zgłosił w piątek o 6:10. Osiem godzin za wcześnie. Może zbieg okoliczności. To moje zmartwienie.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Skąd wiedział w czwartek, że żona nie wróci?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Dobre pytanie. Zadam mu je sam, jak będę miał notes w ręku. A na razie umówmy się, że nikt tu do niego nie zaglądał.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -1446,86 +1587,100 @@
     "d4_iris:koperta": "Victor Crane, inspekcja przewozów. Zgubiłem teczkę kontroli, szarą, na klamrę, w szóstce. O siódmej rozliczam tydzień z księgą wydań, a w tym tygodniu brakuje w niej jednej paczki. Czy ktoś oddał teczkę?",
     "d4_iris:odmow_zglos": "Victor Crane, inspekcja przewozów. Zgubiłem teczkę kontroli, szarą, na klamrę, w szóstce. Rozliczam tydzień z księgą wydań, a u was w depozycie leży paczka, którą chcę zobaczyć. Czy ktoś oddał teczkę?"
   },
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ta teczka?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Szary skaj, klamra z przodu, na rogu naklejka inspekcji. Na klapie inicjały V.C. i numer czterdzieści siedem.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ta teczka?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Szary skaj, klamra z przodu, naklejka inspekcji na rogu. W środku formularze i pieczątka.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie ją zostawiłeś?",
+          "tekst": "Co jest w środku?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "W szóstce, o 4:10, na siedzeniu obok. Wysiadłem przy zajezdni bez niej. To mi się nie zdarza.",
+          "odpowiedz": "Formularze, pieczątka, wykaz wydań z tego biura. Nikt spoza inspekcji nie ma prawa tam zaglądać. Jeśli ktoś zajrzał, chcę nazwisko.",
           "mina": "neutralna"
-        },
-        {
-          "tekst": "Czemu inspektor sam jeździ nocnym tramwajem?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo w nocy grafik sobie, a tramwaje sobie. A skoro już pytasz: kto cię tu skierował? W aktach nie widzę skierowania.",
-          "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie ją zostawiłeś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W szóstce, o 4:10, na siedzeniu obok. Wysiadłem przy zajezdni bez teczki. Nie zdarza mi się to.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Co kontrolujesz w tym biurze?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Czy księga wydań zgadza się z magazynem i z kwitami. Wpis, kwit, podpis. Czasem brakuje któregoś. W tej księdze brakuje całej strony 41.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Po czym poznasz, że teczka jest twoja?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Na klapie są inicjały V.C. i pieczątka inspekcji, numer czterdzieści siedem.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czy ostatnie wydania w tym biurze były poprawne?",
+          "tekst": "Inspektor jeździ nocnym tramwajem?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Nie wszystkie. Jedna paczka bez wpisu i jedna rękawiczka bez księgi. Dlatego potrzebuję teczki.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "W teczce jest wykaz z dopisanymi pozycjami i parafą V.C. Kto je dopisał?",
-          "ton": "niewygodne",
-          "wymaga": "d5_wykaz_dopisany",
-          "odpowiedz": "Ja. Pięć tygodni temu dopisałem to ręką, z pamięci po rozmowie z poprzednikiem. Nie mam na to dowodu. To niezgodne z regulaminem, więc proszę tego nie powtarzać.",
-          "mina": "emocja"
+          "odpowiedz": "Sprawdzam, czy tramwaje jeżdżą tak, jak stoi w grafiku. Nie jeżdżą. A skoro już pytamy: kto cię tu skierował? W aktach nie mam żadnego skierowania.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Nikt. To było ogłoszenie w gazecie.",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "odpowiedz": "„Bez referencji”. Czytałem. Poprzedni dyżurny też był bez referencji. Zapiszę to sobie.",
+              "mina": "neutralna"
+            },
+            {
+              "tekst": "A kto skierował poprzedniego dyżurnego?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Nikt. I to jest pierwsze pytanie mojej kontroli. Drugie brzmi: dlaczego wszystkim to pasowało.",
+              "mina": "neutralna"
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Co właściwie kontrolujesz w tym biurze?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Czy księga wydań zgadza się z magazynem i z kwitami. Wpis, kwit, podpis. Czasem któregoś brakuje. W tej księdze brakuje całej strony czterdzieści jeden.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Co będzie, jeśli teczki nie będzie rano?",
-          "ton": "uprzejme",
+          "tekst": "Kto wyrwał tę stronę?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Audyt przesunie się o tydzień. W tym czasie ktoś zdąży poprawić księgę, a tego nie chcę.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Victor Crane. Dwa egzemplarze pokwitowania, jeden zostaje w księdze. Zawsze.",
+          "odpowiedz": "Nie wiem. Księgę prowadził poprzedni dyżurny, Sam Holt. Od kilku tygodni nikt nie umie mi powiedzieć, gdzie on jest.",
           "mina": "neutralna"
         },
         {
-          "tekst": "Czy ktoś spoza inspekcji może widzieć zawartość teczki?",
+          "tekst": "Za poprzednika wydania były w porządku?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Nie wszystkie. Jedna rękawiczka wyszła bez księgi, jedna paczka bez wpisu. Dlatego potrzebuję teczki przed siódmą.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Co będzie, jeśli teczki rano nie będzie?",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "odpowiedz": "Audyt przesunie się o tydzień. Przez tydzień ktoś zdąży poprawić księgę. Nie chcę nikomu dawać tego tygodnia.",
+              "mina": "neutralna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "W wykazie dwie pozycje są dopisane innym tuszem, z parafą V.C. Kto dopisywał?",
+      "ton": "niewygodne",
+      "wymaga": "d5_wykaz_dopisany",
+      "odpowiedz": "Ja. Pięć tygodni temu, z pamięci, po rozmowie z poprzednikiem. Bez dowodu. To niezgodne z regulaminem, więc proszę tego nie powtarzać.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Inspektor poprawia papiery po fakcie?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Nie. Jeśli ktoś zajrzał, chcę znać nazwisko.",
-          "mina": "mowi"
+          "odpowiedz": "Raz. Żeby wydania Holta w ogóle gdzieś istniały. Jeśli to wyjdzie, moja kontrola jest nieważna, a tej księgi nie przeczyta już nikt.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -1606,95 +1761,109 @@
   "wejscie_jesli": {
     "d5_victor:wykaz_paczke": "Dobry wieczór. Gus Pell. Ludzie gadają, że u was leży paczka z numerem 0412, ale ja przyszedłem tylko po portfel, brązowy, wytarty, z jedenastki. O 5:40 jadę stąd i bez niego nie ruszę."
   },
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten portfel?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Brązowy, wytarty, na zatrzask. Mam go jedenaście lat, wygiął się pod moją kieszeń. Tylko on mi został z tamtego życia. Znaczy, ze starych rzeczy.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten portfel?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Brązowy, wytarty, na zatrzask. Mam go od jedenastu lat, wygiął się na moją kieszeń.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co w nim jest?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Prawo jazdy, dwadzieścia dolarów i zdjęcie córki. Nic więcej, tylko tyle.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "Czemu o pierwszej w nocy jesteś w szlafroku?",
+          "tekst": "Z jakiego „tamtego życia”?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo pokłóciłem się w domu i wyszedłem bez myślenia. Z żoną, z teściową, z obiema. O rodzinie nie rozmawiajmy.",
+          "odpowiedz": "Przejęzyczyłem się. Tylko tyle. Człowiek o tej porze gada, co mu ślina na język przyniesie.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Co w nim jest?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "Prawo jazdy, dwadzieścia dolarów i zdjęcie córki. Tylko tyle, nic więcej.",
+      "mina": "klamie",
+      "dalej": [
+        {
+          "tekst": "Ile lat ma córka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Siedem. Na zdjęciu ma pięć, nowszego nie mam. Tylko nie pytaj, kiedy ją ostatnio widziałem.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na jakie nazwisko jest prawo jazdy?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Pell. Gustaw Pell. Gus. Tylko proszę nie zapisywać, że byłem w szlafroku.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Adres do wpisu?",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "odpowiedz": "Mill Street dwanaście. Nie, zaraz, piętnaście. Dwanaście to brat, ale on się wyprowadził.",
+              "mina": "klamie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Szlafrok pod płaszczem, w środku nocy. Co się stało?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Pokłóciłem się w domu i wyszedłem, jak stałem. Z żoną, z teściową, z obiema naraz. Tylko o rodzinie nie rozmawiajmy.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Może zadzwonić do domu, że nic ci nie jest?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Nie. Telefon jest tam, gdzie żona. Nie dzwonię. Tak będzie lepiej dla wszystkich.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Dokąd jedziesz o 5:40?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Jedenastką do końca, a potem dalej. Daleko. Tylko nie pytaj dokąd. Jak nie wiesz, to nikomu nie powiesz.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "A kto miałby pytać?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Ci, co znaleźli mnie poprzednim razem. Wtedy urzędnik wydał mnie z pieczątką, nawet z dwiema. Jak portfel tu zostanie, utknę, a tu mnie znajdą.",
+              "mina": "emocja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "W portfelu są dwa dowody: Pell i Ferro. To samo zdjęcie. Który jest twój?",
+      "ton": "niewygodne",
+      "wymaga": "d5_dwa_dowody",
+      "odpowiedz": "Dwa? To się da wytłumaczyć. Jeden po dziadku. A który mój, nie powiem, bo to się zawsze źle kończy.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Dziadek miał twoją twarz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Dobrze, już dobrze. Jeden jest stary, drugi nowy. Ktoś mi pomógł zacząć od początku i o 5:40 mam tramwaj. Tylko proszę, nie wpisuj obu nazwisk.",
           "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
-        {
-          "tekst": "Jak się nazywasz?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Gustaw Pell. Gus. Tylko proszę nie zapisywać, że byłem w szlafroku.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie mieszkasz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Mill Street dwanaście. Zaraz, nie, piętnaście. Dwanaście to brat, ale on się wyprowadził.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "Czemu nie zadzwonisz do domu, że nic ci nie jest?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo telefon jest tam, gdzie żona. Nie dzwonię. Tak będzie lepiej dla wszystkich.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "W portfelu są dwa dowody: Pell i Ferro. Który jest twój?",
-          "ton": "niewygodne",
-          "wymaga": "d5_dwa_dowody",
-          "odpowiedz": "Dwa? To się da wytłumaczyć. Jeden po dziadku. Który mój, nie powiem, bo to się źle kończy.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Dokąd jedziesz?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Jedenastką, o 5:40. Dalej nie powiem. Daleko. Tylko proszę nie pytać gdzie.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Podpiszę. G. Samo G, wystarczy? Tylko żeby nie było pytań o resztę.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co będzie, jeśli portfel zostanie w biurze?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "To utknę tutaj, a tu mnie znajdą. Poprzednim razem urzędnik wydał mnie z pieczątką. Z dwiema.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Za zdjęciem leży dwieście pięćdziesiąt. Mówiłeś o dwudziestu.",
-          "ton": "niewygodne",
-          "wymaga": "d5_gotowka_400",
-          "odpowiedz": "Bo to nie pieniądze na życie, tylko na wyjazd. Wszystko, co mam. Nie mów nikomu.",
-          "mina": "emocja"
-        }
-      ]
+      "tekst": "Za zdjęciem córki leży 250 dolarów. Skąd tyle?",
+      "ton": "niewygodne",
+      "wymaga": "d5_gotowka_400",
+      "odpowiedz": "To nie na życie, tylko na wyjazd. Wszystko, co mam. Tylko nie mów nikomu, ile.",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -1784,95 +1953,109 @@
     "d1_rosa:wez_20": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze.",
     "d1_rosa:przywlaszcz": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mamie zginęła w tramwaju cała wypłata i nikt jej nie oddał, więc teraz bierze dodatkowe noce. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze, bo ja oddaję."
   },
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten królik?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Szary, pluszowy. Jedno ucho ma doszyte czerwoną nitką. I dziurkę w nosie, jakby miał katar.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda królik?",
+          "tekst": "Ktoś go bardzo naprawiał. Myślisz, że jest czyjś ulubiony?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Szary, z jednym uchem doszytym czerwoną nitką. Ma dziurkę w nosie, jakby ktoś go przeziębił.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie dokładnie go znalazłaś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Na ławce przy pętli szóstki, trzy kroki od słupka. Siedział sam, jakby na kogoś czekał.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czemu sama jesteś w nocy na pętli?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo mama pracuje na nocnej zmianie, a ja się nudzę. Chodzę po pętli i liczę. Wczoraj były sto dwa kamienie.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "W uchu królika jest karteczka. Przeczytałaś ją?",
-          "ton": "niewygodne",
-          "wymaga": "d6_karteczka_krolik",
-          "odpowiedz": "Przeczytałam. Pisze: dla Zuzi, od taty. Jak się zgubi, niech ktoś odda. Więc oddaję. Tylko nie wiem, kto to Zuzia, i dlatego chcę kwit.",
-          "mina": "mowi"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Po co ci kwit?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Żeby wszyscy wiedzieli, że znalazłam, a nie wzięłam. Pani w szkole mówi, że to jest różnica.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie mieszkasz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Na Cooper Street dziewięć, na drugim piętrze. Nad nami mieszka nowy, w jego pokoju jest zimno. Pani Iris prosiła, żeby nie mówić adresu. No, powiedziałam.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czemu pani Iris każe milczeć o mieszkaniu?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo pani Iris zabiera mieszkanie, jak ktoś gada. Mama tak mówi, jak myśli, że nie słyszę.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Na odcinku w puszce jest numer z bloczka Iris. Znasz tę puszkę?",
-          "ton": "niewygodne",
-          "wymaga": "d6_puszka_odcinek",
-          "odpowiedz": "Widziałam taką u pani Iris w kuchni, nad czajnikiem. Wszystkie puszki miały dno, które się rusza. Nikomu nie mów, że mówiłam.",
+          "odpowiedz": "Na pewno. Jak się komuś nie chce, to nie przyszywa ucha, tylko kupuje nowego. Dlatego nie mogłam go tam zostawić.",
           "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie dokładnie go znalazłaś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "Na ławce przy pętli szóstki, trzy kroki od słupka. Liczyłam. Siedział sam, jakby na kogoś czekał.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Co zrobisz z królikiem?",
-          "ton": "uprzejme",
+          "tekst": "Co robisz sama w nocy na pętli?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Oddam. Jak ktoś po niego przyjdzie, niech wie, że miał bezpiecznie.",
-          "mina": "mowi"
+          "odpowiedz": "Mama ma nocną zmianę w pralni, a mnie się nudzi. Chodzę po pętli i liczę kamienie. Wczoraj były sto dwa.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Mama wie, że tam chodzisz?",
+              "ton": "uprzejme",
+              "wymaga": null,
+              "odpowiedz": "Wie i się gniewa. Mówi, że brać nic nie wolno, oddawać trzeba, a po pętli nie łazić. Dwa z trzech robię dobrze.",
+              "mina": "mowi"
+            }
+          ]
         },
         {
-          "tekst": "Co ma być na kwicie?",
+          "tekst": "Ktoś jeszcze był wtedy przy ławce?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Pan konduktor z szóstki palił przy budce. Patrzył na zegarek, którego nie miał. I jakaś pani z walizką, ale ona poszła, zanim doszłam.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Po co ci kwit?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Żeby było wiadomo, że znalazłam, a nie wzięłam. Pani w szkole mówi, że to duża różnica. A mama mówi, że bez kwitu nikt nie uwierzy.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Co ma być na tym kwicie?",
           "ton": "rzeczowe",
           "wymaga": null,
           "odpowiedz": "Że Ada Vale, dziesięć lat, znalazła królika. Dużymi literami, bo pani w szkole czyta tylko duże.",
           "mina": "mowi"
         },
         {
-          "tekst": "Co powie twoja mama?",
-          "ton": "niewygodne",
+          "tekst": "Jaki adres wpisać?",
+          "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Że nic nie wolno brać, ale trzeba oddawać. I że mam nie łazić w nocy po pętli. Ale łażę.",
-          "mina": "emocja"
+          "odpowiedz": "Cooper Street dziewięć, drugie piętro. Nad nami mieszka ktoś nowy, u niego w pokoju jest zimno. Ojej. Pani Iris prosiła, żeby nie mówić adresu.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Czemu pani Iris każe milczeć o adresie?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "(szeptem) Bo pani Iris zabiera mieszkanie, jak ktoś za dużo gada. Mama tak mówi, kiedy myśli, że śpię.",
+              "mina": "emocja"
+            }
+          ]
         }
       ]
+    },
+    {
+      "tekst": "Pod uchem królika jest karteczka. Czytałaś ją?",
+      "ton": "niewygodne",
+      "wymaga": "d6_karteczka_krolik",
+      "odpowiedz": "Czytałam. „Dla Zuzi, od taty. Jak się zgubi, niech ktoś odda”. No to oddaję. Tylko nie wiem, kto to Zuzia, i dlatego chcę kwit.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Tata Zuzi z góry wiedział, że królik się zgubi?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Też o tym myślałam. Może Zuzia dużo gubi. A może dużo jeździ. Ten nowy nad nami też ma córkę, ale jej nie wolno wychodzić.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Na odcinku z puszki jest numer z bloczka pani Iris. Znasz taką puszkę?",
+      "ton": "niewygodne",
+      "wymaga": "d6_puszka_odcinek",
+      "odpowiedz": "(szeptem) Widziałam takie u pani Iris w kuchni, nad czajnikiem. Wszystkie mają dno, które się rusza. Nie mów nikomu, że mówiłam.",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -1942,85 +2125,90 @@
     }
   ],
   "wejscie": "Dobry wieczór. Leo Marsh, konduktor szóstki. Zgubiłem zegarek kieszonkowy, mosiężny, z łańcuszkiem. Bez niego kursów nie pilnuję. Dopiero na pętli sięgnąłem do kieszeni, a tam nic.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten zegarek?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Mosiężny, kieszonkowy, na łańcuszku. Na wieczku grawer: „za trzydzieści lat”. Żona mówi, że za trzydzieści lat to ja już nie będę wiedział, która godzina.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten zegarek?",
-          "ton": "uprzejme",
+          "tekst": "Trzydzieści lat czego?",
+          "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Mosiądz, łańcuszek, na wieczku grawer „za trzydzieści lat”. Żona mówi, że za trzydzieści lat to ja nie będę wiedział, która godzina.",
+          "odpowiedz": "Służby. Ale nie mojej. To zegarek dziadka mojej żony, też jeździł na szóstce. Przeżył trzech naczelników. Zegarek, nie dziadek.",
           "mina": "mowi"
         },
         {
-          "tekst": "Kiedy go zgubiłeś?",
+          "tekst": "Konduktor bez zegarka. Jak pilnujesz kursów?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Na oko. I źle. Dziś dwa razy odjechałem za wcześnie, a raz ktoś biegł i nie zdążył. Nie lubię tego.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Kiedy go zgubiłeś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "O 22:47, na pętli. Wiem co do minuty, bo spojrzałem, która godzina, i odłożyłem go na ławkę. I tyle go widziałem.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Na ławce przy pętli szóstki? Kto tam wtedy był?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "O 22:47, na pętli. Wiem, bo spojrzałem, żeby sprawdzić godzinę, i odłożyłem na ławkę.",
+          "odpowiedz": "Jakaś mała liczyła kamienie. I ktoś zostawił na ławce pluszaka. Nic poza tym nie widziałem. Nie przyglądam się.",
           "mina": "neutralna"
         },
         {
-          "tekst": "Czemu nosisz zegarek, skoro masz telefon?",
+          "tekst": "Co wiozłeś tym ostatnim kursem?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo telefon mi pada, a zegarek nigdy. To nie to samo. Poza tym zegarek nie dzwoni mi o drugiej w nocy.",
+          "odpowiedz": "Ludzi, dwie torby i walizkę. Normalny kurs. Nic ponad to.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Nikt cię nie prosił, żebyś o czymś nie mówił?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Nikt nikogo o nic nie prosi. Po prostu wiem, że jak coś jedzie pod ławką, to lepiej nie pytać czyje.",
+              "mina": "neutralna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Po co ci zegarek, skoro masz telefon?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Telefon mi pada w połowie zmiany, a zegarek nigdy. No i zegarek nie dzwoni do mnie o drugiej w nocy z pretensjami.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Kto dzwoni o drugiej z pretensjami?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Żona. Sprawdza, czy zjadłem. Trzydzieści lat po ślubie, a ona dalej myśli, że bez niej umrę z głodu. Ma rację.",
           "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Pod wieczkiem jest kartka z wykazu z dopiskiem „+ puszka (b.n.)”. Jaka puszka?",
+      "ton": "niewygodne",
+      "wymaga": "d6_zegarek_list",
+      "odpowiedz": "Ktoś mi ją wsunął pod ławkę. Bez nadawcy, „b.n.”. Dopisałem do wykazu, żeby nie mieć kłopotów, jakby co. Nie pytam, kto ma ją odebrać.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Co jeszcze masz w kieszeni?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Bilety kontrolne, długopis i kartka z wykazem zmiany. Nic ciekawego.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czyj był ten zegarek wcześniej?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Dziadka mojej żony. Pracował w zajezdni, a zegarek przeżył trzech szefów. Solidny mosiądz, nie jakaś tandeta z bazaru.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co wiozłeś ostatnim kursem?",
+          "tekst": "To nie pierwsza taka puszka, prawda?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Ludzi, dwie torby i walizkę. Normalny kurs, nic ponad to.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Pod wieczkiem jest dopisek „+ puszka (b.n.)”. Jaka puszka?",
-          "ton": "niewygodne",
-          "wymaga": "d6_zegarek_list",
-          "odpowiedz": "Ktoś mi ją wsunął pod ławkę, bez nadawcy, więc dopisałem do wykazu, żeby nie było kłopotu. Nie pytam, kto ma to odebrać.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Ile masz jeszcze kursów dziś?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Dwa. Jak wrócę z zegarkiem, to oba na czas. Bez niego jeden na pewno spóźniony.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Leo Marsh. Podpisuję w biegu, wybacz.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czy ktoś prosił cię, żebyś milczał?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Nie. Nikt nikogo o nic nie prosi. Po prostu wiem, że jak coś jedzie pod ławką, to lepiej nie pytać.",
+          "odpowiedz": "Trzecia w tym miesiącu. Zawsze ostatni kurs, zawsze pod ławką po lewej. Rano już jej nie ma. Mnie płacą za jeżdżenie, nie za ciekawość.",
           "mina": "neutralna"
         }
       ]
@@ -2094,96 +2282,96 @@
     }
   ],
   "wejscie": "Cześć, Kit. Zgubiłem słuchawki w czwórce, takie nauszne, z kotem w kasku na muszli. Pracuję w kopiarni na Rynku i jak szef się dowie, że słuchałem muzyki przy ksero, to po mnie. Serio.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wyglądają te słuchawki?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Czarne, nauszne. Lewa muszla oklejona taśmą, na prawej naklejka: kot w kasku. Kupiłem ją za dolara, serio.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wyglądają te słuchawki?",
+          "tekst": "Czemu kot ma kask?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Czarne, nauszne, taśma na lewej muszli. Naklejka z kotem w kasku, bo kot jedzie na rowerze. Serio, kupiłem ją za dolara.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie je zostawiłeś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W czwórce, na siedzeniu przy oknie, jak wracałem z roboty. Usnąłem na pół minuty i wysiadłem bez nich.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czemu szef nie lubi słuchawek w pracy?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo mówi, że ksero ma być słychać, a ja mam słyszeć klientów. Ja słyszę, tylko że z muzyką mniej boli.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Pod taśmą na muszli jest banknot i karteluszek. Co to?",
-          "ton": "niewygodne",
-          "wymaga": "d7_tasma_banknot",
-          "odpowiedz": "Dwa dolary na szefa, jakby mnie przyłapał. Raz zadziałało. Nie mów mu, serio, bo wtedy dwa dolary to będzie za mało.",
+          "odpowiedz": "Bo jedzie na rowerze, a jest odpowiedzialny. W przeciwieństwie do mnie, co widać po tym, że tu stoję.",
           "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie je zostawiłeś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W czwórce, na siedzeniu przy oknie, jak wracałem z roboty. Przysnąłem na pół minuty i wysiadłem bez nich.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Ile masz lat?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Siedemnaście. Praktyki, za zgodą rodziców. Tylko że w nocy to się nie powinno, więc nikomu nie mówię.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co robisz w kopiarni po nocach?",
+          "tekst": "Wracasz z roboty w środku nocy? Gdzie pracujesz?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Ksero, laminowanie, bindowanie. Ulotki, plakaty, dyplomy. W nocy przychodzą tacy, co nie chcą, żeby ich ktoś widział.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Pamiętasz jakieś zamówienie z zeszłego tygodnia?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "ustawia": "d7_kit_ulotki",
-          "odpowiedz": "W czwartek o 22:15 facet w szarym płaszczu zamówił ulotki z twarzą kobiety, tysiąc sztuk. Zapłacił gotówką. Powiedział, że to dla żony. Serio, dziwnie się uśmiechał.",
-          "mina": "mowi"
+          "odpowiedz": "W kopiarni na Rynku, na praktykach. Mam siedemnaście lat, po nocach niby nie wolno, więc oficjalnie mnie tam nie ma. Serio, nie wpisuj tego.",
+          "mina": "mowi",
+          "dalej": [
+            {
+              "tekst": "Co się robi w kopiarni po nocach?",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "odpowiedz": "Ksero, laminowanie, bindowanie. Ulotki, plakaty, dyplomy. W nocy przychodzą tacy, co wolą, żeby ich nikt nie widział.",
+              "mina": "neutralna",
+              "dalej": [
+                {
+                  "tekst": "Na przykład kto? Pamiętasz kogoś z zeszłego tygodnia?",
+                  "ton": "niewygodne",
+                  "wymaga": null,
+                  "ustawia": "d7_kit_ulotki",
+                  "odpowiedz": "W czwartek, 22:15. Facet w szarym płaszczu zamówił tysiąc ulotek z twarzą kobiety. „Zaginęła”. Zapłacił gotówką i powiedział, że to żona. Serio, uśmiechał się przy tym.",
+                  "mina": "emocja"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Co ci zrobi szef, jak się dowie o słuchawkach?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Zdejmie mi dziesięć dolarów z wypłaty i palnie pogadankę. Pogadankę przeżyję. Dziesięć dolarów gorzej.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Co się stanie, jak szef się dowie o słuchawkach?",
-          "ton": "uprzejme",
+          "tekst": "Co mu przeszkadza w słuchawkach?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Zdejmie mi dziesięć dolarów z wypłaty i da pogadankę. Pogadankę przeżyję, dziesięć dolarów mniej już trudniej.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Kit Navarro, przez K i V na końcu. Zawsze wszyscy piszą Navaro.",
+          "odpowiedz": "Mówi, że ksero ma być słychać, a ja mam słyszeć klientów. Słyszę. Tylko z muzyką mniej boli.",
           "mina": "neutralna"
-        },
-        {
-          "tekst": "Dlaczego powiedziałeś mi o ulotkach?",
-          "ton": "niewygodne",
-          "wymaga": "d7_kit_ulotki",
-          "odpowiedz": "Bo patrzysz tak, jakby cię to naprawdę obchodziło. Nikt tak nie robi. A poza tym ten facet był dziwny i chciałem to komuś powiedzieć.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Wysyłacie komuś kopie tych zamówień?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Nie. Wszystko zostaje u nas, w segregatorze. Szef lubi segregatory bardziej niż ludzi.",
-          "mina": "mowi"
         }
       ]
+    },
+    {
+      "tekst": "Czemu powiedziałeś mi o tych ulotkach?",
+      "ton": "niewygodne",
+      "wymaga": "d7_kit_ulotki",
+      "odpowiedz": "Bo patrzysz, jakby cię to serio obchodziło. Mało kto tak patrzy. No i ten facet był dziwny, a komuś musiałem to powiedzieć.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Zostaje u was jakiś ślad po takim zamówieniu?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Kopia w segregatorze, z datą i godziną. Szef kocha segregatory bardziej niż ludzi. Nikomu ich nie wysyła, ale i nie wyrzuca.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Pod taśmą na muszli jest banknot i karteczka „za ciszę”. Co to?",
+      "ton": "niewygodne",
+      "wymaga": "d7_tasma_banknot",
+      "odpowiedz": "Dwa dolary dla szefa, jakby mnie przyłapał. Raz zadziałało. Nie mów mu, serio, bo następnym razem dwa dolary nie wystarczą.",
+      "mina": "mowi"
     }
   ],
   "decyzje": [
@@ -2255,95 +2443,111 @@
     "d3_maz_i_siostra:wez_100_evan": "Dobry wieczór. Evan Doyle. Znamy się już, więc krótko: klucze mojej żony, brązowe etui. Powiesz mi, którym tramwajem przyjechały? Dogadaliśmy się już raz, więc chyba nie ma problemu.",
     "d3_maz_i_siostra:wydaj_lena": "Dobry wieczór. Evan Doyle. Telefon żony wydaliście jej siostrze i do tej pory go nie widziałem. Poproszę więc o klucze, brązowe etui. Którą linią przyjechały?"
   },
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda to etui?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Brązowa skóra, zatrzask. W środku kartonik z inicjałami M.D. i znaczkiem nieskończoności. To jej pismo.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda to etui?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Brązowa skóra, zatrzask. W środku kartonik z inicjałami M.D. i znakiem nieskończoności. To jej.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie i kiedy zostało?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W czwórce albo w jedenastce, nie wiem. Powiesz mi, którym tramwajem przyjechało?",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Ile kluczy tam jest?",
+          "tekst": "Ile kluczy jest w środku?",
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Jeden. Do naszego mieszkania.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "W etui są dwa klucze, a ty mówisz o jednym.",
-          "ton": "niewygodne",
-          "wymaga": "d7_etui_klucze",
-          "odpowiedz": "Drugiego nie znam. Maya miała swoje sprawy. Powiesz mi, do czego on jest?",
-          "mina": "emocja"
+          "mina": "klamie",
+          "dalej": [
+            {
+              "tekst": "W etui są dwa klucze. Drugi ma wybite „14”.",
+              "ton": "niewygodne",
+              "wymaga": "d7_etui_klucze",
+              "klucz": "dwa",
+              "odpowiedz": "Drugiego nie znam. Maya miała swoje sprawy. Powiesz mi, do czego on jest? Bo ja chciałbym to wreszcie wiedzieć.",
+              "mina": "emocja"
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie i kiedy je zgubiła?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "Nie wiem. W czwórce albo w jedenastce. Dlatego pytam: którym tramwajem przyjechały?",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Od kiedy szukasz żony?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Od czwartku wieczorem. Zgłosiłem to jeszcze tej samej nocy, jak tylko zrozumiałem, że nie wraca.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "Po co ci ta linia?",
+          "tekst": "Po co ci numer linii?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Bo wtedy będę wiedział, gdzie ona wsiada. Stanę na pętli i poczekam. Chcę tylko porozmawiać.",
-          "mina": "mowi"
+          "odpowiedz": "Będę wiedział, gdzie ona wsiada. Stanę na pętli i poczekam. Chcę tylko porozmawiać.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "A jeśli ona nie chce rozmawiać?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Chce. Maya ma wszystko, czego trzeba: dom, męża, spokój. Nie ma się czego bać. Nie rozumiem tego pytania.",
+              "mina": "klamie"
+            }
+          ]
         },
         {
-          "tekst": "Ulotki z jej twarzą zamówiłeś o 22:15. Osiem godzin przed zgłoszeniem.",
-          "ton": "niewygodne",
-          "wymaga": "d7_kit_ulotki|d5_notes_ulotki",
-          "odpowiedz": "To... na wszelki wypadek. Zamówiłem je wcześniej, bo przeczuwałem. Czy to coś zmienia? Czy ktoś mi to zapisze?",
-          "mina": "emocja"
-        },
+          "tekst": "Policja nie może ci tego powiedzieć?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Policja mówi, że dorosła osoba ma prawo wyjść z domu. Więc przychodzę tutaj. Tu przynajmniej ktoś coś zapisuje.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Od kiedy jej szukasz?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Od czwartku wieczorem. Zgłosiłem jeszcze tej samej nocy, jak tylko zrozumiałem, że nie wraca.",
+      "mina": "klamie",
+      "dalej": [
         {
-          "tekst": "Czy wcześniej usłyszałeś od Mai, że odchodzi?",
+          "tekst": "Powiedziała ci wcześniej, że odchodzi?",
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Nie. Przecież by mi powiedziała.",
           "mina": "klamie"
+        },
+        {
+          "tekst": "Co zrobisz, kiedy ją znajdziesz?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Zabiorę ją do domu i zrobię jej herbaty. Wszystko wróci na swoje miejsce. U mnie wszystko ma swoje miejsce.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Tej samej nocy? Ulotki z jej twarzą zamówiłeś o 22:15. Zgłosiłeś rano.",
+          "ton": "niewygodne",
+          "wymaga": "d7_kit_ulotki|d5_notes_ulotki",
+          "klucz": "ulotki",
+          "odpowiedz": "To... na wszelki wypadek. Zamówiłem wcześniej, bo przeczuwałem. Czy to coś zmienia? Kto wam to powiedział? Ktoś to zapisuje?",
+          "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
-        {
-          "tekst": "Co zrobisz, jak ją znajdziesz?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Zabiorę ją do domu i zrobię jej herbatę. U nas w firmie każdy ma nazwisko na karcie, a tu pusto. Przepraszam, nieistotne.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co powiedziała policja, kiedy zgłosiłeś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Że dorosła osoba może wyjść z domu. Więc przychodzę tu.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czego Maya się boi?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Niczego. Ma wszystko, co trzeba. Dom, męża, spokój. Nie rozumiem pytania.",
-          "mina": "klamie"
-        }
-      ]
+      "tekst": "W etui są dwa klucze: zwykły i mały, z numerem 14. Do czego ten drugi?",
+      "ton": "niewygodne",
+      "wymaga": "d7_etui_klucze",
+      "klucz": "dwa",
+      "odpowiedz": "Drugiego nie znam. Maya miała swoje sprawy. Powiesz mi, do czego on jest? Bo ja chciałbym to wreszcie wiedzieć.",
+      "mina": "emocja"
+    },
+    {
+      "tekst": "Ulotki z twarzą Mai zamówiłeś w czwartek o 22:15. Osiem godzin przed zgłoszeniem.",
+      "ton": "niewygodne",
+      "wymaga": "d7_kit_ulotki|d5_notes_ulotki",
+      "klucz": "ulotki",
+      "odpowiedz": "To... na wszelki wypadek. Zamówiłem wcześniej, bo przeczuwałem. Czy to coś zmienia? Kto wam to powiedział? Ktoś to zapisuje?",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -2422,96 +2626,120 @@
     "d3_maz_i_siostra:wydaj_evan": "Dobry wieczór. Nora Vance, a to Lena Brandt. Lena po awanturze z Evanem chce chociaż torbę siostry. Ja chcę z niej papier z kamienicy. Torba jest szara, z rozprutą podszewką.",
     "d3_maz_i_siostra:wydaj_lena": "Dobry wieczór. Nora Vance, a to Lena Brandt. Lena ma już telefon siostry i chce jeszcze jej torbę. Ja chcę z niej papier z kamienicy. Torba jest szara, z rozprutą podszewką."
   },
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Lena, czyja jest ta torba?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "siostra",
+      "odpowiedz": "Mai, mojej siostry. Sama jej ją kupiłam na urodziny. Narzędzia dla kobiety, dziwny prezent, wiem. Teraz to jedyna jej rzecz, jakiej mogę dotknąć.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Czyja jest ta torba?",
-          "ton": "uprzejme",
-          "kto": "siostra",
-          "wymaga": null,
-          "odpowiedz": "Mai, mojej siostry. Kupiłam jej ją na urodziny, narzędzia, dziwny prezent, wiem. Teraz to jedyna rzecz po niej, jaką mogę dotknąć.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Czego szukasz w tej torbie?",
+          "tekst": "Po czym ją poznasz?",
           "ton": "rzeczowe",
-          "kto": "nora",
           "wymaga": null,
-          "odpowiedz": "Po kolei: rzecz, osoba, skutek. Papier z podszewki, kopia pokwitowania, rodzina Okoye. Bez niego nie mają dowodu wpłaty.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Po czym poznacie, że torba jest właśnie ta?",
-          "ton": "niewygodne",
           "kto": "siostra",
-          "wymaga": null,
-          "odpowiedz": "Po obcęgach z żółtą izolacją i miarze z dopiskiem „M”. Ale... no właśnie. Nora też wie, co jest w środku.",
-          "mina": "mowi"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Skąd wiesz, że w podszewce jest papier?",
-          "ton": "uprzejme",
-          "kto": "nora",
-          "wymaga": null,
-          "odpowiedz": "Z wykazu mieszkańców. Numer pokwitowania jest w moim zeszycie, a kopię ktoś schował. Nie wiem kto. Chcę zobaczyć, czy się zgadza.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czy Maya pracowała w tej kamienicy?",
-          "ton": "rzeczowe",
-          "kto": "siostra",
-          "wymaga": null,
-          "odpowiedz": "Pracowała jako elektryczka na Cooper Street dziewięć, na pierwszym piętrze. Ale... no tak, tam była Iris. Nie rozmawiałyśmy o tym.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Ile rodzin jest w tej sprawie?",
-          "ton": "niewygodne",
-          "kto": "nora",
-          "wymaga": null,
-          "odpowiedz": "Czternaście, po czterysta dolarów każda, termin do czwartku, dziewiątego września. Wpłaciły raz, a ja mam to w zeszycie.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "W podszewce jest kopia z podpisem „I.” i kwotą 400 $. Czyja?",
-          "ton": "niewygodne",
-          "kto": "nora",
-          "wymaga": "d8_torba_kopia",
-          "odpowiedz": "Iris Bell, zarządczyni. To jej podpis, ja go znam z dwudziestu pokwitowań. Kopia dowodzi, że Okoye zapłacili. Oryginał ma Iris.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Co zrobisz z torbą, jak ją dostaniesz?",
-          "ton": "uprzejme",
-          "kto": "siostra",
-          "wymaga": null,
-          "odpowiedz": "Zabiorę ją do siebie. A jak Maya wróci, to jej oddam. Przecież to jej.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Kto podpisze?",
-          "ton": "rzeczowe",
-          "kto": "nora",
-          "wymaga": null,
-          "odpowiedz": "Ja, jako przedstawicielka lokatorów, jeśli chodzi o kopię. Za torbę niech podpisze siostra. Dwie osoby, dwa podpisy.",
+          "odpowiedz": "Po obcęgach z żółtą izolacją i miarce z literą „M”. Ale... no właśnie. Nora też wie, co jest w środku.",
           "mina": "neutralna"
         },
         {
-          "tekst": "Czy któraś z was ustąpi?",
-          "ton": "niewygodne",
-          "kto": "nora",
+          "tekst": "Co zrobisz z torbą, jeśli ją dostaniesz?",
+          "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Ja nie, bo chodzi o czternaście rodzin. Lena pewnie też nie.",
-          "mina": "mowi"
+          "kto": "siostra",
+          "odpowiedz": "Zabiorę do siebie. A jak Maya wróci, to jej oddam. Przecież to jej.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Nora, czego szukasz w cudzej torbie?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "nora",
+      "odpowiedz": "Po kolei: rzecz, osoba, skutek. Papier w podszewce. Rodzina Okoye. Bez tego papieru nie mają dowodu, że wpłacili.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Skąd wiesz, że w podszewce jest papier?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Z mojego zeszytu. Spisuję numery wszystkich pokwitowań w kamienicy. Jednej kopii brakuje, a Maya robiła u nas instalację akurat w tym tygodniu, kiedy zniknęła.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "O jakiej wpłacie mówimy?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "nora",
+          "odpowiedz": "Czternaście rodzin, każda po czterysta dolarów zaliczki na remont. Termin rozliczenia: czwartek, dziewiąty września. Kto nie pokaże kwitu, płaci drugi raz albo się wyprowadza.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Kto brał te zaliczki?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "kto": "nora",
+              "odpowiedz": "Zarządczyni, Iris Bell. Bierze gotówkę, wydaje kwit, oryginał zostawia sobie. A potem bywa, że kwitu „nie pamięta”.",
+              "mina": "neutralna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Maya pracowała w tej kamienicy?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "siostra",
+      "odpowiedz": "Tak, jako elektryczka, na Cooper Street dziewięć. Ale... no tak, tam rządzi Iris. Nie rozmawiałyśmy o tym. Maya mówiła tylko, że widziała coś, czego nie powinna.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Co takiego widziała?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "siostra",
+          "odpowiedz": "Nie powiedziała. Naprawdę. Urwała w pół zdania i zmieniła temat. Ja też teraz zmienię.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "tekst": "Która z was ustąpi?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "nora",
+      "odpowiedz": "Ja nie. Za mną stoi czternaście rodzin. Lena pewnie też nie, bo za nią stoi siostra. Dlatego przyszłyśmy razem, żeby ktoś trzeci zdecydował.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Lena, a gdyby Nora dostała tylko papier, a ty torbę?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "siostra",
+          "odpowiedz": "Mogłabym. Tylko niech nikt nie czyta reszty. W tej torbie są rzeczy Mai, nie kamienicy.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "W podszewce jest żółta kopia: 400 dolarów, podpis „I.”. Czyj to podpis?",
+      "ton": "niewygodne",
+      "wymaga": "d8_torba_kopia",
+      "kto": "nora",
+      "odpowiedz": "Iris Bell. Znam go z dwudziestu pokwitowań. Czyli Okoye zapłacili, a Maya schowała dowód. Oryginał ma Iris i nie pokaże go nikomu.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Lena, wiedziałaś, że Maya to schowała?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "siostra",
+          "odpowiedz": "Nie. Ale to do niej podobne. Maya zawsze chowa rzeczy tam, gdzie ktoś je kiedyś znajdzie. Jak telefon.",
+          "mina": "emocja"
         }
       ]
     }
@@ -2584,87 +2812,92 @@
     }
   ],
   "wejscie": "Cześć, Bree. Słuchaj, mam paragon. Zgubiłam aparat brata w jedenastce, srebrny, analogowy, z wgnieceniem w rogu. Brat leży w szpitalu i bardzo chce go odzyskać. Potrzebuję go dziś.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten aparat?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Srebrny, analogowy, wgniecenie w lewym rogu. Brat upuścił go na schodach. Mówi, że teraz aparat ma charakter.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten aparat?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Srebrny, analogowy, z wgnieceniem w lewym rogu. Mój brat upuścił go na schodach. Teraz ma charakter.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie go zostawiłaś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "W jedenastce, na siedzeniu. Rozmawiałam przez telefon z lekarzem i nie spojrzałam za siebie.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czy w aparacie są jakieś znaki?",
+          "tekst": "Ma jakieś znaki? Coś wydrapanego, podpis?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Nie, żadnych. Teo, mój brat, nic nie wydrapał. Aparat jest czysty.",
+          "odpowiedz": "Nie, żadnych. Teo niczego nie wydrapywał. Aparat jest czysty.",
           "mina": "klamie"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Jak ma na imię twój brat?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Teo. Teodor Halm. Leży na ortopedii, noga w gipsie. To przez rower, powiedział, że to nie jego wina.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Jaki to paragon?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Z komisu na Rynku, sprzed dwóch lat. Mam w telefonie zdjęcie. Słuchaj, tam jest cena, jest data i jest opis, że srebrny.",
-          "mina": "mowi"
         },
         {
           "tekst": "Co jest na filmie w środku?",
-          "ton": "niewygodne",
+          "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Nie wiem, brat go nie wywoływał. Pewnie zdjęcia z wakacji. Nic ważnego.",
+          "odpowiedz": "Nie wiem, brat go nie wywołał. Pewnie wakacje. Nic ważnego.",
           "mina": "klamie"
-        },
-        {
-          "tekst": "Pod osłoną baterii jest wydrapane R.O. Czyje?",
-          "ton": "niewygodne",
-          "wymaga": "d8_aparat_naklejka",
-          "odpowiedz": "No dobra. R.O. to Raf Okoye, sąsiad z kamienicy. Pożyczył bratu aparat. Ale to się przecież nie liczy, bo mam paragon.",
-          "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie go zostawiłaś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W jedenastce, na siedzeniu. Rozmawiałam przez telefon z lekarzem brata i wysiadłam, nie oglądając się.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Czemu aparat jest ci tak pilnie potrzebny?",
+          "tekst": "Co z bratem?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Bo brat chce zdjęć ze szpitala dla mamy. Mama jest daleko i lubi zdjęcia. Dlatego dziś.",
-          "mina": "mowi"
-        },
+          "odpowiedz": "Teo, Teodor Halm. Leży na ortopedii z nogą w gipsie. Rower. Twierdzi, że to nie jego wina, czyli jego.",
+          "mina": "mowi",
+          "dalej": [
+            {
+              "tekst": "Po co mu w szpitalu aparat na kliszę?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Chce robić zdjęcia dla mamy. Mama mieszka daleko i lubi zdjęcia. Dlatego potrzebuję go dziś, nie jutro.",
+              "mina": "klamie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Mówisz, że masz paragon. Jaki?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "Z komisu na Rynku, sprzed dwóch lat. Mam zdjęcie w telefonie. Słuchaj, jest cena, jest data, jest napisane „srebrny”. Czego chcieć więcej?",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
+          "tekst": "Na paragonie jest numer seryjny?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bree Halm. Zawsze podpisuję szybko, to znaczy czytelnie. Ale szybko.",
+          "odpowiedz": "Numeru nie ma. W komisach się nie wpisuje. Ale srebrny aparat z komisu to srebrny aparat z komisu, nie?",
           "mina": "neutralna"
         },
         {
-          "tekst": "Co będzie, jeśli aparat zostanie w biurze?",
+          "tekst": "Paragon bez numeru to za mało. Aparat może tu poczekać.",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Wtedy zrobię się nieprzyjemna. Albo inaczej: osiemdziesiąt dolarów, wydajesz mi aparat i po sprawie. Co ci szkodzi?",
-          "mina": "mowi",
-          "ustawia": "d8_bree_oferta"
+          "ustawia": "d8_bree_oferta",
+          "odpowiedz": "To zrobię się nieprzyjemna. Albo inaczej: osiemdziesiąt dolarów, wydajesz mi aparat i po sprawie. Co ci szkodzi?",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Pod klapką baterii jest wydrapane „R.O.”. Czyje to inicjały?",
+      "ton": "niewygodne",
+      "wymaga": "d8_aparat_naklejka",
+      "odpowiedz": "No dobra. Raf Okoye, sąsiad z Cooper Street. Pożyczył bratu aparat. Ale to się nie liczy, bo ja mam paragon.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Na pasku wisi klucz: „Cooper 9, lok. 4”. Kto cię po ten aparat przysłał?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nikt. Brat. Mówiłam. Słuchaj, ktoś zapłacił mi za odebranie i tyle wiem. Nie pytam, co jest na kliszy, i tobie też nie radzę.",
+          "mina": "klamie"
         }
       ]
     }
@@ -2748,104 +2981,110 @@
     "d4_iris:koperta": "Dobry wieczór. Iris Bell. Miło znowu przy tej szybie. Piórnik z żetonami, szóstka, ostatni kurs. Obok Victor Crane, pyta o ten sam numer. Mam nadzieję, że pójdzie szybko.",
     "d4_iris:odmow_zglos": "Dobry wieczór. Iris Bell. Paczka z zeszłego tygodnia nadal u was leży. Dziś piórnik z żetonami. Obok Victor Crane, pyta o ten sam numer."
   },
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Co jest w tym piórniku?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "iris",
+      "odpowiedz": "Żetony do skrzynek pocztowych w kamienicy. Pięć sztuk, nic więcej. Nudy, kochanie.",
+      "mina": "klamie",
+      "dalej": [
         {
-          "tekst": "Co jest w tym piórniku?",
-          "ton": "uprzejme",
-          "kto": "iris",
+          "tekst": "Co znaczą numery na tych żetonach?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Żetony do skrzynek pocztowych w kamienicy. Pięć sztuk, nic więcej. Nudy.",
+          "kto": "iris",
+          "odpowiedz": "Nic. Numeracja skrzynek. Nie szukaj w tym powieści.",
           "mina": "klamie"
         },
         {
-          "tekst": "Czego chce inspekcja?",
+          "tekst": "Czyje to skrzynki?",
           "ton": "rzeczowe",
-          "kto": "victor",
           "wymaga": null,
-          "odpowiedz": "Numeru odbioru i podpisu. Kto to podpisze? Pokwitowanie w dwóch egzemplarzach, jeden do Urzędu.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Czemu oboje chcecie tego samego?",
-          "ton": "niewygodne",
           "kto": "iris",
-          "wymaga": null,
-          "odpowiedz": "Bo żetony przyjechały szóstką, a Victor lubi wszystko, co przyjeżdża. Mnie wystarczy, że wrócą do skrzynek.",
-          "mina": "mowi"
+          "odpowiedz": "Moich lokatorów. Nazwisk nie podam, to ich sprawa. Są ludzie, którzy chcą mieć po prostu święty spokój.",
+          "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Czego chce od piórnika inspekcja?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "victor",
+      "odpowiedz": "Numeru odbioru i podpisu. Kto to podpisze? Pokwitowanie w dwóch egzemplarzach, jeden idzie do Urzędu.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Czyje są te żetony?",
-          "ton": "uprzejme",
-          "kto": "iris",
-          "wymaga": null,
-          "odpowiedz": "Moich lokatorów. Nazwisk nie podam, to ich sprawa. Są ludzie, którzy chcą mieć święty spokój.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co nie zgadza się w księdze?",
+          "tekst": "Co się nie zgadza w księdze?",
           "ton": "rzeczowe",
-          "kto": "victor",
           "wymaga": null,
-          "odpowiedz": "Numery. Piórnik przyjechał, a wpisu o nim nie ma. Brakuje też trzech kwitów od zeszłego miesiąca. Ktoś je wydał bez śladu.",
+          "kto": "victor",
+          "odpowiedz": "Numery. Piórnik przyjechał szóstką, a wpisu nie ma. Brakuje też trzech kwitów z zeszłego miesiąca. Ktoś wydawał bez śladu.",
           "mina": "neutralna"
         },
         {
-          "tekst": "Co znaczą liczby na żetonach?",
+          "tekst": "Co będzie, kiedy piórnik trafi do Urzędu?",
           "ton": "niewygodne",
-          "kto": "iris",
           "wymaga": null,
-          "odpowiedz": "Nic. Numeracja skrzynek. Proszę nie szukać w tym fabuły.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "Na rewersach: „kobieta z walizką”, „matka z synem”. Co to?",
-          "ton": "niewygodne",
-          "kto": "iris",
-          "wymaga": "d9_zetony_numery",
-          "odpowiedz": "Opisy. Żeby kurier wiedział, komu wręczyć paczkę. Więcej nie powiem przy panu Crane.",
-          "mina": "emocja"
+          "kto": "victor",
+          "odpowiedz": "Zostanie opisany w protokole. Ktoś ten protokół przeczyta i wyciągnie wnioski. Ja nie wyciągam. Ja zapisuję.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Iris, co ty na to?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "kto": "iris",
+              "odpowiedz": "Że protokoły czyta więcej osób, niż pan Crane sądzi. A ja nie lubię, jak nazwiska moich lokatorów chodzą po urzędach.",
+              "mina": "neutralna"
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Czemu oboje przyszliście po to samo?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "iris",
+      "odpowiedz": "Bo żetony przyjechały szóstką, a pan Crane lubi wszystko, co przyjeżdża. Mnie wystarczy, że wrócą tam, skąd wyjechały.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Czemu piąty żeton nie ma opisu?",
-          "ton": "uprzejme",
-          "kto": "iris",
-          "wymaga": null,
-          "odpowiedz": "Jeszcze go nie ma. Papier przyjdzie, jak przyjdzie. Nie zadaję takich pytań, kiedy ktoś płaci.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co się stanie, jak piórnik trafi do Urzędu?",
-          "ton": "rzeczowe",
-          "kto": "victor",
-          "wymaga": null,
-          "odpowiedz": "Zostanie opisany w protokole. Ktoś go przeczyta i wyciągnie wnioski. Ja nie wyciągam, ja zapisuję.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co jest w tych paczkach, że ludzie po nie jeżdżą?",
+          "tekst": "Czemu mam wierzyć tobie, a nie jemu?",
           "ton": "niewygodne",
+          "wymaga": null,
           "kto": "iris",
-          "wymaga": "d9_zetony_numery",
-          "odpowiedz": "Papier na nowe życie. Dla ludzi, których ktoś bije albo ściga. Biorę za to pieniądze i nie mam wstydu. Reszta nie dla inspekcji.",
+          "odpowiedz": "Nie musisz. Zrób, co uznasz za słuszne. Powiem tylko, że czworo ludzi kupiło już bilet i czeka na swoją kolej.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Na odwrocie żetonów są karteczki: „kobieta z walizką”, „matka z synem”. Co to?",
+      "ton": "niewygodne",
+      "wymaga": "d9_zetony_numery",
+      "kto": "iris",
+      "odpowiedz": "Opisy. Żeby goniec wiedział, komu oddać paczkę. Więcej przy panu Crane nie powiem.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Co jest w tych paczkach?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "iris",
+          "odpowiedz": "Papiery na nowe życie. Dla ludzi, których ktoś bije albo ściga. Biorę za to pieniądze i nie wstydzę się tego. Reszta nie jest dla inspekcji.",
           "mina": "emocja"
         },
         {
-          "tekst": "Czemu mam wam ufać?",
-          "ton": "niewygodne",
-          "kto": "iris",
+          "tekst": "Piąty żeton, 0809, nie ma opisu. Dla kogo jest?",
+          "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Nie masz. Zrób, co uznasz za słuszne. Ja tylko mówię, że czterech ludzi kupiło bilet.",
-          "mina": "mowi"
+          "kto": "iris",
+          "odpowiedz": "Jeszcze dla nikogo. Opis przyjdzie, kiedy przyjdzie człowiek. Nie zadaję takich pytań, dopóki ktoś nie zapłaci.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -2934,85 +3173,88 @@
     }
   ],
   "wejscie": "Dobry wieczór. Marek Stahl. Zgodnie z regulaminem zgłaszam zgubę: szary filcowy kapelusz z granatową wstążką, wczoraj w czwórce. Opis mam bardzo dokładny, żeby nie tracić państwa czasu.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten kapelusz?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Szary, filcowy, granatowa wstążka, rozmiar pięćdziesiąt osiem. Zgodnie z regulaminem podaję wszystko od razu.",
+      "mina": "klamie",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten kapelusz?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Szary, filcowy, granatowa wstążka, rozmiar pięćdziesiąt osiem. Zgodnie z regulaminem podaję wszystko od razu.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "Gdzie i kiedy go zgubiłeś?",
+          "tekst": "Jest w nim metka producenta?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Wczoraj, czwórka, około dwudziestej drugiej. Siedziałem sam, kapelusz leżał na półce nad oknem.",
+          "odpowiedz": "Jest, pod wstążką. Nazwy nie pamiętam. Regulamin tego nie wymaga.",
           "mina": "klamie"
         },
         {
-          "tekst": "Czemu akurat ten kapelusz?",
+          "tekst": "Jakieś inicjały w środku?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "M.S., Marek Stahl. Tak mi się wydaje. Rzadko zaglądam do własnego kapelusza.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "tekst": "Gdzie i kiedy go zgubiłeś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "Wczoraj, czwórka, około dwudziestej drugiej. Siedziałem sam, kapelusz leżał na półce nad oknem.",
+      "mina": "klamie",
+      "dalej": [
+        {
+          "tekst": "Na pewno sam?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo jutro mam ważną rozmowę, a bez niego wyglądam nieprzekonująco. Tak mówi moja żona.",
+          "odpowiedz": "Sam. Zawsze sam. Nikt obok nie siadał.",
+          "mina": "klamie"
+        },
+        {
+          "tekst": "O dwudziestej drugiej? Dokąd jechałeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Do domu. Z kancelarii. Dużo ostatnio pracuję przy cudzych papierach.",
           "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Czemu tak ci zależy akurat na tym kapeluszu?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "odpowiedz": "Jutro mam ważną rozmowę, a bez kapelusza wyglądam nieprzekonująco. Tak twierdzi moja żona.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jakie masz inicjały?",
+          "tekst": "Żona może potwierdzić, że jest twój?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "M.S. Marek Stahl. Można zapisać zgodnie z regulaminem.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Jest w nim naklejka producenta?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Pod wstążką, tak. Nazwy nie pamiętam. Regulamin tego nie wymaga.",
+          "odpowiedz": "Mogłaby, ale jest w delegacji. Zaświadczenie przyniosę jutro, zgodnie z regulaminem.",
           "mina": "klamie"
         },
         {
-          "tekst": "Jechałeś sam?",
+          "tekst": "A jeśli kapelusz zostanie u nas?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Sam. Zawsze sam. Zgodnie z rozkładem nikt obok nie siadał.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "Pod wstążką jest „Hobbs & Syn, 56”, w środku J.K. Czyj to kapelusz?",
-          "ton": "niewygodne",
-          "wymaga": "d9_kapelusz_naklejka",
-          "odpowiedz": "…Chwileczkę. Biuro ma dobry wzrok. Kapelusz nie jest mój. Chciałem zobaczyć, czy ktoś go wyda za opis.",
-          "mina": "emocja"
+          "odpowiedz": "To odejdę. Ale nie od razu. Postoję chwilę, jeśli wolno. Lubię patrzeć, jak ktoś pracuje. Zwłaszcza ktoś nowy.",
+          "mina": "neutralna"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Pod wstążką jest „Hobbs & Syn, 56”, a w podszewce „J.K.”. Czyj to kapelusz?",
+      "ton": "niewygodne",
+      "wymaga": "d9_kapelusz_naklejka",
+      "odpowiedz": "...Chwileczkę. Dobry wzrok. Kapelusz nie jest mój. Chciałem zobaczyć, czy to okienko wyda rzecz za sam ładny opis.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Kto może potwierdzić, że to twój kapelusz?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Żona, ale jest w delegacji. Zaświadczenie mogę przynieść jutro, zgodnie z regulaminem.",
-          "mina": "klamie"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Marek Stahl, z kropką po imieniu. Zgodnie z regulaminem.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co zrobisz, jeśli kapelusz zostanie u nas?",
+          "tekst": "Po co to sprawdzasz? Dla kogo?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Odejdę. Ale nie od razu. Postoję jeszcze chwilę, jeśli państwo pozwolą. Lubię patrzeć na ludzi przy pracy.",
+          "odpowiedz": "Dla siebie. I dla ludzi, którzy płacą za wiedzę, jak pracuje nocna zmiana. Proszę się nie martwić. Na razie wypadło dobrze.",
           "mina": "neutralna"
         }
       ]
@@ -3085,86 +3327,84 @@
     }
   ],
   "wejscie": "Dobry wieczór. Zaplecze tramwajowe, Vera Kovacs. Pudełko z szafki Sama Holta, tego, który siedział przy tej szybie przed Tobą. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a on dalej się nie zgłasza. Proszę o pomoc.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda to pudełko?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Blaszane, na sprzączkę. Na wieczku wgniecenie, bo raz na nim usiadłam w poczekalni. Zapina się z oporem.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda to pudełko?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Blaszane, zapinane na sprzączkę. Na wieczku wgniecenie, bo siadałam na nim w poczekalni. Zapina się z oporem.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie dokładnie je zgubiłaś?",
+          "tekst": "Co jest w środku?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "W jedenastce, wczoraj, ostatni kurs. Położyłam je obok i wysiadłam bez niego. Klucze mi dzwoniły, jak biegłam.",
+          "odpowiedz": "Pasek od zegarka i kartka z inwentarza. Nic, co miałoby cenę.",
           "mina": "neutralna"
-        },
-        {
-          "tekst": "Czemu zgubiłaś rzecz z cudzej szafki?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo nosiłam je do domu, żeby nikt ich nie wyrzucił. Szafka jest starego pracownika, nie moja.",
-          "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Gdzie dokładnie je zgubiłaś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W jedenastce, wczoraj, ostatni kurs. Położyłam obok siebie i wysiadłam bez niego. Zorientowałam się, bo klucze dzwoniły, a ręce miałam puste.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Czyja to szafka?",
-          "ton": "uprzejme",
+          "tekst": "Po co wozisz do domu pudełko z cudzej szafki?",
+          "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Sama Holta, poprzednika w tym biurze. Odszedł ponad miesiąc temu i nikt się szafką nie zajmuje, tylko ja.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co jest w pudełku?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Pasek od zegarka i kartka z inwentarza. Nic wartościowego.",
+          "odpowiedz": "Żeby nikt go nie wyrzucił. Szafka jest Sama, nie moja. W zajezdni, jak coś stoi niczyje, to długo nie postoi.",
           "mina": "neutralna"
-        },
-        {
-          "tekst": "Dlaczego to ty zajmujesz się jego szafką?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Bo jak szafka jest zajęta, to nikt jej nie likwiduje. Sam mnie o to prosił. Powiedział: trzymaj, aż wrócę.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Na karcie jest numer szuflady 6, taki jak w biurze. Co to znaczy?",
-          "ton": "niewygodne",
-          "wymaga": "d10_pudelko_karta",
-          "odpowiedz": "Że szuflada szóstka jest jego. Klucz od niej dostałam od Sama i zostawiłam w tej szufladzie, żeby następny nie musiał go szukać.",
-          "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Kim był dla ciebie Sam Holt?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Kolegą z nocy. Siedział przy tej szybie, ja zamykałam zaplecze. Odszedł ponad miesiąc temu, bez słowa. Tylko ja jeszcze pilnuję jego szafki.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Czemu zależy ci na tym pudełku?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Bo to ostatnie, co zostało po Samie. Wezwałam go na przyszły piątek, na zamknięcie szafki. Chcę, żeby miał co zabrać.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Co się stanie z rzeczami, jeśli Sam nie przyjdzie?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Pójdą do zbiorczego archiwum Urzędu i nikt ich potem nie znajdzie. Dlatego proszę, żeby ktoś przy tym był, jak Sam przyjdzie.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Czy Sam wie, że go wezwałaś?",
+          "tekst": "Dlaczego akurat ty?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Wie. Napisałam. Nie odpisał. Ale on nigdy nie odpisuje, tylko przychodzi. To znaczy, powinien przyjść.",
-          "mina": "emocja"
+          "odpowiedz": "Bo mnie prosił. Powiedział: trzymaj, aż wrócę. Dopóki szafka jest zajęta, nikt jej nie likwiduje.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Co będzie, jak zamkną szafkę w piątek?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Rzeczy pójdą do zbiorczego archiwum Urzędu i nikt ich potem nie znajdzie. Dlatego wezwałam Sama na piątek. Chcę, żeby miał co zabrać.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Sam wie, że go wezwałaś?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Wie. Napisałam. Nie odpisał. On nigdy nie odpisuje, on przychodzi. To znaczy, powinien przyjść.",
+              "mina": "neutralna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Na karcie jest numer szuflady 6, taki jak tu, w biurze. Co to znaczy?",
+      "ton": "niewygodne",
+      "wymaga": "d10_pudelko_karta",
+      "odpowiedz": "Że szuflada numer sześć jest jego. Klucz dostałam od Sama i zostawiłam w tej szufladzie, żeby następny nie musiał go szukać. Czyli żeby nie musiało szukać to, co teraz siedzi na jego krześle.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Na wieczku ktoś napisał: „Teczka jest pusta. Tak ma być”. O jaką teczkę chodzi?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nie wiem. Dzwonię kluczami, bo się wstydzę, że nie wiem. Sam mówił, że jak ktoś zapyta o teczkę, mam powtórzyć te słowa i nic nie dodawać.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -3237,88 +3477,77 @@
     }
   ],
   "wejscie": "Cześć, Dario, motorniczy z jedenastki. Zgubiłem zeszyt z grafikiem dyżurów, gruby, w tłustej okładce, z gumką. Bez niego nie wiem, kiedy jeżdżę. A przy okazji: czy ktoś tu wie, co się stało z Samem?",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Jak wygląda ten zeszyt?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Gruby, okładka tłusta, bo noszę go razem z kanapką. Gumka ledwo trzyma. Pachnie cebulą, uprzedzam.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Jak wygląda ten zeszyt?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Gruby, tłusta okładka, bo noszę go z kanapką. Gumka ledwo trzyma. Pachnie cebulą, uprzedzam.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Gdzie go zgubiłeś?",
+          "tekst": "Co w nim jest oprócz grafiku?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "W jedenastce, na pętli, jak jadłem. Odłożyłem zeszyt obok kanapki i zjadłem kanapkę. Zeszytu już nie.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Co jest w tym zeszycie poza grafikiem?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Przepisy na zupy i numery telefonów. Masz kanapkę, poczęstuj się.",
+          "odpowiedz": "Przepisy na zupy i numery telefonów. I parę długów, cudzych. Chcesz kanapkę? Mam drugą.",
           "mina": "mowi"
         }
       ]
     },
     {
-      "pytania": [
-        {
-          "tekst": "Kim jest Sam?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Kolega, poprzednik z tego okienka. Zawsze miał dla mnie herbatę i dobre słowo. Teraz go nie ma i nikt nie wie gdzie.",
-          "mina": "emocja"
-        },
+      "tekst": "Gdzie go zgubiłeś?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "odpowiedz": "W jedenastce, na pętli, jak jadłem. Położyłem zeszyt obok kanapki. Kanapkę zjadłem, a zeszyt pojechał dalej beze mnie.",
+      "mina": "neutralna"
+    },
+    {
+      "tekst": "Pytałeś o Sama. Kim on dla ciebie jest?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Kolegą. Siedział przy tym okienku przed tobą. Zawsze miał dla mnie herbatę i dobre słowo. Teraz go nie ma i nikt nie wie, gdzie jest.",
+      "mina": "emocja",
+      "dalej": [
         {
           "tekst": "Od kiedy go nie ma?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Od ponad miesiąca. Powiedział, że idzie do portu. Potem nie odbierał telefonu. Pytam wszystkich w zajezdni.",
-          "mina": "mowi"
+          "odpowiedz": "Ponad miesiąc. Powiedział, że idzie do portu coś załatwić. Potem przestał odbierać telefon. Pytam po całej zajezdni.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Co miał do załatwienia w porcie?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Nie mówił. Miał pod pachą szarą teczkę i minę, jakby szedł do dentysty. Tyle widziałem.",
+              "mina": "neutralna"
+            }
+          ]
         },
         {
           "tekst": "Czemu pytasz akurat tutaj?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo to jego miejsce. Jak ktoś ma wiedzieć, to ten, kto siedzi na jego krześle.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Na ostatniej stronie jest dopisek „Czy on żyje?”. Czyj?",
-          "ton": "niewygodne",
-          "wymaga": "d10_zeszyt_sam",
-          "odpowiedz": "Mój. Dopisałem go w poniedziałek. Sam jest mi winien trzynaście dolarów, ale nie o to chodzi. Chcę wiedzieć, czy żyje.",
-          "mina": "emocja"
+          "odpowiedz": "Bo to jego miejsce. Jak ktoś ma coś wiedzieć, to ten, kto siedzi na jego krześle.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "A jak nikt ci nie odpowie?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "To będę pytał dalej. Aż ktoś powie albo aż mi się znudzi. To drugie mi się nie zdarza.",
+              "mina": "mowi"
+            }
+          ]
         }
       ]
     },
     {
-      "pytania": [
-        {
-          "tekst": "Co zrobisz z zeszytem, jak go dostaniesz?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "odpowiedz": "Wrócę na pętlę i będę jeździł według grafiku. A w wolnej chwili spróbuję znowu zadzwonić do Sama.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Odbiór wymaga podpisu. Podpiszesz?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "odpowiedz": "Dario Ruiz, z zetem na końcu. Pół zajezdni to Ruizowie, Dana z warsztatu to moja kuzynka.",
-          "mina": "neutralna"
-        },
-        {
-          "tekst": "Co zrobisz, jeśli nikt nie odpowie o Samie?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "odpowiedz": "Będę pytał dalej. Aż ktoś powie albo aż mi się znudzi, a to drugie się nie zdarza.",
-          "mina": "emocja"
-        }
-      ]
+      "tekst": "Na ostatniej stronie jest dopisek: „Czy on żyje?”. Twój?",
+      "ton": "niewygodne",
+      "wymaga": "d10_zeszyt_sam",
+      "odpowiedz": "Mój. Dopisałem w poniedziałek. Sam wisi mi trzynaście dolarów za kanapki, ale nie o to idzie. Chcę wiedzieć, czy żyje.",
+      "mina": "emocja"
     }
   ],
   "decyzje": [
@@ -3335,7 +3564,7 @@
     },
     {
       "akcja": "odmow",
-      "reakcja": "Co? To przecież mój zeszyt! Dobra, przyniosę kogoś z zajezdni, kto potwierdzi.",
+      "reakcja": "Co? Przecież to mój zeszyt! Dobra, przyprowadzę kogoś z zajezdni, niech potwierdzi.",
       "zysk": "Zeszyt zostaje w biurze, a w nim dopisek o Samie, który możesz przeczytać jeszcze raz.",
       "strata": "Dario nie ma grafiku i jutro nie wie, o której jedzie. Szef się wścieknie.",
       "echo": {

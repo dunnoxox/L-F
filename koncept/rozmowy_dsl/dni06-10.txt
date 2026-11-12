@@ -1,0 +1,248 @@
+# d6_ada
+? u Jak wygląda ten królik?
+= m Szary, pluszowy. Jedno ucho ma doszyte czerwoną nitką. I dziurkę w nosie, jakby miał katar.
+ ? u Ktoś go bardzo naprawiał. Myślisz, że jest czyjś ulubiony?
+ = e Na pewno. Jak się komuś nie chce, to nie przyszywa ucha, tylko kupuje nowego. Dlatego nie mogłam go tam zostawić.
+? r Gdzie dokładnie go znalazłaś?
+= n Na ławce przy pętli szóstki, trzy kroki od słupka. Liczyłam. Siedział sam, jakby na kogoś czekał.
+ ? n Co robisz sama w nocy na pętli?
+ = n Mama ma nocną zmianę w pralni, a mnie się nudzi. Chodzę po pętli i liczę kamienie. Wczoraj były sto dwa.
+  ? u Mama wie, że tam chodzisz?
+  = m Wie i się gniewa. Mówi, że brać nic nie wolno, oddawać trzeba, a po pętli nie łazić. Dwa z trzech robię dobrze.
+ ? r Ktoś jeszcze był wtedy przy ławce?
+ = n Pan konduktor z szóstki palił przy budce. Patrzył na zegarek, którego nie miał. I jakaś pani z walizką, ale ona poszła, zanim doszłam.
+? n Po co ci kwit?
+= m Żeby było wiadomo, że znalazłam, a nie wzięłam. Pani w szkole mówi, że to duża różnica. A mama mówi, że bez kwitu nikt nie uwierzy.
+ ? r Co ma być na tym kwicie?
+ = m Że Ada Vale, dziesięć lat, znalazła królika. Dużymi literami, bo pani w szkole czyta tylko duże.
+ ? r Jaki adres wpisać?
+ = n Cooper Street dziewięć, drugie piętro. Nad nami mieszka ktoś nowy, u niego w pokoju jest zimno. Ojej. Pani Iris prosiła, żeby nie mówić adresu.
+  ? n Czemu pani Iris każe milczeć o adresie?
+  = e (szeptem) Bo pani Iris zabiera mieszkanie, jak ktoś za dużo gada. Mama tak mówi, kiedy myśli, że śpię.
+? n @d6_karteczka_krolik Pod uchem królika jest karteczka. Czytałaś ją?
+= m Czytałam. „Dla Zuzi, od taty. Jak się zgubi, niech ktoś odda”. No to oddaję. Tylko nie wiem, kto to Zuzia, i dlatego chcę kwit.
+ ? n Tata Zuzi z góry wiedział, że królik się zgubi?
+ = n Też o tym myślałam. Może Zuzia dużo gubi. A może dużo jeździ. Ten nowy nad nami też ma córkę, ale jej nie wolno wychodzić.
+? n @d6_puszka_odcinek Na odcinku z puszki jest numer z bloczka pani Iris. Znasz taką puszkę?
+= e (szeptem) Widziałam takie u pani Iris w kuchni, nad czajnikiem. Wszystkie mają dno, które się rusza. Nie mów nikomu, że mówiłam.
+
+# d6_leo
+? u Jak wygląda ten zegarek?
+= m Mosiężny, kieszonkowy, na łańcuszku. Na wieczku grawer: „za trzydzieści lat”. Żona mówi, że za trzydzieści lat to ja już nie będę wiedział, która godzina.
+ ? r Trzydzieści lat czego?
+ = m Służby. Ale nie mojej. To zegarek dziadka mojej żony, też jeździł na szóstce. Przeżył trzech naczelników. Zegarek, nie dziadek.
+ ? n Konduktor bez zegarka. Jak pilnujesz kursów?
+ = n Na oko. I źle. Dziś dwa razy odjechałem za wcześnie, a raz ktoś biegł i nie zdążył. Nie lubię tego.
+? r Kiedy go zgubiłeś?
+= n O 22:47, na pętli. Wiem co do minuty, bo spojrzałem, która godzina, i odłożyłem go na ławkę. I tyle go widziałem.
+ ? r Na ławce przy pętli szóstki? Kto tam wtedy był?
+ = n Jakaś mała liczyła kamienie. I ktoś zostawił na ławce pluszaka. Nic poza tym nie widziałem. Nie przyglądam się.
+ ? n Co wiozłeś tym ostatnim kursem?
+ = n Ludzi, dwie torby i walizkę. Normalny kurs. Nic ponad to.
+  ? n Nikt cię nie prosił, żebyś o czymś nie mówił?
+  = n Nikt nikogo o nic nie prosi. Po prostu wiem, że jak coś jedzie pod ławką, to lepiej nie pytać czyje.
+? n Po co ci zegarek, skoro masz telefon?
+= m Telefon mi pada w połowie zmiany, a zegarek nigdy. No i zegarek nie dzwoni do mnie o drugiej w nocy z pretensjami.
+ ? u Kto dzwoni o drugiej z pretensjami?
+ = m Żona. Sprawdza, czy zjadłem. Trzydzieści lat po ślubie, a ona dalej myśli, że bez niej umrę z głodu. Ma rację.
+? n @d6_zegarek_list Pod wieczkiem jest kartka z wykazu z dopiskiem „+ puszka (b.n.)”. Jaka puszka?
+= e Ktoś mi ją wsunął pod ławkę. Bez nadawcy, „b.n.”. Dopisałem do wykazu, żeby nie mieć kłopotów, jakby co. Nie pytam, kto ma ją odebrać.
+ ? n To nie pierwsza taka puszka, prawda?
+ = n Trzecia w tym miesiącu. Zawsze ostatni kurs, zawsze pod ławką po lewej. Rano już jej nie ma. Mnie płacą za jeżdżenie, nie za ciekawość.
+
+# d7_kit
+? u Jak wyglądają te słuchawki?
+= m Czarne, nauszne. Lewa muszla oklejona taśmą, na prawej naklejka: kot w kasku. Kupiłem ją za dolara, serio.
+ ? u Czemu kot ma kask?
+ = m Bo jedzie na rowerze, a jest odpowiedzialny. W przeciwieństwie do mnie, co widać po tym, że tu stoję.
+? r Gdzie je zostawiłeś?
+= n W czwórce, na siedzeniu przy oknie, jak wracałem z roboty. Przysnąłem na pół minuty i wysiadłem bez nich.
+ ? r Wracasz z roboty w środku nocy? Gdzie pracujesz?
+ = m W kopiarni na Rynku, na praktykach. Mam siedemnaście lat, po nocach niby nie wolno, więc oficjalnie mnie tam nie ma. Serio, nie wpisuj tego.
+  ? r Co się robi w kopiarni po nocach?
+  = n Ksero, laminowanie, bindowanie. Ulotki, plakaty, dyplomy. W nocy przychodzą tacy, co wolą, żeby ich nikt nie widział.
+   ? n +d7_kit_ulotki Na przykład kto? Pamiętasz kogoś z zeszłego tygodnia?
+   = e W czwartek, 22:15. Facet w szarym płaszczu zamówił tysiąc ulotek z twarzą kobiety. „Zaginęła”. Zapłacił gotówką i powiedział, że to żona. Serio, uśmiechał się przy tym.
+? n Co ci zrobi szef, jak się dowie o słuchawkach?
+= m Zdejmie mi dziesięć dolarów z wypłaty i palnie pogadankę. Pogadankę przeżyję. Dziesięć dolarów gorzej.
+ ? n Co mu przeszkadza w słuchawkach?
+ = n Mówi, że ksero ma być słychać, a ja mam słyszeć klientów. Słyszę. Tylko z muzyką mniej boli.
+? n @d7_kit_ulotki Czemu powiedziałeś mi o tych ulotkach?
+= m Bo patrzysz, jakby cię to serio obchodziło. Mało kto tak patrzy. No i ten facet był dziwny, a komuś musiałem to powiedzieć.
+ ? r Zostaje u was jakiś ślad po takim zamówieniu?
+ = n Kopia w segregatorze, z datą i godziną. Szef kocha segregatory bardziej niż ludzi. Nikomu ich nie wysyła, ale i nie wyrzuca.
+? n @d7_tasma_banknot Pod taśmą na muszli jest banknot i karteczka „za ciszę”. Co to?
+= m Dwa dolary dla szefa, jakby mnie przyłapał. Raz zadziałało. Nie mów mu, serio, bo następnym razem dwa dolary nie wystarczą.
+
+# d7_evan
+? u Jak wygląda to etui?
+= m Brązowa skóra, zatrzask. W środku kartonik z inicjałami M.D. i znaczkiem nieskończoności. To jej pismo.
+ ? n Ile kluczy jest w środku?
+ = k Jeden. Do naszego mieszkania.
+  ? n @d7_etui_klucze #dwa W etui są dwa klucze. Drugi ma wybite „14”.
+  = e Drugiego nie znam. Maya miała swoje sprawy. Powiesz mi, do czego on jest? Bo ja chciałbym to wreszcie wiedzieć.
+? r Gdzie i kiedy je zgubiła?
+= n Nie wiem. W czwórce albo w jedenastce. Dlatego pytam: którym tramwajem przyjechały?
+ ? r Po co ci numer linii?
+ = n Będę wiedział, gdzie ona wsiada. Stanę na pętli i poczekam. Chcę tylko porozmawiać.
+  ? n A jeśli ona nie chce rozmawiać?
+  = k Chce. Maya ma wszystko, czego trzeba: dom, męża, spokój. Nie ma się czego bać. Nie rozumiem tego pytania.
+ ? r Policja nie może ci tego powiedzieć?
+ = n Policja mówi, że dorosła osoba ma prawo wyjść z domu. Więc przychodzę tutaj. Tu przynajmniej ktoś coś zapisuje.
+? u Od kiedy jej szukasz?
+= k Od czwartku wieczorem. Zgłosiłem jeszcze tej samej nocy, jak tylko zrozumiałem, że nie wraca.
+ ? n Powiedziała ci wcześniej, że odchodzi?
+ = k Nie. Przecież by mi powiedziała.
+ ? u Co zrobisz, kiedy ją znajdziesz?
+ = n Zabiorę ją do domu i zrobię jej herbaty. Wszystko wróci na swoje miejsce. U mnie wszystko ma swoje miejsce.
+ ? n @d7_kit_ulotki|d5_notes_ulotki #ulotki Tej samej nocy? Ulotki z jej twarzą zamówiłeś o 22:15. Zgłosiłeś rano.
+ = e To... na wszelki wypadek. Zamówiłem wcześniej, bo przeczuwałem. Czy to coś zmienia? Kto wam to powiedział? Ktoś to zapisuje?
+? n @d7_etui_klucze #dwa W etui są dwa klucze: zwykły i mały, z numerem 14. Do czego ten drugi?
+= e Drugiego nie znam. Maya miała swoje sprawy. Powiesz mi, do czego on jest? Bo ja chciałbym to wreszcie wiedzieć.
+? n @d7_kit_ulotki|d5_notes_ulotki #ulotki Ulotki z twarzą Mai zamówiłeś w czwartek o 22:15. Osiem godzin przed zgłoszeniem.
+= e To... na wszelki wypadek. Zamówiłem wcześniej, bo przeczuwałem. Czy to coś zmienia? Kto wam to powiedział? Ktoś to zapisuje?
+
+# d8_lena_i_nora
+? u ~siostra Lena, czyja jest ta torba?
+= e Mai, mojej siostry. Sama jej ją kupiłam na urodziny. Narzędzia dla kobiety, dziwny prezent, wiem. Teraz to jedyna jej rzecz, jakiej mogę dotknąć.
+ ? r ~siostra Po czym ją poznasz?
+ = n Po obcęgach z żółtą izolacją i miarce z literą „M”. Ale... no właśnie. Nora też wie, co jest w środku.
+ ? u ~siostra Co zrobisz z torbą, jeśli ją dostaniesz?
+ = n Zabiorę do siebie. A jak Maya wróci, to jej oddam. Przecież to jej.
+? r ~nora Nora, czego szukasz w cudzej torbie?
+= m Po kolei: rzecz, osoba, skutek. Papier w podszewce. Rodzina Okoye. Bez tego papieru nie mają dowodu, że wpłacili.
+ ? r ~nora Skąd wiesz, że w podszewce jest papier?
+ = n Z mojego zeszytu. Spisuję numery wszystkich pokwitowań w kamienicy. Jednej kopii brakuje, a Maya robiła u nas instalację akurat w tym tygodniu, kiedy zniknęła.
+ ? n ~nora O jakiej wpłacie mówimy?
+ = n Czternaście rodzin, każda po czterysta dolarów zaliczki na remont. Termin rozliczenia: czwartek, dziewiąty września. Kto nie pokaże kwitu, płaci drugi raz albo się wyprowadza.
+  ? n ~nora Kto brał te zaliczki?
+  = n Zarządczyni, Iris Bell. Bierze gotówkę, wydaje kwit, oryginał zostawia sobie. A potem bywa, że kwitu „nie pamięta”.
+? n ~siostra Maya pracowała w tej kamienicy?
+= n Tak, jako elektryczka, na Cooper Street dziewięć. Ale... no tak, tam rządzi Iris. Nie rozmawiałyśmy o tym. Maya mówiła tylko, że widziała coś, czego nie powinna.
+ ? n ~siostra Co takiego widziała?
+ = k Nie powiedziała. Naprawdę. Urwała w pół zdania i zmieniła temat. Ja też teraz zmienię.
+? r ~nora Która z was ustąpi?
+= n Ja nie. Za mną stoi czternaście rodzin. Lena pewnie też nie, bo za nią stoi siostra. Dlatego przyszłyśmy razem, żeby ktoś trzeci zdecydował.
+ ? u ~siostra Lena, a gdyby Nora dostała tylko papier, a ty torbę?
+ = n Mogłabym. Tylko niech nikt nie czyta reszty. W tej torbie są rzeczy Mai, nie kamienicy.
+? n @d8_torba_kopia ~nora W podszewce jest żółta kopia: 400 dolarów, podpis „I.”. Czyj to podpis?
+= m Iris Bell. Znam go z dwudziestu pokwitowań. Czyli Okoye zapłacili, a Maya schowała dowód. Oryginał ma Iris i nie pokaże go nikomu.
+ ? n ~siostra Lena, wiedziałaś, że Maya to schowała?
+ = e Nie. Ale to do niej podobne. Maya zawsze chowa rzeczy tam, gdzie ktoś je kiedyś znajdzie. Jak telefon.
+
+# d8_bree
+? u Jak wygląda ten aparat?
+= m Srebrny, analogowy, wgniecenie w lewym rogu. Brat upuścił go na schodach. Mówi, że teraz aparat ma charakter.
+ ? n Ma jakieś znaki? Coś wydrapanego, podpis?
+ = k Nie, żadnych. Teo niczego nie wydrapywał. Aparat jest czysty.
+ ? r Co jest na filmie w środku?
+ = k Nie wiem, brat go nie wywołał. Pewnie wakacje. Nic ważnego.
+? r Gdzie go zostawiłaś?
+= n W jedenastce, na siedzeniu. Rozmawiałam przez telefon z lekarzem brata i wysiadłam, nie oglądając się.
+ ? u Co z bratem?
+ = m Teo, Teodor Halm. Leży na ortopedii z nogą w gipsie. Rower. Twierdzi, że to nie jego wina, czyli jego.
+  ? n Po co mu w szpitalu aparat na kliszę?
+  = k Chce robić zdjęcia dla mamy. Mama mieszka daleko i lubi zdjęcia. Dlatego potrzebuję go dziś, nie jutro.
+? r Mówisz, że masz paragon. Jaki?
+= m Z komisu na Rynku, sprzed dwóch lat. Mam zdjęcie w telefonie. Słuchaj, jest cena, jest data, jest napisane „srebrny”. Czego chcieć więcej?
+ ? n Na paragonie jest numer seryjny?
+ = n Numeru nie ma. W komisach się nie wpisuje. Ale srebrny aparat z komisu to srebrny aparat z komisu, nie?
+ ? n +d8_bree_oferta Paragon bez numeru to za mało. Aparat może tu poczekać.
+ = n To zrobię się nieprzyjemna. Albo inaczej: osiemdziesiąt dolarów, wydajesz mi aparat i po sprawie. Co ci szkodzi?
+? n @d8_aparat_naklejka Pod klapką baterii jest wydrapane „R.O.”. Czyje to inicjały?
+= e No dobra. Raf Okoye, sąsiad z Cooper Street. Pożyczył bratu aparat. Ale to się nie liczy, bo ja mam paragon.
+ ? n Na pasku wisi klucz: „Cooper 9, lok. 4”. Kto cię po ten aparat przysłał?
+ = k Nikt. Brat. Mówiłam. Słuchaj, ktoś zapłacił mi za odebranie i tyle wiem. Nie pytam, co jest na kliszy, i tobie też nie radzę.
+
+# d9_iris
+? u ~iris Co jest w tym piórniku?
+= k Żetony do skrzynek pocztowych w kamienicy. Pięć sztuk, nic więcej. Nudy, kochanie.
+ ? n ~iris Co znaczą numery na tych żetonach?
+ = k Nic. Numeracja skrzynek. Nie szukaj w tym powieści.
+ ? r ~iris Czyje to skrzynki?
+ = n Moich lokatorów. Nazwisk nie podam, to ich sprawa. Są ludzie, którzy chcą mieć po prostu święty spokój.
+? r ~victor Czego chce od piórnika inspekcja?
+= n Numeru odbioru i podpisu. Kto to podpisze? Pokwitowanie w dwóch egzemplarzach, jeden idzie do Urzędu.
+ ? r ~victor Co się nie zgadza w księdze?
+ = n Numery. Piórnik przyjechał szóstką, a wpisu nie ma. Brakuje też trzech kwitów z zeszłego miesiąca. Ktoś wydawał bez śladu.
+ ? n ~victor Co będzie, kiedy piórnik trafi do Urzędu?
+ = n Zostanie opisany w protokole. Ktoś ten protokół przeczyta i wyciągnie wnioski. Ja nie wyciągam. Ja zapisuję.
+  ? n ~iris Iris, co ty na to?
+  = n Że protokoły czyta więcej osób, niż pan Crane sądzi. A ja nie lubię, jak nazwiska moich lokatorów chodzą po urzędach.
+? n ~iris Czemu oboje przyszliście po to samo?
+= m Bo żetony przyjechały szóstką, a pan Crane lubi wszystko, co przyjeżdża. Mnie wystarczy, że wrócą tam, skąd wyjechały.
+ ? n ~iris Czemu mam wierzyć tobie, a nie jemu?
+ = n Nie musisz. Zrób, co uznasz za słuszne. Powiem tylko, że czworo ludzi kupiło już bilet i czeka na swoją kolej.
+? n @d9_zetony_numery ~iris Na odwrocie żetonów są karteczki: „kobieta z walizką”, „matka z synem”. Co to?
+= n Opisy. Żeby goniec wiedział, komu oddać paczkę. Więcej przy panu Crane nie powiem.
+ ? n ~iris Co jest w tych paczkach?
+ = e Papiery na nowe życie. Dla ludzi, których ktoś bije albo ściga. Biorę za to pieniądze i nie wstydzę się tego. Reszta nie jest dla inspekcji.
+ ? u ~iris Piąty żeton, 0809, nie ma opisu. Dla kogo jest?
+ = n Jeszcze dla nikogo. Opis przyjdzie, kiedy przyjdzie człowiek. Nie zadaję takich pytań, dopóki ktoś nie zapłaci.
+
+# d9_stahl
+? u Jak wygląda ten kapelusz?
+= k Szary, filcowy, granatowa wstążka, rozmiar pięćdziesiąt osiem. Zgodnie z regulaminem podaję wszystko od razu.
+ ? r Jest w nim metka producenta?
+ = k Jest, pod wstążką. Nazwy nie pamiętam. Regulamin tego nie wymaga.
+ ? r Jakieś inicjały w środku?
+ = k M.S., Marek Stahl. Tak mi się wydaje. Rzadko zaglądam do własnego kapelusza.
+? r Gdzie i kiedy go zgubiłeś?
+= k Wczoraj, czwórka, około dwudziestej drugiej. Siedziałem sam, kapelusz leżał na półce nad oknem.
+ ? n Na pewno sam?
+ = k Sam. Zawsze sam. Nikt obok nie siadał.
+ ? r O dwudziestej drugiej? Dokąd jechałeś?
+ = n Do domu. Z kancelarii. Dużo ostatnio pracuję przy cudzych papierach.
+? n Czemu tak ci zależy akurat na tym kapeluszu?
+= m Jutro mam ważną rozmowę, a bez kapelusza wyglądam nieprzekonująco. Tak twierdzi moja żona.
+ ? u Żona może potwierdzić, że jest twój?
+ = k Mogłaby, ale jest w delegacji. Zaświadczenie przyniosę jutro, zgodnie z regulaminem.
+ ? n A jeśli kapelusz zostanie u nas?
+ = n To odejdę. Ale nie od razu. Postoję chwilę, jeśli wolno. Lubię patrzeć, jak ktoś pracuje. Zwłaszcza ktoś nowy.
+? n @d9_kapelusz_naklejka Pod wstążką jest „Hobbs & Syn, 56”, a w podszewce „J.K.”. Czyj to kapelusz?
+= e ...Chwileczkę. Dobry wzrok. Kapelusz nie jest mój. Chciałem zobaczyć, czy to okienko wyda rzecz za sam ładny opis.
+ ? n Po co to sprawdzasz? Dla kogo?
+ = n Dla siebie. I dla ludzi, którzy płacą za wiedzę, jak pracuje nocna zmiana. Proszę się nie martwić. Na razie wypadło dobrze.
+
+# d10_vera
+? u Jak wygląda to pudełko?
+= m Blaszane, na sprzączkę. Na wieczku wgniecenie, bo raz na nim usiadłam w poczekalni. Zapina się z oporem.
+ ? r Co jest w środku?
+ = n Pasek od zegarka i kartka z inwentarza. Nic, co miałoby cenę.
+? r Gdzie dokładnie je zgubiłaś?
+= n W jedenastce, wczoraj, ostatni kurs. Położyłam obok siebie i wysiadłam bez niego. Zorientowałam się, bo klucze dzwoniły, a ręce miałam puste.
+ ? n Po co wozisz do domu pudełko z cudzej szafki?
+ = n Żeby nikt go nie wyrzucił. Szafka jest Sama, nie moja. W zajezdni, jak coś stoi niczyje, to długo nie postoi.
+? u Kim był dla ciebie Sam Holt?
+= e Kolegą z nocy. Siedział przy tej szybie, ja zamykałam zaplecze. Odszedł ponad miesiąc temu, bez słowa. Tylko ja jeszcze pilnuję jego szafki.
+ ? n Dlaczego akurat ty?
+ = n Bo mnie prosił. Powiedział: trzymaj, aż wrócę. Dopóki szafka jest zajęta, nikt jej nie likwiduje.
+ ? r Co będzie, jak zamkną szafkę w piątek?
+ = n Rzeczy pójdą do zbiorczego archiwum Urzędu i nikt ich potem nie znajdzie. Dlatego wezwałam Sama na piątek. Chcę, żeby miał co zabrać.
+  ? n Sam wie, że go wezwałaś?
+  = n Wie. Napisałam. Nie odpisał. On nigdy nie odpisuje, on przychodzi. To znaczy, powinien przyjść.
+? n @d10_pudelko_karta Na karcie jest numer szuflady 6, taki jak tu, w biurze. Co to znaczy?
+= m Że szuflada numer sześć jest jego. Klucz dostałam od Sama i zostawiłam w tej szufladzie, żeby następny nie musiał go szukać. Czyli żeby nie musiało szukać to, co teraz siedzi na jego krześle.
+ ? n Na wieczku ktoś napisał: „Teczka jest pusta. Tak ma być”. O jaką teczkę chodzi?
+ = n Nie wiem. Dzwonię kluczami, bo się wstydzę, że nie wiem. Sam mówił, że jak ktoś zapyta o teczkę, mam powtórzyć te słowa i nic nie dodawać.
+
+# d10_dario
+? u Jak wygląda ten zeszyt?
+= m Gruby, okładka tłusta, bo noszę go razem z kanapką. Gumka ledwo trzyma. Pachnie cebulą, uprzedzam.
+ ? r Co w nim jest oprócz grafiku?
+ = m Przepisy na zupy i numery telefonów. I parę długów, cudzych. Chcesz kanapkę? Mam drugą.
+? r Gdzie go zgubiłeś?
+= n W jedenastce, na pętli, jak jadłem. Położyłem zeszyt obok kanapki. Kanapkę zjadłem, a zeszyt pojechał dalej beze mnie.
+? u Pytałeś o Sama. Kim on dla ciebie jest?
+= e Kolegą. Siedział przy tym okienku przed tobą. Zawsze miał dla mnie herbatę i dobre słowo. Teraz go nie ma i nikt nie wie, gdzie jest.
+ ? r Od kiedy go nie ma?
+ = n Ponad miesiąc. Powiedział, że idzie do portu coś załatwić. Potem przestał odbierać telefon. Pytam po całej zajezdni.
+  ? n Co miał do załatwienia w porcie?
+  = n Nie mówił. Miał pod pachą szarą teczkę i minę, jakby szedł do dentysty. Tyle widziałem.
+ ? n Czemu pytasz akurat tutaj?
+ = n Bo to jego miejsce. Jak ktoś ma coś wiedzieć, to ten, kto siedzi na jego krześle.
+  ? n A jak nikt ci nie odpowie?
+  = m To będę pytał dalej. Aż ktoś powie albo aż mi się znudzi. To drugie mi się nie zdarza.
+? n @d10_zeszyt_sam Na ostatniej stronie jest dopisek: „Czy on żyje?”. Twój?
+= e Mój. Dopisałem w poniedziałek. Sam wisi mi trzynaście dolarów za kanapki, ale nie o to idzie. Chcę wiedzieć, czy żyje.
+! odmow Co? Przecież to mój zeszyt! Dobra, przyprowadzę kogoś z zajezdni, niech potwierdzi.
