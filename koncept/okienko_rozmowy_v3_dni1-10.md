@@ -21,6 +21,11 @@
       "sekret_id": "d1_kwit_0417",
       "co_widac": "W mankiecie tkwi kwit z tego biura, numer 0417, sprzed sześciu tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę.",
       "co_z_tego_wynika": "Thomas już tu był i dostał coś, czego nigdzie nie zapisano. Poprzednik wydawał rzeczy poza księgą."
+    },
+    {
+      "sekret_id": "d1_biala_nic",
+      "co_widac": "Przy kciuku rękawiczki biała nić, zszyta krzywo, ściegiem krawieckim, a pod nią starsza, brązowa, przetarta.",
+      "co_z_tego_wynika": "Ellen sama kiedyś zszyła rękawiczkę brązową nicią. Thomas położył na tym swoją, białą, żeby szew trzymał dłużej."
     }
   ],
   "wejscie": "Dobry wieczór. Thomas Ward. Zgubiłem lewą rękawiczkę mojej żony, w tramwaju czwórce. Ellen zmarła w lutym. W niedzielę idę na cmentarz i nie chcę iść z jedną.",
@@ -103,6 +108,13 @@
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Pójdę na cmentarz z jedną. Ellen by się śmiała, że sto razy mi mówiła, żebym pilnował rzeczy.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Pod białą nicią jest starszy szew, brązowy. Czyj?",
+          "ton": "niewygodne",
+          "wymaga": "d1_biala_nic",
+          "odpowiedz": "Ellen. Szyła go wieczorem przed telewizorem. Białą dodałem po lutym, bo brązowa się przecierała. Nie chciałem jej zdejmować.",
           "mina": "emocja"
         }
       ]
@@ -322,6 +334,11 @@
       "sekret_id": "d2_paragon_raty",
       "co_widac": "W pudełku w kieszeni na plecach leży pierścionek z małym oczkiem. Obok paragon: wpłacone 40 dolarów, 200 zostało do spłaty w ratach. Na serwetce trzy wersje oświadczyn, dwie przekreślone.",
       "co_z_tego_wynika": "Jonah o siódmej rano chce się oświadczyć, a pierścionek kupił na raty. Pierścionek jest wart w lombardzie około 150 dolarów."
+    },
+    {
+      "sekret_id": "d2_serwetka_trzy",
+      "co_widac": "W kieszeni plecaka serwetka z trzema wersjami oświadczyn, dwie przekreślone. Pod spodem paragon z lombardu na pierścionek na raty, 150 $.",
+      "co_z_tego_wynika": "Jonah ćwiczy oświadczyny, a pierścionek kupił na raty, więc obie rzeczy są jego tajemnicą."
     }
   ],
   "wejscie": "Cześć, Jonah. Zgubiłem plecak w jedenastce, czarny, z pękniętą klamrą. Potrzebuję go przed siódmą rano, bo w kieszeni jest coś ważnego. Naprawdę ważnego.",
@@ -405,6 +422,13 @@
           "wymaga": null,
           "odpowiedz": "Przełożę, ale June od razu zauważy, że coś jest nie tak. Ona zawsze wie. Przy niej nie umiem kłamać.",
           "mina": "emocja"
+        },
+        {
+          "tekst": "Na serwetce są trzy wersje oświadczyn. Którą wybierzesz?",
+          "ton": "niewygodne",
+          "wymaga": "d2_serwetka_trzy",
+          "odpowiedz": "Trzecią, krótką. Dwie pierwsze brzmiały jak reklama. Jak powiem ją źle, to powiem ją źle. Tylko nie pokazuj serwetki nikomu, serio.",
+          "mina": "emocja"
         }
       ]
     }
@@ -473,6 +497,11 @@
       "sekret_id": "d2_etykieta_wyp",
       "co_widac": "Pod pokrywą futerału przyklejona kartka: „Własność Konserwatorium. Wypożyczone H. Moreau do 7 sierpnia.” Dziś jest 10 sierpnia.",
       "co_z_tego_wynika": "Skrzypce nie są Hany. Jej wypożyczenie skończyło się wczoraj."
+    },
+    {
+      "sekret_id": "d2_naklejka_zielona",
+      "co_widac": "Na zewnątrz futerału zielona naklejka z numerem inwentarzowym 0334 i pieczątką Konserwatorium, częściowo zdrapana paznokciem.",
+      "co_z_tego_wynika": "Hana próbowała zdrapać numer inwentarzowy, żeby futerał wyglądał na jej własny."
     }
   ],
   "wejscie": "Dobry wieczór. Hana Moreau, skrzypaczka. Zgubiłam futerał ze skrzypcami w czwórce. O ósmej rano mam przesłuchanie do orkiestry i bez tych skrzypiec nie mam po co przychodzić.",
@@ -555,6 +584,13 @@
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Wtedy ktoś inny zagra moje przesłuchanie, a mnie wykreślą z listy. Bez skrzypiec nie mam po co tam iść.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Zielona naklejka jest częściowo zdrapana. Kto ją zdrapywał?",
+          "ton": "niewygodne",
+          "wymaga": "d2_naklejka_zielona",
+          "odpowiedz": "Ja. Z nerwów, w tramwaju. Numer inwentarzowy wygląda jak etykieta kradzieży, a ja nie kradnę. Chciałam, żeby przez chwilę było moje.",
           "mina": "emocja"
         }
       ]

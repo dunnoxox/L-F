@@ -4216,6 +4216,11 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "sekret_id": "d22_kwit_maya",
       "co_widac": "Na kopii pokwitowania wydania: „Odbiorca: M.D. Rzecz: walizka szara, wydana wczoraj. Dalej: linia 4, peron 5.” Pieczątka okienka.",
       "co_z_tego_wynika": "Kwit podaje miejsce i godzinę. To adres, którego Maya nie zgodziła się podać."
+    },
+    {
+      "sekret_id": "d22_depozyt_detektyw",
+      "co_widac": "Do walizki przypięta karteczka: „Depozyt detektywa, zaliczka 600 $, odbiór po okazaniu pełnomocnictwa. S.” Pieczątka biura detektywistycznego.",
+      "co_z_tego_wynika": "Stahl działa jako pełnomocnik zatrudnionego detektywa Evana i ma przy sobie dowód zaliczki."
     }
   ],
   "wejscie": "Dobry wieczór. Marek Stahl. Zgodnie z regulaminem zgłaszam zgubę: szara walizka, w środku biała suknia, bilet i kartka z numerem. Proszę o wskazanie, kto ją wczoraj odebrał, żeby sprawa była jasna.",
@@ -4300,6 +4305,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "odpowiedz": "Zgodnie z regulaminem to nie jest łapówka, tylko opłata manipulacyjna. Dwieście dolarów, od ręki, bez podpisywania.",
           "mina": "neutralna",
           "ustawia": "d22_oferta_200"
+        },
+        {
+          "tekst": "Do walizki jest przypięta karteczka z depozytem detektywa. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d22_depozyt_detektyw",
+          "odpowiedz": "Zaliczka, sześćset dolarów, na wypadek, gdyby pełnomocnictwo nie przyszło na czas. To zgodne z regulaminem. Proszę nie traktować tego jak nacisku.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -5090,6 +5102,11 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "sekret_id": "d24_wykaz_0809",
       "co_widac": "Ostatnia pozycja wykazu: „0809, dokumenty, paczka w płótnie, nieodebrana”. Dopisek: „dyżurny”. Podpis Very, pismo jakby kopiowane.",
       "co_z_tego_wynika": "Skrytka ma paczkę z dokumentami dla dyżurnego, czyli dla Ciebie. Wyjście istnieje, ale nikt nie powiedział, ile kosztuje."
+    },
+    {
+      "sekret_id": "d24_numer_puszka",
+      "co_widac": "W torbie puszka po herbacie z numerem 0809 wypisanym markerem na wieczku, identyczna jak ta z dnia 6.",
+      "co_z_tego_wynika": "Puszka i paczka 0809 należą do tego samego obiegu Skrytki. Leo wozi ją od dawna, nie otwierając."
     }
   ],
   "wejscie": "Leo, konduktor szóstki. Zgubiłem torbę z wykazem, skórzaną, z mosiężnym zapięciem. W środku ostatni wykaz paczek w płótnie. Dziś ostatni kurs i jedna paczka ma wpis, którego nie rozumiem.",
@@ -5180,6 +5197,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "wymaga": null,
           "odpowiedz": "Nie wiem. Ale na pętli stoi człowiek w szarym kapeluszu i patrzy na każdą torbę. Z kim rozmawia, to już nie moja sprawa.",
           "mina": "emocja"
+        },
+        {
+          "tekst": "W torbie jest puszka z numerem 0809 na wieczku. Czyja?",
+          "ton": "niewygodne",
+          "wymaga": "d24_numer_puszka",
+          "odpowiedz": "Nie moja. Wożę ją, bo mi powiedziano, żebym woził. Numer znam, wieczko znam, w środku nie byłem. Nie wolno mi było, a ja nie pytałem.",
+          "mina": "mowi"
         }
       ]
     }
