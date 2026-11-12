@@ -1,6 +1,7 @@
 /* Teksty ekranu tytułowego, menu, ustawień i wejścia do gry (UX_PROWADZENIE §8.3, §8.4, §9.3).
    Osobny plik, bo data.js generuje build_data.py; klucze nadpisują LANG. Port do Unity: lang/pl.json. */
 Object.assign(window.LANG,{
+ w_e7:'Daleko przejeżdża radiowóz. Syrena gaśnie w deszczu.',w_e8:'Na ulicy trzeszczy policyjne radio. Słów nie da się rozróżnić.', /* pauza: zdarzenia z dźwiękiem (sfx_siren_pass, sfx_police_radio_far) */
  t_lost:'LOST',t_amp:'&',t_found:'FOUND',t_fraud:'FRAUD',
  t_sub:'Nocne biuro rzeczy znalezionych. Ktoś puka w szybę.',
  t_audio:'Najlepiej w słuchawkach. Kliknij, żeby włączyć dźwięk.',
