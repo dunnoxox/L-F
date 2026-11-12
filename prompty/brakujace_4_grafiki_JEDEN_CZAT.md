@@ -3,7 +3,7 @@
 Wynik: 2 obrazy. Arkusz Z8 (rzeczy: kask, koszyk, księga otwarta i zamknięta) oraz arkusz KOT (trzy pozy kota z parapetu).
 
 ## Co załączyć
-Rozpakuj `referencje_brakujace_4.zip` (leży obok tego pliku w `prompty/` oraz w folderze projektu `gpt_brakujace_4/`). W środku są 4 pliki, załącz wszystkie na końcu pierwszej wiadomości:
+Rozpakuj `referencje_brakujace_4.zip` (leży obok tego pliku w `prompty/` (repo) oraz w folderze projektu `/mnt/project-files/gpt_brakujace_4/`). W środku są 4 pliki, załącz wszystkie na końcu pierwszej wiadomości:
 
 1. `C1.png` (arkusz rzeczy na zielonym tle: wzór układu i rzeźbienia)
 2. `C2.png` (drugi arkusz rzeczy: wzór faktury)
