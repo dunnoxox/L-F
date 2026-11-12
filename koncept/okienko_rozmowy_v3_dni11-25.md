@@ -746,7 +746,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 
 ## DZIEŃ 13
 
-**Elias Wren, 73, emeryt.** Potrzeba: oprawka żony i wiedza, czemu Sam za nią zapłacił. Lęk: być komuś dłużny. Sekret: przyjął zwrot, choć wiedział, że Sam płaci z własnych; od czterech tygodni odkłada 85 $. Tik: składa numerek w prostokąt, „Dziękuję. Jutro.” Łuk: w d25 pyta o imię gracza. Moment gwiazdy: „Pan Holt nie miał nazwiska na karcie przez dwa lata.
+**Elias Wren, 73, emeryt.** Potrzeba: oprawka żony i wiedza, czemu Sam za nią zapłacił. Lęk: być komuś dłużny. Sekret: przyjął zwrot, choć wiedział, że Sam płaci z własnych; od czterech tygodni odkłada 84 $. Tik: składa numerek w prostokąt, „Dziękuję. Jutro.” Łuk: w d25 pyta o imię gracza. Moment gwiazdy: „Pan Holt nie miał nazwiska na karcie przez dwa lata.
 
 ```json
 {
@@ -759,7 +759,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "wnetrze": [
     {
       "sekret_id": "d13_kwit_zwrotu",
-      "co_widac": "Za wyściółką futerału złożony kwit zwrotu pieniędzy: 85 $, podpis S. Holt. Numer paczki zgadza się z wykazem z piórnika Iris.",
+      "co_widac": "Za wyściółką futerału złożony kwit zwrotu pieniędzy: 84 $, podpis S. Holt. Numer paczki zgadza się z wykazem z piórnika Iris.",
       "co_z_tego_wynika": "Oprawka przejechała przez ręce Iris, a Sam zwrócił Eliasowi pieniądze z własnej kieszeni."
     }
   ],
@@ -900,7 +900,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   ],
   "tik": "składa numerek w prostokąt",
   "potrzeba": "oprawka żony i pytanie o Sama",
-  "slad": "od czterech tygodni odkłada 85 $"
+  "slad": "od czterech tygodni odkłada 84 $"
 }
 ```
 
@@ -1231,7 +1231,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "wnetrze": [
     {
       "sekret_id": "d14_kartka_oswiadczenie",
-      "co_widac": "W kieszeni organizera kartka z gotowym oświadczeniem i miejscem na podpis do weryfikacji z Mayą. Obok notatka: „Evan: godzina 23:30, ulotki 22:15?”.",
+      "co_widac": "W kieszeni organizera kartka z gotowym oświadczeniem i miejscem na podpis do weryfikacji z Mayą. Obok notatka: „Evan: zgłoszenie 6:10, ulotki 22:15?”.",
       "co_z_tego_wynika": "Noah wie, że relacja Evana się nie zgadza, i potrzebuje podpisu Mai, żeby zamknąć sprawę."
     }
   ],
@@ -1273,7 +1273,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Od kiedy prowadzisz tę sprawę?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Od czwartku. Mąż przyszedł o 23:30 z prośbą o poszukiwania i zdjęciem w kopercie.",
+          "odpowiedz": "Od piątku, szóstego sierpnia. Mąż przyszedł o 6:10 rano z prośbą o poszukiwania i zdjęciem w kopercie.",
           "mina": "mowi"
         },
         {
@@ -1291,10 +1291,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "mina": "neutralna"
         },
         {
-          "tekst": "W organizerze jest notatka: „Evan: 23:30, ulotki 22:15?”. Co to?",
+          "tekst": "W organizerze jest notatka: „Evan: 6:10, ulotki 22:15?”. Co to?",
           "ton": "niewygodne",
           "wymaga": "d14_kartka_oswiadczenie",
-          "odpowiedz": "Że ulotki z twarzą żony zamówił godzinę i kwadrans przed zgłoszeniem. Może zbieg okoliczności. Dlatego sam nie szukam jej na siłę.",
+          "odpowiedz": "Że ulotki z twarzą żony zamówił osiem godzin przed zgłoszeniem. Może zbieg okoliczności. Dlatego sam nie szukam jej na siłę.",
           "mina": "emocja"
         }
       ]
@@ -2244,7 +2244,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Ile detektyw naprawdę kosztuje?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Tysiąc dwieście dolarów. Zaliczka poszła w zeszłym tygodniu. Powiedział, że w trzy dni znajdzie każdego, a po wtorku pójdzie do Urzędu po wgląd w kopie.",
+          "odpowiedz": "Tysiąc dwieście dolarów. Zaliczka poszła w zeszłym tygodniu. Powiedział, że w trzy dni znajdzie każdego, a po wtorku pójdzie do Urzędu po wgląd w kopie. Szary kapelusz. Mówią, że nie wygląda na detektywa.",
           "mina": "neutralna"
         },
         {
@@ -3369,7 +3369,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "wnetrze": [
     {
       "sekret_id": "d20_zegarek_tyl",
-      "co_widac": "Na tyle zegarka odcinek wpłaty z datą zgodną z kwitem Eliasa: 85 $, podpis S. Holt. Na odwrocie ołówkiem: „Wpisuj mało. Pytaj o imiona.”",
+      "co_widac": "Na tyle zegarka odcinek wpłaty z datą zgodną z kwitem Eliasa: 84 $, podpis S. Holt. Na odwrocie ołówkiem: „Wpisuj mało. Pytaj o imiona.”",
       "co_z_tego_wynika": "Sam zapłacił Eliasowi z własnej kieszeni. Notatki na odcinku brzmią jak rady dla kogoś innego."
     }
   ],
@@ -5825,8 +5825,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "wnetrze": [
         {
           "sekret_id": "d25_karta_kopie",
-          "co_widac": "Karta: „Kopie wysłane do Urzędu: {kopie}. Klienci odnalezieni: {min(4, kopie)}.” Poniżej nazwiska: Gus (jeśli d5 wykaz_paczke lub d9 zetony_victor), Maya (d9 zetony_victor lub d22 stahl_wydaj), Linh (d9 zetony_victor lub d15 victor_od_razu), Dorian (d9 zetony_victor lub d18 do_kontroli). Stempel: „wgląd Kancelarii, K.M.”",
-          "co_z_tego_wynika": "Każdy wpis w dwóch egzemplarzach to była druga kopia. Kancelaria wykupiła wgląd za 60 $ i odsprzedała go dalej. {kopie} i {min(4, kopie)} liczy silnik z licznika."
+          "co_widac": "Karta: „Kopie wysłane do Urzędu: {kopie}. Klienci odnalezieni: {min(4, kopie)}.” {nazwiska} Stempel: „wgląd Kancelarii, K.M.”",
+          "co_z_tego_wynika": "Każdy wpis w dwóch egzemplarzach to była druga kopia. Kancelaria wykupiła wgląd za 60 $ i odsprzedała go dalej."
         }
       ]
     }
@@ -6013,12 +6013,12 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     "9": []
   },
   "epilogi_elias": {
-    "odebrany": "Elias: „Jak się nazywasz?” Gracz podaje imię z d20. „Dziękuję, [imię]. Jutro.”",
+    "odebrany": "Elias staje w drzwiach i pierwszy raz o coś pyta: „Jak się nazywasz?” Mówisz. „Dziękuję, [imię]. Jutro.” Vera dopowiada zza pleców: „Pierwsza dyżurna miała na imię Ruth. Ty jesteś pierwszy, który zostawia po sobie prawdę.”",
     "wyrwana_strona": "Elias pyta pusty fotel: „Czy Sam już był?”",
-    "rotacja": "Elias pyta następcę o oprawkę.",
-    "rotacja_list_bez_warunkow": "Elias pyta następcę o oprawkę. Dopisek: „Listu nikt nie znalazł przez miesiąc.”",
-    "nowy_sam": "Victor zapisuje niedobór na zmianie gracza. Elias pyta o brakującą stronę.",
-    "referent": "Elias milczy i składa numerek. Awans, premia, karta Kopie z listą odnalezionych klientów.",
+    "rotacja": "Na bilecie jest już nazwisko z archiwum: Joan Alder, zgubiona w tramwaju 6 w 2019. Nieodebrana. Od dziś to Ty. W okienku siedzi ktoś nowy, a Elias pyta go o oprawkę.",
+    "rotacja_list_bez_warunkow": "Na bilecie jest już nazwisko z archiwum: Joan Alder, zgubiona w tramwaju 6 w 2019. Nieodebrana. Od dziś to Ty. W okienku siedzi ktoś nowy, a Elias pyta go o oprawkę. Listu nikt nie znalazł do poniedziałku.",
+    "nowy_sam": "Następnego wieczoru Elias kładzie numerek przed kimś nowym i pyta o brakującą stronę. Nikt mu nie mówi, że to była Twoja.",
+    "referent": "Elias patrzy na nową tabliczkę z Twoim nazwiskiem, milczy i składa numerek na cztery.",
     "zostajesz": "Czynsz zapłacony, nikt nie świętuje. Elias: „Dziękuję. Jutro.”"
   }
 }

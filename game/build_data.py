@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Buduje data.js (DATA gości + EXTRA + WIECZOR + LANG pl) ze wszystkich koncept/okienko_rozmowy_v3*.md (schemat z prompty/dialogi_biblia_prompt.md).
 Uruchom: python3 -I build_data.py"""
-import re, json, glob, hashlib
-SRC=sorted(glob.glob('/mnt/project-files/koncept/okienko_rozmowy_v3*.md'))
+import re, json, glob, hashlib, os
+# źródła z repo (../koncept); /mnt/project-files tylko jako zapas, gdy skrypt leży poza repo
+KON=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','koncept')
+if not glob.glob(os.path.join(KON,'okienko_rozmowy_v3*.md')):KON='/mnt/project-files/koncept'
+SRC=sorted(glob.glob(os.path.join(KON,'okienko_rozmowy_v3*.md')))
 # id -> (sprite, twarz, linia, nazwa_rzeczy, wnętrze(img,x,y) lub None, twarze rozmówców {kto:twarz})
 META={
  'd1_thomas':('rekawiczka_skora','wdowiec','4','rękawiczka',('W1',.2,.72)),
@@ -52,7 +55,7 @@ for f in SRC:
         m=META.get(g['id']) or auto(g); i,fc,l,n,ins=m[:5]
         g.update(sprite=i,face=fc,face2=(m[5] if len(m)>5 else None),line=l,itemName=n,inside=dict(zip('img x y'.split(),ins)) if ins else None);G.append(g)
 import os
-PK='/mnt/project-files/koncept/okienko_pokusy.json'
+PK=os.path.join(KON,'okienko_pokusy.json')
 if os.path.exists(PK):
     pk=json.load(open(PK,encoding='utf-8'))
     for g in G:
@@ -67,6 +70,22 @@ def _said(g):
 for g in G:
     sd=_said(g)
     if sd and str(g['line']) not in sd: g['line']=sd[0]
+# SZLIF: rzecz z dialogu musi zgadzać się z obrazkiem i mieć pełną, krótką nazwę (bez ucinania na 30 znakach)
+FIX={'d2_ines':(None,'parasol z kaczką'),'d3_dana':(None,'budzik'),'d5_gus':(None,'portfel'),'d10_dario':(None,'zeszyt grafiku'),
+ 'd11_maya':('okulary','pokrowiec na okulary'),'d13_elias':('okulary','futerał z oprawką'),'d13_tess':('skrzynka_narzedz','zielona skrzynka'),
+ 'd15_pruitt':('torba_zakupy','siatka z parasolami'),'d16_maya_lena':(None,'saszetka podróżna'),'d16_dorian':('pudelko','pudełko po kasecie'),
+ 'd17_evan':('etui_aparat','etui na aparat'),'d17_sylvia':('szachy','szachy bez króla'),'d18_iris_nora':(None,'teczka budowlana'),'d18_hugo':(None,'wędka'),
+ 'd19_ada_leo':('torba_listonosza','torba konduktorska'),'d19_kofi':(None,'powerbank'),'d19_ferro':(None,'teczka z dokumentami'),
+ 'd20_elias_sam':(None,'zegarek w etui'),'d20_tobias':(None,'kluczyki do vana'),'d21_maya_lena_priya':(None,'walizka ze wstążką'),
+ 'd21_mina':('torba_zakupy','koszyk z lekami'),'d22_noah':('teczka','sztywna koperta policyjna'),'d22_stahl':(None,'walizka z żółtym zamkiem'),
+ 'd22_jonah':(None,'koperta „K.M.”'),'d23_iris_nora_victor':('kuferek','kasetka na rachunki'),'d23_rosa':(None,'cienki portfel'),
+ 'd24_vera':(None,'teczka z kartonikiem'),'d24_leo':('torba_listonosza','torba konduktora'),'d24_thomas':(None,'koperta ze świadectwem'),
+ 'd25_sam_elias':(None,'etui na okulary'),'d25_ksiega':('album','księga wydań')}
+for g in G:
+    if g['id'] in FIX:
+        sp,n=FIX[g['id']]
+        if sp: g['sprite']=sp
+        g['itemName']=n
 AL={'kalka':'teczka','szafka':'kuferek','karta':'legitymacja','skrzynka':'skrzynka_narzedz'}
 for v in EXTRA.values():
     v['sprite']=AL.get(v['sprite'],v['sprite'])
@@ -74,7 +93,7 @@ WIECZOR.setdefault('2',[]).append({'kto':'Biuro','tekst':'W piątek Urząd liczy
 WIECZOR.setdefault('3',[]).append({'kto':'Okno naprzeciwko','tekst':'W oknie naprzeciwko stoi ktoś w kapeluszu. Nie rusza się, dopóki nie zgasisz lampy.'})
 G.sort(key=lambda g:g['dzien'])
 LANG={
- 'title':'LOST & FRAUD','sub':'Nocna zmiana w biurze rzeczy znalezionych. Tydzień pierwszy.','start':'Zacznij zmianę','settings':'Ustawienia','close':'Zamknij',
+ 'title':'LOST & FRAUD','sub':'Nocna zmiana w biurze rzeczy znalezionych.','start':'Zacznij zmianę','settings':'Ustawienia','close':'Zamknij',
  'day':'Dzień','delivery':'Tramwaj zostawił skrzynki. Czasu starcza, żeby zajrzeć tylko do jednej rzeczy.','look':'Zajrzyj','skip':'Nie zaglądam, otwieram okienko',
  'line':'Linia','inspect_hint':'Przeszukaj rzecz. Kliknij to, co nie pasuje.','found':'Wiesz coś, czego nie powinieneś.','open':'Otwórz okienko','nothing':'Zwykła rzecz. Czasem parasol jest po prostu parasolem.',
  'knock':'Ktoś puka w szybę.','let_in':'Odsuń zasłonkę','know':'wiesz ze środka','turn':'Odwróć się do magazynu','search':'Znajdź: ','search_p':'Wybierz skrzynię wg linii, potem przekopuj. Kliknij rzecz, którą bierzesz.',
@@ -89,13 +108,13 @@ LANG.update({
  'end_zag_A':'Przychodzi pocztówka bez nadawcy z jednym słowem: „Dziękuję”. Evan dostaje suknię. To cała odpowiedź, jaką dostaje. Noah zamyka zgłoszenie.',
  'end_zag_B':'Noah potwierdza, że Maya jest bezpieczna, i zamyka zgłoszenie. Lena kładzie na ladzie jeden klucz, ten od mieszkania, które Maya zostawiła, i pyta, czy ktoś kiedyś po niego przyjdzie.',
  'end_zag_C':'Maya przychodzi już tylko po walizkę, bez rozmów, i wyjeżdża na własnych warunkach. Evan wynajmuje detektywa. Lena stoi przy okienku bez Mai i pyta, czy coś zostało po jej siostrze. Gracz wie, że zostało wszystko.',
- 'end_skr_A':'Nora odbiera komplet. Okoye nie płacą drugi raz, a Iris podpisuje rozliczenie i oddaje 6 800 $. Grace Okoye w szpitalnym fartuchu kładzie na ladzie pączek w papierze: „Z dyżuru.”',
+ 'end_skr_A':'Nora odbiera komplet. Iris podpisuje uznanie długu na 6 800 $ wobec lokatorów i z własnych oszczędności wypłaca Okoye ich 400 $. Reszta pójdzie ratami z czynszów. Grace Okoye w szpitalnym fartuchu kładzie na ladzie pączek w papierze: „Z dyżuru.”',
  'end_skr_A2':'Nora ma papiery, ale Iris kwestionuje ich autentyczność i sprawa idzie do sądu poza tą nocą. Grace Okoye kładzie na ladzie pączek w papierze: „Z dyżuru.” Nie wie jeszcze, czy zapłaci drugi raz.',
- 'end_skr_B':'Victor zamyka obieg paczek, przyjmuje oryginały do audytu i zajmuje 6 800 $ jako dowód. Ludzie z żetonów są w aktach. Przychodzi zimny list z Urzędu, a w kolejnym wierszu nazwisko, które znasz z twarzy.',
- 'end_skr_C':'Iris zabiera paczkę, oryginały i 6 800 $. Nora ma kopię jednej wpłaty, resztę będzie musiała odtworzyć. Kamienica o świcie, ekipa rozbiórki. Iris nie ma jej w oknie.',
+ 'end_skr_B':'Victor zamyka obieg paczek w okienku i zajmuje rejestr przepływu: dowód, którędy wyszło 6 800 $. Nora dostaje protokół zamiast pieniędzy. Ludzie z żetonów są w aktach. Przychodzi zimny list z Urzędu, a w kolejnym wierszu nazwisko, które znasz z twarzy.',
+ 'end_skr_C':'Iris wyjeżdża z oryginałami i kasetką. 6 800 $ dawno jest u czterech ludzi z żetonów. Nora ma kopię jednej wpłaty, resztę będzie musiała odtworzyć, a Okoye zapłacą drugi raz. Kamienica o świcie, ekipa rozbiórki. Iris nie ma w oknie.',
  'end_pop_A':'Sam podpisuje zeznanie, Victor dopisuje własny podpis sprzed pięciu tygodni i wycofuje wpis obciążający Sama. Sam wychodzi. Elias siada na krześle poczekalni po raz pierwszy, odkąd pamięta, i czeka na tramwaj, jakby nigdzie się nie spieszył.',
  'end_pop_B':'Sam odbiera swoje rzeczy i wychodzi, nie odwracając się. W protokole zostaje niedobór. Wyjaśnienie krąży tylko między osobami, które zgodziły się mówić.',
- 'end_pop_C':'Sam, wystawiony, dostaje od Iris pusty bilet bez numeru i znika. Zostawia u Very kopertę z 85 $ dla Eliasa. Elias odmawia jej przyjęcia i składa numerek w najciaśniejszy prostokąt, jaki widziałeś.',
+ 'end_pop_C':'Sam, wystawiony, dostaje od Iris pusty bilet bez numeru i znika. Zostawia u Very kopertę z 84 $ dla Eliasa. Elias odmawia jej przyjęcia i składa numerek w najciaśniejszy prostokąt, jaki widziałeś.',
  'ep_nowysam':'Victor zapisuje niedobór na twojej zmianie. Wypowiedzenie, rzeczy spakowane w pudełku. Następnego wieczoru przychodzi nowy pracownik i pyta o brakującą stronę.',
  'ep_nowysam_tear':'Victor zapisuje niedobór na twojej zmianie. Wypowiedzenie, rzeczy w pudełku. Wyrwana strona leży już gdzie indziej. Następnego wieczoru przychodzi nowy pracownik i pyta o brakującą stronę.',
  'ep_referent':'Victor dopisuje do akt Twoje nazwisko, {imie}, po kopiach, które sam podpisał. Umowa przedłużona, awans na starszego referenta, wypłata z premią. Zostajesz w okienku.',
@@ -111,7 +130,7 @@ LANG.update({
  'step_pile':'Krok 5: wybierz skrzynię, kliknij rzecz z opisu','step_decide':'Krok 6: przeciągnij rzecz na szybę albo kliknij jedną z opcji po prawej',
  'tut_h':'Jak grać','tut_ok':'Zaczynam zmianę','tut_l':['Tramwaje zostawiają rzeczy w skrzyniach. Każda linia ma swoją skrzynię.','Możesz zajrzeć do jednej rzeczy od środka: kliknij ją, potem klikaj w obraz, aż coś nie będzie pasować.','Kliknij „Odsuń zasłonkę”: ktoś przyszedł po swoją rzecz.','Zadaj trzy pytania, klikając je. Słuchaj uważnie: ktoś może kłamać.','Odwróć się do magazynu, wybierz skrzynię i kliknij właściwą rzecz według opisu na górze.','Przeciągnij rzecz na szybę, żeby ją wydać, albo kliknij inną opcję. Każda ma cenę.']})
 LANG.update({
- 'dt':['Rękawiczki na grobie','Pierścionek w plecaku, szalik na wieszaku','Dwie osoby, jeden telefon','Koperta na ladzie, nikt jej nie dotyka','Gazeta z twarzą Mai na ladzie','Królik na ladzie, bilet na mokrym papierze','Klucz, który otwiera nieznane drzwi','Żółta kartka w podszewce','Pięć żetonów w piórniku','Pudełko po człowieku, który tu nie wraca','Ktoś opisuje własne okulary, zanim je zobaczy','Dwie kasetki, jedna torba na zakupy','Oprawka, która wróciła z cudzego wozu','Notes równo z krawędzią lady','Klucz i szuflada','Dwie siostry, jedno okienko','List, który nie ma adresata','Trzysta dolarów na ladzie','Dziecko, które widziało za dużo','Dwóch mężczyzn i koperta z 85 dolarami','Dwie walizki, jedna jedzie na ślub','Sztywna koperta i szary kapelusz','Trzy osoby po jedną kasetkę','Kartonik z numerem szafki','Księga otwarta na twojej stronie'],
+ 'dt':['Rękawiczki na grobie','Pierścionek w plecaku, szalik na wieszaku','Dwie osoby, jeden telefon','Koperta na ladzie, nikt jej nie dotyka','Gazeta z twarzą Mai na ladzie','Królik na ladzie, bilet na mokrym papierze','Klucz, który otwiera nieznane drzwi','Żółta kartka w podszewce','Pięć żetonów w piórniku','Pudełko po człowieku, który tu nie wraca','Ktoś opisuje własne okulary, zanim je zobaczy','Dwie kasetki, jedna torba na zakupy','Oprawka, która wróciła z cudzego wozu','Notes równo z krawędzią lady','Klucz i szuflada','Dwie siostry, jedno okienko','List, który nie ma adresata','Trzysta dolarów na ladzie','Dziecko, które widziało za dużo','Dwóch mężczyzn i koperta z 84 dolarami','Dwie walizki, jedna jedzie na ślub','Sztywna koperta i szary kapelusz','Trzy osoby po jedną kasetkę','Kartonik z numerem szafki','Księga otwarta na twojej stronie'],
  'kartka_h':'Kartka przyklejona do skrzynki','notes_b':'Notatnik','notes_h':'Notatnik: kartki znalezione w rzeczach',
  'pr1_lab':'Słup przy zajezdni · 22:50','pr1_txt':'POSZUKIWANY DYŻURNY. Nocne biuro rzeczy znalezionych, zmiana 23:40–6:00. 40 $ za wizytę. Pokój służbowy w cenie. Zgłosić się do Zarządu Nieruchomości Cooper.','pr1_strip':'Oderwij pasek z numerem','pr1_num':'Na pasku jest numer. Deszcz rozlał go tak, że nie da się go odczytać.','pr1_next':'Idź do biura','pr1_step':'Kliknij „Oderwij pasek”',
  'pr2_lab':'Umowa o pracę nocną · Zarząd Nieruchomości Cooper','pr2_rows':['Stanowisko: dyżurny','Imię i nazwisko: ______________','Miejsce pracy: biuro rzeczy znalezionych, pokój służbowy przy Cooper Street 9','Wynagrodzenie: 40 $ za wizytę','Podpis zarządcy: nieczytelny'],'pr2_btn':'Podpisz i zacznij zmianę','pr2_step':'Kliknij, żeby zacząć pierwszą noc',
