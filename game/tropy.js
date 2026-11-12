@@ -90,7 +90,7 @@ window.TLUM={
 window.TRT.tl_who='Ktoś z kolejki';window.TRT.tl_band='Ktoś z kolejki. Szybka sprawa, {p} $ jak znajdziesz. Do szóstej zostało {m} min.';
 window.TRT.tl_go='Do magazynu';window.TRT.tl_ok=['Dziękuję. Dobrej nocy.','O, jest. Było już spisane na straty.','To ta. Dziękuję, lecę na tramwaj.','Mam. Dziękuję, że się chciało.'];
 window.TRT.tl_bad='Nie mam całej nocy. Przyjdę kiedy indziej.';window.TRT.tl_say='Szukam {gen}: {a}, {b}. Reszty nie pamiętam. Tramwaj mam za kwadrans.';
-window.TRT.tl_dop='{m}.';window.TRT.tl_pay=20;
+window.TRT.tl_dop='{m}.';window.TRT.tl_pay=10; /* I6: 20 $ dawało bezbłędnemu graczowi 310 $ nadwyżki w tygodniu 1, patrz docs/KOLEJKA_ITERACJI.md */
 /* losuje sprawę z kolejki: cel, dwóch bliźniaków (różnią się tym, czego gość NIE powiedział, i jedną z cech, które powiedział) */
 window.TR.tlum=function(r,id){const keys=Object.keys(window.TLUM),sp=keys[(r()*keys.length)|0],t=window.TLUM[sp];const pick=()=>(r()*3)|0;const F=['a','b','c'];
  const ci={a:pick(),b:pick(),c:pick()};const hid=F[(r()*3)|0],said=F.filter(k=>k!==hid);const oth=(k)=>(ci[k]+1+((r()*2)|0))%3;

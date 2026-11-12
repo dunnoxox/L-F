@@ -128,3 +128,15 @@ Propozycja do I6 (sobota), do sprawdzenia graniem, nie do wprowadzenia na ślepo
 - człowiek z kolejki płaci 10 $ zamiast 20 $ (bezbłędny: plus 190 $),
 - albo zostaje 20 $, ale kolejka wchodzi tylko wtedy, gdy rozmowy były krótkie (próg czasu 60 min zamiast 45), żeby dociekliwość naprawdę kosztowała pieniądze,
 - cel: bezbłędny uczciwy kończy tydzień 1 w okolicy plus 100 $, typowy koło zera, tak żeby 250 $ Gusa było tygodniem spokoju.
+
+
+### I6, krok 1: człowiek z kolejki płaci 10 $ (12.11 wieczór)
+
+Zmiana: `TRT.tl_pay` 20 na 10. Nic więcej.
+
+Pomiar tym samym bezbłędnym graczem: piątek o świcie 560 $, po sobocie 190 $ (było 310 $). Gracz dociekliwy, który zadaje wszystkie pytania, przy starej stawce miał 230 $, czyli dociekliwość kosztowała 80 $ na tydzień. Przy nowej różnica spada do ok. 40 $.
+
+Ocena szczera:
+- 190 $ nadwyżki u bezbłędnego to wciąż luz, ale 250 $ Gusa jest już większe niż cały zapas z tygodnia. Typowego gracza z dwiema pomyłkami i jednym gościem, który wyszedł, szacuję na 70-100 $. To szacunek, nie pomiar.
+- Próg czasu dla kolejki sprawdziłem na liczbach i odrzuciłem: noc ma 370 minut, trzy wizyty zajmują 180-255, więc podniesienie progu z 45 do 70 minut zabiera najwyżej jedną osobę i tylko dociekliwemu. Za słaba dźwignia.
+- Prawdziwa presja powinna przyjść z soboty tygodnia 2 (rachunki, rata) i z tego, że pomyłki bolą. To reszta I6, nieruszona.
