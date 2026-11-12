@@ -240,3 +240,79 @@ table.bk{border-collapse:collapse;width:100%;font:600 18px ui-monospace,monospac
 @media (prefers-reduced-motion:reduce){.tglass.stamped{animation:none}.tram::before{animation:none!important}}
 .setp .sfoot .btn:not(.ghost){background:var(--ink);color:var(--paper)}.setp .sfoot .btn:not(.ghost):hover{background:var(--sod);color:var(--ink)}
 .setp input[type=range]{accent-color:#a04f00}.setp input[type=checkbox]{accent-color:var(--ink)}
+/* ===== TELEFON (body.phone: scena wyświetlana < 62% rozmiaru, np. iPhone poziomo ok. 33%) =====
+   Cel: tekst min. ok. 12 px na ekranie, cele dotyku min. ok. 40 px. Rozmiary w jednostkach sceny (1536×1024). */
+html,body{touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;overscroll-behavior:none;-webkit-text-size-adjust:100%}
+#rot{transition:opacity .7s}#rot.off{opacity:0}
+.toast{top:72px}
+@media (hover:none){.btn:hover{background:var(--paper);transform:none}.btn.ghost:hover{color:var(--paper);outline-color:var(--paper)}.q:hover{background:#000;color:var(--paper);transform:none}.q.sec:hover{background:#000;color:var(--sod)}.slot:hover{transform:none}.zguba:hover{transform:none}.tab:hover:not(.on){background:#000;color:var(--paper)}.zone:hover{border-color:var(--paper);color:var(--paper)}}
+body.phone .btn{font-size:38px;padding:36px 40px;letter-spacing:.06em}
+body.phone .btn.ghost{outline-width:4px}
+body.phone .lab{font-size:30px}
+body.phone .sub{font-size:44px;max-width:1300px}
+body.phone h1{font-size:170px}
+body.phone .step{font-size:34px;padding:12px 28px;max-width:1250px;top:6px}
+body.phone .toast{font-size:32px;top:96px;max-width:1150px}
+body.phone .gear{width:110px;height:110px;font-size:58px;top:10px;right:14px}
+body.phone .wallet{top:130px;right:14px;font-size:26px;padding:8px 16px}body.phone .wallet b{font-size:46px}body.phone .wallet span{font-size:22px}body.phone .wallet .clk{font-size:30px}
+body.phone .top{left:24px;max-width:1150px;padding:14px 22px}body.phone .top p{font-size:calc(42px * var(--ts,1));max-width:1100px}body.phone .dtitle{font-size:40px}
+/* rozmowa */
+body.phone #say{left:24px;width:1030px;font-size:calc(44px * var(--ts,1));padding:20px 30px 22px;bottom:262px;top:auto}
+body.phone #say .lab{font-size:26px}body.phone .ask{font-size:34px}
+body.phone #turns{bottom:290px;left:1080px}
+body.phone #qs{left:20px;right:20px;bottom:14px;gap:14px}
+body.phone .q{font-size:calc(36px * var(--ts,1));line-height:1.2;padding:16px 20px;min-height:220px;max-height:236px;overflow:hidden}
+body.phone .q small{font-size:22px}
+/* czekanie */
+body.phone .pauza{font-size:calc(40px * var(--ts,1));left:30px;bottom:180px;max-width:1100px}
+body.phone .wrow{bottom:24px;gap:16px;padding:0 20px}
+body.phone .cat{width:220px;height:176px}
+/* dostawa i oględziny */
+body.phone .crate{width:450px}body.phone .crate .lab{font-size:34px}body.phone .crate .btn{font-size:28px;padding:16px 20px}
+body.phone .zguba .tag{font-size:28px}body.phone .crate .cnt{font-size:24px}
+body.phone .hint{font-size:40px;max-width:520px}body.phone .insp{font-size:30px}
+body.phone .hot{width:210px;height:210px;margin:-105px 0 0 -105px}
+body.phone .note{width:720px;font-size:calc(38px * var(--ts,1));right:30px;bottom:30px}body.phone .note .lab{font-size:26px}body.phone .note .btn{font-size:34px}
+/* magazyn */
+body.phone .tabs{left:20px;top:250px;gap:16px}body.phone .tab{font-size:34px;padding:26px 28px}
+body.phone .field{left:300px;width:950px;top:250px;height:760px;padding:16px}
+body.phone .grid{grid-template-columns:repeat(3,1fr);gap:14px}
+body.phone .slot img{height:150px;max-width:220px}body.phone .slot .nm{font-size:24px}body.phone .slot .no{font-size:28px}
+body.phone .pips i{width:34px;height:34px}
+body.phone .drawer{width:640px;top:250px;max-height:760px}body.phone table.bk{font-size:28px}
+/* decyzja */
+body.phone .zones{right:20px;top:250px;width:520px;gap:16px}body.phone .zone{font-size:34px;min-height:140px}body.phone .zone.long{font-size:28px}
+body.phone .sum{right:20px;top:250px;width:520px;font-size:36px}
+/* wieczór, sobota, panele */
+body.phone .letters{padding:150px 30px 200px;gap:28px}body.phone .letter{font-size:calc(38px * var(--ts,1));max-width:720px;padding:28px}body.phone .letter .lab{font-size:24px}
+body.phone .foot{left:20px;right:20px;bottom:14px;font-size:38px}
+body.phone .panel{font-size:40px;padding:36px;max-height:960px;overflow:auto}body.phone .row input[type=range]{width:420px;height:60px}body.phone .row input[type=checkbox]{width:56px;height:56px}
+body.phone .tut ol{font-size:40px}body.phone #sortp .panel{max-width:1400px}body.phone .srow .nm{font-size:30px}body.phone .srow img{height:100px}
+body.phone .threads i{font-size:28px}
+/* notatnik: przycisk dotąd bez stylu (lądował w lewym górnym rogu jako goły przycisk przeglądarki) */
+.notes{position:absolute;right:220px;top:100px;z-index:800;background:#000;color:var(--paper);border:3px solid var(--paper);padding:10px 16px;font:700 18px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}.notes:hover,.notes:focus-visible{background:var(--paper);color:var(--ink)}
+body.phone .notes{right:300px;top:140px;font-size:30px;padding:16px 22px}
+/* telefon: podpowiedź kroku znika po 7 s, żeby nie zasłaniała nagłówków; wracają ją pulsujące przyciski */
+body.phone .step{animation:stepglow 1.6s ease-in-out 3,stepout .8s ease-in 7s forwards}@keyframes stepout{to{opacity:0;visibility:hidden}}
+body.phone .pauza{bottom:300px}
+body.phone .field{left:280px;width:820px;height:700px}
+body.phone .bkphone{top:auto!important;bottom:16px!important;right:20px!important}
+body.phone .notes{right:136px;top:14px}
+body.phone .step{max-width:1000px}
+body.phone .crate{top:330px;min-height:440px;max-height:600px}
+body.phone .pauza{bottom:370px}
+body.phone .wrow .btn{font-size:32px;padding:30px 30px}
+body.phone .notes{padding:26px 26px;font-size:32px}
+/* telefon: nowy ekran tytułowy, prolog, karta dnia, ustawienia w zakładkach */
+body.phone .trow{gap:20px}body.phone .trow .btn.ghost{font-size:34px;padding:34px 34px}
+body.phone .btn.mcard{font-size:46px;padding:30px 60px}body.phone .btn.mcard small{font-size:28px}
+body.phone .tsub{font-size:38px;width:700px;margin-left:100px}
+body.phone .thint{font-size:30px;bottom:20px}
+body.phone .tconf .tq{font-size:38px}body.phone .tconf{max-width:1000px}
+body.phone .hband{font-size:calc(40px * var(--ts,1));left:20px;bottom:20px;max-width:1100px}
+body.phone .strip .num{font-size:40px}body.phone .strip{padding:30px 34px}
+body.phone .letter.contract{font-size:34px}
+body.phone .nextrow{right:24px;bottom:24px}body.phone .nextrow .btn{font-size:38px;min-height:110px}
+body.phone .daycard .lab{font-size:34px}body.phone .daycard .dch{font-size:80px}
+body.phone .setp{width:1300px}body.phone .stab{font-size:32px;padding:22px 24px}body.phone .segb{font-size:30px;padding:20px 22px}body.phone .sval{font-size:30px;width:90px}body.phone .ssave{font-size:30px}
+body.phone .tcred{font-size:36px;width:900px;left:220px}
