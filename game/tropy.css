@@ -27,3 +27,4 @@ button.trr:hover .v,button.trr:focus-visible .v{color:var(--ink);text-decoration
 .oglu .k{font:700 12px ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#7a5a2a}
 .oglu .v{font:italic 21px/1.25 Georgia,serif}
 .oglc{width:600px;padding:22px 34px}.oglc img{height:170px}.ogll .trr .v{font-size:22px}
+.wallet .clk.tk{animation:clktk .5s ease-out}@keyframes clktk{from{color:var(--sod);transform:scale(1.25)}}
