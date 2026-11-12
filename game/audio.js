@@ -1,5 +1,5 @@
 /* Mikser Okienka (WebAudio). Szyny: Master <- Ambience(Outside[LP okienka], Inside), SFX, Voice, UI. Suwaki w dB (v^2).
-   Klipy: assets/snd (42 + 24 pliki, znormalizowane peakiem wg tabeli w docs). Brak klipu = fallback syntezowany.
+   Klipy: assets/snd (42 pliki, znormalizowane peakiem wg tabeli w docs). Brak klipu = fallback syntezowany.
    NIEZMIERZONE: loudness całości (cel -24 LUFS), brzmienie. */
 window.AUD=(function(){
  let ac,B={},win='init',S={};const vol=Object.assign({master:.8,amb:.8,sfx:.8,voice:.8,music:.7},(()=>{try{return JSON.parse(localStorage.getItem('okienko_vol')||'{}')||{}}catch(e){return {}}})());
@@ -11,13 +11,13 @@ window.AUD=(function(){
  const LOOP_G={"amb_rain_glass": 3.314, "amb_rain_tin": 0.968, "amb_rain_heavy_far": 1.923, "amb_gutter_drip": 1.0, "amb_traffic_distant": 0.843, "amb_wind_gap": 0.582, "amb_sodium_hum": 0.561, "amb_vent": 0.398, "amb_clock_tick": 0.569}; /* gain petli (rebalans, okno closed, suwaki domyslne => lad ~ -24 LUFS) */
  const LOOP_LEN={"amb_rain_glass": 18.5, "amb_rain_tin": 18.5, "amb_rain_heavy_far": 23.500249, "amb_gutter_drip": 18.5, "amb_traffic_distant": 23.500249, "amb_wind_gap": 13.5, "amb_sodium_hum": 13.5, "amb_vent": 18.5, "amb_clock_tick": 18.5}; /* dlugosc petli [s] po wypieczeniu crossfade; plik ma 50 ms zawiniecia z obu stron */
  const EV_G={"amb_car_pass_wet": 8.17, "amb_tram_far": 4.8, "amb_thunder_far": 4.89, "amb_building_creak": 2.3, "amb_footsteps_corridor_far": 1.91};
- const SFX_DB={heartbeat_low:-3,siren_pass:-4,police_radio_far:-4,cat_meow_window:-2,steps_boots:-2,steps_sneakers:-2,pile_dig:-2,slide_light:-2,lamp_flicker:-2,window_up:-3,window_down:-3};
+ const SFX_DB={steps_boots:-2,steps_sneakers:-2,pile_dig:-2,slide_light:-2,lamp_flicker:-2,window_up:-3,window_down:-3};
  const SFX_REF=1.73; /* +4.75 dB: kompensuje suwaki .8*.8 (-7.8 dB) i mono->stereo (+3 dB) => SFX M ~ -20 LUFS */
  const sg=n=>+(SFX_REF*Math.pow(10,(SFX_DB[n]||0)/20)).toFixed(2);
  const HUM_G=LOOP_G.amb_sodium_hum,MAXV=16;let nv=0;const TM=[],LS=[];
  const later=(f,ms)=>{const id=setTimeout(f,ms);TM.push(id);return id};
 
- const NAMES=['amb_building_creak','amb_car_pass_wet','amb_clock_tick','amb_footsteps_corridor_far','amb_gutter_drip','amb_rain_glass','amb_rain_heavy_far','amb_rain_tin','amb_sodium_hum','amb_thunder_far','amb_traffic_distant','amb_tram_far','amb_vent','amb_wind_gap','sfx_bag_zip','sfx_bell_window','sfx_delivery_tram','sfx_door_lock_day_end','sfx_drawer_big','sfx_drawer_small','sfx_handover','sfx_knock_impatient','sfx_knock_insistent','sfx_knock_polite','sfx_lamp_flicker','sfx_lock_large','sfx_lock_small','sfx_newspaper','sfx_phone_old_ring','sfx_pile_collapse','sfx_pile_dig','sfx_power_out','sfx_refuse','sfx_slide_heavy','sfx_slide_light','sfx_steps_boots','sfx_steps_heels','sfx_steps_sneakers','sfx_trapdoor','sfx_wallet_open','sfx_window_down','sfx_window_up','sfx_doorbell_shop','sfx_door_open_close','sfx_coins_paper_money','sfx_trace_pin','sfx_pen_scratch','sfx_paper_envelope','sfx_cloth_inside_bag','sfx_umbrella_shake','sfx_glass_tap','sfx_police_radio_far','sfx_siren_pass','sfx_kettle_click','sfx_cat_meow_window','sfx_heartbeat_low','sfx_radio_tune','sfx_typewriter_key','sfx_mumble_old_man','sfx_mumble_young_woman','sfx_mumble_heavy_man','sfx_mumble_child','sfx_mumble_old_woman','sfx_mumble_teen','sfx_mumble_clerk','sfx_mumble_crying']; /* +24 z ElevenLabs (12.11): pliki mono, -24 LUFS lub peak -2.5 dB */
+ const NAMES=['amb_building_creak','amb_car_pass_wet','amb_clock_tick','amb_footsteps_corridor_far','amb_gutter_drip','amb_rain_glass','amb_rain_heavy_far','amb_rain_tin','amb_sodium_hum','amb_thunder_far','amb_traffic_distant','amb_tram_far','amb_vent','amb_wind_gap','sfx_bag_zip','sfx_bell_window','sfx_delivery_tram','sfx_door_lock_day_end','sfx_drawer_big','sfx_drawer_small','sfx_handover','sfx_knock_impatient','sfx_knock_insistent','sfx_knock_polite','sfx_lamp_flicker','sfx_lock_large','sfx_lock_small','sfx_newspaper','sfx_phone_old_ring','sfx_pile_collapse','sfx_pile_dig','sfx_power_out','sfx_refuse','sfx_slide_heavy','sfx_slide_light','sfx_steps_boots','sfx_steps_heels','sfx_steps_sneakers','sfx_trapdoor','sfx_wallet_open','sfx_window_down','sfx_window_up'];
  function mk(name,dest,g){const n=ac.createGain();n.gain.value=g==null?1:g;n.connect(dest);B[name]=n;return n}
  function noiseBuf(sec,brown){const n=ac.sampleRate*sec,b=ac.createBuffer(1,n,ac.sampleRate),d=b.getChannelData(0);let l=0;for(let i=0;i<n;i++){const w=Math.random()*2-1;if(brown){l=(l+0.02*w)/1.02;d[i]=l*14}else d[i]=w}return b}
  function load(n,tries){tries=tries==null?1:tries;const ctl=window.AbortController?new AbortController():null,to=setTimeout(()=>ctl&&ctl.abort(),15000);
@@ -29,33 +29,19 @@ window.AUD=(function(){
  /* MUZYKA: pliki z assets/music (bed, piano, cello, tension, menu, sobota + stingery st_*). Brak pliku = cisza, bez błędu. */
  const MU={},ML={};const MUS=['bed','piano','cello','tension','menu','sobota'],STG=['st_dzien_start','st_dzien_koniec','st_sekret','st_klamstwo','st_decyzja','st_wydarzenie','st_koniec'];
  const MF={bed:'mus_bed_01',piano:'mus_piano_01',tension:'mus_tension_01',menu:'mus_menu_01',sobota:'mus_saturday_01'},TRIM={bed:.25,piano:.56,tension:.33,menu:.45,sobota:.45};/* TRIM wyrównuje utwory (bed -14 LUFS, reszta -18..-23) do ok. -26 LUFS */
-/* Muzyka ładowana na żądanie: dekodujemy tylko stemy bieżącej sceny, cisza = źródło zatrzymane, bufory LRU.
-   Telefon: downmix do mono i max 3 bufory (10 utworów stereo 48 kHz = ok. 320 MB PCM, iOS zabijał kartę). */
-const LOW=(navigator.deviceMemory&&navigator.deviceMemory<=4)||(window.matchMedia&&matchMedia('(pointer:coarse)').matches),KEEP=LOW?3:6,IDX=['bed','piano','tension','menu','sobota'],LDG={},USE={};let useT=0;
+function loadMu(n){if(!(MU.__have||[]).includes(n))return Promise.resolve();const f=MF[n]?MF[n]+'_'+'ab'[0]:n;return Promise.all(MF[n]?['a','b'].map(v=>ld(n+'_'+v,MF[n]+'_'+v)):[ld(n,n)])}
+function ld(k,f){return fetch('assets/music/'+f+'.mp3').then(r=>{if(!r.ok)throw 0;return r.arrayBuffer()}).then(b=>ac.decodeAudioData(b)).then(buf=>{MU[k]=buf}).catch(()=>{})}
+function startMu(){Object.keys(MU).filter(n=>!n.startsWith('__')&&!n.startsWith('st_')).forEach(n=>{const s=ac.createBufferSource();s.buffer=MU[n];s.loop=true;s.loopStart=1;s.loopEnd=Math.max(2,MU[n].duration-1);const g=ac.createGain();g.gain.value=0;s.connect(g).connect(B.music);s.start();ML[n]=g});if(MU.__want)music(MU.__want)}
  const SCENE={menu:{menu:1},day:{bed:1},talk:{bed:.8,piano:.7,cello:.0},tension:{bed:.7,tension:.8},sobota:{sobota:1}};
- let rot=0;
-function want(sc){const m=SCENE[sc]||{};return Object.keys(m).filter(b=>m[b]>0&&MF[b]&&(MU.__have||[]).includes(b)).map(b=>[b+'_'+((rot+IDX.indexOf(b))%2===0?'a':'b'),m[b]*(TRIM[b]||1)])}
-function mono(b){if(!LOW||b.numberOfChannels<2)return b;const o=ac.createBuffer(1,b.length,b.sampleRate),d=o.getChannelData(0),l=b.getChannelData(0),r=b.getChannelData(1);for(let i=0;i<d.length;i++)d[i]=(l[i]+r[i])*.5;return o}
-function ld(k){if(MU[k])return Promise.resolve();if(LDG[k])return LDG[k];const [b,v]=k.split('_');const p=fetch('assets/music/'+MF[b]+'_'+v+'.mp3').then(r=>{if(!r.ok)throw 0;return r.arrayBuffer()}).then(x=>ac.decodeAudioData(x)).then(buf=>{MU[k]=mono(buf)}).catch(()=>{}).then(()=>{delete LDG[k]});LDG[k]=p;return p}
-function src(k){if(ML[k])return ML[k];if(!MU[k])return null;const s=ac.createBufferSource();s.buffer=MU[k];s.loop=true;s.loopStart=1;s.loopEnd=Math.max(2,MU[k].duration-1);const g=ac.createGain();g.gain.value=0;s.connect(g).connect(B.music);s.start();g.src=s;ML[k]=g;return g}
-function prune(){const all=Object.keys(MU).filter(k=>!k.startsWith('__')&&!k.startsWith('st_'));const idle=all.filter(k=>!ML[k]).sort((a,b)=>(USE[a]||0)-(USE[b]||0));let n=all.length;while(n>KEEP&&idle.length){delete MU[idle.shift()];n--}}
-function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;MU.__cur=sc;MU.__want=sc;if(!ac||!MU.__have)return;const t=ac.currentTime,w=want(sc),keys=w.map(x=>x[0]);
- Object.keys(ML).forEach(k=>{if(keys.includes(k))return;const g=ML[k];g.gain.cancelScheduledValues(t);g.gain.setTargetAtTime(0,t,1.2);clearTimeout(g.kill);g.kill=setTimeout(()=>{if(ML[k]!==g)return;try{g.src.stop();g.src.disconnect();g.disconnect()}catch(e){}delete ML[k];prune()},7000)});
- w.forEach(([k,lv])=>{USE[k]=++useT;ld(k).then(()=>{if(MU.__cur!==sc||!ac)return;const g=src(k);if(!g)return;clearTimeout(g.kill);g.gain.cancelScheduledValues(ac.currentTime);g.gain.setTargetAtTime(lv,ac.currentTime,1.2);prune()})})}
- const STF={dzien_start:[[293.66,0],[440,.26]],dzien_koniec:[[440,0],[349.23,.24],[293.66,.5]],sekret:[[698.46,0],[880,.11],[1174.66,.22]],klamstwo:[[146.83,0,1],[155.56,.02,1],[73.42,0]],decyzja:[[73.42,0],[146.83,0],[220,.04]],wydarzenie:[[73.42,0,1],[110,.1]],koniec:[[146.83,0],[174.61,.35],[220,.7],[293.66,1.05]]};
- function sting(n){if(!ac)return false;if(MU['st_'+n]){const s=ac.createBufferSource();s.buffer=MU['st_'+n];const g=ac.createGain();g.gain.value=.9;s.connect(g).connect(B.music);s.start();return true}
-  const L=STF[n];if(!L)return false;const t=ac.currentTime+.02,d=n==='koniec'?4.5:n==='klamstwo'?2.6:2;L.forEach(([f,o,tri])=>{tone(t+o,f,tri?.07:.12,d,B.music,tri?'triangle':'sine');tone(t+o,f*2.003,.025,d*.6,B.music)});if(n==='decyzja')play('sfx_lock_large',B.sfx,sg('lock_large')*.8);return true}
- /* brzęk kasy: dwie monety, przy dużej wypłacie trzy */
- function coin(big){if(!ac)return;if(play('sfx_coins_paper_money',B.ui,sg('coins_paper_money')*(big?1:.75),rnd(.97,1.03)))return;const t=ac.currentTime+.05;[2093,2637].concat(big?[3136]:[]).forEach((f,i)=>{tone(t+i*.09,f,.06,.5,B.ui);tone(t+i*.09,f*1.5,.02,.25,B.ui)})}
- function cur(){return MU.__cur}
+ let rot=0;const VAR=n=>{const [b,v]=n.split('_');return v?((rot+['bed','piano','tension','menu','sobota'].indexOf(b))%2===(v==='a'?0:1)):true};
+function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;MU.__cur=sc;MU.__want=sc;if(!ac)return;const m=SCENE[sc]||{};const t=ac.currentTime;Object.keys(ML).forEach(n=>{const b=n.split('_')[0];ML[n].gain.setTargetAtTime(VAR(n)?(m[b]||0)*(TRIM[b]||1):0,t,1.2)})}
+ function sting(n){if(!ac||!MU['st_'+n])return false;const s=ac.createBufferSource();s.buffer=MU['st_'+n];const g=ac.createGain();g.gain.value=.9;s.connect(g).connect(B.music);s.start();return true}
  function init(){ if(ac)return; try{ac=new (window.AudioContext||window.webkitAudioContext)()}catch(e){return}
-  try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){} /* iOS: WebAudio gra mimo przełącznika wyciszenia */
-  try{const el=new Audio('data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YSADAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA==');el.loop=true;el.setAttribute('playsinline','');el.volume=.01;el.play().catch(()=>{});window.__lfSil=el}catch(e){}
-  const wake=()=>{if(document.hidden)return;if(ac&&ac.state!=='running'&&ac.state!=='closed')ac.resume().catch(()=>{});const el=window.__lfSil;if(el&&el.paused)el.play().catch(()=>{})};wake();ac.onstatechange=()=>{if(ac.state==='interrupted')wake()};document.addEventListener('visibilitychange',()=>{if(document.hidden){if(ac&&ac.state==='running')ac.suspend().catch(()=>{});const el=window.__lfSil;el&&el.pause()}else wake()});['pointerdown','keydown','touchend'].forEach(ev=>addEventListener(ev,wake,{passive:true}));
+  const wake=()=>{if(ac&&ac.state!=='running'&&ac.state!=='closed')ac.resume().catch(()=>{})};wake();ac.onstatechange=()=>{if(ac.state==='interrupted')wake()};document.addEventListener('visibilitychange',()=>{if(!document.hidden)wake()});['pointerdown','keydown','touchend'].forEach(ev=>addEventListener(ev,wake,{passive:true}));
   const lim=ac.createDynamicsCompressor();lim.threshold.value=-3;lim.ratio.value=20;lim.knee.value=0;lim.attack.value=.003;lim.release.value=.2;lim.connect(ac.destination);
   mk('master',lim);mk('music',B.master);mk('amb',B.master);mk('inside',B.amb);mk('sfx',B.master);mk('voice',B.master);mk('ui',B.master);
   const lp=ac.createBiquadFilter();lp.type='lowpass';lp.frequency.value=1900;B.outside=ac.createGain();B.outside.gain.value=.6;B.outside.connect(lp).connect(B.amb);B.lp=lp;
-  setVolumes();Promise.all(NAMES.filter(n=>n.startsWith('amb_')).map(n=>load(n))).then(start).then(()=>NAMES.filter(n=>n.startsWith('sfx_')).reduce((p,n)=>p.then(()=>load(n)),Promise.resolve()));fetch('assets/music/manifest.json').then(r=>r.json()).catch(()=>[]).then(l=>{MU.__have=l||[];if(MU.__want)music(MU.__want)})}
+  setVolumes();Promise.all(NAMES.filter(n=>n.startsWith('amb_')).map(n=>load(n))).then(start).then(()=>NAMES.filter(n=>n.startsWith('sfx_')).reduce((p,n)=>p.then(()=>load(n)),Promise.resolve()));fetch('assets/music/manifest.json').then(r=>r.json()).catch(()=>[]).then(l=>{MU.__have=l;return Promise.all(MUS.concat(STG).map(loadMu))}).then(startMu)}
  function start(){
   if(S.amb_rain_glass){['amb_rain_glass','amb_rain_tin','amb_rain_heavy_far','amb_gutter_drip','amb_traffic_distant','amb_wind_gap'].forEach(n=>loop(n,B.outside,LOOP_G[n]))}
   else synthRain();
@@ -80,17 +66,13 @@ function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;
  const last={};
  function sfx(n,limit){if(!ac)return false;const now=performance.now();if(limit&&last[n]&&now-last[n]<limit)return true; /* throttle != brak klipu: bez fallbacku syntezowanego */last[n]=now;return play('sfx_'+n,B.sfx,sg(n),rnd(.97,1.03))}
  function knock(kind){if(!ac)return;if(!sfx('knock_'+(kind||'polite'))){const t=ac.currentTime;[0,.17,.34].forEach(d=>tone(t+d,190,.35,.14,B.sfx,'sine',95))}}
- function doorbell(){if(!ac)return;/* dzwonek sklepowy nad drzwiami + skrzypnięcie drzwi */if(play('sfx_doorbell_shop',B.sfx,sg('doorbell_shop'),rnd(.98,1.02))){play('sfx_door_open_close',B.sfx,sg('door_open_close')*.55);return}const ok=play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.7);later(()=>play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.35),230);if(!ok){const t=ac.currentTime;tone(t,1760,.1,.5,B.sfx);tone(t+.23,1320,.1,.7,B.sfx)}}
+ function doorbell(){if(!ac)return;const ok=play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.7);later(()=>play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.35),230);if(!ok){const t=ac.currentTime;tone(t,1760,.1,.5,B.sfx);tone(t+.23,1320,.1,.7,B.sfx)}}
  function bell(){if(!ac)return;if(!sfx('bell_window')){const t=ac.currentTime;tone(t,1320,.12,1.1,B.sfx);tone(t,1980,.06,.8,B.sfx)}}
  function steps(kind){if(!ac)return;if(!sfx('steps_'+(kind||'boots'))){const t=ac.currentTime;[0,.35,.7].forEach(d=>burst(t+d,500,1.5,.18,.12,B.sfx))}}
  function tick(){if(ac)tone(ac.currentTime,520,.56,.14,B.ui)}
  function stamp(){if(!ac)return;const t=ac.currentTime;tone(t,90,1.25,.25,B.sfx,'sine',50)}
  function sweep(){if(!ac)return;if(!sfx('pile_dig',500))burst(ac.currentTime,1200,.8,.2,.3,B.sfx)}
- /* głos postaci: klip bez słów (westchnienie, kaszel, mruknięcie) zamiast szumu, najwyżej raz na 6 s; reszta kwestii = szum mamrotania */
- let vLast=0;
- function mumble(len,intim,vk,first){if(!ac)return;const t0=ac.currentTime,now=performance.now();
-  if(vk&&S['sfx_mumble_'+vk]&&now-vLast>6000&&(first||Math.random()<.4)){vLast=now;play('sfx_mumble_'+vk,B.voice,SFX_REF*.9,rnd(.97,1.03));B.amb.gain.cancelScheduledValues(t0);B.amb.gain.setTargetAtTime(lin(vol.amb)*.6,t0,.05);B.amb.gain.setTargetAtTime(lin(vol.amb),t0+1.6,.4);return}
-  const n=Math.min(14,Math.ceil(len/5));
+ function mumble(len,intim){if(!ac)return;const t0=ac.currentTime,n=Math.min(14,Math.ceil(len/5));
   for(let i=0;i<n;i++)burst(t0+i*.13,160+Math.random()*200-80*(intim||0),3,8*(1-.5*(intim||0)),.1,B.voice);
   B.amb.gain.cancelScheduledValues(t0);B.amb.gain.setTargetAtTime(lin(vol.amb)*.5,t0,.05);B.amb.gain.setTargetAtTime(lin(vol.amb),t0+n*.13+.2,.4)}
  /* jedno zdarzenie lampy = obraz (callback) + dźwięk (klip + zanik brzęczenia). RNG kosmetyczny w grze, osobny od seeda. */
@@ -99,5 +81,5 @@ function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;
  function thunder(){if(!ac)return;play('amb_thunder_far',B.outside,EV_G.amb_thunder_far*1.6,rnd(.9,1));sfx('pile_collapse');later(()=>{sfx('power_out');lampBlink()},700)}
  function stopAmbient(){TM.splice(0).forEach(id=>{clearTimeout(id);clearInterval(id)});LS.splice(0).forEach(s=>{try{s.stop();s.disconnect()}catch(e){}})}
  function resume(){return ac?ac.resume():Promise.resolve()}
- return {coin,cur,stopAmbient,resume,state:()=>ac?ac.state:'none',init,music,sting,setDoor,thunder,setVol,vol,setWindow,knock,bell,doorbell,steps,sfx,tick,stamp,sweep,mumble,lampBlink,on:()=>!!ac,win:()=>win,loaded:()=>Object.keys(S).length}
+ return {stopAmbient,resume,state:()=>ac?ac.state:'none',init,music,sting,setDoor,thunder,setVol,vol,setWindow,knock,bell,doorbell,steps,sfx,tick,stamp,sweep,mumble,lampBlink,on:()=>!!ac,win:()=>win,loaded:()=>Object.keys(S).length}
 })();
