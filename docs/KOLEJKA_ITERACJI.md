@@ -52,3 +52,21 @@ Ocena szczera:
 - Słabe: sprawa z kolejki to dziś rzut monetą albo zapłata cierpliwością. Brakuje trzeciej drogi, czyli wnioskowania (np. zdanie gościa zdradza coś pośrednio). Do poprawy przy I5.
 - Słabe: obrazek kluczy pokazuje trzy sztuki, a karta mówi „dwa klucze”. Cechy liczbowe trzeba wyrzucić z tabeli albo dorobić warianty grafik.
 - Niesprawdzone graniem: cały tydzień z sobotą. Wyliczenie: uważny gracz ma ok. 440 $ z wizyt i do 60 $ z kolejki na noc, czynsz z ratą to 310 $. Trzeba to zagrać po I4, bo liczba wizyt się zmieni.
+
+### I3b: uwagi Tommy'ego z grania (12.11 wieczór)
+
+Trzy uwagi, każda sprawdzona graniem dnia 1, zanim cokolwiek zmieniłem.
+
+| Uwaga | Werdykt | Co zrobione |
+|---|---|---|
+| „Odsuń zasłonkę / przez szybę, a tego nie widać” | Słuszna. Zasłonka była niewidzialnym polem kliknięcia, a w magazynie tekst kazał „dopytać przez szybę”, choć stoimy tyłem do okna. | Zasłonka jest teraz rzeczą: płótno w oknie z zawieszką, drga przy pukaniu i odjeżdża w bok. W magazynie na kartce jest twarz gościa „czeka przy okienku”, a przycisk brzmi „zapytaj gościa”. Krok 6 mówi o polach po prawej, nie o szybie. |
+| „Klik w rzecz, żeby się czegoś dowiedzieć, jest nieczytelny” | Słuszna. Przy dostawie szukało się niewidocznego punktu na obrazku obok pustej kartki. | Lupa ciepło-zimno: kółko chodzi za kursorem i świeci mocniej przy śladzie. Kartka od początku mówi, co robić. Podpowiedź po 3,5 s w dniu 1 (było 9 s). W magazynie każda rzecz ma napis „obejrzyj”. |
+| „Wytłumacz, czemu tyle wypytujemy, a gość powinien umieć powiedzieć mocne nie” | Słuszna w obu częściach. Druga jest lepsza, niż brzmi: odmowa daje pytaniom cenę. | Przy oknie wisi regulamin (trzy paragrafy: nie pokazuj przed wydaniem, dostaje ten, kto opisze, złe wydanie z pensji). Gość raz na wizytę odmawia przy drugim niewygodnym pytaniu, które nie dotyczy rzeczy. Można nacisnąć: odpowiedź pada, ale w magazynie jest o kratkę cierpliwości mniej. |
+
+Granie: Thomas na pytanie „Po co wieczorem do Doków?” mówi „Nie. Stoję tu po swoją rzecz, nie na przesłuchanie.”, po naciśnięciu opowiada o córce i rosole. Działa lepiej niż sama odpowiedź, bo trzeba było o nią zawalczyć.
+
+Ocena szczera:
+- Odmowa ma na razie trzy ogólne zdania wspólne dla wszystkich. Starszy pan i dwudziestolatek odmawiają tymi samymi słowami. Silnik czyta pole `odmowa` przy pytaniu, więc wątek dialogów może dopisać własne zdanie każdej postaci.
+- Reguła ogólna odpala rzadko (u Jonaha w ogóle, bo jego pytania nie są oznaczone jako niewygodne). Bez pól `odmowa` w treści gracz zobaczy to raz na kilka wizyt.
+- Lupa nie działa na dotyk bez przeciągania palcem. Na telefonie zostaje podpowiedź kropkowanym kółkiem po dwóch pudłach.
+- Regulamin widać w dniach 1-3, potem znika. Nie sprawdziłem, czy ktoś go w ogóle czyta przy pierwszej rozmowie.

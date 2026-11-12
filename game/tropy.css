@@ -28,3 +28,37 @@ button.trr:hover .v,button.trr:focus-visible .v{color:var(--ink);text-decoration
 .oglu .v{font:italic 21px/1.25 Georgia,serif}
 .oglc{width:600px;padding:22px 34px}.oglc img{height:170px}.ogll .trr .v{font-size:22px}
 .wallet .clk.tk{animation:clktk .5s ease-out}@keyframes clktk{from{color:var(--sod);transform:scale(1.25)}}
+
+/* ITERACJA 3b: zasłonka jako rzecz, którą widać */
+.curtain{outline:0!important;overflow:hidden;transform-origin:0 0;transition:transform .5s cubic-bezier(.6,0,.3,1),opacity .5s;
+ background:repeating-linear-gradient(90deg,#d9c79d 0 34px,#bfa878 34px 40px,#e6d7b0 40px 70px,#3a2c18 70px 74px);border-top:14px solid #0c0a08;box-shadow:0 12px 0 -6px #0c0a08,inset 0 -26px 30px -14px rgba(0,0,0,.55)}
+.curtain:hover,.curtain:focus-visible{background:repeating-linear-gradient(90deg,#e6d7b0 0 34px,#cdb686 34px 40px,#f2e6c4 40px 70px,#3a2c18 70px 74px);filter:none}
+.curtain .cfold{position:absolute;left:0;right:0;top:0;height:22px;background:radial-gradient(circle at 12px 0,#0c0a08 0 7px,transparent 8px) 0 0/37px 22px repeat-x}
+.curtain .ctag{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%) rotate(-3deg);background:var(--sod);color:#0c0a08;font:700 22px ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;padding:14px 22px;box-shadow:5px 5px 0 #0c0a08;white-space:nowrap}
+.curtain .ctag::after{content:' ⇤'}
+.curtain.kn{animation:ckn .5s ease-in-out 2}@keyframes ckn{25%{transform:translateX(5px) skewX(.6deg)}75%{transform:translateX(-4px) skewX(-.5deg)}}
+.curtain.breath{animation:none}.curtain.breath.kn{animation:ckn .5s ease-in-out 2}
+.curtain.open{transform:scaleX(.04);opacity:.0;pointer-events:none;animation:none}
+.reduce .curtain{transition:none}.reduce .curtain.kn{animation:none}
+/* lupa przy oględzinach dostawy */
+.lupa{position:absolute;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;pointer-events:none;opacity:0;--k:0;z-index:5;
+ border:5px solid rgb(calc(239 + 3*var(--k)),calc(227 - 87*var(--k)),calc(200 - 170*var(--k)));box-shadow:0 0 calc(10px + 60px*var(--k)) calc(12px*var(--k)) rgba(242,140,30,calc(.15 + .75*var(--k))),inset 0 0 calc(40px*var(--k)) rgba(242,140,30,calc(.5*var(--k)))}
+.lupa.on{opacity:1}.lupa.hotk{animation:lup .6s infinite}@keyframes lup{50%{transform:scale(1.1)}}
+.lupa::after{content:'';position:absolute;right:-34px;bottom:-34px;width:52px;height:10px;background:#efe3c8;transform:rotate(45deg);transform-origin:0 50%}
+.inspect .pic{cursor:none}.note.pre{font-size:22px;opacity:.96}.note.pre .lab{font-size:17px}
+/* magazyn: gość na kartce, afordancja oględzin */
+.trwho{display:flex;align-items:center;gap:10px;font:700 12px/1.25 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:#3a2c18;border-bottom:3px solid #0c0a08;padding-bottom:9px}
+.trface{flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:#0c0a08 center 12%/190% no-repeat;border:3px solid #0c0a08;display:block}
+.trnote{top:256px}
+.trf .slot .lk{position:absolute;left:0;right:0;top:0;background:var(--sod);color:#0c0a08;font:700 13px ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;padding:4px 0;opacity:0;transition:opacity .12s}
+.trf .slot:hover .lk,.trf .slot:focus-visible .lk{opacity:1}
+.trf.d1 .slot .lk{opacity:.8;background:#3a2c18;color:#efe3c8}.trf.d1 .slot:hover .lk{background:var(--sod);color:#0c0a08;opacity:1}
+@media (hover:none){.trf .slot .lk{opacity:.85}}
+/* regulamin przy oknie */
+.regul{position:absolute;left:20px;top:318px;width:218px;background:var(--paper);color:var(--ink);padding:14px 14px 12px;transform:rotate(-2deg);z-index:20;display:flex;flex-direction:column;gap:7px;font:19px/1.2 Georgia,serif;box-shadow:4px 5px 0 rgba(0,0,0,.6);clip-path:polygon(0 1%,99% 0,100% 99%,1% 100%);animation:oglin .3s}
+.regul::before{content:'';position:absolute;left:50%;top:5px;width:10px;height:10px;border-radius:50%;background:#a04f00;margin-left:-5px}
+.regul b{font:700 12px ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#a04f00;margin-top:8px}
+.regul i{font:700 12px ui-monospace,Menlo,monospace;font-style:normal;color:#7a5a2a}
+body.phone .regul{display:none}
+
+.q.press{border-style:dashed}.q.press small{opacity:1}
