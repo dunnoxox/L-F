@@ -176,7 +176,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Lena Brandt: „Ktoś mi powiedział po cichu, że Maya żyje. Płakałam dwa dni z ulgi. Nie pytam kto. Nie powiem Evanowi. — L.”"
       }
     }
-  ]
+  ],
+  "rola": "elektryczka, która układa zasady",
+  "watki": [
+    "Zaginiona",
+    "Fotel"
+  ],
+  "tik": "liczy „raz, dwa, trzy”",
+  "potrzeba": "sama zdecydować, kto wie",
+  "slad": "pierwszy z trzech testów, które robi okienku"
 }
 ```
 
@@ -212,8 +220,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Co jest w środku oprócz legitymacji?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Klucze, tabletki na ból głowy, kartka. Nic wartościowego. Kartka to zakupy.",
-          "mina": "klamie"
+          "odpowiedz": "Klucze, tabletki na ból głowy i kartka z zakupami. Nic więcej.",
+          "mina": "mowi"
         },
         {
           "tekst": "Czemu bez karty nie wejdziesz na oddział?",
@@ -244,8 +252,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Kartka w kieszeni to na pewno zakupy?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Zakupy. Mleko, chleb. Zostaw tę kartkę, naprawdę.",
-          "mina": "klamie"
+          "odpowiedz": "Zakupy. Mleko, chleb. Ale proszę jej nie czytać, bo jest głupia.",
+          "mina": "emocja"
         },
         {
           "tekst": "Na kartce jest: „Iris, 400 $, żółta kopia u elektryczki”. Co to?",
@@ -332,7 +340,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Grace Okoye: „Weszłam o 6:02. Hollis zapisał mi spóźnienie. Powiedział, że to przez biuro. Śmiałam się, bo co mi zostało.”"
       }
     }
-  ]
+  ],
+  "rola": "pielęgniarka z nocnej zmiany",
+  "watki": [
+    "kamienica",
+    "pieniądze"
+  ],
+  "tik": "liczy czas godzinami dyżuru",
+  "potrzeba": "torebka z kartą na szóstą",
+  "slad": "wpłaciła 400 $ i nie ma papieru"
 }
 ```
 
@@ -373,7 +389,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "iris",
-          "odpowiedz": "Rachunki. Karty rozliczeń kamienicy, nic ponad to. Nie lubię naciskać, ale to nasze, lokatorów i moje.",
+          "odpowiedz": "Rachunki. Karty rozliczeń kamienicy, nic ponad to. To nasze, lokatorów i moje.",
           "mina": "klamie"
         },
         {
@@ -441,7 +457,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": "d12_oryginaly",
           "kto": "iris",
-          "odpowiedz": "Miasta, lokatorów i moje, w kolejności, w jakiej je rozdzieliłam. Nora policzyła jedną stronę. Nie lubię naciskać, ale to prawie uczciwe rozliczenie.",
+          "odpowiedz": "Miasta, lokatorów i moje, w kolejności, w jakiej je rozdzieliłam. Nora policzyła jedną stronę. To prawie uczciwe rozliczenie.",
           "mina": "emocja"
         }
       ]
@@ -477,7 +493,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": "d9_iris:zetony_victor",
           "kto": "iris",
-          "odpowiedz": "Są na liście inspekcji: dla niego drobiazg, dla nich wyrok. Nie lubię naciskać, ale tu nie mam wyboru.",
+          "odpowiedz": "Są na liście inspekcji: dla niego drobiazg, dla nich wyrok. Tu nie mam wyboru.",
           "mina": "emocja"
         },
         {
@@ -510,7 +526,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Iris Bell: „Nie lubię naciskać. Ale dziś rano dwóch lokatorów odmówiło mi zaliczek. Zastanawiam się dlaczego.”"
+        "tekst": "Iris Bell: „Dziś rano dwóch lokatorów odmówiło mi zaliczek. Zastanawiam się dlaczego.”"
       }
     },
     {
@@ -553,7 +569,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Grace Okoye: „Nora mówi, że ktoś zapłacił za mnie. Nie wiem kto. Dziękuję. Oddam, jak skończę nocki.”"
       }
     }
-  ]
+  ],
+  "rola": "zarządczyni, prawniczka i dziecko przy kasetce",
+  "watki": [
+    "Skrytka",
+    "kamienica"
+  ],
+  "tik": "Iris „drobna przysługa”, Nora „po kolei”",
+  "potrzeba": "kasetka z oryginałami pokwitowań",
+  "slad": "drugi papier: 6 800 $ wpłaty miasta"
 }
 ```
 
@@ -614,8 +638,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Co jest w pozytywce?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Nic. Mechanizm i kurz. Proszę nie zdejmować dna.",
-          "mina": "klamie"
+          "odpowiedz": "Mechanizm i coś, czego wolałabym nie pokazywać. Proszę nie zdejmować dna.",
+          "mina": "emocja"
         },
         {
           "tekst": "Czy ktoś was szuka?",
@@ -693,7 +717,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 3,
         "forma": "gosc",
-        "tekst": "Iris Bell: „Pewna matka z synem nie wsiadła rano do pociągu. Nie lubię naciskać, ale ktoś tu się pomylił i będzie to droga pomyłka.”"
+        "tekst": "Iris Bell: „Pewna matka z synem nie wsiadła rano do pociągu. Ktoś tu się pomylił i będzie to droga pomyłka.”"
       }
     },
     {
@@ -708,7 +732,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Victor Crane: „W księdze jest wpis o pozytywce. Samo imię, bez nazwiska. Zapisuję, że zapisano.”"
       }
     }
-  ]
+  ],
+  "rola": "matka z synem w drodze",
+  "watki": [
+    "Skrytka"
+  ],
+  "tik": "zaczyna od „proszę”",
+  "potrzeba": "pozytywka, żeby Milo zasnął",
+  "slad": "numer 0623 ukryty pod dnem pozytywki"
 }
 ```
 
@@ -861,7 +892,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Elias Wren: „Czy koperta nadal leży? Chciałbym ją zobaczyć raz, żeby wiedzieć, że jest. — E.W.”"
       }
     }
-  ]
+  ],
+  "rola": "emeryt z długiem wdzięczności",
+  "watki": [
+    "Poprzednik",
+    "Fotel"
+  ],
+  "tik": "składa numerek w prostokąt",
+  "potrzeba": "oprawka żony i pytanie o Sama",
+  "slad": "od czterech tygodni odkłada 85 $"
 }
 ```
 
@@ -904,8 +943,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Czy jechałaś z biletem?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Jak zawsze. Skasowany, w kieszeni, kochanie.",
-          "mina": "klamie"
+          "odpowiedz": "Dziś nie. Spieszyłam się na wesele i nie skasowałam. Zapłacę mandat, kochanie.",
+          "mina": "emocja"
         },
         {
           "tekst": "W pudełku jest mandat z dopiskiem Leo: „zdarza się”. Co to?",
@@ -962,7 +1001,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Policzyć? Chyba nie zdążysz, wesele za dwie godziny. Dużo. Ale zawsze z szacunkiem.",
-          "mina": "klamie"
+          "mina": "mowi"
         }
       ]
     }
@@ -1003,7 +1042,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Odile Faber: „Przyniosłam ciasto. Nie, dziecko, nie mów nikomu, że to za mandat. Powiedz, że to za ząb.”"
       }
     }
-  ]
+  ],
+  "rola": "babcia z protezą na ślub",
+  "watki": [
+    "humor"
+  ],
+  "tik": "mówi „dziecko”, „kochanie”",
+  "potrzeba": "proteza przed ślubem o dziesiątej",
+  "slad": "jeździ na gapę i zapisuje mandat"
 }
 ```
 
@@ -1153,7 +1199,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Noah Reyes: „Kartka leży w depozycie dla Mai D. Nie wiem, czy ktoś ją przeczyta. Dwudziesty drugi jest blisko. — N.R.”"
       }
     }
-  ]
+  ],
+  "rola": "policjant, który zamyka sprawę",
+  "watki": [
+    "Zaginiona"
+  ],
+  "tik": "kładzie rzeczy równo z krawędzią",
+  "potrzeba": "podpis Mai do 22",
+  "slad": "zapisuje gracza: „dyżurny, bez nazwiska” jako pustkę"
 }
 ```
 
@@ -1295,7 +1348,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Noah Reyes: „Nastolatka z różowym kaskiem była dziś zgłoszona z powodu wagarów. Powiedziała, że okienko ją sprzedało. Czyli: pamięta.”"
       }
     }
-  ]
+  ],
+  "rola": "szesnastolatka udająca dorosłą",
+  "watki": [
+    "humor"
+  ],
+  "tik": "mówi „serio”, „no weź”",
+  "potrzeba": "kask i święty spokój",
+  "slad": "trzy wersje wieku w jednym zdaniu"
 }
 ```
 
@@ -1466,7 +1526,16 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Sam Holt: „Spaliłem. Nie pytaj, gdzie. Jeśli cię ktoś zapyta o kalkę, powiedz, że jej nie było. — S.H.”"
       }
     }
-  ]
+  ],
+  "rola": "poprzednik, który wraca po swoje",
+  "watki": [
+    "Poprzednik",
+    "Skrytka",
+    "Fotel"
+  ],
+  "tik": "zaczyna od szczegółu technicznego",
+  "potrzeba": "referencje i spokój do 25",
+  "slad": "kalka strony 41 z szóstą linią"
 }
 ```
 
@@ -1596,7 +1665,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Pruitt: „Wróciłem z parasolami do domu. Postawiłem je w przedpokoju. Chyba się obraziły. — P.”"
       }
     }
-  ]
+  ],
+  "rola": "samotnik z parasolami",
+  "watki": [
+    "humor"
+  ],
+  "tik": "mówi „przy okazji”",
+  "potrzeba": "ktoś, kto przyjmie parasole",
+  "slad": "oddaje parasole, żeby było do kogo gadać"
 }
 ```
 
@@ -1766,7 +1842,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Lena Brandt: „Saszetka leży u was. Pytałam Mai, czy to dobrze. Powiedziała: policzyłam. Nie wiem, co to znaczy, ale mi odpowiedziała.”"
       }
     }
-  ]
+  ],
+  "rola": "dwie siostry przy saszetce",
+  "watki": [
+    "Zaginiona",
+    "Fotel"
+  ],
+  "tik": "Maya liczy, Lena mówi „ale…”",
+  "potrzeba": "saszetka i jedno zdanie siostry",
+  "slad": "drugi test Mai: wybór zostaje jej"
 }
 ```
 
@@ -1809,8 +1893,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Co jest nagrane na tej kasecie?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Piosenka. Jedna. Ile razy, tyle razy. Nie powiem którą, to osobiste.",
-          "mina": "klamie"
+          "odpowiedz": "Piosenka. Jedna, ile razy, tyle razy. Nie powiem którą, to osobiste.",
+          "mina": "emocja"
         }
       ]
     },
@@ -1834,8 +1918,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Od czego uciekasz?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Od niczego. „Nikt nie jest wyspą.” Nie ja pierwszy to mówię.",
-          "mina": "klamie"
+          "odpowiedz": "Od ludzi, którzy pytają, czemu nie dzwonię. Ale to moja sprawa.",
+          "mina": "emocja"
         },
         {
           "tekst": "Pod naklejką jest karteczka z numerem 0731. Co to?",
@@ -1908,7 +1992,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Dorian Lund: „Poszedłem szukać innego okienka. Nie znalazłem. Kaseta gdzieś jedzie beze mnie.”"
       }
     }
-  ]
+  ],
+  "rola": "kasetowiec, który boi się wyjechać",
+  "watki": [
+    "Skrytka"
+  ],
+  "tik": "cytuje tytuły piosenek",
+  "potrzeba": "kaseta i cisza do soboty",
+  "slad": "żeton 0731 w pudełku po kasecie"
 }
 ```
 
@@ -2053,7 +2144,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Maya Doyle: „Evan wie, że byłam w czwórce o 22:40. Skąd? Policzyłam: raz, dwa, trzy. Ktoś mu powiedział. Przestaję wierzyć szybie.”"
       }
     }
-  ]
+  ],
+  "rola": "mąż, który trzyma się planu",
+  "watki": [
+    "Zaginiona"
+  ],
+  "tik": "poprawia mankiet",
+  "potrzeba": "żeby żona wróciła albo odpisała",
+  "slad": "wspomina detektywa za 1 200 $"
 }
 ```
 
@@ -2208,7 +2306,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Sylvia Okafor: „Wycieczka odwołana. Sprawdzałam trzy razy, bo wolę wierzyć, że sama się pomyliłam. Dzieci pytają, czemu nic nie wyszło.”"
       }
     }
-  ]
+  ],
+  "rola": "nauczycielka z szachami bez króla",
+  "watki": [
+    "humor",
+    "pieniądze"
+  ],
+  "tik": "mówi pionkami",
+  "potrzeba": "szachy dla dzieci",
+  "slad": "koperta z pieniędzmi wycieczki 3b w pudełku"
 }
 ```
 
@@ -2265,7 +2371,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "iris",
-          "odpowiedz": "Bo przyszłyśmy w tej samej sprawie. Nie lubię naciskać, ale niektóre sprawy lepiej ustalać przy świadkach.",
+          "odpowiedz": "Bo przyszłyśmy w tej samej sprawie. Niektóre sprawy lepiej ustalać przy świadkach.",
           "mina": "neutralna"
         }
       ]
@@ -2330,7 +2436,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "iris",
-          "odpowiedz": "Czyli do Victora. Wyjdzie wszystko: papiery, nazwiska, kasetki. Nie lubię naciskać, ale wtedy nikt nie będzie wolny.",
+          "odpowiedz": "Czyli do Victora. Wyjdzie wszystko: papiery, nazwiska, kasetki. Wtedy nikt nie będzie wolny.",
           "mina": "emocja"
         }
       ]
@@ -2347,7 +2453,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Iris Bell: „Nie lubię naciskać. Ale pan zarządca z Urzędu pytał o pokój służbowy przy Cooper Street. Zastanawiam się dlaczego.”"
+        "tekst": "Iris Bell: „Pan zarządca z Urzędu pytał o pokój służbowy przy Cooper Street. Zastanawiam się dlaczego.”"
       }
     },
     {
@@ -2369,7 +2475,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "kasa": 300,
       "wymaga": "d18_oferta_300",
       "kto": "iris",
-      "reakcja": "Miło mieć sprawy załatwione bez zbędnych słów. Dziękuję. Nie lubię naciskać, ale uwielbiam rozumienie.",
+      "reakcja": "Miło mieć sprawy załatwione bez zbędnych słów. Dziękuję. Uwielbiam rozumienie.",
       "zysk": "Dostajesz 300 dolarów, czyli dwa czynsze, i spłacasz większość długu u Kuby.",
       "strata": "Oryginały odpływają bez śladu, Okoye płacą drugi raz, a ty stajesz się „swoim” u Iris.",
       "echo": {
@@ -2378,7 +2484,16 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Nora Vance: „Wiem, że oryginały nie leżą już w biurze. Zapisałam godzinę i to, kto stał przy szybie. Rodzina Okoye ma czas do dwudziestego czwartego. — N. Vance”"
       }
     }
-  ]
+  ],
+  "rola": "zarządczyni i prawniczka przy teczce",
+  "watki": [
+    "Skrytka",
+    "kamienica",
+    "pieniądze"
+  ],
+  "tik": "Iris „drobna przysługa”, Nora „po kolei”",
+  "potrzeba": "teczka z planem wyburzenia",
+  "slad": "oferta 300 $ i „pokój służbowy”"
 }
 ```
 
@@ -2533,7 +2648,16 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Hugo Lang: „Żona czytała zaświadczenie. Zapytała, ile wziąłem za wędkę. Powiedziałem, że sto. Nie wiem, skąd wiedziała. — H.”"
       }
     }
-  ]
+  ],
+  "rola": "hydraulik, który łowi tylko alibi",
+  "watki": [
+    "humor",
+    "Marlow",
+    "pieniądze"
+  ],
+  "tik": "mówi „wiesz, jak to jest”",
+  "potrzeba": "wędka jako alibi dla żony",
+  "slad": "kwit długu karcianego, odbiorcą jest Marlow"
 }
 ```
 
@@ -2696,7 +2820,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Leo Marsh: „Sprostowanie leży w księdze. Ada mówi, że dobrze wyszło. Ja nie jestem pewien, czy to nie zbyt dobrze.”"
       }
     }
-  ]
+  ],
+  "rola": "dziecko i konduktor przy puszce",
+  "watki": [
+    "kamienica",
+    "Skrytka"
+  ],
+  "tik": "Ada liczy kroki",
+  "potrzeba": "sprostowanie wykazu zmiany",
+  "slad": "dzień na spakowanie dla rodziny Ady"
 }
 ```
 
@@ -2852,7 +2984,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Kofi Mensah: „Zapłaciłem. Nie wiem, kto przyjął pieniądze. Czuję się tak, jak wtedy na trasie. — K.”"
       }
     }
-  ]
+  ],
+  "rola": "kurier, który woził paczki w płótnie",
+  "watki": [
+    "Skrytka",
+    "pieniądze"
+  ],
+  "tik": "sprawdza telefon",
+  "potrzeba": "powerbank na trasę",
+  "slad": "zlecenie „cisza w cenie” pod naklejką"
 }
 ```
 
@@ -3027,10 +3167,169 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Elias Wren: „Czy moje zeznanie zostało przyjęte? Pytam, bo pan Holt przestał mi odpowiadać.”"
       }
     }
-  ]
+  ],
+  "rola": "trzej mężczyźni i jedna koperta",
+  "watki": [
+    "Poprzednik",
+    "Fotel",
+    "Urząd"
+  ],
+  "tik": "Elias rozprostowuje numerek",
+  "potrzeba": "zegarek Sama i zeznania",
+  "slad": "notatka „Pytaj o imiona” i pole na imię"
 }
 ```
 
+
+**Tobias Reed.** Potrzeba: zdążyć z towarem. Lęk: potrącenia z pensji. Tik: skraca nazwy ulic. Moment gwiazdy: breloczek-syrena z kopertą.
+
+```json
+{
+  "id": "d20_tobias",
+  "dzien": 20,
+  "postac": "Tobias Reed, 29",
+  "glos": "Szybko, o dostawach mówi jak o pogodzie. Skraca nazwy ulic, kiedy się spieszy.",
+  "typ": "kierowca dostawczy, którego goni grafik",
+  "rzecz": "Kluczyki do vana z breloczkiem-syreną",
+  "wnetrze": [
+    {
+      "sekret_id": "d20_koperta_napiwki",
+      "co_widac": "W blaszanej syrenie schowek na zawleczkę, a w nim koperta z napiwkami: sześćdziesiąt dolarów, w drobnych, z karteczką „kurtka M.”.",
+      "co_z_tego_wynika": "Pieniądze są córki Tobiasa, nie jego. Zbierał je miesiącami."
+    }
+  ],
+  "wejscie": "Tobias Reed, kierowca firmowy. Zostawiłem w szóstce kluczyki do vana, z breloczkiem w kształcie syreny. Van stoi pod zajezdnią z towarem dla sklepu i bez kluczyków nie ruszy o szóstej.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ten breloczek?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Syrena z blachy, niebieska, z odłamanym ogonem. Dostałem od córki. Kluczyki są trzy, na kółku z kartą do bramy zajezdni.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie ich szukać?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W szóstce, na ostatnim siedzeniu przy oknie. Położyłem, jak zdejmowałem plecak, i wysiadłem w biegu. Typowe dla mnie, tylko że dziś piątek.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co jest w tym vanie, że tak Ci się spieszy?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Towar dla sklepu: chleb, jajka i dwie skrzynki mleka. Jak nie dowiozę do szóstej, sklep nie otworzy się na czas.",
+          "mina": "mowi"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Od jak dawna jeździsz?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Cztery lata. Prawie nie widuję dnia. Córka mówi, że jestem jak nietoperz z prawem jazdy.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto może potwierdzić, że van jest Twój?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Firma. Dyspozytor Mick, numer jest na karcie. Ale o tej porze śpi i nie odbierze.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu spieszysz się tak, jakby coś Cię goniło?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo gonią mnie minuty. Pięć minut spóźnienia i dyspozytor odejmuje z pensji. Przy mojej pensji to boli.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Czemu ten breloczek jest taki ciężki?",
+          "ton": "niewygodne",
+          "wymaga": "d20_koperta_napiwki",
+          "odpowiedz": "Bo w środku jest schowek. Trzymam tam napiwki od klientów, żeby ich nie wydać. Sześćdziesiąt dolarów na kurtkę dla córki.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz, jak odzyskasz kluczyki?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Pojadę po bułki. Potem na stację, wypiję kawę i poczuję się jak człowiek.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Jak zapisać Twoje nazwisko?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Reed, przez dwa e. Tobias, bez drugiego s, jak syrena bez ogona.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czy ktoś mógłby chcieć tych kluczyków?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nikt z firmy. Ale ktoś mógłby wziąć van i sprzedać towar. Zdarzało się. Dlatego pilnuję kluczy bardziej niż portfela.",
+          "mina": "mowi"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj",
+      "reakcja": "Są. Z ogonem albo bez, są. Dziękuję. Zdążę, chyba że zatrzymają mnie na świetle.",
+      "zysk": "Tobias zdąża z towarem, a sklep otwiera się na czas.",
+      "strata": "Wydajesz po opisie, bez dowodu, że van należy do niego.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Tobias Reed: „Zdążyłem. Sklep otworzył się o szóstej. Pani sprzedawczyni dała mi bułkę gratis. Powiedziałem, że to przez was.”"
+      }
+    },
+    {
+      "akcja": "odmow",
+      "reakcja": "Nie? Jak to nie? Dobrze, zadzwonię po Micka, ale on będzie wściekły. Wrócę z jego potwierdzeniem.",
+      "zysk": "Procedura zachowana, kluczyki zostają w biurze.",
+      "strata": "Tobias spóźnia się z towarem, a dyspozytor odejmuje mu z pensji.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Tobias Reed: „Mick dostał mnie o piątej. Potwierdził. Straciłem czterdzieści minut i dwadzieścia dolarów. Mówię bez złości, ale z żalem.”"
+      }
+    },
+    {
+      "akcja": "wez_60_tobias",
+      "etykieta": "Zatrzymaj 60 $ napiwków z breloczka",
+      "kasa": 60,
+      "wymaga": "d20_koperta_napiwki",
+      "reakcja": "Kluczyki są. A koperta? Przecież była w syrenie… Nie, nic. Muszę jechać. Dziękuję.",
+      "zysk": "60 $ w kieszeni i dług u Marlowa o rację mniejszy.",
+      "strata": "Tobias traci kurtkę dla córki, a Ty wiesz, że wziąłeś pieniądze od człowieka, który nic nie ma. Liczy się do zakończenia Nowy Sam.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Tobias Reed: „Koperta zniknęła razem z kluczykami, a kluczyki wróciły. Nie powiem, że to wy. Powiem, że kurtka dla córki poczeka do wypłaty.”"
+      }
+    }
+  ],
+  "rola": "kierowca dostawczy z grafikiem",
+  "watki": [
+    "pieniądze"
+  ],
+  "tik": "skraca nazwy ulic",
+  "potrzeba": "kluczyki do vana przed szóstą",
+  "slad": "ukryte napiwki na kurtkę dla jego córki"
+}
+```
 
 # TYDZIEŃ 5: DOMKNIĘCIA
 
@@ -3217,10 +3516,170 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Priya Nair: „Zdążyłam. W taksówce otworzyłam walizkę i sprawdziłam. Wstążka się zgadzała. Wiem, że mogło być inaczej.”"
       }
     }
-  ]
+  ],
+  "rola": "trzy kobiety i dwie walizki",
+  "watki": [
+    "Zaginiona",
+    "Fotel"
+  ],
+  "tik": "Maya liczy, Lena „ale…”",
+  "potrzeba": "suknia, wiadomość i ślub o jedenastej",
+  "slad": "bilet 0517 w zamykanej kieszeni walizki Mai"
 }
 ```
 
+
+**Mina Oh.** Potrzeba: lek o ósmej i śniadanie z wnuczką. Lęk: cudzy koszyk. Tik: mówi wszystko dwa razy. Moment gwiazdy: „Śliwki to winogrona, które się przebrały.”
+
+```json
+{
+  "id": "d21_mina",
+  "dzien": 21,
+  "postac": "Mina Oh, 68",
+  "glos": "Spokojnie i z uporem. Mówi do rzeczy tak, jak mówi się do kota: cierpliwie i dwa razy.",
+  "typ": "emerytka, która pilnuje leków",
+  "rzecz": "Wiklinowy koszyk z lekami i słoikiem śliwek",
+  "wnetrze": [
+    {
+      "sekret_id": "d21_recepta",
+      "co_widac": "Na dnie koszyka recepta na nazwisko M. Oh i paragon z apteki: 94 $ za miesiąc leków na serce. Pod spodem druga, nieopłacona.",
+      "co_z_tego_wynika": "Mina płaci za leki z oszczędności. Drugiego miesiąca nie starczy."
+    }
+  ],
+  "wejscie": "Mina Oh, emerytka. Zostawiłam w czwórce wiklinowy koszyk z lekami na serce i słoikiem śliwek dla wnuczki. Lek muszę wziąć o ósmej rano. Słyszałam, że w biurze stoją dwa podobne koszyki, więc proszę mi nie dać cudzego.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda Twój koszyk?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Wiklinowy, z pokrywką na rzemyk. Rzemyk zawiązałam podwójnym węzłem, bo pierwszy zawsze się rozwiązuje. Wewnątrz serwetka w kratkę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co jest w środku?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Leki, jedno opakowanie na miesiąc. Słoik śliwek z pestkami, wnuczka nie lubi bez pestek. I paragon z apteki.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu nie wzięłaś koszyka z tramwaju od razu?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo zasnęłam. Człowiek w moim wieku zasypia, jak mu się pozwoli. Teraz pamiętam, że pozwoliłam.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Na paragonie jest kwota 94 dolarów. To dużo jak na leki.",
+          "ton": "niewygodne",
+          "wymaga": "d21_recepta",
+          "odpowiedz": "Dużo. Emerytura starcza na dwa tygodnie, a reszta idzie z oszczędności. Nie narzekam, tylko liczę.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Dla kogo jest ten słoik?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Dla Zoe, wnuczki. Ma siedem lat i twierdzi, że śliwki to owoce, które się przebrały za winogrona.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Kto może potwierdzić, że koszyk jest Twój?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Apteka na Rynku, farmaceutka Anja. Zna mnie od lat, ale o tej porze już śpi.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Czemu boisz się cudzego koszyka?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo raz wzięłam cudzy i wzięłam cudze tabletki. Dobrze, że to były witaminy. Od tamtej pory sprawdzam podwójnie.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz po odzyskaniu koszyka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Wezmę lek, a potem zrobię sobie herbatę. Zoe przyjdzie na śniadanie z mamą, więc słoik musi być cały.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Jak zapisać Twoje nazwisko?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Oh, przez „h” na końcu. Mina, od Wilhelminy. Tak mnie nazwano przed wojną, której nie pamiętam.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co, jeśli koszyk się nie znajdzie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "To pójdę do Anji o ósmej i poproszę na kreskę. Nie pierwszy raz, a Anja nie pyta.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj",
+      "reakcja": "Rzemyk podwójny, serwetka w kratkę. To mój. Dziękuję. Wnuczka dostanie śliwki, a ja lek o ósmej.",
+      "zysk": "Mina odzyskuje lek i słoik, a Zoe ma śniadanie.",
+      "strata": "Wydajesz po opisie, a drugi koszyk dalej stoi w kącie bez właściciela.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Mina Oh: „Wzięłam lek o ósmej. Zoe zjadła śliwki z pestkami i powiedziała, że to najlepsze winogrona. Nic nie wiem o tym drugim koszyku.”"
+      }
+    },
+    {
+      "akcja": "zadzwon",
+      "etykieta": "Zadzwoń do apteki i potwierdź receptę",
+      "reakcja": "O tej porze? Dobrze, apteka na Rynku ma dyżur nocny. Dziękuję, że sprawdzacie, nikt tak nie robi.",
+      "zysk": "Recepta potwierdzona, koszyk wydany bez wątpliwości.",
+      "strata": "Mina czeka dłużej, a lek bierze później niż o ósmej.",
+      "echo": {
+        "za_dni": 1,
+        "forma": "gosc",
+        "tekst": "Mina Oh: „Anja potwierdziła przez telefon. Powiedziała, że ktoś w biurze pracuje porządnie. Zapisała mnie na stałe, na kreskę.”"
+      }
+    },
+    {
+      "akcja": "wyloz_94",
+      "etykieta": "Wydaj koszyk i dołóż 94 $ na lek na następny miesiąc",
+      "kasa": -94,
+      "wymaga": "d21_recepta",
+      "reakcja": "Nie prosiłam o to. Nie wezmę. …Wezmę, bo Zoe będzie na śniadaniu, a ja nie będę liczyć dni do końca miesiąca. Dziękuję.",
+      "zysk": "Mina ma lek na dwa miesiące i spokojną głowę.",
+      "strata": "Tracisz 94 $ z własnej kieszeni, a do soboty jest daleko. Liczy się do zakończenia Nowy Sam.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Mina Oh: „Wczoraj wzięłam drugie opakowanie. Zoe narysowała dla Ciebie śliwkę z pestką. Zostawiam przy szybie. — M.O.”"
+      }
+    }
+  ],
+  "rola": "emerytka pilnująca leków",
+  "watki": [
+    "pieniądze",
+    "humor"
+  ],
+  "tik": "mówi wszystko dwa razy",
+  "potrzeba": "koszyk z lekiem na ósmą",
+  "slad": "paragon 94 $ za miesiąc leków"
+}
+```
 
 ## DZIEŃ 22
 
@@ -3295,8 +3754,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Czy Evan wie, że to oświadczenie istnieje?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Nie ode mnie. Czyli w kolejce stoi człowiek w szarym kapeluszu, który nie jest od nas. Wygląda na kogoś, kto przeczyta wszystko, co zapiszecie.",
-          "mina": "klamie"
+          "odpowiedz": "Nie. I niech tak zostanie. Ale w kolejce stoi ktoś w szarym kapeluszu, a on pyta o to samo.",
+          "mina": "mowi"
         }
       ]
     },
@@ -3363,7 +3822,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Noah Reyes: „Kartkę z zakresem zgody widziałem w aktach po raz drugi. Ktoś kopiował, nie ja. Sprawdzam, kto. — N.R.”"
       }
     }
-  ]
+  ],
+  "rola": "policjant zamykający zgłoszenie",
+  "watki": [
+    "Zaginiona"
+  ],
+  "tik": "mówi „Czyli:”",
+  "potrzeba": "oświadczenie Mai przed terminem",
+  "slad": "zakres zgody Mai: wolno tylko potwierdzić, że żyje"
 }
 ```
 
@@ -3509,7 +3975,16 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Evan Doyle: „Detektyw wie, którą linią i o której. Zapłacił za to, a Ty nie wiesz komu. Dzwonię, bo nie potrafię przestać. — E.D.”"
       }
     }
-  ]
+  ],
+  "rola": "detektyw udający zgłaszającego",
+  "watki": [
+    "Zaginiona",
+    "Urząd",
+    "pieniądze"
+  ],
+  "tik": "mówi „zgodnie z regulaminem”",
+  "potrzeba": "kwit z kierunkiem Mai",
+  "slad": "200 $ za trop i walizka Mai"
 }
 ```
 
@@ -3657,7 +4132,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Kuba Marlow, przez kuzyna: „Rata sobotnia przyszła z innej ręki niż Jonaha. Dziękuję. Ręka też zostaje zapisana. — K.M.”"
       }
     }
-  ]
+  ],
+  "rola": "kurier z dobrą wiadomością i długiem",
+  "watki": [
+    "Marlow",
+    "pieniądze"
+  ],
+  "tik": "zwalnia na imieniu June",
+  "potrzeba": "koperta K.M. z 90 $",
+  "slad": "rata dla Marlowa w Twoich rękach"
 }
 ```
 
@@ -3736,7 +4219,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "iris",
-          "odpowiedz": "Spokojnie. Nie lubię naciskać, więc nie naciskam. Czekam, aż ktoś sam zrozumie, że tak jest najlepiej.",
+          "odpowiedz": "Spokojnie. Nie naciskam. Czekam, aż ktoś sam zrozumie, że tak jest najlepiej.",
           "mina": "mowi"
         },
         {
@@ -3772,7 +4255,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "iris",
-          "odpowiedz": "Dziś każdy dostaje bilet. Ty też. Ale nie z mojej ręki, dopóki ktoś nie usiądzie. Nie lubię naciskać. Wolę poczekać.",
+          "odpowiedz": "Dziś każdy dostaje bilet. Ty też. Ale nie z mojej ręki, dopóki ktoś nie usiądzie. Wolę poczekać.",
           "mina": "emocja"
         },
         {
@@ -3796,7 +4279,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "iris",
-          "odpowiedz": "Pięćset dolarów. Nie lubię naciskać, ale lubię porządek. Wsunę kopertę pod szybę i nikt nie musi nic mówić.",
+          "odpowiedz": "Pięćset dolarów. Lubię porządek. Wsunę kopertę pod szybę i nikt nie musi nic mówić.",
           "mina": "neutralna",
           "ustawia": "d23_oferta_500"
         }
@@ -3834,7 +4317,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "iris_prywatnie",
       "etykieta": "Domknij prywatne wydanie Iris, bez protokołu",
       "kto": "iris",
-      "reakcja": "Dziękuję. Nie lubię naciskać, ale cieszy mnie, że się rozumiemy. Zapomnijmy, że byłam dziś w kolejce. Za godzinę jadę.",
+      "reakcja": "Dziękuję. Cieszy mnie, że się rozumiemy. Zapomnijmy, że byłam dziś w kolejce. Za godzinę jadę.",
       "zysk": "Iris wyjeżdża cicho, a Ty zostajesz czysty w protokole i czysty wobec Nory.",
       "strata": "Czternaście rodzin zostaje bez dowodu, a w okienku ktoś jeszcze odpowiada za to, co zniknęło.",
       "echo": {
@@ -3849,7 +4332,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "kasa": 500,
       "wymaga": "d23_oferta_500",
       "kto": "iris",
-      "reakcja": "Dziękuję. Pięćset, na szybie, bez podpisu. Nie lubię naciskać, ale uwielbiam rozumienie. Nikt się nie dowie, że tu byłam.",
+      "reakcja": "Dziękuję. Pięćset, na szybie, bez podpisu. Uwielbiam rozumienie. Nikt się nie dowie, że tu byłam.",
       "zysk": "500 $ i spokój w okienku, Iris znika bez śladu.",
       "strata": "Czternaście rodzin bez dowodu, Nora składa skargę do Victora (Urząd +2), a wzięta koperta wraca w zakończeniu.",
       "echo": {
@@ -3858,7 +4341,17 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Nora Vance: „Iris była przy szybie z kopertą. Nie wiem, ile. Nikt mi nie powiedział. Nie piszę, żeby oskarżać. Piszę, żeby wiedzieć.”"
       }
     }
-  ]
+  ],
+  "rola": "trzy strony jednej kasetki",
+  "watki": [
+    "Skrytka",
+    "Fotel",
+    "kamienica",
+    "Urząd"
+  ],
+  "tik": "Iris „drobna przysługa”",
+  "potrzeba": "kasetka z oryginałami przed zamknięciem",
+  "slad": "Iris siedziała w fotelu osiem lat temu"
 }
 ```
 
@@ -3940,7 +4433,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": "d23_portfel_rosa",
           "odpowiedz": "To nie moje. Kartka musiała tam trafić w tramwaju. Albo ktoś mi ją podrzucił. Nie dotykam. Nie chcę być tą, która zobaczyła.",
-          "mina": "klamie"
+          "mina": "emocja"
         }
       ]
     },
@@ -4007,7 +4500,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Rosa Vale: „Przeliczyłam portfel w domu. Dwadzieścia mniej. Nie przychodzę z pretensją. Przychodzę, żeby wiedzieć, że wiem.”"
       }
     }
-  ]
+  ],
+  "rola": "praczka, która liczy i milczy",
+  "watki": [
+    "kamienica",
+    "pieniądze"
+  ],
+  "tik": "liczy na głos",
+  "potrzeba": "portfel z czynszem 60 $",
+  "slad": "kartka „6 800 / 4” od Iris"
 }
 ```
 
@@ -4190,7 +4691,16 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Vera Kovacs: „Szafka otwarta, teczka pusta, list wyjęty. Spokojnie. Nie powiem nikomu, że widziałam. Powiem tylko, że byłam.”"
       }
     }
-  ]
+  ],
+  "rola": "zaplecze, które przychodzi się przyznać",
+  "watki": [
+    "Fotel",
+    "Skrytka",
+    "Poprzednik"
+  ],
+  "tik": "dzwoni kluczami",
+  "potrzeba": "oddać klucz do szafki 0809",
+  "slad": "od jedenastu lat wybiera, kto siądzie w fotelu"
 }
 ```
 
@@ -4340,7 +4850,15 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Vera Kovacs: „Leo wrócił z wykazem. Powiedział, że okienko odesłało. Nie zdziwiłam się. Zdziwiłam się, że ulżyło.”"
       }
     }
-  ]
+  ],
+  "rola": "konduktor z ostatnim wykazem",
+  "watki": [
+    "Skrytka",
+    "Fotel"
+  ],
+  "tik": "patrzy na torbę",
+  "potrzeba": "torba z wykazem paczek",
+  "slad": "pozycja 0809: dokumenty czekają na dyżurnego, czyli Ciebie"
 }
 ```
 
@@ -4488,7 +5006,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Victor Crane: „W księdze pojawił się wpis wsteczny, trzy tygodnie temu, bez numeru kwitu. Do wyjaśnienia. — V.C.”"
       }
     }
-  ]
+  ],
+  "rola": "staruszek ze świadectwem dla Sama",
+  "watki": [
+    "Poprzednik"
+  ],
+  "tik": "dziś nie żartuje",
+  "potrzeba": "świadectwo przyjęte do akt",
+  "slad": "kwit 0417 domyka rękawiczkę z dnia 1"
 }
 ```
 
@@ -4668,7 +5193,16 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Victor Crane: „Odnotowano zniszczenie dokumentu w obecności trzech osób. Brak wpisu. Przyjęto do wiadomości. Rozliczenie zamknięte z adnotacją. — V.C.”"
       }
     }
-  ]
+  ],
+  "rola": "trzej mężczyźni i jedno etui",
+  "watki": [
+    "Poprzednik",
+    "Fotel",
+    "Urząd"
+  ],
+  "tik": "Elias składa numerek",
+  "potrzeba": "etui z kopią decyzji",
+  "slad": "w rubryce „następca” puste pole i 0809"
 }
 ```
 
@@ -4833,7 +5367,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "tekst": "Elias Wren: „Czy ktoś wyjechał? Pytam, bo numerek składam. Nie wiem, dlaczego mnie to tak trzyma za gardło.”"
       }
     }
-  ]
+  ],
+  "rola": "księga otwarta na linii 0809",
+  "watki": [
+    "Fotel"
+  ],
+  "tik": "Elias składa numerek",
+  "potrzeba": "żeby ktoś zapisał imię",
+  "slad": "cztery gesty do wyboru na Twojej linii"
 }
 ```
 
