@@ -41,7 +41,7 @@ To jest to samo, co robi Papers, Please (porównanie słów z papierem), ale nas
 
 1. **Tropy.** Każda rzecz gościa ma 3 do 4 cechy (kolor, rozmiar, znak szczególny, zawartość). Cechę znam dopiero wtedy, gdy gość ją wypowie. W magazynie zamiast gotowego opisu widzę kartkę „Z rozmowy” z tym, co usłyszałem, i pustymi polami na resztę.
 2. **Bliźniaki.** Obok właściwej rzeczy leżą 2 do 3 podobne, różne jedną cechą. Kliknięcie rzeczy to oględziny (karta z cechami), nie wybór. Wybór to położenie na ladzie.
-3. **Koszt wyboru.** Pytań jest mniej niż tematów. Dopytanie przez szybę kosztuje cierpliwość gościa. Zła rzecz na ladzie kosztuje więcej. Gość, który wyjdzie, to brak 40 $.
+3. **Koszt wyboru.** Pytań jest mniej niż tematów. Dopytanie przez szybę kosztuje cierpliwość gościa. Zła rzecz na ladzie kosztuje więcej. Gość, który wyjdzie, to brak 40 $. Noc ma zegar: każde pytanie to 10 minut, oględziny 3, pomyłka 15. Kto zdąży przed szóstą, obsługuje jeszcze ludzi z kolejki (bezimienni, sama hałda, 20 $ za sztukę). Ciekawość kosztuje więc pieniądze, a tłum bez imion robi tło dla ludzi z imieniem (CD2, prawo 3).
 4. **Kłamstwo wychodzi z rozmowy i z rzeczy.** Bez stingu. Oszust podaje cechy, które nie zgadzają się z żadną rzeczą, albo zna tylko wierzch. Sekret znaleziony przed otwarciem daje pytanie, na które uczciwy odpowie, a kłamca nie.
 5. **Pomyłka zostaje w świecie.** Wydana zła rzecz wraca echem (prawdziwy właściciel przy okienku), a nie komunikatem „źle”.
 
