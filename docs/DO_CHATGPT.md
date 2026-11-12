@@ -1,6 +1,6 @@
 # DO CHATGPT: co wkleić i co załączyć (stan 12.11.2026)
 
-Cztery paczki, każda w OSOBNYM, NOWYM czacie ChatGPT (jeden czat = jedna paczka). Kolejność: 1 → 2 → 3 → 4. Pliki do załączenia leżą w folderze projektu (`/mnt/project-files/`) albo w repo `dunnoxox/L-F`; ścieżki poniżej sprawdzone, wszystkie istnieją.
+Cztery paczki, każda w OSOBNYM, NOWYM czacie ChatGPT (jeden czat = jedna paczka). Kolejność: 1 → 2 → 3 → 4. Nic nie musisz załączać: czat ma GitHuba, więc pod każdą paczką jest linijka `REFERENCJE`. Wklej ją NA POCZĄTKU, przed promptem (repo `dunnoxox/L-F`, branch `main`; wszystkie ścieżki sprawdzone, pliki istnieją). Jeśli czat nie umie otworzyć obrazu z repo, wtedy załącz go ręcznie.
 
 | # | Paczka | Wynik | Wrzuć do | Nazwy plików |
 |---|--------|-------|----------|--------------|
@@ -17,7 +17,13 @@ Jeśli ChatGPT się zatnie, napisz "dalej". Jeśli wyjdzie sepia, szarość albo
 
 ## 1. PORTRETY: poprawki + Ines i Evan
 
-**Czat:** nowy. **Załącz 8 plików** (wszystkie w jednym ZIP-ie `/mnt/project-files/art_referencje_portrety/poprawki_portrety_ref.zip`, rozpakuj i dołącz): `G06-ada.png`, `G15-grace.png`, `G19-billie.png`, `G23-sylvia.png`, `G25-kofi.png`, `G11-stahl.png`, `L4-twarze.png`, `B1-wdowiec.png`. (G* są też w repo: `art/portrety_goscie/`.) Potem wklej blok:
+**Czat:** nowy. Wklej najpierw (zamiast załączania 8 plików):
+
+```
+REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 8 obrazów i traktuj jako załączniki: art/portrety_goscie/G06-ada.png, G15-grace.png, G19-billie.png, G23-sylvia.png, G25-kofi.png, G11-stahl.png oraz art/portrety_referencje/L4-twarze.png i art/lostfraud_art5/B1-wdowiec.png.
+```
+
+Potem wklej blok:
 
 ```
 Jesteś dyrektorem artystycznym gry. W tej rozmowie wygeneruj 6 obrazów, jeden po drugim, bez pytania o zgodę i bez streszczeń: 4 poprawione portrety i 2 nowe. Pod każdym obrazem napisz tylko etykietę, np. "G15 gotowe 1/6". Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i kontynuuj od następnego.
@@ -53,12 +59,11 @@ REFERENCJE (załączone): G06-ada.png, G15-grace.png, G19-billie.png, G23-sylvia
 
 ## 2. FOTOGRAFIE PRZEDMIOTÓW, BLANKIETY, NARZĘDZIA (26 obrazów)
 
-**Czat:** nowy. **Załącz 5 plików:**
-1. `/mnt/project-files/lostfraud_art6/Z1.png`
-2. `/mnt/project-files/lostfraud_art6/W3.png`
-3. `/mnt/project-files/lostfraud_art5/C4.png`
-4. `/mnt/project-files/lostfraud_art4/K4-portfel.png`
-5. `/mnt/project-files/lostfraud_art4/L4-twarze.png`
+**Czat:** nowy. Wklej najpierw (zamiast załączania 5 plików):
+
+```
+REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 5 obrazów i traktuj jako załączniki, w tej kolejności: art/lostfraud_art6/Z1.png, art/lostfraud_art6/W3.png, art/lostfraud_art5/C4.png, codex/okienko_fx/refs_visual/K4-portfel.jpg, art/portrety_referencje/L4-twarze.png.
+```
 
 **Wynik:** `/mnt/project-files/lostfraud_art7/`, etykiety `KB1.png … KB4.png`, `KN1.png`, `FP01.png … FP12.png`, `FG01.png … FG09.png`. Wklej blok:
 
@@ -110,9 +115,15 @@ FG09 PRAWA RĘKAWICZKA: starsza dłoń trzyma jedną skórzaną rękawiczkę zsz
 
 ## 3. CZTERY BRAKUJĄCE GRAFIKI (kask, koszyk, księga wydań, kot)
 
-**Czat:** nowy. **Załącz 4 pliki** (rozpakuj `/mnt/project-files/gpt_brakujace_4/referencje_brakujace_4.zip`): `C1.png`, `C2.png`, `K4-portfel.png`, `T1.png`. Potem wklej blok:
+**Czat:** nowy. Wklej najpierw (zamiast załączania 4 plików):
 
-**Wynik (2 obrazy):** `/mnt/project-files/lostfraud_art7/Z8.png` (kask, koszyk, księga otwarta i zamknięta) oraz `/mnt/project-files/lostfraud_art7/KOT.png` (trzy pozy kota). Wątek gry wytnie do `game/assets/items/`.
+```
+REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 4 obrazy i traktuj jako załączniki: art/lostfraud_art5/C1.png, art/lostfraud_art5/C2.png, codex/okienko_fx/refs_visual/K4-portfel.jpg, art/lostfraud_art5/T1.png.
+```
+
+Potem wklej blok:
+
+**Wynik (2 obrazy; pobierz z ChatGPT i wrzuć do projektu, bo czat tych plików do repo raczej nie wypchnie):** `/mnt/project-files/lostfraud_art7/Z8.png` (kask, koszyk, księga otwarta i zamknięta) oraz `/mnt/project-files/lostfraud_art7/KOT.png` (trzy pozy kota). Wątek gry wytnie do `game/assets/items/`.
 
 ```
 Generuję dwa ostatnie arkusze zasobów do gry, po kolei w tym jednym czacie. Pracuj samodzielnie: wygeneruj obraz 1, potem obraz 2, bez pytania o zgodę, bez streszczeń, bez łączenia obrazów. Pod każdym obrazem tylko etykieta: "Z8 gotowe 1/2", "KOT gotowe 2/2". Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i po mojej odpowiedzi kontynuuj. Na końcu napisz jednym zdaniem, czy któryś obraz odszedł od stylu.
