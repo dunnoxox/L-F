@@ -232,6 +232,13 @@
           "wymaga": null,
           "odpowiedz": "Moje, ołówkiem: Vale, przez V. I kwota w rogu, 129. Dziewiątka wygląda jak ósemka, ale to dziewiątka.",
           "mina": "neutralna"
+        },
+        {
+          "tekst": "Co jest w środku oprócz pieniędzy?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Kartka z naszymi nocami, złożona na pół. Kierownik wypisuje na niej, kto ile przerobił.",
+          "mina": "neutralna"
         }
       ]
     },

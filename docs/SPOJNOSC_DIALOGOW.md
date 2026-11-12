@@ -2,14 +2,14 @@
 
 Wygenerowane przez `node qa/spojnosc_dialogow.js`. Automat tylko wskazuje podejrzane miejsca; o tym, czy para pytanie/odpowiedź gra, decyduje czytanie (`--pelny PLIK` daje wypis wszystkich węzłów).
 
-Scen: 55, par pytanie/odpowiedź: 632. W nowym zapisie (drzewo wątków): 34 scen, w starym (trzy sztywne tury): 21.
+Scen: 55, par pytanie/odpowiedź: 633. W nowym zapisie (drzewo wątków): 34 scen, w starym (trzy sztywne tury): 21.
 
 | flaga | drzewa | stare tury | co znaczy |
 |---|---|---|---|
 | PROZNIA | 28 | 75 | opcja nie zaczepia się o poprzednią kwestię gościa na którejś ścieżce |
 | WIEDZA | 1 | 118 | opcja zakłada nazwę albo liczbę, której gracz nie musiał usłyszeć |
-| LUZNE | 123 | 45 | opcja nawiązuje do rozmowy, ale nie do końcówki żadnej odpowiedzi (miękkie) |
-| OBOK | 259 | 154 | odpowiedź bez wspólnego słowa z pytaniem (miękkie, sprawdzić ręcznie) |
+| LUZNE | 124 | 45 | opcja nawiązuje do rozmowy, ale nie do końcówki żadnej odpowiedzi (miękkie) |
+| OBOK | 260 | 154 | odpowiedź bez wspólnego słowa z pytaniem (miękkie, sprawdzić ręcznie) |
 | KALKA | 0 | 0 | zwrot jak z tłumaczenia |
 | PLEC | 0 | 0 | gracz dostaje płeć albo pan/pani |
 | DLUGIE | 0 | 0 | za długa kwestia |
@@ -39,6 +39,8 @@ Scen: 55, par pytanie/odpowiedź: 632. W nowym zapisie (drzewo wątków): 34 sce
 - **OBOK** 1: „Jak wygląda ta koperta?” -> „Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.…”
 - **OBOK** 1.1: „Jest na niej jakieś nazwisko?” -> „Moje, ołówkiem: Vale, przez V. I kwota w rogu, 129. Dziewiątka wygląda jak ósemka, ale to …”
 - **LUZNE** 1.1: dopytanie „Jest na niej jakieś nazwisko?” nie zaczepia się o: „…Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.”
+- **OBOK** 1.2: „Co jest w środku oprócz pieniędzy?” -> „Kartka z naszymi nocami, złożona na pół. Kierownik wypisuje na niej, kto ile przerobił.…”
+- **LUZNE** 1.2: dopytanie „Co jest w środku oprócz pieniędzy?” nie zaczepia się o: „…Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.”
 - **OBOK** 2: „Gdzie i o której ją zgubiłaś?” -> „W jedenastce, o szóstej rano, po nocce. Położyłam ją obok, żeby zapiąć torbę, i przysnęłam…”
 - **OBOK** 2.1: „Po nocce? To od której jesteś na nogach?” -> „Od wczoraj, od dziewiątej wieczorem. Potem mała do szkoły, potem tutaj. Śpię w tramwajach …”
 - **LUZNE** 2.1: dopytanie „Po nocce? To od której jesteś na nogach?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Położyłam ją obok, żeby zapiąć torbę, i przysnęłam. Obudziłam się na pętli, już bez koperty.”

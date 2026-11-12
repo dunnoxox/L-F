@@ -35,6 +35,8 @@
 = m Brązowa, z jedną zszywką. Zszywka wbita krzywo, bo kierownik zszywa na stojąco i w biegu.
  ? r Jest na niej jakieś nazwisko?
  = n Moje, ołówkiem: Vale, przez V. I kwota w rogu, 129. Dziewiątka wygląda jak ósemka, ale to dziewiątka.
+ ? r Co jest w środku oprócz pieniędzy?
+ = n Kartka z naszymi nocami, złożona na pół. Kierownik wypisuje na niej, kto ile przerobił.
 ? r Gdzie i o której ją zgubiłaś?
 = n W jedenastce, o szóstej rano, po nocce. Położyłam ją obok, żeby zapiąć torbę, i przysnęłam. Obudziłam się na pętli, już bez koperty.
  ? u Po nocce? To od której jesteś na nogach?
