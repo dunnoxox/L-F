@@ -1,0 +1,490 @@
+# Karty gości, dni 1–10 (wyciąg dla Gemini)
+
+Wygenerowane z `koncept/okienko_rozmowy_v3_dni1-10.md`. Tu są fakty, których nie wolno zmieniać. Rozmowy są w osobnych plikach `dni01-05.txt` i `dni06-10.txt`.
+
+## d1_thomas · dzień 1 · Thomas Ward, 71
+- Głos: Grzecznie, trochę staroświecko. Żartuje z własnej drżącej ręki.
+- Tik: żartuje z drżącej ręki
+- Typ: uczciwy, wstydliwy
+- Potrzeba: lewa rękawiczka żony na niedzielę
+- Rola: wdowiec, który kłamie ze wstydu
+- Ślad: kwit 0417 zdradza, że już tu był
+- Rzecz: Lewa skórzana rękawiczka, zszyta białą nitką przy kciuku
+- Wejście: Dobry wieczór. Thomas Ward. Zgubiłem lewą rękawiczkę mojej żony, w tramwaju czwórce. Ellen zmarła w lutym. W niedzielę idę na cmentarz i nie chcę iść z jedną.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d1_kwit_0417`: W mankiecie tkwi kwit z tego biura, numer 0417, sprzed sześciu tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę 41. Wniosek: Thomas już tu był i dostał coś, czego nigdzie nie zapisano. Poprzednik wydawał rzeczy poza księgą.
+  - `d1_biala_nic`: Przy kciuku rękawiczki biała nić, zszyta krzywo, ściegiem krawieckim, a pod nią starsza, brązowa, przetarta. Wniosek: Ellen sama kiedyś zszyła rękawiczkę brązową nicią. Thomas położył na tym swoją, białą, żeby szew trzymał dłużej.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Thomas idzie w niedzielę na cmentarz z obiema rękawiczkami. Strata: Wydajesz na słowo i nitkę, a kwit 0417 zostaje w księdze bez wyjaśnienia.
+    - reakcja (linia !): „Dziękuję. Włożę je do jednej kieszeni, tam, gdzie były.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Dziękuję za rękawiczkę. W niedzielę jadę z Claire na cmentarz i położę obie na kamieniu, choćby na godzinę. Claire pyta, kim jest młody człowiek, który wcześniej oddał mi prawą bez papierka. Powiedziałem, że nie wiem, choć wiem. — T. Ward
+  - `zatrzymaj_sprawdz` (Zatrzymaj do sprawdzenia tożsamości). Zysk: Rękawiczka zostaje w biurze, dopóki ktoś nie potwierdzi, kim jest Thomas. Strata: Starszy człowiek wraca do domu z jedną rękawiczką, a niedziela na cmentarzu jest zagrożona.
+    - reakcja (linia !): „Rozumiem. Przyjdę jutro z córką, ona ma dowód i wie, jak wygląda ta nitka.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Claire Ward: „Ojciec dwa dni nie wychodził z domu. Proszę oddać mu tę rękawiczkę, podpiszę za niego. I proszę mi powiedzieć, kto wcześniej oddał mu prawą bez żadnego papieru.”
+  - `wydaj_bez_wpisu` (Wydaj bez wpisu, tak jak zrobił to Sam). Zysk: Thomas ma obie rękawiczki od ręki i nikt się nie dowie, że biuro znów wydało coś poza księgą. Strata: Powtarzasz to, co robił poprzednik. Wydanie nie zostawia śladu i zalicza się do rachunku „bez wpisu”.
+    - reakcja (linia !): „Dziękuję. Tak samo jak ostatnio: bez papierka. Młody człowiek też tak powiedział.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Thomas Ward: „Mówiłem Claire, że w tym biurze ludzie wydają od ręki. Nie powiedziałem jej, że to wasz drugi raz bez papierka.”
+
+## d1_rosa · dzień 1 · Rosa Vale, 33
+- Głos: Zmęczona, praktyczna, liczy na głos. Krótkie zdania, suchy humor.
+- Tik: liczy na głos
+- Typ: uczciwa, ale nie ma jak tego udowodnić
+- Potrzeba: 129 $ na czynsz do jutra
+- Rola: praczka z kopertą wypłaty
+- Ślad: nazwisko I. Bell na odcinku wypłat
+- Rzecz: Brązowa koperta z wypłatą, jedna zszywka
+- Wejście: Dobry wieczór. Rosa Vale, pracuję w pralni pod estakadą. Zgubiłam kopertę z wypłatą, 129 dolarów, w jedenastce. Jutro mam czynsz, więc to cały mój tydzień.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d1_lista_nocy`: W kopercie jest 129 dolarów i kartka z listą nocy: trzy odhaczone, czwarta przekreślona. Na odcinku zbiorczym stoi nazwisko I. Bell. Wniosek: Wypłatę odbierała i rozdzielała Iris Bell. Czwartą noc Rosy skreśliła Iris.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Rosa ma czynsz na jutro, a w księdze jest jej podpis pod kwotą 129 dolarów. Strata: Odcinek zbiorczy jest wystawiony na Iris Bell, więc w papierach wypłata należała do kogoś innego, niż ją odbiera.
+    - reakcja (linia !): „Przeliczę przy szybie. Sto dwadzieścia dziewięć, zgadza się. Dziękuję, serio.”
+    - kartka o świcie (linia >), forma list, po 1 dn.: Iris zeszła do pralni i spytała, kto mi pozwolił odbierać pieniądze przez okienko. Powiedziałam, że nikt, że sama zgubiłam kopertę. Od przyszłego tygodnia odbieram wypłatę osobiście, bez niej. — Rosa
+  - `odmow` (). Zysk: Koperta wraca do osoby wskazanej na odcinku, czyli do Iris, zgodnie z przepisem. Strata: Rosa płaci dwadzieścia dolarów kary za spóźniony czynsz.
+    - reakcja (linia !): „No to pięknie. Jutro czynsz, a ja z pustymi rękami. Przyjdę rano z kierownikiem, niech on poświadczy.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Iris oddała mi kopertę z potrąceniem: sto dziewięć dolarów. Dwadzieścia za spóźniony czynsz, który sama pobiera. Powiedziała, że to formalność. — Rosa
+  - `wez_20` (Wydaj, ale odlicz sobie 20 $ „za fatygę”) kasa 20 $. Zysk: Dostajesz 20 dolarów do kieszeni, które nikomu nie zostały zapisane. Strata: Rosie brakuje dwudziestu dolarów do czynszu, a Iris nalicza jej za to jeszcze karę.
+    - reakcja (linia !): „Sto dziewięć? Zaraz, przeliczę jeszcze raz. ...Brakuje dwudziestu dolarów. Nie powiem nic, bo kto mi uwierzy.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: W kopercie brakowało mi dwudziestu dolarów. Iris naliczyła karę za spóźniony czynsz, drugie dwadzieścia. Cztery dychy w plecy przez jedną noc. Nie mówię, że ktoś wziął. Mówię, że brakuje. — Rosa
+
+## d2_jonah · dzień 2 · Jonah Pike, 22
+- Głos: Mówi szybko, poprawia się w pół zdania. Kiedy pada imię June, zwalnia.
+- Tik: zwalnia na imieniu June
+- Typ: uczciwy, zdenerwowany
+- Potrzeba: plecak z pierścionkiem na siódmą rano
+- Rola: kurier z pierścionkiem na raty
+- Ślad: raty zdradzają dług, który ma Marlow
+- Rzecz: Czarny plecak z pękniętą klamrą
+- Wejście: Cześć, Jonah. Zgubiłem plecak w jedenastce, czarny, z pękniętą klamrą. Potrzebuję go przed siódmą rano, bo w kieszeni jest coś ważnego. Naprawdę ważnego.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d2_paragon_raty`: W pudełku w kieszeni na plecach leży pierścionek z małym oczkiem. Obok paragon: wpłacone 40 dolarów, 200 zostało do spłaty w ratach. Na serwetce trzy wersje oświadczyn, dwie przekreślone. Wniosek: Jonah o siódmej rano chce się oświadczyć, a pierścionek kupił na raty. Pierścionek jest wart w lombardzie około 150 dolarów.
+  - `d2_serwetka_trzy`: W kieszeni plecaka serwetka z trzema wersjami oświadczyn, dwie przekreślone. Pod spodem paragon z lombardu na pierścionek na raty, 150 $. Wniosek: Jonah ćwiczy oświadczyny, a pierścionek kupił na raty, więc obie rzeczy są jego tajemnicą.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Jonah wraca do domu z pierścionkiem i ma noc na ćwiczenie oświadczyn. Strata: Plecak wychodzi po samym opisie i podpisie, nikt nie sprawdził pudełka w kieszeni.
+    - reakcja (linia !): „Dzięki! Serio, dzięki. Lecę, zanim się rozmyślę.”
+    - kartka o świcie (linia >), forma list, po 1 dn.: Jonah: „Zdążyłem. O siódmej zapytałem June, serwetka została w kieszeni. Trzymaj kciuki, jeśli masz kciuki.”
+  - `odmow` (). Zysk: Plecak zostaje w biurze do czasu dowodu własności. Strata: Jonah może nie zdążyć do siódmej, a June zauważy, że coś jest nie tak.
+    - reakcja (linia !): „Co? Ale to MÓJ plecak! Dobrze, dobrze, wrócę z kimś, kto potwierdzi.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Jonah: „Odebrałem plecak dopiero rano, spóźniłem się. June chyba się domyśla. Pierścionek nadal mam.”
+  - `wez_pierscionek` (Zatrzymaj pierścionek, plecak wydaj) kasa 150 $. Zysk: Pierścionek jest wart w lombardzie około 150 dolarów, niemal tygodniowy czynsz. Strata: Jonah zgłasza kradzież na komisariacie, a oświadczyny rano upadają. Policja zapyta, kto miał plecak.
+    - reakcja (linia !): „Dziękuję, lecę. ...Eee, a pudełko? Jest puste! Zaraz, gdzie...? Ja... idę na policję.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Noah Reyes: „Był tu mężczyzna z plecakiem. Zgłosił kradzież pierścionka z plecaka, który odebrał z biura rzeczy znalezionych. Czyli: jedno biuro, jedno nocne okienko. Zapiszę.”
+
+## d2_hana · dzień 2 · Hana Moreau, 26
+- Głos: Mówi starannie, jakby recytowała. Przy kłamstwie podkreśla każdą sylabę.
+- Tik: mówi jak recytacja
+- Typ: sympatyczna kłamczyni
+- Potrzeba: skrzypce na przesłuchanie o ósmej
+- Rola: skrzypaczka z cudzymi skrzypcami
+- Ślad: wypożyczenie z konserwatorium skończyło się już wczoraj
+- Rzecz: Czarny sztywny futerał na skrzypce z zieloną naklejką
+- Wejście: Dobry wieczór. Hana Moreau, skrzypaczka. Zgubiłam futerał ze skrzypcami w czwórce. O ósmej rano mam przesłuchanie do orkiestry i bez tych skrzypiec nie mam po co przychodzić.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d2_etykieta_wyp`: Pod pokrywą futerału przyklejona kartka: „Własność Konserwatorium. Wypożyczone H. Moreau do 7 sierpnia.” Dziś jest 10 sierpnia. Wniosek: Skrzypce nie są Hany. Jej wypożyczenie skończyło się wczoraj.
+  - `d2_naklejka_zielona`: Na zewnątrz futerału zielona naklejka z numerem inwentarzowym 0334 i pieczątką Konserwatorium, częściowo zdrapana paznokciem. Wniosek: Hana próbowała zdrapać numer inwentarzowy, żeby futerał wyglądał na jej własny.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Hana zagra przesłuchanie i ma szansę dostać miejsce w orkiestrze. Strata: Oddajesz instrument konserwatorium komuś, komu wypożyczenie wygasło w sobotę.
+    - reakcja (linia !): „Dziękuję. W czwartek pójdę do komisji, obiecuję. Najpierw zagram.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Zagrałam. Nikt nie wiedział, że skrzypce są po terminie. Dziś po południu komisja przedłużyła mi wypożyczenie do końca roku. Przepraszam za zamieszanie. — H. Moreau
+  - `odmow` (). Zysk: Skrzypce wracają do prawdziwego właściciela, czyli do konserwatorium. Strata: Hana traci przesłuchanie i miejsce na liście.
+    - reakcja (linia !): „Rozumiem. Skrzypce należą do konserwatorium. Powiedz im chociaż, że sama się zgłosiłam.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Konserwatorium odebrało skrzypce i podziękowało za sumienność. Na przesłuchaniu zagrał ktoś inny. Ja gram teraz na altówce koleżanki w piwnicy. Dyplom mam. Orkiestry nie. — H. Moreau
+
+## d2_ines · dzień 2 · Ines Calloway, 61
+- Głos: Spokojna, sucha, mówi tonem urzędniczki na emeryturze. Poprawia innych, zanim skończą zdanie.
+- Tik: poprawia innych przed końcem zdania
+- Typ: uczciwa, z ukrytym celem
+- Potrzeba: parasol i zgoda na ogłoszenie na słupie
+- Rola: emerytka z ogłoszeniami o kocie
+- Ślad: kartka o kocie w rączce, odpowiedzi na słupie
+- Rzecz: Czarny parasol z rączką w kształcie kaczki
+- Wejście: Ines Calloway. Zgubiłam parasol z rączką w kształcie kaczki, w czwórce, wczoraj. Poza tym chciałabym zapytać, czy wolno mi wieszać ogłoszenia na słupie przy wejściu. Kot, rudy, od zimy.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d2_parasol_kartka`: W rączce parasola zwinięta kartka: „Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu.” Rączka ma ślad kleju od taśmy. Wniosek: Ines wiesza ogłoszenia o kocie na słupie. Kota nie ma. Ktoś odpowiada na te kartki i zostawia coś w okienku.
+- Decyzje gracza:
+  - `ines_potwierdz` (Potwierdź ogłoszenie i przybij pieczątkę okienka). Zysk: Parasol wraca do Ines, a ogłoszenie ma pieczątkę, więc nikt go nie zdejmie. Strata: Okienko jest teraz widoczne na słupie, a ktoś przeczyta pieczątkę jako zaproszenie.
+    - reakcja (linia !): „Dziękuję. Z pieczątką nikt go nie zerwie. Gdyby ktoś zostawił dla mnie odpowiedź, proszę jej nie czytać, tylko odłożyć.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Ines Calloway: „Ktoś odpowiedział na kartkę. Zostawił coś pod okienkiem. Proszę nie otwierać przy ludziach. — I.C.”
+  - `ines_odmow` (Wydaj parasol, ogłoszenia odmów). Zysk: Okienko nie robi za tablicę ogłoszeń i nikt nie zapyta o słup. Strata: Ines znajdzie inny słup, a kartki będą wisieć dalej, tylko bez Twojej wiedzy.
+    - reakcja (linia !): „Rozumiem. Powieszę na innym słupie. Szkoda, wasz stał najlepiej.”
+    - kartka o świcie (linia >), forma list, po 4 dn.: Ines Calloway: „Powiesiłam kartkę na innym słupie. Odpowiedzi też tam przychodzą. Dziękuję za parasol. — I.C.”
+  - `ines_zdejmij` (Wydaj parasol i zdejmij ogłoszenie ze słupa). Zysk: Słup przy wejściu jest czysty, a do biura nikt nie przynosi kartek. Strata: Ktoś czekał na odpowiedź na tym słupie i nie dostanie jej.
+    - reakcja (linia !): „Zdejmiecie też to, co już wisi? Tam są cudze odpowiedzi, nie tylko moje kartki. No dobrze. Przynajmniej wiem, na kogo tu trafiłam.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Mężczyzna w szarym kapeluszu: „Zgodnie z regulaminem. Szukałem kartki o kocie. Słup jest pusty. Zapiszę, kto go opróżnił.”
+
+## d3_maz_i_siostra · dzień 3 · Evan Doyle, 37, i Lena Brandt, 31
+- Głos: Evan: grzecznie, pełnymi zdaniami, wraca do tego samego pytania. Lena: szybko, urywa, mówi za dużo.
+- Tik: Evan poprawia mankiet
+- Typ: Evan kłamie, Lena mówi prawdę
+- Potrzeba: telefon Mai z jedną wiadomością
+- Rola: mąż i szwagierka po telefon Mai
+- Ślad: SMS „Nie wracaj do domu” rozdziela ich
+- Rzecz: Czarny telefon w skórzanym etui z odklejonym rogiem
+- Mówiący (pole ~kto): maz = Evan, siostra = Lena
+- Wejście (maz): Dobry wieczór. Evan Doyle, a to Lena, siostra mojej żony. Oboje przyszliśmy po telefon Mai, która zaginęła w czwartek. Zostawiła go w jedenastce. Policja daje sprawie czas do wtorku, siódmego września, a potem ją zamyka. Nie mamy czasu.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d3_telefon_wiadomosc`: Na ekranie wisi wiadomość od „Lena” z czwartku, 23:48: „Nie wracaj do domu. Jadę po ciebie w sobotę.” Pod etui złożone stare zdjęcie dwóch dziewczynek, podpisane „Maya i Lena”. Wniosek: To telefon Mai. Siostra kazała jej nie wracać do męża, a telefon został w tramwaju po tej wiadomości.
+- Decyzje gracza:
+  - `wydaj_evan` (Wydaj telefon Evanowi). Zysk: Telefon trafia do policji z podpisem Evana w księdze. Czyste wydanie, nikt nie ma do ciebie pretensji. Strata: Evan przeczyta SMS od Leny i pójdzie do niej z awanturą, a Lena ci tego nie zapomni.
+    - reakcja (linia !): „Dziękuję. Idę z tym do Reyesa. Lena, nie patrz tak.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Evan był u mnie wieczorem. Przeczytał wiadomość i krzyczał na klatce, aż sąsiadka wyszła. Powiedział, że biuro wydało mu telefon, więc teraz wie wszystko. — Lena
+  - `wydaj_lena` (Wydaj telefon Lenie). Zysk: Lena zabiera telefon i wiadomość nie dociera do Evana. Strata: Evan zostaje bez śladu po żonie i przestaje ufać biuru.
+    - reakcja (linia !): „Dziękuję. Zabieram go do siebie. Evan, nie patrz tak na mnie, to rodzinne.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Evan Doyle: „Wydano telefon mojej żony komuś innemu. Chcę wiedzieć komu i na jakiej podstawie. Jestem jej mężem.”
+  - `zatrzymaj` (Zatrzymaj telefon dla Mai). Zysk: Telefon leży w biurze, nikt go nie czyta. Strata: Evan i Lena wychodzą z niczym, a Maya nie wiadomo czy po telefon wróci.
+    - reakcja (linia !): „To znaczy, że nikt go nie dostanie? A jeśli ona po niego nie przyjdzie?”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Noah Reyes: „Doyle dzwoni do mnie co godzinę, że telefon żony jest w biurze i go nie wydają. Czyli: wiem, gdzie jest. Nie mówię, że to źle.”
+  - `wez_100_evan` (Wydaj telefon Evanowi i przyjmij od niego 100 $) kasa 100 $. Zysk: Dostajesz 100 dolarów do ręki, czyli większość raty dla Kuby. Strata: Telefon idzie do Evana bez podpisu i bez wpisu. Lena widzi kopertę, a Evan zapamięta, że biuro ma cenę, i w przyszłym tygodniu przyjdzie po więcej.
+    - reakcja (linia !): „Proszę. Cieszę się, że się rozumiemy. Lena, idziemy.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Lena Brandt: „Widziałam, jak Evan podał kopertę, a okienko ją wzięło. Nie wiem już, komu tu wierzyć.”
+
+## d3_dana · dzień 3 · Dana Ruiz, 38
+- Głos: Głośno, prosto, bez owijania. Mówi o budziku jak o koledze z pracy.
+- Tik: mówi głośno i prosto
+- Typ: uczciwa, rozbrajająca
+- Potrzeba: budzik na czwartą rano
+- Rola: mechaniczka z ukochanym budzikiem
+- Ślad: dwie minuty oddechu po ciężkiej scenie
+- Rzecz: Blaszany budzik z dwoma dzwonkami
+- Wejście: Cześć, Dana Ruiz, mechanik w zajezdni. Zgubiłam budzik w szóstce, taki blaszany, z dwoma dzwonkami. Bez niego nie wstanę na czwartą, a w zajezdni nikt nie czeka, jak ktoś się spóźni.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d3_rachunek_budzik`: Pod tylną pokrywką budzika złożony rachunek z warsztatu: 18 $ za wymianę mechanizmu, na dole dopisek „dzwonek do wymiany”. Wniosek: Dana naprawia stary budzik zamiast kupić nowy. Dwanaście lat to jej jedyny zegar i jej strach, że zaśpi.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Dana wstanie na czwartą piętnaście i zdąży do zajezdni. Strata: Nic cię to nie kosztuje, poza dwiema minutami kolejki.
+    - reakcja (linia !): „Dzięki! Czwarta piętnaście, słyszysz, budziku? Bez ciebie nie ruszam.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Dana Ruiz: „Wpadłam tylko powiedzieć dzięki. Budzik działa, sąsiad się obudził, ja też.”
+  - `odmow` (). Zysk: Budzik zostaje w biurze do potwierdzenia. Strata: Dana nie wstanie na czwartą i spóźni się do pracy, a w zajezdni nikt jej nie wybroni.
+    - reakcja (linia !): „Co? Ale przecież to mój budzik! No dobra, przyniosę kogoś z zajezdni, żeby potwierdził.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Dana Ruiz: „Spóźniłam się do pracy o czterdzieści minut. Przełożony zapisał. A ja zapamiętam, kto mi nie oddał budzika.”
+
+## d4_iris · dzień 4 · Iris Bell, 56
+- Głos: Cicho, uprzejmie, ze zdrobnieniami. Prosi o „drobną przysługę”, a groźbę podaje jak prognozę pogody.
+- Tik: „drobna przysługa” zamiast groźby
+- Typ: presja i łapówka
+- Potrzeba: paczka w płótnie z kasetką
+- Rola: zarządczyni z kopertą za fatygę
+- Ślad: 120 $ w szufladzie albo zwrot
+- Rzecz: Płaska paczka w szarym płótnie, przewiązana sznurkiem
+- Wejście: Dobry wieczór. Iris Bell, zarządzam kamienicą przy Cooper Street dziewięć. Zgubiła mi się paczka w szarym płótnie, w szóstce, ostatnim kursem. Drobiazg, ale lokatorzy czekają na nią do rana.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d4_blankiet_kasetka`: Pod płótnem leży kasetka na kłódkę, przez szparę widać brzeg paszportu z wyciętą stroną. Obok blankiet z numerem odbioru 0412 i dopisek „dla nocnej zmiany, bez wpisu”. Wniosek: To nie są papiery lokatorów, tylko dokumenty dla kogoś, kto chce zniknąć. Poprzednik przyjmował takie paczki bez wpisu.
+- Decyzje gracza:
+  - `rejestr` (Wydaj paczkę i zapisz w księdze). Zysk: Księga jest czysta, a paczka wychodzi do Iris z jej podpisem. Strata: Księgę czyta Victor, więc Iris i paczka 0412 są teraz na papierze. Iris ci tego nie zapomni.
+    - reakcja (linia !): „Dziękuję. Pełny wpis, jak widzę. Bardzo oficjalnie, ale dobrze.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Paczka dotarła. Dziękuję za pełny wpis. Poprzedni współpracownik nie był tak skrupulatny, może to i lepiej. Ja lubię wiedzieć, z kim pracuję. — I. Bell
+  - `koperta` (Wydaj i przyjmij kopertę 120 $ (bez wpisu)) kasa 120 $. Zysk: Dostajesz 120 dolarów, prawie tygodniowy czynsz. Strata: Paczka wychodzi bez wpisu, jak za poprzednika, a ty zaczynasz być w układzie Iris.
+    - reakcja (linia !): „Miło. Rozumiemy się bez zbędnych słów.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Dziękuję za dyskrecję. W przyszłym tygodniu przyniosę jeszcze jedną paczuszkę. Będzie bardzo drobna. — I. Bell
+  - `odmow_zglos` (Odmów i zgłoś paczkę do kontroli). Zysk: Paczka leży w depozycie. Nikt jej nie dostaje i nikt nie zarzuci ci układu. Strata: Iris traci cierpliwość, a ktoś, kto miał jutro jechać, może nie pojechać.
+    - reakcja (linia !): „Rozumiem. Przepisy to przepisy. Proszę tylko zapisać, że miałam dobre intencje. Rano zajmą się mną inni, mniej cierpliwi. To nie groźba, tylko prognoza pogody.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Iris Bell: „Rano zgłosiło się do mnie dwóch lokatorów, pytali, gdzie są ich dokumenty. Powiedziałam, że biuro zatrzymało je z powodu procedury. Nie byli zadowoleni.”
+
+## d5_noah · dzień 5 · Noah Reyes, 42
+- Głos: Spokojnie, powtarza po swojemu: „Czyli: …”. Kiedy coś pomija, mówi: „To moje zmartwienie.”
+- Tik: mówi „Czyli:” i pomija
+- Typ: uczciwy, pomija zamiast kłamać
+- Potrzeba: notes z zeznaniem Evana
+- Rola: policjant po notes z zeznaniem
+- Ślad: wątpliwości co do Evana zostają niewypowiedziane
+- Rzecz: Czarny służbowy notes na spirali, wgnieciony z lewej strony
+- Wejście: Noah Reyes, komisariat przy Rynku. Zgubiłem służbowy notes, czarny, na spirali, w jedenastce. Mam w nim zeznanie Evana Doyle'a w sprawie jego żony Mai i potrzebuję go na dziś.
+- Wejście, gdy flaga `d3_maz_i_siostra:wydaj_evan`: Noah Reyes, komisariat. Zgubiłem służbowy notes, czarny, na spirali, w jedenastce. Są w nim zeznania Doyle'a. Wiem, że telefon jego żony wydano jemu, więc muszę wiedzieć, co z nim zrobił.
+- Wejście, gdy flaga `d3_maz_i_siostra:wez_100_evan`: Noah Reyes, komisariat. Zgubiłem służbowy notes, czarny, na spirali, w jedenastce. Są w nim zeznania Doyle'a. Wiem, że telefon jego żony wydano jemu, więc muszę wiedzieć, co z nim zrobił.
+- Wejście, gdy flaga `d3_maz_i_siostra:wydaj_lena`: Noah Reyes, komisariat. Zgubiłem służbowy notes, czarny, na spirali, w jedenastce. Telefon Mai Doyle wydano jej siostrze, nie mężowi. Doyle jest wściekły i dzwoni do mnie co godzinę.
+- Wejście, gdy flaga `d3_maz_i_siostra:zatrzymaj`: Noah Reyes, komisariat. Zgubiłem służbowy notes, czarny, na spirali, w jedenastce. Telefon Mai Doyle został u was. Doyle dzwoni do mnie co godzinę, a ja nie wiem, co mu odpowiadać.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d5_notes_ulotki`: W notesie notatka: „E.D. zamówił ulotki z twarzą żony w czwartek o 22:15. Zgłoszenie zaginięcia złożył w piątek o 6:10.” Wniosek: Evan zamówił ulotki wcześniej, niż zgłosił zaginięcie. Wiedział, że żona odeszła.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Noah ma notes i wie, że biuro oddaje to, co należy. Strata: Noah dopytuje o telefon i będzie wracał z pytaniami o Maję.
+    - reakcja (linia !): „Dziękuję. Czyli: notes wraca. Jak będę potrzebował kogoś, kto zapisuje godziny, będę wiedział, gdzie szukać.”
+    - kartka o świcie (linia >), forma gosc, po 1 dn.: Noah Reyes: „Notes odebrany, dziękuję. Gdyby ktoś jeszcze pytał o telefon Mai, zapisz godzinę i daj mi znać.”
+  - `zadzwon` (Zadzwoń na komisariat, żeby potwierdzili). Zysk: Masz potwierdzenie z komisariatu, że to notes Noaha. Strata: Noah wie, że sprawdzasz nawet policję, i nie lubi czekać.
+    - reakcja (linia !): „Dzwoń. Numer dwanaście. Dyżurny potwierdzi, że notes jest mój.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Dyżurny z komisariatu potwierdził: notes N. Reyesa. Dziękujemy za czujność. Następnym razem wystarczy minuta. — Komisariat przy Rynku
+
+## d5_victor · dzień 5 · Victor Crane, 51
+- Głos: Krótkie pytania, zero rozmów o pogodzie. Zawsze: „Kto może to podpisać?” Pokwitowanie w dwóch egzemplarzach.
+- Tik: pyta „Kto to podpisze?”
+- Typ: kontroler jawny
+- Potrzeba: teczka kontroli do rozliczenia
+- Rola: inspektor, który rozlicza księgę
+- Ślad: dopisy innym tuszem wskazują na Sama
+- Rzecz: Szara teczka kontroli zapinana na klamrę
+- Wejście: Victor Crane, inspekcja przewozów. Zgubiłem teczkę kontroli, szarą, na klamrę, w szóstce. O siódmej rano rozliczam tydzień z księgą wydań. Czy ktoś ją tu oddał?
+- Wejście, gdy flaga `d4_iris:koperta`: Victor Crane, inspekcja przewozów. Zgubiłem teczkę kontroli, szarą, na klamrę, w szóstce. O siódmej rozliczam tydzień z księgą wydań, a w tym tygodniu brakuje w niej jednej paczki. Czy ktoś oddał teczkę?
+- Wejście, gdy flaga `d4_iris:odmow_zglos`: Victor Crane, inspekcja przewozów. Zgubiłem teczkę kontroli, szarą, na klamrę, w szóstce. Rozliczam tydzień z księgą wydań, a u was w depozycie leży paczka, którą chcę zobaczyć. Czy ktoś oddał teczkę?
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d5_wykaz_dopisany`: W teczce wykaz wydań z poprzedniej zmiany. Pozycje „prawa rękawiczka T. Ward” i „paczka bez wpisu” dopisano innym tuszem. Obok parafa V.C. Wniosek: Victor dopisał obie pozycje sam, po fakcie. Wie o wydaniach poprzednika od dawna.
+- Decyzje gracza:
+  - `wykaz_paczke` (Wydaj teczkę i wykaż paczkę 0412). Zysk: Księga i magazyn się zgadzają, audyt idzie bez opóźnień. Strata: Paczka ma numer i będzie miała właściciela. Ktoś po nią przyjdzie, a Iris dowie się, kto ją wystawił.
+    - reakcja (linia !): „Dziękuję. Dwa egzemplarze pokwitowania. Wpis: paczka 0412 w depozycie biura, dla właściciela.”
+    - kartka o świcie (linia >), forma list, po 1 dn.: Paczka 0412 zapisana, protokół w dwóch egzemplarzach. Do piątku proszę o dokumenty z poprzednich zmian. — V. Crane
+  - `potwierdz_wpis` (Wydaj teczkę i potwierdź wczorajszy wpis o paczce 0412). Zysk: Księga się zgadza i Victor zamyka tydzień bez pytań. Strata: Victor widzi, że paczka z kasetką poszła do Iris, i zacznie dopytywać, co w niej było.
+    - reakcja (linia !): „Wpis jest. Paczka 0412 wydana Iris Bell, z podpisem. Dwa egzemplarze.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Wpis o paczce 0412 zgodny z księgą. Do piątku proszę o dokumenty z poprzednich zmian. — V. Crane
+  - `spis_bez_paczki` (Wydaj teczkę, potwierdź spis bez paczki). Zysk: Dziś spokój: Victor zamyka tydzień, a Iris i jej klient nie są wystawieni. Strata: W spisie brakuje paczki, a Victor zostaje z podejrzeniem, że coś przechodzi obok księgi.
+    - reakcja (linia !): „Spis zgodny. Dwa egzemplarze. Dziwne, że tydzień zgadza się co do sztuki.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Spis przyjęty. Tydzień zgodny co do sztuki, co mnie niepokoi. Wrócę do tej księgi. — V. Crane
+
+## d5_gus · dzień 5 · Gus Pell, 55
+- Głos: Cicho, grzecznie ze strachu, rozgląda się. Zaczyna zdania od „tylko”.
+- Tik: zaczyna zdania od „tylko”
+- Typ: uczciwy-wstydliwy i łapówka
+- Potrzeba: portfel przed odjazdem o 5:40
+- Rola: mężczyzna w szlafroku z dwoma dowodami
+- Ślad: żeton 0412 i gotówka za zdjęciem
+- Rzecz: Brązowy, wytarty portfel na zatrzask
+- Wejście: Dobry wieczór. Wiem, jak wyglądam: szlafrok pod płaszczem, bo wyszedłem z domu w pośpiechu. Zgubiłem portfel w jedenastce, brązowy, wytarty. O 5:40 jadę stąd jedenastką i bez portfela nie wsiądę.
+- Wejście, gdy flaga `d5_victor:wykaz_paczke`: Dobry wieczór. Gus Pell. Ludzie gadają, że u was leży paczka z numerem 0412, ale ja przyszedłem tylko po portfel, brązowy, wytarty, z jedenastki. O 5:40 jadę stąd i bez niego nie ruszę.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d5_dwa_dowody`: W portfelu są dwa dowody osobiste: Gustaw Pell i August Ferro, z tym samym zdjęciem. Do tego zdjęcie dziewczynki i bilet w jedną stronę na dziś, 5:40. Wniosek: Gus ma dwie tożsamości i wyjeżdża o świcie. Wygląda na to, że ktoś mu to załatwił.
+  - `d5_gotowka_400`: Za zdjęciem dziewczynki, w przegródce, zwinięte banknoty: dwie stówki i pięćdziesiątka. Wniosek: Gus ma 250 dolarów na wyjazd. To wszystko, co ma. Mówił o dwudziestu.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Gus wychodzi z portfelem i dwoma dowodami, o 5:40 wsiada do jedenastki. Strata: Nie wiesz, który dowód jest prawdziwy, a w księdze zostaje tylko wpis „Pell”.
+    - reakcja (linia !): „Dziękuję. Zapomnijmy, że byłem w szlafroku.”
+    - kartka o świcie (linia >), forma list, po 4 dn.: Pocztówka z miasta, którego nazwy nie znam: „Dziękuję za portfel. Pell już nie istnieje. — G.”
+  - `odmow` (). Zysk: Portfel zostaje w biurze razem z dwoma dowodami. Strata: Gus nie wsiądzie do jedenastki i wraca do domu w szlafroku, a jego sprawa jest otwarta.
+    - reakcja (linia !): „Rozumiem. Wrócę z kimś, kto za mnie poręczy. Tylko proszę nie dzwonić nigdzie.”
+    - kartka o świcie (linia >), forma list, po 3 dn.: Do biura zadzwoniła żona Gusa Pella: mąż zniknął, zostawił tylko klucze i trzy dolary. Pyta, czy ktoś go widział. Zapisano: brak informacji.
+  - `zadzwon` (Zadzwoń po dyżurnego policjanta). Zysk: Dyżurny przyjmie zgłoszenie, a oba dowody trafią do protokołu. Strata: Gus ucieknie, zanim ktoś przyjdzie, a w protokole zostanie pusta rubryka „właściciel”.
+    - reakcja (linia !): „Proszę, bez policji. To nie jest sprawa dla policji.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Z komisariatu: portfel z dwoma dowodami wpisano do ewidencji, właściciel się nie zgłosił. Dziękujemy za czujność. — N. Reyes
+  - `wez_250_gus` (Wydaj portfel, ale zatrzymaj 250 $ z przegródki) kasa 250 $. Zysk: Dostajesz 250 dolarów, prawie raty dla Kuby na cztery tygodnie, a Gus nie ma jak się z tobą kłócić. Strata: Gus jedzie bez grosza, z dwoma dowodami, a jeśli ktoś go zatrzyma po drodze, powie, że okradło go okienko.
+    - reakcja (linia !): „Dziękuję. Zaraz… nie, nic. Do widzenia.”
+    - kartka o świcie (linia >), forma list, po 3 dn.: Z komisariatu: mężczyzna zatrzymany na dworcu, posługuje się dokumentem „Ferro”, twierdzi, że z jego portfela zniknęło 250 dolarów. Prosimy o wyjaśnienie. — N. Reyes
+
+## d6_ada · dzień 6 · Ada Vale, 10
+- Głos: Dosłownie, jak dziecko. Liczy kroki i kamienie. Kiedy się boi, mówi szeptem.
+- Tik: liczy kroki do słupka
+- Typ: uczciwa, wie za dużo
+- Potrzeba: kwit za znalezionego królika
+- Rola: dziesięciolatka, która wie za dużo
+- Ślad: widziała puszkę z ruchomym dnem u Iris
+- Rzecz: Szary pluszowy królik z uchem doszytym czerwoną nitką
+- Wejście: Dobry wieczór, jestem Ada, mam dziesięć lat. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze, bo mama mówi, że bez kwitu nie wiadomo.
+- Wejście, gdy flaga `d1_rosa:wydaj`: Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama mówi, że dostała od was całą wypłatę. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.
+- Wejście, gdy flaga `d1_rosa:odmow`: Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama dostała mniej wypłaty, ale mówi, że to nie wasza wina. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.
+- Wejście, gdy flaga `d1_rosa:wez_20`: Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze.
+- Wejście, gdy flaga `d1_rosa:przywlaszcz`: Dobry wieczór, jestem Ada, córka Rosy z pralni. Mamie zginęła w tramwaju cała wypłata i nikt jej nie oddał, więc teraz bierze dodatkowe noce. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze, bo ja oddaję.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d6_karteczka_krolik`: Pod doszytym uchem karteczka, pismo dorosłe: „Dla Zuzi, od taty. Jak się zgubi, niech ktoś odda.” Wniosek: Królik należy do dziewczynki o imieniu Zuzia, a ktoś dorosły przewidział, że się zgubi.
+- Decyzje gracza:
+  - `wpisz_w_biurze` (Wpisz Adę jako znalazczynię, dane zostają w biurze). Zysk: Ada ma dowód, że zrobiła dobrze, i bardzo się cieszy. Strata: Biuro ma jej adres w księdze, a Iris jest administratorką tej kamienicy i do księgi zagląda.
+    - reakcja (linia !): „Mam kwit! Pokażę go pani w szkole. Napisali moje nazwisko dużymi literami.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Iris Bell: „Słyszałam, że moja mała lokatorka została wpisana w księdze jako znalazczyni. Jak miło z jej strony. Dobrze wiedzieć, kto u kogo bywa.”
+  - `list_przewozowy` (Przekaż zgłoszenie razem z listem przewozowym). Zysk: Królik idzie oficjalnym obiegiem, a Urząd dostaje papier z numerem. Strata: Dane Ady krążą po urzędach, a Iris jako administratorka kamienicy je zobaczy.
+    - reakcja (linia !): „A to znaczy, że jak ktoś po niego przyjdzie, to dowie się, że to ja? To chyba dobrze.”
+    - kartka o świcie (linia >), forma list, po 3 dn.: Rosa: „Dostałyśmy pismo z Urzędu z nazwiskiem Ady. Iris powiedziała, że to formalność, ale patrzyła na mnie jak na gołębia na parapecie. Za tydzień może być wypowiedzenie. — Rosa”
+  - `wydaj_bez_wpisu` (Daj Adzie karteczkę „dobrze zrobiłaś”, bez wpisu). Zysk: Ada ma kwit, a nikt nie zna jej adresu. Strata: Królik leży w biurze bez wpisu, a ty robisz to samo, co poprzednik z rękawiczką.
+    - reakcja (linia !): „O! Z podpisem! Pokażę mamie i pani w szkole. Dziękuję.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Ada Vale: „Pokazałam karteczkę pani w szkole. Powiedziała, że to nie jest oficjalny kwit, ale że jest ładnie napisany. Wzięła go do gabloty.”
+
+## d6_leo · dzień 6 · Leo Marsh, 46
+- Głos: Mówi godzinami i przystankami. Żartuje z żony. Patrzy na pusty nadgarstek.
+- Tik: patrzy na pusty nadgarstek
+- Typ: uczciwy, milczy o puszce
+- Potrzeba: zegarek z grawerem na kursy
+- Rola: konduktor zagubiony bez zegarka
+- Ślad: dopisek „puszka” zmienia cały rejestr kursu
+- Rzecz: Mosiężny zegarek kieszonkowy z łańcuszkiem
+- Wejście: Dobry wieczór. Leo Marsh, konduktor szóstki. Zgubiłem zegarek kieszonkowy, mosiężny, z łańcuszkiem. Bez niego kursów nie pilnuję. Dopiero na pętli sięgnąłem do kieszeni, a tam nic.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d6_zegarek_list`: Pod wieczkiem zegarka wsunięta karteczka z wykazu zmiany. Dopisek długopisem: „+ puszka (b.n.)”. Wniosek: Leo przyjął puszkę bez nadawcy i dopisał ją do wykazu, żeby nie mieć kłopotów.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Leo odzyskuje zegarek i jedzie następne kursy punktualnie. Strata: Puszka bez nadawcy zostaje w jego wykazie bez wyjaśnienia.
+    - reakcja (linia !): „Dzięki. O 22:47 nie spojrzę już na pusty nadgarstek. Żona będzie zadowolona, jak jej powiem.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Leo Marsh: „Zegarek chodzi równo. Żona powiedziała, że przez trzy dni byłem człowiekiem bez czasu. Przepraszam, że tyle mówiłem o godzinach.”
+  - `zatrzymaj` (Zatrzymaj zegarek do wyjaśnienia puszki). Zysk: Zegarek leży w biurze razem z karteczką o puszce, więc Leo wróci i będzie musiał odpowiedzieć. Strata: Leo jedzie bez zegarka i może spóźnić dwa kursy.
+    - reakcja (linia !): „Co? To nie fair. Dobrze, wrócę. Ale kursy poczekają na mnie, nie na odwrót.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Leo Marsh: „Spóźniłem się o cztery minuty na ostatnim kursie. Szef zapisał. Nie mam żalu do zegarka, ale do czasu mam.”
+  - `wpisz_puszke` (Wydaj zegarek i dopisz puszkę do księgi). Zysk: Puszka ma ślad w księdze: kiedyś ktoś może ją odnaleźć i powiązać z blankietem z paczki Iris. Strata: Leo jest wystawiony: w księdze widać, że przyjął puszkę bez nadawcy.
+    - reakcja (linia !): „Dopisujesz? No... jak trzeba, to trzeba. Tylko niech nikt nie myśli, że wiem, od kogo.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Leo Marsh: „Ktoś pytał, skąd puszka w wykazie. Powiedziałem, że z księgi biura. Zrobiło się cicho. Może tak ma być.”
+
+## d7_kit · dzień 7 · Kit Navarro, 17
+- Głos: Krótko, sarkastycznie, „serio”. Slang, ale bez przesady.
+- Tik: mówi „serio”
+- Typ: uczciwy, boi się wylecieć
+- Potrzeba: słuchawki z kotem w kasku
+- Rola: praktykant, który boi się wylecieć
+- Ślad: widział zamówienie ulotek w czwartek 22:15
+- Rzecz: Czarne słuchawki nauszne z naklejką kota w kasku
+- Wejście: Cześć, Kit. Zgubiłem słuchawki w czwórce, takie nauszne, z kotem w kasku na muszli. Pracuję w kopiarni na Rynku i jak szef się dowie, że słuchałem muzyki przy ksero, to po mnie. Serio.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d7_tasma_banknot`: Pod taśmą na lewej muszli złożony banknot dwudolarowy i karteluszek: „Dla szefa, jak się dowie. Za ciszę.” Wniosek: Kit trzyma w słuchawkach łapówkę dla szefa na wypadek, gdyby go przyłapał.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Kit odzyskuje słuchawki i zostaje po twojej stronie. Strata: To, co powiedział o ulotkach, nie zostaje nigdzie zapisane.
+    - reakcja (linia !): „Dzięki, serio. Kot jedzie dalej. A tamten facet... jak coś będę widział, to wam powiem.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Kit Navarro: „Słuchawki grają. Szef nie zauważył. Ten w szarym płaszczu wrócił i zamówił kolejne tysiąc. Serio, zamówił. Powiedziałem mu, że maszyna się zepsuła.”
+  - `wydaj_i_zapisz` (Wydaj i zapisz jego zeznanie o ulotkach). Zysk: Zeznanie Kita o ulotkach jest w księdze: policjant może je potem sprawdzić. Strata: Kit zostaje świadkiem z nazwiskiem w księdze i może stracić pracę, jak szef się dowie.
+    - reakcja (linia !): „Zapisujesz? Serio? Okej, ale jak szef zobaczy moje nazwisko w księdze, to po mnie.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Noah Reyes: „W księdze jest zeznanie praktykanta z kopiarni o ulotkach. Czyli: godzina 22:15 się potwierdza. Dziękuję, że to ktoś zapisał.”
+  - `odmow` (). Zysk: Słuchawki zostają w biurze do czasu dowodu, że są Kita. Strata: Kit wraca do roboty bez muzyki i prawdopodobnie bez chęci mówienia o czymkolwiek.
+    - reakcja (linia !): „Co? Ale to moje! Serio. Dobra, przyniosę paragon, tylko że paragonu nie mam.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Kit Navarro: „Dziś w kopiarni było cicho. Ksero słychać, a muzyki nie. Serio, nie lubię tej ciszy.”
+
+## d7_evan · dzień 7 · Evan Doyle, 37
+- Głos: Grzecznie, pełnymi zdaniami, wraca do tego samego pytania. Poprawia mankiet, dziś wygnieciony do połowy.
+- Tik: poprawia wygnieciony mankiet
+- Typ: kłamca, zna godziny, o które nikt nie pytał
+- Potrzeba: klucze Mai i jej linia
+- Rola: mąż kłamca, który zna godziny
+- Ślad: ulotki zamówił, zanim zgłosił zaginięcie żony
+- Rzecz: Brązowe skórzane etui na klucze z zatrzaskiem
+- Wejście: Dobry wieczór. Evan Doyle, znowu. Zgubiły się klucze mojej żony, brązowe etui, zatrzask. Powiesz mi, którym tramwajem przyjechały? I chcę wiedzieć, gdzie je zostawiła.
+- Wejście, gdy flaga `d3_maz_i_siostra:wez_100_evan`: Dobry wieczór. Evan Doyle. Znamy się już, więc krótko: klucze mojej żony, brązowe etui. Powiesz mi, którym tramwajem przyjechały? Dogadaliśmy się już raz, więc chyba nie ma problemu.
+- Wejście, gdy flaga `d3_maz_i_siostra:wydaj_lena`: Dobry wieczór. Evan Doyle. Telefon żony wydaliście jej siostrze i do tej pory go nie widziałem. Poproszę więc o klucze, brązowe etui. Którą linią przyjechały?
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d7_etui_klucze`: W etui kartonik z inicjałami M.D. i dwa klucze: zwykły oraz mały, z wybitym numerem 14 na główce. Wniosek: Maya miała drugi klucz, do miejsca, o którym Evan nie wie. Zostawiła klucze celowo.
+- Decyzje gracza:
+  - `powiedz_linie` (Powiedz, którą linią przyjechały klucze). Zysk: Evan dostaje, o co prosi, i przestaje naciskać na biuro. Strata: Evan zacznie stać na pętli czwórki, a Maya straci tam spokój.
+    - reakcja (linia !): „Czwórka. Dziękuję. Stanę na pętli i poczekam. Chcę tylko porozmawiać, naprawdę.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Leo Marsh: „Na pętli czwórki stoi od wczoraj facet w płaszczu z termosem. Nie wsiada, tylko patrzy na każdego, kto wysiada. Ludzie schodzą mu z drogi.”
+  - `zatrzymaj_list` (Zatrzymaj etui, zaproponuj zapieczętowany list). Zysk: Zyskujesz czas: etui zostaje w biurze, a Evan może napisać do żony. Strata: Obiecujesz coś, czego nie możesz zagwarantować, bo Maya może nie przyjść.
+    - reakcja (linia !): „List? Dla niej? Dobrze, ale przecież ona go nie dostanie, prawda? Obiecasz mi to?”
+    - kartka o świcie (linia >), forma list, po 4 dn.: Evan Doyle: „Napisałem list i zostawiłem go przy okienku. Mam nadzieję, że ktoś go przekaże. Nie mam innego sposobu. — E.D.”
+  - `odmow` (). Zysk: Etui zostaje w biurze, a Evan nic nie wie o linii. Strata: Evan zostaje z niczym i wraca ostrzejszy.
+    - reakcja (linia !): „Czyli nic. Rozumiem. Wrócę jutro, a pojutrze znów. Proszę zapisać, że pytałem.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Evan Doyle: „Wróciłem, jak obiecałem. Nikt mi nie chciał powiedzieć, gdzie są klucze. Czyli mężowi się odmawia. Dobrze wiedzieć. Zapisałem godzinę.”
+
+## d8_lena_i_nora · dzień 8 · Lena Brandt i Nora Vance
+- Głos: Lena: szybko, urywa, „ale…”. Nora: po kolei, na palcach, „rzecz, osoba, skutek”.
+- Tik: Nora liczy: rzecz, osoba, skutek
+- Typ: dwie prawdy o jednej torbie
+- Potrzeba: torba narzędziowa albo kopia pokwitowania
+- Rola: siostra i prawniczka po jedną torbę
+- Ślad: kopia 400 $ w rozprutej podszewce
+- Rzecz: Szara torba narzędziowa z rozprutą podszewką
+- Mówiący (pole ~kto): siostra = Lena, nora = Nora
+- Wejście (nora): Dobry wieczór. Nora Vance, a to Lena Brandt. Obie przyszłyśmy po tę samą torbę narzędziową, szarą, z rozprutą podszewką. Lena twierdzi, że to torba jej siostry. Ja twierdzę, że w podszewce jest papier z kamienicy.
+- Wejście, gdy flaga `d3_maz_i_siostra:wydaj_evan`: Dobry wieczór. Nora Vance, a to Lena Brandt. Lena po awanturze z Evanem chce chociaż torbę siostry. Ja chcę z niej papier z kamienicy. Torba jest szara, z rozprutą podszewką.
+- Wejście, gdy flaga `d3_maz_i_siostra:wydaj_lena`: Dobry wieczór. Nora Vance, a to Lena Brandt. Lena ma już telefon siostry i chce jeszcze jej torbę. Ja chcę z niej papier z kamienicy. Torba jest szara, z rozprutą podszewką.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d8_torba_kopia`: W rozprutej podszewce leży żółta kopia pokwitowania zaliczek z podpisem „I.” i kwotą 400 dolarów. Obok narzędzia: obcęgi, śrubokręt, miara. Wniosek: Kopia dowodzi, że Iris Bell przyjęła 400 dolarów od lokatorów. Maya schowała ją na wszelki wypadek.
+- Decyzje gracza:
+  - `wydaj_lenie_cala` (Wydaj Lenie całą torbę). Zysk: Lena ma torbę siostry i spokojniej śpi. Strata: Nora traci dowód wpłaty rodziny Okoye, a bez żółtej kopii mają tylko jej słowo.
+    - reakcja (linia !): „Dziękuję. Mam coś po niej. A... Nora, przepraszam, ale to siostra.”
+    - kartka o świcie (linia >), forma gosc, po 4 dn.: Nora Vance: „Po kolei: kopia poszła z torbą do siostry Mai. Okoye znowu są bez dowodu. Wiem, że trzeba było wybrać. Tylko że zapłacą za to Okoye.”
+  - `kopia_osobno` (Zasłoń dane, zrób kopię osobno za zgodą obu). Zysk: Dowód zostaje w biurze, a Lena dostaje torbę, obie strony się zgodziły. Strata: Zajmuje to całą wizytę, a zasłonięte dane osłabiają dowód.
+    - reakcja (linia !): „Zgoda. Po kolei: kopia zasłonięta, torba dla Leny, dokument zostaje w biurze. Nie lubię tego, ale dobrze.”
+    - kartka o świcie (linia >), forma gosc, po 4 dn.: Nora Vance: „Kopia z zasłoniętymi nazwiskami leży u was. To mało, ale to jest dowód. Jak będzie trzeba, wrócę po numer pokwitowania.”
+  - `odmow` (). Zysk: Torba zostaje w biurze, nikt jej nie dostaje i nikt nie ma pretensji o stronniczość. Strata: Lena nie ma nic po siostrze, a Nora nie ma kopii. Obie odchodzą z pustymi rękami.
+    - reakcja (linia !): „Nic z tego? Torba leży w biurze? No to co, mamy czekać? Ale... dobrze.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Lena Brandt: „Torba leży u was, a ja o niej myślę każdą noc. Wiem, że przepisy. Ale to jej torba, a ja nie mam po niej nic innego.”
+
+## d8_bree · dzień 8 · Bree Halm, 29
+- Głos: Pewnie, szybko, do sprawy. Zaczyna od „Słuchaj, mam paragon”.
+- Tik: mówi „Słuchaj, mam paragon”
+- Typ: profesjonalistka, fałszywy tytuł do rzeczy
+- Potrzeba: srebrny aparat „brata”
+- Rola: kobieta z paragonem na wszystko
+- Ślad: aparat Okoye i oferta 80 $
+- Rzecz: Srebrny analogowy aparat z wgnieceniem w lewym rogu
+- Wejście: Cześć, Bree. Słuchaj, mam paragon. Zgubiłam aparat brata w jedenastce, srebrny, analogowy, z wgnieceniem w rogu. Brat leży w szpitalu i bardzo chce go odzyskać. Potrzebuję go dziś.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d8_aparat_naklejka`: Pod osłoną baterii wydrapane R.O. Licznik pokazuje 36 z 36: film jest pełny, niewywołany. Na pasku zawieszka z kluczem do skrzynki: „Cooper 9, lok. 4”. Wniosek: Aparat należy do Rafa Okoye z Cooper Street. Pełny film z klatki schodowej może być dowodem przeciwko Iris, ale tylko jeśli ktoś go wywoła.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Bree odchodzi z aparatem, a brat dostaje zdjęcia. Strata: Aparat Rafa Okoye wychodzi z biura, a razem z nim zdjęcia pękniętej ściany z Cooper Street.
+    - reakcja (linia !): „Dzięki. Słuchaj, mam paragon, ale i tak dziękuję.”
+    - kartka o świcie (linia >), forma gosc, po 4 dn.: Nora Vance: „Raf Okoye szuka aparatu z kamienicy. Miał w nim pełny film z klatki schodowej. Ktoś go wydał. Czyli znowu brak dowodu.”
+  - `odmow` (). Zysk: Aparat zostaje w biurze do wyjaśnienia, do kogo naprawdę należy. Strata: Bree wraca ze złością, a jej brat dalej leży bez zdjęć dla mamy.
+    - reakcja (linia !): „Nie? A paragon? No dobra, zobaczysz, że to pomyłka.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Raf Okoye: „Słyszałem, że mój aparat jest w biurze rzeczy znalezionych. Przyjdę po niego w sobotę rano. Będę miał kogoś ze sobą, żeby potwierdził.”
+  - `wez_80_bree` (Wydaj aparat Bree i przyjmij od niej 80 $) kasa 80 $. Zysk: Dostajesz 80 dolarów, czyli ponad pół czynszu. Strata: Aparat Rafa znika razem z pełnym filmem, a Bree może się wygadać, że okienko dało się kupić.
+    - reakcja (linia !): „Proszę, osiemdziesiąt. Cieszę się, że ktoś tu rozumie, jak to działa.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Nora Vance: „Raf Okoye mówi, że Bree chwaliła się w kamienicy, że załatwiła aparat przy okienku za osiemdziesiąt dolarów. Pytam tylko, czy to prawda.”
+
+## d9_iris · dzień 9 · Iris Bell i Victor Crane
+- Głos: Iris: cicho, uprzejmie, „nie lubię naciskać”, nigdy nie dotyka szyby. Victor: krótko, „kto to podpisze?”, wszystko w dwóch egzemplarzach.
+- Tik: Iris cicho, Victor „kto podpisze?”
+- Typ: dwie strony jednego piórnika
+- Potrzeba: piórnik z pięcioma żetonami
+- Rola: zarządczyni i inspektor o jeden piórnik
+- Ślad: numery to daty zamówienia, 0809 na końcu
+- Rzecz: Metalowy matowy piórnik na zatrzask z dwoma przedziałami
+- Mówiący (pole ~kto): iris = Iris Bell, victor = Victor Crane
+- Wejście (iris): Dobry wieczór. Iris Bell, znowu. Piórnik z żetonami, szóstka, ostatni kurs. Obok pan Crane z inspekcji, pyta o ten sam numer. Nie lubię naciskać, ale piórnik jest mój i dziś potrzebny.
+- Wejście, gdy flaga `d4_iris:rejestr`: Dobry wieczór. Iris Bell. Piórnik z żetonami, szóstka, ostatni kurs. Zeszłym razem wpisaliście wszystko do księgi i bardzo dobrze. Obok Victor Crane, pyta o ten sam numer.
+- Wejście, gdy flaga `d4_iris:koperta`: Dobry wieczór. Iris Bell. Miło znowu przy tej szybie. Piórnik z żetonami, szóstka, ostatni kurs. Obok Victor Crane, pyta o ten sam numer. Mam nadzieję, że pójdzie szybko.
+- Wejście, gdy flaga `d4_iris:odmow_zglos`: Dobry wieczór. Iris Bell. Paczka z zeszłego tygodnia nadal u was leży. Dziś piórnik z żetonami. Obok Victor Crane, pyta o ten sam numer.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d9_zetony_numery`: W piórniku pięć żetonów: 0412, 0517, 0623, 0731 i 0809. Na rewersach karteczki: „ojciec z dzieckiem”, „kobieta z walizką”, „matka z synem”, „kasetowiec”. Piąty żeton, 0809, ma karteczkę „jeszcze bez opisu”. Wniosek: To nie są żetony do skrzynek, tylko numery odbioru paczek z papierami. Cztery mają opis człowieka, piąty jeszcze nie.
+- Decyzje gracza:
+  - `zetony_iris` (Wydaj piórnik Iris). Zysk: Czterech ludzi z żetonów jest bezpiecznych, a Iris będzie ci to pamiętać. Strata: Skrytka działa poza księgą, a Victor zapisze, że go zignorowano.
+    - reakcja (linia !): „Dziękuję. Cieszę się, że się rozumiemy.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Victor Crane: „Piórnik wydano osobie prywatnej. Zapisałem bez komentarza. Kto to podpisał? Nikt. Dlatego notuję.”
+  - `zetony_victor` (Pokaż żetony Victorowi i podpisz oba egzemplarze). Zysk: W księdze jest ślad i nikt nie zarzuci ci układu z Iris. Strata: Numery żetonów jadą do Urzędu, a Iris tego nie zapomni.
+    - reakcja (linia !): „Dwa egzemplarze. Jeden do Urzędu, jeden zostaje. Dziękuję.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Iris Bell: „Czterech moich ludzi dostało dziś pisma z Urzędu. Ciekawe, kto pokazał im ich numery.”
+  - `jeden_egzemplarz` (Pokwituj Victorowi tylko jeden egzemplarz). Zysk: Victor ma swój podpis, a drugiej kopii nikt nie wysyła do Urzędu. Strata: Victor policzy to jako niechęć do współpracy, a Iris nadal nie ma piórnika.
+    - reakcja (linia !): „Jeden. Dobrze, zapisuję. Ale proszę wiedzieć, że wolałbym dwa.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Inspekcja przewozów: z biura wpłynął jeden egzemplarz pokwitowania zamiast dwóch. Odnotowano. — V. Crane
+  - `depozyt` (Zostaw piórnik w depozycie do soboty). Zysk: Zyskujesz czas do soboty, a nikt nie dostaje piórnika. Strata: Do soboty żaden z czterech nie dostanie dokumentu, a jedna rodzina jedzie jutro o 5:40.
+    - reakcja (linia !): „Depozyt do soboty. Wpisuję. Tylko że ktoś czeka na swój papier.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Iris Bell: „Piórnik leży w depozycie. Rozumiem procedury. Ale jeden z moich ludzi ma jutro pociąg.”
+
+## d9_stahl · dzień 9 · Marek Stahl, ok. 50
+- Głos: Gładko, za starannie, jakby recytował. Zaczyna od „Zgodnie z regulaminem…”. Zbyt grzeczny.
+- Tik: mówi „zgodnie z regulaminem”
+- Typ: zgłaszający zgubę
+- Potrzeba: szary filcowy kapelusz bez dowodu
+- Rola: zbyt grzeczny zgłaszający kapelusz
+- Ślad: kłamie o sobie i wraca w d22
+- Rzecz: Szary filcowy kapelusz z granatową wstążką
+- Wejście: Dobry wieczór. Marek Stahl. Zgodnie z regulaminem zgłaszam zgubę: szary filcowy kapelusz z granatową wstążką, wczoraj w czwórce. Opis mam bardzo dokładny, żeby nie tracić państwa czasu.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d9_kapelusz_naklejka`: Pod wstążką naklejka: „Hobbs & Syn, rozmiar 56”. W podszewce haftowane inicjały J.K. Wniosek: Kapelusz jest rozmiar 56 z inicjałami J.K. Zgłaszający mówi o innym rozmiarze i innych inicjałach.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Stahl odchodzi z kapeluszem, kolejka rusza. Strata: Kapelusz wychodzi po samym opisie, bez żadnego dowodu. Victor to zauważy.
+    - reakcja (linia !): „Dziękuję. Zgodnie z regulaminem wszystko w porządku. Proszę się nie przejmować.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Inspekcja przewozów: odnotowano wydanie rzeczy po samym opisie. Proszę o uzupełnienie procedury. — V. Crane
+  - `odmow` (). Zysk: Kapelusz zostaje, dopóki nie zgłosi się ktoś, kto zna wnętrze. Strata: Stahl nie przyznaje się do niczego i dalej stoi w kolejce, patrząc.
+    - reakcja (linia !): „Rozumiem. Zgodnie z regulaminem to poprawna odpowiedź. Dziękuję za cierpliwość.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Inspekcja przewozów: odnotowano odmowę wydania rzeczy bez dowodu. Przyjęto do wiadomości. — V. Crane
+  - `zadzwon` (Zadzwoń do inspekcji, że opis nie pasuje). Zysk: Masz pewność, że nikt nie nabrał biura, i ślad w księdze. Strata: Victor liczy, ile razy pytasz o pozwolenie, zamiast zdecydować sam.
+    - reakcja (linia !): „Dzwonić? Przy takiej drobnostce? Zgodnie z regulaminem… dobrze, dobrze, nie ma sprawy.”
+    - kartka o świcie (linia >), forma list, po 2 dn.: Inspekcja przewozów: odnotowano telefon w sprawie niezgodności opisu. Nie wszystko wymaga telefonu. — V. Crane
+
+## d10_vera · dzień 10 · Vera Kovacs, 62
+- Głos: Najpierw miejsce, potem rzecz, na końcu nazwisko. Dzwoni kluczami przy pasie, kiedy się wstydzi.
+- Tik: dzwoni kluczami, gdy się wstydzi
+- Typ: uczciwa, ukrywa
+- Potrzeba: pudełko z szafki Sama
+- Rola: zaplecze z kluczami przy pasie
+- Ślad: wezwała Sama na zamknięcie jego starej szafki
+- Rzecz: Blaszane pudełko zapinane na sprzączkę
+- Wejście: Dobry wieczór. Zaplecze tramwajowe, Vera Kovacs. Pudełko z szafki Sama Holta, tego, który siedział przy tej szybie przed Tobą. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a on dalej się nie zgłasza. Proszę o pomoc.
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d10_pudelko_karta`: W pudełku pasek od zegarka bez tarczy i karta inwentarza szuflady z numerem 6. Na wewnętrznej stronie wieka ołówkiem: „Teczka jest pusta. Tak ma być. S.H.” Ten sam numer 6 jest na szufladzie w biurze, w której leży klucz bez zamka. Wniosek: Szuflada w biurze należała do Sama. Klucz bez zamka otwiera tę szufladę.
+- Decyzje gracza:
+  - `pokwituj_osobista` (Pokwituj jako osobistą rzecz Sama). Zysk: Sam zobaczy, że biuro traktuje jego rzeczy jak osobiste, i będzie po twojej stronie. Strata: Rzecz zostaje poza zbiorczym archiwum, a Urząd dowie się, że ktoś ją zatrzymał.
+    - reakcja (linia !): „Dziękuję. Osobista rzecz Sama Holta. Proszę o podpis… tak, tutaj, przy K.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Vera Kovacs: „Szafka Sama jest zamknięta, ale pudełko u was. Napisałam do niego jeszcze raz. Nie wiem, czy przyjdzie, ale ktoś będzie czekał.”
+  - `archiwum` (Oddaj do zbiorczego archiwum). Zysk: Czysto, zgodnie z przepisami: rzeczy Sama są w archiwum Urzędu. Strata: Rzeczy osobiste Sama zostają w systemie Urzędu, a Sam straci możliwość odebrania ich samodzielnie.
+    - reakcja (linia !): „Rozumiem. Zbiorcze archiwum. Jak trzeba, to trzeba.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Vera Kovacs: „Pudełko pojechało do archiwum. Napisałam do Sama, że rzeczy są w papierach. Nie odpisał. Chyba ma żal.”
+  - `zatrzymaj_do_15` (Zatrzymaj pudełko do przyjścia Sama w piątek). Zysk: Sam odbierze pudełko osobiście, a Vera nie złamie obietnicy. Strata: Rzecz leży bez wpisu przez tydzień, a Urząd może zacząć pytać, czemu.
+    - reakcja (linia !): „Do piątku? Dziękuję. Przyprowadzę go, jak się zgodzi.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Vera Kovacs: „Zatrzymane do piątku. Powiedziałam Samowi. Nie odpisał, ale chyba przeczytał. To znaczy, że może przyjdzie.”
+
+## d10_dario · dzień 10 · Dario Ruiz, 29
+- Głos: Opowiada o jedzeniu, żartuje, wciska kanapkę zamiast pieniędzy. Poważnieje, kiedy mówi o Samie.
+- Tik: mówi „masz, weź kanapkę”
+- Typ: uczciwy, łapówka w naturze
+- Potrzeba: zeszyt grafiku dyżurów
+- Rola: motorniczy, który płaci kanapką
+- Ślad: zapisał dług Sama i pyta o niego
+- Rzecz: Gruby zeszyt grafiku dyżurów w tłustej okładce, z gumką
+- Wejście: Cześć, Dario, motorniczy z jedenastki. Zgubiłem zeszyt z grafikiem dyżurów, gruby, w tłustej okładce, z gumką. Bez niego nie wiem, kiedy jeżdżę. A przy okazji: czy ktoś tu wie, co się stało z Samem?
+- W środku rzeczy (sekrety, do pytań z @):
+  - `d10_zeszyt_sam`: Na ostatniej stronie zeszytu zapisane: „Sam, 13 $, kanapki i herbata. Oddaje, jak wróci.” Dopisek: „Czy on żyje?” Wniosek: Dario martwi się o Sama i nosi jego dług w zeszycie jak ważny dokument.
+- Decyzje gracza:
+  - `wydaj` (). Zysk: Dario odzyskuje grafik, a ty dostajesz pół kanapki z cebulą. Strata: Nie dowiadujesz się nic o Samie, a Dario wraca z tą samą troską.
+    - reakcja (linia !): „Dzięki! Masz, weź kanapkę, serio. A jakby ktoś coś wiedział o Samie, to wiesz, gdzie jestem.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Dario Ruiz: „Zeszyt cały, nawet okruchy po kanapce są. Jak wiesz coś o Samie, to powiedz. Nie ma pośpiechu. Jest tylko pytanie.”
+  - `odmow` (). Zysk: Zeszyt zostaje w biurze, a w nim dopisek o Samie, który możesz przeczytać jeszcze raz. Strata: Dario nie ma grafiku i jutro nie wie, o której jedzie. Szef się wścieknie.
+    - reakcja (linia !): „Co? Przecież to mój zeszyt! Dobra, przyprowadzę kogoś z zajezdni, niech potwierdzi.”
+    - kartka o świcie (linia >), forma gosc, po 2 dn.: Dario Ruiz: „Spóźniłem się na zmianę, bo nie miałem grafiku. Szef dał mi dyżur w niedzielę. Za karę.”
+  - `powiedz_dario` (Wydaj zeszyt i powiedz, że Sam ma przyjść po rzeczy w piątek). Zysk: Dario przestaje się martwić, a Sam ma przyjaciela, który przyjdzie na spotkanie. Strata: Zdradzasz plan Sama: jeśli nie chciał, żeby ktoś o nim wiedział, może się wycofać.
+    - reakcja (linia !): „Naprawdę? Wróci? To dobrze. Powiem mu, że czeka na niego kanapka. A jak nie przyjdzie, to chociaż wiem, że żyje.”
+    - kartka o świcie (linia >), forma gosc, po 3 dn.: Dario Ruiz: „Powiedziałem wszystkim w zajezdni, że Sam przyjdzie w piątek za tydzień. Wszyscy się ucieszyli. Mam nadzieję, że to dobrze.”

@@ -221,7 +221,7 @@ function sortPanel(){if(document.getElementById('sortp'))return;const bad=ST.sto
   bad.slice(0,4).forEach(it=>{const r=h('div','srow');const im=new Image();im.src='assets/items/'+it.sprite+'.png';im.alt='';r.append(im,h('span','nm',nm(it)+' · '+T.w_tag+' '+it.line));
    LINES.forEach(ln=>{const b=btn(T.line+' '+ln,ln===(it.at)?'ghost':'',()=>{if(ln===it.line){it.at=undefined;A.sfx('drawer_small');r.remove();ST.sorted=(ST.sorted||0)+1;const left=ST.stock.filter(i=>i.at&&i.at!==i.line).length;if(!left){p.querySelectorAll('.srow,.sub').forEach(x=>x.remove());p.insertBefore(h('div','sub',T.w_sort_ok),p.lastChild)}}else{it.at=ln;A.sfx('refuse')}});if(ln===it.at)b.disabled=true;r.append(b)});p.append(r)})}
  p.append(btn(T.close,'',()=>o.remove()));o.append(p);layer.append(o)}
-function windowScene(){const g=cg();ST.turn=0;scene('T1',()=>{winState('closed');const e=addWindow(g);
+function windowScene(){const g=cg();ST.turn=0;if(g.rozmowa)convStart(g);scene('T1',()=>{winState('closed');const e=addWindow(g);
  const lab=band(T.knock+((ST.day<=2||ST.hintsOn||prefs.hints)?' '+T.hint_curtain:''));const b=h('button','curtain');b.setAttribute('aria-label',T.let_in);b.title=T.let_in;b.onclick=()=>{if(b._d)return;b._d=1;A.tick();lab&&lab.remove();b.remove();e.classList.remove('sil');e.classList.add('dev');winState('open');A.bell();A.steps(ST_[g.id]||'boots');A.music('talk');if(Math.random()<.5)setTimeout(()=>A.sfx('cloth_inside_bag'),1400);talkUI();say(g,entry(g),'mowi',null,g.wejscie_kto);questions(g);step(T.step_ask)};layer.append(b);setTimeout(()=>b.focus({preventScroll:true}),500);
  setFace(g,'neutralna');e.classList.add('sil');b.classList.add('breath');setTimeout(()=>{A.knock(KN[g.id]||'polite');e.classList.add('in')},700);if(ST.storm&&ST.storm[ST.day]||Math.random()<.35)setTimeout(()=>A.sfx('umbrella_shake'),1600);if(!ST._bell){A.doorbell()}ST._bell=0})}
 function talkUI(){const s=h('div');s.id='say';const t=h('div');t.id='turns';t.innerHTML='<i></i><i></i><i></i>';const qs=h('div');qs.id='qs';layer.append(s,t,qs)}
@@ -230,11 +230,25 @@ function badge(g){const key=x=>String(x.postac||'').split(/,| i /)[0].trim();con
 function say(g,text,m,ton,kto,ask){ST._kto=kto;setFace(g,m,kto);const s=document.getElementById('say');if(!s)return;s.innerHTML='';if(ask)s.append(h('div','ask',T.you_ask+' '+ask));s.append(h('span','lab',who(g,kto)+badge(g)));const sp=h('span');s.append(sp);const id=++typing;let i=0;s.onclick=()=>{i=text.length};
  A.mumble(text.length,ton==='niewygodne'||m==='emocja'?.8:.2,vox(who(g,kto),m),!ask);
  if(FAST)i=text.length;(function step(){if(id!==typing)return;sp.textContent=text.slice(0,i);if(i++<text.length)setTimeout(step,16);else setTimeout(()=>{if(id===typing&&m==='mowi')setFace(g,'neutralna',kto)},900)})()}
-function qlist(g){const tr=g.tury[ST.turn].pytania;const hasSec=x=>x.wymaga&&has(x.wymaga);const base=tr.filter(x=>!x.wymaga);const sec=tr.filter(hasSec);
+/* ROZMOWA: drzewo wątków. g.rozmowa = tematy (zawsze dostępne), każde pytanie może mieć „dalej” = dopytania,
+   które widać tylko zaraz po odpowiedzi, do której się odnoszą. Sceny bez g.rozmowa idą starym trybem trzech tur (g.tury). */
+const CV={asked:{},keys:{},fresh:[]};
+function convStart(g){CV.asked={};CV.keys={};CV.fresh=[];let n=0;(function w(l){(l||[]).forEach(x=>{x._i=n++;w(x.dalej)})})(g.rozmowa)}
+function qlimit(g){return g.rozmowa?(g.limit||5):3}
+function qlist(g){
+ if(g.rozmowa){const ok=x=>(!x.wymaga||has(x.wymaga))&&!CV.asked[x._i]&&!(x.klucz&&CV.keys[x.klucz])&&!(x.gasi&&CV.keys[x.gasi]);
+  const fr=CV.fresh.filter(ok).slice(0,2).map(x=>({x,sec:!!x.wymaga,fresh:true}));const roots=g.rozmowa.filter(ok);
+  return fr.concat(roots.filter(x=>x.wymaga).map(x=>({x,sec:true})),roots.filter(x=>!x.wymaga).map(x=>({x,sec:false}))).slice(0,4)}
+ const tr=g.tury[ST.turn].pytania;const hasSec=x=>x.wymaga&&has(x.wymaga);const base=tr.filter(x=>!x.wymaga);const sec=tr.filter(hasSec);
  if(!sec.length)return base.map(x=>({x,sec:false}));const out=base.map(x=>({x,sec:false}));sec.forEach(s=>{const k=out.map(o=>o.x.ton).lastIndexOf(s.ton);if(k>=0)out.splice(k,1,{x:s,sec:true});else out.push({x:s,sec:true})});return out}
-function questions(g){const qs=document.getElementById('qs');qs.innerHTML='';[...document.querySelectorAll('#turns i')].forEach((e,i)=>e.classList.toggle('on',i<ST.turn));
- if(ST.turn>=3){qs.append(btn(T.turn,'pulse',()=>pile(g)));qs.firstChild.focus();const st=document.querySelector('.step');if(st)st.textContent=T.step_turn;return}
- qlist(g).forEach(({x,sec})=>{const b=h('button','q'+(sec?' sec':'')+(ST.day<=2?' pulse':''),(sec?`<small>${T.know}</small>`:'')+x.tekst);b.onclick=()=>{A.tick();ST.turn++;if(x.ustawia)ST.flags[x.ustawia]=1;/* STRATEGIA §7: kłamstwa nie ogłasza silnik (bez stingu, mignięcia i serca). Zostaje tylko mina gościa. */say(g,x.odpowiedz,x.mina,x.ton,x.kto,x.tekst);questions(g)};qs.append(b)});qs.firstChild.focus()}
+function sayRoom(){const qs=document.getElementById('qs'),s=document.getElementById('say');if(!qs||!s)return;const hq=qs.offsetHeight;s.style.top='auto';s.style.bottom=Math.max(178,hq+48)+'px';const t=document.getElementById('turns');if(t&&!document.body.classList.contains('phone')){t.style.top='auto';t.style.bottom=Math.max(196,hq+66)+'px'}}
+function questions(g){const qs=document.getElementById('qs');qs.innerHTML='';const lim=qlimit(g);const tb=document.getElementById('turns');if(tb){if(tb.children.length!==lim)tb.innerHTML='<i></i>'.repeat(lim);[...tb.children].forEach((e,i)=>e.classList.toggle('on',i<ST.turn))}
+ const list=ST.turn>=lim?[]:qlist(g);
+ if(!list.length){qs.classList.remove('tree');qs.append(btn(T.turn,'pulse',()=>pile(g)));qs.firstChild.focus();const st=document.querySelector('.step');if(st)st.textContent=T.step_turn;sayRoom();return}
+ qs.classList.toggle('tree',!!g.rozmowa);
+ list.forEach(({x,sec,fresh})=>{const b=h('button','q'+(sec?' sec':'')+(fresh?' fr':'')+(ST.day<=2?' pulse':''),(sec?`<small>${T.know}</small>`:fresh?`<small>${T.q_fresh||''}</small>`:'')+x.tekst);b.onclick=()=>{A.tick();ST.turn++;if(g.rozmowa){CV.asked[x._i]=1;if(x.klucz)CV.keys[x.klucz]=1;CV.fresh=x.dalej||[]}if(x.ustawia)ST.flags[x.ustawia]=1;/* STRATEGIA §7: kłamstwa nie ogłasza silnik (bez stingu, mignięcia i serca). Zostaje tylko mina gościa. */say(g,x.odpowiedz,x.mina,x.ton,x.kto,x.tekst);questions(g)};qs.append(b)});
+ if(g.rozmowa&&ST.turn>=2){const e=h('button','q enough',T.turn_early||T.turn);e.onclick=()=>{A.tick();pile(g)};qs.append(e)}
+ qs.firstChild.focus();sayRoom()}
 
 function book(){const ex=document.getElementById('bk');if(ex){ex.remove();return}const o=h('div');o.id='bk';o.className='drawer';o.append(h('div','lab',T.bk_h+' · '+dateStr(ST.day)));const rows=ST.stock.filter(i=>i.day===ST.day&&i.no).sort((a,b)=>a.no-b.no);
  const tb=h('table','bk');tb.innerHTML='<tr><th>№</th><th>godz.</th><th>linia</th><th>opis</th></tr>';rows.forEach(i=>{const m=17*60+50+Math.round((i.hh||0)*1.5),hm=String(Math.floor(m/60)%24).padStart(2,'0')+':'+String(m%60).padStart(2,'0');const tr=h('tr');[('0000'+i.no).slice(-4),hm,i.line,nm(i)].forEach(x=>tr.append(h('td',null,x)));tb.append(tr)});
@@ -312,8 +326,11 @@ function ledger(){A.music('tension');scene('T5',()=>{winState('closed');const c=
 function nameScene(next){scene('T5',()=>{winState('closed');const c=h('div','center dark');c.append(h('h1',null,T.name_h),h('div','sub',T.name_s));const i=document.createElement('input');i.type='text';i.maxLength=24;i.className='nameinp';i.placeholder=T.name_p;c.append(i,btn(T.name_ok,'pulse',()=>{ST.name=(i.value||'').trim()||T.name_def;next()}));layer.append(c);i.focus()})}
 function evening(){if(ST.day===20&&!ST.name)return nameScene(evening);A.sfx('newspaper');ST.clk=370; /* świt: 5:50, zmiana trwa do 6:00 */const fxN=(EV[ST.day]||[]).filter(n=>(!n.jesli||has(n.jesli))&&!(n.jesli_nie&&has(n.jesli_nie))).length;const due=ST.pending.filter(p=>p.due<=ST.day&&!ST.shown.includes(p)).slice(0,Math.max(2,6-fxN));scene('T5',()=>{winState('closed');const t=h('div','top');t.append(h('div','lab',T.evening+' '+T.day+' '+ST.day));layer.append(t);const w=h('div','letters');
  (EV[ST.day]||[]).filter(n=>(!n.jesli||has(n.jesli))&&!(n.jesli_nie&&has(n.jesli_nie))).forEach(n=>{const l=h('div','letter');l.append(h('span','lab',T.eve_note+' · '+n.kto),document.createTextNode(fk(n.tekst)));w.append(l)});
- due.forEach(p=>{ST.shown.push(p);const l=h('div','letter');l.append(h('span','lab',p.item+' · '+fk(p.a)),document.createTextNode(fk(p.echo)));w.append(l)});if(!w.children.length)w.append(h('div','letter',T.nomail));if(T.dt&&T.dt[ST.day]&&ST.day<FINAL){const hk=h('div','letter hook');hk.append(h('span','lab',T.tomorrow),document.createTextNode(T.dt[ST.day]));w.append(hk)}if(w.children.length>3)w.classList.add('many');layer.append(w);
- const f=h('div','foot');f.append(h('div',null,T.dollar+ST.money));f.append(btn(ST.day%5===0?T.week_h:T.next_day,'pulse',()=>{A.sfx('door_lock_day_end');ST.day%5===0?saturday():(ST.day++,day())}));layer.append(f)})}
+ due.forEach(p=>{ST.shown.push(p);const l=h('div','letter');l.append(h('span','lab',p.item+' · '+fk(p.a)),document.createTextNode(fk(p.echo)));w.append(l)});if(!w.children.length)w.append(h('div','letter',T.nomail));if(T.dt&&T.dt[ST.day]&&ST.day<FINAL){const hk=h('div','letter hook');hk.append(h('span','lab',T.tomorrow),document.createTextNode(T.dt[ST.day]));w.append(hk)}const cards=[...w.children];const f=h('div','foot');f.append(h('div',null,T.dollar+ST.money));f.append(btn(ST.day%5===0?T.week_h:T.next_day,'pulse',()=>{A.sfx('door_lock_day_end');ST.day%5===0?saturday():(ST.day++,day())}));
+ if(FAST||cards.length<2){if(cards.length>3)w.classList.add('many');layer.append(w,f);return}
+ /* kartki po jednej: stos na biurku, przekładasz kolejną, na końcu przycisk nowego dnia */
+ w.classList.add('one');w.innerHTML='';layer.append(w);let i=0;const nav=h('div','evnav');const cnt=h('div','evcnt');const nx=btn(T.eve_next,'pulse',()=>show(i+1));const all=btn(T.eve_skip,'ghost',()=>show(cards.length-1));nav.append(cnt,all,nx);layer.append(nav);
+ const show=k=>{i=Math.min(k,cards.length-1);A.sfx(i?'paper_envelope':'newspaper');w.innerHTML='';const c=cards[i];c.classList.remove('flip');w.append(c);void c.offsetWidth;c.classList.add('flip');cnt.textContent=T.eve_of.replace('{i}',i+1).replace('{n}',cards.length);if(i>=cards.length-1){nav.remove();layer.append(f);const b=f.querySelector('.btn');b&&b.focus()}else{all.style.display=cards.length-i>2?'':'none';nx.focus()}};show(0)})}
 function evict(){inGame=false;A.music('sobota');A.sting('koniec');scene('T5',()=>{winState('closed');const c=h('div','center dark');c.append(h('h1',null,T.evict_h),h('div','sub',T.evict_txt.replace('{d}',-ST.money)),btn(T.again,'',()=>{localStorage.removeItem(SAVE);title()}));layer.append(c)})}
 function fired(){inGame=false;A.music('sobota');A.sting('koniec');scene('T5',()=>{winState('closed');const c=h('div','center dark');c.append(h('h1',null,T.fired_h),h('div','sub',T.fired_txt.replace('{s}',ST.stolenAll||0)),btn(T.again,'',()=>{localStorage.removeItem(SAVE);title()}));layer.append(c)})}
 function nextAfterSat(){if(ST.flags.zwolnienie)return fired();if(ST.flags.eksmisja)return evict();ST.day++;if(ST.day>FINAL)return ending();if(!DAYS[ST.day])return week();day()}
@@ -372,6 +389,6 @@ function ending(){inGame=false;A.music('sobota');A.sting('koniec');const E=endin
   c.onclick=adv;c.tabIndex=0;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();adv()}};show();setTimeout(()=>c.focus({preventScroll:true}),500)})}
 /* TROPY: zbieraj tekst wypowiedziany przez gościa (wejście i odpowiedzi), po nim rozpoznajemy tropy */
 {const _say=say;say=function(g,text){if(g&&ST.heardId!==g.id){ST.heard='';ST.heardId=g.id}ST.heard=(ST.heard||'')+' '+text;return _say.apply(this,arguments)}}
-window.__E=endings;window.__T={ending,evening,saturday,shake}; /* haki dla bota QA */
+window.__E=endings;window.__T={ending,evening,saturday,shake,day,windowScene}; /* haki dla bota QA */
 window.__S=ST;window.__G=()=>ST;applyPrefs();lampUp();title();
 })();

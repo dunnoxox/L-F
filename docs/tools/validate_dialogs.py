@@ -8,7 +8,7 @@ import re, json, sys
 TONY = {'uprzejme', 'rzeczowe', 'niewygodne'}
 MINY = {'mowi', 'neutralna', 'emocja', 'klamie'}
 STD = {'wydaj', 'odmow', 'zatrzymaj', 'zadzwon'}
-LIM = {'wejscie': 300, 'odpowiedz': 240, 'tekst': 75, 'reakcja': 240, 'zysk': 190, 'strata': 190, 'echo': 420, 'etykieta': 60}
+LIM = {'wejscie': 300, 'odpowiedz': 240, 'tekst': 95, 'reakcja': 240, 'zysk': 190, 'strata': 190, 'echo': 420, 'etykieta': 60}
 ADDR = [r"\b(proszę|dziękuję|czy|niech|przepraszam|pytam)\s+(pan|pani|panu|panią|pana)\b",
         r"\b(pan|pani)\s+(może|ma|wie|chce|zna|widział|widziała|zrobił|zrobiła|poda|podpisze|zajrzał|zajrzała)\b"]
 errs = []
@@ -32,14 +32,24 @@ for f, g in blocks:
             extras.update(x['extra']); continue
         guests.append(x)
 
+def walk(l):
+    for q in l or []:
+        yield q
+        yield from walk(q.get('dalej'))
+def allq(x):
+    if x.get('rozmowa'): return list(walk(x['rozmowa']))
+    return [q for tr in x.get('tury', []) for q in tr['pytania']]
+def turns(x):
+    # drzewo: jedna „tura” = tematy; reszta sprawdzana tak samo jak pytania tur
+    if x.get('rozmowa'): return [{'pytania': list(walk(x['rozmowa']))}]
+    return x['tury']
 ids = [x['id'] for x in guests]
 for i in {i for i in ids if ids.count(i) > 1}: E(f"id zdublowane: {i}")
 secrets = set()
 for x in guests:
     for w in x.get('wnetrze', []): secrets.add(w['sekret_id'])
-    for tr in x.get('tury', []):
-        for q in tr['pytania']:
-            if q.get('ustawia'): secrets.add(q['ustawia'])
+    for q in allq(x):
+        if q.get('ustawia'): secrets.add(q['ustawia'])
 for d, ex in extras.items():
     for w in ex.get('wnetrze', []): secrets.add(w['sekret_id'])
 tokens = {f"{x['id']}:{d['akcja']}" for x in guests for d in x.get('decyzje', [])}
@@ -53,16 +63,18 @@ def addr(i, where, s):
 
 for x in guests:
     i = x['id']; ludzie = set(x.get('ludzie', {}))
-    if len(x['tury']) != 3: E(f"{i}: tur {len(x['tury'])} != 3")
+    if x.get('rozmowa'):
+        if len([q for q in x['rozmowa'] if not q.get('wymaga')]) < 3: E(f"{i}: tematów bazowych < 3")
+    elif len(x['tury']) != 3: E(f"{i}: tur {len(x['tury'])} != 3")
     if not x.get('wejscie'): E(f"{i}: brak wejscie")
     else: lim(i, 'wejscie', x['wejscie']); addr(i, 'wejscie', x['wejscie'])
     for k, v in (x.get('wejscie_jesli') or {}).items():
         if k not in tokens: E(f"{i}: wejscie_jesli '{k}' bez takiej decyzji")
         lim(i, 'wejscie', v); addr(i, 'wejscie_jesli', v)
-    for n, tr in enumerate(x['tury'], 1):
+    for n, tr in enumerate(turns(x), 1):
         pyt = tr['pytania']
         base = [q for q in pyt if not q.get('wymaga')]
-        if len(base) < 3: E(f"{i} tura {n}: pytań bazowych {len(base)} < 3")
+        if not x.get('rozmowa') and len(base) < 3: E(f"{i} tura {n}: pytań bazowych {len(base)} < 3")
         for q in pyt:
             if q['ton'] not in TONY: E(f"{i} tura {n}: ton '{q['ton']}'")
             if q['mina'] not in MINY: E(f"{i} tura {n}: mina '{q['mina']}'")

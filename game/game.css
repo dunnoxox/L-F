@@ -401,3 +401,24 @@ body.phone .gph{width:240px;height:240px}
 .slot .no.tg{position:absolute;top:-12px;left:-10px;width:74px;height:114px;padding-top:54px;box-sizing:border-box;text-align:center;font:700 15px ui-monospace,monospace;letter-spacing:0;color:#1a120a;background:center/contain no-repeat;transform:rotate(-9deg);filter:drop-shadow(0 3px 0 rgba(0,0,0,.6));pointer-events:none}
 .slot .no.t1{background-image:url(assets/ui/tag1.png)}.slot .no.t2{background-image:url(assets/ui/tag2.png)}.slot .no.t3{background-image:url(assets/ui/tag3.png)}
 body.phone .slot .no.tg{width:80px;height:124px;padding-top:58px;font-size:19px}
+/* rozmowa-drzewo: dopytania (do tego, co gość właśnie powiedział) i wyjście do magazynu */
+#qs.tree{align-items:stretch}
+.q.fr{border-left:12px solid var(--sod);background:#1b1407}
+.q.fr small{color:var(--sod);opacity:1}
+.q.enough{flex:0 0 190px;border-style:dashed;font-size:calc(19px * var(--ts,1));text-align:center;opacity:.85;animation:none!important}
+#turns i{width:18px;height:18px}
+body.phone .q.enough{flex:0 0 230px;font-size:calc(28px * var(--ts,1))}
+body.phone #qs.tree .q{min-height:200px;max-height:none}
+/* świt: jedna kartka naraz */
+.letters.one{padding:140px 60px 170px}
+.letters.one .letter{flex:none;width:min(900px,86%);max-width:none;font-size:calc(31px * var(--ts,1));line-height:1.5;padding:44px 50px;transform:rotate(-.8deg)}
+.letters.one .letter .lab{font-size:18px;margin-bottom:16px}
+.letter.flip{animation:evflip .32s cubic-bezier(.2,.8,.3,1) both}
+@keyframes evflip{from{transform:translate(60px,26px) rotate(5deg);opacity:0}to{transform:rotate(-.8deg);opacity:1}}
+.evnav{position:absolute;left:44px;right:44px;bottom:36px;display:flex;align-items:center;justify-content:flex-end;gap:26px}
+.evnav .evcnt{margin-right:auto;font:700 20px ui-monospace,monospace;color:var(--paper);letter-spacing:.12em;text-transform:uppercase;background:#000;padding:8px 14px;white-space:nowrap}
+.reduce .letter.flip{animation:none}
+body.phone .letters.one .letter{width:92%;font-size:calc(42px * var(--ts,1));padding:34px 38px}
+body.phone .evnav{left:20px;right:20px;bottom:14px}body.phone .evnav .evcnt{font-size:30px}
+.q.fr:hover,.q.fr:focus-visible,.q.fr:focus{background:var(--sod);color:var(--ink)}.q.fr:hover small,.q.fr:focus small{color:var(--ink)}
+@media (hover:none){.q.fr:hover{background:#1b1407;color:var(--paper)}.q.fr:hover small{color:var(--sod)}}
