@@ -4595,7 +4595,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "vera",
-          "odpowiedz": "Pusta teczka. Od zawsze „zajęta”. Nikt jej nie otwierał, bo nikt nie pytał. Klucz trzymam ja. Dzwoni, jak widać.",
+          "odpowiedz": "Pusta teczka i list. Teczka od zawsze „zajęta”, a list jest pismem Sama, którego nie czytałam. Klucz trzymam ja. Dzwoni, jak widać.",
           "mina": "mowi"
         },
         {
@@ -4631,7 +4631,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "vera",
-          "odpowiedz": "Kluczami, teczkami, pudełkami. Zapleczem. Najpierw miejsce, potem rzecz. Kiedy ktoś ma gdzie postawić stopę, resztę da się zrobić.",
+          "odpowiedz": "Kluczami, teczkami, pudełkami. Zapleczem. Fotel nie jest karą. Fotel jest bezpiecznikiem. Najpierw miejsce, potem rzecz. Kiedy ktoś ma gdzie postawić stopę, resztę da się zrobić.",
           "mina": "mowi"
         },
         {
@@ -4683,7 +4683,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "vera",
-          "odpowiedz": "To ja wybieram. Od jedenastu lat. Wybieram tych, których nikt nie szuka. Dlatego ich nikt nie znajdzie. Dlatego też nikt ich nie odbiera. Czwarty został znaleziony w kanale.",
+          "odpowiedz": "To ja wybieram. Od jedenastu lat. Wybieram tych, których nikt nie szuka, bo fotel to bezpiecznik. Czwarty został znaleziony w kanale. Jego siostra do dziś szuka go po szpitalach.",
           "mina": "emocja"
         },
         {
@@ -5364,13 +5364,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "wpisz_siebie",
       "etykieta": "Wpisz siebie w linię 0809",
       "kto": "elias",
-      "reakcja": "Wpisane. Dziękuję. Nie wiem, czy to dobry początek. Ale imię jest zapisane, a to więcej niż nic.",
-      "zysk": "Akceptujesz fotel, Iris wręcza bilet, a Skrytka przechodzi dalej, jak co roku.",
-      "strata": "Rotacja trwa. Ktoś inny usiądzie w fotelu za Ciebie.",
+      "reakcja": "Iris, od drzwi: „Bilet jest. Czeka na peronie, aż ktoś podpisze po Tobie. Do poniedziałku.” Elias składa numerek: „Dobry początek.”",
+      "zysk": "Twoje imię stoi w księdze, a bilet na peronie czeka, aż ktoś podpisze po Tobie.",
+      "strata": "Rotacja trwa i następnego wybiorą tak, jak wybrano Ciebie.",
       "echo": {
         "za_dni": 1,
         "forma": "gosc",
-        "tekst": "Elias Wren: „Czy oprawka jest u Was? Pytam nowego dyżurnego. Nie wiem, kto siedział tu przed nim. Pytam, żeby wiedzieć.”"
+        "tekst": "Elias Wren: „Dobry wieczór, [imię]. Czy oprawka jest u Was? Pytam, bo teraz wiem, kto tu siedzi.”"
       }
     },
     {
@@ -5476,8 +5476,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "wnetrze": [
         {
           "sekret_id": "d25_karta_kopie",
-          "co_widac": "Karta: „Kopie wysłane do Urzędu: {kopie}. Klienci odnalezieni: {min(4, kopie)}.” Poniżej lista z dossier, rosnąca wraz z liczbą kopii: najpierw Linh, potem Gus i Dorian; Maya tylko wtedy, gdy nie została odebrana.",
-          "co_z_tego_wynika": "Każdy wpis w dwóch egzemplarzach to była druga kopia, a Urząd czyta każdego, kto zapłaci. {kopie} i {min(4, kopie)} liczy silnik z licznika."
+          "co_widac": "Karta: „Kopie wysłane do Urzędu: {kopie}. Klienci odnalezieni: {min(4, kopie)}.” Poniżej nazwiska: Gus (jeśli d5 wykaz_paczke lub d9 zetony_victor), Maya (d9 zetony_victor lub d22 stahl_wydaj), Linh (d9 zetony_victor lub d15 victor_od_razu), Dorian (d9 zetony_victor lub d18 do_kontroli). Stempel: „wgląd Kancelarii, K.M.”",
+          "co_z_tego_wynika": "Każdy wpis w dwóch egzemplarzach to była druga kopia. Kancelaria wykupiła wgląd za 60 $ i odsprzedała go dalej. {kopie} i {min(4, kopie)} liczy silnik z licznika."
         }
       ]
     }
@@ -5604,7 +5604,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       },
       {
         "kto": "Karta pod szybą",
-        "tekst": "Pod drzwiami biura leżała kartka od Victora: „Jutro o 6:00 zamykam obieg. Proszę przynieść księgę.”"
+        "tekst": "Pod drzwiami biura leżała kartka od Victora: „O 6:00 w środę zamykam obieg. Proszę przynieść księgę.”"
       }
     ],
     "23": [
@@ -5615,6 +5615,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Kuba Marlow, pod bramą",
         "tekst": "Kuba stał pod bramą kamienicy. „Dziś wszyscy rozliczają. Ja też. Soboty nie odpuszczę.”"
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Na karcie bez adresu: „Wgląd w kopie z biura. Opłata 60 $. K.M.” Ktoś zapłacił, żeby przeczytać nazwiska."
       }
     ],
     "24": [
@@ -5629,6 +5633,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Karta pod szybą",
         "tekst": "Pod szybą leżał klucz do szafki 0809. Na kartoniku: „Strona 41 jest Twoja.”"
+      },
+      {
+        "kto": "Karta pod szybą",
+        "tekst": "Stempel: „wgląd Kancelarii”. Ktoś pytał w Kancelarii o nazwisko z Waszej kopii. Opłata 60 $. Podpis K.M."
       }
     ],
     "25": [
