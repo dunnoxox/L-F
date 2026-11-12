@@ -378,6 +378,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Dobry wieczór. Iris Bell, a obok pani Vance i mała Ada. Proszę o kasetkę z mojej torby na zakupy. Pani Vance twierdzi, że są w niej oryginały pokwitowań lokatorów, i chce je dostać dziś. A Ada od progu pokazuje palcem tę puszkę po herbacie z zeszłego tygodnia.",
+  "wejscie_kto": "iris",
   "wejscie_jesli": {
     "d8_lena_i_nora:wydaj_lenie_cala": "Dobry wieczór. Iris Bell, a obok pani Vance i mała Ada. Proszę o kasetkę z mojej torby na zakupy. Pani Vance nie ma już żółtej kopii, bo oddano ją siostrze Mai, więc podaje numer z własnego wykazu i żąda oryginałów. A Ada od progu pokazuje palcem tę puszkę po herbacie."
   },
@@ -1547,6 +1548,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Sam Holt. Wezwano mnie po rzeczy z szafki. Zielony termos, stalowy, wgniecenie na pokrywce. Klamra była lewostronna. W szufladzie pod ladą została jeszcze kalka strony, którą wyrwałem z księgi, tej czterdziestej pierwszej. Vera przyszła ze mną, bo twierdzi, że ktoś ma być przy tym, jak ja tu stoję.",
+  "wejscie_kto": "sam",
   "tury": [
     {
       "pytania": [
@@ -1885,6 +1887,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Maya Doyle. Zostawiłam w jedenastce granatową saszetkę podróżną. Obok stoi Lena, moja siostra, i mówi, że saszetka jest jej. To nieprawda. Chcę ją odebrać sama i powiedzieć Lenie jedną rzecz.",
+  "wejscie_kto": "maya",
   "tury": [
     {
       "pytania": [
@@ -2528,6 +2531,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Dobry wieczór. Iris Bell, a obok Nora Vance. Teczka budowlana, szara, zgubiona w szóstce. Są w niej plan kamienicy i lista terminów. Nora ją zna, ja ją znam. Chcemy ją odebrać. Z różnych powodów.",
+  "wejscie_kto": "iris",
   "wejscie_jesli": {
     "d12_iris_nora:wydaj_iris": "Dobry wieczór. Iris Bell i Nora Vance. Teczka budowlana, szara, zgubiona w szóstce. Plan kamienicy i lista terminów. Kasetkę biuro wydało już jakiś czas temu, więc dziś chcemy tylko teczkę. Z różnych powodów.",
     "d12_iris_nora:zabezpiecz": "Dobry wieczór. Iris Bell i Nora Vance. Teczka budowlana, szara, zgubiona w szóstce. Oryginały leżą u was w depozycie, a my przyszłyśmy po resztę: plan kamienicy i listę terminów. Z różnych powodów.",
@@ -2888,6 +2892,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Dobry wieczór. Leo Marsh i Ada Vale. Torba konduktorska, szóstka, z wykazami zmiany. Ada przyszła, bo wie więcej, niż mówi. Ja przyszedłem, bo wolę nie podpisywać za wszystkich.",
+  "wejscie_kto": "leo",
   "tury": [
     {
       "pytania": [
@@ -3376,6 +3381,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Elias Wren. Przyszedłem z panem Holtem. Zegarek jest jego, w etui po okularach, bo nie miał gdzie. Pan Holt odmawia pieniędzy, a ja nie odpuszczę. O trzeciej pan Crane odbiera materiały, więc musimy się zmieścić.",
+  "wejscie_kto": "elias",
   "tury": [
     {
       "pytania": [
@@ -3722,6 +3728,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Priya Nair, ślub mam o jedenastej, a moja walizka leży u was! Szara. Ta pani, Maya, też przyszła po szarą, a ta druga, Lena, po jakąś wiadomość od niej. Obie walizki zamykają się tak samo. Zacznijmy od tego, która czyja.",
+  "wejscie_kto": "priya",
   "tury": [
     {
       "pytania": [
@@ -4552,6 +4559,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Nora Vance, z panią Bell i panem Crane’em. Po kolei: druga kasetka, ta na rachunki, z szóstki. W środku są oryginały zaliczek. Pan Crane zamyka dziś rozliczenie, każde z nas chce z nią zrobić co innego, a wersja może być tylko jedna.",
+  "wejscie_kto": "nora",
   "wejscie_jesli": {
     "d18_iris_nora:rezerwacja_nora": "Nora Vance, z panią Bell i panem Crane’em. Po kolei: druga kasetka, ta na rachunki, z szóstki. Mam na nią rezerwację z zeszłej środy. Pani Bell i pan Crane mają inne plany, a wersja może być tylko jedna.",
     "d18_iris_nora:do_kontroli": "Nora Vance, z panią Bell i panem Crane’em. Po kolei: druga kasetka, ta na rachunki, z szóstki. Pan Crane ma już kopię z zeszłej środy. Ja czekałam, pani Bell czeka. Wersja może być tylko jedna.",
@@ -5440,6 +5448,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Sam Holt. Ostatni raz przy tej szybie. Przyszedłem po etui na okulary, w środku jest kopia jednej decyzji. Elias przyszedł ze mną, a pan Crane stoi za nami z protokołem do zamknięcia. Wszyscy trzej chcemy tego samego: żeby to się dziś skończyło.",
+  "wejscie_kto": "sam",
   "tury": [
     {
       "pytania": [

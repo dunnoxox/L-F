@@ -804,6 +804,7 @@
     }
   ],
   "wejscie": "Dobry wieczór. Evan Doyle, a to Lena, siostra mojej żony. Oboje przyszliśmy po telefon Mai, która zaginęła w czwartek. Zostawiła go w jedenastce. Policja daje sprawie czas do wtorku, siódmego września, a potem ją zamyka. Nie mamy czasu.",
+  "wejscie_kto": "maz",
   "tury": [
     {
       "pytania": [
@@ -2416,6 +2417,7 @@
     }
   ],
   "wejscie": "Dobry wieczór. Nora Vance, a to Lena Brandt. Obie przyszłyśmy po tę samą torbę narzędziową, szarą, z rozprutą podszewką. Lena twierdzi, że to torba jej siostry. Ja twierdzę, że w podszewce jest papier z kamienicy.",
+  "wejscie_kto": "nora",
   "wejscie_jesli": {
     "d3_maz_i_siostra:wydaj_evan": "Dobry wieczór. Nora Vance, a to Lena Brandt. Lena po awanturze z Evanem chce chociaż torbę siostry. Ja chcę z niej papier z kamienicy. Torba jest szara, z rozprutą podszewką.",
     "d3_maz_i_siostra:wydaj_lena": "Dobry wieczór. Nora Vance, a to Lena Brandt. Lena ma już telefon siostry i chce jeszcze jej torbę. Ja chcę z niej papier z kamienicy. Torba jest szara, z rozprutą podszewką."
@@ -2740,6 +2742,7 @@
     }
   ],
   "wejscie": "Dobry wieczór. Iris Bell, znowu. Piórnik z żetonami, szóstka, ostatni kurs. Obok pan Crane z inspekcji, pyta o ten sam numer. Nie lubię naciskać, ale piórnik jest mój i dziś potrzebny.",
+  "wejscie_kto": "iris",
   "wejscie_jesli": {
     "d4_iris:rejestr": "Dobry wieczór. Iris Bell. Piórnik z żetonami, szóstka, ostatni kurs. Zeszłym razem wpisaliście wszystko do księgi i bardzo dobrze. Obok Victor Crane, pyta o ten sam numer.",
     "d4_iris:koperta": "Dobry wieczór. Iris Bell. Miło znowu przy tej szybie. Piórnik z żetonami, szóstka, ostatni kurs. Obok Victor Crane, pyta o ten sam numer. Mam nadzieję, że pójdzie szybko.",

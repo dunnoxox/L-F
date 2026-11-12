@@ -35,7 +35,7 @@ Legenda statusu: **naprawione** = poprawka jest w tym PR. **otwarte** = wymaga d
 |---|---|---|
 | 10 | Vera prosi o „pudełko z szafki”, a w trzeciej turze gracz pyta „co, jeśli Sam nie przyjdzie”. Nikt wcześniej nie powiedział, że to szafka Sama. | naprawione (Vera mówi to w wejściu) |
 | 11 | Decyzja „Zgoda: kontakt tylko przez okienko” i reakcja Mai odwołują się do trzech warunków, których gracz mógł nie usłyszeć. | naprawione (warunki w wejściu) |
-| 12, 21, 23, 25 | Wejścia pisane jako didaskalia w trzeciej osobie („Iris prosi o kasetkę… Stoją razem przy szybie”), wyświetlane jako kwestia mówiona. W d25 Elias „pyta, czy Sam już się odezwał”, stojąc obok Sama. | naprawione (mówi jedna osoba: Iris, Priya, Nora, Sam) |
+| 12, 21, 23, 25 | Wejścia pisane jako didaskalia w trzeciej osobie („Iris prosi o kasetkę… Stoją razem przy szybie”), wyświetlane jako kwestia mówiona. W d25 Elias „pyta, czy Sam już się odezwał”, stojąc obok Sama. | naprawione (mówi jedna osoba: Iris, Priya, Nora, Sam; w scenach wieloosobowych wejście ma teraz twarz i podpis mówiącego) |
 | 14 | Podpis „Billie Cross, 16” zdradza kłamstwo, zanim Billie powie „osiemnaście lat”. | naprawione (bez wieku) |
 | 15 | Wszystkie trzy decyzje dotyczą „kalki”, o której gracz wie tylko wtedy, gdy zajrzał do szuflady. | naprawione (Sam mówi o kalce w wejściu) |
 | 15 | „Wybieraj: oni albo ja. Przykład: Okoye.” | naprawione |
@@ -149,7 +149,8 @@ Po zmianach gra przeszła jeszcze raz w całości:
 | Ciekawski (wątek Sama), dni 1-25 | finał Odebrany, 0 błędów JS, scena „Jak się nazywasz?” jeden raz |
 | Złodziej | eksmisja po dniu 10 (nowe audyty), 0 błędów JS |
 | `validate_dialogs.py`, `check_spojnosc.py` | bez nowych uwag (zostają trzy stare o kluczach specjalnych i jedna o akcji z pliku pokus) |
-| `qa/bot.js` | patrz opis PR |
+| `qa/bot.js`, 25 dni, desktop | finał, 205 zrzutów, 0 błędów JS. Trzy uwagi tylko w podglądzie telefonu na ekranie finału (przycisk pod zgięciem przewijanej listy), znane wcześniej |
+| `qa/bot.js`, 6 dni, telefon | tylko znane wcześniej drobiazgi: podpisy stref decyzji 6-7 px i szuflady magazynu poza ekranem |
 
 ## 8. Jak to powtórzyć
 
