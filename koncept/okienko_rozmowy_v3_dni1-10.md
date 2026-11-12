@@ -19,7 +19,7 @@
   "wnetrze": [
     {
       "sekret_id": "d1_kwit_0417",
-      "co_widac": "W mankiecie tkwi kwit z tego biura, numer 0417, sprzed trzech tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę.",
+      "co_widac": "W mankiecie tkwi kwit z tego biura, numer 0417, sprzed sześciu tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę.",
       "co_z_tego_wynika": "Thomas już tu był i dostał coś, czego nigdzie nie zapisano. Poprzednik wydawał rzeczy poza księgą."
     }
   ],
@@ -307,7 +307,7 @@
 
 ## DZIEŃ 2
 
-**Mini-karta: Jonah Pike, 22, kurier na rowerze.** Mówi szybko, poprawia się w pół zdania, kiedy pada imię June, zwalnia. Chce: plecak, w którym jest pudełko z pierścionkiem. Jutro o siódmej rano chce oświadczyć się June, zanim ona wyjdzie do pracy. Ukrywa: pierścionek kupił na raty. Obraz: serwetka z trzema wersjami oświadczyn.
+**Mini-karta: Jonah Pike, 22, kurier na rowerze.** Mówi szybko, poprawia się w pół zdania, kiedy pada imię June, zwalnia. Chce: plecak, w którym jest pudełko z pierścionkiem. O siódmej rano chce oświadczyć się June, zanim ona wyjdzie do pracy. Ukrywa: pierścionek kupił na raty. Obraz: serwetka z trzema wersjami oświadczyn.
 
 ```json
 {
@@ -321,10 +321,10 @@
     {
       "sekret_id": "d2_paragon_raty",
       "co_widac": "W pudełku w kieszeni na plecach leży pierścionek z małym oczkiem. Obok paragon: wpłacone 40 dolarów, 200 zostało do spłaty w ratach. Na serwetce trzy wersje oświadczyn, dwie przekreślone.",
-      "co_z_tego_wynika": "Jonah jutro o siódmej chce się oświadczyć, a pierścionek kupił na raty. Pierścionek jest wart w lombardzie około 150 dolarów."
+      "co_z_tego_wynika": "Jonah o siódmej rano chce się oświadczyć, a pierścionek kupił na raty. Pierścionek jest wart w lombardzie około 150 dolarów."
     }
   ],
-  "wejscie": "Cześć, Jonah. Zgubiłem plecak w jedenastce, czarny, z pękniętą klamrą. Potrzebuję go na jutro rano, bo w kieszeni jest coś ważnego. Naprawdę ważnego.",
+  "wejscie": "Cześć, Jonah. Zgubiłem plecak w jedenastce, czarny, z pękniętą klamrą. Potrzebuję go przed siódmą rano, bo w kieszeni jest coś ważnego. Naprawdę ważnego.",
   "tury": [
     {
       "pytania": [
@@ -357,7 +357,7 @@
           "tekst": "Kim jest June?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Moją dziewczyną. Pracuje w piekarni, wstaje o czwartej. Jutro o siódmej, zanim wyjdzie, chcę ją o coś zapytać. Dlatego ten plecak.",
+          "odpowiedz": "Moją dziewczyną. Pracuje w piekarni, wstaje o czwartej. O siódmej rano, zanim wyjdzie, chcę ją o coś zapytać. Dlatego ten plecak.",
           "mina": "emocja"
         },
         {
@@ -418,7 +418,7 @@
       "echo": {
         "za_dni": 1,
         "forma": "list",
-        "tekst": "Jonah: „Pierścionek jest w kieszeni, serwetka też. Jutro o siódmej. Trzymaj kciuki, jeśli masz kciuki.”"
+        "tekst": "Jonah: „Zdążyłem. O siódmej zapytałem June, serwetka została w kieszeni. Trzymaj kciuki, jeśli masz kciuki.”"
       }
     },
     {
@@ -453,7 +453,7 @@
     "pieniądze"
   ],
   "tik": "zwalnia na imieniu June",
-  "potrzeba": "plecak z pierścionkiem na jutro",
+  "potrzeba": "plecak z pierścionkiem na siódmą rano",
   "slad": "raty zdradzają dług, który ma Marlow"
 }
 ```
@@ -522,14 +522,14 @@
           "tekst": "Dlaczego to takie pilne właśnie dzisiaj?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo przesłuchanie jest jutro o ósmej. Dostałam się z listy rezerwowej, drugiej szansy nie będzie.",
+          "odpowiedz": "Bo przesłuchanie mam rano, o ósmej. Dostałam się z listy rezerwowej, drugiej szansy nie będzie.",
           "mina": "emocja"
         },
         {
           "tekst": "Pod pokrywą jest kartka: wypożyczenie do 7 sierpnia. Co to znaczy?",
           "ton": "niewygodne",
           "wymaga": "d2_etykieta_wyp",
-          "odpowiedz": "Że termin minął w sobotę. Konserwatorium nie przedłużyło, bo komisja zbiera się dopiero w poniedziałek. Nie jestem złodziejką, tylko spóźniłam się o dwa dni. Ale gram jutro.",
+          "odpowiedz": "Że termin minął w sobotę. Konserwatorium nie przedłużyło, bo komisja zbiera się dopiero w czwartek. Nie jestem złodziejką, tylko spóźniłam się o trzy dni. Ale przesłuchanie mam dziś rano.",
           "mina": "emocja"
         }
       ]
@@ -563,13 +563,13 @@
   "decyzje": [
     {
       "akcja": "wydaj",
-      "reakcja": "Dziękuję. W poniedziałek pójdę do komisji, obiecuję. Najpierw zagram.",
+      "reakcja": "Dziękuję. W czwartek pójdę do komisji, obiecuję. Najpierw zagram.",
       "zysk": "Hana zagra przesłuchanie i ma szansę dostać miejsce w orkiestrze.",
-      "strata": "Oddajesz instrument konserwatorium komuś, komu wypożyczenie wygasło wczoraj.",
+      "strata": "Oddajesz instrument konserwatorium komuś, komu wypożyczenie wygasło w sobotę.",
       "echo": {
         "za_dni": 2,
         "forma": "list",
-        "tekst": "Zagrałam. Nikt nie wiedział, że skrzypce są po terminie. W poniedziałek komisja przedłużyła mi wypożyczenie do końca roku. Przepraszam za zamieszanie. — H. Moreau"
+        "tekst": "Zagrałam. Nikt nie wiedział, że skrzypce są po terminie. Dziś po południu komisja przedłużyła mi wypożyczenie do końca roku. Przepraszam za zamieszanie. — H. Moreau"
       }
     },
     {
@@ -591,6 +591,156 @@
   "tik": "mówi jak recytacja",
   "potrzeba": "skrzypce na przesłuchanie o ósmej",
   "slad": "wypożyczenie z konserwatorium skończyło się już wczoraj"
+}
+```
+
+**Ines Calloway, 61, emerytka.** Potrzeba: parasol z kaczką i zgoda na ogłoszenie o kocie na słupie. Lęk: że ktoś zdejmie kartkę. Sekret: kota nie ma, kartki są dla kogoś innego. Tik: poprawia innych przed końcem zdania. Wątek: Ogłoszenie (słup, odpowiedzi, Kanał). Moment gwiazdy: „Proszę nie czytać między wierszami. Ich tam jest dwa razy więcej.”
+
+```json
+{
+  "id": "d2_ines",
+  "dzien": 2,
+  "postac": "Ines Calloway, 61",
+  "glos": "Spokojna, sucha, mówi tonem urzędniczki na emeryturze. Poprawia innych, zanim skończą zdanie.",
+  "typ": "uczciwa, z ukrytym celem",
+  "rzecz": "Czarny parasol z rączką w kształcie kaczki",
+  "wnetrze": [
+    {
+      "sekret_id": "d2_parasol_kartka",
+      "co_widac": "W rączce parasola zwinięta kartka: „Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu.” Rączka ma ślad kleju od taśmy.",
+      "co_z_tego_wynika": "Ines wiesza ogłoszenia o kocie na słupie. Kota nie ma. Ktoś odpowiada na te kartki i zostawia coś w okienku."
+    }
+  ],
+  "wejscie": "Ines Calloway. Zgubiłam parasol z rączką w kształcie kaczki, w czwórce, wczoraj. Poza tym chciałabym zapytać, czy wolno mi wieszać ogłoszenia na słupie przy wejściu. Kot, rudy, od zimy.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ten parasol?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czarny, automatyczny, rączka w kształcie kaczki. Dziób ma odłamany z lewej. Kupiłam go po zeszłorocznej wichurze.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie dokładnie go zostawiłaś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W czwórce, na haczyku przy tylnych drzwiach. Wysiadałam na pętli, ręce miałam pełne torby i zostawiłam go dopiero w zakręcie.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu pytasz o ogłoszenie, a nie wieszasz po prostu?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo wolę zapytać. Słupy mają właścicieli. Ten przy wejściu ma właściciela, którego jeszcze nie poznałam.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "W rączce jest kartka z ogłoszeniem o kocie. Skąd?",
+          "ton": "niewygodne",
+          "wymaga": "d2_parasol_kartka",
+          "odpowiedz": "Mój tekst. Wkładam kopię do rączki, żeby nie zgubić. A kota nie ma od zimy, więc proszę nie pytać.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda Twój kot?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Rudy, z białą łapką. Wabi się Fryderyk. Nie przychodzi na wołanie, tylko na ciszę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Od kiedy go nie ma?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Od zimy. Dokładnie od pierwszego śniegu. Drzwi były zamknięte, a on wyszedł oknem, którego nie otwiera się od środka.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu nikt nie odpowiada na Twoje ogłoszenia?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Odpowiada. To znaczy: ktoś zostawia kartkę z odpowiedzią. Przychodzi nocą, nie widziałam kto. Potem już nie szukam.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co chcesz, żebym zrobił z ogłoszeniem?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Żeby ogłoszenie zostało. Tylko tyle. Jak ktoś przyjdzie z kotem, powiedzcie mu, że szukam, i nie pytajcie o resztę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór parasola?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Ines Calloway. Pisownia z jednym „l”. Proszę zapisać równo.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czy to naprawdę jest ogłoszenie o kocie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Tak. Dla kota. Dla innych, którzy też szukają. Proszę nie czytać między wierszami, bo ich tam jest dwa razy więcej.",
+          "mina": "klamie"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "ines_potwierdz",
+      "etykieta": "Potwierdź ogłoszenie i przybij pieczątkę okienka",
+      "reakcja": "Dziękuję. Kartka z pieczątką okienka wisi na słupie jak legitymacja. Nie pytajcie, dla kogo.",
+      "zysk": "Parasol wraca do Ines, a ogłoszenie ma pieczątkę, więc nikt go nie zdejmie.",
+      "strata": "Okienko jest teraz widoczne na słupie, a ktoś przeczyta pieczątkę jako zaproszenie.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Ines Calloway: „Ktoś odpowiedział na kartkę. Zostawił coś pod okienkiem. Proszę nie otwierać przy ludziach. — I.C.”"
+      }
+    },
+    {
+      "akcja": "ines_odmow",
+      "etykieta": "Wydaj parasol, ogłoszenia odmów",
+      "reakcja": "Rozumiem. Słup ma właściciela, ale wiesza się je na innych. Dobrze.",
+      "zysk": "Okienko nie robi za tablicę ogłoszeń i nikt nie zapyta o słup.",
+      "strata": "Ines znajdzie inny słup, a kartki będą wisieć dalej, tylko bez Twojej wiedzy.",
+      "echo": {
+        "za_dni": 4,
+        "forma": "list",
+        "tekst": "Ines Calloway: „Powiesiłam kartkę na innym słupie. Odpowiedzi też tam przychodzą. Dziękuję za parasol. — I.C.”"
+      }
+    },
+    {
+      "akcja": "ines_zdejmij",
+      "etykieta": "Wydaj parasol i zdejmij ogłoszenie ze słupa",
+      "reakcja": "Zdejmiecie? To cudze kartki, nie moje. Dobrze, wiem, kto je dostał.",
+      "zysk": "Słup przy wejściu jest czysty, a do biura nikt nie przynosi kartek.",
+      "strata": "Ktoś czekał na odpowiedź na tym słupie i nie dostanie jej.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Mężczyzna w szarym kapeluszu: „Zgodnie z regulaminem. Szukałem kartki o kocie. Słup jest pusty. Zapiszę, kto go opróżnił.”"
+      }
+    }
+  ],
+  "rola": "emerytka z ogłoszeniami o kocie",
+  "watki": [
+    "ogloszenie"
+  ],
+  "tik": "poprawia innych przed końcem zdania",
+  "potrzeba": "parasol i zgoda na ogłoszenie na słupie",
+  "slad": "kartka o kocie w rączce, odpowiedzi na słupie"
 }
 ```
 
@@ -662,7 +812,7 @@
           "ton": "rzeczowe",
           "kto": "maz",
           "wymaga": null,
-          "odpowiedz": "Żeby sprawdzić, dokąd poszła. Policjant powiedział, że bez telefonu dwudziestego drugiego zamkną sprawę i tyle.",
+          "odpowiedz": "Żeby sprawdzić, dokąd poszła. Policjant powiedział, że bez telefonu do wtorku, siódmego września, zamkną sprawę i tyle.",
           "mina": "mowi"
         },
         {
@@ -788,7 +938,13 @@
   "glos": "Głośno, prosto, bez owijania. Mówi o budziku jak o koledze z pracy.",
   "typ": "uczciwa, rozbrajająca",
   "rzecz": "Blaszany budzik z dwoma dzwonkami",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d3_rachunek_budzik",
+      "co_widac": "Pod tylną pokrywką budzika złożony rachunek z warsztatu: 18 $ za wymianę mechanizmu, na dole dopisek „dzwonek do wymiany”.",
+      "co_z_tego_wynika": "Dana naprawia stary budzik zamiast kupić nowy. Dwanaście lat to jej jedyny zegar i jej strach, że zaśpi."
+    }
+  ],
   "wejscie": "Cześć, Dana Ruiz, mechanik w zajezdni. Zgubiłam budzik w szóstce, taki blaszany, z dwoma dzwonkami. Bez niego nie wstanę na czwartą, a w zajezdni nikt nie czeka, jak ktoś się spóźni.",
   "tury": [
     {
@@ -813,6 +969,13 @@
           "wymaga": null,
           "odpowiedz": "Bo wczoraj poszłam spać u siostry. Nie chciałam go zostawić samego, wiesz, jak to jest.",
           "mina": "mowi"
+        },
+        {
+          "tekst": "Pod pokrywką jest rachunek z warsztatu. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d3_rachunek_budzik",
+          "odpowiedz": "Osiemnaście dolarów za mechanizm. Nowy kosztuje więcej, a ten ma ton, który znam. Jak się zepsuje, nie wstanę. To głupie, ale to mój zegar.",
+          "mina": "emocja"
         }
       ]
     },
@@ -1130,7 +1293,7 @@
           "tekst": "Do kiedy sprawa jest otwarta?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Do dwudziestego drugiego. Potem sprawa idzie do wydziału, a tam nikt nie pyta zaginionej o zgodę.",
+          "odpowiedz": "Do wtorku, siódmego września, do szóstej rano. Potem sprawa idzie do wydziału, a tam nikt nie pyta zaginionej o zgodę.",
           "mina": "mowi"
         },
         {
@@ -1380,7 +1543,7 @@
 }
 ```
 
-**Mini-karta: Gus Pell, 55, mężczyzna w szlafroku.** Mówi cicho, rozgląda się, zaczyna zdania od „tylko”. Chce: portfel, bo w nim ma dwa dowody (Pell i Ferro) i pieniądze na wyjazd. Ukrywa: jutro o 5:40 jedzie linią 11 i znika; jego paczka to ta z dnia 4, numer 0412. Kłamie: „Prawo jazdy, dwadzieścia dolarów i zdjęcie córki.”
+**Mini-karta: Gus Pell, 55, mężczyzna w szlafroku.** Mówi cicho, rozgląda się, zaczyna zdania od „tylko”. Chce: portfel, bo w nim ma dwa dowody (Pell i Ferro) i pieniądze na wyjazd. Ukrywa: o 5:40 rano jedzie linią 11 i znika; jego paczka to ta z dnia 4, numer 0412. Kłamie: „Prawo jazdy, dwadzieścia dolarów i zdjęcie córki.”
 
 ```json
 {
@@ -1570,12 +1733,18 @@
   "glos": "Dosłownie, jak dziecko. Liczy kroki i kamienie. Kiedy się boi, mówi szeptem.",
   "typ": "uczciwa, wie za dużo",
   "rzecz": "Szary pluszowy królik z uchem doszytym czerwoną nitką",
-  "wnetrze": [],
-  "wejscie": "Dzień dobry, jestem Ada, mam dziesięć lat. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze, bo mama mówi, że bez kwitu nie wiadomo.",
+  "wnetrze": [
+    {
+      "sekret_id": "d6_karteczka_krolik",
+      "co_widac": "Pod doszytym uchem karteczka, pismo dorosłe: „Dla Zuzi, od taty. Jak się zgubi, niech ktoś odda.”",
+      "co_z_tego_wynika": "Królik należy do dziewczynki o imieniu Zuzia, a ktoś dorosły przewidział, że się zgubi."
+    }
+  ],
+  "wejscie": "Dobry wieczór, jestem Ada, mam dziesięć lat. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze, bo mama mówi, że bez kwitu nie wiadomo.",
   "wejscie_jesli": {
-    "d1_rosa:wydaj": "Dzień dobry, jestem Ada, córka Rosy z pralni. Mama mówi, że dostała od was całą wypłatę. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
-    "d1_rosa:odmow": "Dzień dobry, jestem Ada, córka Rosy z pralni. Mama dostała mniej wypłaty, ale mówi, że to nie wasza wina. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
-    "d1_rosa:wez_20": "Dzień dobry, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze."
+    "d1_rosa:wydaj": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama mówi, że dostała od was całą wypłatę. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
+    "d1_rosa:odmow": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama dostała mniej wypłaty, ale mówi, że to nie wasza wina. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
+    "d1_rosa:wez_20": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze."
   },
   "tury": [
     {
@@ -1599,6 +1768,13 @@
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Bo mama pracuje na nocnej zmianie, a ja się nudzę. Chodzę po pętli i liczę. Wczoraj były sto dwa kamienie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "W uchu królika jest karteczka. Przeczytałaś ją?",
+          "ton": "niewygodne",
+          "wymaga": "d6_karteczka_krolik",
+          "odpowiedz": "Przeczytałam. Pisze: dla Zuzi, od taty. Jak się zgubi, niech ktoś odda. Więc oddaję. Tylko nie wiem, kto to Zuzia, i dlatego chcę kwit.",
           "mina": "mowi"
         }
       ]
@@ -1872,7 +2048,13 @@
   "glos": "Krótko, sarkastycznie, „serio”. Slang, ale bez przesady.",
   "typ": "uczciwy, boi się wylecieć",
   "rzecz": "Czarne słuchawki nauszne z naklejką kota w kasku",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d7_tasma_banknot",
+      "co_widac": "Pod taśmą na lewej muszli złożony banknot dwudolarowy i karteluszek: „Dla szefa, jak się dowie. Za ciszę.”",
+      "co_z_tego_wynika": "Kit trzyma w słuchawkach łapówkę dla szefa na wypadek, gdyby go przyłapał."
+    }
+  ],
   "wejscie": "Cześć, Kit. Zgubiłem słuchawki w czwórce, takie nauszne, z kotem w kasku na muszli. Pracuję w kopiarni na Rynku i jak szef się dowie, że słuchałem muzyki przy ksero, to po mnie. Serio.",
   "tury": [
     {
@@ -1896,6 +2078,13 @@
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Bo mówi, że ksero ma być słychać, a ja mam słyszeć klientów. Ja słyszę, tylko że z muzyką mniej boli.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Pod taśmą na muszli jest banknot i karteluszek. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d7_tasma_banknot",
+          "odpowiedz": "Dwa dolary na szefa, jakby mnie przyłapał. Raz zadziałało. Nie mów mu, serio, bo wtedy dwa dolary to będzie za mało.",
           "mina": "mowi"
         }
       ]
@@ -2246,7 +2435,7 @@
           "ton": "niewygodne",
           "kto": "nora",
           "wymaga": null,
-          "odpowiedz": "Czternaście, po czterysta dolarów każda, termin do dwudziestego czwartego. Wpłaciły raz, a ja mam to w zeszycie.",
+          "odpowiedz": "Czternaście, po czterysta dolarów każda, termin do czwartku, dziewiątego września. Wpłaciły raz, a ja mam to w zeszycie.",
           "mina": "mowi"
         },
         {
@@ -2855,7 +3044,7 @@
       "co_z_tego_wynika": "Szuflada w biurze należała do Sama. Klucz bez zamka otwiera tę szufladę."
     }
   ],
-  "wejscie": "Dzień dobry. Zaplecze tramwajowe, pudełko z szafki, Vera Kovacs. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a pudełko jest z niej. Proszę o pomoc.",
+  "wejscie": "Dobry wieczór. Zaplecze tramwajowe, pudełko z szafki, Vera Kovacs. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a pudełko jest z niej. Proszę o pomoc.",
   "tury": [
     {
       "pytania": [
@@ -3176,6 +3365,32 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
           "co_z_tego_wynika": "Puszka należy do obiegu paczek Skrytki."
         }
       ]
+    },
+    "3": {
+      "sprite": "skrzynka",
+      "itemName": "zielona skrzynka z numerem 3",
+      "line": "6",
+      "inside": null,
+      "wnetrze": [
+        {
+          "sekret_id": "d3_skrzynka_zegarek",
+          "co_widac": "W skrzynce męski zegarek, na kopercie grawer „T.R. — od T.”. Pod zegarkiem klucz z mosiężnym numerkiem i karta z numerem szafki, ołówkiem.",
+          "co_z_tego_wynika": "Ktoś zostawił to w tramwaju. Zegarek, klucz i karta należą do jednej osoby, której kolejka jeszcze nie wywołała."
+        }
+      ]
+    },
+    "9": {
+      "sprite": "karta",
+      "itemName": "karta rozliczeniowa z pieczątką",
+      "line": "6",
+      "inside": null,
+      "wnetrze": [
+        {
+          "sekret_id": "d9_karta_km",
+          "co_widac": "Karta przy żetonach: „Opłata 60 $. K.M.” Pod spodem ołówkiem rata sobotnia i dopisek „wgląd Kancelarii”.",
+          "co_z_tego_wynika": "Marlow odbiera sobotnie raty i podpisuje je inicjałami K.M. Pieczątka „wgląd Kancelarii” oznacza, że ktoś kupił wgląd w kopie z biura."
+        }
+      ]
     }
   },
   "wieczor": {
@@ -3240,7 +3455,7 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
     "8": [
       {
         "kto": "Gazeta",
-        "tekst": "Cooper Street 9 idzie pod wyburzenie, lokatorzy mają czas do dwudziestego czwartego. Twój pokój służbowy jest pod tym samym adresem. Nikt nie napisał, dokąd się wyprowadzisz."
+        "tekst": "Cooper Street 9 idzie pod wyburzenie, lokatorzy mają czas do czwartku, dziewiątego września. Twój pokój służbowy jest pod tym samym adresem. Nikt nie napisał, dokąd się wyprowadzisz."
       },
       {
         "kto": "Elias, numerek 1",
@@ -3255,6 +3470,10 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias poprosił, żeby oprawkę, jeśli się znajdzie, trzymać osobno. „Gdyby ktoś przyszedł po nią z papierkiem od innego pracownika, proszę nie wierzyć.”"
+      },
+      {
+        "kto": "Telefon na zapleczu",
+        "tekst": "Zadzwoniła kobieta, przedstawiła się jako Helen Voss z Inspekcji. Pytała, kto prowadzi okienko w nocy. Odłożyła słuchawkę, zanim ktoś odpowiedział."
       }
     ],
     "10": [
