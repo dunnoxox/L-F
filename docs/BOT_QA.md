@@ -75,3 +75,36 @@ Część poprawek z pierwszego przebiegu (kartka w dniu 1, przycisk w notce ogl�
 3. Dzień: karta dnia, dostawa, oględziny (klik w ślad), pauza (raz: „Poukładaj magazyn”), zasłonka, 3 pytania, magazyn (raz celowo zła rzecz, żeby zobaczyć toast), decyzja (w dni parzyste przeciągnięciem rzeczy na strefę), wynik, wieczór.
 4. Sobota: kupuje pierwsze dostępne ulepszenie, następny tydzień. Dzień 20: wpisuje imię.
 5. Finał: screen góry i dołu, potem widok telefonu pionowo i poziomo.
+
+## Balans kradzieży (12.11.2026, runda 2)
+
+Bot-złodziej kończył grę z nadwyżką i bez żadnych konsekwencji. Przyczyna: pierwsza wpadka w audycie była darmowa (samo upomnienie), a każda następna kosztowała 60 $ od sztuki, choć z szuflady dało się wziąć 250 $ albo 500 $ naraz. Kradzież była czystym zyskiem.
+
+Nowe zasady (game.js, `auditP()` i `saturday()`):
+
+- Victor w sobotę liczy szufladę, jeśli w tygodniu coś zginęło. Szansa wpadki rośnie: 40% za pierwszą kradzież w tygodniu, +20% za każdą kolejną, +25% za każdą wcześniejszą wpadkę, +15% gdy w tygodniu zginęło 200 $ lub więcej (maks. 95%).
+- Wpadka 1: zwrot całej kwoty z tygodnia plus kara (do 200 $), Urząd −1.
+- Wpadka 2: zwrot plus 150% kary, Urząd −2, Ludzie −1.
+- Wpadka 3: zwolnienie, osobne zakończenie „Zwolnienie”.
+- Bez wpadki Victor zostawia ślad: „Tym razem się zgadza. Na razie.”
+- Po każdej kradzieży kartka wyniku pokazuje: „Victor liczy szufladę w sobotę. Ryzyko: niewielkie / spore / wysokie / prawie pewne.”
+- Kara może wpędzić w dług, a dług w eksmisję. W finale nowa nitka „Szuflada się zgadzała”, szara, gdy cokolwiek zginęło. Kradzieże dalej liczą się do zakończenia „nowy Sam”.
+
+Symulacja ekonomii (4000 gier na strategię, ten sam wzór co w grze, z ratą 60 $ tygodniowo dla Marlowa z PR #26):
+
+| Strategia | Zwolnienie | Eksmisja | Gotówka na koniec (średnio) |
+|---|---|---|---|
+| uczciwa | 0% | 0% | 150 $ |
+| ostrożna (max jedna kradzież w tygodniu) | 0% | 0% | 198 $ (duży rozrzut: raz +300 $, raz −200 $) |
+| kradnie wszystko, co dostępne bez odkryć | 0% | 0% | 157 $ (mediana 88 $) |
+| chciwa (wszystkie kradzieże, też te po odkryciach) | 3% | 97% | - |
+
+Ostrożna kradzież to zakład z lekko dodatnim wynikiem i dużym ryzykiem, płacony Urzędem, nitką „Szuflada” i drogą do zakończenia „nowy Sam”. Kto kradnie regularnie, wychodzi gorzej niż uczciwy. Chciwość kończy zmianę przed finałem.
+
+Przebiegi bota (po scaleniu z PR #26): uczciwy kończy finał z 90 $, ostrożny ze 165 $ (wpadka w tygodniu 2, −180 $, chwilowy dług), chciwy wpada w dług w tygodniu 1 i zostaje eksmitowany w dniu 10. Przebieg sprzed raty Marlowa doprowadził chciwego do planszy „Zwolnienie” w dniu 20. 0 błędów JS.
+
+Przy okazji: na telefonie portfel zasłaniał pierwszą linię soboty, a przy karze i racie „Następny tydzień” wypadał poza ekran. Poprawione w game.css.
+
+Do obejrzenia (z PR #26, poza tym zadaniem): na telefonie podpisy stref decyzji mają 6-7 px, a w magazynie część szuflad wychodzi poza ekran.
+
+Nowe strategie bota: `--strategy ostrozny` (jedna kradzież na tydzień) i `--strategy chciwy` (bot odblokowuje sobie wszystkie opcje „weź” i bierze każdą).

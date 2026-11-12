@@ -1,6 +1,6 @@
 /* Bot QA LOST & FRAUD: przechodzi tytuł + dni 1-25 w headless Chromium,
    robi screenshoty kluczowych momentów i zbiera usterki (konsola, 404, nakładanie, wyjście poza scenę, martwe kliki).
-   Użycie: node qa/bot.js [--url http://localhost:8765/] [--out qa/out] [--strategy first|last|random|steal] [--seed 7] [--w 1600 --h 900] */
+   Użycie: node qa/bot.js [--url http://localhost:8765/] [--out qa/out] [--strategy first|last|random|steal|ostrozny|chciwy] [--seed 7] [--w 1600 --h 900] */
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 const arg = (k, d) => { const i = process.argv.indexOf('--' + k); return i > 0 ? process.argv[i + 1] : d };
@@ -65,6 +65,7 @@ let rs = SEED; const rnd = () => (rs = (rs * 1103515245 + 12345) % 2147483648) /
     if (before === after) { await sleep(700); const a2 = await page.evaluate(() => document.getElementById('layer').innerHTML.length + '|' + document.body.innerHTML.length + '|' + (window.__S && JSON.stringify(window.__G()).length)); if (a2 === before) add('martwy klik', sel + ' nic nie zmienił', tag); }
     return true;
   };
+  let stoleWeek = 0; const kradzieze = [], ekonomia = [];
   const S = () => page.evaluate(() => { const s = window.__G(); return { day: s.day, gi: s.gi, money: s.money, c: s.c } });
   const txt = s => page.$eval(s, e => e.innerText).catch(() => '');
 
@@ -126,17 +127,18 @@ let rs = SEED; const rnd = () => (rs = (rs * 1103515245 + 12345) % 2147483648) /
       if (!found) { add('BLOKADA', 'brak szukanej rzeczy w żadnej linii magazynu', where); await shot('brak_rzeczy_d' + st.day); const s0 = await page.$('.slot'); if (s0) { for (let i = 0; i < 6 && await has('.slot'); i++) { await page.click('.slot').catch(() => {}); await sleep(200) } } }
       continue
     }
+    if (STRAT === 'chciwy') await page.evaluate(() => { const s = window.__G && window.__G(); if (s && s.secrets) for (const g of window.DATA) for (const d of g.decyzje) if (/^wez_|przywlaszcz/.test(d.akcja) && d.wymaga) String(d.wymaga).split('|').forEach(k => s.secrets[k] = 1) }).catch(() => {});
     // decyzja
     if (await has('.zones .zone')) {
       await shotOnce('decyzja_d' + st.day, 'blat_decyzja_d' + st.day); await audit(where + ' decyzja');
       const zs = await page.$$eval('.zones .zone', z => z.map(x => x.dataset.a));
-      let i = 0; if (STRAT === 'last') i = zs.length - 1; else if (STRAT === 'random') i = Math.floor(rnd() * zs.length); else if (STRAT === 'steal') { const j = zs.findIndex(a => /^wez_|przywlaszcz|koperta|bez/.test(a)); i = j >= 0 ? j : 0 }
+      let i = 0; if (STRAT === 'last') i = zs.length - 1; else if (STRAT === 'random') i = Math.floor(rnd() * zs.length); else if (STRAT === 'steal' || STRAT === 'chciwy' || (STRAT === 'ostrozny' && stoleWeek !== Math.ceil(st.day / 5))) { let j = zs.findIndex(a => /^wez_|przywlaszcz/.test(a)); if (j < 0 && STRAT === 'steal') j = zs.findIndex(a => /koperta|bez/.test(a)); if (j >= 0 && /^wez_|przywlaszcz/.test(zs[j])) { stoleWeek = Math.ceil(st.day / 5); kradzieze.push({ day: st.day, a: zs[j] }) } i = j >= 0 ? j : 0 }
       // co drugi dzień przeciągnij przedmiot zamiast klikać (test drag&drop)
       if (st.day % 2 === 0) { const it = await page.$('#onDesk'), z = (await page.$$('.zones .zone'))[i]; const a = await it.boundingBox(), b = await z.boundingBox();
         await page.mouse.move(a.x + a.width / 2, a.y + a.height / 2); await page.mouse.down(); await page.mouse.move(b.x + b.width / 2, b.y + b.height / 2, { steps: 8 }); await page.mouse.up(); await sleep(300);
         if (await has('.zones .zone')) { add('drag&drop', 'upuszczenie rzeczy na strefę "' + zs[i] + '" nic nie zrobiło', where); await page.$$eval('.zones .zone', (z, i) => z[i].click(), i) } }
       else await page.$$eval('.zones .zone', (z, i) => z[i].click(), i);
-      await sleep(400); await shotOnce('wynik_d' + st.day, 'blat_wynik_d' + st.day); await audit(where + ' wynik'); await sleep(1300);
+      await sleep(400); if (/^wez_|przywlaszcz/.test(zs[i])) await shot('kradziez_d' + st.day + '_' + zs[i]); await shotOnce('wynik_d' + st.day, 'blat_wynik_d' + st.day); await audit(where + ' wynik'); await sleep(1300);
       if (await has('#qs button.btn')) await click('#qs button.btn', where); await sleep(700); continue
     }
     if (await has('.sum') && await has('#qs button.btn')) { await click('#qs button.btn', where); await sleep(700); continue }
@@ -146,16 +148,16 @@ let rs = SEED; const rnd = () => (rs = (rs * 1103515245 + 12345) % 2147483648) /
     if (await has('.letters') && await has('.foot button')) { if (st.day <= 2 || st.day % 5 === 0 || st.day >= 24) { await shot('wieczor_d' + st.day); await audit(where + ' wieczór') } await click('.foot button', where); await sleep(700); continue }
     // sobota / zakończenia
     const h1 = await txt('.center h1');
-    if (h1 && await has('.ups')) { await shot('sobota_d' + st.day); await audit(where + ' sobota'); const ub = await page.$$('.ups button:not([disabled])'); if (ub.length > 1) await ub[0].click(); await click('.center > button.btn.pulse', where); await sleep(700); continue }
+    if (h1 && await has('.ups')) { { const s0 = await S(); ekonomia.push({ day: s0.day, money: s0.money, urzad: s0.c.urzad, audyt: await txt('.center .audit') }); console.log('SOBOTA', s0.day, s0.money, (await txt('.center .audit')) || '') } await shot('sobota_d' + st.day); await audit(where + ' sobota'); const ub = await page.$$('.ups button:not([disabled])'); if (ub.length > 1) await ub[0].click(); await click('.center > button.btn.pulse', where); await sleep(700); continue }
     if (h1 && await has('.threads')) { endedWith = 'finał'; await shot('zakonczenie'); await page.evaluate(() => { const c = document.querySelector('.center'); c.scrollTop = c.scrollHeight }); await sleep(200); await shot('zakonczenie_dol'); await audit('zakończenie'); break }
-    if (h1 && await has('.center button.btn')) { const t = h1.trim(); await shot('plansza_' + t.slice(0, 20).replace(/\W+/g, '_')); await audit('plansza ' + t); if (/eksmis|Eksmis/i.test(t + (await txt('.center')))) { endedWith = 'eksmisja d' + st.day; break } if (await has('.center > button.btn.pulse')) await click('.center > button.btn.pulse', where); else { endedWith = 'plansza: ' + t; break } await sleep(700); continue }
+    if (h1 && await has('.center button.btn')) { const t = h1.trim(); await shot('plansza_' + t.slice(0, 20).replace(/\W+/g, '_')); await audit('plansza ' + t); if (/eksmis|zwolnien/i.test(t + (await txt('.center')))) { endedWith = t.toLowerCase() + ' d' + st.day; break } if (await has('.center > button.btn.pulse')) await click('.center > button.btn.pulse', where); else { endedWith = 'plansza: ' + t; break } await sleep(700); continue }
     if (await has('#leave, .center.dark button.btn.pulse')) { await click('.center.dark button.btn.pulse', where); await sleep(600); continue }
   }
   const st = await S().catch(() => ({}));
   const E = await page.evaluate(() => window.__E && window.__E()).catch(() => null);
   // TELEFON: pion i poziom
   for (const [nm, vp] of [['telefon_pion', { width: 390, height: 844 }], ['telefon_poziom', { width: 844, height: 390 }]]) { await page.setViewportSize(vp); await sleep(400); await shot(nm); await audit(nm) }
-  fs.writeFileSync(path.join(OUT, 'wynik.json'), JSON.stringify({ strategia: STRAT, seed: SEED, koniec: endedWith, stan: st, zakonczenia: E, kroki: guard, usterki: issues, screeny: shots.map(s => path.basename(s.f)), dialog: transcript }, null, 1));
+  fs.writeFileSync(path.join(OUT, 'wynik.json'), JSON.stringify({ strategia: STRAT, seed: SEED, koniec: endedWith, stan: st, ekonomia, kradzieze, zakonczenia: E, kroki: guard, usterki: issues, screeny: shots.map(s => path.basename(s.f)), dialog: transcript }, null, 1));
   console.log('KONIEC', endedWith, JSON.stringify(st), 'usterek:', issues.length, 'screenów:', shots.length);
   const byK = {}; issues.forEach(i => byK[i.kind] = (byK[i.kind] || 0) + 1); console.log(byK);
   await br.close();
