@@ -1,21 +1,15 @@
-# DO CHATGPT: jedno wklejenie na czat (stan 12.11.2026)
+# INSTRUKCJA DLA CHATGPT (jedyny plik, nic więcej nie jest potrzebne)
 
-Trzy paczki, każda w OSOBNYM, NOWYM czacie ChatGPT. W każdej robisz jedno: kopiujesz cały blok z kodu i wklejasz. Nic nie załączasz i nic nie dopisujesz: referencje (ścieżki z GitHuba), prompt i instrukcja zapisu wyniku do repo są w tym samym bloku. Czwarta paczka to dźwięki (ElevenLabs, nie ChatGPT).
+Tommy wgrywa ten plik w całości do jednego czatu i pisze tylko: "wykonaj". Ty, ChatGPT, robisz po kolei KROK 1, KROK 2, KROK 3. W każdym kroku:
+1. Pobierz z GitHuba (repo `dunnoxox/L-F`, branch `main`) pliki referencyjne z linii REFERENCJE i traktuj je jako załączniki.
+2. Wygeneruj obrazy wg promptu danego kroku, jeden po drugim, bez pytania o zgodę.
+3. Zapisz wyniki w repo `dunnoxox/L-F` na wskazanym nowym branchu (NIE na main), w wskazanym folderze, pod wskazanymi nazwami, i otwórz Pull Request do main. Nie czekaj na Tommy'ego między krokami.
 
-| # | Paczka | Wynik trafia do repo |
-|---|--------|----------------------|
-| 1 | Poprawki portretów + Ines i Evan (6 obrazów) | `art/gpt_wyniki/portrety/` |
-| 2 | Fotografie przedmiotów, blankiety, narzędzia (26 obrazów) | `art/gpt_wyniki/fotografie/` |
-| 3 | Kask, koszyk, księga wydań, kot (2 arkusze) | `art/gpt_wyniki/brakujace/` |
-| 4 | Dźwięki (16 + 8 mamrotań) | ElevenLabs, robi osobny wątek |
-
-Jeśli ChatGPT napisze, że nie umie otworzyć obrazu z repo albo zapisać do niego, załącz plik ręcznie / pobierz wyniki i wrzuć do folderu projektu. Jeśli się zatnie, napisz "dalej". Jeśli wyjdzie sepia, szarość albo litery: "Popraw obraz N: tylko czerń i krem (pomarańcz tylko jako światło), zero półtonów, bez liter".
+Jeśli nie możesz otworzyć obrazu z repo albo zapisywać do repo, napisz to jednym zdaniem, a obrazy podaj do pobrania i kontynuuj. Jeśli system każe się zatrzymać, napisz "Wpisz: dalej" i kontynuuj od następnego obrazu. Jeśli wyjdzie sepia, szarość albo litery, powtórz ten obraz: tylko czerń i krem (pomarańcz tylko jako światło), zero półtonów, bez liter.
 
 ---
 
-## 1. PORTRETY: poprawki + Ines i Evan
-
-Nowy czat, JEDNO wklejenie (nic nie załączasz, wszystko jest w bloku):
+## KROK 1: PORTRETY: poprawki + Ines i Evan
 
 ```
 REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 8 obrazów i traktuj jako załączniki: art/portrety_goscie/G06-ada.png, G15-grace.png, G19-billie.png, G23-sylvia.png, G25-kofi.png, G11-stahl.png oraz art/portrety_referencje/L4-twarze.png i art/lostfraud_art5/B1-wdowiec.png.
@@ -53,9 +47,7 @@ WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym b
 
 ---
 
-## 2. FOTOGRAFIE PRZEDMIOTÓW, BLANKIETY, NARZĘDZIA (26 obrazów)
-
-Nowy czat, JEDNO wklejenie (nic nie załączasz, wszystko jest w bloku):
+## KROK 2: FOTOGRAFIE PRZEDMIOTÓW, BLANKIETY, NARZĘDZIA (26 obrazów)
 
 ```
 REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 5 obrazów i traktuj jako załączniki, w tej kolejności: art/lostfraud_art6/Z1.png, art/lostfraud_art6/W3.png, art/lostfraud_art5/C4.png, codex/okienko_fx/refs_visual/K4-portfel.jpg, art/portrety_referencje/L4-twarze.png.
@@ -107,9 +99,7 @@ WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym b
 
 ---
 
-## 3. CZTERY BRAKUJĄCE GRAFIKI (kask, koszyk, księga wydań, kot)
-
-Nowy czat, JEDNO wklejenie (nic nie załączasz, wszystko jest w bloku):
+## KROK 3: CZTERY BRAKUJĄCE GRAFIKI (kask, koszyk, księga wydań, kot)
 
 ```
 REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 4 obrazy i traktuj jako załączniki: art/lostfraud_art5/C1.png, art/lostfraud_art5/C2.png, codex/okienko_fx/refs_visual/K4-portfel.jpg, art/lostfraud_art5/T1.png.
@@ -135,38 +125,3 @@ Ten sam kot w trzech pozach, każda jako osobna zwarta bryła na zielonym tle. �
 
 WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym branchu gpt/wyniki-brakujace (nie na main), w folderze art/gpt_wyniki/brakujace/, pod nazwami: Z8.png, KOT.png, i otwórz Pull Request do main. Jeśli nie możesz zapisywać do repo, napisz to i podaj obrazy do pobrania.
 ```
-
----
-
-## 4. DŹWIĘKI: 16 brakujących SFX (SZLIF_WOW F + BACKLOG_JAKOSCI §4)
-
-Tych plików nie ma w `game/assets/snd/` (jest 42 SFX i 14 ambientów), a gra ich potrzebuje. To NIE jest ChatGPT, tylko **ElevenLabs → Sound Effects**. Nic nie załączasz. Jeśli wolisz, napisz w wątku, a wygeneruję je sam przez konektor ElevenLabs.
-
-**Gdzie wrzucić:** `/mnt/project-files/audio/sfx_nowe/`, nazwy jak w pierwszej kolumnie. Ustawienia: 1-4 s, bez muzyki i bez mowy, 2 warianty i wybierz lepszy.
-
-| Plik | Prompt (wklej) | P |
-|------|----------------|---|
-| `sfx_doorbell_shop.mp3` | small brass shop door bell, two quick ding-ding chimes, spring on a wooden door, dry room | P0 |
-| `sfx_door_open_close.mp3` | old wooden door creak open and soft thud shut, wet wood, rain outside | P0 |
-| `sfx_coins_paper_money.mp3` | counting paper bills and putting a few coins in a metal tin, quiet | P0 |
-| `sfx_trace_pin.mp3` | a single sharp metal pin pressed into a cork board, short, dry, close | P0 |
-| `sfx_pen_scratch.mp3` | ballpoint pen writing in a paper ledger, 2 seconds, close | P1 |
-| `sfx_paper_envelope.mp3` | rustling an envelope being opened, paper tearing softly | P1 |
-| `sfx_cloth_inside_bag.mp3` | hand rummaging in a leather bag, keys jingle, zipper | P1 |
-| `sfx_umbrella_shake.mp3` | wet umbrella being shaken and folded | P1 |
-| `sfx_glass_tap.mp3` | fingertip tapping glass window twice, rain behind | P1 |
-| `sfx_police_radio_far.mp3` | police radio crackle with muffled dispatcher voice, no intelligible words, far away, rainy street | P1 |
-| `sfx_cat_meow_window.mp3` | small cat meowing quietly behind window glass, rain | P1 |
-| `sfx_radio_tune.mp3` | old radio dial turning between stations, static and fragments of music, no speech | P1 |
-| `sfx_siren_pass.mp3` | single distant police siren passing through wet streets, fading, 4 seconds | P2 |
-| `sfx_kettle_click.mp3` | electric kettle click off and a ceramic mug set on wood | P2 |
-| `sfx_heartbeat_low.mp3` | slow low heartbeat, felt more than heard, 3 seconds, no music | P2 |
-| `sfx_typewriter_key.mp3` | old typewriter, 5 keys and carriage bell | P2 |
-
-**Mamrotania** (8 plików po 2 s, bez słów): `mumble_old_man.mp3` "older man throat clearing and sigh"; `mumble_young_woman.mp3` "young woman nervous sniff and quiet hm"; `mumble_heavy_man.mp3` "heavy man grunting low laugh"; `mumble_child.mp3` "child whisper breath"; `mumble_old_woman.mp3` "old woman cough"; `mumble_teen.mp3` "teen mumbling"; `mumble_clerk.mp3` "stern clerk exhale"; `mumble_crying.mp3` "woman crying quietly, stifled".
-
-## Sprawdzone: czego jeszcze brakuje poza tym
-- Rzeczy z sekcji B audytu: `kask`, `koszyk`, `ksiega` w paczce 3; reszta przypadków ma już sprite'y w grze.
-- Wolne popiersia kolejki 2, 5, 6, 7: gra ich nie potrzebuje.
-- C4 (jeden język rzeczy, bez cienkiego konturu): obchodzone w kodzie, nowy arkusz dopiero po paczce 2.
-- C10 (osadzony krój): nie ChatGPT; wrzuć plik fontu OFL, jeśli chcesz, wątek gry go wpnie.
