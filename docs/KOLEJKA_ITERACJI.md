@@ -108,3 +108,35 @@ Ocena szczera:
 - Cały tydzień z sobotą nadal niezagrany ręcznie.
 
 Dopisek do I4 (ten sam wieczór): wątek dialogów przepisał plan na dni 8-10 (Vera z pudełkiem w dniu 8, Elias przy szybie w dniu 9 przed finałem, wyznanie Very w dniu 9, dzień 10 w dwóch scenach, epilog bez dat). To usuwa cztery braki z listy wyżej. Zagrałem dni 8-10 od zapisu do karty zakończenia na nowej treści: bez błędów, zakończenie „Rotacja”. Po mojej stronie poprawione: nagłówek świtu pokazuje datę zamiast numeru dnia, pasek nitek w 10 dniach nie pokazuje wątków Mai i Skrytki, które nie mają jak się rozegrać. Niesprawdzone: przejście dni 1-10 w całości jednym ciągiem.
+
+
+### Pomiar: ekonomia tygodnia 1 (12.11 wieczór)
+
+Przejście dni 1-5 z sobotą graczem bezbłędnym i uczciwym (pyta o wygląd i miejsce, zawsze bierze właściwą rzecz, zawsze „wydaj”, obsługuje wszystkich z kolejki). To górna granica, nie typowy gracz.
+
+| Świt | pon. | wt. | śr. | czw. | pt. | po sobocie |
+|---|---|---|---|---|---|---|
+| Gotówka | 80 $ | 260 $ | 400 $ | 500 $ | 680 $ | 310 $ |
+
+Skąd: 11 wizyt po 40 $ to 440 $, ludzie z kolejki dali 240 $ (po trzech na noc od wtorku). Sobota zabiera 370 $ (czynsz 150, rachunki 160, rata Marlowa 60).
+
+Wniosek szczery: to za dużo. Bezbłędny uczciwy gracz kończy tydzień z 310 $ na plusie i nie ma żadnego powodu, żeby wziąć 250 $ od Gusa. Dylemat „ukraść czy nie”, o który Tommy prosił, nie ma podstawy w liczbach. Bez kolejki zostaje 70 $, czyli kolejka z I3 rozbroiła presję, którą sama miała tworzyć.
+
+Czego nie wiem: ile zarabia zwykły gracz, który się myli (15 $ kary, gość wychodzi) i nie zdąża z kolejką. Bot tego nie powie.
+
+Propozycja do I6 (sobota), do sprawdzenia graniem, nie do wprowadzenia na ślepo:
+- człowiek z kolejki płaci 10 $ zamiast 20 $ (bezbłędny: plus 190 $),
+- albo zostaje 20 $, ale kolejka wchodzi tylko wtedy, gdy rozmowy były krótkie (próg czasu 60 min zamiast 45), żeby dociekliwość naprawdę kosztowała pieniądze,
+- cel: bezbłędny uczciwy kończy tydzień 1 w okolicy plus 100 $, typowy koło zera, tak żeby 250 $ Gusa było tygodniem spokoju.
+
+
+### I6, krok 1: człowiek z kolejki płaci 10 $ (12.11 wieczór)
+
+Zmiana: `TRT.tl_pay` 20 na 10. Nic więcej.
+
+Pomiar tym samym bezbłędnym graczem: piątek o świcie 560 $, po sobocie 190 $ (było 310 $). Gracz dociekliwy, który zadaje wszystkie pytania, przy starej stawce miał 230 $, czyli dociekliwość kosztowała 80 $ na tydzień. Przy nowej różnica spada do ok. 40 $.
+
+Ocena szczera:
+- 190 $ nadwyżki u bezbłędnego to wciąż luz, ale 250 $ Gusa jest już większe niż cały zapas z tygodnia. Typowego gracza z dwiema pomyłkami i jednym gościem, który wyszedł, szacuję na 70-100 $. To szacunek, nie pomiar.
+- Próg czasu dla kolejki sprawdziłem na liczbach i odrzuciłem: noc ma 370 minut, trzy wizyty zajmują 180-255, więc podniesienie progu z 45 do 70 minut zabiera najwyżej jedną osobę i tylko dociekliwemu. Za słaba dźwignia.
+- Prawdziwa presja powinna przyjść z soboty tygodnia 2 (rachunki, rata) i z tego, że pomyłki bolą. To reszta I6, nieruszona.
