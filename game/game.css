@@ -319,13 +319,16 @@ body.phone .tcred{font-size:36px;width:900px;left:220px}
 
 /* BOT QA (docs/BOT_QA.md): poprawki układu znalezione przez bota */
 #fade{z-index:990}
-.notes{position:absolute;left:24px;top:20px;z-index:800;font-size:18px;padding:14px 18px;background:#000}
 body:not(.phone) .bkb{position:absolute;right:24px;top:200px;z-index:30;font-size:17px;padding:14px 16px;background:#000}
 body:not(.phone) .letters.many{flex-wrap:wrap;align-content:center;align-items:stretch;gap:22px;padding:140px 60px 150px;overflow:auto}
 body:not(.phone) .letters.many .letter{flex:1 1 400px;max-width:460px;font-size:21px;line-height:1.4;padding:22px 24px}
 body:not(.phone) .crate .zguba img{max-height:150px;object-fit:contain}
-body:not(.phone) .crate.multi{flex-direction:row;flex-wrap:wrap;justify-content:center;align-content:flex-start;column-gap:16px;row-gap:14px;padding-bottom:50px}
-body:not(.phone) .crate.multi>.lab{flex-basis:100%;text-align:center}body:not(.phone) .crate.multi .cnt{position:absolute;left:0;right:0;bottom:14px;text-align:center}
-body:not(.phone) .crate.multi .zguba{width:178px}body:not(.phone) .crate.multi .zguba img{max-height:120px;max-width:170px}body:not(.phone) .crate.multi .zguba .tag{font-size:15px}
+.crate.multi{flex-direction:row;flex-wrap:wrap;justify-content:center;align-content:flex-start;column-gap:16px;row-gap:14px;padding-bottom:50px}
+.crate.multi>.lab{flex-basis:100%;text-align:center}.crate.multi .cnt{position:absolute;left:0;right:0;bottom:14px;text-align:center}
+.crate.multi .zguba{width:178px}.crate.multi .zguba img{max-height:120px;max-width:170px}body:not(.phone) .crate.multi .zguba .tag{font-size:15px}
 body:not(.phone) .center.sat{gap:14px;padding:40px 60px}body:not(.phone) .center.sat h1{font-size:96px}body:not(.phone) .center.sat .sub{font-size:25px;line-height:1.35}.center.sat .ups{gap:10px}body:not(.phone) .center.sat .ups .btn{font-size:18px;padding:12px 20px}
 .nameinp{font:30px Georgia,serif;padding:14px 20px;width:560px;max-width:90%;background:var(--paper);color:var(--ink);border:0;outline:3px solid var(--sod);outline-offset:3px;text-align:center}
+.bkb{position:absolute;z-index:30}
+body.phone .crate.multi .zguba img{max-height:90px}
+body.phone .letters.many{flex-wrap:wrap;align-content:flex-start;align-items:stretch;overflow:auto;padding:130px 30px 190px}
+body.phone .letters.many .letter{flex:1 1 640px;max-width:700px;transform:none}
