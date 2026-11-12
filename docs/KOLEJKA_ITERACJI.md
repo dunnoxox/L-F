@@ -106,3 +106,5 @@ Ocena szczera:
 - Klucze z kolejki: zamiast liczby kluczy (grafika pokazuje trzy) jest plakietka. Błąd z I3 naprawiony.
 - Dalej brakuje wnioskowania u ludzi z kolejki. Nie ruszone.
 - Cały tydzień z sobotą nadal niezagrany ręcznie.
+
+Dopisek do I4 (ten sam wieczór): wątek dialogów przepisał plan na dni 8-10 (Vera z pudełkiem w dniu 8, Elias przy szybie w dniu 9 przed finałem, wyznanie Very w dniu 9, dzień 10 w dwóch scenach, epilog bez dat). To usuwa cztery braki z listy wyżej. Zagrałem dni 8-10 od zapisu do karty zakończenia na nowej treści: bez błędów, zakończenie „Rotacja”. Po mojej stronie poprawione: nagłówek świtu pokazuje datę zamiast numeru dnia, pasek nitek w 10 dniach nie pokazuje wątków Mai i Skrytki, które nie mają jak się rozegrać. Niesprawdzone: przejście dni 1-10 w całości jednym ciągiem.
