@@ -1,37 +1,25 @@
-# DO CHATGPT: co wkleić i co załączyć (stan 12.11.2026)
+# DO CHATGPT: jedno wklejenie na czat (stan 12.11.2026)
 
-Cztery paczki, każda w OSOBNYM, NOWYM czacie ChatGPT (jeden czat = jedna paczka). Kolejność: 1 → 2 → 3 → 4. Nic nie musisz załączać: czat ma GitHuba, więc pod każdą paczką jest linijka `REFERENCJE`. Wklej ją NA POCZĄTKU, przed promptem (repo `dunnoxox/L-F`, branch `main`; wszystkie ścieżki sprawdzone, pliki istnieją). Jeśli czat nie umie otworzyć obrazu z repo, wtedy załącz go ręcznie.
+Trzy paczki, każda w OSOBNYM, NOWYM czacie ChatGPT. W każdej robisz jedno: kopiujesz cały blok z kodu i wklejasz. Nic nie załączasz i nic nie dopisujesz: referencje (ścieżki z GitHuba), prompt i instrukcja zapisu wyniku do repo są w tym samym bloku. Czwarta paczka to dźwięki (ElevenLabs, nie ChatGPT).
 
-| # | Paczka | Wynik | Wrzuć do | Nazwy plików |
-|---|--------|-------|----------|--------------|
-| 1 | Poprawki portretów + Ines i Evan | 6 obrazów 1536x1024 | repo: `art/gpt_wyniki/portrety/` | `G15-grace.png`, `G23-sylvia.png`, `G06-ada.png`, `G19-billie.png`, `G27-ines.png`, `G28-evan.png` |
-| 2 | Fotografie przedmiotów, blankiety, narzędzia | 26 obrazów | repo: `art/gpt_wyniki/fotografie/` | `KB1-4.png`, `KN1.png`, `FP01-12.png`, `FG01-09.png` |
-| 3 | 4 brakujące grafiki (kask, koszyk, księga, kot) | 2 arkusze | repo: `art/gpt_wyniki/brakujace/` | `Z8.png`, `KOT.png` |
-| 4 | Dźwięki (16 brakujących) | 15 plików + 8 mamrotań | ElevenLabs, nie ChatGPT; wynik do `/mnt/project-files/audio/sfx_nowe/` | nazwy `sfx_*.mp3` w sekcji 4 |
+| # | Paczka | Wynik trafia do repo |
+|---|--------|----------------------|
+| 1 | Poprawki portretów + Ines i Evan (6 obrazów) | `art/gpt_wyniki/portrety/` |
+| 2 | Fotografie przedmiotów, blankiety, narzędzia (26 obrazów) | `art/gpt_wyniki/fotografie/` |
+| 3 | Kask, koszyk, księga wydań, kot (2 arkusze) | `art/gpt_wyniki/brakujace/` |
+| 4 | Dźwięki (16 + 8 mamrotań) | ElevenLabs, robi osobny wątek |
 
-**Wyniki wrzuca ChatGPT do repo** (nie musisz nic pobierać). Na końcu każdej paczki wklej ten dopisek, z odpowiednim folderem z tabeli:
-
-```
-WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym branchu gpt/wyniki-<nazwa paczki> (nie na main), w folderze <FOLDER Z TABELI>, pod nazwami z listy, i otwórz Pull Request do main z listą plików. Jeśli nie możesz zapisywać do repo, napisz to i podaj obrazy do pobrania.
-```
-
-Po PR-ze wątek gry tnie z zieleni i wpina w grę. Gdyby czat nie miał zapisu do repo, pobierz obrazy i wrzuć do folderu projektu `lostfraud_art7/`.
-
-Jeśli ChatGPT się zatnie, napisz "dalej". Jeśli wyjdzie sepia, szarość albo litery: "Popraw obraz N: tylko czerń i krem (pomarańcz tylko jako światło), zero półtonów, bez liter". Kredytów nie oszczędzaj.
+Jeśli ChatGPT napisze, że nie umie otworzyć obrazu z repo albo zapisać do niego, załącz plik ręcznie / pobierz wyniki i wrzuć do folderu projektu. Jeśli się zatnie, napisz "dalej". Jeśli wyjdzie sepia, szarość albo litery: "Popraw obraz N: tylko czerń i krem (pomarańcz tylko jako światło), zero półtonów, bez liter".
 
 ---
 
 ## 1. PORTRETY: poprawki + Ines i Evan
 
-**Czat:** nowy. Wklej najpierw (zamiast załączania 8 plików):
+Nowy czat, JEDNO wklejenie (nic nie załączasz, wszystko jest w bloku):
 
 ```
 REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 8 obrazów i traktuj jako załączniki: art/portrety_goscie/G06-ada.png, G15-grace.png, G19-billie.png, G23-sylvia.png, G25-kofi.png, G11-stahl.png oraz art/portrety_referencje/L4-twarze.png i art/lostfraud_art5/B1-wdowiec.png.
-```
 
-Potem wklej blok:
-
-```
 Jesteś dyrektorem artystycznym gry. W tej rozmowie wygeneruj 6 obrazów, jeden po drugim, bez pytania o zgodę i bez streszczeń: 4 poprawione portrety i 2 nowe. Pod każdym obrazem napisz tylko etykietę, np. "G15 gotowe 1/6". Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i kontynuuj od następnego.
 
 STYL (bez zmian względem załączonych portretów): odbitka z linorytu, trzy farby: czerń płyty, kremowa biel papieru i brudny pomarańcz lampy sodowej. Formy to pełne kremowe plamy światła wycięte z czerni, cień to czysta czerń, faktura to krótkie cięcia dłuta. Zero szarości, brązu, sepii, gradientów i rastra. Pomarańcz tylko jako dwa lub trzy małe odblaski lampy z prawej strony, nigdy kolor ubrania czy skóry. Bez tekstu, liter, cyfr i logo.
@@ -59,21 +47,19 @@ G28 EVAN DOYLE: 37 lat, mąż, grzeczny kłamca. Gładko zaczesane ciemne włosy
 NA KOŃCU: spakuj 6 obrazów do jednego ZIP-a o nazwach: G15-grace.png, G23-sylvia.png, G06-ada.png, G19-billie.png, G27-ines.png, G28-evan.png. Jeśli nie możesz zrobić ZIP-a, wypisz te nazwy w kolejności obrazów. Potem napisz, które obrazy odbiegają od zasad.
 
 REFERENCJE (załączone): G06-ada.png, G15-grace.png, G19-billie.png, G23-sylvia.png to obrazy do poprawki. G25-kofi.png to wzór ciemnej skóry. G11-stahl.png pokazuje, do kogo Evan NIE może być podobny. L4-twarze.png to wzorzec rzeźbienia twarzy, B1-wdowiec.png to wzorzec układu czterech popiersi.
+
+WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym branchu gpt/wyniki-portrety (nie na main), w folderze art/gpt_wyniki/portrety/, pod nazwami: G15-grace.png, G23-sylvia.png, G06-ada.png, G19-billie.png, G27-ines.png, G28-evan.png, i otwórz Pull Request do main. Jeśli nie możesz zapisywać do repo, napisz to i podaj obrazy do pobrania.
 ```
 
 ---
 
 ## 2. FOTOGRAFIE PRZEDMIOTÓW, BLANKIETY, NARZĘDZIA (26 obrazów)
 
-**Czat:** nowy. Wklej najpierw (zamiast załączania 5 plików):
+Nowy czat, JEDNO wklejenie (nic nie załączasz, wszystko jest w bloku):
 
 ```
 REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 5 obrazów i traktuj jako załączniki, w tej kolejności: art/lostfraud_art6/Z1.png, art/lostfraud_art6/W3.png, art/lostfraud_art5/C4.png, codex/okienko_fx/refs_visual/K4-portfel.jpg, art/portrety_referencje/L4-twarze.png.
-```
 
-**Wynik (repo `art/gpt_wyniki/fotografie/`):** etykiety `KB1.png … KB4.png`, `KN1.png`, `FP01.png … FP12.png`, `FG01.png … FG09.png`. Wklej blok:
-
-```
 Generuję komplet zasobów do gry: 26 obrazów, wszystkie po kolei w tym jednym czacie. Pracuj samodzielnie: generuj jeden obraz po drugim, bez pytania o zgodę, bez streszczeń, bez łączenia obrazów, niczego nie pomijaj. Pod każdym obrazem tylko etykieta, np. "FP03 gotowe 8/26". Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i po mojej odpowiedzi kontynuuj od następnego. Kolejność: KB1-KB4, KN1, FP01-FP12, FG01-FG09. Na końcu wypisz listę etykiet i które obrazy wyszły niezgodnie ze stylem.
 
 STYL dla wszystkich: LINORYT SODOWY, dopasuj się dokładnie do załączonych referencji. Odbitka z linorytu. Trzy farby i ani jednej więcej: czerń płyty, kremowa biel papieru, brudny pomarańcz lampy sodowej. Formy z pełnych kremowych plam światła wyciętych z czerni, cień to czysta czerń, krawędź w cieniu znika w tle. Bez konturów i cienkich równych linii. Faktura z krótkich cięć dłuta, kropek i zadrapań. Zero szarości, brązu, sepii, gradientów i rastra. Pomarańcz wyłącznie jako światło (plama lampy, odblask), nigdy jako kolor rzeczy. Rzeczy stare i zniszczone. Bez tekstu, liter, cyfr i logo: kartki, kwity i rubryki mają puste pola albo same poziome cięcia. Bez smugi w tle i bez pomarańczowej smugi w rogu.
@@ -115,23 +101,19 @@ FG06 WĘDKARZ: mężczyzna w kaloszach dumnie trzyma ogromną rybę i teleskopow
 FG07 KASK I HULAJNOGA: różowy (w druku: kremowe światło na czerni) kask rowerowy z naklejką gwiazdki zawieszony na kierownicy hulajnogi przy furtce szkoły.
 FG08 POWERBANK NA KIEROWNICY: rower kurierski z torbą termiczną, na kierownicy przypięty powerbank z naklejką trasy w postaci linii z kropkami (mapa bez napisów).
 FG09 PRAWA RĘKAWICZKA: starsza dłoń trzyma jedną skórzaną rękawiczkę zszytą przy kciuku ciemną nitką, na tle czarnego płaszcza, w kadrze kawałek cmentarnego płotu.
+
+WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym branchu gpt/wyniki-fotografie (nie na main), w folderze art/gpt_wyniki/fotografie/, pod nazwami: KB1.png-KB4.png, KN1.png, FP01.png-FP12.png, FG01.png-FG09.png, i otwórz Pull Request do main. Jeśli nie możesz zapisywać do repo, napisz to i podaj obrazy do pobrania.
 ```
 
 ---
 
 ## 3. CZTERY BRAKUJĄCE GRAFIKI (kask, koszyk, księga wydań, kot)
 
-**Czat:** nowy. Wklej najpierw (zamiast załączania 4 plików):
+Nowy czat, JEDNO wklejenie (nic nie załączasz, wszystko jest w bloku):
 
 ```
 REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 4 obrazy i traktuj jako załączniki: art/lostfraud_art5/C1.png, art/lostfraud_art5/C2.png, codex/okienko_fx/refs_visual/K4-portfel.jpg, art/lostfraud_art5/T1.png.
-```
 
-Potem wklej blok:
-
-**Wynik (2 obrazy, repo `art/gpt_wyniki/brakujace/`):** `Z8.png` (kask, koszyk, księga otwarta i zamknięta) oraz `KOT.png` (trzy pozy kota). Wątek gry wytnie do `game/assets/items/`.
-
-```
 Generuję dwa ostatnie arkusze zasobów do gry, po kolei w tym jednym czacie. Pracuj samodzielnie: wygeneruj obraz 1, potem obraz 2, bez pytania o zgodę, bez streszczeń, bez łączenia obrazów. Pod każdym obrazem tylko etykieta: "Z8 gotowe 1/2", "KOT gotowe 2/2". Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i po mojej odpowiedzi kontynuuj. Na końcu napisz jednym zdaniem, czy któryś obraz odszedł od stylu.
 
 STYL: LINORYT SODOWY, dokładnie jak w załączonych C1.png i C2.png (arkusze rzeczy na zielonym tle) oraz K4-portfel.png (rzeźbienie plamą światła). Odbitka z linorytu. Na tych arkuszach tylko dwie farby: czerń płyty i kremowa biel papieru. Zero pomarańczu, zero szarości, brązu, sepii, gradientów i rastra. Formy powstają z pełnych kremowych plam światła wyciętych z czerni, cień to czysta czerń. Bez linii obrysu i bez cienkich równych konturów. Faktura to krótkie cięcia dłuta, kropki i zadrapania na granicy światła i cienia. Rzeczy są stare i zniszczone, nic nie jest ładne, symetryczne ani ikoniczne. Bez tekstu, liter, cyfr, logo i znaków wodnych: kartki, etykiety i nalepki mają puste pola albo same poziome cięcia.
@@ -150,6 +132,8 @@ Ten sam kot w trzech pozach, każda jako osobna zwarta bryła na zielonym tle. �
 1. SIEDZI bokiem na wąskim parapecie (sam fragment parapetu pod łapami, krótki, czarno-kremowy), ogon owinięty wokół łap, głowa zwrócona w prawo i lekko w górę, patrzy na lampę.
 2. SIEDZI przodem do widza, ta sama postura, głowa przechylona, oczy przymknięte (mruczy).
 3. LEŻY zwinięty w kłębek na parapecie, ogon przy nosie, jedno oko otwarte.
+
+WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym branchu gpt/wyniki-brakujace (nie na main), w folderze art/gpt_wyniki/brakujace/, pod nazwami: Z8.png, KOT.png, i otwórz Pull Request do main. Jeśli nie możesz zapisywać do repo, napisz to i podaj obrazy do pobrania.
 ```
 
 ---
