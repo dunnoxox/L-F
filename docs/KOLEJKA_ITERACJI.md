@@ -39,3 +39,16 @@ Ocena szczera:
 - Słabe: Hana opisuje futerał poprawnie, więc jej kłamstwo wychodzi dopiero z linii „Rzuca się w oczy”. To czytanie, nie dedukcja. Prawdziwy test przyjdzie z gościem, którego opis nie pasuje do żadnej rzeczy (plan: dzień 4).
 - Niedbały gracz jest karany mocno (minus 45 $ na wizycie wartej 40 $). Zostawiam, bo samouczek mówi wprost, co robić, a pierwsza pomyłka jest darmowa. Do sprawdzenia w I3 razem z czynszem.
 - Kary za wyjście gościa i pomyłki jeszcze nie spotykają się z sobotą. To I3.
+
+### I3 (12.11): zegar nocy i ludzie z kolejki
+
+Zmiana: zegar w rogu wreszcie coś znaczy. Pytanie 10 minut, oględziny 3, dopytanie przez szybę 10, pomyłka 15. Po gościach z imieniem, jeśli do szóstej zostało co najmniej 45 minut, puka ktoś z kolejki (od dnia 2, najwyżej trzech na noc): jedno zdanie z dwiema cechami, trzecią trzeba dopytać albo zaryzykować, 20 $ za znalezienie. Osiem typów rzeczy losowanych z tabeli `TLUM` w `game/tropy.js`, twarze z istniejących portretów kolejki. Kolejność zmieniona względem pierwotnej kolejki: „trzeci gość tylko, gdy zdążysz” groził urwaniem fabuły, więc czas decyduje o tłumie, nie o ludziach z imieniem.
+
+Granie: dzień 2 z dwoma pytaniami na gościa: po trzech wizytach była 3:34 i zmieściło się trzech ludzi z kolejki (plus 60 $). Sprawa z kluczami ręcznie: dwie pasujące sztuki, kotwica albo piłka, 20 sekund.
+
+Ocena szczera:
+- To jest ta „akcja z hałdy”, o którą chodziło w pierwszej wersji gry, i wreszcie ma powód: czynsz.
+- Znalazłem i usunąłem własny błąd: zapis gry w środku dnia psuł wznowienie (rzecz wydana, dzień od nowa). Zapis zostaje tylko na początku dnia, jak było.
+- Słabe: sprawa z kolejki to dziś rzut monetą albo zapłata cierpliwością. Brakuje trzeciej drogi, czyli wnioskowania (np. zdanie gościa zdradza coś pośrednio). Do poprawy przy I5.
+- Słabe: obrazek kluczy pokazuje trzy sztuki, a karta mówi „dwa klucze”. Cechy liczbowe trzeba wyrzucić z tabeli albo dorobić warianty grafik.
+- Niesprawdzone graniem: cały tydzień z sobotą. Wyliczenie: uważny gracz ma ok. 440 $ z wizyt i do 60 $ z kolejki na noc, czynsz z ratą to 310 $. Trzeba to zagrać po I4, bo liczba wizyt się zmieni.
