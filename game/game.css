@@ -396,3 +396,8 @@ body.phone .center.sat .ups .btn{padding:12px 20px}
 .gph.big{left:640px;top:140px;width:640px;height:640px;z-index:880;cursor:zoom-out;transform:rotate(1deg)!important;transition-delay:0s}
 .inspect .pic.inside.ph{height:960px;aspect-ratio:.91;background-size:contain;background-repeat:no-repeat;background-position:center}
 body.phone .gph{width:240px;height:240px}
+
+/* zawieszka z linorytu (KB3): nacięcia = linia, 4 jedno, 6 dwa, 11 trzy; rzecz odłożona do złej skrzyni zdradza się nacięciami */
+.slot .no.tg{position:absolute;top:-12px;left:-10px;width:74px;height:114px;padding-top:54px;box-sizing:border-box;text-align:center;font:700 15px ui-monospace,monospace;letter-spacing:0;color:#1a120a;background:center/contain no-repeat;transform:rotate(-9deg);filter:drop-shadow(0 3px 0 rgba(0,0,0,.6));pointer-events:none}
+.slot .no.t1{background-image:url(assets/ui/tag1.png)}.slot .no.t2{background-image:url(assets/ui/tag2.png)}.slot .no.t3{background-image:url(assets/ui/tag3.png)}
+body.phone .slot .no.tg{width:80px;height:124px;padding-top:58px;font-size:19px}
