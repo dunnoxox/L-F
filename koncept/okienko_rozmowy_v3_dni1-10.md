@@ -19,7 +19,7 @@
   "wnetrze": [
     {
       "sekret_id": "d1_kwit_0417",
-      "co_widac": "W mankiecie tkwi kwit z tego biura, numer 0417, sprzed trzech tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę.",
+      "co_widac": "W mankiecie tkwi kwit z tego biura, numer 0417, sprzed sześciu tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę.",
       "co_z_tego_wynika": "Thomas już tu był i dostał coś, czego nigdzie nie zapisano. Poprzednik wydawał rzeczy poza księgą."
     }
   ],
@@ -307,7 +307,7 @@
 
 ## DZIEŃ 2
 
-**Mini-karta: Jonah Pike, 22, kurier na rowerze.** Mówi szybko, poprawia się w pół zdania, kiedy pada imię June, zwalnia. Chce: plecak, w którym jest pudełko z pierścionkiem. Jutro o siódmej rano chce oświadczyć się June, zanim ona wyjdzie do pracy. Ukrywa: pierścionek kupił na raty. Obraz: serwetka z trzema wersjami oświadczyn.
+**Mini-karta: Jonah Pike, 22, kurier na rowerze.** Mówi szybko, poprawia się w pół zdania, kiedy pada imię June, zwalnia. Chce: plecak, w którym jest pudełko z pierścionkiem. O siódmej rano chce oświadczyć się June, zanim ona wyjdzie do pracy. Ukrywa: pierścionek kupił na raty. Obraz: serwetka z trzema wersjami oświadczyn.
 
 ```json
 {
@@ -321,10 +321,10 @@
     {
       "sekret_id": "d2_paragon_raty",
       "co_widac": "W pudełku w kieszeni na plecach leży pierścionek z małym oczkiem. Obok paragon: wpłacone 40 dolarów, 200 zostało do spłaty w ratach. Na serwetce trzy wersje oświadczyn, dwie przekreślone.",
-      "co_z_tego_wynika": "Jonah jutro o siódmej chce się oświadczyć, a pierścionek kupił na raty. Pierścionek jest wart w lombardzie około 150 dolarów."
+      "co_z_tego_wynika": "Jonah o siódmej rano chce się oświadczyć, a pierścionek kupił na raty. Pierścionek jest wart w lombardzie około 150 dolarów."
     }
   ],
-  "wejscie": "Cześć, Jonah. Zgubiłem plecak w jedenastce, czarny, z pękniętą klamrą. Potrzebuję go na jutro rano, bo w kieszeni jest coś ważnego. Naprawdę ważnego.",
+  "wejscie": "Cześć, Jonah. Zgubiłem plecak w jedenastce, czarny, z pękniętą klamrą. Potrzebuję go przed siódmą rano, bo w kieszeni jest coś ważnego. Naprawdę ważnego.",
   "tury": [
     {
       "pytania": [
@@ -357,7 +357,7 @@
           "tekst": "Kim jest June?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Moją dziewczyną. Pracuje w piekarni, wstaje o czwartej. Jutro o siódmej, zanim wyjdzie, chcę ją o coś zapytać. Dlatego ten plecak.",
+          "odpowiedz": "Moją dziewczyną. Pracuje w piekarni, wstaje o czwartej. O siódmej rano, zanim wyjdzie, chcę ją o coś zapytać. Dlatego ten plecak.",
           "mina": "emocja"
         },
         {
@@ -418,7 +418,7 @@
       "echo": {
         "za_dni": 1,
         "forma": "list",
-        "tekst": "Jonah: „Pierścionek jest w kieszeni, serwetka też. Jutro o siódmej. Trzymaj kciuki, jeśli masz kciuki.”"
+        "tekst": "Jonah: „Zdążyłem. O siódmej zapytałem June, serwetka została w kieszeni. Trzymaj kciuki, jeśli masz kciuki.”"
       }
     },
     {
@@ -453,7 +453,7 @@
     "pieniądze"
   ],
   "tik": "zwalnia na imieniu June",
-  "potrzeba": "plecak z pierścionkiem na jutro",
+  "potrzeba": "plecak z pierścionkiem na siódmą rano",
   "slad": "raty zdradzają dług, który ma Marlow"
 }
 ```
@@ -522,14 +522,14 @@
           "tekst": "Dlaczego to takie pilne właśnie dzisiaj?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo przesłuchanie jest jutro o ósmej. Dostałam się z listy rezerwowej, drugiej szansy nie będzie.",
+          "odpowiedz": "Bo przesłuchanie mam rano, o ósmej. Dostałam się z listy rezerwowej, drugiej szansy nie będzie.",
           "mina": "emocja"
         },
         {
           "tekst": "Pod pokrywą jest kartka: wypożyczenie do 7 sierpnia. Co to znaczy?",
           "ton": "niewygodne",
           "wymaga": "d2_etykieta_wyp",
-          "odpowiedz": "Że termin minął w sobotę. Konserwatorium nie przedłużyło, bo komisja zbiera się dopiero w poniedziałek. Nie jestem złodziejką, tylko spóźniłam się o dwa dni. Ale gram jutro.",
+          "odpowiedz": "Że termin minął w sobotę. Konserwatorium nie przedłużyło, bo komisja zbiera się dopiero w czwartek. Nie jestem złodziejką, tylko spóźniłam się o trzy dni. Ale przesłuchanie mam dziś rano.",
           "mina": "emocja"
         }
       ]
@@ -563,13 +563,13 @@
   "decyzje": [
     {
       "akcja": "wydaj",
-      "reakcja": "Dziękuję. W poniedziałek pójdę do komisji, obiecuję. Najpierw zagram.",
+      "reakcja": "Dziękuję. W czwartek pójdę do komisji, obiecuję. Najpierw zagram.",
       "zysk": "Hana zagra przesłuchanie i ma szansę dostać miejsce w orkiestrze.",
-      "strata": "Oddajesz instrument konserwatorium komuś, komu wypożyczenie wygasło wczoraj.",
+      "strata": "Oddajesz instrument konserwatorium komuś, komu wypożyczenie wygasło w sobotę.",
       "echo": {
         "za_dni": 2,
         "forma": "list",
-        "tekst": "Zagrałam. Nikt nie wiedział, że skrzypce są po terminie. W poniedziałek komisja przedłużyła mi wypożyczenie do końca roku. Przepraszam za zamieszanie. — H. Moreau"
+        "tekst": "Zagrałam. Nikt nie wiedział, że skrzypce są po terminie. Dziś po południu komisja przedłużyła mi wypożyczenie do końca roku. Przepraszam za zamieszanie. — H. Moreau"
       }
     },
     {
@@ -662,7 +662,7 @@
           "ton": "rzeczowe",
           "kto": "maz",
           "wymaga": null,
-          "odpowiedz": "Żeby sprawdzić, dokąd poszła. Policjant powiedział, że bez telefonu dwudziestego drugiego zamkną sprawę i tyle.",
+          "odpowiedz": "Żeby sprawdzić, dokąd poszła. Policjant powiedział, że bez telefonu do wtorku, siódmego września, zamkną sprawę i tyle.",
           "mina": "mowi"
         },
         {
@@ -1130,7 +1130,7 @@
           "tekst": "Do kiedy sprawa jest otwarta?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Do dwudziestego drugiego. Potem sprawa idzie do wydziału, a tam nikt nie pyta zaginionej o zgodę.",
+          "odpowiedz": "Do wtorku, siódmego września, do szóstej rano. Potem sprawa idzie do wydziału, a tam nikt nie pyta zaginionej o zgodę.",
           "mina": "mowi"
         },
         {
@@ -1380,7 +1380,7 @@
 }
 ```
 
-**Mini-karta: Gus Pell, 55, mężczyzna w szlafroku.** Mówi cicho, rozgląda się, zaczyna zdania od „tylko”. Chce: portfel, bo w nim ma dwa dowody (Pell i Ferro) i pieniądze na wyjazd. Ukrywa: jutro o 5:40 jedzie linią 11 i znika; jego paczka to ta z dnia 4, numer 0412. Kłamie: „Prawo jazdy, dwadzieścia dolarów i zdjęcie córki.”
+**Mini-karta: Gus Pell, 55, mężczyzna w szlafroku.** Mówi cicho, rozgląda się, zaczyna zdania od „tylko”. Chce: portfel, bo w nim ma dwa dowody (Pell i Ferro) i pieniądze na wyjazd. Ukrywa: o 5:40 rano jedzie linią 11 i znika; jego paczka to ta z dnia 4, numer 0412. Kłamie: „Prawo jazdy, dwadzieścia dolarów i zdjęcie córki.”
 
 ```json
 {
@@ -1571,11 +1571,11 @@
   "typ": "uczciwa, wie za dużo",
   "rzecz": "Szary pluszowy królik z uchem doszytym czerwoną nitką",
   "wnetrze": [],
-  "wejscie": "Dzień dobry, jestem Ada, mam dziesięć lat. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze, bo mama mówi, że bez kwitu nie wiadomo.",
+  "wejscie": "Dobry wieczór, jestem Ada, mam dziesięć lat. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze, bo mama mówi, że bez kwitu nie wiadomo.",
   "wejscie_jesli": {
-    "d1_rosa:wydaj": "Dzień dobry, jestem Ada, córka Rosy z pralni. Mama mówi, że dostała od was całą wypłatę. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
-    "d1_rosa:odmow": "Dzień dobry, jestem Ada, córka Rosy z pralni. Mama dostała mniej wypłaty, ale mówi, że to nie wasza wina. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
-    "d1_rosa:wez_20": "Dzień dobry, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze."
+    "d1_rosa:wydaj": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama mówi, że dostała od was całą wypłatę. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
+    "d1_rosa:odmow": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama dostała mniej wypłaty, ale mówi, że to nie wasza wina. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
+    "d1_rosa:wez_20": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze."
   },
   "tury": [
     {
@@ -2246,7 +2246,7 @@
           "ton": "niewygodne",
           "kto": "nora",
           "wymaga": null,
-          "odpowiedz": "Czternaście, po czterysta dolarów każda, termin do dwudziestego czwartego. Wpłaciły raz, a ja mam to w zeszycie.",
+          "odpowiedz": "Czternaście, po czterysta dolarów każda, termin do czwartku, dziewiątego września. Wpłaciły raz, a ja mam to w zeszycie.",
           "mina": "mowi"
         },
         {
@@ -2855,7 +2855,7 @@
       "co_z_tego_wynika": "Szuflada w biurze należała do Sama. Klucz bez zamka otwiera tę szufladę."
     }
   ],
-  "wejscie": "Dzień dobry. Zaplecze tramwajowe, pudełko z szafki, Vera Kovacs. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a pudełko jest z niej. Proszę o pomoc.",
+  "wejscie": "Dobry wieczór. Zaplecze tramwajowe, pudełko z szafki, Vera Kovacs. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a pudełko jest z niej. Proszę o pomoc.",
   "tury": [
     {
       "pytania": [
@@ -3240,7 +3240,7 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
     "8": [
       {
         "kto": "Gazeta",
-        "tekst": "Cooper Street 9 idzie pod wyburzenie, lokatorzy mają czas do dwudziestego czwartego. Twój pokój służbowy jest pod tym samym adresem. Nikt nie napisał, dokąd się wyprowadzisz."
+        "tekst": "Cooper Street 9 idzie pod wyburzenie, lokatorzy mają czas do czwartku, dziewiątego września. Twój pokój służbowy jest pod tym samym adresem. Nikt nie napisał, dokąd się wyprowadzisz."
       },
       {
         "kto": "Elias, numerek 1",

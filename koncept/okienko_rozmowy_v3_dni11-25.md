@@ -325,7 +325,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 1,
         "forma": "list",
-        "tekst": "W rejestrze jest wpis o wpłacie 400 $ rodziny Okoye. Dziękuję. Jutro przychodzę z pytaniem, co z oryginałami. — N. Vance"
+        "tekst": "W rejestrze jest wpis o wpłacie 400 $ rodziny Okoye. Dziękuję. Przy następnej wizycie zapytam, co z oryginałami. — N. Vance"
       }
     },
     {
@@ -355,7 +355,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 
 ## DZIEŃ 12
 
-**Iris Bell, Nora Vance, Ada Vale.** Iris: potrzeba kasetki, lęk że wyjdą papiery pięciu osób, sekret: 6 800 $ od miasta, tik „nie lubię naciskać”. Nora: potrzeba oryginałów do 24., lęk że Okoye zapłacą drugi raz, sekret: sama kiedyś odebrała paczkę, tik „po kolei”. Ada: potrzeba, żeby dorośli przestali się kłócić. Moment gwiazdy: Ada o szufladzie, którą Iris otwiera bez patrzenia.
+**Iris Bell, Nora Vance, Ada Vale.** Iris: potrzeba kasetki, lęk że wyjdą papiery czterech osób, sekret: 6 800 $ od miasta, tik „nie lubię naciskać”. Nora: potrzeba oryginałów do 24., lęk że Okoye zapłacą drugi raz, sekret: sama kiedyś odebrała paczkę, tik „po kolei”. Ada: potrzeba, żeby dorośli przestali się kłócić. Moment gwiazdy: Ada o szufladzie, którą Iris otwiera bez patrzenia.
 
 ```json
 {
@@ -397,7 +397,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "nora",
-          "odpowiedz": "Oryginałów pokwitowań zaliczek: czternaście rodzin, po 400 dolarów, termin dwudziesty czwarty. Bez nich Okoye zapłacą drugi raz, a ja nie mam jak tego udowodnić.",
+          "odpowiedz": "Oryginałów pokwitowań zaliczek: czternaście rodzin, po 400 dolarów, termin czwartek, dziewiąty września. Bez nich Okoye zapłacą drugi raz, a ja nie mam jak tego udowodnić.",
           "mina": "mowi"
         },
         {
@@ -469,11 +469,11 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "iris",
-          "odpowiedz": "Bo jak Nora je pokaże, wyjdzie też to, co leży obok: papiery pięciu osób, które już kupiły bilet. Czternaście rodzin czy pięć ludzi? To nie jest pytanie retoryczne.",
+          "odpowiedz": "Bo jak Nora je pokaże, wyjdzie też to, co leży obok: papiery czterech osób, które już kupiły bilet. Czternaście rodzin czy czterech ludzi? To nie jest pytanie retoryczne.",
           "mina": "mowi"
         },
         {
-          "tekst": "Co się stanie dwudziestego czwartego?",
+          "tekst": "Co się stanie w czwartek, dziewiątego września?",
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "nora",
@@ -509,7 +509,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": "d9_iris:depozyt",
           "kto": "iris",
-          "odpowiedz": "Czekają. Do soboty żaden z czterech nie dostanie dokumentu, a jedna rodzina jedzie jutro o 5:40. Nie mówię tego jak groźbę, to rozkład jazdy.",
+          "odpowiedz": "Czekają. Do soboty żaden z czterech nie dostanie dokumentu, a jedna rodzina jedzie o 5:40 rano. Nie mówię tego jak groźbę, to rozkład jazdy.",
           "mina": "emocja"
         }
       ]
@@ -521,8 +521,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "etykieta": "Zabezpiecz oryginały za pokwitowaniem",
       "kto": "nora",
       "reakcja": "Pokwitowanie, numer, podpis. Tak to powinno wyglądać. Iris patrzy na ciebie, ale ja wolę patrzeć na papier.",
-      "zysk": "Oryginały leżą w biurze za pokwitowaniem, więc Nora ma szansę przed dwudziestym czwartym.",
-      "strata": "Iris cię zapamięta, a papiery pięciu osób leżą obok oryginałów i przestają być bezpieczne.",
+      "zysk": "Oryginały leżą w biurze za pokwitowaniem, więc Nora ma szansę przed czwartkiem.",
+      "strata": "Iris cię zapamięta, a papiery czterech osób leżą obok oryginałów i przestają być bezpieczne.",
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
@@ -534,12 +534,12 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "etykieta": "Wydaj kasetkę Iris",
       "kto": "iris",
       "reakcja": "Dziękuję. Zawsze miło, kiedy ktoś rozumie. Drobna przysługa, nic więcej.",
-      "zysk": "Papiery pięciu osób zostają poza księgą i poza Urzędem.",
+      "zysk": "Papiery czterech osób zostają poza księgą i poza Urzędem.",
       "strata": "Oryginały odpływają, a rodzina Okoye zapłaci 400 $ drugi raz.",
       "echo": {
         "za_dni": 3,
         "forma": "list",
-        "tekst": "Wiem, że kasetkę wydano. Okoye wpłacą drugi raz przed dwudziestym czwartym. Zapisałam, kto stał przy szybie. — N. Vance"
+        "tekst": "Wiem, że kasetkę wydano. Okoye wpłacą drugi raz do czwartku. Zapisałam, kto stał przy szybie. — N. Vance"
       }
     },
     {
@@ -677,7 +677,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Żeton 0623 leży w depozycie. Wiesz o tym?",
           "ton": "rzeczowe",
           "wymaga": "d9_iris:depozyt",
-          "odpowiedz": "Wiem, Iris mi powiedziała. Pociąg jest jutro, depozyt do soboty. Czyli wyjadę bez papieru albo wcale.",
+          "odpowiedz": "Wiem, Iris mi powiedziała. Pociąg mam o 5:40, depozyt do soboty. Czyli wyjadę bez papieru albo wcale.",
           "mina": "emocja"
         },
         {
@@ -1056,13 +1056,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 
 ## DZIEŃ 14
 
-**Noah Reyes, 41, policjant.** Potrzeba: podpis Mai albo zamknięcie sprawy do 22. Lęk: że detektyw Evana pójdzie za Mayą i ją znajdzie. Sekret: nie wierzy Evanowi. Tik: „Czyli:”, kładzie rzeczy równo z krawędzią. Moment gwiazdy: zapisuje „dyżurny, bez nazwiska”.
+**Noah Reyes, 42, policjant.** Potrzeba: podpis Mai albo zamknięcie sprawy do 22. Lęk: że detektyw Evana pójdzie za Mayą i ją znajdzie. Sekret: nie wierzy Evanowi. Tik: „Czyli:”, kładzie rzeczy równo z krawędzią. Moment gwiazdy: zapisuje „dyżurny, bez nazwiska”.
 
 ```json
 {
   "id": "d14_noah",
   "dzien": 14,
-  "postac": "Noah Reyes, 41",
+  "postac": "Noah Reyes, 42",
   "glos": "Krótko, prosto, ściszonym głosem. Kładzie rzeczy równo z krawędzią lady. Mówi: „Czyli:”.",
   "typ": "uczciwy, zmęczony",
   "rzecz": "Czarny organizer w skórze z gumką",
@@ -1075,7 +1075,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   ],
   "wejscie": "Noah Reyes, komisariat przy Rynku. Zgubiłem organizer, czarny, w skórze, z gumką. Mam w nim kartkę do podpisu, która ma dojść do Mai Doyle. Dwudziestego drugiego sprawa idzie wyżej i zaczyna się prawdziwe szukanie.",
   "wejscie_jesli": {
-    "d11_maya:przez_okienko": "Noah Reyes, komisariat. Zgubiłem organizer, czarny, w skórze, z gumką. Dostałem od was jedno zdanie od Mai, zapisałem słowo w słowo. Teraz potrzebuję czegoś na piśmie, bo dwudziestego drugiego sprawa idzie wyżej.",
+    "d11_maya:przez_okienko": "Noah Reyes, komisariat. Zgubiłem organizer, czarny, w skórze, z gumką. Dostałem od was jedno zdanie od Mai, zapisałem słowo w słowo. Teraz potrzebuję czegoś na piśmie, bo do wtorku, siódmego września, sprawa idzie wyżej.",
     "d11_maya:powiadom_rodzine": "Noah Reyes, komisariat. Zgubiłem organizer, czarny, w skórze, z gumką. Wiem, że Lena wie, że siostra żyje, i że Maya się wycofała. Dwudziestego drugiego sprawa idzie wyżej, a ja mam tylko puste pole podpisu."
   },
   "tury": [
@@ -1117,7 +1117,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Co jeszcze jest w organizerze?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Terminy, numery, adres Leny Brandt. I kalendarz, w którym dwudziesty drugi jest zakreślony na czerwono.",
+          "odpowiedz": "Terminy, numery, adres Leny Brandt. I kalendarz, w którym wtorek, siódmy września, jest zakreślony na czerwono.",
           "mina": "neutralna"
         },
         {
@@ -1139,7 +1139,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     {
       "pytania": [
         {
-          "tekst": "Co się stanie dwudziestego drugiego?",
+          "tekst": "Co się stanie we wtorek, siódmego września?",
           "ton": "uprzejme",
           "wymaga": null,
           "odpowiedz": "Sprawa idzie do wydziału, a tam nikt nie pyta, czy ktoś chce być znaleziony. Evan zadzwoni po detektywa. Ponoć za tysiąc dwieście dolarów.",
@@ -1172,7 +1172,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Noah Reyes: „Rezerwacja przyjęta. Wpisuję. Czyli: dwudziestego drugiego rano sprawdzam, kto przyszedł.”"
+        "tekst": "Noah Reyes: „Rezerwacja przyjęta. Wpisuję. Czyli: we wtorek o szóstej rano sprawdzam, kto przyszedł.”"
       }
     },
     {
@@ -1456,7 +1456,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "sam",
-          "odpowiedz": "Termosu, zegarka i spokoju. Referencje z portu mam do dwudziestego piątego, bez nich tracę robotę, którą załatwił mi kolega.",
+          "odpowiedz": "Termosu, zegarka i spokoju. Referencje z portu mam do piątku, dziesiątego września, bez nich tracę robotę, którą załatwił mi kolega.",
           "mina": "mowi"
         },
         {
@@ -1699,7 +1699,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "wnetrze": [
     {
       "sekret_id": "d16_kartka_walizka",
-      "co_widac": "W jednej przegródce dwa żetony bagażowe i kartka pisana równym pismem Mai: „Lena: jedna rzecz. Walizkę do czwórki, poniedziałek 6:10. Jak wybierzesz ją zamiast mnie, nie przyjdę.”",
+      "co_widac": "W jednej przegródce dwa żetony bagażowe i kartka pisana równym pismem Mai: „Lena: jedna rzecz. Walizkę do czwórki, wtorek, 6:10. Jak wybierzesz ją zamiast mnie, nie przyjdę.”",
       "co_z_tego_wynika": "Maya prosi siostrę o jedną rzecz i zostawia warunek."
     },
     {
@@ -1781,11 +1781,11 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "uprzejme",
           "wymaga": null,
           "kto": "maya",
-          "odpowiedz": "Jedną rzecz. Odwieźć walizkę do tramwaju w poniedziałek o 6:10. Tylko to, nic więcej.",
+          "odpowiedz": "Jedną rzecz. Odwieźć walizkę do tramwaju we wtorek o 6:10. Tylko to, nic więcej.",
           "mina": "mowi"
         },
         {
-          "tekst": "Czy poniedziałek jest pewny?",
+          "tekst": "Czy wtorek jest pewny?",
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "maya",
@@ -1808,7 +1808,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "maya_sama",
       "etykieta": "Pozwól Mai powiedzieć to siostrze osobiście",
       "kto": "maya",
-      "reakcja": "Raz. Dwa. Trzy. Tak. Lena, słuchaj. Przestań decydować, a ja przyjdę w poniedziałek.",
+      "reakcja": "Raz. Dwa. Trzy. Tak. Lena, słuchaj. Przestań decydować, a ja przyjdę we wtorek.",
       "zysk": "Maya zachowuje sprawczość i zalicza ci drugi test zaufania.",
       "strata": "Lena ma żal, że usłyszała to w kolejce, a nie w domu.",
       "echo": {
@@ -1827,7 +1827,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Maya Doyle: „Saszetka wróciła do Leny. Policzyłam: raz, dwa, trzy. Wiem, co zrobię. Nie w poniedziałek.”"
+        "tekst": "Maya Doyle: „Saszetka wróciła do Leny. Policzyłam: raz, dwa, trzy. Wiem, co zrobię. Nie we wtorek.”"
       }
     },
     {
@@ -2118,7 +2118,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 3,
         "forma": "list",
-        "tekst": "Evan Doyle: „Zostawiłem list. Nie wiem, czy dotrze. Jeżeli nie odpisze do dwudziestego drugiego, zadzwonię do kogoś, kto szuka za pieniądze. — E.D.”"
+        "tekst": "Evan Doyle: „Zostawiłem list. Nie wiem, czy dotrze. Jeżeli nie odpisze do wtorku, siódmego września, zadzwonię do kogoś, kto szuka za pieniądze. — E.D.”"
       }
     },
     {
@@ -2338,7 +2338,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "wnetrze": [
     {
       "sekret_id": "d18_plan_wyburzenia",
-      "co_widac": "W teczce plan Cooper Street 9 z czerwonym dopiskiem „do wyburzenia” i lista terminów rozliczenia zaliczek: dwudziesty czwarty podkreślony dwa razy.",
+      "co_widac": "W teczce plan Cooper Street 9 z czerwonym dopiskiem „do wyburzenia” i lista terminów rozliczenia zaliczek: czwartek, dziewiąty września, podkreślony dwa razy.",
       "co_z_tego_wynika": "Cały dom idzie pod rozbiórkę, a termin rozliczenia zaliczek jest ostateczny. Lokatorzy nie mają zapasu."
     }
   ],
@@ -2363,7 +2363,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "nora",
-          "odpowiedz": "Po kolei: rzecz, osoba, skutek. Lista terminów, czternaście rodzin, dwudziesty czwarty. Bez niej nie mam daty, do kiedy Okoye mają zapłacić.",
+          "odpowiedz": "Po kolei: rzecz, osoba, skutek. Lista terminów, czternaście rodzin, czwartek, dziewiąty września. Bez niej nie mam daty, do kiedy Okoye mają zapłacić.",
           "mina": "mowi"
         },
         {
@@ -2428,7 +2428,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "nora",
-          "odpowiedz": "Okoye zapłacą drugi raz. Termin dwudziestego czwartego jest sztywny. Powiem to po kolei, żeby nikt nie mówił, że nie wiedział.",
+          "odpowiedz": "Okoye zapłacą drugi raz. Termin w czwartek, dziewiątego września, jest sztywny. Powiem to po kolei, żeby nikt nie mówił, że nie wiedział.",
           "mina": "neutralna"
         },
         {
@@ -2481,7 +2481,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 3,
         "forma": "list",
-        "tekst": "Nora Vance: „Wiem, że oryginały nie leżą już w biurze. Zapisałam godzinę i to, kto stał przy szybie. Rodzina Okoye ma czas do dwudziestego czwartego. — N. Vance”"
+        "tekst": "Nora Vance: „Wiem, że oryginały nie leżą już w biurze. Zapisałam godzinę i to, kto stał przy szybie. Rodzina Okoye ma czas do czwartku, dziewiątego września. — N. Vance”"
       }
     }
   ],
@@ -2685,7 +2685,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Leo wpisał puszkę do wykazu, bo ktoś mu to polecił, a potem sprostował, żeby nie zostać z tym sam."
     }
   ],
-  "wejscie": "Dzień dobry. Leo Marsh i Ada Vale. Torba konduktorska, szóstka, z wykazami zmiany. Ada przyszła, bo wie więcej, niż mówi. Ja przyszedłem, bo wolę nie podpisywać za wszystkich.",
+  "wejscie": "Dobry wieczór. Leo Marsh i Ada Vale. Torba konduktorska, szóstka, z wykazami zmiany. Ada przyszła, bo wie więcej, niż mówi. Ja przyszedłem, bo wolę nie podpisywać za wszystkich.",
   "tury": [
     {
       "pytania": [
@@ -2738,7 +2738,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "leo",
-          "odpowiedz": "Ja trochę. Ale ja się boję zawsze, od jedenastu lat. Ada nie wie, że się boi, i to jest groźniejsze.",
+          "odpowiedz": "Ja trochę. Ale ja się boję zawsze, od dawna. Ada nie wie, że się boi, i to jest groźniejsze.",
           "mina": "emocja"
         },
         {
@@ -3689,7 +3689,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 {
   "id": "d22_noah",
   "dzien": 22,
-  "postac": "Noah Reyes, 41",
+  "postac": "Noah Reyes, 42",
   "glos": "Krótko, prosto, ściszonym głosem. Kładzie rzeczy równo z krawędzią lady. Mówi: „Czyli:”.",
   "typ": "policjant, który zamyka sprawę",
   "rzecz": "Sztywna szara koperta policyjna",
@@ -3740,7 +3740,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Do której złożysz papiery?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Dziś do osiemnastej. Czyli jeśli się spóźnię, jutro sprawa idzie wyżej i nic z tego nie zależy ode mnie.",
+          "odpowiedz": "Do szóstej rano. Czyli jeśli się spóźnię, sprawa idzie wyżej i nic z tego nie zależy ode mnie.",
           "mina": "mowi"
         },
         {
@@ -3846,7 +3846,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "wnetrze": [
     {
       "sekret_id": "d22_kwit_maya",
-      "co_widac": "Na kopii pokwitowania wydania: „Odbiorca: M.D. Rzecz: walizka szara, wydana wczoraj. Dalej: jutro 6:10, linia 4.” Pieczątka okienka.",
+      "co_widac": "Na kopii pokwitowania wydania: „Odbiorca: M.D. Rzecz: walizka szara, wydana wczoraj. Dalej: linia 4, peron 5.” Pieczątka okienka.",
       "co_z_tego_wynika": "Kwit podaje miejsce i godzinę. To adres, którego Maya nie zgodziła się podać."
     }
   ],
@@ -3901,7 +3901,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "mina": "emocja"
         },
         {
-          "tekst": "Na kwicie: odbiór M.D., jutro 6:10, czwórka. Co z tym?",
+          "tekst": "Na kwicie: odbiór M.D., linia 4, peron 5. Co z tym?",
           "ton": "niewygodne",
           "wymaga": "d22_kwit_maya",
           "odpowiedz": "Zgodnie z regulaminem proszę o kopię. Z tej linijki da się poskładać wszystko. Zapłacę, żeby oszczędzić biuru pisania.",
@@ -3952,9 +3952,9 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     {
       "akcja": "stahl_wydaj",
       "etykieta": "Wydaj Stahlowi kopię kwitu z wczorajszego wydania",
-      "reakcja": "Zgodnie z regulaminem. Dziękuję. Jutro, 6:10, czwórka. Tyle wystarczy. Nie zapomnę, kto był uprzejmy.",
+      "reakcja": "Zgodnie z regulaminem. Dziękuję. Linia 4, peron 5. Tyle wystarczy. Nie zapomnę, kto był uprzejmy.",
       "zysk": "Stahl odchodzi z kierunkiem, a Ty zachowujesz czystą kieszeń i czyste sumienie wobec Marlowa.",
-      "strata": "Detektyw dostaje trop Mai i jedzie za nią o 6:10 w poniedziałek.",
+      "strata": "Detektyw dostaje trop Mai i jedzie za nią na linię 4, na peron 5.",
       "echo": {
         "za_dni": 1,
         "forma": "list",
@@ -3966,7 +3966,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "etykieta": "Weź 200 $ opłaty i wydaj kopię kwitu",
       "kasa": 200,
       "wymaga": "d22_oferta_200",
-      "reakcja": "Zgodnie z regulaminem: dwieście, na ladzie. Dziękuję za sprawność. Jutro, 6:10, czwórka. Zapisane.",
+      "reakcja": "Zgodnie z regulaminem: dwieście, na ladzie. Dziękuję za sprawność. Linia 4, peron 5. Zapisane.",
       "zysk": "200 $ w ręku i kolejka bez zakłóceń.",
       "strata": "Okienko sprzedało trop za opłatę: Urząd +2, kopie +1, a Stahl wraca z drugim pytaniem.",
       "echo": {
@@ -4761,7 +4761,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Od jak dawna wozisz paczki w płótnie?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Od jedenastu lat, może dłużej. Zacząłem, bo Vera prosiła. Mówiła: kurs, godzina, nic więcej. Nie pytałem. Nie wolno mi było.",
+          "odpowiedz": "Od dawna, może dłużej. Zacząłem, bo Vera prosiła. Mówiła: kurs, godzina, nic więcej. Nie pytałem. Nie wolno mi było.",
           "mina": "mowi"
         },
         {
@@ -4899,7 +4899,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Kiedy to było?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Ponad dwa miesiące temu. Prawą oddał od razu. Lewa czekała, jak powiedział. Przyszedłem wtedy po rękawiczkę, a on tylko skinął głową.",
+          "odpowiedz": "Sześć tygodni temu. Prawą oddał od razu. Lewa czekała, jak powiedział. Przyszedłem wtedy po rękawiczkę, a on tylko skinął głową.",
           "mina": "mowi"
         },
         {
@@ -4996,14 +4996,14 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     },
     {
       "akcja": "wpisz_wstecz",
-      "etykieta": "Wpisz wydanie sprzed dwóch miesięcy w dzisiejszej księdze",
+      "etykieta": "Wpisz wydanie sprzed sześciu tygodni w dzisiejszej księdze",
       "reakcja": "Wstecz? Można tak? Dziękuję. Rozumiem. Jeśli to naprawia, to dobrze, że można.",
       "zysk": "Wydanie Sama dostaje wpis z datą wsteczną i stają się czyste papiery.",
       "strata": "Wpis wsteczny to fałszerstwo. Jeśli Urząd przyjrzy się datom, okienko ma problem.",
       "echo": {
         "za_dni": 2,
         "forma": "list",
-        "tekst": "Victor Crane: „W księdze pojawił się wpis wsteczny, trzy tygodnie temu, bez numeru kwitu. Do wyjaśnienia. — V.C.”"
+        "tekst": "Victor Crane: „W księdze pojawił się wpis wsteczny, sprzed sześciu tygodni, bez numeru kwitu. Do wyjaśnienia. — V.C.”"
       }
     }
   ],
@@ -5462,7 +5462,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     "14": [
       {
         "kto": "Elias, numerek 1",
-        "tekst": "Elias zapytał, czy podpis do dwudziestego drugiego to termin, czy prośba. Odpowiedział sam sobie: „Termin. Dla mnie zawsze termin.” Wziął suchy numerek."
+        "tekst": "Elias zapytał, czy podpis do wtorku, siódmego września, to termin, czy prośba. Odpowiedział sam sobie: „Termin. Dla mnie zawsze termin.” Wziął suchy numerek."
       },
       {
         "kto": "Kuba Marlow, pod bramą",
@@ -5486,7 +5486,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       },
       {
         "kto": "Karta pod szybą",
-        "tekst": "Maya zostawiła na ladzie kartkę: „Walizka w poniedziałek. Nie spóźnij się.”"
+        "tekst": "Maya zostawiła na ladzie kartkę: „Walizka we wtorek, 6:10. Nie spóźnij się.”"
       }
     ],
     "17": [
