@@ -41,7 +41,9 @@ window.TROPY={
   bl:[{wskaz:'czarna, prosta, na 6:30',spod:'czysty',uw:'Tyka głośno i spieszy się kwadrans.'},{spod:'naklejka z ceną',dzwonek:'oba całe',uw:'Nowy, jeszcze z folią na szybce.'}]}
 };
 window.TRT={head:'Z rozmowy',none:'Na razie wiesz tylko, czego szukasz. Reszta padła w rozmowie albo nie padła.',
- ask:'? dopytaj przez szybę',ask_cost:'Każde dopytanie zabiera gościowi kratkę cierpliwości.',take:'Na ladę',back:'Odłóż',other:'Nie tego szuka gość.',
+ ask:'? zapytaj gościa',ask_cost:'Wołasz przez ramię w stronę okienka. Każde pytanie zabiera gościowi kratkę cierpliwości.',waits:'czeka przy okienku',look:'obejrzyj',
+ odm:['Nie. Tego nie powiem.','Dość. To już nie jest pytanie o rzecz.','Nie. Stoję tu po swoją rzecz, nie na przesłuchanie.'],press:'Naciśnij · −1 cierpliwość',odm_hint:'Gość ma prawo odmówić. Możesz nacisnąć jeszcze raz, ale w magazynie będzie mniej cierpliwy',
+ reg_h:'Regulamin okienka',reg:['Rzeczy nie pokazuje się przed wydaniem.','Dostaje ją ten, kto ją opisze.','Złe wydanie dyżurny pokrywa z pensji.'],take:'Na ladę',back:'Odłóż',other:'Nie tego szuka gość.',
  wrong:'„To nie moja rzecz.” Pomyłka idzie z Twojej kieszeni.',fine:15,wrong1:'„To nie moja rzecz.” Pierwsza pomyłka na koszt biura. Każda następna: 15 $ z Twojej kieszeni.',step:'Krok 5: obejrzyj podobne rzeczy i połóż na ladzie tę, która pasuje do rozmowy',card:'Oględziny',uw:'Rzuca się w oczy'};
 window.TR={
  has:g=>!!window.TROPY[g.id],
@@ -76,3 +78,17 @@ window.TR.tlum=function(r,id){const keys=Object.keys(window.TLUM),sp=keys[(r()*k
  if(bl[0][hid]===bl[2][hid])bl[0][hid]=t.v[hid][(ci[hid]+1)%3][0];
  window.TROPY[id]={pola:t.pola,cel,re,dop,bl,uw:uw[0]};
  return {sprite:sp,line:window.TRT.tl_say.replace('{gen}',t.gen).replace('{a}',t.v[said[0]][ci[said[0]]][1]).replace('{b}',t.v[said[1]][ci[said[1]]][1])}};
+
+/* ITERACJA 3b (uwagi z grania): zasłonka, lupa, regulamin, odmowa gościa */
+Object.assign(window.LANG,{hint_curtain:'Kliknij zasłonkę, żeby ją odsunąć.',step_knock:'Krok 2: kliknij zasłonkę w oknie',
+ step_inspect:'Przesuwaj lupę po rzeczy. Kółko świeci mocniej, im bliżej śladu. Kliknij, gdy zrobi się pomarańczowe',
+ insp_h:'Oględziny',insp_txt:'Coś tu nie pasuje do zwykłej zguby. Przesuwaj lupę po rzeczy i kliknij tam, gdzie kółko zapali się na pomarańczowo.',
+ step_decide:'Krok 6: przeciągnij rzecz na jedno z pól po prawej albo po prostu kliknij pole',
+ step_ask:'Krok 3: pytaj o to, czego nie widać z ulicy. Rzecz dostaje ten, kto ją opisze (regulamin wisi po lewej)'});
+/* regulamin przy oknie: powód, dla którego dyżurny wypytuje (dni 1-3) */
+window.TR.regul=function(layer,day){if(day>3||layer.querySelector('.regul'))return;const e=document.createElement('div');e.className='regul';
+ e.innerHTML='<b>'+TRT.reg_h+'</b>'+TRT.reg.map((t,i)=>'<span><i>§'+(i+1)+'</i> '+t+'</span>').join('');layer.append(e)};
+/* gość mówi NIE: pytanie z polem "odmowa" zawsze; poza tym trzecie niewygodne pytanie w wizycie, jeśli nie niesie tropu, sekretu ani flagi */
+window.TR.odmowa=function(g,x,sec,ST){if(ST.odmId!==g.id){ST.odmId=g.id;ST.odm=0;ST.nw=0;ST.odmU=0}
+ if(x.odmowa)return x.odmowa;if(x.ton!=='niewygodne')return null;ST.nw++;const T=window.TROPY[g.id];const trop=T&&Object.keys(T.re).some(k=>T.re[k].test(x.odpowiedz||''));
+ if(ST.nw>=2&&!ST.odmU&&!sec&&!x.wymaga&&!x.ustawia&&!trop&&x.mina!=='klamie'){ST.odmU=1;return TRT.odm[(g.id.length+ST.nw)%TRT.odm.length]}return null};
