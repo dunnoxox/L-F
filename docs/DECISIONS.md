@@ -31,3 +31,5 @@
 - Bot: ElevenLabs tylko SFX/ambient, limit ok. 40 generacji, bez głosów w języku; muzyka dalej z Suno/Udio.
 - Bot 2026-11-11: Skrytka = paszporty/dokumenty dla ludzi chcących zniknąć (zatwierdzone przez Tommy'ego 4A). Zmieniono d4 w koncept/okienko_rozmowy_tydzien1_v2.md (oryginał nietknięty). Imiona ujednolicone: Mara→Maya, Nell→Lena.
 - Bot: d5 w v2 nie zdradza kalki z dnia 15: sekret to wykaz z dopisanymi innym tuszem wpisami i parafem inspektora (kalka zostaje na dzień 15).
+- Bot 2026-11-12 (wątek akcji, docs/AKCJA_WERYFIKACJA.md): numery kwitów są porządkowe w roku (d1 zaczyna od 0561, +6-9 na noc), nie są datą; żetony Skrytki (mm/dd) zostają bez zmian. Kwit 0417 Thomasa = sprzed ok. 3 tygodni. Do akceptacji Tommy'ego, bez sprzeciwu zostaje.
+- Bot 2026-11-12: linia z dialogu wygrywa z polem `line` w danych (22 niezgodności, docs/tools/check_spojnosc.py); wyjątek tylko dla kłamstwa z dowodem w teczce sprawy.
