@@ -19,7 +19,7 @@
   "wnetrze": [
     {
       "sekret_id": "d1_kwit_0417",
-      "co_widac": "W mankiecie tkwi kwit z tego biura, numer 0417, sprzed sześciu tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę.",
+      "co_widac": "W mankiecie tkwi kwit z tego biura, numer 0417, sprzed sześciu tygodni. Odręcznie: „Prawa wydana bez wpisu. Lewa czeka. S.H.” W księdze wydań nie ma wpisu o tym numerze, w tym miejscu wyrwano stronę 41.",
       "co_z_tego_wynika": "Thomas już tu był i dostał coś, czego nigdzie nie zapisano. Poprzednik wydawał rzeczy poza księgą."
     },
     {
@@ -82,7 +82,7 @@
           "tekst": "W mankiecie jest kwit z tego biura, numer 0417. Skąd on?",
           "ton": "niewygodne",
           "wymaga": "d1_kwit_0417",
-          "odpowiedz": "No dobrze, byłem tu. Trzy tygodnie temu zgubiłem prawą. Młody człowiek, Sam, oddał mi ją od ręki i powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstydziłem się, że to drugi raz.",
+          "odpowiedz": "No dobrze, byłem tu. Sześć tygodni temu zgubiłem prawą. Młody człowiek, Sam, oddał mi ją od ręki i powiedział, że wpisu nie trzeba, bo to pamiątka, a nie zguba. Wstydziłem się, że to drugi raz.",
           "mina": "emocja"
         }
       ]
@@ -799,7 +799,7 @@
   "wnetrze": [
     {
       "sekret_id": "d3_telefon_wiadomosc",
-      "co_widac": "Na ekranie wisi wiadomość od „Lena” z czwartku, 21:48: „Nie wracaj do domu. Jadę po ciebie w sobotę.” Pod etui złożone stare zdjęcie dwóch dziewczynek, podpisane „Maya i Lena”.",
+      "co_widac": "Na ekranie wisi wiadomość od „Lena” z czwartku, 23:48: „Nie wracaj do domu. Jadę po ciebie w sobotę.” Pod etui złożone stare zdjęcie dwóch dziewczynek, podpisane „Maya i Lena”.",
       "co_z_tego_wynika": "To telefon Mai. Siostra kazała jej nie wracać do męża, a telefon został w tramwaju po tej wiadomości."
     }
   ],
@@ -1272,7 +1272,7 @@
   "wnetrze": [
     {
       "sekret_id": "d5_notes_ulotki",
-      "co_widac": "W notesie notatka: „E.D. zamówił ulotki z twarzą żony w czwartek o 22:15. Zgłoszenie zaginięcia złożył o 23:30.”",
+      "co_widac": "W notesie notatka: „E.D. zamówił ulotki z twarzą żony w czwartek o 22:15. Zgłoszenie zaginięcia złożył w piątek o 6:10.”",
       "co_z_tego_wynika": "Evan zamówił ulotki wcześniej, niż zgłosił zaginięcie. Wiedział, że żona odeszła."
     }
   ],
@@ -1311,7 +1311,7 @@
           "tekst": "W notesie jest zapis: ulotki Evana, czwartek 22:15. Co to znaczy?",
           "ton": "niewygodne",
           "wymaga": "d5_notes_ulotki",
-          "odpowiedz": "Że Doyle zamówił ulotki z twarzą żony godzinę i kwadrans przed zgłoszeniem. Zgłosił o 23:30. Może zbieg okoliczności, nie chcę tego rozstrzygać przy okienku. To moje zmartwienie.",
+          "odpowiedz": "Że Doyle zamówił ulotki z twarzą żony osiem godzin przed zgłoszeniem. Zgłosił w piątek o 6:10. Może zbieg okoliczności, nie chcę tego rozstrzygać przy okienku. To moje zmartwienie.",
           "mina": "emocja"
         }
       ]
@@ -1477,7 +1477,7 @@
           "tekst": "Co kontrolujesz w tym biurze?",
           "ton": "uprzejme",
           "wymaga": null,
-          "odpowiedz": "Czy księga wydań zgadza się z magazynem i z kwitami. Wpis, kwit, podpis. Czasem brakuje któregoś.",
+          "odpowiedz": "Czy księga wydań zgadza się z magazynem i z kwitami. Wpis, kwit, podpis. Czasem brakuje któregoś. W tej księdze brakuje całej strony 41.",
           "mina": "mowi"
         },
         {
@@ -2303,7 +2303,7 @@
           "mina": "mowi"
         },
         {
-          "tekst": "Ulotki z jej twarzą zamówiłeś o 22:15. Godzinę przed zgłoszeniem.",
+          "tekst": "Ulotki z jej twarzą zamówiłeś o 22:15. Osiem godzin przed zgłoszeniem.",
           "ton": "niewygodne",
           "wymaga": "d7_kit_ulotki|d5_notes_ulotki",
           "odpowiedz": "To... na wszelki wypadek. Zamówiłem je wcześniej, bo przeczuwałem. Czy to coś zmienia? Czy ktoś mi to zapisze?",
@@ -2925,7 +2925,7 @@
   "wnetrze": [
     {
       "sekret_id": "d9_kapelusz_naklejka",
-      "co_widac": "Pod wstążką naklejka: „Alder & Son, rozmiar 56”. W podszewce haftowane inicjały J.K.",
+      "co_widac": "Pod wstążką naklejka: „Hobbs & Syn, rozmiar 56”. W podszewce haftowane inicjały J.K.",
       "co_z_tego_wynika": "Kapelusz jest rozmiar 56 z inicjałami J.K. Zgłaszający mówi o innym rozmiarze i innych inicjałach."
     }
   ],
@@ -2980,7 +2980,7 @@
           "mina": "klamie"
         },
         {
-          "tekst": "Pod wstążką jest „Alder & Son, 56”, w środku J.K. Czyj to kapelusz?",
+          "tekst": "Pod wstążką jest „Hobbs & Syn, 56”, w środku J.K. Czyj to kapelusz?",
           "ton": "niewygodne",
           "wymaga": "d9_kapelusz_naklejka",
           "odpowiedz": "…Chwileczkę. Biuro ma dobry wzrok. Kapelusz nie jest mój. Chciałem zobaczyć, czy ktoś go wyda za opis.",
@@ -3503,6 +3503,7 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
       }
     ],
     "9": [
+      {"kto": "Słup przy zajezdni", "tekst": "Ines Calloway przypięła obok swojej kartki o kocie wycinek z archiwum „Kuriera”. To samo ogłoszenie, z którego oderwałeś pasek: „Bez referencji. Dyskrecja.” Na marginesie rok sprzed jedenastu lat. Słowo w słowo."},
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias poprosił, żeby oprawkę, jeśli się znajdzie, trzymać osobno. „Gdyby ktoś przyszedł po nią z papierkiem od innego pracownika, proszę nie wierzyć.”"
