@@ -60,7 +60,35 @@ window.TROPY={
   mowi:{srodek:'prawo jazdy, 20 $, zdjęcie córki'},niezg:'srodek',odkrywa:['d5_dwa_dowody','d5_gotowka_400'],uw:'Za zdjęciem zwinięte banknoty: dwie stówki i pięćdziesiątka. Mówił o dwudziestu dolarach.',
   re:{skora:/brązowy, wytarty/i,zap:/na zatrzask/i,ksztalt:/wygiął się/i,srodek:/Prawo jazdy, dwadzieścia dolarów/i},
   dop:{skora:'Brązowy, wytarty.',zap:'Na zatrzask.',ksztalt:'Wygięty, jedenaście lat w tej samej kieszeni.',srodek:'Prawo jazdy, dwadzieścia dolarów, zdjęcie córki. Tylko tyle.'},
-  bl:[{zap:'zamek błyskawiczny',ksztalt:'płaski',srodek:'prawo jazdy, 20 $, zdjęcie dziewczynki',uw:'Prawo jazdy na nazwisko Orlov.'},{ksztalt:'płaski, sztywny',srodek:'bilet miesięczny, paragon',uw:'Pachnie nową skórą.'},{skora:'czarna, gładka',srodek:'wizytówki, 5 $',uw:'Wizytówki zakładu pogrzebowego.'}]}
+  bl:[{zap:'zamek błyskawiczny',ksztalt:'płaski',srodek:'prawo jazdy, 20 $, zdjęcie dziewczynki',uw:'Prawo jazdy na nazwisko Orlov.'},{ksztalt:'płaski, sztywny',srodek:'bilet miesięczny, paragon',uw:'Pachnie nową skórą.'},{skora:'czarna, gładka',srodek:'wizytówki, 5 $',uw:'Wizytówki zakładu pogrzebowego.'}]},
+ /* I7: dni 6-8. Leo: oględziny odkrywają dopisek o puszce. Kit: lewa i prawa muszla. Evan i Bree kłamią o rzeczy (pole mowi). Torba: litera na miarce. */
+ d6_leo:{pola:{mat:'koperta',lanc:'łańcuszek',grawer:'grawer na wieczku',kiedy:'zawieszka: przyjęto'},
+  cel:{mat:'mosiądz',lanc:'jest',grawer:'„za trzydzieści lat”',kiedy:'22:47'},odkrywa:['d6_zegarek_list'],uw:'Pod wieczkiem karteczka z wykazu zmiany. Dopisek długopisem: „+ puszka (b.n.)”.',
+  re:{mat:/mosiężny/i,lanc:/łańcuszk/i,grawer:/za trzydzieści lat/i,kiedy:/22:47/},
+  dop:{mat:'Mosiężny.',lanc:'Na łańcuszku.',grawer:'Na wieczku grawer: „za trzydzieści lat”.',kiedy:'O 22:47. Co do minuty.'},
+  bl:[{grawer:'„za dwadzieścia lat”',uw:'Chodzi, ale spóźnia się o kwadrans.'},{lanc:'brak, urwane kółko',uw:'Szkiełko pęknięte na pół.'},{kiedy:'23:30',grawer:'gładkie wieczko',uw:'W kopercie wydrapany numer lombardu.'}]},
+ d7_kit:{pola:{kolor:'kolor',lewa:'lewa muszla',prawa:'prawa muszla',gdzie:'zawieszka: znaleziono'},
+  cel:{kolor:'czarne',lewa:'oklejona taśmą',prawa:'naklejka: kot w kasku',gdzie:'siedzenie przy oknie'},odkrywa:['d7_tasma_banknot'],uw:'Pod taśmą na lewej muszli coś złożonego. Wystaje róg banknotu.',
+  re:{kolor:/Czarne, nauszne/i,lewa:/Lewa muszla oklejona taśmą/i,prawa:/na prawej naklejka/i,gdzie:/siedzeniu przy oknie/i},
+  dop:{kolor:'Czarne, nauszne.',lewa:'Lewa muszla oklejona taśmą.',prawa:'Na prawej naklejka, kot w kasku.',gdzie:'W czwórce, na siedzeniu przy oknie.'},
+  bl:[{lewa:'naklejka: kot w kasku',prawa:'oklejona taśmą',uw:'Kabel przegryziony przy wtyczce.'},{prawa:'naklejka: kot bez kasku',uw:'Na pałąku imię „Olek” markerem.'},{gdzie:'podłoga przy kasowniku',lewa:'cała',uw:'Jeszcze ciepłe. Ktoś oddał je przed chwilą.'}]},
+ d7_evan:{pola:{skora:'etui',zap:'zapięcie',karton:'kartonik',klucze:'klucze w środku'},
+  cel:{skora:'brązowa skóra',zap:'zatrzask',karton:'M.D. i znaczek nieskończoności',klucze:'dwa: zwykły i mały z numerem 14'},mowi:{klucze:'jeden, do mieszkania'},niezg:'klucze',odkrywa:['d7_etui_klucze'],
+  uw:'Mały klucz jest nowy, bez rys. Na zawieszce etui numer linii, o który pytał gość.',
+  re:{skora:/brązowe etui|Brązowa skóra/i,zap:/zatrzask/i,karton:/inicjałami M\.D\./i,klucze:/Jeden\. Do naszego/i},
+  dop:{skora:'Brązowa skóra.',zap:'Na zatrzask.',karton:'Kartonik z inicjałami M.D. i znaczkiem nieskończoności.',klucze:'Jeden. Do naszego mieszkania.'},
+  bl:[{klucze:'jeden, duży',karton:'M.D., bez znaczka',uw:'Kartonik pisany drukowanymi literami.'},{karton:'N.D. i serduszko',uw:'W środku paragon z kwiaciarni.'},{zap:'zamek błyskawiczny',klucze:'trzy na kółku',uw:'Pachnie benzyną.'}]},
+ d8_lena_i_nora:{pola:{torba:'torba',obcegi:'obcęgi',miarka:'miarka',papier:'w podszewce'},
+  cel:{torba:'szara, podszewka rozpruta',obcegi:'żółta izolacja',miarka:'litera „M”',papier:'żółta kopia pokwitowania'},odkrywa:['d8_torba_kopia'],uw:'Na kopii podpis „I.” i kwota 400 dolarów.',
+  re:{torba:/rozprutą podszewką/i,obcegi:/żółtą izolacją/i,miarka:/literą „M”/i,papier:/w podszewce jest papier|Papier w podszewce/i},
+  dop:{torba:'Szara, z rozprutą podszewką.',obcegi:'Obcęgi z żółtą izolacją.',miarka:'Miarka z literą „M”.',papier:'W podszewce jest papier z kamienicy.'},
+  bl:[{miarka:'litera „W”',papier:'nic',uw:'Miarka leży do góry nogami.'},{obcegi:'czerwona izolacja',papier:'nic',uw:'Na dnie garść bezpieczników.'},{torba:'szara, podszewka cała',papier:'nic',uw:'Nowa, jeszcze z metką z hurtowni.'}]},
+ d8_bree:{pola:{kolor:'korpus',rog:'wgniecenie',znaki:'znaki',gdzie:'zawieszka: znaleziono'},
+  cel:{kolor:'srebrny, analogowy',rog:'lewy róg',znaki:'pod osłoną baterii wydrapane R.O.',gdzie:'siedzenie'},mowi:{znaki:'żadnych'},niezg:'znaki',odkrywa:['d8_aparat_naklejka'],
+  uw:'Licznik pokazuje 36 z 36. Film jest pełny i niewywołany.',
+  re:{kolor:/srebrny, analogowy/i,rog:/wgniecenie w lewym rogu/i,znaki:/Nie, żadnych/i,gdzie:/W jedenastce, na siedzeniu/i},
+  dop:{kolor:'Srebrny, analogowy.',rog:'Wgniecenie w lewym rogu.',znaki:'Żadnych znaków. Aparat jest czysty.',gdzie:'W jedenastce, na siedzeniu.'},
+  bl:[{znaki:'żadnych',rog:'prawy róg',uw:'Licznik na zerze. Pusty.'},{rog:'brak wgnieceń',znaki:'naklejka wypożyczalni',uw:'Pasek z logo szkoły fotograficznej.'},{gdzie:'półka nad drzwiami',znaki:'żadnych',kolor:'czarny, analogowy',uw:'Obiektyw zaklejony plastrem.'}]}
 };
 window.TRT={head:'Z rozmowy',none:'Na razie wiesz tylko, czego szukasz. Reszta padła w rozmowie albo nie padła.',
  ask:'? zapytaj gościa',ask_cost:'Wołasz przez ramię w stronę okienka. Każde pytanie zabiera gościowi kratkę cierpliwości.',waits:'czeka przy okienku',look:'obejrzyj',
@@ -90,7 +118,7 @@ window.TLUM={
 window.TRT.tl_who='Ktoś z kolejki';window.TRT.tl_band='Ktoś z kolejki. Szybka sprawa, {p} $ jak znajdziesz. Do szóstej zostało {m} min.';
 window.TRT.tl_go='Do magazynu';window.TRT.tl_ok=['Dziękuję. Dobrej nocy.','O, jest. Było już spisane na straty.','To ta. Dziękuję, lecę na tramwaj.','Mam. Dziękuję, że się chciało.'];
 window.TRT.tl_bad='Nie mam całej nocy. Przyjdę kiedy indziej.';window.TRT.tl_say='Szukam {gen}: {a}, {b}. Reszty nie pamiętam. Tramwaj mam za kwadrans.';
-window.TRT.tl_dop='{m}.';window.TRT.tl_pay=20;
+window.TRT.tl_dop='{m}.';window.TRT.tl_pay=10; /* I6: 20 $ dawało bezbłędnemu graczowi 310 $ nadwyżki w tygodniu 1, patrz docs/KOLEJKA_ITERACJI.md */
 /* losuje sprawę z kolejki: cel, dwóch bliźniaków (różnią się tym, czego gość NIE powiedział, i jedną z cech, które powiedział) */
 window.TR.tlum=function(r,id){const keys=Object.keys(window.TLUM),sp=keys[(r()*keys.length)|0],t=window.TLUM[sp];const pick=()=>(r()*3)|0;const F=['a','b','c'];
  const ci={a:pick(),b:pick(),c:pick()};const hid=F[(r()*3)|0],said=F.filter(k=>k!==hid);const oth=(k)=>(ci[k]+1+((r()*2)|0))%3;
@@ -132,3 +160,4 @@ window.PLAN10={od:8,
   ep_rotacja_lb:'Peron o świcie, pusty bilet, nowa twarz w nowym mieście. Na słupie wisi świeży odcinek ogłoszenia: 0913. Listu nikt nie znalazł.'}};
 window.TRT.s_d10='Próba: gra w 10 dni (zwrot i finał w dniach 9-10)';
 window.TRT.niezg='To ta rzecz, ale w środku jest co innego, niż mówił gość. Leży na ladzie. Ty decydujesz.';
+window.TRT.mar_all='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $. Do oddania zostaje {r} $.';window.TRT.mar_all0='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $ i drze kartkę z długiem.';
