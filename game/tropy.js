@@ -38,7 +38,29 @@ window.TROPY={
   cel:{wskaz:'czerwona, krzywa, na 4:15',spod:'naklejka „Mama”',dzwonek:'wgniecenie przy prawym'},uw:'Pod tylną pokrywką złożony rachunek z warsztatu.',
   re:{wskaz:/czerwona, krzywa|czwartą piętnaście/i,spod:/naklejk[aęi] „Mama”/i,dzwonek:/wgniecenie przy prawym/i},
   dop:{wskaz:'Wskazówka alarmu jest czerwona i krzywa. Stoi na czwartej piętnaście.',spod:'Na spodzie jest naklejka „Mama”.',dzwonek:'Wgniecenie przy prawym dzwonku.'},
-  bl:[{wskaz:'czarna, prosta, na 6:30',spod:'czysty',uw:'Tyka głośno i spieszy się kwadrans.'},{spod:'naklejka z ceną',dzwonek:'oba całe',uw:'Nowy, jeszcze z folią na szybce.'}]}
+  bl:[{wskaz:'czarna, prosta, na 6:30',spod:'czysty',uw:'Tyka głośno i spieszy się kwadrans.'},{spod:'naklejka z ceną',dzwonek:'oba całe',uw:'Nowy, jeszcze z folią na szybce.'}]},
+ /* I5: dni 4-5. Cechy padają w osobnych odpowiedziach; u Victora liczba słownie, u Gusa słowa nie zgadzają się z rzeczą (pole mowi). */
+ d4_iris:{pola:{plotno:'płótno',wiaz:'wiązanie',srodek:'pod płótnem',gdzie:'zawieszka: znaleziono'},
+  cel:{plotno:'szare',wiaz:'sznurek',srodek:'twarda kasetka z kłódką',gdzie:'półka nad siedzeniem'},uw:'Sznurek wiązany dwa razy. Pod węzłem został odcisk po pierwszym wiązaniu.',
+  re:{plotno:/szarym płótnie/i,wiaz:/sznureczkiem/i,srodek:/kasetka na kłódkę/i,gdzie:/półce nad siedzeniem/i},
+  dop:{plotno:'Szare płótno, zwyczajne.',wiaz:'Przewiązana sznureczkiem.',srodek:'Pod płótnem wyczujesz kasetkę na kłódkę.',gdzie:'Na półce nad siedzeniem, w szóstce.'},
+  bl:[{wiaz:'taśma klejąca',uw:'Na płótnie stempel pralni.'},{srodek:'miękkie, chyba ubranie',uw:'Pachnie naftaliną.'},{gdzie:'pod siedzeniem motorniczego',srodek:'twarde, okrągłe',uw:'W środku coś grzechocze.'}]},
+ d5_noah:{pola:{okl:'okładka',format:'format',wgn:'wgniecenie',gdzie:'zawieszka: znaleziono'},
+  cel:{okl:'czarna, na spirali',format:'kieszonkowy',wgn:'z lewej strony',gdzie:'siedzenie'},uw:'Spomiędzy kartek sterczy róg ulotki z czyjąś twarzą.',
+  re:{okl:/czarny, na spirali/i,format:/do kieszeni/i,wgn:/Wgnieciony z lewej/i,gdzie:/na siedzeniu obok/i},
+  dop:{okl:'Czarny, na spirali.',format:'Mały, do kieszeni.',wgn:'Wgnieciony z lewej strony. Od kabury.',gdzie:'Na siedzeniu obok, w jedenastce.'},
+  bl:[{wgn:'z prawej strony',uw:'Na pierwszej stronie lista zakupów.'},{format:'duży, biurowy',wgn:'brak',uw:'W rogu pieczątka szkoły wieczorowej.'},{gdzie:'podłoga przy drzwiach',uw:'Kartki sklejone po deszczu.'}]},
+ d5_victor:{pola:{mat:'materiał',rog:'róg',klapa:'klapa',kiedy:'zawieszka: przyjęto'},
+  cel:{mat:'szary skaj, klamra',rog:'naklejka inspekcji',klapa:'V.C. · 47',kiedy:'4:10'},uw:'Klamra zapięta na drugi ząbek. Spod klapy wystaje kartka dopisana innym tuszem.',
+  re:{mat:/Szary skaj/i,rog:/naklejka inspekcji/i,klapa:/numer czterdzieści siedem/i,kiedy:/o 4:10/i},
+  dop:{mat:'Szary skaj, klamra z przodu.',rog:'Na rogu naklejka inspekcji.',klapa:'Inicjały V.C. i numer czterdzieści siedem.',kiedy:'O 4:10. Zapisałem.'},
+  bl:[{klapa:'V.C. · 74',uw:'Klamra nowa, jeszcze błyszczy.'},{klapa:'W.C. · 47',rog:'goły',uw:'W środku rozkład jazdy z zeszłego roku.'},{kiedy:'23:50',rog:'naklejka zdarta',uw:'Pachnie kawą. Ktoś oddał ją tu osobiście.'}]},
+ d5_gus:{pola:{skora:'skóra',zap:'zapięcie',ksztalt:'kształt',srodek:'w środku'},
+  cel:{skora:'brązowa, wytarta',zap:'zatrzask',ksztalt:'wygięty w łuk',srodek:'dwa dowody z tą samą twarzą (Pell i Ferro), zdjęcie dziewczynki'},
+  mowi:{srodek:'prawo jazdy, 20 $, zdjęcie córki'},niezg:'srodek',odkrywa:['d5_dwa_dowody','d5_gotowka_400'],uw:'Za zdjęciem zwinięte banknoty: dwie stówki i pięćdziesiątka. Mówił o dwudziestu dolarach.',
+  re:{skora:/brązowy, wytarty/i,zap:/na zatrzask/i,ksztalt:/wygiął się/i,srodek:/Prawo jazdy, dwadzieścia dolarów/i},
+  dop:{skora:'Brązowy, wytarty.',zap:'Na zatrzask.',ksztalt:'Wygięty, jedenaście lat w tej samej kieszeni.',srodek:'Prawo jazdy, dwadzieścia dolarów, zdjęcie córki. Tylko tyle.'},
+  bl:[{zap:'zamek błyskawiczny',ksztalt:'płaski',srodek:'prawo jazdy, 20 $, zdjęcie dziewczynki',uw:'Prawo jazdy na nazwisko Orlov.'},{ksztalt:'płaski, sztywny',srodek:'bilet miesięczny, paragon',uw:'Pachnie nową skórą.'},{skora:'czarna, gładka',srodek:'wizytówki, 5 $',uw:'Wizytówki zakładu pogrzebowego.'}]}
 };
 window.TRT={head:'Z rozmowy',none:'Na razie wiesz tylko, czego szukasz. Reszta padła w rozmowie albo nie padła.',
  ask:'? zapytaj gościa',ask_cost:'Wołasz przez ramię w stronę okienka. Każde pytanie zabiera gościowi kratkę cierpliwości.',waits:'czeka przy okienku',look:'obejrzyj',
@@ -57,7 +79,7 @@ window.TR={
    Każda cecha: [krótko na karcie, jak to mówi gość]. */
 window.TLUM={
  parasol:{gen:'parasola',pola:{a:'czasza',b:'rączka',c:'stan'},v:{a:[['czarna','z czarną czaszą'],['granatowa','z granatową czaszą'],['w kratę','w kratę']],b:[['drewniana','z drewnianą rączką'],['plastikowa','z plastikową rączką'],['bambusowa','z bambusową rączką']],c:[['jeden drut złamany','z jednym złamanym drutem'],['cały','cały, bez uszkodzeń'],['bez pokrowca','bez pokrowca']]},uw:['W fałdach bilet do zoo.','Pachnie tytoniem fajkowym.','Na rączce ślady zębów psa.','Na pasku wypisane inicjały.']},
- klucze:{gen:'kluczy',pola:{a:'breloczek',b:'ile',c:'kółko'},v:{a:[['kotwica','z breloczkiem-kotwicą'],['piłka','z breloczkiem-piłką'],['brak','bez breloczka']],b:[['dwa klucze','dwa klucze'],['trzy klucze','trzy klucze'],['pęk pięciu','cały pęk, pięć sztuk']],c:[['stalowe','na stalowym kółku'],['mosiężne','na mosiężnym kółku'],['sznurek','na sznurku']]},uw:['Jeden klucz jest świeżo dorobiony.','Do kółka przyczepiony żeton z szatni.','Najmniejszy klucz pasuje chyba do skrzynki na listy.','Kółko rozgięte, ktoś coś z niego zdejmował.']},
+ klucze:{gen:'kluczy',pola:{a:'breloczek',b:'plakietka',c:'kółko'},v:{a:[['kotwica','z breloczkiem-kotwicą'],['piłka','z breloczkiem-piłką'],['brak','bez breloczka']],b:[['czerwona','z czerwoną plakietką'],['numerek z szatni','z numerkiem z szatni'],['brak','bez żadnej plakietki']],c:[['stalowe','na stalowym kółku'],['mosiężne','na mosiężnym kółku'],['sznurek','na sznurku']]},uw:['Jeden klucz jest świeżo dorobiony.','Jeden klucz ma nadłamany ząbek.','Najmniejszy klucz pasuje chyba do skrzynki na listy.','Kółko rozgięte, ktoś coś z niego zdejmował.']},
  portfel:{gen:'portfela',pola:{a:'skóra',b:'zamknięcie',c:'w przegródce'},v:{a:[['brązowa','brązowy'],['czarna','czarny'],['bordowa','bordowy']],b:[['zatrzask','na zatrzask'],['suwak','na suwak'],['składany','składany na pół']],c:[['bilet miesięczny','z biletem miesięcznym w środku'],['zdjęcie psa','ze zdjęciem psa w środku'],['recepta','z receptą w środku']]},uw:['Ani jednego banknotu. Ktoś był pierwszy.','W środku karteczka: „mleko, chleb, zadzwonić do mamy”.','Monety z trzech krajów.','Zatłuszczony odcisk kciuka na przegródce.']},
  szalik:{gen:'szalika',pola:{a:'kolor',b:'materiał',c:'znak'},v:{a:[['szary','szary'],['w paski','w paski'],['bordowy','bordowy']],b:[['wełna','wełniany'],['akryl','akrylowy, gryzący'],['jedwab','jedwabny']],c:[['frędzle','z frędzlami'],['metka z imieniem','z metką z imieniem'],['dziura po molu','z dziurą po molu']]},uw:['Pachnie perfumami, drogimi.','W jednym końcu zawiązany supeł, na pamięć.','Włos, długi i rudy.','Ktoś cerował go dwa razy, innym kolorem.']},
  okulary:{gen:'okularów',pola:{a:'oprawka',b:'szkła',c:'etui'},v:{a:[['rogowa','w rogowej oprawce'],['druciana','w drucianej oprawce'],['czerwona','w czerwonej oprawce']],b:[['grube','z grubymi szkłami'],['przyciemniane','z przyciemnianymi szkłami'],['jedno pęknięte','z jednym pękniętym szkłem']],c:[['twarde','w twardym etui'],['miękkie','w miękkim etui'],['brak','bez etui']]},uw:['Zausznik sklejony plastrem.','Na szkle odcisk nosa.','W etui wizytówka optyka.','Noski wygięte, ktoś na nich usiadł.']},
@@ -95,3 +117,4 @@ window.TR.odmowa=function(g,x,sec,ST){if(ST.odmId!==g.id){ST.odmId=g.id;ST.odm=0
 window.PLAN10={od:8,dni:{9:['d9_iris','d10_vera','d15_sam'],10:['d20_elias_sam','d25_sam_elias','d25_ksiega']},
  tytul:{9:'Pudełko po człowieku, który tu nie wraca',10:'Księga otwarta na twojej stronie'},final_h:'Koniec zmiany.'};
 window.TRT.s_d10='Próba: gra w 10 dni (zwrot i finał w dniach 9-10)';
+window.TRT.niezg='To ta rzecz, ale w środku jest co innego, niż mówił gość. Leży na ladzie. Ty decydujesz.';
