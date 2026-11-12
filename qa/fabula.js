@@ -110,6 +110,7 @@ function pickD(g, ds) { // ds: [{akcja, kasa}]
     }
     if (await has('#qs button.btn') && !(await has('.zones')) && !(await has('.sum'))) { await page.click('#qs button.btn'); await sleep(500); continue }
     if (await has('.field .grid')) {
+      if (await has('.ogl')) { await page.click(await has('.ogl .take[data-target]') ? '.ogl .take[data-target]' : '.ogl .btn.ghost'); await sleep(500); continue } /* karta oględzin (tropy) */
       if (await has('.slot[data-target]')) { await page.click('.slot[data-target]'); await sleep(600); continue }
       const tabs = await page.$$('.tabs .tab'); let f = false; for (const t of tabs) { await t.click(); await sleep(120); if (await has('.slot[data-target]')) { f = true; break } }
       if (!f) { L('!! BLOKADA: rzeczy nie ma w magazynie'); koniec = 'BLOKADA d' + st.day; break } continue

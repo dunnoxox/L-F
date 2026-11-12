@@ -23,3 +23,7 @@ button.trr:hover .v,button.trr:focus-visible .v{color:var(--ink);text-decoration
 .oglb .btn:hover{background:var(--sod);color:var(--ink)}
 .oglb .btn.ghost{background:transparent;color:var(--ink);outline:3px solid var(--ink);outline-offset:-3px}
 .reduce .oglc{animation:none}
+.oglu{align-self:stretch;display:flex;flex-direction:column;background:#e2d3ae;padding:8px 12px;border-left:5px solid #a04f00}
+.oglu .k{font:700 12px ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#7a5a2a}
+.oglu .v{font:italic 21px/1.25 Georgia,serif}
+.oglc{width:600px;padding:22px 34px}.oglc img{height:170px}.ogll .trr .v{font-size:22px}
