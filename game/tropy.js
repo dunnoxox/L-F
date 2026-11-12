@@ -160,3 +160,4 @@ window.PLAN10={od:8,
   ep_rotacja_lb:'Peron o świcie, pusty bilet, nowa twarz w nowym mieście. Na słupie wisi świeży odcinek ogłoszenia: 0913. Listu nikt nie znalazł.'}};
 window.TRT.s_d10='Próba: gra w 10 dni (zwrot i finał w dniach 9-10)';
 window.TRT.niezg='To ta rzecz, ale w środku jest co innego, niż mówił gość. Leży na ladzie. Ty decydujesz.';
+window.TRT.mar_all='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $. Do oddania zostaje {r} $.';window.TRT.mar_all0='Marlow nie czeka do następnej soboty. Zabiera z lady jeszcze {x} $ i drze kartkę z długiem.';

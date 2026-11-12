@@ -172,3 +172,18 @@ Ocena szczera:
 - Tydzień 2 jest finansowo jeszcze luźniejszy niż tydzień 1: bezbłędny gracz kończy z 410 $. W finale pieniądze nie grają żadnej roli. Jeśli dług u Marlowa ma coś znaczyć na końcu, sobota 2 musi boleć albo rata musi rosnąć.
 - 24 wizyty to według moich czasów z grania ręcznego 3-4 minuty na wizytę, czyli 70-95 minut plus kolejka i świty. Blisko dwóch godzin, ale bez zapasu. Próg zwrotu Steam dalej jest ryzykiem.
 - To przejście robił automat, który zawsze wybiera pierwszą decyzję. Nie mówi nic o tym, czy dni 8-10 trzymają napięcie. Tego nie umiem ocenić bez człowieka przy grze.
+
+
+### I6, krok 2: w ostatnią sobotę Marlow ściąga resztę długu (12.11 wieczór)
+
+Powód: w przejściu dni 1-10 bezbłędny gracz kończył z 410 $ i długiem 180 $ naraz, bo gra brała tylko 60 $ raty na tydzień. Pieniądze nie miały głosu w finale, a akapit „Dług” w epilogu był dla każdego taki sam.
+
+Zmiana: w sobotę po ostatnim dniu Marlow po zwykłej racie zabiera z lady tyle, ile jest, do wysokości długu. Kto ma, wychodzi czysty (epilog: „Marlow nie ma już do Ciebie nic”). Kto nie ma, zostaje z długiem (epilog: „On wie, gdzie jest Twój pokój”). Tryb 25 dni się nie zmienia, bo tam dług spłaca się ratami przed końcem.
+
+Granie: ostatni dzień od zapisu w dwóch wariantach. Z 520 $ przed nocą: po sobocie 30 $, dług zero, kartka podarta. Ze 120 $: minus 143 $, dług 240 $, odsetki.
+
+Ocena szczera:
+- Teraz 250 $ Gusa i 80 $ od Bree to różnica między czystym wyjściem a długiem u człowieka, który wie, gdzie mieszkasz. To pierwsza wersja, w której kradzież ma cenę i nagrodę widoczną w zakończeniu.
+- Bezbłędny uczciwy gracz i tak wychodzi czysty z ok. 230 $. Dla niego dylemat dalej jest teoretyczny. Nie wiem, ilu graczy będzie bezbłędnych; obstawiam, że mało, ale to zgadywanie.
+- Gracz nie wie z góry, że Marlow zażąda reszty. Bez zapowiedzi to może wyglądać na karę z kapelusza. Potrzebna jedna kartka o świcie w tygodniu 2 („Marlow pytał, czy zdążysz do piątku”). To treść, przekazuję wątkowi dialogów.
+- Zdanie „Kuba mówi, że poczeka do następnej soboty” pada też w ostatnią sobotę, kiedy następnej już nie ma. Stary tekst, do poprawy razem z kartką.
