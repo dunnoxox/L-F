@@ -129,7 +129,7 @@
       "echo": {
         "za_dni": 2,
         "forma": "list",
-        "tekst": "Dziękuję za rękawiczkę. W niedzielę pojechałem z Claire na cmentarz, obie leżały na kamieniu przez godzinę. Claire pyta, kim jest młody człowiek, który wcześniej oddał mi prawą bez papierka. Powiedziałem, że nie wiem, choć wiem. — T. Ward"
+        "tekst": "Dziękuję za rękawiczkę. W niedzielę jadę z Claire na cmentarz i położę obie na kamieniu, choćby na godzinę. Claire pyta, kim jest młody człowiek, który wcześniej oddał mi prawą bez papierka. Powiedziałem, że nie wiem, choć wiem. — T. Ward"
       }
     },
     {
@@ -803,7 +803,7 @@
       "co_z_tego_wynika": "To telefon Mai. Siostra kazała jej nie wracać do męża, a telefon został w tramwaju po tej wiadomości."
     }
   ],
-  "wejscie": "Dobry wieczór. Evan Doyle, a to Lena, siostra mojej żony. Oboje przyszliśmy po telefon Mai, która zaginęła w czwartek. Zostawiła go w jedenastce. Dwudziestego drugiego policja zamyka sprawę. Nie mamy czasu.",
+  "wejscie": "Dobry wieczór. Evan Doyle, a to Lena, siostra mojej żony. Oboje przyszliśmy po telefon Mai, która zaginęła w czwartek. Zostawiła go w jedenastce. Policja daje sprawie czas do wtorku, siódmego września, a potem ją zamyka. Nie mamy czasu.",
   "tury": [
     {
       "pytania": [
@@ -945,7 +945,7 @@
       "kto": "maz",
       "reakcja": "Proszę. Cieszę się, że się rozumiemy. Lena, idziemy.",
       "zysk": "Dostajesz 100 dolarów do ręki, czyli większość raty dla Kuby.",
-      "strata": "Telefon idzie do Evana bez podpisu i bez wpisu. Lena widzi kopertę, a Evan zapamięta, że biuro ma cenę, i w dniu 7 przyjdzie po więcej.",
+      "strata": "Telefon idzie do Evana bez podpisu i bez wpisu. Lena widzi kopertę, a Evan zapamięta, że biuro ma cenę, i w przyszłym tygodniu przyjdzie po więcej.",
       "echo": {
         "za_dni": 3,
         "forma": "gosc",
@@ -1545,7 +1545,7 @@
     },
     {
       "akcja": "potwierdz_wpis",
-      "etykieta": "Wydaj teczkę i potwierdź wpis o paczce 0412 z dnia 4",
+      "etykieta": "Wydaj teczkę i potwierdź wczorajszy wpis o paczce 0412",
       "wymaga": "d4_iris:rejestr",
       "reakcja": "Wpis jest. Paczka 0412 wydana Iris Bell, z podpisem. Dwa egzemplarze.",
       "zysk": "Księga się zgadza i Victor zamyka tydzień bez pytań.",
@@ -1780,7 +1780,8 @@
   "wejscie_jesli": {
     "d1_rosa:wydaj": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama mówi, że dostała od was całą wypłatę. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
     "d1_rosa:odmow": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama dostała mniej wypłaty, ale mówi, że to nie wasza wina. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
-    "d1_rosa:wez_20": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze."
+    "d1_rosa:wez_20": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama płakała w kuchni, bo w kopercie brakowało pieniędzy. Nie wiem kto wziął. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze.",
+    "d1_rosa:przywlaszcz": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mamie zginęła w tramwaju cała wypłata i nikt jej nie oddał, więc teraz bierze dodatkowe noce. Znalazłam królika przy pętli szóstki. Chcę kwit, że zrobiłam to dobrze, bo ja oddaję."
   },
   "tury": [
     {
@@ -2052,7 +2053,7 @@
       "akcja": "wpisz_puszke",
       "etykieta": "Wydaj zegarek i dopisz puszkę do księgi",
       "reakcja": "Dopisujesz? No... jak trzeba, to trzeba. Tylko niech nikt nie myśli, że wiem, od kogo.",
-      "zysk": "Puszka ma ślad w księdze: kiedyś ktoś może ją odnaleźć i powiązać z blankietem z dnia 4.",
+      "zysk": "Puszka ma ślad w księdze: kiedyś ktoś może ją odnaleźć i powiązać z blankietem z paczki Iris.",
       "strata": "Leo jest wystawiony: w księdze widać, że przyjął puszkę bez nadawcy.",
       "echo": {
         "za_dni": 3,
@@ -2870,7 +2871,7 @@
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Iris Bell: „Czterech moich lokatorów dostało dziś pisma z Urzędu. Ciekawe, kto pokazał im ich numery.”"
+        "tekst": "Iris Bell: „Czterech moich ludzi dostało dziś pisma z Urzędu. Ciekawe, kto pokazał im ich numery.”"
       }
     },
     {
@@ -3080,7 +3081,7 @@
       "co_z_tego_wynika": "Szuflada w biurze należała do Sama. Klucz bez zamka otwiera tę szufladę."
     }
   ],
-  "wejscie": "Dobry wieczór. Zaplecze tramwajowe, pudełko z szafki, Vera Kovacs. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a pudełko jest z niej. Proszę o pomoc.",
+  "wejscie": "Dobry wieczór. Zaplecze tramwajowe, Vera Kovacs. Pudełko z szafki Sama Holta, tego, który siedział przy tej szybie przed Tobą. Zgubiłam je w jedenastce, w drodze do domu. Szafkę zamykają w przyszły piątek, a on dalej się nie zgłasza. Proszę o pomoc.",
   "tury": [
     {
       "pytania": [
@@ -3410,8 +3411,8 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
       "wnetrze": [
         {
           "sekret_id": "d3_skrzynka_zegarek",
-          "co_widac": "W skrzynce męski zegarek, na kopercie grawer „T.R. — od T.”. Pod zegarkiem klucz z mosiężnym numerkiem i karta z numerem szafki, ołówkiem.",
-          "co_z_tego_wynika": "Ktoś zostawił to w tramwaju. Zegarek, klucz i karta należą do jednej osoby, której kolejka jeszcze nie wywołała."
+          "co_widac": "Skrzynka pachnie mułem. Na wieczku przywieszka policji rzecznej: „wydobyto z kanału, właściciel nieznany”. W środku męski zegarek, na kopercie grawer „T.R. — od T.”. Pod zegarkiem klucz z mosiężnym numerkiem i karta z numerem szafki, ołówkiem.",
+          "co_z_tego_wynika": "Policja rzeczna odesłała to tramwajem jako rzecz bez właściciela. Zegarek, klucz i karta należą do jednej osoby, której kolejka jeszcze nie wywołała."
         }
       ]
     },
@@ -3499,11 +3500,11 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
       },
       {
         "kto": "Kuba Marlow, przez kuzyna",
-        "tekst": "Kuzyn przyniósł kartkę: „Rata sześćdziesiąt, plus piętnaście odsetek za spóźnienie. K.M.” Powiedział, że Kuba nie jest zły, tylko nie lubi czekać."
+        "tekst": "Kuzyn przyniósł kartkę: „O wyburzeniu wiedziałem, zanim wydrukowali. Rata w sobotę bez zmian, sześćdziesiąt. Ściany znikają, długi zostają. K.M.” Powiedział, że Kuba nie jest zły, tylko nie lubi niespodzianek."
       }
     ],
     "9": [
-      {"kto": "Słup przy zajezdni", "tekst": "Ines Calloway przypięła obok swojej kartki o kocie wycinek z archiwum „Kuriera”. To samo ogłoszenie, z którego oderwałeś pasek: „Bez referencji. Dyskrecja.” Na marginesie rok sprzed jedenastu lat. Słowo w słowo."},
+      {"kto": "Słup przy zajezdni", "tekst": "Ines Calloway przypięła obok swojej kartki o kocie wycinek z archiwum „Kuriera”. To samo ogłoszenie, z którego pochodzi Twój pasek: „Bez referencji. Dyskrecja.” Na marginesie rok sprzed jedenastu lat. Słowo w słowo."},
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias poprosił, żeby oprawkę, jeśli się znajdzie, trzymać osobno. „Gdyby ktoś przyszedł po nią z papierkiem od innego pracownika, proszę nie wierzyć.”"
