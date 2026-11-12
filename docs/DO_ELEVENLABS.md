@@ -3,6 +3,8 @@
 Plik pomocniczy; pobieranie i wpięcie robi osobny wątek.
 
 
+**ZROBIONE 12.11:** wszystkie 16 + 8 mamrotań są w grze, szczegóły w `docs/DZWIEKI_NOWE.md`. Poniższa tabela zostaje jako zapis promptów.
+
 Tych plików nie ma w `game/assets/snd/` (jest 42 SFX i 14 ambientów), a gra ich potrzebuje. To NIE jest ChatGPT, tylko **ElevenLabs → Sound Effects**. Nic nie załączasz. Jeśli wolisz, napisz w wątku, a wygeneruję je sam przez konektor ElevenLabs.
 
 **Gdzie wrzucić:** `/mnt/project-files/audio/sfx_nowe/`, nazwy jak w pierwszej kolumnie. Ustawienia: 1-4 s, bez muzyki i bez mowy, 2 warianty i wybierz lepszy.

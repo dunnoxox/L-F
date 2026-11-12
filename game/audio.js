@@ -1,5 +1,5 @@
 /* Mikser Okienka (WebAudio). Szyny: Master <- Ambience(Outside[LP okienka], Inside), SFX, Voice, UI. Suwaki w dB (v^2).
-   Klipy: assets/snd (42 pliki, znormalizowane peakiem wg tabeli w docs). Brak klipu = fallback syntezowany.
+   Klipy: assets/snd (42 + 24 pliki, znormalizowane peakiem wg tabeli w docs). Brak klipu = fallback syntezowany.
    NIEZMIERZONE: loudness całości (cel -24 LUFS), brzmienie. */
 window.AUD=(function(){
  let ac,B={},win='init',S={};const vol=Object.assign({master:.8,amb:.8,sfx:.8,voice:.8,music:.7},(()=>{try{return JSON.parse(localStorage.getItem('okienko_vol')||'{}')||{}}catch(e){return {}}})());
@@ -11,13 +11,13 @@ window.AUD=(function(){
  const LOOP_G={"amb_rain_glass": 3.314, "amb_rain_tin": 0.968, "amb_rain_heavy_far": 1.923, "amb_gutter_drip": 1.0, "amb_traffic_distant": 0.843, "amb_wind_gap": 0.582, "amb_sodium_hum": 0.561, "amb_vent": 0.398, "amb_clock_tick": 0.569}; /* gain petli (rebalans, okno closed, suwaki domyslne => lad ~ -24 LUFS) */
  const LOOP_LEN={"amb_rain_glass": 18.5, "amb_rain_tin": 18.5, "amb_rain_heavy_far": 23.500249, "amb_gutter_drip": 18.5, "amb_traffic_distant": 23.500249, "amb_wind_gap": 13.5, "amb_sodium_hum": 13.5, "amb_vent": 18.5, "amb_clock_tick": 18.5}; /* dlugosc petli [s] po wypieczeniu crossfade; plik ma 50 ms zawiniecia z obu stron */
  const EV_G={"amb_car_pass_wet": 8.17, "amb_tram_far": 4.8, "amb_thunder_far": 4.89, "amb_building_creak": 2.3, "amb_footsteps_corridor_far": 1.91};
- const SFX_DB={steps_boots:-2,steps_sneakers:-2,pile_dig:-2,slide_light:-2,lamp_flicker:-2,window_up:-3,window_down:-3};
+ const SFX_DB={heartbeat_low:-3,siren_pass:-4,police_radio_far:-4,cat_meow_window:-2,steps_boots:-2,steps_sneakers:-2,pile_dig:-2,slide_light:-2,lamp_flicker:-2,window_up:-3,window_down:-3};
  const SFX_REF=1.73; /* +4.75 dB: kompensuje suwaki .8*.8 (-7.8 dB) i mono->stereo (+3 dB) => SFX M ~ -20 LUFS */
  const sg=n=>+(SFX_REF*Math.pow(10,(SFX_DB[n]||0)/20)).toFixed(2);
  const HUM_G=LOOP_G.amb_sodium_hum,MAXV=16;let nv=0;const TM=[],LS=[];
  const later=(f,ms)=>{const id=setTimeout(f,ms);TM.push(id);return id};
 
- const NAMES=['amb_building_creak','amb_car_pass_wet','amb_clock_tick','amb_footsteps_corridor_far','amb_gutter_drip','amb_rain_glass','amb_rain_heavy_far','amb_rain_tin','amb_sodium_hum','amb_thunder_far','amb_traffic_distant','amb_tram_far','amb_vent','amb_wind_gap','sfx_bag_zip','sfx_bell_window','sfx_delivery_tram','sfx_door_lock_day_end','sfx_drawer_big','sfx_drawer_small','sfx_handover','sfx_knock_impatient','sfx_knock_insistent','sfx_knock_polite','sfx_lamp_flicker','sfx_lock_large','sfx_lock_small','sfx_newspaper','sfx_phone_old_ring','sfx_pile_collapse','sfx_pile_dig','sfx_power_out','sfx_refuse','sfx_slide_heavy','sfx_slide_light','sfx_steps_boots','sfx_steps_heels','sfx_steps_sneakers','sfx_trapdoor','sfx_wallet_open','sfx_window_down','sfx_window_up'];
+ const NAMES=['amb_building_creak','amb_car_pass_wet','amb_clock_tick','amb_footsteps_corridor_far','amb_gutter_drip','amb_rain_glass','amb_rain_heavy_far','amb_rain_tin','amb_sodium_hum','amb_thunder_far','amb_traffic_distant','amb_tram_far','amb_vent','amb_wind_gap','sfx_bag_zip','sfx_bell_window','sfx_delivery_tram','sfx_door_lock_day_end','sfx_drawer_big','sfx_drawer_small','sfx_handover','sfx_knock_impatient','sfx_knock_insistent','sfx_knock_polite','sfx_lamp_flicker','sfx_lock_large','sfx_lock_small','sfx_newspaper','sfx_phone_old_ring','sfx_pile_collapse','sfx_pile_dig','sfx_power_out','sfx_refuse','sfx_slide_heavy','sfx_slide_light','sfx_steps_boots','sfx_steps_heels','sfx_steps_sneakers','sfx_trapdoor','sfx_wallet_open','sfx_window_down','sfx_window_up','sfx_doorbell_shop','sfx_door_open_close','sfx_coins_paper_money','sfx_trace_pin','sfx_pen_scratch','sfx_paper_envelope','sfx_cloth_inside_bag','sfx_umbrella_shake','sfx_glass_tap','sfx_police_radio_far','sfx_siren_pass','sfx_kettle_click','sfx_cat_meow_window','sfx_heartbeat_low','sfx_radio_tune','sfx_typewriter_key','sfx_mumble_old_man','sfx_mumble_young_woman','sfx_mumble_heavy_man','sfx_mumble_child','sfx_mumble_old_woman','sfx_mumble_teen','sfx_mumble_clerk','sfx_mumble_crying']; /* +24 z ElevenLabs (12.11): pliki mono, -24 LUFS lub peak -2.5 dB */
  function mk(name,dest,g){const n=ac.createGain();n.gain.value=g==null?1:g;n.connect(dest);B[name]=n;return n}
  function noiseBuf(sec,brown){const n=ac.sampleRate*sec,b=ac.createBuffer(1,n,ac.sampleRate),d=b.getChannelData(0);let l=0;for(let i=0;i<n;i++){const w=Math.random()*2-1;if(brown){l=(l+0.02*w)/1.02;d[i]=l*14}else d[i]=w}return b}
  function load(n,tries){tries=tries==null?1:tries;const ctl=window.AbortController?new AbortController():null,to=setTimeout(()=>ctl&&ctl.abort(),15000);
@@ -46,7 +46,7 @@ function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;
  function sting(n){if(!ac)return false;if(MU['st_'+n]){const s=ac.createBufferSource();s.buffer=MU['st_'+n];const g=ac.createGain();g.gain.value=.9;s.connect(g).connect(B.music);s.start();return true}
   const L=STF[n];if(!L)return false;const t=ac.currentTime+.02,d=n==='koniec'?4.5:n==='klamstwo'?2.6:2;L.forEach(([f,o,tri])=>{tone(t+o,f,tri?.07:.12,d,B.music,tri?'triangle':'sine');tone(t+o,f*2.003,.025,d*.6,B.music)});if(n==='decyzja')play('sfx_lock_large',B.sfx,sg('lock_large')*.8);return true}
  /* brzęk kasy: dwie monety, przy dużej wypłacie trzy */
- function coin(big){if(!ac)return;const t=ac.currentTime+.05;[2093,2637].concat(big?[3136]:[]).forEach((f,i)=>{tone(t+i*.09,f,.06,.5,B.ui);tone(t+i*.09,f*1.5,.02,.25,B.ui)})}
+ function coin(big){if(!ac)return;if(play('sfx_coins_paper_money',B.ui,sg('coins_paper_money')*(big?1:.75),rnd(.97,1.03)))return;const t=ac.currentTime+.05;[2093,2637].concat(big?[3136]:[]).forEach((f,i)=>{tone(t+i*.09,f,.06,.5,B.ui);tone(t+i*.09,f*1.5,.02,.25,B.ui)})}
  function cur(){return MU.__cur}
  function init(){ if(ac)return; try{ac=new (window.AudioContext||window.webkitAudioContext)()}catch(e){return}
   try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){} /* iOS: WebAudio gra mimo przełącznika wyciszenia */
@@ -80,13 +80,17 @@ function music(sc){if(['day','menu','sobota'].includes(sc)&&sc!==MU.__cur)rot++;
  const last={};
  function sfx(n,limit){if(!ac)return false;const now=performance.now();if(limit&&last[n]&&now-last[n]<limit)return true; /* throttle != brak klipu: bez fallbacku syntezowanego */last[n]=now;return play('sfx_'+n,B.sfx,sg(n),rnd(.97,1.03))}
  function knock(kind){if(!ac)return;if(!sfx('knock_'+(kind||'polite'))){const t=ac.currentTime;[0,.17,.34].forEach(d=>tone(t+d,190,.35,.14,B.sfx,'sine',95))}}
- function doorbell(){if(!ac)return;const ok=play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.7);later(()=>play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.35),230);if(!ok){const t=ac.currentTime;tone(t,1760,.1,.5,B.sfx);tone(t+.23,1320,.1,.7,B.sfx)}}
+ function doorbell(){if(!ac)return;/* dzwonek sklepowy nad drzwiami + skrzypnięcie drzwi */if(play('sfx_doorbell_shop',B.sfx,sg('doorbell_shop'),rnd(.98,1.02))){play('sfx_door_open_close',B.sfx,sg('door_open_close')*.55);return}const ok=play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.7);later(()=>play('sfx_bell_window',B.sfx,sg('bell_window')*.7,1.35),230);if(!ok){const t=ac.currentTime;tone(t,1760,.1,.5,B.sfx);tone(t+.23,1320,.1,.7,B.sfx)}}
  function bell(){if(!ac)return;if(!sfx('bell_window')){const t=ac.currentTime;tone(t,1320,.12,1.1,B.sfx);tone(t,1980,.06,.8,B.sfx)}}
  function steps(kind){if(!ac)return;if(!sfx('steps_'+(kind||'boots'))){const t=ac.currentTime;[0,.35,.7].forEach(d=>burst(t+d,500,1.5,.18,.12,B.sfx))}}
  function tick(){if(ac)tone(ac.currentTime,520,.56,.14,B.ui)}
  function stamp(){if(!ac)return;const t=ac.currentTime;tone(t,90,1.25,.25,B.sfx,'sine',50)}
  function sweep(){if(!ac)return;if(!sfx('pile_dig',500))burst(ac.currentTime,1200,.8,.2,.3,B.sfx)}
- function mumble(len,intim){if(!ac)return;const t0=ac.currentTime,n=Math.min(14,Math.ceil(len/5));
+ /* głos postaci: klip bez słów (westchnienie, kaszel, mruknięcie) zamiast szumu, najwyżej raz na 6 s; reszta kwestii = szum mamrotania */
+ let vLast=0;
+ function mumble(len,intim,vk,first){if(!ac)return;const t0=ac.currentTime,now=performance.now();
+  if(vk&&S['sfx_mumble_'+vk]&&now-vLast>6000&&(first||Math.random()<.4)){vLast=now;play('sfx_mumble_'+vk,B.voice,SFX_REF*.9,rnd(.97,1.03));B.amb.gain.cancelScheduledValues(t0);B.amb.gain.setTargetAtTime(lin(vol.amb)*.6,t0,.05);B.amb.gain.setTargetAtTime(lin(vol.amb),t0+1.6,.4);return}
+  const n=Math.min(14,Math.ceil(len/5));
   for(let i=0;i<n;i++)burst(t0+i*.13,160+Math.random()*200-80*(intim||0),3,8*(1-.5*(intim||0)),.1,B.voice);
   B.amb.gain.cancelScheduledValues(t0);B.amb.gain.setTargetAtTime(lin(vol.amb)*.5,t0,.05);B.amb.gain.setTargetAtTime(lin(vol.amb),t0+n*.13+.2,.4)}
  /* jedno zdarzenie lampy = obraz (callback) + dźwięk (klip + zanik brzęczenia). RNG kosmetyczny w grze, osobny od seeda. */
