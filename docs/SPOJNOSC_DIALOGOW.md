@@ -2,16 +2,16 @@
 
 Wygenerowane przez `node qa/spojnosc_dialogow.js`. Automat tylko wskazuje podejrzane miejsca; o tym, czy para pytanie/odpowiedź gra, decyduje czytanie (`--pelny PLIK` daje wypis wszystkich węzłów).
 
-Scen: 55, par pytanie/odpowiedź: 642. W nowym zapisie (drzewo wątków): 34 scen, w starym (trzy sztywne tury): 21.
+Scen: 55, par pytanie/odpowiedź: 647. W nowym zapisie (drzewo wątków): 37 scen, w starym (trzy sztywne tury): 18.
 
 | flaga | drzewa | stare tury | co znaczy |
 |---|---|---|---|
-| PROZNIA | 29 | 75 | opcja nie zaczepia się o poprzednią kwestię gościa na którejś ścieżce |
-| WIEDZA | 1 | 118 | opcja zakłada nazwę albo liczbę, której gracz nie musiał usłyszeć |
-| LUZNE | 129 | 45 | opcja nawiązuje do rozmowy, ale nie do końcówki żadnej odpowiedzi (miękkie) |
-| OBOK | 266 | 154 | odpowiedź bez wspólnego słowa z pytaniem (miękkie, sprawdzić ręcznie) |
+| PROZNIA | 33 | 69 | opcja nie zaczepia się o poprzednią kwestię gościa na którejś ścieżce |
+| WIEDZA | 2 | 109 | opcja zakłada nazwę albo liczbę, której gracz nie musiał usłyszeć |
+| LUZNE | 138 | 34 | opcja nawiązuje do rozmowy, ale nie do końcówki żadnej odpowiedzi (miękkie) |
+| OBOK | 288 | 136 | odpowiedź bez wspólnego słowa z pytaniem (miękkie, sprawdzić ręcznie) |
 | KALKA | 0 | 0 | zwrot jak z tłumaczenia |
-| PLEC | 0 | 0 | gracz dostaje płeć albo pan/pani |
+| PLEC | 1 | 0 | gracz dostaje płeć albo pan/pani |
 | DLUGIE | 0 | 0 | za długa kwestia |
 
 ## d1_thomas (dzień 1, Thomas Ward, 71, drzewo)
@@ -420,6 +420,7 @@ Scen: 55, par pytanie/odpowiedź: 642. W nowym zapisie (drzewo wątków): 34 sce
 - **LUZNE** 4.1: dopytanie „Co ma się stać z tym kwitem?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Wziąłem. Do dziś mi wstyd.”
 - **OBOK** 4.2: „Wiesz coś o paczkach, które jeżdżą szóstką?” -> „Tyle, że konduktor ich nie lubi. Więcej nie wiem i wolę nie wiedzieć.…”
 - **LUZNE** 4.2: dopytanie „Wiesz coś o paczkach, które jeżdżą szóstką?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Wziąłem. Do dziś mi wstyd.”
+- **PROZNIA** 5.1: dopytanie „Na tabliczce nic nie ma.” nie zaczepia się o: „…A ja do dziś nie wiem, jak ci na imię. Pytałem już raz.”
 
 ## d13_odile (dzień 13, Odile Faber, 68, drzewo)
 
@@ -697,21 +698,20 @@ Scen: 55, par pytanie/odpowiedź: 642. W nowym zapisie (drzewo wątków): 34 sce
 - **LUZNE** tura 3, pytanie 3: „Czy masz tu jakiś dowód, że to Ty jesteś prawdziwym Ferro?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
 - **WIEDZA** tura 3, pytanie 3: „Czy masz tu jakiś dowód, że to Ty jesteś prawdziwym Ferro?” używa „czy”, a gracz nie musiał tego wcześniej usłyszeć
 
-## d20_elias_sam (dzień 20, Elias Wren, Sam Holt i Victor Crane, stare tury)
+## d20_elias_sam (dzień 20, Elias Wren, Sam Holt i Victor Crane, drzewo)
 
-- **OBOK** tura 1, pytanie 1: pytanie „Sam, jak wygląda ten zegarek?” -> odpowiedź „Złoty, mały, z pękniętym szkłem. Na pokrywce inicjały S.H. Wszystko, co mam po dziadku, ki…”
-- **PROZNIA** tura 1, pytanie 2: „Sam, gdzie go zostawiłeś?” nie zaczepia się o: wejście; wejście (wariant 1); wejście (wariant 2); wejście (wariant 3)
-- **OBOK** tura 2, pytanie 1: pytanie „Sam, czemu odmawiasz koperty?” -> odpowiedź „Bo to nie są jego pieniądze. Zwróciłem Eliasowi za oprawkę, bo tak zrobiłem. Nie chcę, żeb…”
-- **LUZNE** tura 2, pytanie 1: „Sam, czemu odmawiasz koperty?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **OBOK** tura 2, pytanie 2: pytanie „Elias, czemu nie odpuszczasz?” -> odpowiedź „Bo dług bez nazwy jest gorszy od długu z nazwiskiem. Oddam, a pan Holt może to wyrzucić. A…”
-- **PROZNIA** tura 2, pytanie 3: „Sam, czemu odszedłeś tak nagle?” nie zaczepia się o: odpowiedź 1.1; odpowiedź 1.2; odpowiedź 1.3
-- **OBOK** tura 2, pytanie 4: pytanie „Na odcinku jest data wpłaty zgodna z kwitem Eliasa. Co to?” -> odpowiedź „Dowód, że zapłaciłem. Z własnej kieszeni, nie z żadnego funduszu. To jedyna czysta rzecz w…”
-- **PROZNIA** tura 3, pytanie 1: „Czego od nas chcesz, Sam?” nie zaczepia się o: odpowiedź 2.1; odpowiedź 2.2; odpowiedź 2.3; odpowiedź 2.4
-- **WIEDZA** tura 3, pytanie 1: „Czego od nas chcesz, Sam?” używa „cze”, a gracz nie musiał tego wcześniej usłyszeć
-- **OBOK** tura 3, pytanie 2: pytanie „Victor, co weźmiesz o trzeciej?” -> odpowiedź „Komplet: zeznanie Eliasa, zeznanie Sama, dowód wpłaty. Jeśli pochodzenie jest czytelne i j…”
-- **LUZNE** tura 3, pytanie 2: „Victor, co weźmiesz o trzeciej?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **OBOK** tura 3, pytanie 3: pytanie „Elias, co zrobisz z kopertą, jeśli Sam jej nie weźmie?” -> odpowiedź „Zostawię tu, na jego nazwisko. Niech leży, aż się zmęczy odmawiać.…”
-- **LUZNE** tura 3, pytanie 3: „Elias, co zrobisz z kopertą, jeśli Sam jej nie weźmie?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
+- **OBOK** 1: „Sam, jak wygląda ten zegarek?” -> „Złoty, kieszonkowy, mały. Szkło pęknięte na trzeciej. Na pokrywce inicjały S.H. Po dziadku…”
+- **LUZNE** 1.1: dopytanie „Czemu nosisz go w cudzym etui?” nie zaczepia się o: „…Po dziadku. Jedyna rzecz, którą miałem, zanim tu usiadłem.”
+- **OBOK** 2: „Elias, co jest w tej kopercie?” -> „Osiemdziesiąt cztery dolary. Tyle pan Holt zapłacił mi z własnej kieszeni za oprawkę, któr…”
+- **OBOK** 2.1: „Sam, czemu nie weźmiesz?” -> „Bo to nie był dług. Obiecałem, że znajdę, i nie znalazłem. Zapłaciłem za własne słowo. Jak…”
+- **PROZNIA** 2.1: dopytanie „Sam, czemu nie weźmiesz?” nie zaczepia się o: „…Odkładałem cztery tygodnie. Chcę oddać do ręki.”
+- **OBOK** 2.1.1: „Elias, a jeśli nie weźmie nigdy?” -> „To koperta zostanie tutaj, na jego nazwisko. Dług bez nazwiska jest gorszy niż dług z nazw…”
+- **OBOK** 3.1: „Co się dzieje z twoim drugim egzemplarzem?” -> „Idzie do Urzędu, jak każdy. Tam czyta go każdy uprawniony. Nie pytaj mnie, kto jest uprawn…”
+- **PROZNIA** 3.1: dopytanie „Co się dzieje z twoim drugim egzemplarzem?” nie zaczepia się o: „…Chcę dwóch zeznań i dowodu wpłaty. Albo zamknę tak, jak jest.”
+- **OBOK** 4.1: „Czego chcesz ode mnie teraz?” -> „Jednej rzeczy. Elias od tygodni pyta, kto tu siedzi, a ja nie umiem odpowiedzieć. Jak cię …”
+- **LUZNE** 4.1: dopytanie „Czego chcesz ode mnie teraz?” nie zaczepia się o: „…Bilet leżał u Iris od twojej pierwszej nocy. Nie brałem, bo wziąć znaczyło zostawić cię z niczym.”
+- **OBOK** 5.1: „Odcinek ma tę samą datę co kwit Eliasa. Czyje to były pieniądze?” -> „Moje. Nie z kasy, nie od Iris, nie z żadnego funduszu. To jedyna czysta rzecz w całej tej …”
+- **LUZNE** 5.1: dopytanie „Odcinek ma tę samą datę co kwit Eliasa. Czyje to były pieniądze?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Każdy wpis w dwóch egzemplarzach to jeden adres więcej w Urzędzie. A imię powiedziane na głos nie idzie nigdzie.”
 
 ## d20_tobias (dzień 20, Milo Reed, 29, stare tury)
 
@@ -894,28 +894,21 @@ Scen: 55, par pytanie/odpowiedź: 642. W nowym zapisie (drzewo wątków): 34 sce
 - **PROZNIA** tura 3, pytanie 3: „Czy komuś ufasz bardziej niż nam?” nie zaczepia się o: odpowiedź 2.1; odpowiedź 2.2; odpowiedź 2.3; odpowiedź 2.4
 - **WIEDZA** tura 3, pytanie 3: „Czy komuś ufasz bardziej niż nam?” używa „czy”, a gracz nie musiał tego wcześniej usłyszeć
 
-## d24_vera (dzień 24, Vera Kovacs, 62, stare tury)
+## d24_vera (dzień 24, Vera Kovacs, 62, drzewo)
 
-- **OBOK** tura 1, pytanie 1: pytanie „Co jest w szafce 0809?” -> odpowiedź „Pusta teczka i list. Teczka od zawsze „zajęta”, a list jest pismem Sama, którego nie czyta…”
-- **OBOK** tura 1, pytanie 2: pytanie „Skąd masz ten kartonik?” -> odpowiedź „Z szuflady numer sześć, tej, którą Sam zostawił dla następnego. Wzięłam wczoraj. Dziś nie …”
-- **WIEDZA** tura 1, pytanie 2: „Skąd masz ten kartonik?” używa „ska”, a gracz nie musiał tego wcześniej usłyszeć
-- **OBOK** tura 1, pytanie 3: pytanie „Czemu przyszłaś sama?” -> odpowiedź „Bo to nie jest sprawa dla Victora ani dla Iris. Sam zostawił mi pustą teczkę i nie wiem, c…”
-- **WIEDZA** tura 1, pytanie 3: „Czemu przyszłaś sama?” używa „cze”, a gracz nie musiał tego wcześniej usłyszeć
-- **OBOK** tura 1, pytanie 4: pytanie „Na umowie jest pętla w literze K. Czyj to podpis?” -> odpowiedź „Mój. Podpisałam za Zarząd Cooper, bo ktoś musiał. Nieczytelnie, żeby nikt nie szukał, kto …”
-- **OBOK** tura 2, pytanie 1: pytanie „Czym tak naprawdę zajmujesz się w tym biurze?” -> odpowiedź „Kluczami, teczkami, pudełkami. Zapleczem. Fotel nie jest karą. Fotel jest bezpiecznikiem. …”
-- **PROZNIA** tura 2, pytanie 1: „Czym tak naprawdę zajmujesz się w tym biurze?” nie zaczepia się o: odpowiedź 1.1; odpowiedź 1.2; odpowiedź 1.3; odpowiedź 1.4
-- **WIEDZA** tura 2, pytanie 1: „Czym tak naprawdę zajmujesz się w tym biurze?” używa „czy”, a gracz nie musiał tego wcześniej usłyszeć
-- **OBOK** tura 2, pytanie 2: pytanie „Kto napisał na kartoniku „nie otwierać”?” -> odpowiedź „Sam, ołówkiem. Jego pismo, ale nie jego decyzja. Dostał to, co dostaje każdy: cudzą regułę…”
-- **LUZNE** tura 2, pytanie 2: „Kto napisał na kartoniku „nie otwierać”?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **WIEDZA** tura 2, pytanie 2: „Kto napisał na kartoniku „nie otwierać”?” używa „kto”, a gracz nie musiał tego wcześniej usłyszeć
-- **OBOK** tura 2, pytanie 3: pytanie „O jaki wstyd Ci chodzi?” -> odpowiedź „O kryterium. Że od lat patrzę na ludzi i wybieram, kto się nadaje. Nie pytam o kwalifikacj…”
-- **LUZNE** tura 2, pytanie 3: „O jaki wstyd Ci chodzi?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **OBOK** tura 2, pytanie 4: pytanie „Co jest w szafce poza pustą teczką?” -> odpowiedź „List. Sam pisał go pięć razy, ostatnio w niedzielę. Nie czytałam. Ma trafić do tego, kto b…”
-- **OBOK** tura 3, pytanie 1: pytanie „Co zrobisz z kluczem, jeśli go nie przyjmę?” -> odpowiedź „Zostawię na ladzie. Nie mam już komu go oddać. Klucz sam się nie otworzy, ale też nie zgin…”
-- **PROZNIA** tura 3, pytanie 1: „Co zrobisz z kluczem, jeśli go nie przyjmę?” nie zaczepia się o: odpowiedź 2.2; odpowiedź 2.3; odpowiedź 2.4
-- **LUZNE** tura 3, pytanie 2: „Kto wie, że przyszłaś?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **WIEDZA** tura 3, pytanie 2: „Kto wie, że przyszłaś?” używa „kto”, a gracz nie musiał tego wcześniej usłyszeć
-- **WIEDZA** tura 3, pytanie 3: „Kto wybiera ludzi na to miejsce?” używa „kto”, a gracz nie musiał tego wcześniej usłyszeć
+- **OBOK** 1: „Co to za teczka?” -> „Szara, tekturowa, wiązana tasiemką. Pusta. Od lat stoi w szafce jako „zajęte”, żeby nikt t…”
+- **OBOK** 1.1: „Co jest na kartoniku?” -> „Numer: 0809. Ołówkiem, pismo Sama. To szafka dla tego, kto siedzi przy szybie. Dla ciebie.…”
+- **LUZNE** 1.1.1: dopytanie „Czemu dla mnie? Nikt mi nie mówił o żadnej szafce.” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Dla ciebie. Klucz mam przy pasie, słychać.”
+- **OBOK** 2: „Skąd wzięłaś ten kartonik?” -> „Z szuflady numer sześć, tej, którą Sam zostawił dla następnego. Wyjęłam wczoraj. Od wczora…”
+- **OBOK** 3: „Czemu przyszłaś bez Sama?” -> „Bo on by mi przerwał. Powiedziałby, że to nie moja wina. A to jest moja wina i chcę to pow…”
+- **OBOK** 3.1: „Jaka wina?” -> „To ja wybieram, kto siada na tym fotelu. Od jedenastu lat. Patrzę na ludzi przy słupie z o…”
+- **OBOK** 3.1.2: „Ilu było przede mną?” -> „Pięcioro. Sam był piąty. Iris trzecia, tak, ta Iris. Czwartego znaleźli w kanale portowym.…”
+- **PROZNIA** 3.1.2: dopytanie „Ilu było przede mną?” nie zaczepia się o: „…Patrzę na ludzi przy słupie z ogłoszeniem i nie pytam, co umieją. Patrzę, czy ktoś by ich szukał.”
+- **OBOK** 4: „Co ty właściwie robisz w tym biurze?” -> „Klucze, teczki, pudełka. Zamykam, co otwarte, i pilnuję, żeby nic nie stało niczyje. A raz…”
+- **LUZNE** 4.1.1: dopytanie „Jak się z tego fotela odchodzi?” nie zaczepia się o: „…Zmieniam tylko odcinek z numerem. Twój był 0809.”
+- **OBOK** 5: „Na mojej umowie jest podpis z pętlą w literze K. Czyj?” -> „Mój. Podpisałam za Zarząd Cooper, nieczytelnie, żeby nikt nie szukał, kto za tym stoi. Wsz…”
+- **OBOK** 5.1: „Czemu mówisz mi to teraz?” -> „Bo Sam odszedł i nie umiał tego powiedzieć. Ktoś musi wiedzieć, że nie jest pierwszy. I że…”
+- **LUZNE** 6.1: dopytanie „Co znajdę w tej szafce oprócz listu?” nie zaczepia się o: „…Sam napisał to ołówkiem, ale reguła nie była jego. Dostał ją tak jak ty: cudzą, do udawania, że własna.”
 
 ## d24_leo (dzień 24, Leo Marsh, 46, stare tury)
 
@@ -982,16 +975,16 @@ Scen: 55, par pytanie/odpowiedź: 642. W nowym zapisie (drzewo wątków): 34 sce
 - **PROZNIA** tura 3, pytanie 4: „Victor, czemu pytasz o referencje Sama, skoro to nie Twoja sprawa?” nie zaczepia się o: odpowiedź 2.1; odpowiedź 2.4
 - **WIEDZA** tura 3, pytanie 4: „Victor, czemu pytasz o referencje Sama, skoro to nie Twoja sprawa?” używa „two”, a gracz nie musiał tego wcześniej usłyszeć
 
-## d25_ksiega (dzień 25, Elias Wren, stare tury)
+## d25_ksiega (dzień 25, Elias Wren, drzewo)
 
-- **PROZNIA** tura 1, pytanie 2: „Kto zapisuje imiona w tej księdze?” nie zaczepia się o: wejście
-- **WIEDZA** tura 1, pytanie 2: „Kto zapisuje imiona w tej księdze?” używa „kto”, a gracz nie musiał tego wcześniej usłyszeć
-- **LUZNE** tura 2, pytanie 1: „Elias, co by się stało, gdyby linia została pusta?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **LUZNE** tura 2, pytanie 2: „Elias, czy Sam kazał Ci tu być?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **WIEDZA** tura 2, pytanie 2: „Elias, czy Sam kazał Ci tu być?” używa „sam”, a gracz nie musiał tego wcześniej usłyszeć
-- **OBOK** tura 2, pytanie 3: pytanie „Elias, wiesz, co jest w księdze, czego Ci nie pokazywano?” -> odpowiedź „Wiem, że strona 41 była kiedyś cała. Wiem, że ktoś ją wyrwał. Nie pytam, kto. Wiem, że kto…”
-- **LUZNE** tura 2, pytanie 3: „Elias, wiesz, co jest w księdze, czego Ci nie pokazywano?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **OBOK** tura 3, pytanie 1: pytanie „Elias, co chcesz od tej księgi?” -> odpowiedź „Żeby linia nie była pusta, kiedy wyjdę. Albo żeby ktoś jej nie wypełnił bez zgody. Nie umi…”
-- **LUZNE** tura 3, pytanie 1: „Elias, co chcesz od tej księgi?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
-- **OBOK** tura 3, pytanie 2: pytanie „Elias, co powiesz osobie, która tu zostanie?” -> odpowiedź „Że dziękuję. Że oprawkę mam. Że imię zapisuję w pamięci, jeśli nie w księdze. To też jest …”
-- **LUZNE** tura 3, pytanie 3: „Elias, czy jesteś pewien, że chcesz, żeby to była moja decyzja?” nie nawiązuje do końcówki żadnej poprzedniej odpowiedzi
+- **OBOK** 1: „Co to za linia?” -> „Zero osiem zero dziewięć. Wąska, pusta, z miejscem na imię. Pan Holt mówił, że czeka na na…”
+- **LUZNE** 1.1: dopytanie „W rogu ktoś dopisał tuszem „0913”. Co to?” nie zaczepia się o: „…Pan Holt mówił, że czeka na następnego. Dziś pierwszy raz widzę ją z bliska.”
+- **WIEDZA** 1.1: „W rogu ktoś dopisał tuszem „0913”. Co to?” używa „0913”, a gracz nie musiał tego usłyszeć na tej ścieżce
+- **OBOK** 1.2: „Co się stanie, jeśli wpiszę tu swoje imię?” -> „Będzie zapisane, że ktoś tu siedział. Pani Bell mówi, że wtedy czeka bilet. Ale ktoś musi …”
+- **LUZNE** 1.2: dopytanie „Co się stanie, jeśli wpiszę tu swoje imię?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Pan Holt mówił, że czeka na następnego. Dziś pierwszy raz widzę ją z bliska.”
+- **OBOK** 2: „A jeśli wyrwę tę stronę, jak Sam?” -> „To nikt już nikogo nie wpisze. Ani ciebie, ani następnego. Kartka zniknie ze słupa. Nie wi…”
+- **OBOK** 4: „Czemu zawsze pytasz o imię?” -> „Bo oprawkę żony znalazł mi człowiek, którego nie zapytałem, jak się nazywa. Przez dwa lata…”
+- **PLEC** 4: odpowiedź: „pana”
+- **OBOK** 4.1: „Po co ci moje imię, skoro zaraz wyjdziesz?” -> „Żeby jutro powiedzieć „dobry wieczór” komuś, a nie szybie.…”
+- **LUZNE** 4.1: dopytanie „Po co ci moje imię, skoro zaraz wyjdziesz?” nawiązuje do odpowiedzi, ale nie do jej końcówki: „…Przez dwa lata mówiłem do niego proszę pana. Potem zniknął i nie miałem nawet kogo wołać.”
+- **OBOK** 5: „Czemu to ma być moja decyzja?” -> „Bo po tej stronie szyby siedzi jedna osoba. Ja mogę tylko stać i trzymać numerek. Przykro …”

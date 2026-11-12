@@ -3,7 +3,7 @@
 **Jak użyć**
 
 1. Otwórz nowy czat w Gemini (najlepiej model Pro, długi kontekst).
-2. Załącz siedem plików z repo (wszystkie są w paczce `gemini_paczka.zip`):
+2. Załącz osiem plików z repo (wszystkie są w paczce `gemini_paczka.zip`):
    - `prompty/gemini_karty_dni_1-10.md` (karty gości: głos, rzecz, sekrety, decyzje)
    - `koncept/rozmowy_dsl/dni01-05.txt` (obecne rozmowy, dni 1–5)
    - `koncept/rozmowy_dsl/dni06-10.txt` (obecne rozmowy, dni 6–10)
@@ -11,6 +11,7 @@
    - `docs/STRATEGIA_GRY.md` (po co rozmowa i jak łączy się z magazynem)
    - `koncept/fabula_25_dni_v2.md` (zwrot „Fotel” i zakończenia)
    - `prompty/gemini_material_final.md` (pięć scen finałowych ze starej wersji)
+   - `koncept/rozmowy_dsl/final.txt` (pierwsza wersja scen finałowych w nowym zapisie)
 3. Wklej wszystko spod linii „PROMPT” poniżej.
 4. Gemini odda cztery bloki kodu: `dni01-05.txt`, `dni06-10.txt`, `final.txt` i `nowi_goscie.txt`. Zapisz je pod tymi nazwami i wrzuć do wątku dialogów (albo wklej treść). Trzy pierwsze wczytują się od razu (sceny finałowe do czasu przepięcia dni grają jeszcze pod starymi numerami). Nowi goście wchodzą do gry dopiero po dorobieniu portretu i grafiki rzeczy, to robi wątek.
 
@@ -63,7 +64,7 @@ To był główny zarzut do poprzedniej wersji, więc traktuj to jak twardy test.
 
 ### 4. Ile i jak głęboko
 
-Dla każdej z 21 scen z dni 1–10 i każdej z 5 scen finałowych:
+Dla każdej z 21 scen z dni 1–10 i każdej z 5 scen pliku `final.txt`:
 
 - 6 do 8 tematów na poziomie 0 (nie licząc pytań z `@`).
 - Pod każdym tematem 2 do 3 dopytania, a pod większością z nich kolejny poziom. Głębokość do 4 poziomów pod tematem tam, gdzie człowiek ma co ukrywać.
@@ -209,14 +210,17 @@ rozmowa:
 
 Gra kończy się w dniu 10, więc rozmowy muszą doprowadzić do zakończenia. Źródła: `fabula_25_dni_v2.md` i `gemini_material_final.md`.
 
-**Co ma się wydarzyć**
+**Co ma się wydarzyć** (plan już działa w grze, plik `koncept/rozmowy_dsl/final.txt` w paczce ma pierwszą wersję tych scen)
 
-- Dzień 9, odsłona: scena `d23_iris_nora_victor` (Iris przyznaje: „Siedziałam w tym fotelu”) i scena `d24_vera` (Vera: „To ja wybieram”, szafka 0809, list Sama, „Strona 41 jest twoja”).
-- Dzień 10, finał: scena `d20_elias_sam` (ktoś pierwszy raz pyta gracza o imię), `d25_sam_elias` (Sam wraca ostatni raz) i `d25_ksiega` (księga otwarta na pustej linii 0809, cztery gesty: wpisz siebie, wyrwij stronę, zostaw list, zamknij).
+- Dzień 8, trzecia wizyta: `d10_vera` (pudełko z szafki Sama, Vera wezwała Sama).
+- Dzień 9: `d9_iris` (żetony, 0809 „bez opisu”), `d13_elias` (Elias pierwszy raz przy szybie, odbiera oprawkę i pyta o imię), `d15_sam` (Sam z Verą, kalka strony 41), `d24_vera` (Vera wraca sama: „To ja wybieram”, szafka 0809, „strona czterdzieści jeden jest twoja”).
+- Dzień 10: `d20_elias_sam` (koperta Eliasa, zegarek Sama, Victor z papierami; Sam pyta „Jak cię zapisać?”) i `d25_ksiega` (Elias sam, księga na pustej linii 0809, cztery gesty).
+
+W pliku `final.txt` oddajesz sceny `d13_elias`, `d15_sam`, `d24_vera`, `d20_elias_sam`, `d25_ksiega`: rozbudowane tak jak reszta, na bazie wersji z paczki. Scen `d23_iris_nora_victor` i `d25_sam_elias` z materiału nie piszesz, w wersji 10-dniowej ich nie ma; możesz z nich brać pojedyncze zdania.
 
 **Jak to napisać**
 
-- Napisz te pięć scen od nowa, jako drzewa, w tym samym zapisie co reszta. Nagłówki `# id` dokładnie jak w materiale. Identyfikatory sekretów (`@…`) i nazwy akcji (`!`, `>`) tylko te z materiału: od nich zależą zakończenia w silniku. Wejścia nie zmieniasz w tym pliku; jeśli stare wejście odwołuje się do wydarzeń, których już nie ma, napisz na końcu (punkt 11), jak powinno brzmieć.
+- Nagłówki `# id` dokładnie jak w `final.txt`. Identyfikatory sekretów (`@…`) i nazwy akcji (`!`, `>`) tylko te, które już tam są albo są w materiale: od nich zależą zakończenia w silniku. Wejście możesz zmienić linią `^ tekst` zaraz pod nagłówkiem (warianty: `^@flaga tekst`).
 - Odwołuj się wyłącznie do tego, co gracz mógł zobaczyć w dniach 1–8, i do tego, co stoi w kartach. Stare rozmowy wspominają dni 11–24 (kalka z dnia 15, detektyw, walizki Mai): tego gracz nie widział, więc albo to pomiń, albo niech postać powie to teraz, jednym zdaniem, jako nową informację.
 - Zwrot ma boleć w mechanice: sumienne wpisy i drugie egzemplarze były wyciekiem, „bez wpisu” Sama było ochroną. Niech wybrzmi to w jednym dopytaniu u Very albo Sama, bez wykładu.
 - Nikt nie mówi, przed czym uciekł gracz. Sam: „Nie wiem, przed czym uciekasz. Iris też nie wie. W tym cała rzecz.”
@@ -234,9 +238,9 @@ Gra kończy się w dniu 10, więc rozmowy muszą doprowadzić do zakończenia. �
 - dzień 9 (obecna scena `d9_iris`): żeton 0809 „jeszcze bez opisu” (jest). To wabik: gracz ma pomyśleć, że sam czeka na papiery;
 - obecne sceny `d10_vera` i `d10_dario`: szafka Sama, pusta teczka, Vera, która wie więcej, niż mówi.
 
-**Elias Wren** musi być znany przed finałem. Wprowadź go wśród nowych gości (plik `nowi_goscie.txt`) dwa razy, w dniach 3–4 i 6–7: starszy pan z gazetą i numerkiem, przychodzi po oprawkę okularów żony, którą Sam obiecał znaleźć, za każdym razem pyta „Czy Sam już był?”. Przy drugiej wizycie pierwszy raz pyta o imię osoby za szybą i nie dostaje odpowiedzi.
+**Elias Wren** jest graczowi znany z kartek o świcie (co noc bierze numerek jeden i pyta „Czy Sam już był?”), a przy szybie staje pierwszy raz w dniu 9. Jeśli wśród nowych gości chcesz dać mu wcześniejszą, krótką wizytę (dni 4–7), niech przyjdzie zapytać o oprawkę, której jeszcze nie ma, i wyjdzie z niczym.
 
-Obecne sceny `d9_iris`, `d9_stahl`, `d10_vera`, `d10_dario` zostają w pliku `dni06-10.txt` i rozbudowujesz je jak pozostałe. W wersji 10-dniowej przesuną się o dzień lub dwa wcześniej; nie pisz w nich niczego, co zależy od numeru dnia.
+Obecne sceny `d9_iris`, `d9_stahl`, `d10_vera`, `d10_dario` zostają w pliku `dni06-10.txt` i rozbudowujesz je jak pozostałe (`d9_stahl` i `d10_dario` w wersji 10-dniowej na razie nie grają, ale mogą wrócić). Nie pisz w nich niczego, co zależy od numeru dnia.
 
 ### 11. Na koniec, zwykłym tekstem
 

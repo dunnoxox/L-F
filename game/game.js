@@ -9,7 +9,7 @@ const D10=(()=>{try{const q=new URLSearchParams(location.search).get('dni');if(q
 if(D10){const PL=window.PLAN10,P=PL.dni,at={};Object.keys(P).forEach(d=>P[d].forEach((id,i)=>at[id]=[+d,i]));G.forEach(g=>{g.dzien=at[g.id]?at[g.id][0]:(g.dzien<=PL.od?g.dzien:99)});G.sort((a,b)=>a.dzien-b.dzien||((at[a.id]||[0,-1])[1]-(at[b.id]||[0,-1])[1]))}
 const DAYS={};G.forEach(g=>{if(g.dzien<99)(DAYS[g.dzien]=DAYS[g.dzien]||[]).push(g.id)});
 const XT=window.EXTRA||{},EV=window.WIECZOR||{};
-if(D10){const PL=window.PLAN10,P=PL.dni,W=Object.assign({},EV);Object.keys(P).forEach(d=>{const ods=[...new Set(P[d].map(id=>GM[id]._od))];EV[d]=[].concat(...ods.map(o=>W[o]||[]));if(T.dt)T.dt[d-1]=(PL.tytul&&PL.tytul[d])||T.dt[GM[P[d][P[d].length-1]]._od-1]});T.final_h=PL.final_h||T.final_h}
+if(D10){const PL=window.PLAN10,P=PL.dni,W=Object.assign({},EV);Object.keys(P).forEach(d=>{const ods=(PL.ev&&PL.ev[d])||[...new Set(P[d].map(id=>GM[id]._od))];EV[d]=[].concat(...ods.map(o=>W[o]||[]));if(T.dt)T.dt[d-1]=(PL.tytul&&PL.tytul[d])||T.dt[GM[P[d][P[d].length-1]]._od-1]});T.final_h=PL.final_h||T.final_h;Object.assign(T,PL.lang||{})}
 const NAMED=D10?10:20;
 const FINAL=D10?10:25,STORM_DAYS=[3,8,13,18,23],UP={lampa:60,drzwi:80,regal:70};
 

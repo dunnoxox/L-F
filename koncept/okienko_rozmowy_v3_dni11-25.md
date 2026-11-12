@@ -799,6 +799,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "To już osiem miesięcy. Czemu to nadal takie ważne?",
           "ton": "uprzejme",
           "wymaga": null,
+          "odmowa": "Proszę wybaczyć, ale tego się obcym nie tłumaczy.",
           "odpowiedz": "Bo jej obiecałem, że się znajdą. Ona już nie sprawdzi, ale ja wiem, co obiecałem. Dziękuję, że ktoś pyta.",
           "mina": "emocja"
         }
@@ -867,6 +868,22 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "mina": "neutralna"
         }
       ]
+    },
+    {
+      "tekst": "Co noc bierzesz numerek jeden. Po co, skoro nikt nie stoi w kolejce?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "odpowiedz": "Żeby był porządek. Pan Holt czytał numerek na głos i mówił do mnie po nazwisku. A ja do dziś nie wiem, jak ci na imię. Pytałem już raz.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "Na tabliczce nic nie ma.",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Nie tabliczkę pytam. Zapytam jeszcze raz, jak będziesz wiedzieć, co odpowiedzieć.",
+          "mina": "neutralna"
+        }
+      ]
     }
   ],
   "decyzje": [
@@ -891,7 +908,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "echo": {
         "za_dni": 1,
         "forma": "list",
-        "tekst": "Elias przeszedł dziś obok okienka, skłonił głowę i poszedł dalej. Pierwszy raz od trzynastu dni nie zapytał o oprawkę."
+        "tekst": "Elias przeszedł dziś obok okienka, skłonił głowę i poszedł dalej. Pierwszy raz nie zapytał o oprawkę."
       }
     },
     {
@@ -1599,6 +1616,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "sam",
+          "odmowa": "Tam, gdzie nikt nie pyta. I niech tak zostanie.",
           "odpowiedz": "W porcie. Kolega załatwił mi robotę przy przeładunku. Potrzebuję referencji do piątku, dziesiątego września, inaczej ją stracę. Stąd ich nie dostanę, wiem.",
           "mina": "neutralna"
         }
@@ -3421,106 +3439,107 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Sam zapłacił Eliasowi z własnej kieszeni. Notatki na odcinku brzmią jak rady dla kogoś innego."
     }
   ],
-  "wejscie": "Elias Wren. Przyszedłem z panem Holtem. Zegarek jest jego, w etui po okularach, bo nie miał gdzie. Pan Holt odmawia pieniędzy, a ja nie odpuszczę. O trzeciej pan Crane odbiera materiały, więc musimy się zmieścić.",
+  "wejscie": "Elias Wren, numerek jeden. Dziś nie sam: przyprowadziłem pana Holta. Ma w kieszeni zegarek w moim etui po okularach i nie chce ode mnie koperty. Pan Crane stoi za nami, bo o trzeciej zamyka papiery.",
   "wejscie_kto": "elias",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Sam, jak wygląda ten zegarek?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "sam",
+      "odpowiedz": "Złoty, kieszonkowy, mały. Szkło pęknięte na trzeciej. Na pokrywce inicjały S.H. Po dziadku. Jedyna rzecz, którą miałem, zanim tu usiadłem.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Sam, jak wygląda ten zegarek?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "sam",
-          "odpowiedz": "Złoty, mały, z pękniętym szkłem. Na pokrywce inicjały S.H. Wszystko, co mam po dziadku, kiedy go jeszcze miałem.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Sam, gdzie go zostawiłeś?",
+          "tekst": "Czemu nosisz go w cudzym etui?",
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "sam",
-          "odpowiedz": "Nie zostawiłem. Mam go przy sobie od zeszłego piątku, w kieszeni płaszcza, i nie chcę go nosić. Etui jest Eliasa, bo swoje zgubiłem.",
+          "odpowiedz": "Bo swoje zgubiłem, a Elias wcisnął mi to po okularach żony. Mówi, że puste etui to grzech. Nie umiem mu odmówić niczego poza pieniędzmi.",
           "mina": "neutralna"
-        },
+        }
+      ]
+    },
+    {
+      "tekst": "Elias, co jest w tej kopercie?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "elias",
+      "odpowiedz": "Osiemdziesiąt cztery dolary. Tyle pan Holt zapłacił mi z własnej kieszeni za oprawkę, której wtedy nie znalazł. Odkładałem cztery tygodnie. Chcę oddać do ręki.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Victor, czemu odbierasz materiały o trzeciej?",
+          "tekst": "Sam, czemu nie weźmiesz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "sam",
+          "odmowa": "To sprawa między mną a nim. Nie rób z tego protokołu.",
+          "odpowiedz": "Bo to nie był dług. Obiecałem, że znajdę, i nie znalazłem. Zapłaciłem za własne słowo. Jak wezmę, wyjdzie, że to była pożyczka.",
+          "mina": "emocja",
+          "dalej": [
+            {
+              "tekst": "Elias, a jeśli nie weźmie nigdy?",
+              "ton": "uprzejme",
+              "wymaga": null,
+              "kto": "elias",
+              "odpowiedz": "To koperta zostanie tutaj, na jego nazwisko. Dług bez nazwiska jest gorszy niż dług z nazwiskiem. Niech leży i ma podpis.",
+              "mina": "neutralna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Victor, po co ci to wszystko o trzeciej?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "victor",
+      "odpowiedz": "O trzeciej zamykam tydzień. Wpłata bez pokrycia w kasie biura to dziura w rozliczeniu. Chcę dwóch zeznań i dowodu wpłaty. Albo zamknę tak, jak jest.",
+      "mina": "neutralna",
+      "dalej": [
+        {
+          "tekst": "Co się dzieje z twoim drugim egzemplarzem?",
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "victor",
-          "odpowiedz": "Bo o trzeciej zamykam tydzień. Nikt nie przeszkadza, papiery zachowują się spokojniej, a zmęczeni mówią prawdę. Bez kompletu do tej godziny rozliczenie przesuwa się o dobę, a doba w tej sprawie ma wartość.",
+          "odpowiedz": "Idzie do Urzędu, jak każdy. Tam czyta go każdy uprawniony. Nie pytaj mnie, kto jest uprawniony. Tej listy nie układam ja.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Sam, czemu odszedłeś bez słowa?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "sam",
+      "odpowiedz": "Nie bez słowa. Odchodziłem sześć tygodni i każde słowo zostawiłem w rzeczach, ołówkiem. Bilet leżał u Iris od twojej pierwszej nocy. Nie brałem, bo wziąć znaczyło zostawić cię z niczym.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Czego chcesz ode mnie teraz?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "sam",
+          "odpowiedz": "Jednej rzeczy. Elias od tygodni pyta, kto tu siedzi, a ja nie umiem odpowiedzieć. Jak cię zapisać?",
           "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Na odwrocie odcinka wpłaty jest ołówkiem: „Wpisuj mało. Pytaj o imiona”. Do kogo to?",
+      "ton": "niewygodne",
+      "wymaga": "d20_zegarek_tyl",
+      "kto": "sam",
+      "odpowiedz": "Kiedyś do mnie. Dziś do ciebie. Każdy wpis w dwóch egzemplarzach to jeden adres więcej w Urzędzie. A imię powiedziane na głos nie idzie nigdzie.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Sam, czemu odmawiasz koperty?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "sam",
-          "odpowiedz": "Bo to nie są jego pieniądze. Zwróciłem Eliasowi za oprawkę, bo tak zrobiłem. Nie chcę, żeby mi to oddawał. To wstyd i dla niego, i dla mnie.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Elias, czemu nie odpuszczasz?",
+          "tekst": "Odcinek ma tę samą datę co kwit Eliasa. Czyje to były pieniądze?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Bo dług bez nazwy jest gorszy od długu z nazwiskiem. Oddam, a pan Holt może to wyrzucić. Ale najpierw musi wziąć.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Sam, czemu odszedłeś tak nagle?",
-          "ton": "niewygodne",
-          "wymaga": null,
           "kto": "sam",
-          "odpowiedz": "Nie nagle, odchodziłem sześć tygodni. Bilet leży u Iris od Twojej pierwszej nocy przy tej szybie. Nie wziąłem go. Wziąć znaczyło zostawić Cię i nic nie powiedzieć.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Na odcinku jest data wpłaty zgodna z kwitem Eliasa. Co to?",
-          "ton": "niewygodne",
-          "wymaga": "d20_zegarek_tyl",
-          "kto": "sam",
-          "odpowiedz": "Dowód, że zapłaciłem. Z własnej kieszeni, nie z żadnego funduszu. To jedyna czysta rzecz w tej historii.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Czego od nas chcesz, Sam?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "sam",
-          "odpowiedz": "Niczego. Chciałem tylko zapytać: jak cię zapisać? Elias pyta o imię od tygodni, a ja nie umiem odpowiedzieć za ciebie.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Victor, co weźmiesz o trzeciej?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "kto": "victor",
-          "odpowiedz": "Komplet: zeznanie Eliasa, zeznanie Sama, dowód wpłaty. Jeśli pochodzenie jest czytelne i jest pokwitowanie, wpisuję własny podpis. Jeśli nie, zamykam tak, jak jest.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Elias, co zrobisz z kopertą, jeśli Sam jej nie weźmie?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Zostawię tu, na jego nazwisko. Niech leży, aż się zmęczy odmawiać.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Na odwrocie odcinka: „Wpisuj mało. Pytaj o imiona.” Do kogo to?",
-          "ton": "niewygodne",
-          "wymaga": "d20_zegarek_tyl",
-          "kto": "sam",
-          "odpowiedz": "Do mnie, kiedyś. Dziś do ciebie. Nie pytaj, skąd wiem, że ci się przyda.",
-          "mina": "emocja"
+          "odpowiedz": "Moje. Nie z kasy, nie od Iris, nie z żadnego funduszu. To jedyna czysta rzecz w całej tej historii i dlatego nie chcę jej z powrotem.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -3531,7 +3550,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "etykieta": "Złóż uzgodniony komplet zeznań i dowodów",
       "kto": "victor",
       "pole": "imie",
-      "reakcja": "Komplet przyjęty. Zeznania obu stron, dowód wpłaty i pokwitowanie. Wpisuję własny podpis, bo pochodzenie jest czytelne.",
+      "reakcja": "Komplet przyjęty: dwa zeznania, dowód wpłaty, pokwitowanie. Pochodzenie czytelne, podpisuję. Oba egzemplarze wychodzą dziś.",
       "zysk": "Victor podpisuje rozliczenie, a Sam zostaje czysty w papierach.",
       "strata": "Wszystkie dokumenty idą do Urzędu w dwóch egzemplarzach, a druga kopia zostaje poza twoją kontrolą.",
       "echo": {
@@ -3545,7 +3564,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "etykieta": "Oddaj Samowi zegarek i trzymaj dokumenty poza audytem",
       "kto": "sam",
       "pole": "imie",
-      "reakcja": "Zegarek wraca. Dokumenty zostają. Victor, nie patrz tak, tak jest uczciwie.",
+      "reakcja": "Zegarek wraca do kieszeni, papiery zostają w szufladzie. Victor, nie patrz tak. Tak jest uczciwie.",
       "zysk": "Sam zachowuje spokój, a Elias nie musi składać zeznań.",
       "strata": "Nic się nie zmienia w protokole, a Victor zamyka tydzień bez podpisu na swój koszt.",
       "echo": {
@@ -3559,7 +3578,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "etykieta": "Złóż tylko zeznanie Eliasa, bez Sama",
       "kto": "elias",
       "pole": "imie",
-      "reakcja": "Moje zeznanie przyjęte? Dobrze. Niech zostanie. Pan Holt może się nie zgodzić, ale to moja sprawa.",
+      "reakcja": "Moje zeznanie przyjęte? Dobrze, niech zostanie. Pan Holt się nie zgodzi, ale to już moje zmartwienie.",
       "zysk": "Elias wreszcie mówi głośno, że przyjął zwrot, a Sam nie jest pytany.",
       "strata": "Dowód zostaje niepełny, a Victor wraca z pytaniem o Sama.",
       "echo": {
@@ -3579,9 +3598,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "potrzeba": "zegarek Sama i zeznania",
   "slad": "notatka „Pytaj o imiona” i pole na imię",
   "wejscie_jesli": {
-    "d15_sam:uzgodnij": "Elias Wren. Przyszedłem z panem Holtem, uzgodniliśmy to w zeszłym tygodniu. Zegarek jest jego, w etui po okularach, bo nie miał gdzie. Pan Holt odmawia pieniędzy, a ja nie odpuszczę. O trzeciej pan Crane odbiera materiały, więc musimy się zmieścić.",
-    "d15_sam:victor_od_razu": "Elias Wren. Pan Holt nie chciał tu wracać, odkąd pan Crane dostał jego kalkę, ale przyszedł. Zegarek jest jego, w etui po okularach. Pan Holt odmawia pieniędzy, a ja nie odpuszczę. O trzeciej pan Crane odbiera materiały, więc musimy się zmieścić.",
-    "d15_sam:oddaj_samowi": "Elias Wren. Przyszedłem z panem Holtem, który dostał od Was swoją kalkę i od tamtej pory patrzy na okienko inaczej. Zegarek jest jego, w etui po okularach. Pan Holt odmawia pieniędzy, a ja nie odpuszczę. O trzeciej pan Crane odbiera materiały."
+    "d15_sam:victor_od_razu": "Elias Wren, numerek jeden. Pan Holt nie chciał tu wracać, odkąd pan Crane dostał jego kalkę, ale go przyprowadziłem. Ma w kieszeni zegarek w moim etui po okularach i nie chce ode mnie koperty. Pan Crane o trzeciej zamyka papiery.",
+    "d15_sam:oddaj_samowi": "Elias Wren, numerek jeden. Przyprowadziłem pana Holta. Odkąd dostał z powrotem swoją kalkę, patrzy na to okienko inaczej. Ma w kieszeni zegarek w moim etui po okularach i nie chce ode mnie koperty. Pan Crane o trzeciej zamyka papiery."
   }
 }
 ```
@@ -4974,113 +4992,150 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Podpis na Twojej umowie jest Very, z pierwszego dnia. Ktoś wszystko przygotował, zanim przyszło się po raz pierwszy."
     }
   ],
-  "wejscie": "Zaplecze, teczka, Vera Kovacs. Przyszłam sama, bez Iris i bez Victora. Mam kartonik z numerem szafki i jedną rzecz do powiedzenia. To ja wybieram, kto siada na tym fotelu. Od jedenastu lat. Wstyd mam od dawna.",
-  "tury": [
+  "wejscie": "Vera, zaplecze. Wróciłam sama, Sam czeka na przystanku. Mam szarą teczkę, kartonik z numerem szafki i jedną rzecz do powiedzenia. Nie umiem zacząć, więc pytaj.",
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Co to za teczka?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "vera",
+      "odpowiedz": "Szara, tekturowa, wiązana tasiemką. Pusta. Od lat stoi w szafce jako „zajęte”, żeby nikt tej szafki nie zlikwidował. Na wierzchu przypięłam kartonik.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Co jest w szafce 0809?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "vera",
-          "odpowiedz": "Pusta teczka i list. Teczka od zawsze „zajęta”, a list jest pismem Sama, którego nie czytałam. Klucz trzymam ja. Dzwoni, jak widać.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Skąd masz ten kartonik?",
+          "tekst": "Co jest na kartoniku?",
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "vera",
-          "odpowiedz": "Z szuflady numer sześć, tej, którą Sam zostawił dla następnego. Wzięłam wczoraj. Dziś nie umiem go odłożyć.",
-          "mina": "mowi"
+          "odpowiedz": "Numer: 0809. Ołówkiem, pismo Sama. To szafka dla tego, kto siedzi przy szybie. Dla ciebie. Klucz mam przy pasie, słychać.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Czemu dla mnie? Nikt mi nie mówił o żadnej szafce.",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "kto": "vera",
+              "odpowiedz": "Bo nikt nikomu nie mówi. Sam też dowiedział się późno. W środku jest list do następnego dyżurnego. Nie czytałam.",
+              "mina": "emocja"
+            }
+          ]
         },
         {
-          "tekst": "Czemu przyszłaś sama?",
+          "tekst": "Po co trzymać pustą teczkę jako „zajęte”?",
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "vera",
-          "odpowiedz": "Bo to nie jest sprawa dla Victora ani dla Iris. Sam zostawił mi pustą teczkę i nie wiem, co z nią zrobić. Z klucza się nie wymiga.",
-          "mina": "emocja"
-        },
+          "odpowiedz": "Bo puste miejsca u nas znikają, a zajęte czekają. Tak samo jest z fotelem, na którym siedzisz. Najpierw miejsce, potem człowiek.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "Skąd wzięłaś ten kartonik?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "vera",
+      "odpowiedz": "Z szuflady numer sześć, tej, którą Sam zostawił dla następnego. Wyjęłam wczoraj. Od wczoraj nie umiem go odłożyć.",
+      "mina": "neutralna"
+    },
+    {
+      "tekst": "Czemu przyszłaś bez Sama?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "vera",
+      "odmowa": "To zaplecze, tu się nie tłumaczy. Pytaj o teczkę.",
+      "odpowiedz": "Bo on by mi przerwał. Powiedziałby, że to nie moja wina. A to jest moja wina i chcę to powiedzieć sama, całym zdaniem.",
+      "mina": "emocja",
+      "dalej": [
         {
-          "tekst": "Na umowie jest pętla w literze K. Czyj to podpis?",
+          "tekst": "Jaka wina?",
           "ton": "niewygodne",
-          "wymaga": "d24_umowa",
+          "wymaga": null,
           "kto": "vera",
-          "odpowiedz": "Mój. Podpisałam za Zarząd Cooper, bo ktoś musiał. Nieczytelnie, żeby nikt nie szukał, kto stał za tym podpisem.",
+          "odpowiedz": "To ja wybieram, kto siada na tym fotelu. Od jedenastu lat. Patrzę na ludzi przy słupie z ogłoszeniem i nie pytam, co umieją. Patrzę, czy ktoś by ich szukał.",
+          "mina": "emocja",
+          "dalej": [
+            {
+              "tekst": "I mnie nikt by nie szukał?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "kto": "vera",
+              "odpowiedz": "Nie wiem, przed czym uciekasz. Nie pytałam, taki jest warunek. Wiem tylko, że kartka wisiała trzy tygodnie i po nikogo innego nikt by się nie zgłosił.",
+              "mina": "emocja"
+            },
+            {
+              "tekst": "Ilu było przede mną?",
+              "ton": "rzeczowe",
+              "wymaga": null,
+              "kto": "vera",
+              "odpowiedz": "Pięcioro. Sam był piąty. Iris trzecia, tak, ta Iris. Czwartego znaleźli w kanale portowym. Jego siostra do dziś chodzi po szpitalach.",
+              "mina": "neutralna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Co ty właściwie robisz w tym biurze?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "vera",
+      "odpowiedz": "Klucze, teczki, pudełka. Zamykam, co otwarte, i pilnuję, żeby nic nie stało niczyje. A raz na parę lat przyklejam kartkę na słupie.",
+      "mina": "mowi",
+      "dalej": [
+        {
+          "tekst": "To twoje ogłoszenie wisi na słupie od lat?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Moje. Te same słowa od jedenastu lat: praca nocna, bez referencji, dyskrecja. Zmieniam tylko odcinek z numerem. Twój był 0809.",
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Jak się z tego fotela odchodzi?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "kto": "vera",
+              "odpowiedz": "Dostaje się od Iris bilet bez nazwiska. Ale dopiero wtedy, gdy na fotelu usiądzie następny. Sam czekał na ciebie sześć tygodni. Ty będziesz czekać na kogoś.",
+              "mina": "emocja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tekst": "Na mojej umowie jest podpis z pętlą w literze K. Czyj?",
+      "ton": "niewygodne",
+      "wymaga": "d24_umowa",
+      "kto": "vera",
+      "odpowiedz": "Mój. Podpisałam za Zarząd Cooper, nieczytelnie, żeby nikt nie szukał, kto za tym stoi. Wszystko było gotowe, zanim ktokolwiek odsunął tę zasłonkę.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Czemu mówisz mi to teraz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "kto": "vera",
+          "odpowiedz": "Bo Sam odszedł i nie umiał tego powiedzieć. Ktoś musi wiedzieć, że nie jest pierwszy. I że strona czterdzieści jeden nie była o lokatorach. Była o tobie.",
           "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
+      "tekst": "Z tyłu kartonika stoi: „nie otwierać do odwołania”. Kto to odwołuje?",
+      "ton": "niewygodne",
+      "wymaga": "d24_kartonik",
+      "kto": "vera",
+      "odpowiedz": "Ja. Właśnie odwołuję. Sam napisał to ołówkiem, ale reguła nie była jego. Dostał ją tak jak ty: cudzą, do udawania, że własna.",
+      "mina": "neutralna",
+      "dalej": [
         {
-          "tekst": "Czym tak naprawdę zajmujesz się w tym biurze?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "vera",
-          "odpowiedz": "Kluczami, teczkami, pudełkami. Zapleczem. Fotel nie jest karą. Fotel jest bezpiecznikiem. Najpierw miejsce, potem rzecz. Kiedy ktoś ma gdzie postawić stopę, resztę da się zrobić.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Kto napisał na kartoniku „nie otwierać”?",
+          "tekst": "Co znajdę w tej szafce oprócz listu?",
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "vera",
-          "odpowiedz": "Sam, ołówkiem. Jego pismo, ale nie jego decyzja. Dostał to, co dostaje każdy: cudzą regułę, którą musi udawać, że sam wymyślił.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "O jaki wstyd Ci chodzi?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "kto": "vera",
-          "odpowiedz": "O kryterium. Że od lat patrzę na ludzi i wybieram, kto się nadaje. Nie pytam o kwalifikacje, tylko czy ktoś by go szukał.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Co jest w szafce poza pustą teczką?",
-          "ton": "niewygodne",
-          "wymaga": "d24_kartonik",
-          "kto": "vera",
-          "odpowiedz": "List. Sam pisał go pięć razy, ostatnio w niedzielę. Nie czytałam. Ma trafić do tego, kto będzie siedział przy szybie po nim.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Co zrobisz z kluczem, jeśli go nie przyjmę?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "vera",
-          "odpowiedz": "Zostawię na ladzie. Nie mam już komu go oddać. Klucz sam się nie otworzy, ale też nie zginie.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Kto wie, że przyszłaś?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "kto": "vera",
-          "odpowiedz": "Nikt. Powiedziałam Leo, że idę po szpulę nici. Kłamię słabo, ale on nie sprawdza. To jego cecha, nie moja zasługa.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Kto wybiera ludzi na to miejsce?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "kto": "vera",
-          "odpowiedz": "To ja wybieram. Od jedenastu lat. Wybieram tych, których nikt nie szuka, bo fotel to bezpiecznik. Czwarty został znaleziony w kanale. Jego siostra do dziś szuka go po szpitalach.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Czy ktoś kazał Ci to powiedzieć?",
-          "ton": "niewygodne",
-          "wymaga": "d24_umowa",
-          "kto": "vera",
-          "odpowiedz": "Nikt. Mówię, bo Sam odszedł i ktoś musi wiedzieć, że nie był pierwszym. Przed nim siedzieli inni, a kartoników jest więcej, niż myślisz.",
-          "mina": "emocja"
+          "odpowiedz": "Nic. Pustą teczkę i miejsce na twoje rzeczy. Sam mówił, że list wystarczy, jeśli przy czytającym stoi drugi człowiek. Dlatego stoję.",
+          "mina": "neutralna"
         }
       ]
     }
@@ -5090,7 +5145,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "dolacz_slad",
       "etykieta": "Dołącz ślad odejścia Sama za jego zgodą",
       "kto": "vera",
-      "reakcja": "Zapisuję: odejście bez wpisu, z mojej woli. Sam odzyska twarz. Strona 41 jest Twoja.",
+      "reakcja": "Zapisuję: odejście Sama bez wpisu, z mojej woli, nie z jego. Niech ma czyste papiery. A strona czterdzieści jeden jest twoja.",
       "zysk": "Sam odzyskuje czyste akta, a Vera oficjalnie bierze winę za teczkę.",
       "strata": "Ślad trafia do księgi, więc ktoś, kto czyta wszystko, dowie się, że teczka była pusta.",
       "echo": {
@@ -5103,7 +5158,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "koperta_zapieczetowana",
       "etykieta": "Oddaj dokument Samowi w zapieczętowanej kopercie",
       "kto": "vera",
-      "reakcja": "Zapieczętowana. Sam zdecyduje sam. A strona 41 jest Twoja.",
+      "reakcja": "Zapieczętowana. Sam zdecyduje za siebie. A strona czterdzieści jeden jest twoja, tego już nie cofnę.",
       "zysk": "Sam sam decyduje, co zrobić z dokumentem, a Vera nie musi niczego wyznawać w księdze.",
       "strata": "Okienko nie zostawia śladu, więc nikt nie zapisze, że Vera przyszła.",
       "echo": {
@@ -5116,7 +5171,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "otworz_szafke",
       "etykieta": "Otwórz szafkę 0809 kluczem Very",
       "kto": "vera",
-      "reakcja": "Klucz. Sam zostawił to dla tego, kto siedzi przy szybie. Strona 41 jest Twoja.",
+      "reakcja": "Proszę, klucz. Zacina się w lewo. To, co tam leży, Sam zostawił dla ciebie. Strona czterdzieści jeden też jest twoja.",
       "zysk": "W szafce leży list od Sama, a w tle brzęczą klucze Very.",
       "strata": "Ktoś zobaczy, że szafka była otwarta, a w nocy wszystko jest widoczne dla tego, kto patrzy.",
       "echo": {
@@ -5674,90 +5729,75 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     }
   ],
   "wejscie": "Elias Wren, numerek jeden. Księga leży otwarta na linii 0809, pustej, wąskiej. Pan Holt mówił, że linia jest dla następnego. Czekam, bo pytam o imię. Pytam, bo nikt nie pyta.",
-  "tury": [
+  "rozmowa": [
     {
-      "pytania": [
+      "tekst": "Co to za linia?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "elias",
+      "odpowiedz": "Zero osiem zero dziewięć. Wąska, pusta, z miejscem na imię. Pan Holt mówił, że czeka na następnego. Dziś pierwszy raz widzę ją z bliska.",
+      "mina": "mowi",
+      "dalej": [
         {
-          "tekst": "Elias, co to za linia w księdze?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Linia 0809. Wąska, od lat pusta. Pan Holt mówił, że jest dla następnego. Nie wiem, dla którego. Dziś pierwszy raz widzę ją z bliska.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Kto zapisuje imiona w tej księdze?",
+          "tekst": "W rogu ktoś dopisał tuszem „0913”. Co to?",
           "ton": "rzeczowe",
           "wymaga": null,
           "kto": "elias",
-          "odpowiedz": "Dyżurny. Tylko on ma prawo. Ja pytam, żeby ktoś zapisał, że ktoś tu był. Bez imienia człowiek jest numerkiem, nawet jeśli stoi przy szybie.",
-          "mina": "mowi"
+          "odpowiedz": "Nie wiem. Wygląda jak numer następnej linii. Albo następnego ogłoszenia. Ja znam się na numerkach, nie na księgach.",
+          "mina": "neutralna"
         },
         {
-          "tekst": "Elias, czemu zawsze pytasz o imię?",
+          "tekst": "Co się stanie, jeśli wpiszę tu swoje imię?",
           "ton": "niewygodne",
           "wymaga": null,
           "kto": "elias",
-          "odpowiedz": "Bo oprawkę znalazł człowiek, którego nie znałem. Żałuję, że nie spytałem o imię wcześniej. Teraz pytam każdego.",
+          "odpowiedz": "Będzie zapisane, że ktoś tu siedział. Pani Bell mówi, że wtedy czeka bilet. Ale ktoś musi usiąść po tobie, inaczej bilet jest tylko papierem.",
+          "mina": "neutralna"
+        }
+      ]
+    },
+    {
+      "tekst": "A jeśli wyrwę tę stronę, jak Sam?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "elias",
+      "odpowiedz": "To nikt już nikogo nie wpisze. Ani ciebie, ani następnego. Kartka zniknie ze słupa. Nie wiem, co wtedy z ludźmi, którzy na tę księgę liczyli.",
+      "mina": "emocja"
+    },
+    {
+      "tekst": "Sam zostawił w szafce list. Mogę dopisać coś od siebie?",
+      "ton": "rzeczowe",
+      "wymaga": null,
+      "kto": "elias",
+      "odpowiedz": "Możesz. List czyta się łatwiej, kiedy ktoś stoi obok. Pan Holt czytał swoje papiery sam i widać, jak na tym wyszedł.",
+      "mina": "mowi"
+    },
+    {
+      "tekst": "Czemu zawsze pytasz o imię?",
+      "ton": "uprzejme",
+      "wymaga": null,
+      "kto": "elias",
+      "odmowa": "Stary nawyk. Nie każ mi się z niego tłumaczyć przed świtem.",
+      "odpowiedz": "Bo oprawkę żony znalazł mi człowiek, którego nie zapytałem, jak się nazywa. Przez dwa lata mówiłem do niego „proszę pana”. Potem zniknął i nie miałem nawet kogo wołać.",
+      "mina": "emocja",
+      "dalej": [
+        {
+          "tekst": "Po co ci moje imię, skoro zaraz wyjdziesz?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "kto": "elias",
+          "odpowiedz": "Żeby jutro powiedzieć „dobry wieczór” komuś, a nie szybie.",
           "mina": "emocja"
         }
       ]
     },
     {
-      "pytania": [
-        {
-          "tekst": "Elias, co by się stało, gdyby linia została pusta?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Nic. Księga leży, a ludzie wchodzą i wychodzą. Ale nikt by nie wiedział, że ktoś tu siedział. A to różnica.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Elias, czy Sam kazał Ci tu być?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Nie kazał. Mówił, że będzie dziś ktoś ważny, i że wolałby, żeby ktoś go zobaczył. Zostałem, bo nie wypada odchodzić, kiedy ktoś ma wybierać.",
-          "mina": "mowi"
-        },
-        {
-          "tekst": "Elias, wiesz, co jest w księdze, czego Ci nie pokazywano?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Wiem, że strona 41 była kiedyś cała. Wiem, że ktoś ją wyrwał. Nie pytam, kto. Wiem, że ktoś ją znowu chciałby mieć.",
-          "mina": "emocja"
-        }
-      ]
-    },
-    {
-      "pytania": [
-        {
-          "tekst": "Elias, co chcesz od tej księgi?",
-          "ton": "uprzejme",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Żeby linia nie była pusta, kiedy wyjdę. Albo żeby ktoś jej nie wypełnił bez zgody. Nie umiem się zdecydować, więc wybór zostawiam komuś młodszemu.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Elias, co powiesz osobie, która tu zostanie?",
-          "ton": "rzeczowe",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Że dziękuję. Że oprawkę mam. Że imię zapisuję w pamięci, jeśli nie w księdze. To też jest sposób, żeby ktoś był.",
-          "mina": "emocja"
-        },
-        {
-          "tekst": "Elias, czy jesteś pewien, że chcesz, żeby to była moja decyzja?",
-          "ton": "niewygodne",
-          "wymaga": null,
-          "kto": "elias",
-          "odpowiedz": "Nie. Ale jest tylko jedna osoba po tej stronie szyby i tylko ona może zdecydować. Przykro mi, że to wypadło na Ciebie.",
-          "mina": "emocja"
-        }
-      ]
+      "tekst": "Czemu to ma być moja decyzja?",
+      "ton": "niewygodne",
+      "wymaga": null,
+      "kto": "elias",
+      "odpowiedz": "Bo po tej stronie szyby siedzi jedna osoba. Ja mogę tylko stać i trzymać numerek. Przykro mi, że padło na ciebie.",
+      "mina": "neutralna"
     }
   ],
   "decyzje": [
@@ -5765,7 +5805,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "wpisz_siebie",
       "etykieta": "Wpisz „[imię]” w linię 0809",
       "kto": "elias",
-      "reakcja": "Iris, od drzwi: „Bilet jest. Czeka na peronie, aż ktoś podpisze po Tobie. Do poniedziałku.” Elias składa numerek: „Dobry początek.”",
+      "reakcja": "Iris, od drzwi: „Bilet jest. Poczeka na peronie, aż ktoś podpisze po tobie.” Elias składa numerek: „Dobry początek.”",
       "zysk": "Twoje imię stoi w księdze, a bilet na peronie czeka, aż ktoś podpisze po Tobie.",
       "strata": "Rotacja trwa i następnego wybiorą tak, jak wybrano Ciebie.",
       "echo": {

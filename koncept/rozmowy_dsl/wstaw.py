@@ -10,6 +10,7 @@ Zapis:
    ? r Dopytanie (jedna spacja wcięcia = poziom niżej; widać je tylko zaraz po odpowiedzi wyżej)
    = n ...
   #klucz: dwa pytania o to samo (zadanie jednego chowa drugie); %gasi: pytanie znika, gdy padło pytanie z tym kluczem
+  ^ Nowe wejście gościa (zastępuje też warianty); ^@flaga Wariant wejścia, gdy flaga jest ustawiona
   ! akcja Nowa reakcja gościa na decyzję
   > akcja Nowy tekst kartki o świcie (echo tej decyzji; tylko dla akcji, które już mają echo)
 Pliki czytane są alfabetycznie; scena powtórzona w późniejszym pliku zastępuje wcześniejszą (np. final.txt nadpisuje dni11-16.txt).
@@ -29,6 +30,11 @@ for f in sorted(glob.glob(os.path.join(HERE, '*.txt'))):
             SRC[sid] = f; cur = S.setdefault(sid, {'rozmowa': [], 'reakcje': {}, 'echa': {}}); stack = []; continue
         if ln.startswith('!'):
             a, t = ln[1:].strip().split(' ', 1); cur['reakcje'][a] = t.strip(); continue
+        if ln.startswith('^'):
+            b = ln[1:].strip()
+            if b.startswith('@'): k, t = b[1:].split(' ', 1); cur.setdefault('wej_jesli', {})[k] = t.strip()
+            else: cur['wej'] = b
+            continue
         if ln.startswith('>'):
             a, t = ln[1:].strip().split(' ', 1); cur['echa'][a] = t.strip(); continue
         d = len(ln) - len(ln.lstrip(' ')); body = ln.strip()
@@ -64,7 +70,10 @@ for f in sorted(glob.glob(os.path.join(KON, 'okienko_rozmowy_v3*.md'))):
         if not s: return m.group(0)
         out = {}
         for k, v in g.items():
-            if k in ('tury', 'rozmowa'):
+            if k == 'wejscie' and 'wej' in s: out[k] = s['wej']
+            elif k == 'wejscie_jesli' and 'wej' in s:
+                if s.get('wej_jesli'): out[k] = s['wej_jesli']
+            elif k in ('tury', 'rozmowa'):
                 if 'rozmowa' not in out: out['rozmowa'] = [order(q) for q in s['rozmowa']]
             else: out[k] = v
         assert 'rozmowa' in out, g['id']

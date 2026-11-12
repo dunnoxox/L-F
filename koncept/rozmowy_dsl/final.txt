@@ -1,0 +1,92 @@
+// Sceny finałowe wersji 10-dniowej (dzień 9: d24_vera; dzień 10: d20_elias_sam, d25_ksiega).
+// Plik czytany po dni*.txt, więc scena powtórzona tutaj zastępuje wcześniejszą.
+
+# d24_vera
+^ Vera, zaplecze. Wróciłam sama, Sam czeka na przystanku. Mam szarą teczkę, kartonik z numerem szafki i jedną rzecz do powiedzenia. Nie umiem zacząć, więc pytaj.
+? u ~vera Co to za teczka?
+= m Szara, tekturowa, wiązana tasiemką. Pusta. Od lat stoi w szafce jako „zajęte”, żeby nikt tej szafki nie zlikwidował. Na wierzchu przypięłam kartonik.
+ ? r ~vera Co jest na kartoniku?
+ = n Numer: 0809. Ołówkiem, pismo Sama. To szafka dla tego, kto siedzi przy szybie. Dla ciebie. Klucz mam przy pasie, słychać.
+  ? n ~vera Czemu dla mnie? Nikt mi nie mówił o żadnej szafce.
+  = e Bo nikt nikomu nie mówi. Sam też dowiedział się późno. W środku jest list do następnego dyżurnego. Nie czytałam.
+ ? n ~vera Po co trzymać pustą teczkę jako „zajęte”?
+ = n Bo puste miejsca u nas znikają, a zajęte czekają. Tak samo jest z fotelem, na którym siedzisz. Najpierw miejsce, potem człowiek.
+? r ~vera Skąd wzięłaś ten kartonik?
+= n Z szuflady numer sześć, tej, którą Sam zostawił dla następnego. Wyjęłam wczoraj. Od wczoraj nie umiem go odłożyć.
+? n ~vera Czemu przyszłaś bez Sama?
+- To zaplecze, tu się nie tłumaczy. Pytaj o teczkę.
+= e Bo on by mi przerwał. Powiedziałby, że to nie moja wina. A to jest moja wina i chcę to powiedzieć sama, całym zdaniem.
+ ? n ~vera Jaka wina?
+ = e To ja wybieram, kto siada na tym fotelu. Od jedenastu lat. Patrzę na ludzi przy słupie z ogłoszeniem i nie pytam, co umieją. Patrzę, czy ktoś by ich szukał.
+  ? n ~vera I mnie nikt by nie szukał?
+  = e Nie wiem, przed czym uciekasz. Nie pytałam, taki jest warunek. Wiem tylko, że kartka wisiała trzy tygodnie i po nikogo innego nikt by się nie zgłosił.
+  ? r ~vera Ilu było przede mną?
+  = n Pięcioro. Sam był piąty. Iris trzecia, tak, ta Iris. Czwartego znaleźli w kanale portowym. Jego siostra do dziś chodzi po szpitalach.
+? u ~vera Co ty właściwie robisz w tym biurze?
+= m Klucze, teczki, pudełka. Zamykam, co otwarte, i pilnuję, żeby nic nie stało niczyje. A raz na parę lat przyklejam kartkę na słupie.
+ ? r ~vera To twoje ogłoszenie wisi na słupie od lat?
+ = n Moje. Te same słowa od jedenastu lat: praca nocna, bez referencji, dyskrecja. Zmieniam tylko odcinek z numerem. Twój był 0809.
+  ? n ~vera Jak się z tego fotela odchodzi?
+  = e Dostaje się od Iris bilet bez nazwiska. Ale dopiero wtedy, gdy na fotelu usiądzie następny. Sam czekał na ciebie sześć tygodni. Ty będziesz czekać na kogoś.
+? n @d24_umowa ~vera Na mojej umowie jest podpis z pętlą w literze K. Czyj?
+= e Mój. Podpisałam za Zarząd Cooper, nieczytelnie, żeby nikt nie szukał, kto za tym stoi. Wszystko było gotowe, zanim ktokolwiek odsunął tę zasłonkę.
+ ? n ~vera Czemu mówisz mi to teraz?
+ = e Bo Sam odszedł i nie umiał tego powiedzieć. Ktoś musi wiedzieć, że nie jest pierwszy. I że strona czterdzieści jeden nie była o lokatorach. Była o tobie.
+? n @d24_kartonik ~vera Z tyłu kartonika stoi: „nie otwierać do odwołania”. Kto to odwołuje?
+= n Ja. Właśnie odwołuję. Sam napisał to ołówkiem, ale reguła nie była jego. Dostał ją tak jak ty: cudzą, do udawania, że własna.
+ ? r ~vera Co znajdę w tej szafce oprócz listu?
+ = n Nic. Pustą teczkę i miejsce na twoje rzeczy. Sam mówił, że list wystarczy, jeśli przy czytającym stoi drugi człowiek. Dlatego stoję.
+! dolacz_slad Zapisuję: odejście Sama bez wpisu, z mojej woli, nie z jego. Niech ma czyste papiery. A strona czterdzieści jeden jest twoja.
+! koperta_zapieczetowana Zapieczętowana. Sam zdecyduje za siebie. A strona czterdzieści jeden jest twoja, tego już nie cofnę.
+! otworz_szafke Proszę, klucz. Zacina się w lewo. To, co tam leży, Sam zostawił dla ciebie. Strona czterdzieści jeden też jest twoja.
+
+# d20_elias_sam
+^ Elias Wren, numerek jeden. Dziś nie sam: przyprowadziłem pana Holta. Ma w kieszeni zegarek w moim etui po okularach i nie chce ode mnie koperty. Pan Crane stoi za nami, bo o trzeciej zamyka papiery.
+^@d15_sam:victor_od_razu Elias Wren, numerek jeden. Pan Holt nie chciał tu wracać, odkąd pan Crane dostał jego kalkę, ale go przyprowadziłem. Ma w kieszeni zegarek w moim etui po okularach i nie chce ode mnie koperty. Pan Crane o trzeciej zamyka papiery.
+^@d15_sam:oddaj_samowi Elias Wren, numerek jeden. Przyprowadziłem pana Holta. Odkąd dostał z powrotem swoją kalkę, patrzy na to okienko inaczej. Ma w kieszeni zegarek w moim etui po okularach i nie chce ode mnie koperty. Pan Crane o trzeciej zamyka papiery.
+? u ~sam Sam, jak wygląda ten zegarek?
+= m Złoty, kieszonkowy, mały. Szkło pęknięte na trzeciej. Na pokrywce inicjały S.H. Po dziadku. Jedyna rzecz, którą miałem, zanim tu usiadłem.
+ ? r ~sam Czemu nosisz go w cudzym etui?
+ = n Bo swoje zgubiłem, a Elias wcisnął mi to po okularach żony. Mówi, że puste etui to grzech. Nie umiem mu odmówić niczego poza pieniędzmi.
+? r ~elias Elias, co jest w tej kopercie?
+= m Osiemdziesiąt cztery dolary. Tyle pan Holt zapłacił mi z własnej kieszeni za oprawkę, której wtedy nie znalazł. Odkładałem cztery tygodnie. Chcę oddać do ręki.
+ ? n ~sam Sam, czemu nie weźmiesz?
+ - To sprawa między mną a nim. Nie rób z tego protokołu.
+ = e Bo to nie był dług. Obiecałem, że znajdę, i nie znalazłem. Zapłaciłem za własne słowo. Jak wezmę, wyjdzie, że to była pożyczka.
+  ? u ~elias Elias, a jeśli nie weźmie nigdy?
+  = n To koperta zostanie tutaj, na jego nazwisko. Dług bez nazwiska jest gorszy niż dług z nazwiskiem. Niech leży i ma podpis.
+? n ~victor Victor, po co ci to wszystko o trzeciej?
+= n O trzeciej zamykam tydzień. Wpłata bez pokrycia w kasie biura to dziura w rozliczeniu. Chcę dwóch zeznań i dowodu wpłaty. Albo zamknę tak, jak jest.
+ ? n ~victor Co się dzieje z twoim drugim egzemplarzem?
+ = n Idzie do Urzędu, jak każdy. Tam czyta go każdy uprawniony. Nie pytaj mnie, kto jest uprawniony. Tej listy nie układam ja.
+? n ~sam Sam, czemu odszedłeś bez słowa?
+= e Nie bez słowa. Odchodziłem sześć tygodni i każde słowo zostawiłem w rzeczach, ołówkiem. Bilet leżał u Iris od twojej pierwszej nocy. Nie brałem, bo wziąć znaczyło zostawić cię z niczym.
+ ? r ~sam Czego chcesz ode mnie teraz?
+ = e Jednej rzeczy. Elias od tygodni pyta, kto tu siedzi, a ja nie umiem odpowiedzieć. Jak cię zapisać?
+? n @d20_zegarek_tyl ~sam Na odwrocie odcinka wpłaty jest ołówkiem: „Wpisuj mało. Pytaj o imiona”. Do kogo to?
+= e Kiedyś do mnie. Dziś do ciebie. Każdy wpis w dwóch egzemplarzach to jeden adres więcej w Urzędzie. A imię powiedziane na głos nie idzie nigdzie.
+ ? r ~sam Odcinek ma tę samą datę co kwit Eliasa. Czyje to były pieniądze?
+ = n Moje. Nie z kasy, nie od Iris, nie z żadnego funduszu. To jedyna czysta rzecz w całej tej historii i dlatego nie chcę jej z powrotem.
+! komplet_zeznan Komplet przyjęty: dwa zeznania, dowód wpłaty, pokwitowanie. Pochodzenie czytelne, podpisuję. Oba egzemplarze wychodzą dziś.
+! poza_audytem Zegarek wraca do kieszeni, papiery zostają w szufladzie. Victor, nie patrz tak. Tak jest uczciwie.
+! czesc_zeznan Moje zeznanie przyjęte? Dobrze, niech zostanie. Pan Holt się nie zgodzi, ale to już moje zmartwienie.
+
+# d25_ksiega
+? u ~elias Co to za linia?
+= m Zero osiem zero dziewięć. Wąska, pusta, z miejscem na imię. Pan Holt mówił, że czeka na następnego. Dziś pierwszy raz widzę ją z bliska.
+ ? r ~elias W rogu ktoś dopisał tuszem „0913”. Co to?
+ = n Nie wiem. Wygląda jak numer następnej linii. Albo następnego ogłoszenia. Ja znam się na numerkach, nie na księgach.
+ ? n ~elias Co się stanie, jeśli wpiszę tu swoje imię?
+ = n Będzie zapisane, że ktoś tu siedział. Pani Bell mówi, że wtedy czeka bilet. Ale ktoś musi usiąść po tobie, inaczej bilet jest tylko papierem.
+? n ~elias A jeśli wyrwę tę stronę, jak Sam?
+= e To nikt już nikogo nie wpisze. Ani ciebie, ani następnego. Kartka zniknie ze słupa. Nie wiem, co wtedy z ludźmi, którzy na tę księgę liczyli.
+? r ~elias Sam zostawił w szafce list. Mogę dopisać coś od siebie?
+= m Możesz. List czyta się łatwiej, kiedy ktoś stoi obok. Pan Holt czytał swoje papiery sam i widać, jak na tym wyszedł.
+? u ~elias Czemu zawsze pytasz o imię?
+- Stary nawyk. Nie każ mi się z niego tłumaczyć przed świtem.
+= e Bo oprawkę żony znalazł mi człowiek, którego nie zapytałem, jak się nazywa. Przez dwa lata mówiłem do niego „proszę pana”. Potem zniknął i nie miałem nawet kogo wołać.
+ ? u ~elias Po co ci moje imię, skoro zaraz wyjdziesz?
+ = e Żeby jutro powiedzieć „dobry wieczór” komuś, a nie szybie.
+? n ~elias Czemu to ma być moja decyzja?
+= n Bo po tej stronie szyby siedzi jedna osoba. Ja mogę tylko stać i trzymać numerek. Przykro mi, że padło na ciebie.
+! wpisz_siebie Iris, od drzwi: „Bilet jest. Poczeka na peronie, aż ktoś podpisze po tobie.” Elias składa numerek: „Dobry początek.”

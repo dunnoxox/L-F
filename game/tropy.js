@@ -92,6 +92,20 @@ window.TR.regul=function(layer,day){if(day>3||layer.querySelector('.regul'))retu
 window.TR.odmowa=function(g,x,sec,ST){if(ST.odmId!==g.id){ST.odmId=g.id;ST.odm=0}return x.odmowa||null};
 
 /* I4: plan gry w 10 dni (włącza ?dni=10, wyłącza ?dni=25). od = ostatni dzień brany bez zmian; dalej lista wizyt na dzień, w kolejności. */
-window.PLAN10={od:8,dni:{9:['d9_iris','d10_vera','d15_sam'],10:['d20_elias_sam','d25_sam_elias','d25_ksiega']},
- tytul:{9:'Pudełko po człowieku, który tu nie wraca',10:'Księga otwarta na twojej stronie'},final_h:'Koniec zmiany.'};
+window.PLAN10={od:8,
+ /* dzień 8: Vera z pudełkiem Sama zapowiada jego powrót; dzień 9: żetony, Elias przy szybie, Sam z kalką, wyznanie Very; dzień 10: imię i księga */
+ dni:{8:['d8_lena_i_nora','d8_bree','d10_vera'],9:['d9_iris','d13_elias','d15_sam','d24_vera'],10:['d20_elias_sam','d25_ksiega']},
+ /* z których starych dni brać kartki o świcie (bez tych, które przeczą przeniesionym scenom) */
+ ev:{8:[8],9:[24],10:[]},
+ tytul:{8:'Żółta kartka w podszewce',9:'Kartonik z numerem szafki',10:'Księga otwarta na twojej stronie'},final_h:'Koniec zmiany.',
+ /* epilog dopasowany do 10 dni: bez dat i bez wątków, które się nie rozegrały */
+ lang:{pr1_lab_end:'Słup przy zajezdni',
+  end_zag_B:'Noah zamyka zgłoszenie we wtorek o szóstej rano. Evan drukuje nowe ulotki, Lena przestaje przychodzić. Jeśli Maya gdzieś jest, to tam, gdzie nikt nie robi drugiego egzemplarza.',
+  end_skr_C:'Iris zdąża przed wyburzeniem: oryginały i kasetka wyjeżdżają razem z nią. Nora zostaje z kopią jednej wpłaty i czternastoma rodzinami. Kamienica o świcie, ekipa rozbiórki. W oknie Iris nie ma nikogo.',
+  end_pop_B:'Sam zabiera termos i wychodzi, nie odwracając się. W protokole Victora zostaje niedobór. Co się naprawdę stało, wiedzą tylko ci, którzy stali wtedy przy szybie.',
+  end_pop_C:'Sam, wystawiony Urzędowi, dostaje od Iris pusty bilet i znika po raz drugi. Koperta Eliasa zostaje w szufladzie, na jego nazwisko. Nikt po nią nie przychodzi.',
+  ep_odebrany:'Kiedy ktoś podpisuje po Tobie, odchodzisz. Następca znajduje list pierwszego wieczoru, a przy nim stoi Vera i mówi prawdę zamiast milczeć.',
+  ep_odebrany_m:'Kiedy ktoś podpisuje po Tobie, odchodzisz. Następca znajduje list pierwszego wieczoru, a przy nim stoi Vera i mówi prawdę zamiast milczeć.',
+  ep_rotacja:'Peron o świcie, pusty bilet, nowa twarz w nowym mieście. Na słupie wisi świeży odcinek ogłoszenia: 0913.',
+  ep_rotacja_lb:'Peron o świcie, pusty bilet, nowa twarz w nowym mieście. Na słupie wisi świeży odcinek ogłoszenia: 0913. Listu nikt nie znalazł.'}};
 window.TRT.s_d10='Próba: gra w 10 dni (zwrot i finał w dniach 9-10)';
