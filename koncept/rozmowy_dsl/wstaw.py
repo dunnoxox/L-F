@@ -10,6 +10,7 @@ Zapis:
    = n ...
   #klucz: dwa pytania o to samo (zadanie jednego chowa drugie); %gasi: pytanie znika, gdy padło pytanie z tym kluczem
   ! akcja Nowa reakcja gościa na decyzję
+  > akcja Nowy tekst kartki o świcie (echo tej decyzji; tylko dla akcji, które już mają echo)
 Uruchom: python3 -I koncept/rozmowy_dsl/wstaw.py
 """
 import re, json, glob, os, sys
@@ -21,9 +22,11 @@ for f in sorted(glob.glob(os.path.join(HERE, '*.txt'))):
         ln = raw.rstrip('\n'); where = f'{os.path.basename(f)}:{no}'
         if not ln.strip() or ln.startswith('//'): continue
         if ln.startswith('# '):
-            cur = S.setdefault(ln[2:].strip(), {'rozmowa': [], 'reakcje': {}}); stack = []; continue
+            cur = S.setdefault(ln[2:].strip(), {'rozmowa': [], 'reakcje': {}, 'echa': {}}); stack = []; continue
         if ln.startswith('!'):
             a, t = ln[1:].strip().split(' ', 1); cur['reakcje'][a] = t.strip(); continue
+        if ln.startswith('>'):
+            a, t = ln[1:].strip().split(' ', 1); cur['echa'][a] = t.strip(); continue
         d = len(ln) - len(ln.lstrip(' ')); body = ln.strip()
         if body[0] == '?':
             p = body[1:].split(); ton = p.pop(0); q = {}
@@ -61,6 +64,11 @@ for f in sorted(glob.glob(os.path.join(KON, 'okienko_rozmowy_v3*.md'))):
         for d in out['decyzje']:
             if d['akcja'] in s['reakcje']: d['reakcja'] = s['reakcje'].pop(d['akcja'])
         assert not s['reakcje'], (g['id'], s['reakcje'])
+        for d in out['decyzje']:
+            if d['akcja'] in s['echa']:
+                assert isinstance(d.get('echo'), dict), (g['id'], d['akcja'], 'brak echa')
+                d['echo']['tekst'] = s['echa'].pop(d['akcja'])
+        assert not s['echa'], (g['id'], s['echa'])
         done.add(g['id']); return '```json\n' + json.dumps(out, ensure_ascii=False, indent=2) + '\n```'
     t2 = re.sub(r"```json\n(.*?)```", rep, t, flags=re.S)
     if t2 != t: open(f, 'w', encoding='utf-8').write(t2)
