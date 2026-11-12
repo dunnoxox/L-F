@@ -1,0 +1,25 @@
+/* TROPY: kartka "Z rozmowy" i oględziny w magazynie */
+.trnote{position:absolute;left:1250px;top:275px;width:262px;background:var(--paper);color:var(--ink);padding:16px 16px 14px;transform:rotate(1.2deg);z-index:30;clip-path:polygon(0 1%,99% 0,100% 99%,1% 100%);display:flex;flex-direction:column;gap:9px}
+.trnote .lab{color:#a04f00;font-size:15px;margin:0}
+.trr{display:flex;flex-direction:column;border-bottom:2px dashed #b9a67e;padding-bottom:6px}
+.trr .k{font:700 12px ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#7a5a2a}
+.trr .v{font:italic 21px/1.2 Georgia,serif;color:#9a8a68}
+.trr.on .v{font-style:normal;color:var(--ink)}
+button.trr{background:none;border:0;border-bottom:2px dashed #b9a67e;text-align:left;cursor:pointer;padding:0 0 6px;font:inherit}
+button.trr .v{font:700 14px ui-monospace,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase;color:#a04f00}
+button.trr:hover .v,button.trr:focus-visible .v{color:var(--ink);text-decoration:underline}
+.trc{font:italic 14px/1.25 Georgia,serif;color:#7a5a2a}
+.ogl{position:absolute;inset:0;background:rgba(0,0,0,.72);z-index:850;display:flex;align-items:center;justify-content:center}
+.oglc{background:var(--paper);color:var(--ink);width:560px;padding:28px 34px 26px;transform:rotate(-1deg);clip-path:polygon(0 1%,99% 0,100% 99%,1% 100%);display:flex;flex-direction:column;align-items:center;gap:12px;animation:oglin .22s cubic-bezier(.34,1.56,.64,1)}
+@keyframes oglin{from{transform:rotate(-4deg) scale(.86);opacity:0}}
+.oglc .lab{color:#a04f00;font-size:16px;align-self:flex-start}
+.oglc img{height:230px;width:100%;object-fit:contain;background:#0c0a08;padding:14px}
+.oglnm{font:700 20px ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase}
+.ogll{align-self:stretch;display:flex;flex-direction:column;gap:8px}
+.ogll .trr .v{font-size:25px}
+.oglo{font:italic 24px Georgia,serif;color:#6a4c20}
+.oglb{display:flex;gap:16px;margin-top:8px}
+.oglb .btn{background:var(--ink);color:var(--paper);font-size:20px;padding:15px 24px}
+.oglb .btn:hover{background:var(--sod);color:var(--ink)}
+.oglb .btn.ghost{background:transparent;color:var(--ink);outline:3px solid var(--ink);outline-offset:-3px}
+.reduce .oglc{animation:none}
