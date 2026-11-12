@@ -13,3 +13,4 @@ unity/**/UserSettings/
 *.sln
 node_modules/
 docs/ux/start/
+qa/out*/
