@@ -29,9 +29,10 @@ Wynik: `qa/out/*.png` (screeny po kolei), `qa/out/wynik.json` (usterki, zakończ
 | 1 | pierwsza opcja | dzień 20 (stary build, przerwany limitem czasu) | - | 14 z oglądania screenów |
 | 2A | pierwsza opcja | finał | rotacja (A/A/A) | 0 błędów JS, 0 brakujących plików |
 | 2B | ostatnia opcja | finał | nowy Sam (C/C/B) | 0 błędów JS, 0 brakujących plików |
-| 3 | losowa | WYNIK_3 | WYNIK_3_END | WYNIK_3_USTERKI |
+| 3 | losowa (seed 11) | finał | wyrwana strona (C/B/B) | 0 błędów JS, 0 brakujących plików |
+| 4 | telefon poziomo 844×390 | finał | rotacja | 0 błędów JS; sobota nie mieściła się na ekranie (naprawione) |
 
-Żaden przebieg nie zaciął się i nie trafił na blokadę. Konsola czysta, wszystkie grafiki i dźwięki się wczytują.
+Trzy różne zakończenia osiągnięte. Żaden przebieg nie zaciął się i nie trafił na blokadę. Konsola czysta, wszystkie grafiki i dźwięki się wczytują.
 
 ## Naprawione
 
@@ -51,12 +52,16 @@ Wynik: `qa/out/*.png` (screeny po kolei), `qa/out/wynik.json` (usterki, zakończ
 | 12 | dzień 20 | pole na imię miało 18 px wysokości, domyślny szary styl | duże pole w stylu kartki |
 | 13 | finał | portfel „do soboty $410” i notatnik nachodziły na „Koniec zmiany”, choć gra już się skończyła | finał bez paska gry |
 | 14 | finał i koniec tygodnia | ten sam licznik nazywał się „Ekspozycja”, a w soboty „Urząd” | wszędzie „Urząd” |
+| 15 | telefon, sobota | „Następny tydzień” i „Nic nie kupuję” poza ekranem, nagłówek ucięty u góry | ulepszenia w dwóch kolumnach, mniejszy nagłówek, przewijanie |
+| 16 | telefon, dostawa | trzecia rzecz w skrzyni wchodziła pod „Nie zaglądam” | dwie kolumny w skrzyni także na telefonie |
+| 17 | telefon, wieczór z 4+ listami | listy ściśnięte w paski po 2 słowa | dwie kolumny, przewijanie |
+| 18 | telefon, magazyn | „Księga przyjęć” wypadała w lewy górny róg na nagłówek (regresja po poprawce 2, złapana przez bota) | przycisk znowu pozycjonowany |
 
 Część poprawek z pierwszego przebiegu (kartka w dniu 1, przycisk w notce oględzin, cień podtytułu na ekranie tytułowym) okazała się zbędna, bo równolegle wszedł nowy ekran tytułowy i prolog z PR #21.
 
 ## Zostaje (nie ruszałem, bo to cudza działka albo decyzja)
 
-- **Telefon.** Scena 1536×1024 skaluje się na telefonie poziomo do ok. 38%: drobne napisy (portfel „do soboty”) mają 5 px, dialogi ok. 11 px. Grywalne tylko na tablecie i większych. To robota dla wątku telefonu (osobny układ albo powiększenie kluczowych elementów przy skali < 0,6).
+- **Telefon, drobiazgi.** Po układzie na telefon (PR #22) gra jest grywalna na 844×390. Zostają drobne napisy poniżej 11 px: „do soboty” w portfelu (8 px), etykieta ogłoszenia w prologu (9 px), metryka na karcie NOWA ZMIANA (11 px). Pasek „Krok…” w dniach 1-2 przykrywa na telefonie nagłówek dnia.
 - **Portrety.** 55 gości dzieli 6 twarzy zastępczych (dama, chłopak, mąż…). W dniu 19 Kit i Leo, w dniu 21 Priya i Lena mają tę samą twarz co inne postacie. Czeka na portrety G01-G26.
 - **„+ $40” przy wypłacie** przelatuje przez kartkę z podsumowaniem decyzji. Trwa sekundę, nie przeszkadza w grze.
 - **Wieczór dnia 24** ma 9 listów naraz. Mieszczą się, ale to ściana tekstu. Warto rozważyć rozłożenie poczty na dwa wieczory (decyzja fabularna).
