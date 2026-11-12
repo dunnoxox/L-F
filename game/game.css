@@ -122,7 +122,8 @@ button{cursor:pointer}
 .wallet.bump{animation:wb .5s}@keyframes wb{40%{transform:scale(1.25)}}
 
 .wrow{flex-wrap:wrap;gap:12px;padding:0 40px}
-.cat{position:absolute;left:560px;top:560px;width:150px;height:120px;z-index:15;cursor:pointer;background:no-repeat center/contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 120'><path d='M10 120 C10 70 40 60 52 62 L48 30 L66 48 C72 46 80 46 86 48 L104 30 L100 62 C118 64 140 80 140 120 Z' fill='%23000' stroke='%23efe3c8' stroke-width='3'/><circle cx='64' cy='70' r='4' fill='%23f28c1e'/><circle cx='88' cy='70' r='4' fill='%23f28c1e'/></svg>");animation:catin 1.2s ease-out}
+.cat{position:absolute;left:570px;top:448px;width:136px;height:232px;z-index:15;cursor:pointer;background:no-repeat center bottom/contain url(assets/ui/kot1.png);animation:catin 1.2s ease-out}
+.cat.purr{background-image:url(assets/ui/kot2.png)}
 .cat.purr{animation:purr .25s infinite alternate}@keyframes catin{from{transform:translateY(60px);opacity:0}}@keyframes purr{to{transform:translateY(-3px)}}
 .threads{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:14px 0}.threads i{font:700 18px ui-monospace,monospace;text-transform:uppercase;border:3px solid #555;color:#777;padding:6px 12px;font-style:normal}.threads i.on{border-color:var(--sod);color:var(--sod)}.threads .lab{width:100%;text-align:center}
 .wallet .clk{font-size:20px;opacity:1;color:var(--paper);letter-spacing:.12em}
@@ -388,3 +389,10 @@ body.phone .center.sat>h1+.sub{max-width:960px}
 body.phone .center.sat .sub.audit,body.phone .center.sat .sub.mar{font-size:32px}
 body.phone .center.sat{padding-top:96px;gap:8px}
 body.phone .center.sat .ups .btn{padding:12px 20px}
+
+/* zdjęcie od gościa na ladzie + polaroid w oględzinach */
+.gph{position:absolute;left:236px;top:300px;width:200px;height:200px;z-index:60;border:0;padding:0;cursor:zoom-in;background:no-repeat center/contain;transform:rotate(-4deg) translateY(30px);opacity:0;pointer-events:none;transition:opacity .6s .9s,transform .6s .9s,width .35s,height .35s,left .35s,top .35s;filter:drop-shadow(0 6px 8px #000)}
+#guest.in~.gph{opacity:1;transform:rotate(-4deg);pointer-events:auto}
+.gph.big{left:640px;top:140px;width:640px;height:640px;z-index:880;cursor:zoom-out;transform:rotate(1deg)!important;transition-delay:0s}
+.inspect .pic.inside.ph{height:960px;aspect-ratio:.91;background-size:contain;background-repeat:no-repeat;background-position:center}
+body.phone .gph{width:240px;height:240px}

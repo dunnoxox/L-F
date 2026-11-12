@@ -34,11 +34,11 @@ META={
  'd13_elias':('futeral',None,'4','futerał z oprawką',None),
  'd13_odile':('pudelko_blaszane',None,'6','pudełko po herbatnikach',None),
  'd14_noah':('organizer',None,'4','organizer',None),
- 'd14_billie':('czapka_daszek',None,'11','kask',None),
+ 'd14_billie':('kask',None,'11','kask',None),
  'd15_sam':('termos',None,'6','termos',('W13',.30,.2),{'sam':None,'vera':None}),
  'd15_pruitt':('parasol',None,'4','parasole',None),
  'd10_dario':('ksiazka',None,'4','zeszyt z przepisami',None)}
-KEYW=[('rękawicz','rekawiczka_skora'),('koper','koperta'),('plecak','plecak'),('futera','futeral'),('telefon','telefon'),('budzik','budzik'),('paczk','paczka_plotno'),('portfel','portfel'),('notes','notes'),('teczk','teczka'),('królik','krolik'),('zegarek','zegarek'),('słuchaw','sluchawki'),('klucz','klucze'),('torb','torba_narzedzia'),('aparat','aparat'),('piórnik','piornik'),('kapelusz','kapelusz'),('pudełk','pudelko_blaszane'),('zeszyt','ksiazka'),('książ','ksiazka'),('parasol','parasol'),('walizk','walizka'),('termos','termos'),('okular','okulary'),('etui','etui_aparat'),('saszetk','saszetka'),('szalik','szalik'),('laska','laska'),('kasetk','pudelko_blaszane'),('torebk','torebka'),('wędk','wedka'),('latawiec','latawiec'),('harmonijk','harmonijka'),('rolk','lyzwy'),('gitar','futeral_gitara'),('dzwonek','pozytywka'),('smycz','pasek'),('legityma','legitymacja'),('fartuch','torba_zakupy'),('proteza','pudelko'),('hulajn','hulajnoga'),('powerbank','powerbank'),('kask','czapka_daszek')]
+KEYW=[('kask','kask'),('koszyk','koszyk'),('księg','ksiega'),('rękawicz','rekawiczka_skora'),('koper','koperta'),('plecak','plecak'),('futera','futeral'),('telefon','telefon'),('budzik','budzik'),('paczk','paczka_plotno'),('portfel','portfel'),('notes','notes'),('teczk','teczka'),('królik','krolik'),('zegarek','zegarek'),('słuchaw','sluchawki'),('klucz','klucze'),('torb','torba_narzedzia'),('aparat','aparat'),('piórnik','piornik'),('kapelusz','kapelusz'),('pudełk','pudelko_blaszane'),('zeszyt','ksiazka'),('książ','ksiazka'),('parasol','parasol'),('walizk','walizka'),('termos','termos'),('okular','okulary'),('etui','etui_aparat'),('saszetk','saszetka'),('szalik','szalik'),('laska','laska'),('kasetk','pudelko_blaszane'),('torebk','torebka'),('wędk','wedka'),('latawiec','latawiec'),('harmonijk','harmonijka'),('rolk','lyzwy'),('gitar','futeral_gitara'),('dzwonek','pozytywka'),('smycz','pasek'),('legityma','legitymacja'),('fartuch','torba_zakupy'),('proteza','pudelko'),('hulajn','hulajnoga'),('powerbank','powerbank'),('kask','czapka_daszek')]
 LINES=['4','6','11']
 def auto(g):
     r=g['rzecz'].lower()
@@ -77,10 +77,10 @@ FIX={'d2_ines':(None,'parasol z kaczką'),'d3_dana':(None,'budzik'),'d5_gus':(No
  'd17_evan':('etui_aparat','etui na aparat'),'d17_sylvia':('szachy','szachy bez króla'),'d18_iris_nora':(None,'teczka budowlana'),'d18_hugo':(None,'wędka'),
  'd19_ada_leo':('torba_listonosza','torba konduktorska'),'d19_kofi':(None,'powerbank'),'d19_ferro':(None,'teczka z dokumentami'),
  'd20_elias_sam':(None,'zegarek w etui'),'d20_tobias':(None,'kluczyki do vana'),'d21_maya_lena_priya':(None,'walizka ze wstążką'),
- 'd21_mina':('torba_zakupy','koszyk z lekami'),'d22_noah':('teczka','sztywna koperta policyjna'),'d22_stahl':(None,'walizka z żółtym zamkiem'),
+ 'd21_mina':('koszyk','koszyk z lekami'),'d22_noah':('teczka','sztywna koperta policyjna'),'d22_stahl':(None,'walizka z żółtym zamkiem'),
  'd22_jonah':(None,'koperta „K.M.”'),'d23_iris_nora_victor':('kuferek','kasetka na rachunki'),'d23_rosa':(None,'cienki portfel'),
  'd24_vera':(None,'teczka z kartonikiem'),'d24_leo':('torba_listonosza','torba konduktora'),'d24_thomas':(None,'koperta ze świadectwem'),
- 'd25_sam_elias':(None,'etui na okulary'),'d25_ksiega':('album','księga wydań')}
+ 'd25_sam_elias':(None,'etui na okulary'),'d25_ksiega':('ksiega','księga wydań')}
 for g in G:
     if g['id'] in FIX:
         sp,n=FIX[g['id']]
