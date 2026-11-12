@@ -90,15 +90,21 @@ Nowe zasady (game.js, `auditP()` i `saturday()`):
 - Po każdej kradzieży kartka wyniku pokazuje: „Victor liczy szufladę w sobotę. Ryzyko: niewielkie / spore / wysokie / prawie pewne.”
 - Kara może wpędzić w dług, a dług w eksmisję. W finale nowa nitka „Szuflada się zgadzała”, szara, gdy cokolwiek zginęło. Kradzieże dalej liczą się do zakończenia „nowy Sam”.
 
-Symulacja ekonomii (4000 gier na strategię, ten sam wzór co w grze):
+Symulacja ekonomii (4000 gier na strategię, ten sam wzór co w grze, z ratą 60 $ tygodniowo dla Marlowa z PR #26):
 
 | Strategia | Zwolnienie | Eksmisja | Gotówka na koniec (średnio) |
 |---|---|---|---|
-| uczciwa | 0% | 0% | 450 $ |
-| ostrożna (max jedna kradzież w tygodniu) | 0% | 0% | 462 $ (mediana 489 $, rozrzut duży) |
-| kradnie wszystko, co dostępne bez odkryć | 0% | 0% | 362 $ |
-| chciwa (wszystkie kradzieże, też te po odkryciach) | 96% | 1% | - |
+| uczciwa | 0% | 0% | 150 $ |
+| ostrożna (max jedna kradzież w tygodniu) | 0% | 0% | 198 $ (duży rozrzut: raz +300 $, raz −200 $) |
+| kradnie wszystko, co dostępne bez odkryć | 0% | 0% | 157 $ (mediana 88 $) |
+| chciwa (wszystkie kradzieże, też te po odkryciach) | 3% | 97% | - |
 
-Ostrożna kradzież to zakład: średnio wychodzi na zero, ale raz daje kilkaset dolarów, a raz zabiera. Kto kradnie regularnie, traci. Chciwość kończy zmianę przed finałem.
+Ostrożna kradzież to zakład z lekko dodatnim wynikiem i dużym ryzykiem, płacony Urzędem, nitką „Szuflada” i drogą do zakończenia „nowy Sam”. Kto kradnie regularnie, wychodzi gorzej niż uczciwy. Chciwość kończy zmianę przed finałem.
+
+Przebiegi bota (po scaleniu z PR #26): uczciwy kończy finał z 90 $, ostrożny ze 165 $ (wpadka w tygodniu 2, −180 $, chwilowy dług), chciwy wpada w dług w tygodniu 1 i zostaje eksmitowany w dniu 10. Przebieg sprzed raty Marlowa doprowadził chciwego do planszy „Zwolnienie” w dniu 20. 0 błędów JS.
+
+Przy okazji: na telefonie portfel zasłaniał pierwszą linię soboty, a przy karze i racie „Następny tydzień” wypadał poza ekran. Poprawione w game.css.
+
+Do obejrzenia (z PR #26, poza tym zadaniem): na telefonie podpisy stref decyzji mają 6-7 px, a w magazynie część szuflad wychodzi poza ekran.
 
 Nowe strategie bota: `--strategy ostrozny` (jedna kradzież na tydzień) i `--strategy chciwy` (bot odblokowuje sobie wszystkie opcje „weź” i bierze każdą).
