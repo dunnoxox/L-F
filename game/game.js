@@ -310,7 +310,7 @@ function week(){A.sting('koniec');scene('T5',()=>{const c=h('div','center dark')
 /* zakończenia: liczone z decyzji (log) wg koncept/fabula_25_dni.md §8 */
 function mayaTesty(){return [[11,'przez_okienko'],[16,'maya_sama'],[21,'wiadomosc_zatwierdzona']].filter(([d,a])=>did(d,a)).length}
 function kopieNames(){const L=[];if(did(5,'wykaz_paczke')||did(9,'zetony_victor'))L.push('Gus (0412)');if(did(9,'zetony_victor')||did(22,'stahl_wydaj'))L.push('Maya (0517)');if(did(9,'zetony_victor')||did(15,'victor_od_razu'))L.push('Linh (0623)');if(did(9,'zetony_victor')||did(18,'do_kontroli'))L.push('Dorian (0731)');return L}
-function fk(t){const N=kopieNames();return String(t==null?'':t).replace('{min(4, kopie)}',N.length).replace('{kopie}',N.length).replace('{nazwiska}',N.length?T.kopie_l+N.join(', ')+'.':T.kopie_0)}
+function fk(t){const N=kopieNames();return String(t==null?'':t).replace('{min(4, kopie)}',N.length).replace('{kopie}',N.length).replace('{nazwiska}',N.length?T.kopie_l+N.join(', ')+'.':T.kopie_0).split('[imię]').join(ST.name||T.name_def)}
 const KOPIE_A=['wykaz_paczke','zetony_victor','victor_od_razu','do_kontroli','komplet_zeznan','wez_200_stahl','dolacz_kopie','wpisz_wykaz'];
 const kopie=()=>ST.log.filter(l=>KOPIE_A.includes(l.a)).length;
 const did=(d,...a)=>ST.log.some(l=>l.day===d&&a.includes(l.a));

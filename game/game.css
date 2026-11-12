@@ -379,3 +379,6 @@ body.phone .center.sat .ups .btn{font-size:26px;padding:18px 22px;max-width:690p
 .share{border:4px solid var(--paper);padding:22px 34px;display:flex;flex-direction:column;align-items:center;gap:10px;background:#000;min-width:620px}.share .lab{color:var(--sod)}
 .share .sname{font:900 54px/1 Georgia,serif;text-shadow:4px 4px 0 var(--sod)}.share .sstat{font:700 18px ui-monospace,Menlo,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase}.share .send{font:700 22px ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--sod)}
 .reduce #guest.dev,.reduce .letter.fin,.reduce .endp{animation:none!important}.reduce .kn i{transition:none}
+
+.finale.sumup>*{flex:none}
+body.phone .finale.sumup{padding:40px 40px 120px}body.phone .share{min-width:0;width:100%;max-width:1300px;padding:30px}body.phone .share .sstat{font-size:32px;text-align:center;line-height:1.3}body.phone .share .send{font-size:34px}body.phone .finale .epi{font-size:44px;max-width:1300px}body.phone .finale.sumup .letter.fin{font-size:38px;max-width:1300px}body.phone .letter.poster.endp{font-size:34px;max-width:1000px}

@@ -2,6 +2,26 @@
 
 Stan: audyt na `main` @ `57a6891` (PR #20). Edycje `game/` ruszają, gdy w `main` wylądują PR-y wątków: bot QA, E0, ekran tytułowy, telefon. Kanon: `koncept/fabula_25_dni_v3.md` > v2 > v1. Styl: `prompty/styl_linoryt_sodowy.md`. Prawa: `prompty/CD2_master_prompt.md`.
 
+## STAN PO SZLIFIE (12.11.2026, branch `claude/project-thread-o83w9t`)
+
+**Zrobione**
+- Fabuła: A1-A16, A18-A20 (kanon v3 w dialogach, zakończeniach Skrytki, epilogach; karty Ruth i Joan Alder; Kopie z nazwiskami; wątki Ines i Tess wypłacone kartami wieczornymi d17, d18, d25; rata Marlowa w soboty; Milo Reed zamiast drugiego Tobiasa; karty d9 nie giną). A17 zrobił bot QA.
+- Rzecz kontra obrazek: cała sekcja B (słownik `FIX` w `build_data.py`), poza trzema rzeczami bez własnego obrazka (niżej).
+- Grafika: C1 (bot QA), C2 (sylwetka pod portretem), C3 (portrety G01-G26 z PR #23), C5 (czerwień tylko dla decyzji), C7, C8 (PR #21).
+- UX: D1, D2 (bot QA, PR #21), D4 (klik dopisuje tekst), D5 (czasownik duży, reszta zwykłym pismem), D7 (finał kartami).
+- Wow: gość „wywołuje się” w świetle lampy, lampa przygasa przy kłamstwie i znalezisku, wstrząs sceny (burza, pomyłka, stemple), rzecz przechodzi przez okienko albo znika w kieszeni, portfel dolicza, dzień 25 to gest na księdze (wpis, wyrwanie, zamknięcie), finał: jedna odbitka na raz, nazwiska z Kopii stemplowane, plakat z paskiem 0913 spina koniec z prologiem, karta „Twoja zmiana” do zrzutu ekranu.
+
+**Weryfikacja botem QA (`qa/bot.js`, po rebase na main z PR #25)**: trzy pełne przebiegi 25 dni (pierwsza opcja, ostatnia opcja, losowa seed 11), każdy doszedł do finału, 0 błędów JS, 0 brakujących plików, 0 zacięć. Bot wskazał dwie usterki finału na telefonie (przycisk „Zacznij od nowa” poza ekranem, statystyki 7 px) i jedną z oglądania screenów (`[imię]` w echu Eliasa niepodmienione); wszystkie poprawione.
+
+**Zostaje**
+- A21 (`validate_dialogs.py` liczy 0 gości).
+- C4 (dwa języki rzeczy), C6 (kot z SVG), C9, C10 (osadzony krój), D3 (pauza jako przedmioty), D6 (sobota jako kwit), D8, D9.
+- Telefon: osobny wątek.
+
+**Od Tommy'ego**: sekcja F bez zmian, portrety G27 Ines i G28 Evan wg `prompty/portrety_poprawki_JEDEN_CZAT.md`.
+
+---
+
 ## Jak sprawdzałem
 - Przeczytane w całości: `game/game.js`, `game.css`, `index.html`, `LANG`, fabuła v3, styl, CD2 §2/§8-11, UX §5/§9/§10, TOP 20 backlogu.
 - Skan danych (55 gości, 7 extra, 25 kart wieczornych, 199 kluczy): wzorce zakazane przez v3, tropy wymagane przez v3, długości, mapowanie rzecz-sprite, echa.
