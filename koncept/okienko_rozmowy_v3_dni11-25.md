@@ -1053,7 +1053,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 }
 ```
 
-**Tess Rusk, 33, siostra elektryka.** Potrzeba: skrzynka i zegarek brata Tobiasa, wyłowionego z kanału trzy lata temu. Lęk: że to nie był wypadek. Sekret: zegarek dała mu sama. Tik: kończy zdania i czeka, aż ktoś ją poprawi. Wątek: Kanał (skrzynka z dnia 3, ogłoszenie na słupie). Moment gwiazdy: „Nie chciałam wiedzieć. Dopiero ogłoszenie ruszyło mnie z miejsca.”
+**Tess Rusk, 33, siostra elektryka.** Potrzeba: skrzynka i zegarek brata Tobiasa, wyłowionego z kanału dwa lata temu. Lęk: że to nie był wypadek. Sekret: zegarek dała mu sama. Tik: kończy zdania i czeka, aż ktoś ją poprawi. Wątek: Kanał (skrzynka z dnia 3, ogłoszenie na słupie). Moment gwiazdy: „Nie chciałam wiedzieć. Dopiero ogłoszenie ruszyło mnie z miejsca.”
 
 ```json
 {
@@ -1075,7 +1075,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "co_z_tego_wynika": "Brat miał gdzieś szafkę, o której siostra nie wie. Klucz otwiera ją tylko z tą kartą."
     }
   ],
-  "wejscie": "Tess Rusk. Pytam o zieloną skrzynkę z numerem trzy na wieczku. Leży tu od trzech lat, tak mi powiedziano. Należała do mojego brata Tobiasa. Wyłowili go z kanału, a skrzynki nie znaleźli. Chcę ją zobaczyć.",
+  "wejscie": "Tess Rusk. Pytam o zieloną skrzynkę z numerem trzy na wieczku. Leży tu od dwóch lat, tak mi powiedziano. Należała do mojego brata Tobiasa. Wyłowili go z kanału, a skrzynki nie znaleźli. Chcę ją zobaczyć.",
   "tury": [
     {
       "pytania": [
@@ -1097,7 +1097,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Czemu przychodzisz dopiero teraz?",
           "ton": "niewygodne",
           "wymaga": null,
-          "odpowiedz": "Bo przez trzy lata nie chciałam wiedzieć. Policja powiedziała: wypadek. Dopiero ogłoszenie na słupie ruszyło mnie z miejsca.",
+          "odpowiedz": "Bo przez dwa lata nie chciałam wiedzieć. Policja powiedziała: wypadek. Dopiero ogłoszenie na słupie ruszyło mnie z miejsca.",
           "mina": "emocja"
         },
         {
@@ -1172,7 +1172,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "akcja": "wydaj_tess",
       "etykieta": "Wydaj skrzynkę Tess",
       "reakcja": "Dziękuję. Nie zapomnę, że ktoś mi uwierzył na słowo.",
-      "zysk": "Tess dostaje zegarek brata i klucz, a z nimi pierwszy ślad od trzech lat.",
+      "zysk": "Tess dostaje zegarek brata i klucz, a z nimi pierwszy ślad od dwóch lat.",
       "strata": "Skrzynka wychodzi bez ekspertyzy i bez wpisu, a ktoś może zapytać, kto ją wydał.",
       "echo": {
         "za_dni": 3,
@@ -1195,13 +1195,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     {
       "akcja": "odeslij_noah",
       "etykieta": "Odeślij Tess do Noaha Reyesa",
-      "reakcja": "Policja? Trzy lata temu powiedzieli mi: wypadek. Ale dobrze, spróbuję jeszcze raz.",
+      "reakcja": "Policja? Dwa lata temu powiedzieli mi: wypadek. Ale dobrze, spróbuję jeszcze raz.",
       "zysk": "Sprawa trafia do kogoś, kto prowadzi akta, a Ty nie dotykasz skrzynki.",
       "strata": "Tess odchodzi z niczym, a skrzynka dalej leży w depozycie bez właściciela.",
       "echo": {
         "za_dni": 2,
         "forma": "list",
-        "tekst": "Noah Reyes: „Przyszła kobieta z pytaniem o wypadek sprzed trzech lat. Czyli: zapisałem. Nie obiecuję, że ktoś to otworzy. — N.R.”"
+        "tekst": "Noah Reyes: „Przyszła kobieta z pytaniem o wypadek sprzed dwóch lat. Czyli: zapisałem. Nie obiecuję, że ktoś to otworzy. — N.R.”"
       }
     }
   ],
@@ -3538,13 +3538,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 ```
 
 
-**Tobias Reed.** Potrzeba: zdążyć z towarem. Lęk: potrącenia z pensji. Tik: skraca nazwy ulic. Moment gwiazdy: breloczek-syrena z kopertą.
+**Milo Reed.** Potrzeba: zdążyć z towarem. Lęk: potrącenia z pensji. Tik: skraca nazwy ulic. Moment gwiazdy: breloczek-syrena z kopertą.
 
 ```json
 {
   "id": "d20_tobias",
   "dzien": 20,
-  "postac": "Tobias Reed, 29",
+  "postac": "Milo Reed, 29",
   "glos": "Szybko, o dostawach mówi jak o pogodzie. Skraca nazwy ulic, kiedy się spieszy.",
   "typ": "kierowca dostawczy, którego goni grafik",
   "rzecz": "Kluczyki do vana z breloczkiem-syreną",
@@ -3552,10 +3552,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     {
       "sekret_id": "d20_koperta_napiwki",
       "co_widac": "W blaszanej syrenie schowek na zawleczkę, a w nim koperta z napiwkami: sześćdziesiąt dolarów, w drobnych, z karteczką „kurtka M.”.",
-      "co_z_tego_wynika": "Pieniądze są córki Tobiasa, nie jego. Zbierał je miesiącami."
+      "co_z_tego_wynika": "Pieniądze są córki Mila, nie jego. Zbierał je miesiącami."
     }
   ],
-  "wejscie": "Tobias Reed, kierowca firmowy. Zostawiłem w szóstce kluczyki do vana, z breloczkiem w kształcie syreny. Van stoi pod zajezdnią z towarem dla sklepu i bez kluczyków nie ruszy o szóstej.",
+  "wejscie": "Milo Reed, kierowca firmowy. Zostawiłem w szóstce kluczyki do vana, z breloczkiem w kształcie syreny. Van stoi pod zajezdnią z towarem dla sklepu i bez kluczyków nie ruszy o szóstej.",
   "tury": [
     {
       "pytania": [
@@ -3627,7 +3627,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "tekst": "Jak zapisać Twoje nazwisko?",
           "ton": "rzeczowe",
           "wymaga": null,
-          "odpowiedz": "Reed, przez dwa e. Tobias, bez drugiego s, jak syrena bez ogona.",
+          "odpowiedz": "Reed, przez dwa e. Milo, krótko, jak klakson.",
           "mina": "mowi"
         },
         {
@@ -3644,23 +3644,23 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
     {
       "akcja": "wydaj",
       "reakcja": "Są. Z ogonem albo bez, są. Dziękuję. Zdążę, chyba że zatrzymają mnie na świetle.",
-      "zysk": "Tobias zdąża z towarem, a sklep otwiera się na czas.",
+      "zysk": "Milo zdąża z towarem, a sklep otwiera się na czas.",
       "strata": "Wydajesz po opisie, bez dowodu, że van należy do niego.",
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Tobias Reed: „Zdążyłem. Sklep otworzył się o szóstej. Pani sprzedawczyni dała mi bułkę gratis. Powiedziałem, że to przez was.”"
+        "tekst": "Milo Reed: „Zdążyłem. Sklep otworzył się o szóstej. Pani sprzedawczyni dała mi bułkę gratis. Powiedziałem, że to przez was.”"
       }
     },
     {
       "akcja": "odmow",
       "reakcja": "Nie? Jak to nie? Dobrze, zadzwonię po Micka, ale on będzie wściekły. Wrócę z jego potwierdzeniem.",
       "zysk": "Procedura zachowana, kluczyki zostają w biurze.",
-      "strata": "Tobias spóźnia się z towarem, a dyspozytor odejmuje mu z pensji.",
+      "strata": "Milo spóźnia się z towarem, a dyspozytor odejmuje mu z pensji.",
       "echo": {
         "za_dni": 1,
         "forma": "gosc",
-        "tekst": "Tobias Reed: „Mick dostał mnie o piątej. Potwierdził. Straciłem czterdzieści minut i dwadzieścia dolarów. Mówię bez złości, ale z żalem.”"
+        "tekst": "Milo Reed: „Mick dostał mnie o piątej. Potwierdził. Straciłem czterdzieści minut i dwadzieścia dolarów. Mówię bez złości, ale z żalem.”"
       }
     },
     {
@@ -3670,11 +3670,11 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       "wymaga": "d20_koperta_napiwki",
       "reakcja": "Kluczyki są. A koperta? Przecież była w syrenie… Nie, nic. Muszę jechać. Dziękuję.",
       "zysk": "60 $ w kieszeni i dług u Marlowa o rację mniejszy.",
-      "strata": "Tobias traci kurtkę dla córki, a Ty wiesz, że wziąłeś pieniądze od człowieka, który nic nie ma. Liczy się do zakończenia Nowy Sam.",
+      "strata": "Milo traci kurtkę dla córki, a Ty wiesz, że wziąłeś pieniądze od człowieka, który nic nie ma. Liczy się do zakończenia Nowy Sam.",
       "echo": {
         "za_dni": 2,
         "forma": "gosc",
-        "tekst": "Tobias Reed: „Koperta zniknęła razem z kluczykami, a kluczyki wróciły. Nie powiem, że to wy. Powiem, że kurtka dla córki poczeka do wypłaty.”"
+        "tekst": "Milo Reed: „Koperta zniknęła razem z kluczykami, a kluczyki wróciły. Nie powiem, że to wy. Powiem, że kurtka dla córki poczeka do wypłaty.”"
       }
     }
   ],
@@ -5889,6 +5889,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       }
     ],
     "17": [
+      {"kto": "Noah Reyes, przez szybę", "jesli": "d13_tess:wydaj_tess", "tekst": "Noah Reyes: „Czyli: mężczyzna z kanału pod Portem, pochowany dwa lata temu bez nazwiska. Zegarek pasuje. Siostra dostała numer kwatery. W skrzynce był jeszcze kwit z paczki. Pójdę za nim.”"},
+      {"kto": "Noah Reyes, przez szybę", "jesli_nie": "d13_tess:wydaj_tess", "tekst": "Noah Reyes: „Czyli: ciało z kanału sprzed dwóch lat, bez nazwiska, wiek pasuje. Bez zegarka nie mam czego pokazać rodzinie. Ta kobieta dalej pyta po słupach.”"},
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias zobaczył Evana w kolejce i skinął głową. Nie znał go, ale poznał mankiet. Zapytał potem szeptem: „Czy ktoś, kto poprawia mankiet, jest dobry, czy zły?” Nie było odpowiedzi."
@@ -5899,6 +5901,8 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       }
     ],
     "18": [
+      {"kto": "Gazeta", "jesli": "d2_ines:ines_potwierdz", "tekst": "„Kurier Wieczorny”, cykl „Miasto gubi”, podpis I. Calloway: „Czternaście rodzin z Cooper Street 9 czeka na wyburzenie, a na słupie przy zajezdni od jedenastu lat wisi ta sama kartka: Bez referencji. Dyskrecja. Pieczątka okienka potwierdza, że ktoś ją czyta.”"},
+      {"kto": "Gazeta", "jesli_nie": "d2_ines:ines_potwierdz", "tekst": "„Kurier Wieczorny”, cykl „Miasto gubi”, podpis I. Calloway: „Na słupie przy zajezdni od jedenastu lat wisi ta sama kartka: Bez referencji. Dyskrecja. Biuro rzeczy znalezionych nie chciało tego skomentować.” O rudym kocie ani słowa."},
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias przyniósł papierową torbę z pączkiem. „To nie za pomoc. To za nocne.” Zapytał o oprawkę, choć już ją miał. Powiedział: „Nawyk.”"
@@ -5997,6 +6001,9 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       }
     ],
     "25": [
+      {"kto": "Cmentarz przy Porcie", "jesli": "d13_tess:wydaj_tess", "tekst": "Tess Rusk stoi przy grobie, na którym od wczoraj jest imię: Tobias. Zegarek ma na własnym nadgarstku. Chodzi."},
+      {"kto": "Cmentarz przy Porcie", "jesli_nie": "d13_tess:wydaj_tess", "tekst": "Tess Rusk stoi przy bramie cmentarza z kartką, na której jest tylko numer kwatery. Nie wchodzi."},
+      {"kto": "Gazeta", "tekst": "W „Kurierze” drugi tekst Ines Calloway: „Okienko bez nazwiska”. O kartce na słupie i o ludziach, którzy ją odrywają. O tym, kto siedzi za szybą, ani słowa."},
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias złożył numerek w prostokąt, potem w mniejszy prostokąt. Powiedział: „Dziękuję. Jutro.” Po raz pierwszy zabrzmiało jak coś, co się spełni."
@@ -6009,8 +6016,7 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
         "kto": "Protokół Voss",
         "tekst": "Helen Voss zostawiła na ladzie protokół z jednego zdania: „Okienko działa zgodnie z regulaminem. Zalecam obserwację.” Podpisała się pełnym imieniem."
       }
-    ],
-    "9": []
+    ]
   },
   "epilogi_elias": {
     "odebrany": "Elias staje w drzwiach i pierwszy raz o coś pyta: „Jak się nazywasz?” Mówisz. „Dziękuję, [imię]. Jutro.” Vera dopowiada zza pleców: „Pierwsza dyżurna miała na imię Ruth. Ty jesteś pierwszy, który zostawia po sobie prawdę.”",

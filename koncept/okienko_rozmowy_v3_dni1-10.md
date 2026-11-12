@@ -3503,6 +3503,7 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
       }
     ],
     "9": [
+      {"kto": "Słup przy zajezdni", "tekst": "Ines Calloway przypięła obok swojej kartki o kocie wycinek z archiwum „Kuriera”. To samo ogłoszenie, z którego oderwałeś pasek: „Bez referencji. Dyskrecja.” Na marginesie rok sprzed jedenastu lat. Słowo w słowo."},
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias poprosił, żeby oprawkę, jeśli się znajdzie, trzymać osobno. „Gdyby ktoś przyszedł po nią z papierkiem od innego pracownika, proszę nie wierzyć.”"
