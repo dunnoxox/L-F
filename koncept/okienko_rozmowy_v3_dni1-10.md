@@ -594,6 +594,156 @@
 }
 ```
 
+**Ines Calloway, 61, emerytka.** Potrzeba: parasol z kaczką i zgoda na ogłoszenie o kocie na słupie. Lęk: że ktoś zdejmie kartkę. Sekret: kota nie ma, kartki są dla kogoś innego. Tik: poprawia innych przed końcem zdania. Wątek: Ogłoszenie (słup, odpowiedzi, Kanał). Moment gwiazdy: „Proszę nie czytać między wierszami. Ich tam jest dwa razy więcej.”
+
+```json
+{
+  "id": "d2_ines",
+  "dzien": 2,
+  "postac": "Ines Calloway, 61",
+  "glos": "Spokojna, sucha, mówi tonem urzędniczki na emeryturze. Poprawia innych, zanim skończą zdanie.",
+  "typ": "uczciwa, z ukrytym celem",
+  "rzecz": "Czarny parasol z rączką w kształcie kaczki",
+  "wnetrze": [
+    {
+      "sekret_id": "d2_parasol_kartka",
+      "co_widac": "W rączce parasola zwinięta kartka: „Szukam kota, rudego, od zimy. Odpowiedzi na słupie przy wejściu.” Rączka ma ślad kleju od taśmy.",
+      "co_z_tego_wynika": "Ines wiesza ogłoszenia o kocie na słupie. Kota nie ma. Ktoś odpowiada na te kartki i zostawia coś w okienku."
+    }
+  ],
+  "wejscie": "Ines Calloway. Zgubiłam parasol z rączką w kształcie kaczki, w czwórce, wczoraj. Poza tym chciałabym zapytać, czy wolno mi wieszać ogłoszenia na słupie przy wejściu. Kot, rudy, od zimy.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ten parasol?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Czarny, automatyczny, rączka w kształcie kaczki. Dziób ma odłamany z lewej. Kupiłam go po zeszłorocznej wichurze.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie dokładnie go zostawiłaś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W czwórce, na haczyku przy tylnych drzwiach. Wysiadałam na pętli, ręce miałam pełne torby i zostawiłam go dopiero w zakręcie.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu pytasz o ogłoszenie, a nie wieszasz po prostu?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo wolę zapytać. Słupy mają właścicieli. Ten przy wejściu ma właściciela, którego jeszcze nie poznałam.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "W rączce jest kartka z ogłoszeniem o kocie. Skąd?",
+          "ton": "niewygodne",
+          "wymaga": "d2_parasol_kartka",
+          "odpowiedz": "Mój tekst. Wkładam kopię do rączki, żeby nie zgubić. A kota nie ma od zimy, więc proszę nie pytać.",
+          "mina": "klamie"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda Twój kot?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Rudy, z białą łapką. Wabi się Fryderyk. Nie przychodzi na wołanie, tylko na ciszę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Od kiedy go nie ma?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Od zimy. Dokładnie od pierwszego śniegu. Drzwi były zamknięte, a on wyszedł oknem, którego nie otwiera się od środka.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu nikt nie odpowiada na Twoje ogłoszenia?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Odpowiada. To znaczy: ktoś zostawia kartkę z odpowiedzią. Przychodzi nocą, nie widziałam kto. Potem już nie szukam.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co chcesz, żebym zrobił z ogłoszeniem?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Żeby ogłoszenie zostało. Tylko tyle. Jak ktoś przyjdzie z kotem, powiedzcie mu, że szukam, i nie pytajcie o resztę.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór parasola?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Ines Calloway. Pisownia z jednym „l”. Proszę zapisać równo.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czy to naprawdę jest ogłoszenie o kocie?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Tak. Dla kota. Dla innych, którzy też szukają. Proszę nie czytać między wierszami, bo ich tam jest dwa razy więcej.",
+          "mina": "klamie"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "ines_potwierdz",
+      "etykieta": "Potwierdź ogłoszenie i przybij pieczątkę okienka",
+      "reakcja": "Dziękuję. Kartka z pieczątką okienka wisi na słupie jak legitymacja. Nie pytajcie, dla kogo.",
+      "zysk": "Parasol wraca do Ines, a ogłoszenie ma pieczątkę, więc nikt go nie zdejmie.",
+      "strata": "Okienko jest teraz widoczne na słupie, a ktoś przeczyta pieczątkę jako zaproszenie.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Ines Calloway: „Ktoś odpowiedział na kartkę. Zostawił coś pod okienkiem. Proszę nie otwierać przy ludziach. — I.C.”"
+      }
+    },
+    {
+      "akcja": "ines_odmow",
+      "etykieta": "Wydaj parasol, ogłoszenia odmów",
+      "reakcja": "Rozumiem. Słup ma właściciela, ale wiesza się je na innych. Dobrze.",
+      "zysk": "Okienko nie robi za tablicę ogłoszeń i nikt nie zapyta o słup.",
+      "strata": "Ines znajdzie inny słup, a kartki będą wisieć dalej, tylko bez Twojej wiedzy.",
+      "echo": {
+        "za_dni": 4,
+        "forma": "list",
+        "tekst": "Ines Calloway: „Powiesiłam kartkę na innym słupie. Odpowiedzi też tam przychodzą. Dziękuję za parasol. — I.C.”"
+      }
+    },
+    {
+      "akcja": "ines_zdejmij",
+      "etykieta": "Wydaj parasol i zdejmij ogłoszenie ze słupa",
+      "reakcja": "Zdejmiecie? To cudze kartki, nie moje. Dobrze, wiem, kto je dostał.",
+      "zysk": "Słup przy wejściu jest czysty, a do biura nikt nie przynosi kartek.",
+      "strata": "Ktoś czekał na odpowiedź na tym słupie i nie dostanie jej.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "gosc",
+        "tekst": "Mężczyzna w szarym kapeluszu: „Zgodnie z regulaminem. Szukałem kartki o kocie. Słup jest pusty. Zapiszę, kto go opróżnił.”"
+      }
+    }
+  ],
+  "rola": "emerytka z ogłoszeniami o kocie",
+  "watki": [
+    "ogloszenie"
+  ],
+  "tik": "poprawia innych przed końcem zdania",
+  "potrzeba": "parasol i zgoda na ogłoszenie na słupie",
+  "slad": "kartka o kocie w rączce, odpowiedzi na słupie"
+}
+```
+
 ## DZIEŃ 3 (burza)
 
 **Mini-karta: Evan Doyle, 37, i Lena Brandt, 31.** Evan mówi grzecznie, pełnymi zdaniami, wraca do tego samego pytania i kłamie. Lena mówi szybko, urywa zdania i mówi za dużo, ale prawdę. Oboje chcą telefonu Mai. Evan: dowodu, że żona żyje. Lena: telefonu z jej wiadomością, której Evan nie może przeczytać. Kłamie Evan: „Nie było żadnej kłótni.”
@@ -788,7 +938,13 @@
   "glos": "Głośno, prosto, bez owijania. Mówi o budziku jak o koledze z pracy.",
   "typ": "uczciwa, rozbrajająca",
   "rzecz": "Blaszany budzik z dwoma dzwonkami",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d3_rachunek_budzik",
+      "co_widac": "Pod tylną pokrywką budzika złożony rachunek z warsztatu: 18 $ za wymianę mechanizmu, na dole dopisek „dzwonek do wymiany”.",
+      "co_z_tego_wynika": "Dana naprawia stary budzik zamiast kupić nowy. Dwanaście lat to jej jedyny zegar i jej strach, że zaśpi."
+    }
+  ],
   "wejscie": "Cześć, Dana Ruiz, mechanik w zajezdni. Zgubiłam budzik w szóstce, taki blaszany, z dwoma dzwonkami. Bez niego nie wstanę na czwartą, a w zajezdni nikt nie czeka, jak ktoś się spóźni.",
   "tury": [
     {
@@ -813,6 +969,13 @@
           "wymaga": null,
           "odpowiedz": "Bo wczoraj poszłam spać u siostry. Nie chciałam go zostawić samego, wiesz, jak to jest.",
           "mina": "mowi"
+        },
+        {
+          "tekst": "Pod pokrywką jest rachunek z warsztatu. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d3_rachunek_budzik",
+          "odpowiedz": "Osiemnaście dolarów za mechanizm. Nowy kosztuje więcej, a ten ma ton, który znam. Jak się zepsuje, nie wstanę. To głupie, ale to mój zegar.",
+          "mina": "emocja"
         }
       ]
     },
@@ -1570,7 +1733,13 @@
   "glos": "Dosłownie, jak dziecko. Liczy kroki i kamienie. Kiedy się boi, mówi szeptem.",
   "typ": "uczciwa, wie za dużo",
   "rzecz": "Szary pluszowy królik z uchem doszytym czerwoną nitką",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d6_karteczka_krolik",
+      "co_widac": "Pod doszytym uchem karteczka, pismo dorosłe: „Dla Zuzi, od taty. Jak się zgubi, niech ktoś odda.”",
+      "co_z_tego_wynika": "Królik należy do dziewczynki o imieniu Zuzia, a ktoś dorosły przewidział, że się zgubi."
+    }
+  ],
   "wejscie": "Dobry wieczór, jestem Ada, mam dziesięć lat. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze, bo mama mówi, że bez kwitu nie wiadomo.",
   "wejscie_jesli": {
     "d1_rosa:wydaj": "Dobry wieczór, jestem Ada, córka Rosy z pralni. Mama mówi, że dostała od was całą wypłatę. Znalazłam królika przy pętli szóstki, trzy kroki od słupka. Chcę kwit, że zrobiłam to dobrze.",
@@ -1599,6 +1768,13 @@
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Bo mama pracuje na nocnej zmianie, a ja się nudzę. Chodzę po pętli i liczę. Wczoraj były sto dwa kamienie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "W uchu królika jest karteczka. Przeczytałaś ją?",
+          "ton": "niewygodne",
+          "wymaga": "d6_karteczka_krolik",
+          "odpowiedz": "Przeczytałam. Pisze: dla Zuzi, od taty. Jak się zgubi, niech ktoś odda. Więc oddaję. Tylko nie wiem, kto to Zuzia, i dlatego chcę kwit.",
           "mina": "mowi"
         }
       ]
@@ -1872,7 +2048,13 @@
   "glos": "Krótko, sarkastycznie, „serio”. Slang, ale bez przesady.",
   "typ": "uczciwy, boi się wylecieć",
   "rzecz": "Czarne słuchawki nauszne z naklejką kota w kasku",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d7_tasma_banknot",
+      "co_widac": "Pod taśmą na lewej muszli złożony banknot dwudolarowy i karteluszek: „Dla szefa, jak się dowie. Za ciszę.”",
+      "co_z_tego_wynika": "Kit trzyma w słuchawkach łapówkę dla szefa na wypadek, gdyby go przyłapał."
+    }
+  ],
   "wejscie": "Cześć, Kit. Zgubiłem słuchawki w czwórce, takie nauszne, z kotem w kasku na muszli. Pracuję w kopiarni na Rynku i jak szef się dowie, że słuchałem muzyki przy ksero, to po mnie. Serio.",
   "tury": [
     {
@@ -1896,6 +2078,13 @@
           "ton": "niewygodne",
           "wymaga": null,
           "odpowiedz": "Bo mówi, że ksero ma być słychać, a ja mam słyszeć klientów. Ja słyszę, tylko że z muzyką mniej boli.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Pod taśmą na muszli jest banknot i karteluszek. Co to?",
+          "ton": "niewygodne",
+          "wymaga": "d7_tasma_banknot",
+          "odpowiedz": "Dwa dolary na szefa, jakby mnie przyłapał. Raz zadziałało. Nie mów mu, serio, bo wtedy dwa dolary to będzie za mało.",
           "mina": "mowi"
         }
       ]
@@ -3176,6 +3365,32 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
           "co_z_tego_wynika": "Puszka należy do obiegu paczek Skrytki."
         }
       ]
+    },
+    "3": {
+      "sprite": "skrzynka",
+      "itemName": "zielona skrzynka z numerem 3",
+      "line": "6",
+      "inside": null,
+      "wnetrze": [
+        {
+          "sekret_id": "d3_skrzynka_zegarek",
+          "co_widac": "W skrzynce męski zegarek, na kopercie grawer „T.R. — od T.”. Pod zegarkiem klucz z mosiężnym numerkiem i karta z numerem szafki, ołówkiem.",
+          "co_z_tego_wynika": "Ktoś zostawił to w tramwaju. Zegarek, klucz i karta należą do jednej osoby, której kolejka jeszcze nie wywołała."
+        }
+      ]
+    },
+    "9": {
+      "sprite": "karta",
+      "itemName": "karta rozliczeniowa z pieczątką",
+      "line": "6",
+      "inside": null,
+      "wnetrze": [
+        {
+          "sekret_id": "d9_karta_km",
+          "co_widac": "Karta przy żetonach: „Opłata 60 $. K.M.” Pod spodem ołówkiem rata sobotnia i dopisek „wgląd Kancelarii”.",
+          "co_z_tego_wynika": "Marlow odbiera sobotnie raty i podpisuje je inicjałami K.M. Pieczątka „wgląd Kancelarii” oznacza, że ktoś kupił wgląd w kopie z biura."
+        }
+      ]
     }
   },
   "wieczor": {
@@ -3255,6 +3470,10 @@ Rzeczy dodatkowe leżą w dostawie bez gościa i dają sekret, który odpala pyt
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias poprosił, żeby oprawkę, jeśli się znajdzie, trzymać osobno. „Gdyby ktoś przyszedł po nią z papierkiem od innego pracownika, proszę nie wierzyć.”"
+      },
+      {
+        "kto": "Telefon na zapleczu",
+        "tekst": "Zadzwoniła kobieta, przedstawiła się jako Helen Voss z Inspekcji. Pytała, kto prowadzi okienko w nocy. Odłożyła słuchawkę, zanim ktoś odpowiedział."
       }
     ],
     "10": [

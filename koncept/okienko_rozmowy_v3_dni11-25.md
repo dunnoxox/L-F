@@ -1053,6 +1053,168 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
 }
 ```
 
+**Tess Rusk, 33, siostra elektryka.** Potrzeba: skrzynka i zegarek brata Tobiasa, wyłowionego z kanału trzy lata temu. Lęk: że to nie był wypadek. Sekret: zegarek dała mu sama. Tik: kończy zdania i czeka, aż ktoś ją poprawi. Wątek: Kanał (skrzynka z dnia 3, ogłoszenie na słupie). Moment gwiazdy: „Nie chciałam wiedzieć. Dopiero ogłoszenie ruszyło mnie z miejsca.”
+
+```json
+{
+  "id": "d13_tess",
+  "dzien": 13,
+  "postac": "Tess Rusk, 33",
+  "glos": "Mówi wolno, jakby liczyła słowa. Każde zdanie kończy tak, jakby czekała, aż ktoś ją poprawi. Nie płacze.",
+  "typ": "uczciwa, uparta",
+  "rzecz": "Zielona metalowa skrzynka z dnia trzeciego",
+  "wnetrze": [
+    {
+      "sekret_id": "d13_zegarek_tr",
+      "co_widac": "Na kopercie męskiego zegarka grawer: „T.R. — od T.”. Wskazówki stoją na 23:15, szkiełko ma pęknięcie w rogu.",
+      "co_z_tego_wynika": "Zegarek należał do Tobiasa Rusk. „T.” to Tess, która dała go bratu na trzydzieste urodziny."
+    },
+    {
+      "sekret_id": "d13_karta_szafki",
+      "co_widac": "W przegródce klucz z mosiężnym numerkiem i karta z numerem szafki, pisanym ołówkiem. Karta jest zgięta w czwórkę, od dawna.",
+      "co_z_tego_wynika": "Brat miał gdzieś szafkę, o której siostra nie wie. Klucz otwiera ją tylko z tą kartą."
+    }
+  ],
+  "wejscie": "Tess Rusk. Pytam o zieloną skrzynkę z numerem trzy na wieczku. Leży tu od trzech lat, tak mi powiedziano. Należała do mojego brata Tobiasa. Wyłowili go z kanału, a skrzynki nie znaleźli. Chcę ją zobaczyć.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta skrzynka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Zielona, metalowa, z trójką wybitą na wieczku. Zamek zacięty, otwiera się płaskim śrubokrętem. Tobias dostał ją od ojca razem z zawodem.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie ją zostawił twój brat?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Nie on. Ktoś znalazł ją w tramwaju i oddał tu. Dopiero niedawno zobaczyłam ogłoszenie na słupie i skojarzyłam wieczko.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu przychodzisz dopiero teraz?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo przez trzy lata nie chciałam wiedzieć. Policja powiedziała: wypadek. Dopiero ogłoszenie na słupie ruszyło mnie z miejsca.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na zegarku jest grawer „T.R. — od T.”. Od kogo?",
+          "ton": "niewygodne",
+          "wymaga": "d13_zegarek_tr",
+          "odpowiedz": "Ode mnie. T. jak Tess, R. jak Rusk. Dałam mu go na trzydzieste urodziny. Nosił na lewej ręce i nigdy nie zdejmował.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Kim był twój brat?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Tobias Rusk, elektryk. Cichy, punktualny, nie pytał o więcej, niż trzeba. Brał nocne zmiany i nigdy nie mówił gdzie.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co jest w skrzynce poza zegarkiem?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Klucz z numerkiem i karta z numerem szafki. Nie wiem, której. Chcę ją otworzyć sama, zanim ktoś mi powie, co w niej leży.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu uważasz, że to nie był wypadek?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo Tobias pływał jak ryba. Bo nie miał zegarka, kiedy go znaleźli. Nic z tego nie jest dowodem, a ja się tym żywię.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "Na karcie jest numer szafki. Czyja to szafka?",
+          "ton": "niewygodne",
+          "wymaga": "d13_karta_szafki",
+          "odpowiedz": "Brata, tak mi się zdaje. Nie wiem, gdzie stoi. Jeśli wiesz, nie mów na głos. Chcę ją zobaczyć dopiero z kluczem w ręku.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz, jeśli dostaniesz skrzynkę?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Zawiozę zegarek do rzeczoznawcy. Chcę papier, że stanął o konkretnej godzinie. Reszta to już nie moja robota, tylko policji.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Tess Rusk. Dwa „s” na końcu nazwiska? Nie, jedno. Podpisuję równo, bo ojciec nauczył.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Kto jeszcze pytał o tę skrzynkę?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Nikt. Dopiero ja. Jeśli ktoś pytał wcześniej, powiedz mi, kto. Naprawdę chcę wiedzieć.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj_tess",
+      "etykieta": "Wydaj skrzynkę Tess",
+      "reakcja": "Dziękuję. Nie zapomnę, że ktoś mi uwierzył na słowo.",
+      "zysk": "Tess dostaje zegarek brata i klucz, a z nimi pierwszy ślad od trzech lat.",
+      "strata": "Skrzynka wychodzi bez ekspertyzy i bez wpisu, a ktoś może zapytać, kto ją wydał.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Tess Rusk: „Otworzyłam szafkę. Pusta, poza kartką z jednym słowem: Kanał. Nie wiem, co to znaczy, ale ktoś tam był przede mną. — T.R.”"
+      }
+    },
+    {
+      "akcja": "zatrzymaj_ekspertyza",
+      "etykieta": "Zatrzymaj skrzynkę do ekspertyzy zegarka",
+      "reakcja": "Papier? Dobrze. Wolę czekać na papier niż dostać pustą skrzynkę. Ale wrócę.",
+      "zysk": "Zegarek idzie do rzeczoznawcy i masz godzinę, o której stanął.",
+      "strata": "Tess czeka kolejne dni i może przestać Ci ufać.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Tess Rusk: „Ekspertyza. Zegarek stanął o 23:15. Nic mi to nie mówi, ale spisałam sobie tę godzinę. Ty też spisz.”"
+      }
+    },
+    {
+      "akcja": "odeslij_noah",
+      "etykieta": "Odeślij Tess do Noaha Reyesa",
+      "reakcja": "Policja? Trzy lata temu powiedzieli mi: wypadek. Ale dobrze, spróbuję jeszcze raz.",
+      "zysk": "Sprawa trafia do kogoś, kto prowadzi akta, a Ty nie dotykasz skrzynki.",
+      "strata": "Tess odchodzi z niczym, a skrzynka dalej leży w depozycie bez właściciela.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Noah Reyes: „Przyszła kobieta z pytaniem o wypadek sprzed trzech lat. Czyli: zapisałem. Nie obiecuję, że ktoś to otworzy. — N.R.”"
+      }
+    }
+  ],
+  "rola": "siostra zmarłego elektryka",
+  "watki": [
+    "kanal"
+  ],
+  "tik": "kończy zdania i czeka na poprawkę",
+  "potrzeba": "skrzynka i zegarek brata, ekspertyza godziny",
+  "slad": "zegarek z grawerem T.R. od T. i klucz"
+}
+```
+
 
 ## DZIEŃ 14
 
@@ -1550,7 +1712,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "glos": "Spokojnie, żartobliwie, z pretensją do całego świata. Zawsze „przy okazji”. Mówi do parasoli.",
   "typ": "oddający, samotny",
   "rzecz": "Jedenaście parasoli w siatce na zakupy",
-  "wnetrze": [],
+  "wnetrze": [
+    {
+      "sekret_id": "d15_pruitt_kartka",
+      "co_widac": "Do siatki przypięta kartka z jedenastoma linijkami. Przy każdym parasolu miejsce i dzień znalezienia. Przy jednym dopisek: „Ulubiony, E.W. na rączce.”",
+      "co_z_tego_wynika": "Pruitt prowadzi własną ewidencję znalezionych parasoli i zna je po imieniu, więc oddaje nie bez powodu."
+    }
+  ],
   "wejscie": "Pruitt, osiemdziesiąt lat. Przyszedłem oddać parasole. Jedenaście, znalezionych w tym tygodniu. Niczyich, bo nikt po nie nie przyszedł, więc wszystko jest w porządku. Można je gdzieś położyć?",
   "tury": [
     {
@@ -1575,6 +1743,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
           "wymaga": null,
           "odpowiedz": "Bo ktoś musi. Moja żona zawsze mówiła, że człowiek, który nie oddaje cudzych rzeczy, nie powinien mieć własnych.",
           "mina": "emocja"
+        },
+        {
+          "tekst": "Do siatki przypięta jest kartka z miejscami. Po co ją prowadzisz?",
+          "ton": "niewygodne",
+          "wymaga": "d15_pruitt_kartka",
+          "odpowiedz": "Żeby wiedzieć, skąd który. Człowiek, który wraca po parasol, zawsze mówi: na pętli. A ja wiem, na której i o której. To też jest kwit.",
+          "mina": "mowi"
         }
       ]
     },
@@ -3020,6 +3195,156 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
   "tik": "sprawdza telefon",
   "potrzeba": "powerbank na trasę",
   "slad": "zlecenie „cisza w cenie” pod naklejką"
+}
+```
+
+**Mario Ferro, 47, fryzjer.** Potrzeba: teczka z dokumentami na nazwisko Ferro. Lęk: że ktoś od dwóch lat chodzi po mieście jako on. Sekret: żaden, ale ktoś ma jego nazwisko na dowodzie wydanym w duplikacie. Tik: „przepraszam, że zawracam”. Wątek: Cudze nazwiska (Gus d9, kalka d15). Moment gwiazdy: „Ktoś od dwóch lat chodzi po mieście jako ja.”
+
+```json
+{
+  "id": "d19_ferro",
+  "dzien": 19,
+  "postac": "Mario Ferro, 47",
+  "glos": "Mówi grzecznie i za głośno, jakby przeprosił z góry. Zaczyna od „przepraszam, że zawracam”, kończy od „jeszcze jedno”.",
+  "typ": "uczciwy, pokrzywdzony",
+  "rzecz": "Brązowa teczka z dokumentami na nazwisko Ferro",
+  "wnetrze": [
+    {
+      "sekret_id": "d19_zaswiadczenie_ferro",
+      "co_widac": "W teczce akt urodzenia, polisa i zaświadczenie o niekaralności na Augusta Maria Ferro. Na zaświadczeniu adnotacja: „Dowód wydany w duplikacie pod innym adresem, 2 lata temu”.",
+      "co_z_tego_wynika": "Ktoś od dwóch lat używa dowodu na to nazwisko, wydanego w duplikacie. To ten sam August Ferro, którego dowód Gus Pell miał w portfelu."
+    }
+  ],
+  "wejscie": "Przepraszam, że zawracam. Mario Ferro, August Mario, jeśli pełnym imieniem. Zgubiłem brązową teczkę z dokumentami w szóstce. Chcę ją odebrać, ale jeszcze jedno: ktoś od dwóch lat chodzi po mieście jako ja.",
+  "tury": [
+    {
+      "pytania": [
+        {
+          "tekst": "Jak wygląda ta teczka?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Brązowa, sztywna, z gumką na rogu. Dwie przegródki. W jednej akt urodzenia, w drugiej polisa. Etykieta „M.F.” pisana flamastrem.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Gdzie dokładnie ją zostawiłeś?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "W szóstce, na siedzeniu za kierowcą. Jechałem z wizyty u adwokata i ręce miałem pełne papierów. Zostawiłem ją, bo adwokat mówił za szybko.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Co to znaczy, że ktoś chodzi po mieście jako Ty?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Dostałem wezwanie na sprawę o długi, których nie miałem. Dowód wydano w duplikacie, pod innym adresem. Od dwóch lat. Nie wiem kto.",
+          "mina": "emocja"
+        },
+        {
+          "tekst": "W teczce jest adnotacja o duplikacie. Co to dla Ciebie znaczy?",
+          "ton": "niewygodne",
+          "wymaga": "d19_zaswiadczenie_ferro",
+          "odpowiedz": "Że ktoś poszedł do urzędu i powiedział, że to ja. Z moim zdjęciem z lat dwudziestych. Dowód wygląda inaczej, ale kto sprawdza?",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Kim jesteś z zawodu?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Fryzjer. Własny zakład przy Rynku. Dwa foteliki, kolejka rano. Nie widzę, żeby moje nazwisko miało komukolwiek służyć.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Co jeszcze jest w teczce?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Zaświadczenie o niekaralności, polisa i zdjęcie z komunii. Zdjęcie jest ostatnią rzeczą, o którą się boję, bo ma datę na odwrocie.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czemu przyszedłeś właśnie tu?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Bo adwokat powiedział: sprawdź, czy ktoś u was nie ma dwóch dowodów. W biurach rzeczy znalezionych takie rzeczy leżą. Przepraszam, że tak mówię.",
+          "mina": "emocja"
+        }
+      ]
+    },
+    {
+      "pytania": [
+        {
+          "tekst": "Co zrobisz, jeśli dowiesz się, kto Cię udaje?",
+          "ton": "uprzejme",
+          "wymaga": null,
+          "odpowiedz": "Nic. Pójdę do adwokata. Nie szukam zemsty, tylko pisma, że nie jestem tym, który ma długi.",
+          "mina": "mowi"
+        },
+        {
+          "tekst": "Podpiszesz odbiór teczki?",
+          "ton": "rzeczowe",
+          "wymaga": null,
+          "odpowiedz": "Mario Ferro. August Mario podpisuję rzadko. Zwykle skracam, bo tamten podpisuje długo.",
+          "mina": "neutralna"
+        },
+        {
+          "tekst": "Czy masz tu jakiś dowód, że to Ty jesteś prawdziwym Ferro?",
+          "ton": "niewygodne",
+          "wymaga": null,
+          "odpowiedz": "Teczkę. Akt urodzenia, polisę i zdjęcie. A jeśli to za mało, proszę zadzwonić do adwokata. Numer mam w telefonie. Przepraszam, że tak mało.",
+          "mina": "emocja"
+        }
+      ]
+    }
+  ],
+  "decyzje": [
+    {
+      "akcja": "wydaj_ferro",
+      "etykieta": "Wydaj teczkę i powiedz o duplikacie dowodu",
+      "reakcja": "Dziękuję. Czyli ktoś miał dwa dowody. Proszę powiedzieć tylko tyle: jakie miasto, jakie nazwisko. Resztę znajdę sam.",
+      "zysk": "Mario dostaje teczkę i wiadomość, że dowód z jego nazwiskiem był gdzieś w obiegu.",
+      "strata": "Ujawniasz, co leżało w portfelu Gusa, a Gus mógł zostać bez drugiego nazwiska.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "list",
+        "tekst": "Mario Ferro: „Adwokat złożył pismo. Dowód z moim nazwiskiem był w obiegu, ktoś potwierdził to u Was. Dziękuję. Zdjęcia z komunii nie zgubię drugi raz. — M.F.”"
+      }
+    },
+    {
+      "akcja": "odmow_ferro",
+      "etykieta": "Wydaj teczkę, o duplikacie nic nie mów",
+      "reakcja": "Dobrze. Przepraszam, że pytałem. Zostaję z dokumentami i bez odpowiedzi.",
+      "zysk": "Gus i jego drugie nazwisko zostają poza sprawą, a biuro nie komentuje cudzych dokumentów.",
+      "strata": "Mario dalej nie wie, kto go udaje, a sprawa o długi idzie swoim torem.",
+      "echo": {
+        "za_dni": 3,
+        "forma": "gosc",
+        "tekst": "Mario Ferro: „Ktoś jeszcze używa mojego nazwiska. Dostałem kolejne wezwanie. Nie pytam dlaczego. Pytam, czy ktoś zapisał, że pytałem.”"
+      }
+    },
+    {
+      "akcja": "ferro_kopia",
+      "etykieta": "Wydaj teczkę i dołącz kopię wpisu o dowodzie Gusa Pella",
+      "reakcja": "Kopia wpisu? Czyli ktoś zapisał, że był drugi dowód. Dobrze, to jest dowód, że biuro to widziało.",
+      "zysk": "Mario ma papier z pieczątką, że dowód z jego nazwiskiem był w biurze.",
+      "strata": "Kopia trafia do akt, a Urząd zobaczy dwa dowody pod jednym zdjęciem.",
+      "echo": {
+        "za_dni": 2,
+        "forma": "list",
+        "tekst": "Victor Crane: „W aktach pojawiła się kopia wpisu o dwóch dowodach. Do wyjaśnienia: kto ją wydał i na czyją prośbę. — V.C.”"
+      }
+    }
+  ],
+  "rola": "fryzjer udawany przez kogoś",
+  "watki": [
+    "cudze_nazwiska"
+  ],
+  "tik": "przeprasza z góry, kończy „jeszcze jedno”",
+  "potrzeba": "teczka z aktem urodzenia i polisą",
+  "slad": "duplikat dowodu na jego nazwisko od dwóch lat"
 }
 ```
 
@@ -5519,6 +5844,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Elias, numerek 1",
         "tekst": "Elias zobaczył Sama przez szybę i przez chwilę nic nie mówił. Złożył numerek w prostokąt i wyszedł. Na ladzie została koperta z napisem: „S. Dla pana Holta. Od E.W.”"
+      },
+      {
+        "kto": "Kartka pod szybą",
+        "tekst": "Na kartce od Helen Voss: „Sprawdzam Okienko. Proszę przygotować księgę wydań do wglądu w piątek.” Pieczątka Inspekcji."
       }
     ],
     "16": [
@@ -5605,6 +5934,10 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Karta pod szybą",
         "tekst": "Pod drzwiami biura leżała kartka od Victora: „O 6:00 w środę zamykam obieg. Proszę przynieść księgę.”"
+      },
+      {
+        "kto": "Helen Voss, w kolejce",
+        "tekst": "W kolejce stanęła kobieta w granatowym płaszczu. Nie miała numerka. Zapytała Eliasa, czy to jest to okienko. Elias powiedział, że tak. Zapisała jego imię w notesie."
       }
     ],
     "23": [
@@ -5647,8 +5980,13 @@ Ten sam schemat i te same zasady co w `okienko_rozmowy_v3_dni1-10.md`: potoczna 
       {
         "kto": "Kuba Marlow, przez kuzyna",
         "tekst": "„Rata sobotnia. Jutro. Przyjdź sam. K.M.” Pod spodem dopisek ołówkiem: „Nie musisz nic mówić. Ale ktoś musi usłyszeć.”"
+      },
+      {
+        "kto": "Protokół Voss",
+        "tekst": "Helen Voss zostawiła na ladzie protokół z jednego zdania: „Okienko działa zgodnie z regulaminem. Zalecam obserwację.” Podpisała się pełnym imieniem."
       }
-    ]
+    ],
+    "9": []
   },
   "epilogi_elias": {
     "odebrany": "Elias: „Jak się nazywasz?” Gracz podaje imię z d20. „Dziękuję, [imię]. Jutro.”",
