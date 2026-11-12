@@ -125,6 +125,7 @@
 ? r Gdzie i kiedy zginęła?
 = n W czwórce, tuż przed Bożym Narodzeniem, jak wracaliśmy od szwagierki. Potem żona zachorowała i okularów już nie włożyła.
  ? u To już osiem miesięcy. Czemu to nadal takie ważne?
+ - Proszę wybaczyć, ale tego się obcym nie tłumaczy.
  = e Bo jej obiecałem, że się znajdą. Ona już nie sprawdzi, ale ja wiem, co obiecałem. Dziękuję, że ktoś pyta.
 ? n Czemu Sam zapłacił za nią z własnej kieszeni?
 = n Bo obiecał, że znajdzie. Nie znalazł, więc zapłacił, jakby to była jego wina. Osiemdziesiąt cztery dolary. Dowiedziałem się, jak już było po wszystkim.
@@ -142,6 +143,11 @@
  = m Niech ktoś zapisze, że pan Holt zapłacił, a ja przyjąłem. Żeby to nie był dług bez nazwiska. To dla niego, nie dla mnie.
  ? n Wiesz coś o paczkach, które jeżdżą szóstką?
  = n Tyle, że konduktor ich nie lubi. Więcej nie wiem i wolę nie wiedzieć.
+? u Co noc bierzesz numerek jeden. Po co, skoro nikt nie stoi w kolejce?
+= m Żeby był porządek. Pan Holt czytał numerek na głos i mówił do mnie po nazwisku. A ja do dziś nie wiem, jak ci na imię. Pytałem już raz.
+ ? r Na tabliczce nic nie ma.
+ = n Nie tabliczkę pytam. Zapytam jeszcze raz, jak będziesz wiedzieć, co odpowiedzieć.
+> wydaj_od_reki Elias przeszedł dziś obok okienka, skłonił głowę i poszedł dalej. Pierwszy raz nie zapytał o oprawkę.
 
 # d13_odile
 ? u Jak wygląda to pudełko?
@@ -245,6 +251,7 @@
  ? u ~vera Vera, czemu go wezwałaś?
  = m Bo zamykają szafkę, a on przez miesiąc nie przyszedł po nic. I wolałam, żeby ktoś przy tym był, kiedy będzie tu stał. Sam różnie znosi to okienko.
  ? r ~sam Gdzie byłeś przez ten miesiąc?
+ - Tam, gdzie nikt nie pyta. I niech tak zostanie.
  = n W porcie. Kolega załatwił mi robotę przy przeładunku. Potrzebuję referencji do piątku, dziesiątego września, inaczej ją stracę. Stąd ich nie dostanę, wiem.
 ? n ~sam Co się stało ze stroną czterdzieści jeden?
 = e Wyrwałem ją. Żeby nikt nie miał tych nazwisk. Nie pytaj więcej, bo powiem za dużo.
