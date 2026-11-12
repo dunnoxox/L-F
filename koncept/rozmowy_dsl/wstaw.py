@@ -11,18 +11,21 @@ Zapis:
   #klucz: dwa pytania o to samo (zadanie jednego chowa drugie); %gasi: pytanie znika, gdy padło pytanie z tym kluczem
   ! akcja Nowa reakcja gościa na decyzję
   > akcja Nowy tekst kartki o świcie (echo tej decyzji; tylko dla akcji, które już mają echo)
+Pliki czytane są alfabetycznie; scena powtórzona w późniejszym pliku zastępuje wcześniejszą (np. final.txt nadpisuje dni11-16.txt).
 Uruchom: python3 -I koncept/rozmowy_dsl/wstaw.py
 """
 import re, json, glob, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); KON = os.path.join(HERE, '..')
 TON = {'u': 'uprzejme', 'r': 'rzeczowe', 'n': 'niewygodne'}; MINA = {'m': 'mowi', 'n': 'neutralna', 'e': 'emocja', 'k': 'klamie'}
-S = {}; cur = None; stack = []
+S = {}; SRC = {}; cur = None; stack = []
 for f in sorted(glob.glob(os.path.join(HERE, '*.txt'))):
     for no, raw in enumerate(open(f, encoding='utf-8'), 1):
         ln = raw.rstrip('\n'); where = f'{os.path.basename(f)}:{no}'
         if not ln.strip() or ln.startswith('//'): continue
         if ln.startswith('# '):
-            cur = S.setdefault(ln[2:].strip(), {'rozmowa': [], 'reakcje': {}, 'echa': {}}); stack = []; continue
+            sid = ln[2:].strip()
+            if SRC.get(sid, f) != f: S.pop(sid)  # ta sama scena w późniejszym pliku zastępuje wcześniejszą
+            SRC[sid] = f; cur = S.setdefault(sid, {'rozmowa': [], 'reakcje': {}, 'echa': {}}); stack = []; continue
         if ln.startswith('!'):
             a, t = ln[1:].strip().split(' ', 1); cur['reakcje'][a] = t.strip(); continue
         if ln.startswith('>'):

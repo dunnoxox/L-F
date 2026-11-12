@@ -9,6 +9,8 @@
 = n W czwórce, wczoraj wieczorem, jak jechałem do Doków. Leżała mi na kolanie i na zakręcie zsunęła się pod siedzenie. Zauważyłem dopiero w domu.
  ? n Po co wieczorem do Doków?
  = m Do córki, do Claire. W czwartki gotuje rosół i udaje, że przypadkiem wyszło za dużo. Ona nie wie, że rękawiczka zginęła, i wolałbym, żeby tak zostało.
+  ? n Czemu Claire ma nie wiedzieć?
+  = e O to już proszę nie pytać. To sprawa między mną a córką, nie między mną a okienkiem.
   ? r A jeśli Claire sama tu przyjdzie pytać?
   = n To proszę jej powiedzieć, że wszystko się znalazło. Ona martwi się o mnie bardziej niż ja o siebie.
 ? n Po co wozić rękawiczki żony tramwajem?
@@ -57,6 +59,8 @@
  = n Bo wynajmuje mi pokój i załatwiła mi tę pralnię. Jak się pokłócę, nie mam ani jednego, ani drugiego. Policz sobie.
  ? u A córka? Już zdrowa?
  = m Zdrowa, dzięki. Ada, dziesięć lat, twarda sztuka. Dziś sama zrobiła sobie kanapki do szkoły. I mnie też.
+  ? n Kto zostaje z małą, kiedy masz nockę?
+  = e A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.
 ! odmow No to pięknie. Jutro czynsz, a ja z pustymi rękami. Przyjdę rano z kierownikiem, niech on poświadczy.
 
 # d2_jonah
@@ -80,6 +84,8 @@
  = e To będzie najgorszy poranek w moim życiu. Ale wolę usłyszeć „nie”, niż dalej nie wiedzieć.
  ? u Wiesz już, jak ją zapytasz?
  = m Mam trzy wersje na serwetce. Dwie skreśliłem. Trzeciej się boję, bo jest krótka i nie ma się za czym schować.
+  ? n Przeczytasz mi tę trzecią?
+  = e Nie. Bez urazy, ale pierwsza usłyszy ją June, a nie okienko.
 ? n @d2_paragon_raty Na paragonie jest 40 dolarów wpłaty, reszta w ratach. Stać cię na to?
 = e Nie stać. Jestem kurierem, wziąłem na sześć rat. Ale jak nie teraz, to kiedy? I tak, wiem, jak to brzmi.
  ? r June wie, że pierścionek jest na raty?
@@ -98,6 +104,8 @@
 = n W czwórce, w ostatnim kursie. Postawiłam między nogami, zadzwoniła mama i wysiadłam z telefonem przy uchu. Bez futerału.
  ? u Co takiego powiedziała mama?
  = e Że wszyscy trzymają kciuki. Cała ulica wie o przesłuchaniu. Mama już upiekła ciasto na „po wszystkim”.
+  ? n Mama wie, na czyich skrzypcach grasz?
+  = e Nie mieszaj do tego mamy. Pytaj o futerał, o tramwaj, o co chcesz. O mamę nie.
  ? n Skrzypaczka zapomina skrzypiec?
  = n Wiem, jak to wygląda. Od dwóch dni prawie nie śpię, ćwiczę po dziesięć godzin. Człowiek wtedy zapomina własnego nazwiska.
 ? n Czyje to skrzypce?
@@ -193,6 +201,8 @@
 = m Bo nocowałam u siostry i wzięłam go ze sobą. Samego w domu nie zostawię. Śmiej się, proszę bardzo.
  ? u Co robiłaś u siostry?
  = n Pilnowałam jej dzieciaków, bo miała nockę. Trójka. Po takim wieczorze człowiek zostawiłby w tramwaju własną głowę.
+  ? n A ich ojciec gdzie był?
+  = e Hola. Przyszłam po budzik, nie do spowiedzi. O siostrę pytaj siostrę.
 ? n @d3_rachunek_budzik Pod pokrywką jest rachunek z warsztatu. Naprawiasz go zamiast kupić nowy?
 = e Osiemnaście dolarów za mechanizm. Nowy kosztuje dziesięć. Ale ten dzwoni tak, jak dzwonił u mamy w kuchni. Na inny dźwięk bym nie wstała.
 

@@ -3,19 +3,21 @@
 **Jak użyć**
 
 1. Otwórz nowy czat w Gemini (najlepiej model Pro, długi kontekst).
-2. Załącz pięć plików z repo:
+2. Załącz siedem plików z repo (wszystkie są w paczce `gemini_paczka.zip`):
    - `prompty/gemini_karty_dni_1-10.md` (karty gości: głos, rzecz, sekrety, decyzje)
    - `koncept/rozmowy_dsl/dni01-05.txt` (obecne rozmowy, dni 1–5)
    - `koncept/rozmowy_dsl/dni06-10.txt` (obecne rozmowy, dni 6–10)
    - `game/tropy.js` (cechy rzeczy, które muszą paść w rozmowie)
    - `docs/STRATEGIA_GRY.md` (po co rozmowa i jak łączy się z magazynem)
+   - `koncept/fabula_25_dni_v2.md` (zwrot „Fotel” i zakończenia)
+   - `prompty/gemini_material_final.md` (pięć scen finałowych ze starej wersji)
 3. Wklej wszystko spod linii „PROMPT” poniżej.
-4. Gemini odda trzy bloki kodu: `dni01-05.txt`, `dni06-10.txt` i `nowi_goscie.txt`. Zapisz je pod tymi nazwami i wrzuć do wątku dialogów (albo wklej treść). Dwa pierwsze wczytują się od razu. Nowi goście wchodzą do gry dopiero po dorobieniu portretu i grafiki rzeczy, to robi wątek.
+4. Gemini odda cztery bloki kodu: `dni01-05.txt`, `dni06-10.txt`, `final.txt` i `nowi_goscie.txt`. Zapisz je pod tymi nazwami i wrzuć do wątku dialogów (albo wklej treść). Trzy pierwsze wczytują się od razu (sceny finałowe do czasu przepięcia dni grają jeszcze pod starymi numerami). Nowi goście wchodzą do gry dopiero po dorobieniu portretu i grafiki rzeczy, to robi wątek.
 
 **Wczytanie wyniku (dla wątku albo ręcznie)**
 
 ```
-# podmień oba pliki w koncept/rozmowy_dsl/ na wynik z Gemini, potem:
+# podmień dni01-05.txt i dni06-10.txt w koncept/rozmowy_dsl/ na wynik z Gemini, dołóż final.txt, potem:
 python3 -I koncept/rozmowy_dsl/wstaw.py          # musi wypisać: nieznane id: []
 cd game && python3 -I build_data.py && cd ..     # przebudowuje game/data.js
 python3 -I docs/tools/validate_dialogs.py        # musi wypisać OK
@@ -23,7 +25,7 @@ node qa/tropy_test.js                            # cechy rzeczy z dni 1–3 nada
 node qa/spojnosc_dialogow.js                     # raport docs/SPOJNOSC_DIALOGOW.md; WIEDZA, KALKA, PLEC mają być na zerze
 ```
 
-Pliki z wynikiem ZASTĘPUJĄ stare o tej samej nazwie. Nie dokładaj trzeciego pliku z tymi samymi scenami, bo rozmowy się zdublują.
+Pliki z wynikiem ZASTĘPUJĄ stare o tej samej nazwie. Scena powtórzona w pliku późniejszym alfabetycznie wygrywa z wcześniejszą.
 
 ---
 
@@ -37,7 +39,9 @@ Nocna zmiana w biurze rzeczy znalezionych przy zajezdni tramwajowej. Gracz siedz
 
 Świat: miasto bez nazwy, tramwaje numer 4, 6 i 11, pętla, Doki, zajezdnia. Imiona są angielskie i to jest kanon, waluta to dolary. Język jest w pełni polski.
 
-Czerwona nić dni 1–10: poprzedni dyżurny Sam Holt wydawał rzeczy bez wpisu i zniknął. Iris Bell zarządza kamienicą przy Cooper Street, odbiera lokatorom wypłaty i sprzedaje „papiery na nowe życie”. Maya Doyle zniknęła i nie chce być znaleziona przez męża Evana. Inspektor Victor Crane sprawdza księgę. Policjant Noah Reyes ma czas do wtorku, siódmego września. Nie dopisuj nowych faktów do tej intrygi. Możesz pogłębiać to, co już jest w kartach i w obecnych rozmowach.
+**Układ 10 dni:** dni 1–8 to sprawy i narastanie, dzień 9 to odsłona, dzień 10 to finał (punkt 12). Gra nie ma dalszych dni, więc nic nie może zostać zawieszone „na później”.
+
+Czerwona nić: poprzedni dyżurny Sam Holt wydawał rzeczy bez wpisu i zniknął. Iris Bell zarządza kamienicą przy Cooper Street, odbiera lokatorom wypłaty i sprzedaje „papiery na nowe życie”. Maya Doyle zniknęła i nie chce być znaleziona przez męża Evana. Inspektor Victor Crane sprawdza księgę. Policjant Noah Reyes ma czas do wtorku, siódmego września. Prawdę pod spodem opisuje załączona `fabula_25_dni_v2.md` (rozdziały 2, 3, 8 i 10): fotel za okienkiem to ogniwo łańcucha dyżurnych, gracz jest szósty. Nie dopisuj nowych faktów do tej intrygi. Możesz pogłębiać to, co już jest w kartach, w obecnych rozmowach i w fabule.
 
 ### 2. Jak silnik gra rozmowę (to wyznacza formę)
 
@@ -59,7 +63,7 @@ To był główny zarzut do poprzedniej wersji, więc traktuj to jak twardy test.
 
 ### 4. Ile i jak głęboko
 
-Dla każdej z 21 scen:
+Dla każdej z 21 scen z dni 1–10 i każdej z 5 scen finałowych:
 
 - 6 do 8 tematów na poziomie 0 (nie licząc pytań z `@`).
 - Pod każdym tematem 2 do 3 dopytania, a pod większością z nich kolejny poziom. Głębokość do 4 poziomów pod tematem tam, gdzie człowiek ma co ukrywać.
@@ -68,6 +72,14 @@ Dla każdej z 21 scen:
 - Różne nitki, nie jedna: rzecz (wygląd, znak szczególny, co w środku), okoliczności zguby, człowiek (praca, rodzina, wstyd, strach), powiązania (kto go przysłał, kogo zna z biura, co wie o Samie albo Iris), stawka (co się stanie, jeśli nie dostanie rzeczy).
 - Co najmniej jedna gałąź, w której gość mówi więcej, niż chciał, i jedna, w której się zamyka.
 - Zachowaj to, co w obecnych rozmowach działa. Możesz przepisać każde zdanie, ale nie gub faktów.
+
+### 4a. Odmowy i powód pytań
+
+- **Gość ma prawo powiedzieć „nie” i ma to robić mocno.** W każdej scenie 2 do 4 twarde odmowy, każda głosem tej postaci: „A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.”, „Hola. Przyszłam po budzik, nie do spowiedzi.”, „Tego regulamin nie każe mi podawać.” Nie każdy unik jest grzeczny: ktoś się obrazi, ktoś zakpi, ktoś zamilknie w pół zdania.
+- **Odmowa kosztuje.** Zjada jedno z pięciu pytań i zamyka gałąź (pod odmową nie ma dopytań albo jest jedno, które tylko pogarsza sprawę). Raz na scenę odmowa może zamknąć inny temat: daj odmowie `#klucz`, a tematowi, który ma zniknąć, `%klucz` (gość się zraził i o tym już nie powie).
+- **Odmowa jest wskazówką.** Uczciwy odmawia w sprawach prywatnych (rodzina, wstyd, pieniądze), a o rzeczy mówi chętnie. Kłamca odwrotnie: o sobie opowiada gładko, zacina się przy szczegółach rzeczy. Gracz ma to wyczuć, nikt mu tego nie mówi.
+- **Naciśnięty za mocno gość odbija pytanie:** „A ty kto, że pytasz?”, „To też jest w formularzu?”. Co najmniej raz na scenę.
+- **Gracz ma powód, żeby pytać.** Regulamin biura każe przed wydaniem ustalić dwie rzeczy: że rzecz należy do zgłaszającego (szczegóły, których nie widać z daleka) i jak zginęła (linia, pora), bo po tym szuka się jej w magazynie. Pytania o rzecz i o okoliczności są więc służbowe i goście to rozumieją. Pytania o życie są ponad regulamin: gracz zadaje je, bo coś w odpowiedzi nie pasuje albo zaciekawia, i właśnie przy nich goście mają prawo się postawić. Pytanie osobiste zawsze zaczepia się o konkret z odpowiedzi („Po nocce? To od której jesteś na nogach?”), nigdy nie pada znikąd.
 
 ### 5. Rozmowa musi pomagać w magazynie
 
@@ -151,12 +163,13 @@ Przykład (fragment sceny, tak ma to wyglądać):
 3. Oddaj **trzy bloki kodu**, nic więcej w ich środku:
    - pierwszy z podpisem `dni01-05.txt` (sceny z dni 1–5, w kolejności jak w oryginale),
    - drugi z podpisem `dni06-10.txt` (sceny z dni 6–10),
-   - trzeci z podpisem `nowi_goscie.txt` (opis w punkcie 10).
+   - trzeci z podpisem `final.txt` (pięć scen finałowych, punkt 12),
+   - czwarty z podpisem `nowi_goscie.txt` (opis w punkcie 10).
    Jeśli odpowiedź nie mieści się w jednej wiadomości, przerwij na granicy sceny, napisz „CIĄG DALSZY” i kontynuuj po mojej wiadomości „dalej”. Nie skracaj scen, żeby się zmieścić.
 
 ### 10. Nowi goście (trzeci plik)
 
-Dziś dzień ma 2 do 3 wizyt. Dopisz 12 do 15 nowych gości tak, żeby każdy z dni 1–10 miał 3 do 4 wizyt. Rozpisz ich w całości, tym samym rzemiosłem co resztę.
+Dziś dzień ma 2 do 3 wizyt. Dopisz 12 do 15 nowych gości tak, żeby każdy z dni 1–8 miał 3 do 4 wizyt (dni 9–10 wypełnia finał, tam najwyżej jeden nowy gość dziennie, dla oddechu). Rozpisz ich w całości, tym samym rzemiosłem co resztę.
 
 Zasady doboru:
 - Zwykli ludzie i zwykłe zguby: klucze, legitymacja, termos, aparat słuchowy, torba z zakupami, zeszyt, proteza zębowa w pudełku, bilet miesięczny, lalka, okulary. Bez agentów, walizek z pieniędzmi i zbiegów okoliczności.
@@ -191,6 +204,39 @@ rozmowa:
 - Rozmowa w tym samym zapisie co w punkcie 8, 20 do 30 par. Pytanie o sekret oznacz `@sekret` (dosłownie to słowo).
 - Trzy cechy z pola `cechy` muszą paść w odpowiedziach tymi samymi słowami, każda w innej odpowiedzi. Kłamca zna najwyżej dwie. Linia tramwaju i pora zguby padają osobno, w odpowiedzi na pytanie „gdzie i kiedy”.
 
+### 12. Dni 9–10: zwrot i finał (plik `final.txt`)
+
+Gra kończy się w dniu 10, więc rozmowy muszą doprowadzić do zakończenia. Źródła: `fabula_25_dni_v2.md` i `gemini_material_final.md`.
+
+**Co ma się wydarzyć**
+
+- Dzień 9, odsłona: scena `d23_iris_nora_victor` (Iris przyznaje: „Siedziałam w tym fotelu”) i scena `d24_vera` (Vera: „To ja wybieram”, szafka 0809, list Sama, „Strona 41 jest twoja”).
+- Dzień 10, finał: scena `d20_elias_sam` (ktoś pierwszy raz pyta gracza o imię), `d25_sam_elias` (Sam wraca ostatni raz) i `d25_ksiega` (księga otwarta na pustej linii 0809, cztery gesty: wpisz siebie, wyrwij stronę, zostaw list, zamknij).
+
+**Jak to napisać**
+
+- Napisz te pięć scen od nowa, jako drzewa, w tym samym zapisie co reszta. Nagłówki `# id` dokładnie jak w materiale. Identyfikatory sekretów (`@…`) i nazwy akcji (`!`, `>`) tylko te z materiału: od nich zależą zakończenia w silniku. Wejścia nie zmieniasz w tym pliku; jeśli stare wejście odwołuje się do wydarzeń, których już nie ma, napisz na końcu (punkt 11), jak powinno brzmieć.
+- Odwołuj się wyłącznie do tego, co gracz mógł zobaczyć w dniach 1–8, i do tego, co stoi w kartach. Stare rozmowy wspominają dni 11–24 (kalka z dnia 15, detektyw, walizki Mai): tego gracz nie widział, więc albo to pomiń, albo niech postać powie to teraz, jednym zdaniem, jako nową informację.
+- Zwrot ma boleć w mechanice: sumienne wpisy i drugie egzemplarze były wyciekiem, „bez wpisu” Sama było ochroną. Niech wybrzmi to w jednym dopytaniu u Very albo Sama, bez wykładu.
+- Nikt nie mówi, przed czym uciekł gracz. Sam: „Nie wiem, przed czym uciekasz. Iris też nie wie. W tym cała rzecz.”
+- Finał jest cichy. Krótkie kwestie, żadnych przemów, żadnego streszczania gry. Ostatnie pytanie Eliasa o imię ma być najprostszym zdaniem w całej grze.
+- Limit 5 pytań obowiązuje także tutaj. Najważniejsza odsłona każdej sceny musi być osiągalna w 3 pytaniach różnymi drogami, ale nie może paść w Wejściu ani w pierwszej odpowiedzi.
+
+**Zasiej ślady w dniach 1–8** (bez tego zwrot będzie znikąd). Każdy ślad to jedno zdanie w odpowiedzi albo jedno dopytanie, nigdy cała gałąź:
+
+- dzień 1, Thomas: „Prawa wydana bez wpisu, lewa czeka” (jest), Sam jako ktoś, kto prosił, żeby o nim nie opowiadać;
+- dzień 2, Ines: ogłoszenie o pracy na słupie wisi „od lat” i ciągle jest świeże;
+- dzień 4, Iris: „Nie lubię naciskać” i jedno zdanie, z którego wynika, że zna to okienko od środka;
+- dzień 5, Victor: „Kto cię tu skierował? W aktach brak skierowania” (jest), Gus: poprzedni urzędnik wydał go „z dwiema pieczątkami”;
+- dzień 6, Ada: „Na górze mieszka nowy, tam jest zimno” (jest; to pokój służbowy gracza);
+- dzień 7 albo 8: ktoś mimochodem zauważa, że nie zna imienia osoby za szybą, i nie pyta dalej;
+- dzień 9 (obecna scena `d9_iris`): żeton 0809 „jeszcze bez opisu” (jest). To wabik: gracz ma pomyśleć, że sam czeka na papiery;
+- obecne sceny `d10_vera` i `d10_dario`: szafka Sama, pusta teczka, Vera, która wie więcej, niż mówi.
+
+**Elias Wren** musi być znany przed finałem. Wprowadź go wśród nowych gości (plik `nowi_goscie.txt`) dwa razy, w dniach 3–4 i 6–7: starszy pan z gazetą i numerkiem, przychodzi po oprawkę okularów żony, którą Sam obiecał znaleźć, za każdym razem pyta „Czy Sam już był?”. Przy drugiej wizycie pierwszy raz pyta o imię osoby za szybą i nie dostaje odpowiedzi.
+
+Obecne sceny `d9_iris`, `d9_stahl`, `d10_vera`, `d10_dario` zostają w pliku `dni06-10.txt` i rozbudowujesz je jak pozostałe. W wersji 10-dniowej przesuną się o dzień lub dwa wcześniej; nie pisz w nich niczego, co zależy od numeru dnia.
+
 ### 11. Na koniec, zwykłym tekstem
 
-Po trzech blokach dopisz krótko (do 15 punktów): które fakty z kart wydały ci się sprzeczne albo nielogiczne i w których scenach musiałeś coś obejść. Bez pochwał i bez streszczania własnej pracy.
+Po czterech blokach dopisz krótko (do 15 punktów): które fakty z kart wydały ci się sprzeczne albo nielogiczne i w których scenach musiałeś coś obejść. Bez pochwał i bez streszczania własnej pracy.

@@ -63,6 +63,8 @@
   = n Ksero, laminowanie, bindowanie. Ulotki, plakaty, dyplomy. W nocy przychodzą tacy, co wolą, żeby ich nikt nie widział.
    ? n +d7_kit_ulotki Na przykład kto? Pamiętasz kogoś z zeszłego tygodnia?
    = e W czwartek, 22:15. Facet w szarym płaszczu zamówił tysiąc ulotek z twarzą kobiety. „Zaginęła”. Zapłacił gotówką i powiedział, że to żona. Serio, uśmiechał się przy tym.
+    ? n Jak się nazywał ten facet?
+    = e Nie powiem. Serio. Nazwisko jest w segregatorze, a segregator jest szefa. Jak to wyjdzie ode mnie, wylatuję.
 ? n Co ci zrobi szef, jak się dowie o słuchawkach?
 = m Zdejmie mi dziesięć dolarów z wypłaty i palnie pogadankę. Pogadankę przeżyję. Dziesięć dolarów gorzej.
  ? n Co mu przeszkadza w słuchawkach?
@@ -193,6 +195,8 @@
  = k Sam. Zawsze sam. Nikt obok nie siadał.
  ? r O dwudziestej drugiej? Dokąd jechałeś?
  = n Do domu. Z kancelarii. Dużo ostatnio pracuję przy cudzych papierach.
+  ? n Przy czyich papierach?
+  = n Tego regulamin nie każe mi podawać. A czego nie każe, tego nie podaję. Dobra zasada, polecam.
 ? n Czemu tak ci zależy akurat na tym kapeluszu?
 = m Jutro mam ważną rozmowę, a bez kapelusza wyglądam nieprzekonująco. Tak twierdzi moja żona.
  ? u Żona może potwierdzić, że jest twój?
@@ -221,6 +225,8 @@
  = n Rzeczy pójdą do zbiorczego archiwum Urzędu i nikt ich potem nie znajdzie. Dlatego wezwałam Sama na piątek. Chcę, żeby miał co zabrać.
   ? n Sam wie, że go wezwałaś?
   = n Wie. Napisałam. Nie odpisał. On nigdy nie odpisuje, on przychodzi. To znaczy, powinien przyjść.
+   ? n Dokąd pisałaś? Masz jego adres?
+   = e Tego nie powiem nikomu, kto siedzi na jego krześle krócej niż miesiąc. Bez obrazy.
 ? n @d10_pudelko_karta Na karcie jest numer szuflady 6, taki jak tu, w biurze. Co to znaczy?
 = m Że szuflada numer sześć jest jego. Klucz dostałam od Sama i zostawiłam w tej szufladzie, żeby następny nie musiał go szukać. Czyli żeby nie musiało szukać to, co teraz siedzi na jego krześle.
  ? n Na wieczku ktoś napisał: „Teczka jest pusta. Tak ma być”. O jaką teczkę chodzi?
@@ -231,6 +237,8 @@
 = m Gruby, okładka tłusta, bo noszę go razem z kanapką. Gumka ledwo trzyma. Pachnie cebulą, uprzedzam.
  ? r Co w nim jest oprócz grafiku?
  = m Przepisy na zupy i numery telefonów. I parę długów, cudzych. Chcesz kanapkę? Mam drugą.
+  ? n Czyje to długi?
+  = e O nie. Kto mi wisi, wie on i ja. Jakbym rozpowiadał, nikt by u mnie więcej nie pożyczył.
 ? r Gdzie go zgubiłeś?
 = n W jedenastce, na pętli, jak jadłem. Położyłem zeszyt obok kanapki. Kanapkę zjadłem, a zeszyt pojechał dalej beze mnie.
 ? u Pytałeś o Sama. Kim on dla ciebie jest?

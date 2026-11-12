@@ -68,6 +68,13 @@
           "mina": "mowi",
           "dalej": [
             {
+              "tekst": "Czemu Claire ma nie wiedzieć?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "O to już proszę nie pytać. To sprawa między mną a córką, nie między mną a okienkiem.",
+              "mina": "emocja"
+            },
+            {
               "tekst": "A jeśli Claire sama tu przyjdzie pytać?",
               "ton": "rzeczowe",
               "wymaga": null,
@@ -316,7 +323,16 @@
           "ton": "uprzejme",
           "wymaga": null,
           "odpowiedz": "Zdrowa, dzięki. Ada, dziesięć lat, twarda sztuka. Dziś sama zrobiła sobie kanapki do szkoły. I mnie też.",
-          "mina": "mowi"
+          "mina": "mowi",
+          "dalej": [
+            {
+              "tekst": "Kto zostaje z małą, kiedy masz nockę?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "A to już nie twoja sprawa. Zgubiłam kopertę, nie dziecko.",
+              "mina": "emocja"
+            }
+          ]
         }
       ]
     }
@@ -469,7 +485,16 @@
           "ton": "uprzejme",
           "wymaga": null,
           "odpowiedz": "Mam trzy wersje na serwetce. Dwie skreśliłem. Trzeciej się boję, bo jest krótka i nie ma się za czym schować.",
-          "mina": "mowi"
+          "mina": "mowi",
+          "dalej": [
+            {
+              "tekst": "Przeczytasz mi tę trzecią?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Nie. Bez urazy, ale pierwsza usłyszy ją June, a nie okienko.",
+              "mina": "emocja"
+            }
+          ]
         }
       ]
     },
@@ -605,7 +630,16 @@
           "ton": "uprzejme",
           "wymaga": null,
           "odpowiedz": "Że wszyscy trzymają kciuki. Cała ulica wie o przesłuchaniu. Mama już upiekła ciasto na „po wszystkim”.",
-          "mina": "emocja"
+          "mina": "emocja",
+          "dalej": [
+            {
+              "tekst": "Mama wie, na czyich skrzypcach grasz?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Nie mieszaj do tego mamy. Pytaj o futerał, o tramwaj, o co chcesz. O mamę nie.",
+              "mina": "emocja"
+            }
+          ]
         },
         {
           "tekst": "Skrzypaczka zapomina skrzypiec?",
@@ -1170,7 +1204,16 @@
           "ton": "uprzejme",
           "wymaga": null,
           "odpowiedz": "Pilnowałam jej dzieciaków, bo miała nockę. Trójka. Po takim wieczorze człowiek zostawiłby w tramwaju własną głowę.",
-          "mina": "neutralna"
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "A ich ojciec gdzie był?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Hola. Przyszłam po budzik, nie do spowiedzi. O siostrę pytaj siostrę.",
+              "mina": "emocja"
+            }
+          ]
         }
       ]
     },
@@ -2333,7 +2376,16 @@
                   "wymaga": null,
                   "ustawia": "d7_kit_ulotki",
                   "odpowiedz": "W czwartek, 22:15. Facet w szarym płaszczu zamówił tysiąc ulotek z twarzą kobiety. „Zaginęła”. Zapłacił gotówką i powiedział, że to żona. Serio, uśmiechał się przy tym.",
-                  "mina": "emocja"
+                  "mina": "emocja",
+                  "dalej": [
+                    {
+                      "tekst": "Jak się nazywał ten facet?",
+                      "ton": "niewygodne",
+                      "wymaga": null,
+                      "odpowiedz": "Nie powiem. Serio. Nazwisko jest w segregatorze, a segregator jest szefa. Jak to wyjdzie ode mnie, wylatuję.",
+                      "mina": "emocja"
+                    }
+                  ]
                 }
               ]
             }
@@ -3223,7 +3275,16 @@
           "ton": "rzeczowe",
           "wymaga": null,
           "odpowiedz": "Do domu. Z kancelarii. Dużo ostatnio pracuję przy cudzych papierach.",
-          "mina": "neutralna"
+          "mina": "neutralna",
+          "dalej": [
+            {
+              "tekst": "Przy czyich papierach?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "Tego regulamin nie każe mi podawać. A czego nie każe, tego nie podaję. Dobra zasada, polecam.",
+              "mina": "neutralna"
+            }
+          ]
         }
       ]
     },
@@ -3393,7 +3454,16 @@
               "ton": "niewygodne",
               "wymaga": null,
               "odpowiedz": "Wie. Napisałam. Nie odpisał. On nigdy nie odpisuje, on przychodzi. To znaczy, powinien przyjść.",
-              "mina": "neutralna"
+              "mina": "neutralna",
+              "dalej": [
+                {
+                  "tekst": "Dokąd pisałaś? Masz jego adres?",
+                  "ton": "niewygodne",
+                  "wymaga": null,
+                  "odpowiedz": "Tego nie powiem nikomu, kto siedzi na jego krześle krócej niż miesiąc. Bez obrazy.",
+                  "mina": "emocja"
+                }
+              ]
             }
           ]
         }
@@ -3497,7 +3567,16 @@
           "ton": "rzeczowe",
           "wymaga": null,
           "odpowiedz": "Przepisy na zupy i numery telefonów. I parę długów, cudzych. Chcesz kanapkę? Mam drugą.",
-          "mina": "mowi"
+          "mina": "mowi",
+          "dalej": [
+            {
+              "tekst": "Czyje to długi?",
+              "ton": "niewygodne",
+              "wymaga": null,
+              "odpowiedz": "O nie. Kto mi wisi, wie on i ja. Jakbym rozpowiadał, nikt by u mnie więcej nie pożyczył.",
+              "mina": "emocja"
+            }
+          ]
         }
       ]
     },
