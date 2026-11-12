@@ -4,12 +4,18 @@ Cztery paczki, każda w OSOBNYM, NOWYM czacie ChatGPT (jeden czat = jedna paczka
 
 | # | Paczka | Wynik | Wrzuć do | Nazwy plików |
 |---|--------|-------|----------|--------------|
-| 1 | Poprawki portretów + Ines i Evan | 6 obrazów 1536x1024 | `/mnt/project-files/art_referencje_portrety/wyniki/` (ZIP albo 6 PNG) | `G15-grace.png`, `G23-sylvia.png`, `G06-ada.png`, `G19-billie.png`, `G27-ines.png`, `G28-evan.png` |
-| 2 | Fotografie przedmiotów, blankiety, narzędzia | 26 obrazów | `/mnt/project-files/lostfraud_art7/` | `KB1-4.png`, `KN1.png`, `FP01-12.png`, `FG01-09.png` |
-| 3 | 4 brakujące grafiki (kask, koszyk, księga, kot) | 2 arkusze | `/mnt/project-files/lostfraud_art7/` | `Z8.png`, `KOT.png` |
+| 1 | Poprawki portretów + Ines i Evan | 6 obrazów 1536x1024 | repo: `art/gpt_wyniki/portrety/` | `G15-grace.png`, `G23-sylvia.png`, `G06-ada.png`, `G19-billie.png`, `G27-ines.png`, `G28-evan.png` |
+| 2 | Fotografie przedmiotów, blankiety, narzędzia | 26 obrazów | repo: `art/gpt_wyniki/fotografie/` | `KB1-4.png`, `KN1.png`, `FP01-12.png`, `FG01-09.png` |
+| 3 | 4 brakujące grafiki (kask, koszyk, księga, kot) | 2 arkusze | repo: `art/gpt_wyniki/brakujace/` | `Z8.png`, `KOT.png` |
 | 4 | Dźwięki (16 brakujących) | 15 plików + 8 mamrotań | ElevenLabs, nie ChatGPT; wynik do `/mnt/project-files/audio/sfx_nowe/` | nazwy `sfx_*.mp3` w sekcji 4 |
 
-Folder `lostfraud_art7/` już istnieje. Po wrzuceniu wątek gry tnie z zieleni i wpina w grę.
+**Wyniki wrzuca ChatGPT do repo** (nie musisz nic pobierać). Na końcu każdej paczki wklej ten dopisek, z odpowiednim folderem z tabeli:
+
+```
+WYNIK: gdy skończysz wszystkie obrazy, zapisz je w repo dunnoxox/L-F na nowym branchu gpt/wyniki-<nazwa paczki> (nie na main), w folderze <FOLDER Z TABELI>, pod nazwami z listy, i otwórz Pull Request do main z listą plików. Jeśli nie możesz zapisywać do repo, napisz to i podaj obrazy do pobrania.
+```
+
+Po PR-ze wątek gry tnie z zieleni i wpina w grę. Gdyby czat nie miał zapisu do repo, pobierz obrazy i wrzuć do folderu projektu `lostfraud_art7/`.
 
 Jeśli ChatGPT się zatnie, napisz "dalej". Jeśli wyjdzie sepia, szarość albo litery: "Popraw obraz N: tylko czerń i krem (pomarańcz tylko jako światło), zero półtonów, bez liter". Kredytów nie oszczędzaj.
 
@@ -65,7 +71,7 @@ REFERENCJE (załączone): G06-ada.png, G15-grace.png, G19-billie.png, G23-sylvia
 REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 5 obrazów i traktuj jako załączniki, w tej kolejności: art/lostfraud_art6/Z1.png, art/lostfraud_art6/W3.png, art/lostfraud_art5/C4.png, codex/okienko_fx/refs_visual/K4-portfel.jpg, art/portrety_referencje/L4-twarze.png.
 ```
 
-**Wynik:** `/mnt/project-files/lostfraud_art7/`, etykiety `KB1.png … KB4.png`, `KN1.png`, `FP01.png … FP12.png`, `FG01.png … FG09.png`. Wklej blok:
+**Wynik (repo `art/gpt_wyniki/fotografie/`):** etykiety `KB1.png … KB4.png`, `KN1.png`, `FP01.png … FP12.png`, `FG01.png … FG09.png`. Wklej blok:
 
 ```
 Generuję komplet zasobów do gry: 26 obrazów, wszystkie po kolei w tym jednym czacie. Pracuj samodzielnie: generuj jeden obraz po drugim, bez pytania o zgodę, bez streszczeń, bez łączenia obrazów, niczego nie pomijaj. Pod każdym obrazem tylko etykieta, np. "FP03 gotowe 8/26". Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i po mojej odpowiedzi kontynuuj od następnego. Kolejność: KB1-KB4, KN1, FP01-FP12, FG01-FG09. Na końcu wypisz listę etykiet i które obrazy wyszły niezgodnie ze stylem.
@@ -123,7 +129,7 @@ REFERENCJE: otwórz z GitHuba dunnoxox/L-F (branch main) te 4 obrazy i traktuj j
 
 Potem wklej blok:
 
-**Wynik (2 obrazy; pobierz z ChatGPT i wrzuć do projektu, bo czat tych plików do repo raczej nie wypchnie):** `/mnt/project-files/lostfraud_art7/Z8.png` (kask, koszyk, księga otwarta i zamknięta) oraz `/mnt/project-files/lostfraud_art7/KOT.png` (trzy pozy kota). Wątek gry wytnie do `game/assets/items/`.
+**Wynik (2 obrazy, repo `art/gpt_wyniki/brakujace/`):** `Z8.png` (kask, koszyk, księga otwarta i zamknięta) oraz `KOT.png` (trzy pozy kota). Wątek gry wytnie do `game/assets/items/`.
 
 ```
 Generuję dwa ostatnie arkusze zasobów do gry, po kolei w tym jednym czacie. Pracuj samodzielnie: wygeneruj obraz 1, potem obraz 2, bez pytania o zgodę, bez streszczeń, bez łączenia obrazów. Pod każdym obrazem tylko etykieta: "Z8 gotowe 1/2", "KOT gotowe 2/2". Jeśli system każe Ci się zatrzymać, napisz "Wpisz: dalej" i po mojej odpowiedzi kontynuuj. Na końcu napisz jednym zdaniem, czy któryś obraz odszedł od stylu.
